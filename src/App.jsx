@@ -8,6 +8,7 @@ import Website from "./Pages/Services/Website/Website";
 import CustomSoftware from "./Pages/Services/CustomSoftware/CustomSoftware";
 import AppMobile from "./Pages/Services/AppMobile/AppMobile";
 import ContactUs from "./Pages/Contact/ContactUs";
+import CookieBanner from "./Components/Global/CookieBanner";
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
         <Route exact path="/servizi/app_mobile" element={<AppMobile />} />
         <Route exact path="/contattaci" element={<ContactUs />} />
       </Routes>
+      <CookieBanner />
       <Footer />
     </>
   );
