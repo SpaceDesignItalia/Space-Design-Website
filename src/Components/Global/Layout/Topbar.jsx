@@ -13,6 +13,8 @@ import {
   DropdownTrigger,
   DropdownMenu,
   DropdownItem,
+  Accordion,
+  AccordionItem,
 } from "@nextui-org/react";
 import Logo from "../../../assets/logo.png";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
@@ -93,6 +95,9 @@ export default function Topbar() {
             }}
           >
             <DropdownItem
+              as={Link}
+              href="/servizi/siti_web"
+              className="text-black"
               key="Websites"
               description="Siti web innovativi, responsive, intuitivi: trasforma la tua presenza digitale."
               startContent={
@@ -105,6 +110,9 @@ export default function Topbar() {
             </DropdownItem>
 
             <DropdownItem
+              as={Link}
+              href="/servizi/software_personalizzato"
+              className="text-black"
               key="Custom Software"
               description="Soluzioni software su misura, web app innovative, potenti e personalizzate."
               startContent={
@@ -117,6 +125,9 @@ export default function Topbar() {
             </DropdownItem>
 
             <DropdownItem
+              as={Link}
+              href="/servizi/app_mobile"
+              className="text-black"
               key="Applicazioni mobile"
               description="App mobile su misura, esperienze innovative e personalizzate per connettere efficacemente."
               startContent={
@@ -145,9 +156,59 @@ export default function Topbar() {
       </NavbarContent>
 
       <NavbarMenu>
-        <NavbarMenuItem>
-          <Link>Home</Link>
-        </NavbarMenuItem>
+        <NavbarItem className="py-2">
+          <Link className="text-md" color="foreground" href="/">
+            Home
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Accordion
+            isCompact
+            variant="light"
+            className="p-0 flex flex-col gap-1 w-full"
+            showDivider={false}
+          >
+            <AccordionItem key="1" aria-label="Servizi" title="Servizi">
+              <div className="flex flex-col gap-5 text-xs pl-5">
+                <Link
+                  className="text-black"
+                  key="autoscaling"
+                  href="/servizi/siti_web"
+                >
+                  Siti Web
+                </Link>
+
+                <Link
+                  className="text-black"
+                  key="autoscaling"
+                  href="/servizi/software_personalizzato"
+                >
+                  Software personalizzato
+                </Link>
+
+                <Link
+                  className="text-black"
+                  key="autoscaling"
+                  href="/servizi/app_mobile"
+                >
+                  App Mobile
+                </Link>
+              </div>
+            </AccordionItem>
+          </Accordion>
+        </NavbarItem>
+
+        <NavbarItem className="py-2">
+          <Link className="text-md" color="foreground" href="/">
+            Contattaci
+          </Link>
+        </NavbarItem>
+
+        <NavbarItem>
+          <Button color="primary" radius="sm" fullWidth>
+            Accedi
+          </Button>
+        </NavbarItem>
       </NavbarMenu>
     </Navbar>
   );
