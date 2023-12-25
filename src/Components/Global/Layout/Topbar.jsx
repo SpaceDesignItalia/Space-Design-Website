@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Navbar,
   NavbarBrand,
@@ -22,16 +22,35 @@ import SmartphoneIcon from "@mui/icons-material/Smartphone";
 
 export default function Topbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolling, setIsScrolling] = useState(false);
+
   const icons = {
     chevron: <KeyboardArrowDownIcon size={16} />,
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY === 0) {
+        setIsScrolling(false);
+      } else {
+        setIsScrolling(true);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <Navbar
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
       isBlurred
-      className=" bg-transparen md:p-3"
+      className={isScrolling ? "bg-white md:p-3" : "bg-transparent md:p-3"}
+      isBordered={isScrolling}
       maxWidth="xl"
     >
       <NavbarContent className="sm:hidden" justify="start">
@@ -39,7 +58,11 @@ export default function Topbar() {
       </NavbarContent>
 
       <NavbarBrand justify="start">
-        <img src={Logo} alt="company logo" className="w-1/3" />
+        <img
+          src={Logo}
+          alt="company logo"
+          className="w-full sm:w-1/2 lg:w-1/3"
+        />
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex" justify="center">
         <NavbarItem>
@@ -48,7 +71,7 @@ export default function Topbar() {
           </Link>
         </NavbarItem>
 
-        <Dropdown>
+        <Dropdown showArrow>
           <NavbarItem>
             <DropdownTrigger>
               <Button
@@ -64,7 +87,7 @@ export default function Topbar() {
           </NavbarItem>
           <DropdownMenu
             aria-label="Servizi offerti"
-            className="w-[340px]"
+            className="w-[340px] bg-white backdrop-blur"
             itemClasses={{
               base: "gap-4",
             }}
@@ -108,7 +131,7 @@ export default function Topbar() {
         </Dropdown>
         <NavbarItem>
           <Link className="font-bold" color="foreground" href="/azienda">
-            Azienda
+            Contattaci
           </Link>
         </NavbarItem>
       </NavbarContent>

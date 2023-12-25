@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <div className="h-screen flex justify-center items-center">
+    <div className="h-auto lg:h-screen flex justify-center items-center p-5 lg:p-0">
       <div
         className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
         aria-hidden="true"
@@ -26,10 +26,14 @@ export default function Hero() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1.5, type: "spring", bounce: 0.25 }}
           >
-            Trasforma le tue idee in soluzioni software straordinarie
+            Trasforma le tue idee in soluzioni{" "}
+            <span className="bg-gradient-to-br from-fuchsia-500 to-blue-600 text-transparent bg-clip-text">
+              software
+            </span>{" "}
+            straordinarie
           </motion.h1>
           <motion.p
-            className="w-4/5 mt-6 text-lg leading-8 text-gray-600"
+            className="lg:w-4/5 mt-6 text-lg leading-8 text-gray-600"
             initial={{ y: 150, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{
@@ -56,8 +60,9 @@ export default function Hero() {
             <Button
               color="primary"
               size="lg"
-              className="w-2/5"
+              className="w-full lg:w-2/5"
               startContent={<SendIcon />}
+              radius="sm"
             >
               Contattaci
             </Button>
