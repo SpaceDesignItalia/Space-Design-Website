@@ -141,7 +141,7 @@ export default function Topbar() {
           </DropdownMenu>
         </Dropdown>
         <NavbarItem>
-          <Link className="font-bold" color="foreground" href="/azienda">
+          <Link className="font-bold" color="foreground" href="/contattaci">
             Contattaci
           </Link>
         </NavbarItem>
@@ -199,7 +199,7 @@ export default function Topbar() {
         </NavbarItem>
 
         <NavbarItem className="py-2">
-          <Link className="text-md" color="foreground" href="/">
+          <Link className="text-md" color="foreground" href="/contattaci">
             Contattaci
           </Link>
         </NavbarItem>
