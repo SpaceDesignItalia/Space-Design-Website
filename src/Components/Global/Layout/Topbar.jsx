@@ -131,7 +131,7 @@ export default function Topbar() {
         </Dropdown>
         <NavbarItem>
           <Link className="font-bold" color="foreground" href="/azienda">
-            Azienda
+            Contattaci
           </Link>
         </NavbarItem>
       </NavbarContent>

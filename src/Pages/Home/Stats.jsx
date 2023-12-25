@@ -34,7 +34,7 @@ export default function Stats() {
           {stats.map((stat) => (
             <div
               key={stat.id}
-              className="flex flex-col gap-3 justify-center items-center text-3xl font-semibold text-gray-900 sm:text-5xl"
+              className="flex flex-col gap-3 justify-center items-center text-4xl font-semibold text-gray-900 sm:text-5xl"
             >
               {stat.icon}
               {stat.id === 2 ? (

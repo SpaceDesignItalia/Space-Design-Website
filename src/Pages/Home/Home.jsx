@@ -4,6 +4,7 @@ import Partners from "./Partners";
 import GetInTouch from "./GetInTouch";
 import Stats from "./Stats";
 import AboutUs from "./AboutUs";
+import TechStack from "./TechStack";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Partners />
       <AboutUs />
       <Stats />
+      <TechStack />
       <GetInTouch />
     </div>
   );
