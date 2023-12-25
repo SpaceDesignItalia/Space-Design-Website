@@ -1,32 +1,81 @@
 import React from "react";
 import { Button } from "@nextui-org/button";
+import { useInView } from "react-intersection-observer";
 import SendIcon from "@mui/icons-material/Send";
+import { motion } from "framer-motion";
 
 export default function GetInTouch() {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    rootMargin: "-40% 0px",
+  });
+
+  const variants = {
+    hidden: { opacity: 0, y: 150 },
+    visible: { opacity: 1, y: 0 },
+  };
   return (
-    <div className="h-auto lg:h-screen flex justify-center items-center p-5 lg:p-0">
-      <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+    <div
+      ref={ref}
+      className="h-auto flex justify-center items-center p-5 lg:p-0"
+    >
+      <div className="mx-auto max-w-2xl lg:py-32">
         <div className="flex flex-col gap-5 justify-center items-center text-center">
-          <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-3xl">
+          <motion.h1
+            className="text-3xl font-bold tracking-tight text-gray-900 sm:text-3xl"
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            variants={variants}
+            transition={{
+              duration: 1.5,
+              type: "spring",
+              bounce: 0.25,
+              delay: 0.25,
+            }}
+          >
             Contattaci oggi per dare vita alle tue idee!
-          </h1>
-          <p className="lg:w-5/6 mt-6 text-lg leading-8 text-gray-600">
+          </motion.h1>
+          <motion.p
+            className="lg:w-5/6 mt-6 text-lg leading-8 text-gray-600"
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            variants={variants}
+            transition={{
+              duration: 1.5,
+              type: "spring",
+              bounce: 0.25,
+              delay: 0.5,
+            }}
+          >
             Space Design è più di un'azienda di software. Siamo il tuo partner
             nell'esplorare le infinite opportunità del mondo digitale. Siamo la
             fiamma che accende la tua creatività e la tecnologia che la
             trasforma in realtà. Siamo il futuro digitale e siamo qui per
             guidarti in questo viaggio.
-          </p>
+          </motion.p>
 
-          <Button
-            color="primary"
-            size="lg"
-            className="w-full lg:w-2/5"
-            startContent={<SendIcon />}
-            radius="sm"
+          <motion.div
+            className="w-full"
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            variants={variants}
+            transition={{
+              duration: 1.5,
+              type: "spring",
+              bounce: 0.25,
+              delay: 0.75,
+            }}
           >
-            Contattaci
-          </Button>
+            <Button
+              color="primary"
+              size="lg"
+              className="w-full lg:w-2/5"
+              startContent={<SendIcon />}
+              radius="sm"
+            >
+              Contattaci
+            </Button>
+          </motion.div>
         </div>
       </div>
       <div
