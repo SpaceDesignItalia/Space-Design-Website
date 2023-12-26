@@ -149,7 +149,7 @@ export default function Topbar() {
 
       <NavbarContent className="sm:flex justify-end" justify="end">
         <NavbarItem className="hidden md:block">
-          <Button color="primary" radius="sm">
+          <Button as={Link} href="/accedi" color="primary" radius="sm">
             Accedi
           </Button>
         </NavbarItem>
@@ -205,7 +205,13 @@ export default function Topbar() {
         </NavbarItem>
 
         <NavbarItem>
-          <Button color="primary" radius="sm" fullWidth>
+          <Button
+            as={Link}
+            href="/accedi"
+            color="primary"
+            radius="sm"
+            fullWidth
+          >
             Accedi
           </Button>
         </NavbarItem>
