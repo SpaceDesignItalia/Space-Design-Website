@@ -1,6 +1,17 @@
-import React from "react";
-import { Button, Input, Textarea } from "@nextui-org/react";
+import React, { useState } from "react";
+import { Button, Input, Textarea, Select, SelectItem } from "@nextui-org/react";
 export default function ContactUs() {
+  const object = [
+    { id: 1, name: "Consulenza" },
+    { id: 2, name: "Sito Web" },
+    { id: 3, name: "Software Personalizzato" },
+    { id: 4, name: "App Mobile" },
+    { id: 5, name: "Altro" },
+  ];
+
+  const [service, setService] = useState();
+
+  console.log(service);
   return (
     <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
       <div
@@ -27,28 +38,41 @@ export default function ContactUs() {
         </p>
       </div>
       <form
-        action="#"
+        action="https://formsubmit.co/clienti@spacedesign-italia.it"
         method="POST"
         className="mx-auto mt-16 max-w-xl sm:mt-20"
       >
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
-            <Input type="text" label="Nome" />
+            <Input type="text" label="Nome" name="nome" variant="faded" />
           </div>
           <div>
-            <Input type="text" label="Cognome" />
+            <Input type="text" label="Cognome" name="cognome" variant="faded" />
           </div>
 
           <div className="sm:col-span-2">
-            <Input type="email" label="Email" />
+            <Input type="email" label="Email" name="email" variant="faded" />
           </div>
 
           <div className="sm:col-span-2">
-            <Textarea label="Messaggio"></Textarea>
+            <Select label="Oggetto" variant="faded" fullWidth name="oggetto">
+              {object.map((service) => (
+                <SelectItem key={service.id} value={service.name}>
+                  {service.name}
+                </SelectItem>
+              ))}
+            </Select>
+          </div>
+          <div className="sm:col-span-2">
+            <Textarea
+              label="Messaggio"
+              variant="faded"
+              name="messaggio"
+            ></Textarea>
           </div>
         </div>
         <div className="mt-10">
-          <Button color="primary" radius="sm" fullWidth>
+          <Button color="primary" radius="sm" fullWidth type="submit">
             Contattaci
           </Button>
         </div>
