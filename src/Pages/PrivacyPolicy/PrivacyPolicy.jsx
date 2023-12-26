@@ -2,7 +2,7 @@ import React from "react";
 
 export default function PrivacyPolicy() {
   return (
-    <div className="mx-auto max-w-2xl flex flex-col gap-20 justify-center items-center py-24">
+    <div className="mx-auto max-w-2xl flex flex-col gap-20 justify-center items-center py-24 p-5">
       <div className="flex flex-col gap-5">
         <h1 className="text-3xl font-extrabold">
           Informativa sulla privacy di Space Design
