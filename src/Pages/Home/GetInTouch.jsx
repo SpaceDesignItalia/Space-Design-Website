@@ -3,6 +3,7 @@ import { Button } from "@nextui-org/button";
 import { useInView } from "react-intersection-observer";
 import SendIcon from "@mui/icons-material/Send";
 import { motion } from "framer-motion";
+import { Link } from "@nextui-org/react";
 
 export default function GetInTouch() {
   const [ref, inView] = useInView({
@@ -67,6 +68,8 @@ export default function GetInTouch() {
             }}
           >
             <Button
+              as={Link}
+              href="/contattaci"
               color="primary"
               size="lg"
               className="w-full lg:w-2/5"

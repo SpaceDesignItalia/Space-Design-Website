@@ -1,4 +1,4 @@
-import { Button } from "@nextui-org/react";
+import { Button, Link } from "@nextui-org/react";
 import React from "react";
 
 export default function Error404() {
@@ -17,7 +17,7 @@ export default function Error404() {
             momento. Potrebbe essere stata rimossa, rinominata o potresti aver
             digitato un URL errato.
           </p>
-          <Button href="/" color="primary" size="lg" radius="sm">
+          <Button as={Link} href="/" color="primary" size="lg" radius="sm">
             Torna alla home
           </Button>
         </div>

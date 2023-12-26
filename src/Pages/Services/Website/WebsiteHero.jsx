@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "@nextui-org/react";
+import { Button, Link } from "@nextui-org/react";
 import SendIcon from "@mui/icons-material/Send";
 
 export default function Hero() {
@@ -28,6 +28,8 @@ export default function Hero() {
           </p>
           <div className="w-full">
             <Button
+              as={Link}
+              href="/contattaci"
               color="primary"
               size="lg"
               className="w-full lg:w-2/5"
