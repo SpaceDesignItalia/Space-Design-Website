@@ -1,7 +1,6 @@
 import React from "react";
 import { Button, Link } from "@nextui-org/react";
 import SendIcon from "@mui/icons-material/Send";
-import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
@@ -20,43 +19,14 @@ export default function Hero() {
       </div>
       <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
         <div className="flex flex-col gap-5 justify-center items-center text-center">
-          <motion.h1
-            className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl"
-            initial={{ y: 150, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1.5, type: "spring", bounce: 0.25 }}
-          >
-            Trasforma le tue idee in soluzioni{" "}
-            <span className="bg-gradient-to-br from-fuchsia-500 to-blue-600 text-transparent bg-clip-text">
-              software
-            </span>{" "}
-            straordinarie
-          </motion.h1>
-          <motion.p
-            className="lg:w-4/5 mt-6 text-lg leading-8 text-gray-600"
-            initial={{ y: 150, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{
-              duration: 1.5,
-              type: "spring",
-              bounce: 0.25,
-              delay: 0.25,
-            }}
-          >
-            Creiamo software che trasforma l'ordinario in straordinario,
-            ispirati dalle meraviglie dello spazio.
-          </motion.p>
-          <motion.div
-            className="w-full"
-            initial={{ y: 150, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{
-              duration: 1.5,
-              type: "spring",
-              bounce: 0.25,
-              delay: 0.5,
-            }}
-          >
+          <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+            Esprimi la tua unicità digitale con siti web su misura
+          </h1>
+          <p className="lg:w-4/5 mt-6 text-lg leading-8 text-gray-600">
+            Siti Web Che raccontano la tua unicità e coinvolgono il pubblico con
+            stile.
+          </p>
+          <div className="w-full">
             <Button
               as={Link}
               href="/contattaci"
@@ -68,7 +38,7 @@ export default function Hero() {
             >
               Contattaci
             </Button>
-          </motion.div>
+          </div>
         </div>
       </div>
       <div
