@@ -1,5 +1,12 @@
 import React, { useState } from "react";
-import { Button, Input, Textarea, Select, SelectItem } from "@nextui-org/react";
+import {
+  Button,
+  Input,
+  Textarea,
+  Select,
+  SelectItem,
+  Checkbox,
+} from "@nextui-org/react";
 export default function ContactUs() {
   const object = [
     { id: 1, name: "Consulenza" },
@@ -10,8 +17,8 @@ export default function ContactUs() {
   ];
 
   const [service, setService] = useState();
+  const [isSelected, setIsSelected] = useState(false);
 
-  console.log(service);
   return (
     <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
       <div
@@ -44,18 +51,42 @@ export default function ContactUs() {
       >
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
-            <Input type="text" label="Nome" name="nome" variant="faded" />
+            <Input
+              type="text"
+              label="Nome"
+              name="nome"
+              variant="faded"
+              isRequired
+            />
           </div>
           <div>
-            <Input type="text" label="Cognome" name="cognome" variant="faded" />
+            <Input
+              type="text"
+              label="Cognome"
+              name="cognome"
+              variant="faded"
+              isRequired
+            />
           </div>
 
           <div className="sm:col-span-2">
-            <Input type="email" label="Email" name="email" variant="faded" />
+            <Input
+              type="email"
+              label="Email"
+              name="email"
+              variant="faded"
+              isRequired
+            />
           </div>
 
           <div className="sm:col-span-2">
-            <Select label="Oggetto" variant="faded" fullWidth name="oggetto">
+            <Select
+              label="Oggetto"
+              variant="faded"
+              fullWidth
+              name="oggetto"
+              isRequired
+            >
               {object.map((service) => (
                 <SelectItem key={service.id} value={service.name}>
                   {service.name}
@@ -68,11 +99,35 @@ export default function ContactUs() {
               label="Messaggio"
               variant="faded"
               name="messaggio"
+              isRequired
             ></Textarea>
+          </div>
+          <div className="sm:col-span-2">
+            <Checkbox
+              radius="sm"
+              isSelected={isSelected}
+              onValueChange={setIsSelected}
+              fullWidth
+            >
+              Dichiaro di aver preso visione della{" "}
+              <a
+                href="/privacy_policy"
+                className="text-primary hover:underline"
+              >
+                privacy policy
+              </a>
+              *
+            </Checkbox>
           </div>
         </div>
         <div className="mt-10">
-          <Button color="primary" radius="sm" fullWidth type="submit">
+          <Button
+            color="primary"
+            radius="sm"
+            isDisabled={!isSelected}
+            fullWidth
+            type="submit"
+          >
             Contattaci
           </Button>
         </div>

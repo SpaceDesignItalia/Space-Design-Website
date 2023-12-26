@@ -46,7 +46,7 @@ const CookieBanner = () => {
             navigazione. Continuando a utilizzare il sito, accetti l'uso dei
             cookie. Per maggiori dettagli, consulta la nostra{" "}
             <a
-              href="#"
+              href="/privacy_policy"
               className="text-primary whitespace-nowrap hover:underline"
             >
               Politica sui cookie
