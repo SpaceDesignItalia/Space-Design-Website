@@ -6,7 +6,12 @@ import {
   Select,
   SelectItem,
   Checkbox,
+  Card,
+  CardBody,
+  Link,
 } from "@nextui-org/react";
+import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
+
 export default function ContactUs() {
   const object = [
     { id: 1, name: "Consulenza" },
@@ -132,6 +137,24 @@ export default function ContactUs() {
           </Button>
         </div>
       </form>
+
+      <div className="flex flex-row justify-center mt-20">
+        <Card className="w-1/4 py-5" radius="sm">
+          <CardBody className="flex flex-col gap-5 justify-center items-center">
+            <h2 className="text-xl font-bold mb-4">Fissa un appuntamento</h2>
+            <CalendarTodayIcon className="text-blue-500" fontSize="large" />
+            <Button
+              as={Link}
+              target="blank"
+              href="https://calendly.com/spacedesignitalia/30min"
+              color="primary"
+              radius="sm"
+            >
+              Fissa un appuntamento
+            </Button>
+          </CardBody>
+        </Card>
+      </div>
     </div>
   );
 }
