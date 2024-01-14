@@ -13,21 +13,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Debug
-        run: |
-          echo "Content of $GITHUB_WORKSPACE/dist:"
-          ls -al $GITHUB_WORKSPACE/dist
-          echo "Current directory:"
-          pwd
-          echo "Content of space-design (before copy):"
-          cd space-design/
-          ls
-          echo "Trying to copy dist/* to space-design:"
-          cp -r $GITHUB_WORKSPACE/dist/* space-design/
-          echo "Content of space-design (after copy):"
-          ls -al space-design
-        shell: bash
-
       - name: Deploy to server
         if: github.ref == 'refs/heads/master'
         uses: appleboy/ssh-action@master
@@ -37,9 +22,6 @@ jobs:
           password: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd space-design/
-            echo "Content of space-design (before deploy):"
-            ls -al
+            ls
             rm -rf *
-            cp -r $GITHUB_WORKSPACE/dist/* .
-            echo "Content of space-design (after deploy):"
-            ls -al
+            cp -r $GITHUB_WORKSPACE/dist/. .
