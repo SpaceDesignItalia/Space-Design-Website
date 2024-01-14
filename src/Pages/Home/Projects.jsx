@@ -87,7 +87,7 @@ export default function Projects() {
             duration: 1.5,
             type: "spring",
             bounce: 0.25,
-            delay: 0.35,
+            delay: 0.45,
           }}
         >
           <div className="absolute inset-0">
