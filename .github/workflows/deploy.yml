@@ -20,6 +20,7 @@ jobs:
           echo "Current directory:"
           pwd
           echo "Content of space-design (before copy):"
+          cd space-design/
           ls -al space-design
           echo "Trying to copy dist/* to space-design:"
           cp -r $GITHUB_WORKSPACE/dist/* space-design/
