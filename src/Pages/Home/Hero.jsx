@@ -27,7 +27,7 @@ export default function Hero() {
             transition={{ duration: 1.5, type: "spring", bounce: 0.25 }}
           >
             Trasforma le tue idee in soluzioni{" "}
-            <span className="bg-gradient-to-br from-fuchsia-500 to-blue-600 text-transparent bg-clip-text">
+            <span className=" bg-gradient-to-br from-[#FF0000] to-[#B91372] text-transparent bg-clip-text">
               software
             </span>{" "}
             straordinarie

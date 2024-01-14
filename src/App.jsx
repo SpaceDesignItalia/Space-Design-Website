@@ -8,7 +8,7 @@ import Website from "./Pages/Services/Website/Website";
 import CustomSoftware from "./Pages/Services/CustomSoftware/CustomSoftware";
 import AppMobile from "./Pages/Services/AppMobile/AppMobile";
 import ContactUs from "./Pages/Contact/ContactUs";
-import CookieBanner from "./Components/Global/CookieBanner";
+import CookieBanner from "./Components/Global/Other/CookieBanner";
 import ComingSoon from "./Pages/ComingSoon";
 import Error404 from "./Pages/Errors/Error404";
 import PrivacyPolicy from "./Pages/PrivacyPolicy/PrivacyPolicy";
