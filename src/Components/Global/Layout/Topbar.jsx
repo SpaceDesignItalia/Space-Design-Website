@@ -68,7 +68,7 @@ export default function Topbar() {
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex" justify="center">
         <NavbarItem>
-          <Link className="font-bold text-black" href="/">
+          <Link className="font-bold" color="foreground" href="/">
             Home
           </Link>
         </NavbarItem>
@@ -141,7 +141,7 @@ export default function Topbar() {
           </DropdownMenu>
         </Dropdown>
         <NavbarItem>
-          <Link className="font-bold text-black" href="/contattaci">
+          <Link className="font-bold" color="foreground" href="/contattaci">
             Contattaci
           </Link>
         </NavbarItem>

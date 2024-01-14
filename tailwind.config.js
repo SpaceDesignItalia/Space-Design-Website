@@ -15,8 +15,12 @@ export default {
       themes: {
         light: {
           colors: {
-            primary: "#ff0000",
-            foreground: "#ffffff",
+            primary: {
+              100: "#fdd0df",
+              DEFAULT: "#ff0000",
+              foreground: "#ffffff",
+            },
+            foreground: "#000000",
           },
         },
       },
