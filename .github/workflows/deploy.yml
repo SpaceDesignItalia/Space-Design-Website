@@ -21,6 +21,6 @@ jobs:
           username: ${{ secrets.SERVER_USERNAME }}
           password: ${{ secrets.SERVER_PASSWORD }}
           script: |
-            cd /path/to/your/server
+            cd space-design/
             rm -rf *
             cp -r $GITHUB_WORKSPACE/dist/* .
