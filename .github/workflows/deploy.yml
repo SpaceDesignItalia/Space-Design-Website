@@ -25,4 +25,4 @@ jobs:
             cd space-design/
             ls
             rm -rf *
-            cp -r $GITHUB_WORKSPACE/dist .
+            cp -r $GITHUB_WORKSPACE/dist/* .
