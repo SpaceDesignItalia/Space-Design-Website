@@ -3,17 +3,19 @@ import Hero from "./Hero";
 import Partners from "./Partners";
 import GetInTouch from "./GetInTouch";
 import Stats from "./Stats";
-import AboutUs from "./AboutUs";
 import TechStack from "./TechStack";
+import Services from "./Services";
+import Projects from "./Projects";
 
 export default function Home() {
   return (
     <div>
       <Hero />
-      {/* <Partners /> */}
-      <AboutUs />
-      <Stats />
+      <Partners />
+      <Services />
       <TechStack />
+      <Projects />
+      <Stats />
       <GetInTouch />
     </div>
   );

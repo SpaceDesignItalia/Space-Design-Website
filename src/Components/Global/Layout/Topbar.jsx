@@ -78,7 +78,7 @@ export default function Topbar() {
             <DropdownTrigger>
               <Button
                 disableRipple
-                className="bg-transparent data-[hover=true]:bg-transparent font-bold"
+                className="bg-transparent data-[hover=true]:bg-transparent font-bold text-base"
                 endContent={icons.chevron}
                 radius="sm"
                 variant="light"

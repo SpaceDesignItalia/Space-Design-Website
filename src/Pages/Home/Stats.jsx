@@ -13,19 +13,19 @@ export default function Stats() {
     {
       id: 1,
       name: "Tazzine di caffè bevute",
-      value: "1000",
+      value: "2000",
       icon: <CoffeeRoundedIcon fontSize="50px" />,
     },
     {
       id: 2,
       name: "Righe di codice scritto",
-      value: "100",
+      value: "200",
       icon: <CodeRoundedIcon fontSize="50px" />,
     },
     {
       id: 3,
       name: "Commit nelle repository",
-      value: "4000",
+      value: "7000",
       icon: <CommitRoundedIcon fontSize="50px" />,
     },
   ];
