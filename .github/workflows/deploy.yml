@@ -23,5 +23,4 @@ jobs:
           script: |
             ls
             cd space-design/
-            rm -rf *
-            cp -r $GITHUB_WORKSPACE/dist/. .
+            
