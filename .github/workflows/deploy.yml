@@ -22,4 +22,5 @@ jobs:
           password: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd space-design/
+            cp -r $GITHUB_WORKSPACE
             
