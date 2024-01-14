@@ -26,6 +26,5 @@ jobs:
           script: |
             cd space-design/
             rm -rf *
-            ls # Show contents of space-design before copy
-            cp -r $GITHUB_WORKSPACE/dist/* .
-            ls # Show contents of space-design after copy
+            cp -r $GITHUB_WORKSPACE/dist/ .
+            ls 
