@@ -42,7 +42,10 @@ export default function WebsiteCards() {
               key={card.name}
               className="text-left flex gap-x-4 rounded-xl bg-black/5 p-6 ring-1 ring-inset ring-black/10"
             >
-              <card.icon className="h-7 w-5 flex-none" aria-hidden="true" />
+              <card.icon
+                className="text-primary h-7 w-5 flex-none"
+                aria-hidden="true"
+              />
               <div className="text-base leading-7">
                 <h3 className="font-semibold text-black">{card.name}</h3>
                 <p className="mt-2 ">{card.description}</p>
