@@ -7,7 +7,7 @@ const cards = [
   {
     name: "Design accattivanti",
     description:
-      "Ogni sito web che realizziamo è concepito con un occhio attento al dettaglio estetico, combinando estetica moderna con funzionalità intuitiva.",
+      "Ogni app mobile che realizziamo è concepita con un occhio attento al dettaglio estetico, combinando estetica moderna con funzionalità intuitiva.",
     icon: AutoFixHighIcon,
   },
   {
