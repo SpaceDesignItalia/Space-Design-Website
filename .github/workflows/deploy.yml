@@ -24,8 +24,5 @@ jobs:
           username: ${{ secrets.SERVER_USERNAME }}
           password: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd space-design/
-            rm -rf *
-            ls $GITHUB_WORKSPACE/dist
-            cp -r $GITHUB_WORKSPACE/dist .
             ls
+            ls $GITHUB_WORKSPACE/dist
