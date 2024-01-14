@@ -2,9 +2,9 @@ import React from "react";
 
 export default function WhyCustom() {
   return (
-    <div className="bg-gray-50 py-24 sm:py-32">
+    <div className="py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:text-center">
+        <div className="mx-auto max-w-7xl lg:text-center">
           <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Scopri i benefici di un software personalizzato
           </h2>
