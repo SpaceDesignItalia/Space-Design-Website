@@ -1,14 +1,47 @@
 import React from "react";
+import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 import Project1Cover from "../../assets/Projects/AziendaBiancoProjectCover.png";
 import Project2Cover from "../../assets/Projects/GlobalcomProjectCover.png";
 export default function Projects() {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    rootMargin: "-40% 0px",
+  });
   return (
-    <div className="bg-white">
+    <div ref={ref} className="bg-white">
       <div className="flex flex-col gap-10 mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl">
-        <h1 className="text-4xl text-center font-bold tracking-tight text-gray-900">
+        <motion.h1
+          className="text-4xl text-center font-bold tracking-tight text-gray-900"
+          initial="hidden"
+          animate={inView ? "visible" : "hidden"}
+          variants={{
+            hidden: { opacity: 0, y: 150 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          transition={{
+            duration: 1.5,
+            type: "spring",
+            bounce: 0.25,
+          }}
+        >
           Alcuni dei nostri progetti
-        </h1>
-        <div className="relative overflow-hidden rounded-lg lg:h-96">
+        </motion.h1>
+        <motion.div
+          className="relative overflow-hidden rounded-lg lg:h-96"
+          initial="hidden"
+          animate={inView ? "visible" : "hidden"}
+          variants={{
+            hidden: { opacity: 0, y: 150 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          transition={{
+            duration: 1.5,
+            type: "spring",
+            bounce: 0.25,
+            delay: 0.25,
+          }}
+        >
           <div className="absolute inset-0">
             <img
               src={Project1Cover}
@@ -40,9 +73,23 @@ export default function Projects() {
               Case Study
             </a>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="relative overflow-hidden rounded-lg lg:h-96">
+        <motion.div
+          className="relative overflow-hidden rounded-lg lg:h-96"
+          initial="hidden"
+          animate={inView ? "visible" : "hidden"}
+          variants={{
+            hidden: { opacity: 0, y: 150 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          transition={{
+            duration: 1.5,
+            type: "spring",
+            bounce: 0.25,
+            delay: 0.35,
+          }}
+        >
           <div className="absolute inset-0">
             <img
               src={Project2Cover}
@@ -72,7 +119,7 @@ export default function Projects() {
               Case Study
             </a>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
