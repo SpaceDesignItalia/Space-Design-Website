@@ -3,7 +3,7 @@ name: Deploy on master
 on:
   push:
     branches:
-      - "master"
+      - "hotfix/*"
 
 jobs:
   deploy:
@@ -13,15 +13,19 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      - name: Show dist contents before copy
+        run: ls $GITHUB_WORKSPACE/dist
+
       - name: Deploy to server
-        if: github.ref == 'refs/heads/master'
+        if: github.ref == 'refs/heads/hotfix'
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.SERVER_HOST }}
           username: ${{ secrets.SERVER_USERNAME }}
-          password: ${{ secrets.SSH_PRIVATE_KEY }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd space-design/
-            ls
             rm -rf *
-            ls $GITHUB_WORKSPACE/ .
+            ls # Show contents of space-design before copy
+            cp -r $GITHUB_WORKSPACE/dist/* .
+            ls # Show contents of space-design after copy
