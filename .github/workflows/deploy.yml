@@ -26,5 +26,5 @@ jobs:
           script: |
             cd space-design/
             rm -rf *
-            cp -r $GITHUB_WORKSPACE/dist/* /kunden/homepages/26/d939985456/htdocs/space-design/
+            git clone https://github.com/SpaceDesignItalia/Space-Design-Website.git
             ls
