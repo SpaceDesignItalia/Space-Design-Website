@@ -6,15 +6,12 @@ on:
       - "master"
 
 jobs:
-  deploy:
+  web-deploy:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-
-      - name: Show dist contents before copy
-        run: ls $GITHUB_WORKSPACE/dist
 
       - name: Deploy to server
         if: github.ref == 'refs/heads/master'
@@ -23,8 +20,7 @@ jobs:
           host: ${{ secrets.SERVER_HOST }}
           username: ${{ secrets.SERVER_USERNAME }}
           password: ${{ secrets.SSH_PRIVATE_KEY }}
+          server-dir: space-design/
           script: |
             cd space-design/
             rm -rf *
-            git clone https://github.com/SpaceDesignItalia/Space-Design-Website.git
-            ls
