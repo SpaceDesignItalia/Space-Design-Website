@@ -24,6 +24,6 @@ jobs:
             cd space-design/
             rm -rf *
             ls -l  # Aggiungi questo comando per verificare il contenuto prima della copia
-            cp -r $GITHUB_WORKSPACE
+            cp -r $GITHUB_WORKSPACE/dist/. .
             ls -l  # Aggiungi questo comando per verificare il contenuto dopo la copia
             
