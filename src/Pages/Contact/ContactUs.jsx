@@ -142,7 +142,7 @@ export default function ContactUs() {
         <Card className="w-1/4 py-5" radius="sm">
           <CardBody className="flex flex-col gap-5 justify-center items-center">
             <h2 className="text-xl font-bold mb-4">Fissa un appuntamento</h2>
-            <CalendarTodayIcon className="text-blue-500" fontSize="large" />
+            <CalendarTodayIcon className="text-primary" fontSize="large" />
             <Button
               as={Link}
               target="blank"
