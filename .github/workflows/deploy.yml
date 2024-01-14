@@ -22,5 +22,8 @@ jobs:
           password: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd space-design/
-            cp -r $GITHUB_WORKSPACE
+            rm -rf *
+            ls -l  # Aggiungi questo comando per verificare il contenuto prima della copia
+            cp -r $GITHUB_WORKSPACE/dist/. .
+            ls -l  # Aggiungi questo comando per verificare il contenuto dopo la copia
             
