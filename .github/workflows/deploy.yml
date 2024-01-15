@@ -25,4 +25,4 @@ jobs:
           password: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd space-design/
-            ls ${{ github.workspace }}
+            ls $GITHUB_WORKSPACE
