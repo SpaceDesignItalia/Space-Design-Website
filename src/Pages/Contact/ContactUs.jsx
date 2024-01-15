@@ -139,7 +139,7 @@ export default function ContactUs() {
       </form>
 
       <div className="flex flex-row justify-center mt-20">
-        <Card className="w-1/4 py-5" radius="sm">
+        <Card className="w-full lg:w-1/2 xl:w-1/4 py-5" radius="sm">
           <CardBody className="flex flex-col gap-5 justify-center items-center">
             <h2 className="text-xl font-bold mb-4">Fissa un appuntamento</h2>
             <CalendarTodayIcon className="text-primary" fontSize="large" />
