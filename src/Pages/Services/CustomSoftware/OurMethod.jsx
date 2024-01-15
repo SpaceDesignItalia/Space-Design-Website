@@ -11,7 +11,7 @@ const cards = [
     icon: AutoFixHighIcon,
   },
   {
-    name: "Eccellenza in Ogni Dettaglio:",
+    name: "Eccellenza in Ogni Dettaglio",
     description:
       "L'attenzione ai dettagli è il nostro marchio di fabbrica. Ogni funzione, ogni interfaccia è progettata con l'obiettivo di offrire un'esperienza utente impeccabile.",
     icon: SearchIcon,
