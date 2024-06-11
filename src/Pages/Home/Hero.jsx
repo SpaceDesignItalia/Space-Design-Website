@@ -2,6 +2,7 @@ import React from "react";
 import { Button, Link } from "@nextui-org/react";
 import SendIcon from "@mui/icons-material/Send";
 import { motion } from "framer-motion";
+import TypingAnimation from "../../Components/magicui/text-typing";
 
 export default function Hero() {
   return (
@@ -26,11 +27,16 @@ export default function Hero() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1.5, type: "spring", bounce: 0.25 }}
           >
-            Trasforma le tue idee in soluzioni{" "}
-            <span className=" bg-gradient-to-br from-[#FF0000] to-[#B91372] text-transparent bg-clip-text">
-              software
-            </span>{" "}
-            straordinarie
+            <TypingAnimation
+              className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl"
+              duration={100}
+            >
+              Trasforma le tue idee in soluzioni{" "}
+              <span className="bg-gradient-to-br from-[#FF0000] to-[#B91372] text-transparent bg-clip-text">
+                software
+              </span>{" "}
+              straordinarie
+            </TypingAnimation>
           </motion.h1>
           <motion.p
             className="lg:w-4/5 mt-6 text-lg leading-8 text-gray-600"
