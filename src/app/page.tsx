@@ -9,7 +9,6 @@ import { LogoCluster } from '@/components/logo-cluster'
 import { LogoTimeline } from '@/components/logo-timeline'
 import { Map } from '@/components/map'
 import { Navbar } from '@/components/navbar'
-import { Testimonials } from '@/components/testimonials'
 import { Heading, Subheading } from '@/components/text'
 import { ChevronRightIcon } from '@heroicons/react/16/solid'
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone'
@@ -106,7 +105,7 @@ function FeatureSection() {
                     <dt className="inline font-semibold text-gray-900">
                       <feature.icon
                         aria-hidden="true"
-                        className="text-primary absolute left-1 top-1 h-5 w-5"
+                        className="absolute left-1 top-1 h-5 w-5 text-primary"
                       />
                       {feature.name}
                     </dt>{' '}
@@ -194,7 +193,7 @@ function BentoSection() {
 
 function DarkBentoSection() {
   return (
-    <div className="mx-2 mt-2 rounded-4xl bg-gray-900 py-32">
+    <div className="mx-2 mb-10 mt-2 rounded-4xl bg-gray-900 py-32">
       <Container>
         <Subheading dark>Il Nostro Approccio Client-Centric</Subheading>
         <Heading as="h3" dark className="mt-2 max-w-3xl">
@@ -206,7 +205,7 @@ function DarkBentoSection() {
             dark
             eyebrow="Incontro e Collaborazione"
             title="Collaboriamo per il tuo successo"
-            description="Iniziamo ascoltando le tue esigenze. Attraverso uno studio di fattibilità approfondito, il nostro team analizza il tuo progetto per garantirti risultati ottimali. Con RadiantAI, siamo sempre un passo avanti."
+            description="Iniziamo ascoltando le tue esigenze. Attraverso uno studio di fattibilità approfondito, il nostro team analizza il tuo progetto per garantirti risultati ottimali."
             graphic={
               <div className="h-80 bg-[url(/screenshots/networking.png)] bg-[size:851px_344px] bg-no-repeat" />
             }
@@ -263,7 +262,7 @@ export default function Home() {
           </div>
           <DarkBentoSection />
         </main>
-        <Testimonials />
+        {/*  <Testimonials /> */}
         <Footer />
       </div>
     </>
