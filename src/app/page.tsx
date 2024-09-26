@@ -10,7 +10,6 @@ import { LogoTimeline } from '@/components/logo-timeline'
 import { Map } from '@/components/map'
 import { Navbar } from '@/components/navbar'
 import { Heading, Subheading } from '@/components/text'
-import { ChevronRightIcon } from '@heroicons/react/16/solid'
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone'
 import TerminalIcon from '@mui/icons-material/Terminal'
 import WebIcon from '@mui/icons-material/Web'
@@ -20,22 +19,16 @@ function Hero() {
   return (
     <div className="relative">
       <Gradient className="absolute inset-2 bottom-0 rounded-4xl ring-1 ring-inset ring-black/5" />
+
       <Container className="relative">
         <Navbar
           banner={
-            <Button
-              href="/blog/radiant-raises-100m-series-a-from-tailwind-ventures"
-              radius="full"
-              size="sm"
-              color="primary"
-              endContent={<ChevronRightIcon className="ml-2 h-5 w-5" />}
-              className="text-sm"
-            >
-              <span className="font-extrabold">Startup?</span> Sconti fino al
+            <>
+              <span className="font-extrabold">Startup?</span> Sconti fino al{' '}
               <span className="underline">20%</span> per il tuo prodotto
               seguendo le nostre linee guida!{' '}
               <span className="font-bold underline">Scopri di più!</span>
-            </Button>
+            </>
           }
         />
         <div className="pb-24 pt-16 sm:pb-32 sm:pt-24 md:pb-48 md:pt-32">
