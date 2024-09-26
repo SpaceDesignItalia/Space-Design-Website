@@ -22,16 +22,20 @@
     "@nextui-org/theme": "^2.2.11",
     "@sanity/image-url": "^1.0.2",
     "@sanity/vision": "^3.52.2",
+    "@tsparticles/engine": "^3.5.0",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.5.0",
     "clsx": "^2.1.1",
     "dayjs": "^1.11.12",
     "feed": "^4.2.2",
-    "framer-motion": "^11.7.0",
+    "framer-motion": "^11.8.0",
     "next": "14.2.11",
     "next-sanity": "^9.4.7",
     "react": "^18",
     "react-dom": "^18",
     "react-use-measure": "^2.1.1",
-    "sanity": "^3.55.0"
+    "sanity": "^3.55.0",
+    "tailwind-merge": "^2.5.2"
   },
   "devDependencies": {
     "@types/node": "^20",

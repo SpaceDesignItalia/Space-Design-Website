@@ -84,7 +84,7 @@ function DesktopNav() {
             <Dropdown
               as="div"
               classNames={{
-                content: 'backdrop-blur-lg bg-white/40 border-3-black',
+                content: 'backdrop-blur-xl bg-white/40 border-3-black',
               }}
             >
               <DropdownTrigger className="flex items-center px-4 py-3 text-base font-medium text-gray-950 bg-blend-multiply hover:bg-black/[2.5%]">

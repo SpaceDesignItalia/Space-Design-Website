@@ -169,6 +169,7 @@ function Header() {
                             <br />
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;
                             <br />
+                            <br />
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             {/* dasd */}
                             <span className="text-purple-400">{'{'}</span>
@@ -389,13 +390,13 @@ function Strenght() {
                         <span className="text-purple-400">{'('}</span>{' '}
                         <span className="text-blue-300">
                           notificationsEnabled
-                        </span>
+                        </span>{' '}
                         <span className="text-red-500">!==</span>{' '}
                         <span className="text-blue-300">undefined</span>
                         <span className="text-purple-400">{')'}</span>{' '}
                         <span className="text-purple-400">{'{'}</span> <br />
                         &nbsp;&nbsp;&nbsp;&nbsp;
-                        <span className="text-blue-300">console</span>.{' '}
+                        <span className="text-blue-300">console</span>.
                         <span className="text-purple-400">log</span>
                         <span className="text-blue-300">
                           {"('Impostazioni notifica aggiornate:'"}
@@ -409,7 +410,7 @@ function Strenght() {
                         &nbsp;&nbsp;&nbsp;&nbsp;
                         <span className="text-yellow-500">res</span>.
                         <span className="text-purple-400">status</span>
-                        <span className="text-blue-300">(200)</span>.{' '}
+                        <span className="text-blue-300">(200)</span>.
                         <span className="text-purple-400">json</span>
                         <span className="text-blue-300">{'('}</span>
                         <span className="text-yellow-500">{'{'}</span>
@@ -427,7 +428,7 @@ function Strenght() {
                         &nbsp;&nbsp;&nbsp;&nbsp;
                         <span className="text-yellow-500">res</span>.
                         <span className="text-purple-400">status</span>
-                        <span className="text-blue-300">(400)</span>.{' '}
+                        <span className="text-blue-300">(400)</span>.
                         <span className="text-purple-400">json</span>
                         <span className="text-blue-300">{'('}</span>
                         <span className="text-yellow-500">{'{'}</span>
@@ -541,7 +542,7 @@ function FAQ() {
 }
 
 // Main Company component
-export default function Company() {
+export default function CustomSoftware() {
   return (
     <>
       <Loader />
