@@ -11,7 +11,7 @@ import {
   DisclosurePanel,
 } from '@headlessui/react'
 import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline'
-import { Button } from '@nextui-org/react'
+import { Button, Link } from '@nextui-org/react'
 
 import type { Metadata } from 'next'
 
@@ -45,7 +45,13 @@ function Header() {
               </p>
 
               <div className="mt-10 flex items-center gap-x-6">
-                <Button color="primary" radius="full" size="lg">
+                <Button
+                  color="primary"
+                  radius="full"
+                  size="lg"
+                  href="contact"
+                  as={Link}
+                >
                   Scopri di Più
                 </Button>
               </div>

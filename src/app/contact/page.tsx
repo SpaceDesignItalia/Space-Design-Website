@@ -8,6 +8,7 @@ import { Navbar } from '@/components/navbar'
 import {
   Button,
   Input,
+  Link,
   Select,
   SelectItem,
   Switch,
@@ -264,6 +265,8 @@ function ContactForm() {
             radius="full"
             isDisabled={!isFormValid()}
             fullWidth
+            href="/contact"
+            as={Link}
           >
             Contattaci
           </Button>

@@ -16,7 +16,7 @@ import AccessTimeIcon from '@mui/icons-material/AccessTime'
 import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome'
 import GroupAddIcon from '@mui/icons-material/GroupAdd'
 import MonetizationOnIcon from '@mui/icons-material/MonetizationOn'
-import { Button } from '@nextui-org/react'
+import { Button, Link } from '@nextui-org/react'
 
 import type { Metadata } from 'next'
 import Image from 'next/image'
@@ -216,8 +216,14 @@ function Discount() {
                     startup nello sviluppo di software su misura, offrendoti le
                     migliori soluzioni al prezzo giusto.
                   </p>
-                  <div className="mt-6">
-                    <Button color="primary" radius="full" size="lg">
+                  <div className="mt-6 flex justify-center">
+                    <Button
+                      color="primary"
+                      radius="full"
+                      size="lg"
+                      href="/contact"
+                      as={Link}
+                    >
                       Contattaci
                     </Button>
                   </div>

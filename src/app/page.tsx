@@ -13,7 +13,7 @@ import { Heading, Subheading } from '@/components/text'
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone'
 import TerminalIcon from '@mui/icons-material/Terminal'
 import WebIcon from '@mui/icons-material/Web'
-import { Button } from '@nextui-org/react'
+import { Button, Link } from '@nextui-org/react'
 
 function Hero() {
   return (
@@ -44,7 +44,13 @@ function Hero() {
             ispirati dalle meraviglie dello spazio.
           </p>
           <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
-            <Button color="primary" radius="full" size="lg">
+            <Button
+              color="primary"
+              radius="full"
+              size="lg"
+              href="/contact"
+              as={Link}
+            >
               Inizia il tuo viaggio con noi!
             </Button>
           </div>

@@ -10,7 +10,7 @@ import CommitRoundedIcon from '@mui/icons-material/CommitRounded'
 import FolderCopyRoundedIcon from '@mui/icons-material/FolderCopyRounded'
 import LineStyleRoundedIcon from '@mui/icons-material/LineStyleRounded'
 
-import { Button } from '@nextui-org/react'
+import { Button, Link } from '@nextui-org/react'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -183,7 +183,7 @@ function Team() {
             accessibile e intuitiva per tutti.
           </p>
           <div className="mt-6">
-            <Button color="primary" radius="full" href="#">
+            <Button color="primary" radius="full" href="/contact" as={Link}>
               Contattaci ora!
             </Button>
           </div>
