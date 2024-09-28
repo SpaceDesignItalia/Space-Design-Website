@@ -16,7 +16,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Azienda',
   description:
-    'We’re on a mission to transform revenue organizations by harnessing vast amounts of illegally acquired customer data.',
+    'La nostra missione è applicare innovazione e creatività alla crezione di software per ogni esigenza.',
 }
 
 function Header() {

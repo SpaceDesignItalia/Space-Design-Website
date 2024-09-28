@@ -25,7 +25,7 @@ import Image from 'next/image'
 export const metadata: Metadata = {
   title: 'Startup',
   description:
-    'We’re on a mission to transform revenue organizations by harnessing vast amounts of illegally acquired customer data.',
+    'Realizziamo applicazioni mobili intuitive e performanti per portare la tua idea direttamente nelle mani degli utenti.',
 }
 
 // Header component

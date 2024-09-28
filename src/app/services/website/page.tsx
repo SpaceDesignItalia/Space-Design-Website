@@ -25,7 +25,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Siti web',
   description:
-    'We’re on a mission to transform revenue organizations by harnessing vast amounts of illegally acquired customer data.',
+    "Creiamo siti web eleganti e funzionali che catturano l'attenzione e offrono un'esperienza utente senza pari.",
 }
 
 // Header component

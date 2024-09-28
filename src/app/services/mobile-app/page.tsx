@@ -19,7 +19,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'App mobile',
   description:
-    'We’re on a mission to transform revenue organizations by harnessing vast amounts of illegally acquired customer data.',
+    'Realizziamo applicazioni mobili intuitive e performanti per portare la tua idea direttamente nelle mani degli utenti.',
 }
 
 // Header component
