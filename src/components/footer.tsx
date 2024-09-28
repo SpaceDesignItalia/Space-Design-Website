@@ -22,7 +22,7 @@ function CallToAction() {
         ricavi con i nostri strumenti innovativi.
       </p>
       <div className="mt-6">
-        <Button color="primary" radius="full" href="#">
+        <Button as="a" color="primary" radius="full" href="/contact">
           Decolla verso nuove possibilità!
         </Button>
       </div>

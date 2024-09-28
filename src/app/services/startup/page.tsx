@@ -49,8 +49,8 @@ function Header() {
             <div className="mb-10 flex items-center justify-center">
               <p className="mt-4 w-1/2 text-lg text-gray-700 dark:text-gray-300">
                 Siamo qui per creare prodotti innovativi che guidano il successo
-                della tua startup. Dalla concept alla realizzazione, ti aiutiamo
-                a costruire soluzioni uniche e scalabili.
+                della tua startup. Dal concept alla realizzazione, ti aiutiamo a
+                costruire soluzioni uniche e scalabili.
               </p>
             </div>
           </>
@@ -78,20 +78,19 @@ function Discount() {
     },
     {
       name: 'Pagamenti anticipati',
-      description:
-        'Ottieni uno sconto maggiore con pagamenti anticipati o con contratti semestrali o annuali.',
+      description: 'Ottieni uno sconto con pagamenti anticipati.',
       icon: MonetizationOnIcon, // Icona che rappresenta il denaro
     },
     {
       name: 'Collaborazione continua',
       description:
-        'Start-up che scelgono di continuare a sviluppare nuove funzionalità o richiedono manutenzione ottengono sconti progressivi.',
+        'Start-up che scelgono di continuare a sviluppare nuove funzionalità o richiedono manutenzione ottengono sconti.',
       icon: AutoAwesomeIcon, // Icona che rappresenta la continuità e l'ottimizzazione
     },
     {
       name: 'Referral',
       description:
-        'Portaci nuovi clienti e startup per ottenere sconti aggiuntivi su progetti futuri.',
+        'Portaci nuovi clienti e startup per ottenere sconti su progetti futuri.',
       icon: GroupAddIcon, // Icona che rappresenta l'aggiunta di gruppi e referral
     },
   ]
@@ -164,12 +163,9 @@ function Discount() {
                     significativo.
                   </li>
                   <li>
-                    <strong>Pagamenti anticipati:</strong> Per startup che
-                    scelgono di effettuare pagamenti anticipati, offriamo sconti
-                    maggiori. Ad esempio, contratti con fatturazione semestrale
-                    o annuale ti permettono di ridurre ulteriormente i costi e
-                    migliorare la gestione del budget, dandoci maggiore
-                    flessibilità operativa.
+                    <strong>Pagamenti anticipati:</strong> Le startup che
+                    scelgono di effettuare pagamenti anticipati possono
+                    beneficiare di sconti fino al 15%.
                   </li>
                 </ul>
               </div>
@@ -195,10 +191,9 @@ function Discount() {
                       <strong>Collaborazione continua:</strong> Startup che ci
                       affidano lo sviluppo di nuove funzionalità o la
                       manutenzione continua del software possono accedere a
-                      sconti progressivi. Questo approccio garantisce che il tuo
-                      progetto resti allineato alle esigenze di mercato,
-                      migliorando costantemente e beneficiando di un prezzo
-                      agevolato.
+                      sconti. Questo approccio garantisce che il tuo progetto
+                      resti allineato alle esigenze di mercato, migliorando
+                      costantemente e beneficiando di un prezzo agevolato.
                     </li>
                     <li>
                       <strong>Referral:</strong> Presentaci nuove startup o
@@ -252,18 +247,13 @@ function FAQ() {
       question:
         'Quali criteri devo soddisfare per ottenere fino al 20% di sconto?',
       answer:
-        'Le startup possono beneficiare di sconti progressivi basati su quattro criteri principali: sviluppo a lungo termine, pagamenti anticipati, collaborazione continua e referral. Più criteri soddisfi, maggiore sarà lo sconto che possiamo applicare sul progetto. Per esempio, progetti con più fasi o un impegno pluriennale possono ottenere fino al 20% di sconto, mentre pagamenti anticipati possono garantirti un ulteriore risparmio.',
+        'Le startup possono ottenere sconti basati su quattro criteri principali: sviluppo a lungo termine, pagamenti anticipati, collaborazione continua e referral. Maggiore è il numero di criteri soddisfatti, maggiori saranno le possibilità di ricevere uno sconto sul progetto.',
     },
     {
       question:
         'Come funzionano i pagamenti anticipati per ottenere lo sconto?',
       answer:
-        "Offriamo sconti maggiori alle startup che scelgono di pagare in anticipo o di sottoscrivere contratti con fatturazione semestrale o annuale. Questo ci permette di pianificare e ottimizzare le risorse, e in cambio ti offriamo una riduzione sui costi. Se scegli questa opzione, potresti ottenere fino al 15% di sconto in base all'importo e alla durata del contratto.",
-    },
-    {
-      question: 'Cosa succede se il progetto richiede più tempo del previsto?',
-      answer:
-        'Se il progetto si estende oltre la durata pianificata o necessita di fasi aggiuntive, possiamo discutere un aggiornamento del contratto e della scontistica. Progetti a lungo termine, con roadmap estese, ti permettono di mantenere i benefici dello sconto fino al 20%, anche se la durata viene prolungata.',
+        "Offriamo sconti più vantaggiosi alle startup che decidono di pagare in anticipo l'intero importo del progetto. Questo approccio ci consente di pianificare e ottimizzare le risorse in modo più efficiente, e in cambio, ti offriamo una significativa riduzione dei costi.",
     },
     {
       question: 'Come posso beneficiare del programma di referral?',
