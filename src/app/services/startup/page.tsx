@@ -41,7 +41,7 @@ function Header() {
             >
               Sei una{' '}
               <span className="bg-gradient-to-br from-[#FF0000] to-[#B91372] bg-clip-text text-transparent">
-                starup?
+                startup?
               </span>
             </Heading>
             <Heading as="h1">Trasforma la tua visione in realtà</Heading>
@@ -262,7 +262,7 @@ function FAQ() {
     {
       question: 'Come posso beneficiare del programma di referral?',
       answer:
-        'Il nostro programma di referral è semplice: se ci presenti nuove startup o clienti che iniziano un progetto con noi, otterrai uno sconto aggiuntivo sui tuoi progetti futuri. Ogni cliente che ci porti ti garantisce uno sconto progressivo, che può essere cumulato per massimizzare i tuoi risparmi.',
+        'Il nostro programma di referral è semplice: se ci presenti nuove startup o clienti che iniziano un progetto con noi, otterrai uno sconto aggiuntivo sui tuoi progetti futuri.',
     },
     {
       question: 'Quali sono i vantaggi di una collaborazione continua?',

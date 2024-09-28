@@ -165,7 +165,7 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
       {banner && (
         <div className="relative left-0 flex w-full items-center rounded-bl-xl rounded-br-xl bg-primary p-2">
           <p className="w-full text-center text-sm leading-6 text-white">
-            <a href="#">
+            <a href="/services/startup">
               {banner}
               <span aria-hidden="true">&rarr;</span>
             </a>
