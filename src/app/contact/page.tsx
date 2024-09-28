@@ -14,6 +14,7 @@ export default function Page() {
     firstName: '',
     lastName: '',
     email: '',
+    company: '',
     object: '',
     message: '',
     budget: '',
@@ -21,7 +22,7 @@ export default function Page() {
 
   const [agreed, setAgreed] = useState(false)
 
-  const handleInputChange = (name, value) => {
+  const handleInputChange = (name: any, value: any) => {
     setFormData((prevData) => ({
       ...prevData,
       [name]: value,
@@ -48,7 +49,7 @@ export default function Page() {
         <Container>
           <Navbar />
         </Container>
-        <div className="isolate rounded-lg bg-white bg-opacity-90 px-6 py-24 shadow-lg sm:py-32 lg:px-8">
+        <div className="isolate rounded-lg bg-opacity-90 px-6 py-24 shadow-lg sm:py-32 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               Contattaci
@@ -74,7 +75,7 @@ export default function Page() {
                   htmlFor="first-name"
                   className="block text-sm font-semibold leading-6 text-gray-900"
                 >
-                  Nome{' '}
+                  Nome <span className="text-primary">*</span>
                 </label>
                 <div className="mt-2.5">
                   <Input
@@ -98,7 +99,7 @@ export default function Page() {
                   htmlFor="last-name"
                   className="block text-sm font-semibold leading-6 text-gray-900"
                 >
-                  Cognome{' '}
+                  Cognome <span className="text-primary">*</span>
                 </label>
                 <div className="mt-2.5">
                   <Input
@@ -122,7 +123,7 @@ export default function Page() {
                   htmlFor="email"
                   className="block text-sm font-semibold leading-6 text-gray-900"
                 >
-                  Email{' '}
+                  Email <span className="text-primary">*</span>
                 </label>
                 <div className="mt-2.5">
                   <Input
@@ -138,13 +139,35 @@ export default function Page() {
                 </div>
               </div>
 
+              <div className="sm:col-span-2">
+                <label
+                  htmlFor="object"
+                  className="block text-sm font-semibold leading-6 text-gray-900"
+                >
+                  Azienda{' '}
+                </label>
+                <div className="mt-2.5">
+                  <Input
+                    variant="bordered"
+                    id="company"
+                    name="company"
+                    type="text"
+                    value={formData.company}
+                    onChange={(e) =>
+                      handleInputChange('company', e.target.value)
+                    }
+                    placeholder="Inserisci il nome dell'azienda"
+                  />
+                </div>
+              </div>
+
               {/* Oggetto */}
               <div className="sm:col-span-2">
                 <label
                   htmlFor="object"
                   className="block text-sm font-semibold leading-6 text-gray-900"
                 >
-                  Oggetto{' '}
+                  Oggetto <span className="text-primary">*</span>
                 </label>
                 <div className="mt-2.5">
                   <Select
@@ -177,7 +200,7 @@ export default function Page() {
                   htmlFor="budget"
                   className="block text-sm font-semibold leading-6 text-gray-900"
                 >
-                  Budget{' '}
+                  Budget <span className="text-primary">*</span>
                 </label>
                 <div className="mt-2.5">
                   <Select
@@ -207,7 +230,7 @@ export default function Page() {
                   htmlFor="message"
                   className="block text-sm font-semibold leading-6 text-gray-900"
                 >
-                  Messaggio{' '}
+                  Messaggio <span className="text-primary">*</span>
                 </label>
                 <div className="mt-2.5">
                   <Textarea
@@ -243,6 +266,7 @@ export default function Page() {
                   htmlFor="privacy"
                   className="block text-sm leading-6 text-gray-900"
                 >
+                  <span className="text-primary">*</span>
                   Dichiaro di aver preso visione della{' '}
                   <a href="/privacy-policy" className="text-red-600 underline">
                     Privacy Policy
@@ -255,12 +279,10 @@ export default function Page() {
             <div className="mt-10">
               <Button
                 type="submit"
-                disabled={!isFormValid()}
-                className={`block w-full rounded-md ${
-                  isFormValid()
-                    ? 'bg-red-600 text-white hover:bg-red-700 focus-visible:ring focus-visible:ring-red-500 focus-visible:ring-opacity-50'
-                    : 'text-black-500 cursor-not-allowed'
-                } font-semibold`}
+                color="primary"
+                radius="full"
+                isDisabled={!isFormValid()}
+                fullWidth
               >
                 Contattaci
               </Button>
