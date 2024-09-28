@@ -161,14 +161,17 @@ function Team() {
       <div className="mt-12 grid grid-cols-1 gap-12 lg:grid-cols-2">
         <div className="max-w-lg">
           <p className="text-sm/6 text-gray-600">
-            Anni fa, quattro ragazzi con sogni audaci e un forte spirito
-            imprenditoriale si sono uniti per dare vita a Space Design. Mentre
-            lavoravano in diverse aziende del settore, si resero conto di quanto
-            fosse difficile trovare un partner affidabile e innovativo per lo
-            sviluppo software. Così, hanno deciso di unire le forze e mettere in
-            campo le loro competenze per creare un’azienda che non fosse solo un
-            fornitore di servizi, ma un vero e proprio compagno di viaggio per
-            le imprese in cerca di soluzioni digitali all’avanguardia.
+            Qualche anno fa, un gruppo di visionari si è trovato a condividere
+            un sogno: creare un mondo digitale in cui ogni impresa potesse
+            esprimere la propria unicità. Così è nata Space Design, un'idea
+            frutto di passione e determinazione. Quattro giovani talenti,
+            provenienti da esperienze diverse nel settore tecnologico, si resero
+            conto di quanto fosse complicato trovare un partner che non fosse
+            solo un fornitore, ma un vero e proprio alleato nel viaggio verso
+            l'innovazione. Sospinti dalla loro ambizione, decisero di unire le
+            forze per costruire un'azienda che mettesse al centro i sogni dei
+            propri clienti, offrendo soluzioni digitali su misura e
+            all’avanguardia.
           </p>
           <p className="mt-8 text-sm/6 text-gray-600">
             Oggi, Space Design si distingue per la sua capacità di fornire
@@ -186,10 +189,11 @@ function Team() {
           </div>
         </div>
         <div className="max-lg:order-first max-lg:max-w-lg">
-          <div className="aspect-[3/2] overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
+          <div /* className="aspect-[3/2] overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10" */
+          >
             <img
               alt="Team Space Design"
-              src="/company/5.jpg"
+              src="/company/SpaceDesignLogoLong.png"
               className="block size-full object-cover"
             />
           </div>

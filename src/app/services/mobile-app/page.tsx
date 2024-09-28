@@ -414,7 +414,7 @@ function FAQ() {
 }
 
 // Main Company component
-export default function CustomSoftware() {
+export default function CustomApp() {
   return (
     <>
       <Loader />
