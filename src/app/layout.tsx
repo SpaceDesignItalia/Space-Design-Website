@@ -1,3 +1,4 @@
+import CookieBanner from '@/components/cookie-banner'
 import '@/styles/tailwind.css'
 import type { Metadata } from 'next'
 import { Providers } from './providers'
@@ -29,6 +30,7 @@ export default function RootLayout({
         />
       </head>
       <body className="text-gray-950 antialiased">
+        <CookieBanner />
         <Providers>{children}</Providers>
       </body>
     </html>

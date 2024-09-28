@@ -24,7 +24,7 @@ export default function Loader() {
           className="fixed top-0 z-50 flex min-h-screen w-full items-center justify-center backdrop-blur-lg backdrop-filter"
           initial={{ opacity: 1 }} // Opacità iniziale
           animate={{ opacity: isExiting ? 0 : 1 }} // Cambia l'opacità in base allo stato di uscita
-          transition={{ duration: 0.3 }} // Durata della transizione
+          transition={{ duration: 0.2 }} // Durata della transizione
         >
           <div className="relative h-64 w-64 p-8">
             <svg
@@ -48,7 +48,7 @@ export default function Loader() {
                       offset: ['0%', '100%'],
                     }}
                     transition={{
-                      duration: 1, // Ridotto da 1.5 a 1 secondo
+                      duration: 0.5, // Ridotto da 1.5 a 1 secondo
                       delay: 1, // Ridotto da 2 a 1 secondo
                       ease: 'easeInOut',
                     }}
@@ -61,7 +61,7 @@ export default function Loader() {
                       offset: ['0%', '100%'],
                     }}
                     transition={{
-                      duration: 1, // Ridotto da 1.5 a 1 secondo
+                      duration: 0.5, // Ridotto da 1.5 a 1 secondo
                       delay: 1, // Ridotto da 2 a 1 secondo
                       ease: 'easeInOut',
                     }}
@@ -82,7 +82,7 @@ export default function Loader() {
                       offset: ['0%', '100%'],
                     }}
                     transition={{
-                      duration: 1, // Ridotto da 1.5 a 1 secondo
+                      duration: 0.5, // Ridotto da 1.5 a 1 secondo
                       delay: 1, // Ridotto da 2 a 1 secondo
                       ease: 'easeInOut',
                     }}
@@ -95,7 +95,7 @@ export default function Loader() {
                       offset: ['0%', '100%'],
                     }}
                     transition={{
-                      duration: 1, // Ridotto da 1.5 a 1 secondo
+                      duration: 0.5, // Ridotto da 1.5 a 1 secondo
                       delay: 1, // Ridotto da 2 a 1 secondo
                       ease: 'easeInOut',
                     }}
