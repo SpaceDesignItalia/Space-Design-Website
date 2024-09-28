@@ -172,9 +172,6 @@ function ContactForm() {
                 isRequired
                 placeholder="Seleziona l'oggetto"
               >
-                <SelectItem key="" hidden>
-                  Seleziona un'opzione
-                </SelectItem>
                 <SelectItem key="consulenza">Consulenza</SelectItem>
                 <SelectItem key="sito-web">Sito Web</SelectItem>
                 <SelectItem key="software-personalizzato">
@@ -205,9 +202,6 @@ function ContactForm() {
                 isRequired
                 placeholder="Seleziona budget"
               >
-                <SelectItem key="" hidden>
-                  Seleziona un'opzione
-                </SelectItem>
                 <SelectItem key="0-5000">€0 - €5.000</SelectItem>
                 <SelectItem key="5000-10000">€5.000 - €10.000</SelectItem>
                 <SelectItem key="10000-20000">€10.000 - €20.000</SelectItem>
