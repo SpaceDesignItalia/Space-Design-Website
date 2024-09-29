@@ -19,7 +19,6 @@ import MonetizationOnIcon from '@mui/icons-material/MonetizationOn'
 import { Button, Link } from '@nextui-org/react'
 
 import type { Metadata } from 'next'
-import Image from 'next/image'
 
 // Page metadata
 export const metadata: Metadata = {
@@ -56,13 +55,12 @@ function Header() {
           </>
         }
       >
-        <Image
+        <img
           src={`/screenshots/app.png`}
           alt="hero"
           height={720}
           width={1400}
           className="mx-auto h-full rounded-2xl object-cover object-left-top"
-          draggable={false}
         />
       </ContainerScroll>
     </div>

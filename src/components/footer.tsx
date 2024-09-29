@@ -1,9 +1,12 @@
+'use client'
+
 import { PlusGrid, PlusGridItem, PlusGridRow } from '@/components/plus-grid'
 import { Button } from '@nextui-org/react'
+import { clsx } from 'clsx'
+import { motion } from 'framer-motion'
 import { Container } from './container'
 import { Gradient } from './gradient'
 import { Link } from './link'
-import { Logo } from './logo'
 import { Subheading } from './text'
 
 function CallToAction() {
@@ -56,7 +59,7 @@ function Sitemap() {
         <SitemapHeading>Sitemap</SitemapHeading>
         <SitemapLinks>
           <SitemapLink href="/">Home</SitemapLink>
-          <SitemapLink href="/company">Azienda</SitemapLink>
+          <SitemapLink href="/about">Azienda</SitemapLink>
           <SitemapLink href="/contact">Contattaci</SitemapLink>
         </SitemapLinks>
       </div>
@@ -162,6 +165,10 @@ function Copyright() {
 }
 
 export function Footer() {
+  let transition = {
+    duration: 0.5,
+    ease: 'easeInOut',
+  }
   return (
     <footer>
       <Gradient className="relative">
@@ -173,7 +180,20 @@ export function Footer() {
               <div className="grid grid-cols-2 gap-y-10 pb-6 lg:grid-cols-6 lg:gap-8">
                 <div className="col-span-2 flex">
                   <PlusGridItem className="pt-6 lg:pb-6">
-                    <Logo className="h-9" />
+                    <motion.div
+                      initial="idle"
+                      whileHover="active"
+                      transition={transition}
+                      className={clsx('h-9 overflow-visible')}
+                    >
+                      <img
+                        src="/logo-cloud/logo.png" // Riferimento all'immagine importata
+                        alt="Logo"
+                        width={107} // Larghezza dell'immagine
+                        height={14} // Altezza dell'immagine
+                        className="object-contain" // Tailwind per assicurare che l'immagine sia ben contenuta
+                      />
+                    </motion.div>
                   </PlusGridItem>
                 </div>
                 <div className="col-span-2 grid grid-cols-2 gap-x-8 gap-y-12 lg:col-span-4 lg:grid-cols-subgrid lg:pt-6">

@@ -19,9 +19,9 @@ import {
   DropdownMenu,
   DropdownTrigger,
 } from '@nextui-org/react'
+import { clsx } from 'clsx'
 import { motion } from 'framer-motion'
 import { Link } from './link'
-import { Logo } from './logo'
 import { PlusGrid, PlusGridItem, PlusGridRow } from './plus-grid'
 
 interface Link {
@@ -63,7 +63,7 @@ const links: Link[] = [
       },
     ],
   },
-  { href: '/company', label: 'Azienda' },
+  { href: '/about', label: 'Azienda' },
   { href: '/contact', label: 'Contattaci' },
   { href: '/login', label: 'Login' },
 ]
@@ -174,7 +174,7 @@ function MobileNav() {
                   title: 'text-base font-medium text-gray-950',
                   trigger:
                     'data-[hover=true]:bg-default-100 rounded-lg flex items-center py-0',
-                  indicator: 'text-medium',
+                  indicator: 'text-medium text-black',
                   content: 'text-small',
                 }}
               >
@@ -184,6 +184,7 @@ function MobileNav() {
                       <a
                         href={link.href}
                         className="text-smdata-[focus]:bg-gray-100 group flex flex-row items-center gap-2 px-4 py-2 data-[focus]:text-gray-900"
+                        key={link.href}
                       >
                         <link.icon />
                         {link.label}
@@ -197,14 +198,24 @@ function MobileNav() {
         )}
       </div>
       <div className="absolute left-1/2 w-screen -translate-x-1/2">
-        <div className="absolute inset-x-0 top-0 border-t border-black/5" />
-        <div className="absolute inset-x-0 top-2 border-t border-black/5" />
+        <div
+          className="absolute inset-x-0 top-0 border-t border-black/5"
+          key={1}
+        />
+        <div
+          className="absolute inset-x-0 top-2 border-t border-black/5"
+          key={2}
+        />
       </div>
     </DisclosurePanel>
   )
 }
 
 export function Navbar({ banner }: { banner?: React.ReactNode }) {
+  let transition = {
+    duration: 0.5,
+    ease: 'easeInOut',
+  }
   return (
     <>
       {banner && (
@@ -223,7 +234,21 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
             <div className="relative flex gap-6">
               <PlusGridItem className="py-3">
                 <Link href="/" title="Home">
-                  <Logo />
+                  <motion.div
+                    variants={{ idle: {}, active: {} }}
+                    initial="idle"
+                    whileHover="active"
+                    transition={transition}
+                    className={clsx('overflow-visible')}
+                  >
+                    <img
+                      src="/logo-cloud/logo.png" // Riferimento all'immagine importata
+                      alt="Logo"
+                      width={107} // Larghezza dell'immagine
+                      height={14} // Altezza dell'immagine
+                      className="object-contain" // Tailwind per assicurare che l'immagine sia ben contenuta
+                    />
+                  </motion.div>
                 </Link>
               </PlusGridItem>
             </div>
