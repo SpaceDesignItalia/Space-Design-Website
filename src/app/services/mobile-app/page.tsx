@@ -49,7 +49,7 @@ function Header() {
                   color="primary"
                   radius="full"
                   size="lg"
-                  href="contact"
+                  href="/contact"
                   as={Link}
                 >
                   Scopri di Più
