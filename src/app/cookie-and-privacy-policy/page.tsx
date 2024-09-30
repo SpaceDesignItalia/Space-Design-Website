@@ -72,7 +72,7 @@ function PolicyContent() {
             soddisfare le finalità per cui sono stati raccolti, o come richiesto
             dalla legge. Hai il diritto di accedere, rettificare, cancellare,
             limitare o opporti al trattamento dei tuoi dati personali. Puoi
-            contattarci all’indirizzo email: [inserisci la tua email].
+            contattarci all’indirizzo email: clienti@spacedesign-italia.it
           </p>
 
           <h2 className="mt-16 text-xl font-bold tracking-tight text-gray-900 sm:text-4xl">
