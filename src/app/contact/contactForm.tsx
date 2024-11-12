@@ -1,15 +1,16 @@
 'use client'
 
+import emailjs from '@emailjs/browser'
 import {
   Button,
   Input,
-  Link,
   Select,
   SelectItem,
   Switch,
   Textarea,
 } from '@nextui-org/react'
-import { useState } from 'react'
+import { useRef, useState } from 'react'
+import dotenv from 'react-dotenv'
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -23,6 +24,9 @@ export default function ContactForm() {
   })
 
   const [agreed, setAgreed] = useState(false)
+  const [objects, setObjects] = useState([])
+  const [budgets, setBudgets] = useState([])
+  const formRef = useRef<HTMLFormElement>(null)
 
   const handleInputChange = (name: any, value: any) => {
     setFormData((prevData) => ({
@@ -42,6 +46,51 @@ export default function ContactForm() {
       agreed
     )
   }
+  /*
+  useEffect(() => {
+    
+    const fetchObjects = async () => {
+      try {
+        const response = await axios.get('/api/Lead/GET/GetObjects') // Cambia l'URL se necessario
+        setObjects(response.data)
+      } catch (error) {
+        console.error('Errore nel fetch degli oggetti:', error)
+      }
+    }
+
+    const fetchBudgets = async () => {
+      try {
+        const response = await axios.get('/api/Lead/GET/GetRanges') // Cambia l'URL se necessario
+        setBudgets(response.data)
+      } catch (error) {
+        console.error('Errore nel fetch dei budget:', error)
+      }
+    }
+
+    fetchObjects()
+    fetchBudgets()
+    
+  }, [])*/
+
+  const handleSubmit = async (e: any) => {
+    e.preventDefault()
+    if (formRef.current) {
+      try {
+        await emailjs.sendForm(
+          dotenv.SERVICE_ID,
+          dotenv.TEMPLATE_ID,
+          formRef.current,
+          dotenv.PUBLIC_KEY,
+        )
+        console.log('Modulo inviato con successo!')
+      } catch (error) {
+        console.error("Errore nell'invio del modulo:", error)
+      }
+    } else {
+      console.error('Il riferimento al modulo è nullo.')
+    }
+  }
+
   return (
     <div className="isolate rounded-lg bg-opacity-90 px-6 py-24 shadow-lg sm:py-32 lg:px-8">
       <div className="mx-auto max-w-2xl text-center">
@@ -56,11 +105,10 @@ export default function ContactForm() {
         </p>
       </div>
       <form
-        action="https://formsubmit.co/clienti@spacedesign-italia.it"
-        method="POST"
+        ref={formRef}
+        onSubmit={handleSubmit}
         className="mx-auto mt-16 max-w-xl sm:mt-20"
       >
-        <input type="hidden" name="_template" value="table" />
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           {/* Nome */}
           <div>
@@ -130,10 +178,10 @@ export default function ContactForm() {
 
           <div className="sm:col-span-2">
             <label
-              htmlFor="object"
+              htmlFor="company"
               className="block text-sm font-semibold leading-6 text-gray-900"
             >
-              Azienda{' '}
+              Azienda
             </label>
             <div className="mt-2.5">
               <Input
@@ -166,14 +214,19 @@ export default function ContactForm() {
                 isRequired
                 placeholder="Seleziona l'oggetto"
               >
-                <SelectItem key="consulenza">Consulenza</SelectItem>
-                <SelectItem key="sito-web">Sito Web</SelectItem>
-                <SelectItem key="software-personalizzato">
+                {/*
+                {objects.map((obj) => (
+                  <SelectItem key={obj.IdObject}>{obj.Name}</SelectItem>
+                ))}
+                */}
+                <SelectItem key={'Consulenza'}>Consulenza</SelectItem>
+                <SelectItem key={'Sito web'}>Sito web</SelectItem>
+                <SelectItem key={'Software Personalizzato'}>
                   Software Personalizzato
                 </SelectItem>
-                <SelectItem key="app-mobile">App Mobile</SelectItem>
-                <SelectItem key="seo">Startup</SelectItem>
-                <SelectItem key="altro">Altro</SelectItem>
+                <SelectItem key={'App mobile'}>App mobile</SelectItem>
+                <SelectItem key={'Startup'}>Startup</SelectItem>
+                <SelectItem key={'Altro'}>Altro</SelectItem>
               </Select>
             </div>
           </div>
@@ -196,11 +249,18 @@ export default function ContactForm() {
                 isRequired
                 placeholder="Seleziona budget"
               >
-                <SelectItem key="0-5000">€0 - €5.000</SelectItem>
-                <SelectItem key="5000-10000">€5.000 - €10.000</SelectItem>
-                <SelectItem key="10000-20000">€10.000 - €20.000</SelectItem>
-                <SelectItem key="20000-30000">€20.000 - €30.000</SelectItem>
-                <SelectItem key="30000-oltre">€30.000 e oltre</SelectItem>
+                {/*
+                {budgets.map((budget) => (
+                  <SelectItem key={budget.IdBudget}>{budget.Range}</SelectItem>
+                ))}
+              
+              */}
+
+                <SelectItem key={'0-5000'}>€0 - €5000</SelectItem>
+                <SelectItem key={'5000-10000'}>€5000 - €10000</SelectItem>
+                <SelectItem key={'10000-20000'}>€10000 - €20000</SelectItem>
+                <SelectItem key={'20000-30000'}>€20000 - €30000</SelectItem>
+                <SelectItem key={'30000 e oltre'}>€30000 e oltre</SelectItem>
               </Select>
             </div>
           </div>
@@ -245,16 +305,13 @@ export default function ContactForm() {
           </div>
         </div>
 
-        {/* Pulsante Invio */}
-        <div className="mt-10">
+        <div className="mt-8">
           <Button
             type="submit"
-            color="primary"
-            radius="full"
             isDisabled={!isFormValid()}
-            fullWidth
-            href="/contact"
-            as={Link}
+            color="primary"
+            size="lg"
+            className="w-full"
           >
             Contattaci
           </Button>
