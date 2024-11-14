@@ -17,9 +17,34 @@ import type { Metadata } from 'next'
 
 // Page metadata
 export const metadata: Metadata = {
-  title: 'Software Personalizzato',
+  // Titolo della pagina
+  title: 'Software su misura per il tuo successo | Space Design Italia',
+
+  // Descrizione della pagina
   description:
-    'Progettiamo software personalizzato per rispondere perfettamente alle esigenze uniche della tua azienda.',
+    'Scopri come i nostri software customizzati possono trasformare il tuo business. Soluzioni su misura per soddisfare ogni esigenza e garantire il massimo successo.',
+
+  // URL canonico per evitare contenuti duplicati
+  alternates: {
+    canonical: 'https://www.spacedesign-italia.it/services/custom-software', // Modifica in base alla struttura URL
+  },
+
+  // Open Graph per i social media
+  openGraph: {
+    title: 'Software su misura per il tuo successo | Space Design Italia',
+    description:
+      'Inizia il tuo percorso digitale con Space Design Italia. Offriamo soluzioni software personalizzate per ogni tipo di esigenza, progettate per ottimizzare il tuo business e migliorare la sicurezza e l’efficienza operativa.',
+    url: 'https://www.spacedesign-italia.it/services/custom-software', // Assicurati di usare l'URL giusto per questa pagina
+    type: 'website',
+    images: [
+      {
+        url: '/og-links/SpaceDesignBanner.png', // Assicurati che l'immagine sia rappresentativa della pagina
+        width: 1200,
+        height: 630,
+        alt: 'Software su misura per il tuo successo con Space Design Italia',
+      },
+    ],
+  },
 }
 
 // Header component

@@ -23,9 +23,32 @@ import type { Metadata } from 'next'
 
 // Page metadata
 export const metadata: Metadata = {
-  title: 'Siti web',
+  title:
+    'Creazione di Siti Professionali e Personalizzati | Space Design Italia',
   description:
-    "Creiamo siti web eleganti e funzionali che catturano l'attenzione e offrono un'esperienza utente senza pari.",
+    "Creiamo siti web eleganti e funzionali che catturano l'attenzione e offrono un'esperienza utente senza pari. Soluzioni su misura per ogni tipo di business.",
+
+  alternates: {
+    canonical: 'https://www.spacedesign-italia.it/services/mobile-app', // Modifica in base alla struttura URL
+  },
+
+  openGraph: {
+    title:
+      'Creazione di Siti Professionali e Personalizzati | Space Design Italia',
+    description:
+      'Offriamo servizi di sviluppo web che combinano design elegante, funzionalità avanzate, e ottimizzazione per dispositivi mobili. Porta il tuo business online!',
+    url: 'https://www.spacedesign-italia.it/services/mobile-app', // Inserisci l'URL effettivo della tua pagina
+    siteName: 'SpaceDesignItalia',
+    images: [
+      {
+        url: '/og-links/SpaceDesignAppBanner.png', // L'URL dell'immagine di anteprima
+        width: 1200,
+        height: 630,
+        alt: 'Creazione di Siti Professionali e Personalizzati',
+      },
+    ],
+    type: 'website',
+  },
 }
 
 // Header component

@@ -17,9 +17,34 @@ import type { Metadata } from 'next'
 
 // Page metadata
 export const metadata: Metadata = {
-  title: 'App mobile',
+  // Titolo della pagina
+  title: 'App Personalizzate per il Tuo Business | Space Design Italia',
+
+  // Descrizione della pagina
   description:
-    'Realizziamo applicazioni mobili intuitive e performanti per portare la tua idea direttamente nelle mani degli utenti.',
+    'Sviluppa soluzioni app personalizzate per il tuo business. Offriamo software su misura, integrato con le tue piattaforme, sicuro e con pieno controllo del codice per il massimo controllo operativo.',
+
+  // URL canonico per evitare contenuti duplicati
+  alternates: {
+    canonical: 'https://www.spacedesign-italia.it/services/mobile-app', // Modifica in base alla struttura URL
+  },
+
+  // Open Graph per i social media
+  openGraph: {
+    title: 'App Personalizzate per il Tuo Business | Space Design Italia',
+    description:
+      'Scopri come sviluppare app su misura per ottimizzare il tuo business. Le nostre soluzioni software personalizzate sono sicure, facili da integrare e ti offrono il pieno controllo del codice.',
+    url: 'https://www.spacedesign-italia.it/services/mobile-app', // Assicurati di usare l'URL giusto per questa pagina
+    type: 'website',
+    images: [
+      {
+        url: '/og-links/SpaceDesignAppBanner.png', // Assicurati che l'immagine sia rappresentativa della pagina
+        width: 1200,
+        height: 630,
+        alt: 'App personalizzate per il business con Space Design Italia',
+      },
+    ],
+  },
 }
 
 // Header component

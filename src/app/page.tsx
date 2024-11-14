@@ -14,6 +14,40 @@ import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone'
 import TerminalIcon from '@mui/icons-material/Terminal'
 import WebIcon from '@mui/icons-material/Web'
 import { Button, Link } from '@nextui-org/react'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  // Titolo della pagina
+  title:
+    'Space Design Italia | Trasforma le tue idee in soluzioni software straordinarie',
+
+  // Descrizione della pagina
+  description:
+    "Creiamo soluzioni software su misura per il successo digitale della tua azienda. Dal web al mobile, sviluppiamo con precisione e tecnologie all'avanguardia.",
+
+  // Canonical URL
+  alternates: {
+    canonical: 'https://www.spacedesign-italia.it/',
+  },
+
+  // Open Graph per i social media
+  openGraph: {
+    title:
+      'Space Design Italia | Trasforma le tue idee in soluzioni software straordinarie',
+    description:
+      'Scopri come il nostro team di esperti può aiutarti a sviluppare software personalizzati, app mobile, e siti web perfettamente integrati per le tue necessità aziendali.',
+    url: 'https://www.spacedesign-italia.it/',
+    type: 'website',
+    images: [
+      {
+        url: '/og-links/SpaceDesignBanner.png',
+        width: 1200,
+        height: 630,
+        alt: 'Software innovativo per il tuo business',
+      },
+    ],
+  },
+}
 
 function Hero() {
   return (

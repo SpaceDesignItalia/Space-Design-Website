@@ -1,17 +1,18 @@
 'use client'
 
+import emailjs from '@emailjs/browser'
 import {
   Button,
   Input,
-  Link,
   Select,
   SelectItem,
   Switch,
   Textarea,
 } from '@nextui-org/react'
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 
 export default function ContactForm() {
+  const form = useRef<HTMLFormElement | null>(null)
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -24,7 +25,7 @@ export default function ContactForm() {
 
   const [agreed, setAgreed] = useState(false)
 
-  const handleInputChange = (name: any, value: any) => {
+  const handleInputChange = (name: string, value: string) => {
     setFormData((prevData) => ({
       ...prevData,
       [name]: value,
@@ -42,6 +43,33 @@ export default function ContactForm() {
       agreed
     )
   }
+
+  const handleFormSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+
+    if (!form.current) return
+
+    try {
+      const response = await emailjs.sendForm(
+        String(process.env.NEXT_PUBLIC_SERVICE_ID), // Service ID
+        String(process.env.NEXT_PUBLIC_TEMPLATE_ID), // Template ID
+        form.current, // Reference to the form
+        {
+          publicKey: String(process.env.NEXT_PUBLIC_PUBLIC_KEY), // Public Key
+        },
+      )
+
+      if (response.status === 200) {
+        window.location.href = '/message-sent'
+      }
+      console.log('Success:', response)
+      // Gestire la risposta positiva, come un messaggio di conferma
+    } catch (error) {
+      console.error('Error:', error)
+      // Gestire gli errori (ad esempio, visualizzando un messaggio di errore)
+    }
+  }
+
   return (
     <div className="isolate rounded-lg bg-opacity-90 px-6 py-24 shadow-lg sm:py-32 lg:px-8">
       <div className="mx-auto max-w-2xl text-center">
@@ -55,9 +83,10 @@ export default function ContactForm() {
           presto. La tua opinione è importante per noi.
         </p>
       </div>
+
       <form
-        action="https://formsubmit.co/clienti@spacedesign-italia.it"
-        method="POST"
+        ref={form}
+        onSubmit={handleFormSubmit}
         className="mx-auto mt-16 max-w-xl sm:mt-20"
       >
         <input type="hidden" name="_template" value="table" />
@@ -128,12 +157,13 @@ export default function ContactForm() {
             </div>
           </div>
 
+          {/* Azienda */}
           <div className="sm:col-span-2">
             <label
-              htmlFor="object"
+              htmlFor="company"
               className="block text-sm font-semibold leading-6 text-gray-900"
             >
-              Azienda{' '}
+              Azienda
             </label>
             <div className="mt-2.5">
               <Input
@@ -162,7 +192,7 @@ export default function ContactForm() {
                 id="object"
                 name="object"
                 value={formData.object}
-                onChange={(key) => handleInputChange('object', key)}
+                onChange={(key) => handleInputChange('object', String(key))}
                 isRequired
                 placeholder="Seleziona l'oggetto"
               >
@@ -172,7 +202,7 @@ export default function ContactForm() {
                   Software Personalizzato
                 </SelectItem>
                 <SelectItem key="app-mobile">App Mobile</SelectItem>
-                <SelectItem key="seo">Startup</SelectItem>
+                <SelectItem key="seo">SEO</SelectItem>
                 <SelectItem key="altro">Altro</SelectItem>
               </Select>
             </div>
@@ -192,7 +222,7 @@ export default function ContactForm() {
                 id="budget"
                 name="budget"
                 value={formData.budget}
-                onChange={(key) => handleInputChange('budget', key)}
+                onChange={(key) => handleInputChange('budget', String(key))}
                 isRequired
                 placeholder="Seleziona budget"
               >
@@ -228,7 +258,15 @@ export default function ContactForm() {
 
           {/* Accordo */}
           <div className="flex items-center gap-x-4 sm:col-span-2">
-            <Switch checked={agreed} onValueChange={setAgreed} size="sm" />
+            <Switch
+              checked={agreed}
+              onValueChange={setAgreed}
+              value={String(agreed)}
+              size="sm"
+              id="agreed"
+              name="agreed"
+              required
+            />
             <label
               htmlFor="privacy"
               className="block text-sm leading-6 text-gray-900"
@@ -253,8 +291,6 @@ export default function ContactForm() {
             radius="full"
             isDisabled={!isFormValid()}
             fullWidth
-            href="/contact"
-            as={Link}
           >
             Contattaci
           </Button>

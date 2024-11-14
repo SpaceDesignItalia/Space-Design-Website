@@ -22,9 +22,36 @@ import type { Metadata } from 'next'
 
 // Page metadata
 export const metadata: Metadata = {
-  title: 'Startup',
+  // Titolo della pagina
+  title:
+    'Supporto per Startup: Sviluppo Software su Misura | Space Design Italia',
+
+  // Descrizione della pagina
   description:
-    'Realizziamo applicazioni mobili intuitive e performanti per portare la tua idea direttamente nelle mani degli utenti.',
+    'Aiutiamo le startup a trasformare le loro idee in realtà con applicazioni mobili intuitive e performanti. Scopri come possiamo supportarti con sconti e soluzioni su misura per il tuo business.',
+
+  // URL canonico per evitare contenuti duplicati
+  alternates: {
+    canonical: 'https://www.spacedesign-italia.it/services/startup', // Modifica in base alla struttura URL
+  },
+
+  // Open Graph per i social media
+  openGraph: {
+    title:
+      'Supporto per Startup: Sviluppo Software su Misura | Space Design Italia',
+    description:
+      'Sviluppa il tuo progetto con Space Design Italia. Offriamo soluzioni personalizzate per startup, con sconti e opzioni di pagamento flessibili per soddisfare ogni esigenza.',
+    url: 'https://www.spacedesign-italia.it/services/startup', // Assicurati di usare l'URL giusto per questa pagina
+    type: 'website',
+    images: [
+      {
+        url: '/og-links/SpaceDesignStartupBanner.png', // Assicurati che l'immagine sia rappresentativa della pagina
+        width: 1200,
+        height: 630,
+        alt: 'Sviluppo software per startup con Space Design Italia',
+      },
+    ],
+  },
 }
 
 // Header component
