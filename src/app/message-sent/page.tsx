@@ -48,7 +48,7 @@ function MessageSentBody() {
     <div className="mx-auto w-full max-w-7xl px-6 pb-16 pt-10 sm:pb-24 lg:px-8">
       <div className="w-full">
         <img
-          alt="La tua Azienda"
+          alt="Logo Space Design"
           src="/company/SpaceDesignLogoLong.png"
           className="mx-auto w-64"
         />

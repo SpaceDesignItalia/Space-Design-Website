@@ -110,7 +110,7 @@ function Header() {
                 clipPath="url(#2ade4387-9c63-4fc4-b754-10e687a0d332)"
                 transform="translate(24 24)"
               >
-                <img alt="" src="/screenshots/app4.png" />
+                <img alt="Mockup app progetto" src="/screenshots/app4.png" />
               </foreignObject>
             </svg>
           </div>
@@ -150,7 +150,7 @@ function Strenght() {
                   <img
                     className="size-full object-cover object-top"
                     src="https://tailwindui.com/plus/img/component-images/bento-03-mobile-friendly.png"
-                    alt=""
+                    alt="Mockup 2 app"
                   />
                 </div>
               </div>
@@ -176,7 +176,7 @@ function Strenght() {
                 <img
                   className="size-full object-cover object-top"
                   src="https://tailwindui.com/plus/img/component-images/bento-01-integrations.png"
-                  alt=""
+                  alt="intrgration stack"
                 />
               </div>
             </div>
@@ -199,7 +199,7 @@ function Strenght() {
                 <img
                   className="h-[min(152px,40cqw)] object-cover object-center"
                   src="https://tailwindui.com/plus/img/component-images/bento-03-security.png"
-                  alt=""
+                  alt="sicurezza"
                 />
               </div>
             </div>

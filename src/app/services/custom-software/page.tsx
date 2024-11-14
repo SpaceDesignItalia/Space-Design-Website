@@ -277,7 +277,7 @@ function Strenght() {
                   <img
                     className="size-full object-cover object-top"
                     src="https://tailwindui.com/plus/img/component-images/bento-03-mobile-friendly.png"
-                    alt=""
+                    alt="Mockup 1 software"
                   />
                 </div>
               </div>
@@ -303,7 +303,7 @@ function Strenght() {
                 <img
                   className="size-full object-cover object-top"
                   src="https://tailwindui.com/plus/img/component-images/bento-01-integrations.png"
-                  alt=""
+                  alt="integration stack"
                 />
               </div>
             </div>
@@ -326,7 +326,7 @@ function Strenght() {
                 <img
                   className="h-[min(152px,40cqw)] object-cover object-center"
                   src="https://tailwindui.com/plus/img/component-images/bento-03-security.png"
-                  alt=""
+                  alt="app security"
                 />
               </div>
             </div>

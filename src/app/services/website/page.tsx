@@ -79,7 +79,7 @@ function Header() {
         badge={
           <img
             className="h-12 w-12"
-            alt="logo"
+            alt="Logo Space Design"
             src="/logo-cluster/logo-spacedesign.svg"
           />
         }
@@ -150,7 +150,7 @@ function Strenght() {
         <div className="relative overflow-hidden pt-16">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <img
-              alt="App screenshot"
+              alt="App screenshot 1"
               src="/screenshots/web3.png"
               width={2432}
               height={1442}

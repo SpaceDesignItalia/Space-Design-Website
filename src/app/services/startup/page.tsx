@@ -84,7 +84,7 @@ function Header() {
       >
         <img
           src={`/screenshots/app.png`}
-          alt="hero"
+          alt="app screen 1"
           height={720}
           width={1400}
           className="mx-auto h-full rounded-2xl object-cover object-left-top"
@@ -198,7 +198,7 @@ function Discount() {
             <div className="mt-12 sm:mt-16 lg:mt-0">
               <div className="-mr-48 pl-6 md:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0">
                 <img
-                  alt="Inbox user interface"
+                  alt="app screen 2"
                   src="/screenshots/app2.png"
                   className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
                 />
@@ -253,7 +253,7 @@ function Discount() {
             <div className="mt-12 sm:mt-16 lg:col-start-1 lg:mt-0">
               <div className="-ml-48 pr-6 md:-ml-16 lg:relative lg:m-0 lg:h-full lg:px-0">
                 <img
-                  alt="Customer profile user interface"
+                  alt="App screen 3"
                   src="/screenshots/app3.png"
                   className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
                 />
