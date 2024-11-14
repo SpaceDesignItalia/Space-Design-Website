@@ -303,7 +303,6 @@ export default function ContactForm() {
             isDisabled={!isFormValid()}
             color="primary"
             radius="full"
-            isDisabled={!isFormValid()}
             fullWidth
           >
             Contattaci
