@@ -11,12 +11,37 @@ import FolderCopyRoundedIcon from '@mui/icons-material/FolderCopyRounded'
 import LineStyleRoundedIcon from '@mui/icons-material/LineStyleRounded'
 
 import { Button, Link } from '@nextui-org/react'
-import type { Metadata } from 'next'
 
-export const metadata: Metadata = {
-  title: 'Azienda',
+export const metadata = {
+  // Titolo della pagina
+  title:
+    'Chi Siamo | Space Design Italia - Software su Misura per il Successo Digitale',
+
+  // Descrizione della pagina
   description:
-    'La nostra missione è applicare innovazione e creatività alla crezione di software per ogni esigenza.',
+    'Scopri chi siamo, il nostro team di esperti e come Space Design Italia può aiutarti a trasformare la tua visione in soluzioni software straordinarie e personalizzate.',
+
+  // URL canonico
+  alternates: {
+    canonical: 'https://www.spacedesign-italia.it/about', // Modifica questo URL in base alla struttura del tuo sito
+  },
+
+  // Open Graph per i social media
+  openGraph: {
+    title: 'Chi Siamo | Space Design Italia',
+    description:
+      'Space Design Italia è una software house che crea soluzioni software personalizzate, sviluppa applicazioni mobile, e costruisce siti web straordinari per il successo della tua azienda.',
+    url: 'https://www.spacedesign-italia.it/about', // Assicurati di usare l'URL corretto per la pagina About
+    type: 'website',
+    images: [
+      {
+        url: '/og-links/SpaceDesignBanner.png', // Usa un'immagine rappresentativa per questa pagina
+        width: 1200,
+        height: 630,
+        alt: 'Il nostro team di esperti di software',
+      },
+    ],
+  },
 }
 
 function CompanyMission() {
@@ -53,28 +78,28 @@ function CompanyMission() {
           <div className="-mx-8 grid grid-cols-2 gap-4 sm:-mx-16 sm:grid-cols-4 lg:mx-0 lg:grid-cols-2 lg:gap-4 xl:gap-8">
             <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
               <img
-                alt="Progetto di Space Design"
+                alt="Andrea Braia"
                 src="/company/1.jpg"
                 className="block size-full object-cover"
               />
             </div>
             <div className="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-32">
               <img
-                alt="Progetto di Space Design"
+                alt="Francesco Roviello"
                 src="/company/2.jpg"
                 className="block size-full object-cover"
               />
             </div>
             <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
               <img
-                alt="Progetto di Space Design"
+                alt="Marco Macherelli"
                 src="/company/3.jpg"
                 className="block size-full object-cover"
               />
             </div>
             <div className="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-32">
               <img
-                alt="Progetto di Space Design"
+                alt="Pablo Bertot"
                 src="/company/4.jpg"
                 className="block size-full object-cover"
               />

@@ -10,9 +10,9 @@ import {
   Textarea,
 } from '@nextui-org/react'
 import { useRef, useState } from 'react'
-import dotenv from 'react-dotenv'
 
 export default function ContactForm() {
+  const form = useRef<HTMLFormElement | null>(null)
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -28,7 +28,7 @@ export default function ContactForm() {
   const [budgets, setBudgets] = useState([])
   const formRef = useRef<HTMLFormElement>(null)
 
-  const handleInputChange = (name: any, value: any) => {
+  const handleInputChange = (name: string, value: string) => {
     setFormData((prevData) => ({
       ...prevData,
       [name]: value,
@@ -46,48 +46,30 @@ export default function ContactForm() {
       agreed
     )
   }
-  /*
-  useEffect(() => {
-    
-    const fetchObjects = async () => {
-      try {
-        const response = await axios.get('/api/Lead/GET/GetObjects') // Cambia l'URL se necessario
-        setObjects(response.data)
-      } catch (error) {
-        console.error('Errore nel fetch degli oggetti:', error)
-      }
-    }
 
-    const fetchBudgets = async () => {
-      try {
-        const response = await axios.get('/api/Lead/GET/GetRanges') // Cambia l'URL se necessario
-        setBudgets(response.data)
-      } catch (error) {
-        console.error('Errore nel fetch dei budget:', error)
-      }
-    }
-
-    fetchObjects()
-    fetchBudgets()
-    
-  }, [])*/
-
-  const handleSubmit = async (e: any) => {
+  const handleFormSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    if (formRef.current) {
-      try {
-        await emailjs.sendForm(
-          dotenv.SERVICE_ID,
-          dotenv.TEMPLATE_ID,
-          formRef.current,
-          dotenv.PUBLIC_KEY,
-        )
-        console.log('Modulo inviato con successo!')
-      } catch (error) {
-        console.error("Errore nell'invio del modulo:", error)
+
+    if (!form.current) return
+
+    try {
+      const response = await emailjs.sendForm(
+        String(process.env.NEXT_PUBLIC_SERVICE_ID), // Service ID
+        String(process.env.NEXT_PUBLIC_TEMPLATE_ID), // Template ID
+        form.current, // Reference to the form
+        {
+          publicKey: String(process.env.NEXT_PUBLIC_PUBLIC_KEY), // Public Key
+        },
+      )
+
+      if (response.status === 200) {
+        window.location.href = '/message-sent'
       }
-    } else {
-      console.error('Il riferimento al modulo è nullo.')
+      console.log('Success:', response)
+      // Gestire la risposta positiva, come un messaggio di conferma
+    } catch (error) {
+      console.error('Error:', error)
+      // Gestire gli errori (ad esempio, visualizzando un messaggio di errore)
     }
   }
 
@@ -104,9 +86,10 @@ export default function ContactForm() {
           presto. La tua opinione è importante per noi.
         </p>
       </div>
+
       <form
-        ref={formRef}
-        onSubmit={handleSubmit}
+        ref={form}
+        onSubmit={handleFormSubmit}
         className="mx-auto mt-16 max-w-xl sm:mt-20"
       >
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
@@ -176,6 +159,7 @@ export default function ContactForm() {
             </div>
           </div>
 
+          {/* Azienda */}
           <div className="sm:col-span-2">
             <label
               htmlFor="company"
@@ -210,7 +194,7 @@ export default function ContactForm() {
                 id="object"
                 name="object"
                 value={formData.object}
-                onChange={(key) => handleInputChange('object', key)}
+                onChange={(key) => handleInputChange('object', String(key))}
                 isRequired
                 placeholder="Seleziona l'oggetto"
               >
@@ -224,9 +208,9 @@ export default function ContactForm() {
                 <SelectItem key={'Software Personalizzato'}>
                   Software Personalizzato
                 </SelectItem>
-                <SelectItem key={'App mobile'}>App mobile</SelectItem>
-                <SelectItem key={'Startup'}>Startup</SelectItem>
-                <SelectItem key={'Altro'}>Altro</SelectItem>
+                <SelectItem key="app-mobile">App Mobile</SelectItem>
+                <SelectItem key="seo">SEO</SelectItem>
+                <SelectItem key="altro">Altro</SelectItem>
               </Select>
             </div>
           </div>
@@ -245,7 +229,7 @@ export default function ContactForm() {
                 id="budget"
                 name="budget"
                 value={formData.budget}
-                onChange={(key) => handleInputChange('budget', key)}
+                onChange={(key) => handleInputChange('budget', String(key))}
                 isRequired
                 placeholder="Seleziona budget"
               >
@@ -288,7 +272,15 @@ export default function ContactForm() {
 
           {/* Accordo */}
           <div className="flex items-center gap-x-4 sm:col-span-2">
-            <Switch checked={agreed} onValueChange={setAgreed} size="sm" />
+            <Switch
+              checked={agreed}
+              onValueChange={setAgreed}
+              value={String(agreed)}
+              size="sm"
+              id="agreed"
+              name="agreed"
+              required
+            />
             <label
               htmlFor="privacy"
               className="block text-sm leading-6 text-gray-900"
@@ -310,8 +302,9 @@ export default function ContactForm() {
             type="submit"
             isDisabled={!isFormValid()}
             color="primary"
-            size="lg"
-            className="w-full"
+            radius="full"
+            isDisabled={!isFormValid()}
+            fullWidth
           >
             Contattaci
           </Button>

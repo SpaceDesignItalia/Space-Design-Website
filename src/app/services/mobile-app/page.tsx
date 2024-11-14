@@ -17,9 +17,34 @@ import type { Metadata } from 'next'
 
 // Page metadata
 export const metadata: Metadata = {
-  title: 'App mobile',
+  // Titolo della pagina
+  title: 'App Personalizzate per il Tuo Business | Space Design Italia',
+
+  // Descrizione della pagina
   description:
-    'Realizziamo applicazioni mobili intuitive e performanti per portare la tua idea direttamente nelle mani degli utenti.',
+    'Sviluppa soluzioni app personalizzate per il tuo business. Offriamo software su misura, integrato con le tue piattaforme, sicuro e con pieno controllo del codice per il massimo controllo operativo.',
+
+  // URL canonico per evitare contenuti duplicati
+  alternates: {
+    canonical: 'https://www.spacedesign-italia.it/services/mobile-app', // Modifica in base alla struttura URL
+  },
+
+  // Open Graph per i social media
+  openGraph: {
+    title: 'App Personalizzate per il Tuo Business | Space Design Italia',
+    description:
+      'Scopri come sviluppare app su misura per ottimizzare il tuo business. Le nostre soluzioni software personalizzate sono sicure, facili da integrare e ti offrono il pieno controllo del codice.',
+    url: 'https://www.spacedesign-italia.it/services/mobile-app', // Assicurati di usare l'URL giusto per questa pagina
+    type: 'website',
+    images: [
+      {
+        url: '/og-links/SpaceDesignAppBanner.png', // Assicurati che l'immagine sia rappresentativa della pagina
+        width: 1200,
+        height: 630,
+        alt: 'App personalizzate per il business con Space Design Italia',
+      },
+    ],
+  },
 }
 
 // Header component
@@ -85,7 +110,7 @@ function Header() {
                 clipPath="url(#2ade4387-9c63-4fc4-b754-10e687a0d332)"
                 transform="translate(24 24)"
               >
-                <img alt="" src="/screenshots/app4.png" />
+                <img alt="Mockup app progetto" src="/screenshots/app4.png" />
               </foreignObject>
             </svg>
           </div>
@@ -125,7 +150,7 @@ function Strenght() {
                   <img
                     className="size-full object-cover object-top"
                     src="https://tailwindui.com/plus/img/component-images/bento-03-mobile-friendly.png"
-                    alt=""
+                    alt="Mockup 2 app"
                   />
                 </div>
               </div>
@@ -151,7 +176,7 @@ function Strenght() {
                 <img
                   className="size-full object-cover object-top"
                   src="https://tailwindui.com/plus/img/component-images/bento-01-integrations.png"
-                  alt=""
+                  alt="intrgration stack"
                 />
               </div>
             </div>
@@ -174,7 +199,7 @@ function Strenght() {
                 <img
                   className="h-[min(152px,40cqw)] object-cover object-center"
                   src="https://tailwindui.com/plus/img/component-images/bento-03-security.png"
-                  alt=""
+                  alt="sicurezza"
                 />
               </div>
             </div>

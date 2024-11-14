@@ -22,9 +22,36 @@ import type { Metadata } from 'next'
 
 // Page metadata
 export const metadata: Metadata = {
-  title: 'Startup',
+  // Titolo della pagina
+  title:
+    'Supporto per Startup: Sviluppo Software su Misura | Space Design Italia',
+
+  // Descrizione della pagina
   description:
-    'Realizziamo applicazioni mobili intuitive e performanti per portare la tua idea direttamente nelle mani degli utenti.',
+    'Aiutiamo le startup a trasformare le loro idee in realtà con applicazioni mobili intuitive e performanti. Scopri come possiamo supportarti con sconti e soluzioni su misura per il tuo business.',
+
+  // URL canonico per evitare contenuti duplicati
+  alternates: {
+    canonical: 'https://www.spacedesign-italia.it/services/startup', // Modifica in base alla struttura URL
+  },
+
+  // Open Graph per i social media
+  openGraph: {
+    title:
+      'Supporto per Startup: Sviluppo Software su Misura | Space Design Italia',
+    description:
+      'Sviluppa il tuo progetto con Space Design Italia. Offriamo soluzioni personalizzate per startup, con sconti e opzioni di pagamento flessibili per soddisfare ogni esigenza.',
+    url: 'https://www.spacedesign-italia.it/services/startup', // Assicurati di usare l'URL giusto per questa pagina
+    type: 'website',
+    images: [
+      {
+        url: '/og-links/SpaceDesignStartupBanner.png', // Assicurati che l'immagine sia rappresentativa della pagina
+        width: 1200,
+        height: 630,
+        alt: 'Sviluppo software per startup con Space Design Italia',
+      },
+    ],
+  },
 }
 
 // Header component
@@ -57,7 +84,7 @@ function Header() {
       >
         <img
           src={`/screenshots/app.png`}
-          alt="hero"
+          alt="app screen 1"
           height={720}
           width={1400}
           className="mx-auto h-full rounded-2xl object-cover object-left-top"
@@ -171,7 +198,7 @@ function Discount() {
             <div className="mt-12 sm:mt-16 lg:mt-0">
               <div className="-mr-48 pl-6 md:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0">
                 <img
-                  alt="Inbox user interface"
+                  alt="app screen 2"
                   src="/screenshots/app2.png"
                   className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
                 />
@@ -226,7 +253,7 @@ function Discount() {
             <div className="mt-12 sm:mt-16 lg:col-start-1 lg:mt-0">
               <div className="-ml-48 pr-6 md:-ml-16 lg:relative lg:m-0 lg:h-full lg:px-0">
                 <img
-                  alt="Customer profile user interface"
+                  alt="App screen 3"
                   src="/screenshots/app3.png"
                   className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
                 />
