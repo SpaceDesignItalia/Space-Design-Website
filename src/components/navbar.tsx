@@ -65,7 +65,8 @@ const links: Link[] = [
   },
   { href: '/about', label: 'Azienda' },
   { href: '/contact', label: 'Contattaci' },
-  { href: '/login', label: 'Login' },
+  { href: '/blog', label: 'Blog' },
+  { href: 'https://app.spacedesign-italia.it', label: 'Login' },
 ]
 
 function DesktopNav() {
@@ -243,7 +244,7 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
                   >
                     <img
                       src="/logo-cloud/logo.png" // Riferimento all'immagine importata
-                      alt="Logo"
+                      alt="Logo Space Design"
                       width={107} // Larghezza dell'immagine
                       height={14} // Altezza dell'immagine
                       className="object-contain" // Tailwind per assicurare che l'immagine sia ben contenuta

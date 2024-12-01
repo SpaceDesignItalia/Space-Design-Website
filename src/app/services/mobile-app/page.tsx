@@ -17,9 +17,69 @@ import type { Metadata } from 'next'
 
 // Page metadata
 export const metadata: Metadata = {
-  title: 'App mobile',
+  // Titolo SEO ottimizzato con parole chiave
+  title: 'App Personalizzate per il Tuo Business',
+
+  // Descrizione ottimizzata per SEO con focus sulle parole chiave principali
   description:
-    'Realizziamo applicazioni mobili intuitive e performanti per portare la tua idea direttamente nelle mani degli utenti.',
+    'Sviluppa soluzioni app personalizzate per il tuo business. Offriamo software su misura, integrato con le tue piattaforme, sicuro e con pieno controllo del codice per garantire il massimo controllo operativo.',
+
+  // Canonical URL per evitare contenuti duplicati
+  alternates: {
+    canonical: 'https://www.spacedesign-italia.it/services/mobile-app',
+  },
+
+  // Open Graph per migliorare la visibilità su Facebook, LinkedIn, ecc.
+  openGraph: {
+    title: 'App Personalizzate per il Tuo Business',
+    description:
+      "Sviluppa app su misura per ottimizzare il tuo business. Le nostre soluzioni software personalizzate sono sicure, facili da integrare e ti offrono il pieno controllo del codice, migliorando l'efficienza e la sicurezza operativa.",
+    url: 'https://www.spacedesign-italia.it/services/mobile-app',
+    type: 'website',
+    images: [
+      {
+        url: '/og-links/SpaceDesignAppBanner.png', // Assicurati che l'immagine sia rappresentativa della pagina
+        width: 1200,
+        height: 630,
+        alt: 'App personalizzate per il business con Space Design Italia',
+      },
+    ],
+  },
+
+  // Twitter Card per una migliore anteprima su Twitter
+  twitter: {
+    card: 'summary_large_image',
+    title: 'App Personalizzate per il Tuo Business | Space Design Italia',
+    description:
+      'Crea soluzioni app personalizzate per il tuo business con Space Design Italia. Le nostre app sono sicure, facili da integrare e ti offrono pieno controllo del codice per ottimizzare il tuo business.',
+    images: [
+      'https://www.spacedesign-italia.it/og-links/SpaceDesignAppBanner.png',
+    ],
+  },
+
+  // Meta tag aggiuntivi per migliorare la SEO
+  metadataBase: new URL('https://www.spacedesign-italia.it/'),
+  keywords: [
+    'app personalizzate',
+    'sviluppo app',
+    'app su misura',
+    'software per il business',
+    'soluzioni software aziendali',
+    'integrazione piattaforme',
+    'Space Design Italia',
+  ],
+  robots: {
+    index: true,
+    follow: true,
+  },
+
+  // Author e Copyright
+  authors: [
+    {
+      name: 'Space Design Italia',
+      url: 'https://www.spacedesign-italia.it',
+    },
+  ],
 }
 
 // Header component
@@ -85,7 +145,7 @@ function Header() {
                 clipPath="url(#2ade4387-9c63-4fc4-b754-10e687a0d332)"
                 transform="translate(24 24)"
               >
-                <img alt="" src="/screenshots/app4.png" />
+                <img alt="Mockup app progetto" src="/screenshots/app4.png" />
               </foreignObject>
             </svg>
           </div>
@@ -125,7 +185,7 @@ function Strenght() {
                   <img
                     className="size-full object-cover object-top"
                     src="https://tailwindui.com/plus/img/component-images/bento-03-mobile-friendly.png"
-                    alt=""
+                    alt="Mockup 2 app"
                   />
                 </div>
               </div>
@@ -151,7 +211,7 @@ function Strenght() {
                 <img
                   className="size-full object-cover object-top"
                   src="https://tailwindui.com/plus/img/component-images/bento-01-integrations.png"
-                  alt=""
+                  alt="intrgration stack"
                 />
               </div>
             </div>
@@ -174,7 +234,7 @@ function Strenght() {
                 <img
                   className="h-[min(152px,40cqw)] object-cover object-center"
                   src="https://tailwindui.com/plus/img/component-images/bento-03-security.png"
-                  alt=""
+                  alt="sicurezza"
                 />
               </div>
             </div>

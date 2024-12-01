@@ -188,7 +188,7 @@ export function Footer() {
                     >
                       <img
                         src="/logo-cloud/logo.png" // Riferimento all'immagine importata
-                        alt="Logo"
+                        alt="Logo Space Design"
                         width={107} // Larghezza dell'immagine
                         height={14} // Altezza dell'immagine
                         className="object-contain" // Tailwind per assicurare che l'immagine sia ben contenuta

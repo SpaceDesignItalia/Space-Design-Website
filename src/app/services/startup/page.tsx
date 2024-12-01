@@ -22,9 +22,71 @@ import type { Metadata } from 'next'
 
 // Page metadata
 export const metadata: Metadata = {
-  title: 'Startup',
+  // Titolo SEO ottimizzato con parole chiave
+  title: 'Supporto per Startup: Sviluppo Software su Misura',
+
+  // Descrizione ottimizzata per SEO con focus sulle parole chiave principali
   description:
-    'Realizziamo applicazioni mobili intuitive e performanti per portare la tua idea direttamente nelle mani degli utenti.',
+    'Aiutiamo le startup a trasformare le loro idee in realtà con applicazioni mobili intuitive e performanti. Scopri come possiamo supportarti con soluzioni su misura, sconti speciali e opzioni di pagamento flessibili per il tuo business.',
+
+  // URL canonico per evitare contenuti duplicati
+  alternates: {
+    canonical: 'https://www.spacedesign-italia.it/services/startup',
+  },
+
+  // Open Graph per migliorare la visibilità su Facebook, LinkedIn, ecc.
+  openGraph: {
+    title: 'Supporto per Startup: Sviluppo Software su Misura',
+    description:
+      'Sviluppa il tuo progetto con Space Design Italia. Offriamo soluzioni software personalizzate per startup, con sconti e opzioni di pagamento flessibili per soddisfare ogni esigenza aziendale.',
+    url: 'https://www.spacedesign-italia.it/services/startup',
+    type: 'website',
+    images: [
+      {
+        url: '/og-links/SpaceDesignStartupBanner.png', // Assicurati che l'immagine sia rappresentativa della pagina
+        width: 1200,
+        height: 630,
+        alt: 'Sviluppo software per startup con Space Design Italia',
+      },
+    ],
+  },
+
+  // Twitter Card per una migliore anteprima su Twitter
+  twitter: {
+    card: 'summary_large_image',
+    title:
+      'Supporto per Startup: Sviluppo Software su Misura | Space Design Italia',
+    description:
+      'Aiutiamo le startup a crescere con software personalizzati e soluzioni ottimizzate. Scopri come possiamo supportarti con sconti e opzioni flessibili per il tuo business.',
+    images: [
+      'https://www.spacedesign-italia.it/og-links/SpaceDesignStartupBanner.png',
+    ],
+  },
+
+  // Meta tag aggiuntivi per migliorare la SEO
+  metadataBase: new URL('https://www.spacedesign-italia.it/'),
+  keywords: [
+    'supporto startup',
+    'sviluppo software per startup',
+    'soluzioni su misura startup',
+    'app personalizzate startup',
+    'sconti per startup',
+    'Space Design Italia',
+    'software per startup',
+    'sviluppo app mobile',
+  ],
+  robots: {
+    index: true,
+    follow: true,
+  },
+
+  // Author e Copyright
+  authors: [
+    {
+      name: 'Space Design Italia',
+      url: 'https://www.spacedesign-italia.it',
+    },
+  ],
 }
 
 // Header component
@@ -46,7 +108,7 @@ function Header() {
             <Heading as="h1">Trasforma la tua visione in realtà</Heading>
 
             <div className="mb-10 flex items-center justify-center">
-              <p className="mt-4 w-1/2 text-lg text-gray-700 dark:text-gray-300">
+              <p className="mt-4 w-full text-lg text-gray-700 dark:text-gray-300 md:w-1/2">
                 Siamo qui per creare prodotti innovativi che guidano il successo
                 della tua startup. Dal concept alla realizzazione, ti aiutiamo a
                 costruire soluzioni uniche e scalabili.
@@ -57,7 +119,7 @@ function Header() {
       >
         <img
           src={`/screenshots/app.png`}
-          alt="hero"
+          alt="app screen 1"
           height={720}
           width={1400}
           className="mx-auto h-full rounded-2xl object-cover object-left-top"
@@ -171,7 +233,7 @@ function Discount() {
             <div className="mt-12 sm:mt-16 lg:mt-0">
               <div className="-mr-48 pl-6 md:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0">
                 <img
-                  alt="Inbox user interface"
+                  alt="app screen 2"
                   src="/screenshots/app2.png"
                   className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
                 />
@@ -226,7 +288,7 @@ function Discount() {
             <div className="mt-12 sm:mt-16 lg:col-start-1 lg:mt-0">
               <div className="-ml-48 pr-6 md:-ml-16 lg:relative lg:m-0 lg:h-full lg:px-0">
                 <img
-                  alt="Customer profile user interface"
+                  alt="App screen 3"
                   src="/screenshots/app3.png"
                   className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
                 />

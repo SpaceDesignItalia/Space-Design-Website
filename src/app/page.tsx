@@ -14,6 +14,73 @@ import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone'
 import TerminalIcon from '@mui/icons-material/Terminal'
 import WebIcon from '@mui/icons-material/Web'
 import { Button, Link } from '@nextui-org/react'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  // Titolo SEO ottimizzato con parole chiave
+  title: 'Space Design Italia | Soluzioni Software Innovative su Misura',
+
+  // Descrizione ottimizzata per SEO con focus sulle parole chiave principali
+  description:
+    'Space Design Italia sviluppa software personalizzati, app mobile e siti web avanzati. Scopri come trasformare le tue idee in realtà con tecnologie innovative.',
+
+  // Canonical URL per evitare contenuti duplicati
+  alternates: {
+    canonical: 'https://www.spacedesign-italia.it/',
+  },
+
+  // Open Graph per migliorare la visibilità su Facebook, LinkedIn, ecc.
+  openGraph: {
+    title: 'Space Design Italia | Soluzioni Software su Misura',
+    description:
+      'Realizziamo software personalizzati, applicazioni mobili e siti web per aziende che vogliono innovare. Contattaci per iniziare il tuo progetto digitale.',
+    url: 'https://www.spacedesign-italia.it/',
+    type: 'website',
+    images: [
+      {
+        url: 'https://www.spacedesign-italia.it/og-links/SpaceDesignBanner.png',
+        width: 1200,
+        height: 630,
+        alt: 'Space Design Italia - Soluzioni software su misura per aziende',
+      },
+    ],
+  },
+
+  // Twitter Card per una migliore anteprima su Twitter
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Space Design Italia | Soluzioni Software su Misura',
+    description:
+      'Sviluppiamo software avanzati per aziende che vogliono innovare. Contattaci per creare soluzioni su misura.',
+    images: [
+      'https://www.spacedesign-italia.it/og-links/SpaceDesignBanner.png',
+    ],
+  },
+
+  // Meta tag aggiuntivi per migliorare la SEO
+  metadataBase: new URL('https://www.spacedesign-italia.it/'),
+  keywords: [
+    'soluzioni software',
+    'sviluppo web',
+    'sviluppo app',
+    'software personalizzato',
+    'innovazione digitale',
+    'app mobile',
+    'Space Design Italia',
+  ],
+  robots: {
+    index: true,
+    follow: true,
+  },
+
+  // Author e Copyright
+  authors: [
+    {
+      name: 'Space Design Italia',
+      url: 'https://www.spacedesign-italia.it/team',
+    },
+  ],
+}
 
 function Hero() {
   return (
@@ -39,6 +106,7 @@ function Hero() {
             </span>
             straordinarie
           </h1>
+
           <p className="mt-8 max-w-lg text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
             Creiamo software che trasforma l'ordinario in straordinario,
             ispirati dalle meraviglie dello spazio.

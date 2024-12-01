@@ -17,9 +17,69 @@ import type { Metadata } from 'next'
 
 // Page metadata
 export const metadata: Metadata = {
-  title: 'Software Personalizzato',
+  // Titolo SEO ottimizzato con parole chiave
+  title: 'Software Personalizzato per il Tuo Successo',
+
+  // Descrizione ottimizzata per SEO con focus sulle parole chiave principali
   description:
-    'Progettiamo software personalizzato per rispondere perfettamente alle esigenze uniche della tua azienda.',
+    'Scopri come Space Design Italia crea software personalizzati per ottimizzare il tuo business. Soluzioni su misura per ogni esigenza aziendale, progettate per garantire efficienza e sicurezza.',
+
+  // Canonical URL per evitare contenuti duplicati
+  alternates: {
+    canonical: 'https://www.spacedesign-italia.it/services/custom-software',
+  },
+
+  // Open Graph per migliorare la visibilità su Facebook, LinkedIn, ecc.
+  openGraph: {
+    title: 'Software Personalizzato per il Tuo Successo | Space Design Italia',
+    description:
+      'Trasforma il tuo business con software su misura progettati per ottimizzare ogni aspetto delle tue operazioni aziendali. Affidati a Space Design Italia per soluzioni sicure ed efficienti.',
+    url: 'https://www.spacedesign-italia.it/services/custom-software',
+    type: 'website',
+    images: [
+      {
+        url: '/og-links/SpaceDesignBanner.png', // Assicurati che l'immagine sia rappresentativa della pagina
+        width: 1200,
+        height: 630,
+        alt: 'Software personalizzato per il successo del tuo business con Space Design Italia',
+      },
+    ],
+  },
+
+  // Twitter Card per una migliore anteprima su Twitter
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Software Personalizzato per il Tuo Successo',
+    description:
+      'Space Design Italia crea soluzioni software su misura per ottimizzare il tuo business. Sviluppiamo applicazioni personalizzate per aumentare efficienza e sicurezza. Scopri di più.',
+    images: [
+      'https://www.spacedesign-italia.it/og-links/SpaceDesignBanner.png',
+    ],
+  },
+
+  // Meta tag aggiuntivi per migliorare la SEO
+  metadataBase: new URL('https://www.spacedesign-italia.it/'),
+  keywords: [
+    'software personalizzato',
+    'sviluppo software su misura',
+    'soluzioni software aziendali',
+    'ottimizzazione business',
+    'software per il business',
+    'applicazioni su misura',
+    'Space Design Italia',
+  ],
+  robots: {
+    index: true,
+    follow: true,
+  },
+
+  // Author e Copyright
+  authors: [
+    {
+      name: 'Space Design Italia',
+      url: 'https://www.spacedesign-italia.it',
+    },
+  ],
 }
 
 // Header component
@@ -252,7 +312,7 @@ function Strenght() {
                   <img
                     className="size-full object-cover object-top"
                     src="https://tailwindui.com/plus/img/component-images/bento-03-mobile-friendly.png"
-                    alt=""
+                    alt="Mockup 1 software"
                   />
                 </div>
               </div>
@@ -278,7 +338,7 @@ function Strenght() {
                 <img
                   className="size-full object-cover object-top"
                   src="https://tailwindui.com/plus/img/component-images/bento-01-integrations.png"
-                  alt=""
+                  alt="integration stack"
                 />
               </div>
             </div>
@@ -301,7 +361,7 @@ function Strenght() {
                 <img
                   className="h-[min(152px,40cqw)] object-cover object-center"
                   src="https://tailwindui.com/plus/img/component-images/bento-03-security.png"
-                  alt=""
+                  alt="app security"
                 />
               </div>
             </div>
