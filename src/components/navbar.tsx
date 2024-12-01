@@ -65,7 +65,8 @@ const links: Link[] = [
   },
   { href: '/about', label: 'Azienda' },
   { href: '/contact', label: 'Contattaci' },
-  { href: '/login', label: 'Login' },
+  { href: '/blog', label: 'Blog' },
+  { href: 'https://app.spacedesign-italia.it', label: 'Login' },
 ]
 
 function DesktopNav() {

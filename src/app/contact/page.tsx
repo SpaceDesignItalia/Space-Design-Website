@@ -8,25 +8,24 @@ import ContactForm from './contactForm'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  // Titolo della pagina
-  title:
-    'Contattaci | Space Design Italia - Inizia il tuo percorso digitale con noi',
+  // Titolo SEO ottimizzato con parole chiave
+  title: 'Avvia il Tuo Progetto Digitale con Noi',
 
-  // Descrizione della pagina
+  // Descrizione della pagina ottimizzata per SEO con focus sulle parole chiave principali
   description:
-    'Contattaci oggi stesso per discutere del tuo progetto software personalizzato. Siamo pronti a trasformare la tua visione in realtà digitale.',
+    'Contattaci per discutere delle tue esigenze digitali. Siamo specializzati nella creazione di software personalizzati, app mobile e siti web. Trasformiamo la tua idea in una soluzione digitale su misura.',
 
-  // URL canonico per evitare contenuti duplicati
+  // Canonical URL per evitare contenuti duplicati
   alternates: {
-    canonical: 'https://www.spacedesign-italia.it/contact', // Modifica in base alla struttura URL
+    canonical: 'https://www.spacedesign-italia.it/contact',
   },
 
-  // Open Graph per i social media
+  // Open Graph per migliorare la visibilità su Facebook, LinkedIn, ecc.
   openGraph: {
-    title: 'Contattaci | Space Design Italia',
+    title: 'Contattaci',
     description:
-      'Inizia il tuo progetto con Space Design Italia. Contattaci oggi per scoprire come possiamo aiutarti a sviluppare soluzioni software personalizzate per il tuo business.',
-    url: 'https://www.spacedesign-italia.it/contact', // Assicurati di usare l'URL giusto per questa pagina
+      'Inizia il tuo percorso digitale con Space Design Italia. Scopri come possiamo sviluppare soluzioni software personalizzate per il tuo business. Contattaci oggi per dare vita alla tua idea.',
+    url: 'https://www.spacedesign-italia.it/contact',
     type: 'website',
     images: [
       {
@@ -37,6 +36,41 @@ export const metadata: Metadata = {
       },
     ],
   },
+
+  // Twitter Card per una migliore anteprima su Twitter
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Avvia il Tuo Progetto Digitale con Noi',
+    description:
+      'Parla con i nostri esperti e scopri come possiamo creare soluzioni software su misura per te. Contattaci per iniziare oggi stesso.',
+    images: [
+      'https://www.spacedesign-italia.it/og-links/SpaceDesignBanner.png',
+    ],
+  },
+
+  // Meta tag aggiuntivi per migliorare la SEO
+  metadataBase: new URL('https://www.spacedesign-italia.it/'),
+  keywords: [
+    'contattaci',
+    'sviluppo software',
+    'sviluppo app',
+    'software personalizzato',
+    'contattare Space Design Italia',
+    'soluzioni digitali',
+    'consulenza digitale',
+  ],
+  robots: {
+    index: true,
+    follow: true,
+  },
+
+  // Author e Copyright
+  authors: [
+    {
+      name: 'Space Design Italia',
+      url: 'https://www.spacedesign-italia.it',
+    },
+  ],
 }
 
 export default function ContactUs() {

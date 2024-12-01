@@ -23,32 +23,72 @@ import type { Metadata } from 'next'
 
 // Page metadata
 export const metadata: Metadata = {
-  title:
-    'Creazione di Siti Professionali e Personalizzati | Space Design Italia',
-  description:
-    "Creiamo siti web eleganti e funzionali che catturano l'attenzione e offrono un'esperienza utente senza pari. Soluzioni su misura per ogni tipo di business.",
+  // Titolo SEO ottimizzato con parole chiave
+  title: 'Creazione di Siti Professionali e Personalizzati',
 
+  // Descrizione ottimizzata per SEO con focus sulle parole chiave principali
+  description:
+    "Creiamo siti web eleganti e funzionali che catturano l'attenzione e offrono un'esperienza utente senza pari. Soluzioni su misura per ogni tipo di business, ottimizzate per dispositivi mobili e SEO-friendly.",
+
+  // URL canonico per evitare contenuti duplicati
   alternates: {
-    canonical: 'https://www.spacedesign-italia.it/services/mobile-app', // Modifica in base alla struttura URL
+    canonical: 'https://www.spacedesign-italia.it/services/web-development', // Assicurati che l'URL sia quello giusto
   },
 
+  // Open Graph per migliorare la visibilità su Facebook, LinkedIn, ecc.
   openGraph: {
-    title:
-      'Creazione di Siti Professionali e Personalizzati | Space Design Italia',
+    title: 'Creazione di Siti Professionali e Personalizzati',
     description:
-      'Offriamo servizi di sviluppo web che combinano design elegante, funzionalità avanzate, e ottimizzazione per dispositivi mobili. Porta il tuo business online!',
-    url: 'https://www.spacedesign-italia.it/services/mobile-app', // Inserisci l'URL effettivo della tua pagina
-    siteName: 'SpaceDesignItalia',
+      'Offriamo servizi di sviluppo web che combinano design elegante, funzionalità avanzate, ottimizzazione per dispositivi mobili e SEO. Porta il tuo business online con soluzioni personalizzate.',
+    url: 'https://www.spacedesign-italia.it/services/web-development', // Inserisci l'URL effettivo della tua pagina
+    siteName: 'Space Design Italia',
     images: [
       {
-        url: '/og-links/SpaceDesignAppBanner.png', // L'URL dell'immagine di anteprima
+        url: '/og-links/SpaceDesignWebsiteBanner.png', // URL dell'immagine di anteprima
         width: 1200,
         height: 630,
-        alt: 'Creazione di Siti Professionali e Personalizzati',
+        alt: 'Creazione di Siti Professionali e Personalizzati con Space Design Italia',
       },
     ],
     type: 'website',
   },
+
+  // Twitter Card per una migliore anteprima su Twitter
+  twitter: {
+    card: 'summary_large_image',
+    title:
+      'Creazione di Siti Professionali e Personalizzati | Space Design Italia',
+    description:
+      'Porta il tuo business online con siti web eleganti e funzionali. Offriamo soluzioni personalizzate, ottimizzate per dispositivi mobili e SEO-friendly.',
+    images: [
+      'https://www.spacedesign-italia.it/og-links/SpaceDesignWebsiteBanner.png',
+    ],
+  },
+
+  // Meta tag aggiuntivi per migliorare la SEO
+  metadataBase: new URL('https://www.spacedesign-italia.it/'),
+  keywords: [
+    'creazione siti web',
+    'sviluppo web',
+    'design sito personalizzato',
+    'siti web professionali',
+    'ottimizzazione mobile',
+    'web development',
+    'SEO siti web',
+    'Space Design Italia',
+  ],
+  robots: {
+    index: true,
+    follow: true,
+  },
+
+  // Author e Copyright
+  authors: [
+    {
+      name: 'Space Design Italia',
+      url: 'https://www.spacedesign-italia.it',
+    },
+  ],
 }
 
 // Header component

@@ -10,7 +10,6 @@ import {
   Textarea,
 } from '@nextui-org/react'
 import { useRef, useState } from 'react'
-
 export default function ContactForm() {
   const form = useRef<HTMLFormElement | null>(null)
   const [formData, setFormData] = useState({

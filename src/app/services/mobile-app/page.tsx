@@ -17,24 +17,24 @@ import type { Metadata } from 'next'
 
 // Page metadata
 export const metadata: Metadata = {
-  // Titolo della pagina
-  title: 'App Personalizzate per il Tuo Business | Space Design Italia',
+  // Titolo SEO ottimizzato con parole chiave
+  title: 'App Personalizzate per il Tuo Business',
 
-  // Descrizione della pagina
+  // Descrizione ottimizzata per SEO con focus sulle parole chiave principali
   description:
-    'Sviluppa soluzioni app personalizzate per il tuo business. Offriamo software su misura, integrato con le tue piattaforme, sicuro e con pieno controllo del codice per il massimo controllo operativo.',
+    'Sviluppa soluzioni app personalizzate per il tuo business. Offriamo software su misura, integrato con le tue piattaforme, sicuro e con pieno controllo del codice per garantire il massimo controllo operativo.',
 
-  // URL canonico per evitare contenuti duplicati
+  // Canonical URL per evitare contenuti duplicati
   alternates: {
-    canonical: 'https://www.spacedesign-italia.it/services/mobile-app', // Modifica in base alla struttura URL
+    canonical: 'https://www.spacedesign-italia.it/services/mobile-app',
   },
 
-  // Open Graph per i social media
+  // Open Graph per migliorare la visibilità su Facebook, LinkedIn, ecc.
   openGraph: {
-    title: 'App Personalizzate per il Tuo Business | Space Design Italia',
+    title: 'App Personalizzate per il Tuo Business',
     description:
-      'Scopri come sviluppare app su misura per ottimizzare il tuo business. Le nostre soluzioni software personalizzate sono sicure, facili da integrare e ti offrono il pieno controllo del codice.',
-    url: 'https://www.spacedesign-italia.it/services/mobile-app', // Assicurati di usare l'URL giusto per questa pagina
+      "Sviluppa app su misura per ottimizzare il tuo business. Le nostre soluzioni software personalizzate sono sicure, facili da integrare e ti offrono il pieno controllo del codice, migliorando l'efficienza e la sicurezza operativa.",
+    url: 'https://www.spacedesign-italia.it/services/mobile-app',
     type: 'website',
     images: [
       {
@@ -45,6 +45,41 @@ export const metadata: Metadata = {
       },
     ],
   },
+
+  // Twitter Card per una migliore anteprima su Twitter
+  twitter: {
+    card: 'summary_large_image',
+    title: 'App Personalizzate per il Tuo Business | Space Design Italia',
+    description:
+      'Crea soluzioni app personalizzate per il tuo business con Space Design Italia. Le nostre app sono sicure, facili da integrare e ti offrono pieno controllo del codice per ottimizzare il tuo business.',
+    images: [
+      'https://www.spacedesign-italia.it/og-links/SpaceDesignAppBanner.png',
+    ],
+  },
+
+  // Meta tag aggiuntivi per migliorare la SEO
+  metadataBase: new URL('https://www.spacedesign-italia.it/'),
+  keywords: [
+    'app personalizzate',
+    'sviluppo app',
+    'app su misura',
+    'software per il business',
+    'soluzioni software aziendali',
+    'integrazione piattaforme',
+    'Space Design Italia',
+  ],
+  robots: {
+    index: true,
+    follow: true,
+  },
+
+  // Author e Copyright
+  authors: [
+    {
+      name: 'Space Design Italia',
+      url: 'https://www.spacedesign-italia.it',
+    },
+  ],
 }
 
 // Header component
