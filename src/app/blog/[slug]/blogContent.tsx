@@ -210,7 +210,7 @@ export default function BlogContent({ params }: { params: { slug: string } }) {
     try {
       const res = await axios.get(
         process.env.NEXT_PUBLIC_API_URL_BLOG +
-          `/articles?filters[slug][$eq]=${slug}`,
+          `/articles?filters[slug]=${slug}`,
       )
       if (res.status === 200 && res.data.data.length > 0) {
         const res2 = await axios.get(
