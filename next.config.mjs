@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'standalone', // Genera un'applicazione statica
+  output: 'export', // Genera un'applicazione statica
 }
 
 export default nextConfig

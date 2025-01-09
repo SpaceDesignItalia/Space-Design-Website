@@ -207,6 +207,11 @@ export function Footer() {
                   <Copyright />
                 </PlusGridItem>
               </div>
+              <div>
+                <PlusGridItem className="flex items-center py-3">
+                  <p className="text-xs">P.IVA 07420400488</p>
+                </PlusGridItem>
+              </div>
               <div className="flex">
                 <PlusGridItem className="flex items-center gap-8 py-3">
                   <SocialLinks />

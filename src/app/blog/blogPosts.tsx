@@ -23,7 +23,7 @@ function FeaturedPosts() {
     try {
       const res = await axios.get(
         process.env.NEXT_PUBLIC_API_URL_BLOG +
-          '/articles?filters[isFeatured][$eq]=true&&populate=*',
+          '/articles?filters[isFeatured]=true&&populate=*',
       )
       const postsData = res.data.data
       setPosts(postsData)

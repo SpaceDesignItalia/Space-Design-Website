@@ -4,7 +4,6 @@ import { GradientBackground } from '@/components/gradient'
 import { Navbar } from '@/components/navbar'
 import { Heading, Lead, Subheading } from '@/components/text'
 import type { Metadata } from 'next'
-import { notFound } from 'next/navigation'
 import BlogPosts from './blogPosts'
 
 export const metadata: Metadata = {
@@ -74,23 +73,7 @@ export const metadata: Metadata = {
   ],
 }
 
-export default async function Blog({
-  searchParams,
-}: {
-  searchParams: { [key: string]: string | string[] | undefined }
-}) {
-  let page =
-    'page' in searchParams
-      ? typeof searchParams.page === 'string' && parseInt(searchParams.page) > 1
-        ? parseInt(searchParams.page)
-        : notFound()
-      : 1
-
-  let category =
-    typeof searchParams.category === 'string'
-      ? searchParams.category
-      : undefined
-
+export default async function Blog() {
   return (
     <main className="overflow-hidden">
       <GradientBackground />
