@@ -65,7 +65,6 @@ const links: Link[] = [
   },
   { href: '/about', label: 'Azienda' },
   { href: '/contact', label: 'Contattaci' },
-  { href: '/blog', label: 'Blog' },
   { href: 'https://app.spacedesign-italia.it', label: 'Login' },
 ]
 
