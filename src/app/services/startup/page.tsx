@@ -504,7 +504,7 @@ function DiscountDetails() {
           </div>
         </div>
         <div className="relative mt-16 text-center flex justify-center items-center w-full">
-          <p className='text-sm text-gray-500 text-center w-1/2'>
+          <p className='text-sm text-gray-500 text-center w-full md:w-1/2'>
             *Gli sconti non sono cumulabili tra di loro. <br />
              Tuttavia, possono essere utilizzati per progetti e servizi successivi. <br />
              Contattaci per scoprire come combinare le nostre offerte in modo vantaggioso per il tuo progetto.
