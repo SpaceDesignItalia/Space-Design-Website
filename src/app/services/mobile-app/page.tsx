@@ -11,7 +11,7 @@ import {
   DisclosurePanel,
 } from '@headlessui/react'
 import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline'
-import { Button, Link } from '@nextui-org/react'
+import { Button, Link } from "@heroui/react"
 
 import type { Metadata } from 'next'
 

@@ -16,7 +16,6 @@ import AccessTimeIcon from '@mui/icons-material/AccessTime'
 import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome'
 import GroupAddIcon from '@mui/icons-material/GroupAdd'
 import MonetizationOnIcon from '@mui/icons-material/MonetizationOn'
-import { Button, Link } from '@nextui-org/react'
 
 import type { Metadata } from 'next'
 
@@ -128,190 +127,403 @@ function Header() {
     </div>
   )
 }
+
 function Discount() {
   const features = [
     {
-      name: 'Progetti a lungo termine',
+      name: 'Sconto Progressivo in Base alla Spesa',
       description:
-        'Ricevi fino al 20% di sconto per progetti che prevedono più fasi di sviluppo o un impegno pluriennale.',
+        'Sconto fino al 25% in base al pacchetto scelto. Investi in un pacchetto più completo per ottenere uno sconto maggiore.',
       icon: AccessTimeIcon, // Icona che rappresenta il tempo
     },
     {
-      name: 'Pagamenti anticipati',
-      description: 'Ottieni uno sconto con pagamenti anticipati.',
+      name: 'Pagamento Anticipato',
+      description:
+        'Ottieni uno sconto dal 10% al 15% pagando in anticipo per migliorare la liquidità e ridurre i rischi di credito.',
       icon: MonetizationOnIcon, // Icona che rappresenta il denaro
     },
     {
-      name: 'Collaborazione continua',
+      name: 'Collaborazioni e Referral',
       description:
-        'Start-up che scelgono di continuare a sviluppare nuove funzionalità o richiedono manutenzione ottengono sconti.',
+        'Porta nuovi clienti o crea alleanze strategiche per ottenere sconti sul futuro. Fino al 15% per ogni nuova referenza.',
       icon: AutoAwesomeIcon, // Icona che rappresenta la continuità e l'ottimizzazione
     },
     {
-      name: 'Referral',
+      name: 'Progetti a Lungo Periodo',
       description:
-        'Portaci nuovi clienti e startup per ottenere sconti su progetti futuri.',
+        'Per progetti che coinvolgono più fasi o un impegno pluriennale, offriamo sconti fino al 20%.',
       icon: GroupAddIcon, // Icona che rappresenta l'aggiunta di gruppi e referral
     },
-  ]
+  ];
 
   return (
-    <>
-      <div className="bg-white py-24 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:text-center">
-            <Subheading>Ottieni fino al 20% di sconto</Subheading>
-            <Heading as="h2" className="mt-2 max-w-3xl">
-              Sviluppa il tuo progetto su misura con noi
-            </Heading>
+    <div className="bg-white py-24 sm:py-32">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-2xl lg:text-center">
+          <h2 className="text-base/7 font-semibold text-primary">Sconti esclusivi per startup</h2>
+          <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl lg:text-balance">
+            Ottieni vantaggi esclusivi con i nostri sconti dedicati
+          </p>
+          <p className="mt-6 text-lg/8 text-gray-600">
+            Scopri le diverse opportunità di risparmio per la tua startup. Che tu stia cercando di investire in un progetto a lungo termine o ottenere uno sconto con pagamenti anticipati, abbiamo l'offerta giusta per te.
+          </p>
+        </div>
+        <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+            {features.map((feature) => (
+              <div key={feature.name} className="flex flex-col">
+                <dt className="flex items-center gap-x-3 text-base/7 font-semibold text-gray-900">
+                  <feature.icon aria-hidden="true" className="size-5 flex-none text-primary" />
+                  {feature.name}
+                </dt>
+                <dd className="mt-4 flex flex-auto flex-col text-base/7 text-gray-600">
+                  <p className="flex-auto">{feature.description}</p>
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      </div>
+    </div>
+  );
+}
 
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              Siamo qui per supportare la crescita della tua startup! Grazie
-              alla nostra esperienza nello sviluppo di software personalizzati,
-              offriamo la possibilità di ottenere sconti fino al 20% sui nostri
-              progetti, in base a diversi criteri di collaborazione.
+function DiscountDetails() {
+  const discountFeatures = [
+    {
+      id: 1,
+      name: 'Sconto in base alla spesa',
+      description: 
+        'Più investi nel tuo progetto, più risparmi! Ogni pacchetto che scegli ti premia con sconti sempre più vantaggiosi.',
+      icon: AccessTimeIcon,
+      details: [
+        "💡 10% di sconto per pacchetti base (sito web semplice o MVP base) – inizia con il piede giusto.",
+        "🚀 15% di sconto per pacchetti intermedi (sito web + MVP) – espandi il tuo progetto con maggiore funzionalità.",
+        "🌟 20% di sconto per pacchetti completi con supporto post-lancio – completa il tuo percorso con il massimo supporto."
+      ],
+      extraText: "Questo modello premia le startup che scelgono di investire risorse maggiori, aumentando la redditività per il tuo progetto a lungo termine."
+    },
+    {
+      id: 2,
+      name: 'Sconto per partnership o referenze',
+      description:
+        'Aiutaci a far crescere la nostra community e ottieni vantaggi reciproci! Ogni nuova connessione che porti nella nostra rete ti permette di ottenere sconti extra.',
+      icon: AccessTimeIcon,
+      details: [
+        "🔗 10% di sconto per ogni nuova startup che si iscrive grazie alla tua referenza – più ci sono, più risparmi.",
+        "🤝 15% di sconto per alleanze strategiche con altre aziende nel nostro network – collaborare conviene!"
+      ],
+      extraText: "Crea una rete di clienti che cresce organicamente, generando opportunità per tutti."
+    },
+    {
+      id: 3,
+      name: 'Sconto per pagamento anticipato',
+      description:
+        'Crediamo in chi investe nel futuro del proprio progetto! Pagando in anticipo, non solo acceleri il tuo cammino, ma ottieni anche un risparmio significativo.',
+      icon: AccessTimeIcon,
+      details: [
+        "💸 10%-15% di sconto per chi paga in anticipo – Investire oggi ti fa risparmiare domani."
+      ],
+      extraText: "Questo incentivo aiuta a ridurre il rischio di credito e migliorare la liquidità, permettendoti di concentrarti su ciò che conta davvero: far crescere la tua startup."
+    },
+    {
+      id: 4,
+      name: 'Sconto per startup emergenti',
+      description:
+        'Se la tua startup è giovane, siamo qui per darti una mano! Con il nostro incentivo, ti aiutiamo a superare le prime sfide e a decollare velocemente.',
+      icon: AccessTimeIcon,
+      details: [
+        "🚀 15% di sconto per startup con meno di 2 anni di attività – Un aiuto concreto nelle fasi iniziali del tuo viaggio.",
+        "🌱 20% di sconto per startup in fase di prototipo o MVP – Supporto massimo per far crescere la tua idea."
+      ],
+      extraText: "Offriamo un supporto concreto per le startup che stanno iniziando il loro viaggio, per aiutarle a decollare e crescere."
+    }
+  ]
+  
+  
+  
+
+  return (
+    <div className="overflow-hidden py-16 lg:py-24">
+      <div className="relative mx-auto max-w-xl px-6 lg:max-w-7xl lg:px-8">
+        <svg
+          fill="none"
+          width={404}
+          height={784}
+          viewBox="0 0 404 784"
+          aria-hidden="true"
+          className="absolute left-full hidden -translate-x-1/2 -translate-y-1/4 transform lg:block"
+        >
+          <defs>
+            <pattern
+              x={0}
+              y={0}
+              id="b1e6e422-73f8-40a6-b5d9-c8586e37e0e7"
+              width={20}
+              height={20}
+              patternUnits="userSpaceOnUse"
+            >
+              <rect x={0} y={0} fill="currentColor" width={4} height={4} className="text-gray-200" />
+            </pattern>
+          </defs>
+          <rect fill="url(#b1e6e422-73f8-40a6-b5d9-c8586e37e0e7)" width={404} height={784} />
+        </svg>
+
+        <div className="relative">
+          <h2 className="text-center text-3xl/8 font-bold tracking-tight text-gray-900 sm:text-4xl">
+            Scopri le Nostre Offerte di Sconto
+          </h2>
+          <p className="mx-auto mt-4 max-w-3xl text-center text-xl text-gray-500">
+            Offriamo diverse modalità di sconto pensate per supportare le startup in ogni fase del loro percorso.
+          </p>
+        </div>
+
+        <div className="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:items-center lg:gap-8">
+          <div className="relative">
+            <h3 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">{discountFeatures[0].name}</h3>
+            <p className="mt-3 text-lg text-gray-500">
+            {discountFeatures[0].description}
             </p>
-          </div>
-          <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-            <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
-              {features.map((feature) => (
-                <div key={feature.name} className="relative pl-16">
-                  <dt className="text-base font-semibold leading-7 text-gray-900">
-                    <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
-                      <feature.icon
-                        aria-hidden="true"
-                        className="h-6 w-6 text-white"
-                      />
-                    </div>
-                    {feature.name}
+
+            <dl className="mt-10 space-y-10">
+              {discountFeatures[0].details.map((detail, index) => (
+                <div key={index} className="relative">
+                  <dt>
+                    <p className="text-lg/6 font-medium text-gray-900">{detail}</p>
                   </dt>
-                  <dd className="mt-2 text-base leading-7 text-gray-600">
-                    {feature.description}
-                  </dd>
                 </div>
               ))}
             </dl>
           </div>
-        </div>
-      </div>
-      <div className="relative overflow-hidden bg-white pb-32 pt-16">
-        <div className="relative">
-          <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8">
-            <div className="mx-auto max-w-xl px-6 lg:mx-0 lg:max-w-none lg:px-0 lg:py-16">
-              <div>
-                <div className="mt-6">
-                  <h2 className="text-3xl font-bold tracking-tight text-gray-900">
-                    Come ottenere lo sconto
-                  </h2>
-                  <p className="mt-4 text-lg text-gray-500">
-                    Le startup hanno l'opportunità di beneficiare di sconti
-                    personalizzati e progressivi basati su criteri specifici che
-                    favoriscono la crescita e la collaborazione a lungo termine.
-                    Ecco come puoi ottenere fino al 20% di sconto sui nostri
-                    progetti:
-                  </p>
-                </div>
-              </div>
-              <div className="mt-8 border-t border-gray-200 pt-6">
-                <ul className="mt-6 space-y-4 text-justify text-lg leading-8 text-gray-600">
-                  <li>
-                    <strong>Sviluppo a lungo termine:</strong> Progetti che si
-                    sviluppano in più fasi o prevedono un impegno pluriennale
-                    possono ottenere sconti fino al 20%. Collaborare su roadmap
-                    di prodotto che evolvono nel tempo ci consente di
-                    pianificare in modo più efficiente e offrire un risparmio
-                    significativo.
-                  </li>
-                  <li>
-                    <strong>Pagamenti anticipati:</strong> Le startup che
-                    scelgono di effettuare pagamenti anticipati possono
-                    beneficiare di sconti fino al 15%.
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="mt-12 sm:mt-16 lg:mt-0">
-              <div className="-mr-48 pl-6 md:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0">
-                <img
-                  alt="app screen 2"
-                  src="/screenshots/app2.png"
-                  className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="mt-24">
-          <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8">
-            <div className="mx-auto max-w-xl px-6 lg:col-start-2 lg:mx-0 lg:max-w-none lg:px-0 lg:py-32">
-              <div>
-                <div className="mt-6">
-                  <ul className="mt-6 space-y-4 text-justify text-lg leading-8 text-gray-600">
-                    <li>
-                      <strong>Collaborazione continua:</strong> Startup che ci
-                      affidano lo sviluppo di nuove funzionalità o la
-                      manutenzione continua del software possono accedere a
-                      sconti. Questo approccio garantisce che il tuo progetto
-                      resti allineato alle esigenze di mercato, migliorando
-                      costantemente e beneficiando di un prezzo agevolato.
-                    </li>
-                    <li>
-                      <strong>Referral:</strong> Presentaci nuove startup o
-                      clienti interessati ai nostri servizi e otterrai sconti
-                      aggiuntivi su progetti futuri per ogni collaborazione che
-                      si concretizza. Questo programma premia la tua fiducia e
-                      il tuo networking, creando una sinergia vantaggiosa per
-                      tutti.
-                    </li>
-                  </ul>
 
-                  <p className="mt-8 text-justify text-lg text-gray-600">
-                    Vuoi saperne di più? Contattaci per una consulenza
-                    personalizzata e scopri come possiamo supportare la tua
-                    startup nello sviluppo di software su misura, offrendoti le
-                    migliori soluzioni al prezzo giusto.
-                  </p>
-                  <div className="mt-6 flex justify-center">
-                    <Button
-                      color="primary"
-                      radius="full"
-                      size="lg"
-                      href="/contact"
-                      as={Link}
-                    >
-                      Contattaci
-                    </Button>
+          <div aria-hidden="true" className="relative -mx-4 mt-10 lg:mt-0">
+            <svg
+              fill="none"
+              width={784}
+              height={404}
+              viewBox="0 0 784 404"
+              className="absolute left-1/2 -translate-x-1/2 translate-y-16 transform lg:hidden"
+            >
+              <defs>
+                <pattern
+                  x={0}
+                  y={0}
+                  id="ca9667ae-9f92-4be7-abcb-9e3d727f2941"
+                  width={20}
+                  height={20}
+                  patternUnits="userSpaceOnUse"
+                >
+                  <rect x={0} y={0} fill="currentColor" width={4} height={4} className="text-gray-200" />
+                </pattern>
+              </defs>
+              <rect fill="url(#ca9667ae-9f92-4be7-abcb-9e3d727f2941)" width={784} height={404} />
+            </svg>
+            <img
+              alt="Sconto progressivo"
+              src="/boxes.png"
+              width={490}
+              className="relative mx-auto"
+            />
+          </div>
+        </div>
+
+        <svg
+          fill="none"
+          width={404}
+          height={784}
+          viewBox="0 0 404 784"
+          aria-hidden="true"
+          className="absolute right-full hidden translate-x-1/2 translate-y-12 transform lg:block"
+        >
+          <defs>
+            <pattern
+              x={0}
+              y={0}
+              id="64e643ad-2176-4f86-b3d7-f2c5da3b6a6d"
+              width={20}
+              height={20}
+              patternUnits="userSpaceOnUse"
+            >
+              <rect x={0} y={0} fill="currentColor" width={4} height={4} className="text-gray-200" />
+            </pattern>
+          </defs>
+          <rect fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)" width={404} height={784} />
+        </svg>
+
+        <div className="relative mt-12 sm:mt-16 lg:mt-24">
+          <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:items-center lg:gap-8">
+            <div className="lg:col-start-2">
+              <h3 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">{discountFeatures[1].name}</h3>
+              <p className="mt-3 text-lg text-gray-500">
+              {discountFeatures[1].description}
+              </p>
+
+              <dl className="mt-10 space-y-10">
+                {discountFeatures[1].details.map((detail, index) => (
+                  <div key={index} className="relative">
+                    <dt>
+                      <p className="text-lg/6 font-medium text-gray-900">{detail}</p>
+                    </dt>
                   </div>
-                </div>
-              </div>
+                ))}
+              </dl>
             </div>
-            <div className="mt-12 sm:mt-16 lg:col-start-1 lg:mt-0">
-              <div className="-ml-48 pr-6 md:-ml-16 lg:relative lg:m-0 lg:h-full lg:px-0">
-                <img
-                  alt="App screen 3"
-                  src="/screenshots/app3.png"
-                  className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
-                />
-              </div>
+
+            <div className="relative -mx-4 mt-10 lg:col-start-1 lg:mt-0">
+              <svg
+                fill="none"
+                width={784}
+                height={404}
+                viewBox="0 0 784 404"
+                aria-hidden="true"
+                className="absolute left-1/2 -translate-x-1/2 translate-y-16 transform lg:hidden"
+              >
+                <defs>
+                  <pattern
+                    x={0}
+                    y={0}
+                    id="e80155a9-dfde-425a-b5ea-1f6fadd20131"
+                    width={20}
+                    height={20}
+                    patternUnits="userSpaceOnUse"
+                  >
+                    <rect x={0} y={0} fill="currentColor" width={4} height={4} className="text-gray-200" />
+                  </pattern>
+                </defs>
+                <rect fill="url(#e80155a9-dfde-425a-b5ea-1f6fadd20131)" width={784} height={404} />
+              </svg>
+              <img
+                alt="Partnership e Referenze"
+                src="https://cdn-icons-png.flaticon.com/512/10112/10112547.png"
+                width={490}
+                className="relative mx-auto"
+              />
             </div>
           </div>
         </div>
+
+
+        <div className="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:items-center lg:gap-8">
+          <div className="relative">
+            <h3 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">{discountFeatures[2].name}</h3>
+            <p className="mt-3 text-lg text-gray-500">
+            {discountFeatures[2].description}
+            </p>
+
+            <dl className="mt-10 space-y-10">
+              {discountFeatures[2].details.map((detail, index) => (
+                <div key={index} className="relative">
+                  <dt>
+                    <p className="text-lg/6 font-medium text-gray-900">{detail}</p>
+                  </dt>
+                </div>
+              ))}
+            </dl>
+          </div>
+
+          <div aria-hidden="true" className="relative -mx-4 mt-10 lg:mt-0">
+            <svg
+              fill="none"
+              width={784}
+              height={404}
+              viewBox="0 0 784 404"
+              className="absolute left-1/2 -translate-x-1/2 translate-y-16 transform lg:hidden"
+            >
+              <defs>
+                <pattern
+                  x={0}
+                  y={0}
+                  id="ca9667ae-9f92-4be7-abcb-9e3d727f2941"
+                  width={20}
+                  height={20}
+                  patternUnits="userSpaceOnUse"
+                >
+                  <rect x={0} y={0} fill="currentColor" width={4} height={4} className="text-gray-200" />
+                </pattern>
+              </defs>
+              <rect fill="url(#ca9667ae-9f92-4be7-abcb-9e3d727f2941)" width={784} height={404} />
+            </svg>
+            <img
+              alt="Sconto progressivo"
+              src="https://tailwindui.com/plus/img/features/feature-example-1.png"
+              width={490}
+              className="relative mx-auto"
+            />
+          </div>
+        </div>
+
+        <div className="relative mt-12 sm:mt-16 lg:mt-24">
+          <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:items-center lg:gap-8">
+            <div className="lg:col-start-2">
+              <h3 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">{discountFeatures[3].name}</h3>
+              <p className="mt-3 text-lg text-gray-500">
+              {discountFeatures[3].description}
+              </p>
+
+              <dl className="mt-10 space-y-10">
+                {discountFeatures[3].details.map((detail, index) => (
+                  <div key={index} className="relative">
+                    <dt>
+                      <p className="text-lg/6 font-medium text-gray-900">{detail}</p>
+                    </dt>
+                  </div>
+                ))}
+              </dl>
+            </div>
+
+            <div className="relative -mx-4 mt-10 lg:col-start-1 lg:mt-0">
+              <svg
+                fill="none"
+                width={784}
+                height={404}
+                viewBox="0 0 784 404"
+                aria-hidden="true"
+                className="absolute left-1/2 -translate-x-1/2 translate-y-16 transform lg:hidden"
+              >
+                <defs>
+                  <pattern
+                    x={0}
+                    y={0}
+                    id="e80155a9-dfde-425a-b5ea-1f6fadd20131"
+                    width={20}
+                    height={20}
+                    patternUnits="userSpaceOnUse"
+                  >
+                    <rect x={0} y={0} fill="currentColor" width={4} height={4} className="text-gray-200" />
+                  </pattern>
+                </defs>
+                <rect fill="url(#e80155a9-dfde-425a-b5ea-1f6fadd20131)" width={784} height={404} />
+              </svg>
+              <img
+                alt="Partnership e Referenze"
+                src="/startup.png"
+                width={490}
+                className="relative mx-auto"
+              />
+            </div>
+          </div>
+        </div>
+        <div className="relative mt-16 text-center flex justify-center items-center w-full">
+          <p className='text-sm text-gray-500 text-center w-1/2'>
+            *Gli sconti non sono cumulabili tra di loro. <br />
+             Tuttavia, possono essere utilizzati per progetti e servizi successivi. <br />
+             Contattaci per scoprire come combinare le nostre offerte in modo vantaggioso per il tuo progetto.
+          </p>
+        </div>
       </div>
-    </>
-  )
+    </div>
+  );
 }
 
 function FAQ() {
   const faqs = [
     {
-      question:
-        'Quali criteri devo soddisfare per ottenere fino al 20% di sconto?',
+      question: 'Quali criteri devo soddisfare per ottenere fino al 20% di sconto?',
       answer:
         'Le startup possono ottenere sconti basati su quattro criteri principali: sviluppo a lungo termine, pagamenti anticipati, collaborazione continua e referral. Maggiore è il numero di criteri soddisfatti, maggiori saranno le possibilità di ricevere uno sconto sul progetto.',
     },
     {
-      question:
-        'Come funzionano i pagamenti anticipati per ottenere lo sconto?',
+      question: 'Come funzionano i pagamenti anticipati per ottenere lo sconto?',
       answer:
         "Offriamo sconti più vantaggiosi alle startup che decidono di pagare in anticipo l'intero importo del progetto. Questo approccio ci consente di pianificare e ottimizzare le risorse in modo più efficiente, e in cambio, ti offriamo una significativa riduzione dei costi.",
     },
@@ -325,7 +537,18 @@ function FAQ() {
       answer:
         'Le startup che continuano a sviluppare nuove funzionalità o richiedono manutenzione e aggiornamenti regolari beneficiano di sconti progressivi. Questa continuità ci consente di pianificare interventi in modo efficiente e ti assicura costi più contenuti nel lungo termine. Inoltre, manterrai il tuo software aggiornato e al passo con le nuove tecnologie.',
     },
+    {
+      question: 'Cosa include il pacchetto base?',
+      answer:
+        'Il pacchetto base include la creazione di un sito web semplice o di un MVP (Minimum Viable Product) che ti permette di avviare il tuo progetto con le funzionalità essenziali. Questo pacchetto è ideale per startup che vogliono testare rapidamente la loro idea e raccogliere feedback iniziali.',
+    },
+    {
+      question: 'Come posso sapere quale pacchetto scegliere per la mia startup?',
+      answer:
+        'Scegli il pacchetto che meglio si adatta alle tue esigenze. Se stai appena iniziando e hai bisogno di un sito semplice o di un MVP, il pacchetto base è perfetto. Se desideri un prodotto più completo, con funzioni aggiuntive come l’integrazione di più sistemi o una base utenti più ampia, opta per il pacchetto intermedio o completo. Il nostro team è sempre disponibile per consigliarti sulla scelta migliore.',
+    },
   ]
+  
 
   return (
     <div className="bg-white">
@@ -379,6 +602,7 @@ function FAQ() {
   )
 }
 
+
 // Main Company component
 export default function Startup() {
   return (
@@ -391,6 +615,7 @@ export default function Startup() {
         </Container>
         <Header />
         <Discount />
+        <DiscountDetails/>
         <FAQ />
         <Footer />
       </main>

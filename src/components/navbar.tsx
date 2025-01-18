@@ -18,7 +18,7 @@ import {
   DropdownItem,
   DropdownMenu,
   DropdownTrigger,
-} from '@nextui-org/react'
+} from "@heroui/react"
 import { clsx } from 'clsx'
 import { motion } from 'framer-motion'
 import { Link } from './link'
