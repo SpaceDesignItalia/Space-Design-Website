@@ -13,7 +13,7 @@ import { Heading, Subheading } from '@/components/text'
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone'
 import TerminalIcon from '@mui/icons-material/Terminal'
 import WebIcon from '@mui/icons-material/Web'
-import { Button, Link } from '@nextui-org/react'
+import { Button, Link } from "@heroui/react"
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {

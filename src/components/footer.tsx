@@ -1,7 +1,7 @@
 'use client'
 
 import { PlusGrid, PlusGridItem, PlusGridRow } from '@/components/plus-grid'
-import { Button } from '@nextui-org/react'
+import { Button } from "@heroui/react"
 import { clsx } from 'clsx'
 import { motion } from 'framer-motion'
 import { Container } from './container'

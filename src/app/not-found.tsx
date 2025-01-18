@@ -3,7 +3,7 @@ import { Footer } from '@/components/footer'
 import { Gradient } from '@/components/gradient'
 import Loader from '@/components/loader'
 import { Navbar } from '@/components/navbar'
-import { Button, Link } from '@nextui-org/react'
+import { Button, Link } from "@heroui/react"
 
 function Hero() {
   return (

@@ -8,7 +8,7 @@ import {
   SelectItem,
   Switch,
   Textarea,
-} from '@nextui-org/react'
+} from "@heroui/react"
 import { useRef, useState } from 'react'
 export default function ContactForm() {
   const form = useRef<HTMLFormElement | null>(null)

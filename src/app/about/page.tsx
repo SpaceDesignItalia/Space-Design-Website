@@ -6,7 +6,7 @@ import Loader from '@/components/loader'
 import { Navbar } from '@/components/navbar'
 import { Heading, Lead, Subheading } from '@/components/text'
 
-import { Button, Link } from '@nextui-org/react'
+import { Button, Link } from "@heroui/react"
 
 export const metadata = {
   // Titolo SEO ottimizzato con parole chiave
@@ -188,32 +188,24 @@ function CompanyStory() {
         Fondata da una squadra di visionari.
       </Heading>
       <Lead className="mt-6 max-w-3xl">
-        Space Design nasce dall'energia e dalla visione di quattro giovani
-        talenti, uniti dalla passione per la tecnologia e l'innovazione, con
-        l’ambizione di trasformare il mondo dello sviluppo software.
+        Tecnologia per tutti, passione e innovazione al servizio di persone e aziende
       </Lead>
       <div className="mt-12 grid grid-cols-1 gap-12 lg:grid-cols-2">
         <div className="max-w-lg">
           <p className="text-sm/6 text-gray-600">
-            Qualche anno fa, un gruppo di visionari si riunì attorno a un sogno
-            condiviso: creare un mondo digitale in cui ogni impresa potesse
-            esprimere la propria unicità. Da questa aspirazione nacque Space
-            Design, un progetto alimentato da passione e determinazione.
-            Consapevoli di quanto fosse difficile trovare un partner che fosse
-            più di un semplice fornitore, ma un vero alleato nel percorso verso
-            l’innovazione, decisero di unire le forze. Così è nata un’azienda
-            che mette al centro i sogni dei clienti, offrendo soluzioni digitali
-            su misura, innovative e orientate al futuro.
+            Space Design Italia nasce dalla visione di quattro giovani appassionati di innovazione tecnologica, 
+            uniti dal desiderio di rendere la tecnologia accessibile, intuitiva e comprensibile per tutti. 
+            Animati da una curiosità inesauribile e dalla voglia di esplorare le potenzialità del futuro, 
+            hanno creato un’azienda che non si limita a sviluppare soluzioni tecnologiche, ma che mira a trasformare 
+            il rapporto con la tecnologia in un’esperienza semplice e stimolante.
           </p>
           <p className="mt-8 text-sm/6 text-gray-600">
-            Oggi, Space Design si distingue per la capacità di creare soluzioni
-            digitali su misura: software personalizzati, applicazioni mobili e
-            siti web innovativi. La nostra missione è trasformare le idee dei
-            clienti in realtà concrete, grazie a un approccio collaborativo e
-            snello, privo di burocrazia. Siamo un team unito e appassionato,
-            sempre alla ricerca di nuove soluzioni per affrontare le sfide del
-            mercato, con l’obiettivo di rendere la tecnologia intuitiva e
-            accessibile a tutti.
+            Oltre a soddisfare i bisogni degli utenti finali, Space Design Italia si distingue per la capacità di rispondere alle 
+            esigenze specifiche delle aziende, offrendo soluzioni personalizzate che combinano design all’avanguardia, innovazione e funzionalità. 
+            La loro passione per l’innovazione è il motore che alimenta ogni progetto, spingendoli a cercare costantemente nuove idee 
+            per migliorare il quotidiano e ottimizzare i processi aziendali.
+            Space Design Italia non è solo un’azienda, ma un laboratorio di idee dove la creatività incontra la tecnologia per creare 
+            valore e connessione. Per loro, innovare significa rendere il futuro più vicino, più inclusivo e più semplice da vivere.
           </p>
           <div className="mt-6">
             <Button color="primary" radius="full" href="/contact" as={Link}>

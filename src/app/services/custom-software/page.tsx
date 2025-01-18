@@ -11,7 +11,7 @@ import {
   DisclosurePanel,
 } from '@headlessui/react'
 import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline'
-import { Button, Link } from '@nextui-org/react'
+import { Button, Link } from "@heroui/react"
 
 import type { Metadata } from 'next'
 
@@ -159,7 +159,7 @@ function Header() {
                             <span className="text-blue-300">{' } '}</span>
                             <span className="text-red-500">from </span>
                             <span className="text-blue-300">
-                              '@nextui-org/react'
+                              '@heroui/react'
                             </span>
                           </code>
                           <br />

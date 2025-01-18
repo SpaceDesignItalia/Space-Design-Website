@@ -18,7 +18,7 @@ import {
   DropdownItem,
   DropdownMenu,
   DropdownTrigger,
-} from '@nextui-org/react'
+} from "@heroui/react"
 import { clsx } from 'clsx'
 import { motion } from 'framer-motion'
 import { Link } from './link'
@@ -65,7 +65,6 @@ const links: Link[] = [
   },
   { href: '/about', label: 'Azienda' },
   { href: '/contact', label: 'Contattaci' },
-  { href: '/blog', label: 'Blog' },
   { href: 'https://app.spacedesign-italia.it', label: 'Login' },
 ]
 
