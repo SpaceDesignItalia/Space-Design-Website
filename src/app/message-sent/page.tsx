@@ -49,7 +49,7 @@ function MessageSentBody() {
       <div className="w-full">
         <img
           alt="Logo Space Design"
-          src="/company/SpaceDesignLogoLong.png"
+          src="/logo-cloud/logo.png"
           className="mx-auto w-64"
         />
       </div>
