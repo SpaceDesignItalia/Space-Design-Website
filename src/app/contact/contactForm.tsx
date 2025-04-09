@@ -101,8 +101,6 @@ export default function ContactForm() {
       )
 
       if (response.status === 200) {
-        // Imposta il cookie per indicare che il form è stato inviato
-        document.cookie = 'form_submitted=true; path=/; max-age=300' // Il cookie scade dopo 5 minuti
         window.location.href = '/message-sent'
       }
     } catch (error) {
