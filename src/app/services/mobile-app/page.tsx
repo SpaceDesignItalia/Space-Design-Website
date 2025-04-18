@@ -11,7 +11,7 @@ import {
   DisclosurePanel,
 } from '@headlessui/react'
 import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline'
-import { Button, Link } from "@heroui/react"
+import { Button, Link } from '@heroui/react'
 
 import type { Metadata } from 'next'
 
@@ -98,9 +98,9 @@ function Header() {
                 Ogni azienda ha necessità particolari, e lo sviluppo di app
                 personalizzate è la soluzione per trasformare queste esigenze in
                 risultati concreti. Grazie a un design su misura, le nostre app
-                offrono prestazioni elevate, flessibilità e un’integrazione
+                offrono prestazioni elevate, flessibilità e un'integrazione
                 impeccabile con i tuoi processi aziendali, permettendoti di
-                massimizzare l’efficienza e raggiungere i tuoi obiettivi
+                massimizzare l'efficienza e raggiungere i tuoi obiettivi
                 strategici.
               </p>
 
@@ -181,10 +181,10 @@ function Strenght() {
                 </p>
               </div>
               <div className="relative min-h-[30rem] w-full grow [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
-                <div className="absolute inset-x-10 bottom-0 top-10 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-gray-900 shadow-2xl">
+                <div className="absolute inset-x-10 bottom-0 top-0 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-gray-900 shadow-2xl">
                   <img
                     className="size-full object-cover object-top"
-                    src="https://tailwindui.com/plus/img/component-images/bento-03-mobile-friendly.png"
+                    src="/screenshots/app5.png"
                     alt="Mockup 2 app"
                   />
                 </div>
@@ -405,7 +405,7 @@ function FAQ() {
         "Le app personalizzate offrono numerosi vantaggi: sono progettate su misura per le esigenze specifiche della tua azienda, garantendo un'integrazione perfetta con i tuoi processi. Inoltre, sono altamente scalabili, consentendo di adattarsi facilmente alle future evoluzioni del business. Grazie a funzionalità uniche e ottimizzate, potrai migliorare l'efficienza operativa e creare esperienze utente superiori rispetto alle soluzioni preconfezionate.",
     },
     {
-      question: 'Quanto tempo ci vuole per sviluppare un’app personalizzata?',
+      question: "Quanto tempo ci vuole per sviluppare un'app personalizzata?",
       answer:
         "Il tempo di sviluppo varia in base alla complessità dell'app. Progetti semplici possono richiedere poche settimane, mentre soluzioni più complesse possono richiedere diversi mesi. Forniamo un piano di sviluppo chiaro e dettagliato fin dall'inizio per garantire trasparenza sui tempi e le scadenze.",
     },
