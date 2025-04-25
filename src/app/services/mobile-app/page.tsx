@@ -9,8 +9,10 @@ import {
   Disclosure,
   DisclosureButton,
   DisclosurePanel,
+  Transition,
 } from '@headlessui/react'
 import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline'
+import { ArrowsPointingInIcon, LockClosedIcon } from '@heroicons/react/24/solid'
 import { Button, Link } from '@heroui/react'
 
 import type { Metadata } from 'next'
@@ -86,7 +88,7 @@ export const metadata: Metadata = {
 function Header() {
   return (
     <div>
-      <div className="mx-auto max-w-7xl pb-24 pt-10 sm:pb-32 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:px-8 lg:py-40">
+      <div className="lg:py-30 mx-auto max-w-7xl pb-16 pt-20 sm:pb-20 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:px-8">
         <div className="px-6 lg:px-0 lg:pt-4">
           <div className="mx-auto max-w-2xl">
             <div className="max-w-lg">
@@ -104,7 +106,7 @@ function Header() {
                 strategici.
               </p>
 
-              <div className="mt-10 flex items-center gap-x-6">
+              <div className="mb-10 mt-10 flex items-center justify-center md:justify-start">
                 <Button
                   color="primary"
                   radius="full"
@@ -119,7 +121,7 @@ function Header() {
           </div>
         </div>
         <div className="md:mx-auto md:max-w-2xl lg:mx-0 lg:mt-0 lg:w-screen">
-          <div className="lg:flex-shrink-0 lg:flex-grow">
+          <div className="mt-8 md:mt-12 lg:flex-shrink-0 lg:flex-grow">
             <svg
               role="img"
               viewBox="0 0 366 729"
@@ -145,7 +147,11 @@ function Header() {
                 clipPath="url(#2ade4387-9c63-4fc4-b754-10e687a0d332)"
                 transform="translate(24 24)"
               >
-                <img alt="Mockup app progetto" src="/screenshots/app4.png" />
+                <img
+                  className="m-0 size-full object-cover object-top p-0"
+                  src="/screenshots/app4.png"
+                  alt="Mockup app progetto"
+                />
               </foreignObject>
             </svg>
           </div>
@@ -158,16 +164,12 @@ function Header() {
 
 function Strenght() {
   return (
-    <div className="py-24 sm:py-32">
+    <div className="py-16 sm:py-20">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
-        <Heading as="h1" className="mt-2 max-w-3xl">
-          App su misura per accelerare il tuo business
-        </Heading>
-
         <div className="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
           <div className="relative lg:row-span-2">
             <div className="absolute inset-px rounded-lg bg-white lg:rounded-l-[2rem]"></div>
-            <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-l-[calc(2rem+1px)]">
+            <div className="relative flex h-full flex-col gap-y-4 overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-l-[calc(2rem+1px)]">
               <div className="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10">
                 <p className="mt-2 text-lg/7 font-medium tracking-tight text-gray-950 max-lg:text-center">
                   Soluzioni App Personalizzate
@@ -183,7 +185,7 @@ function Strenght() {
               <div className="relative min-h-[30rem] w-full grow [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
                 <div className="absolute inset-x-10 bottom-0 top-0 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-gray-900 shadow-2xl">
                   <img
-                    className="size-full object-cover object-top"
+                    className="m-0 size-full object-cover object-top p-0"
                     src="/screenshots/app5.png"
                     alt="Mockup 2 app"
                   />
@@ -195,24 +197,24 @@ function Strenght() {
           <div className="relative max-lg:row-start-1">
             <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-t-[2rem]"></div>
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
-              <div className="px-8 pt-8 sm:px-10 sm:pt-10">
-                <p className="mt-2 text-lg/7 font-medium tracking-tight text-gray-950 max-lg:text-center">
-                  Integrazione Semplice
-                </p>
-                <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
+              <div className="flex h-full flex-col justify-center px-8 py-12 sm:px-10">
+                <div className="mb-6 flex items-center gap-x-4">
+                  <div className="flex h-14 w-14 items-center justify-center rounded-full bg-indigo-100">
+                    <ArrowsPointingInIcon
+                      className="h-7 w-7 text-indigo-600"
+                      aria-hidden="true"
+                    />
+                  </div>
+                  <p className="text-xl font-medium tracking-tight text-gray-950 max-lg:text-center lg:text-left">
+                    Integrazione Semplice
+                  </p>
+                </div>
+                <p className="max-w-lg text-base/7 text-gray-600 max-lg:text-center">
                   I nostri software custom sono facilmente integrabili con la
                   maggior parte delle piattaforme esterne già esistenti,
                   consentendoti di ottimizzare i tuoi processi aziendali senza
                   interruzioni.
                 </p>
-              </div>
-              <div className="flex flex-1 items-center justify-center px-8 max-lg:pb-12 max-lg:pt-10 sm:px-10 lg:pb-2">
-                {' '}
-                <img
-                  className="size-full object-cover object-top"
-                  src="https://tailwindui.com/plus/img/component-images/bento-01-integrations.png"
-                  alt="intrgration stack"
-                />
               </div>
             </div>
             <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-t-[2rem]"></div>
@@ -220,23 +222,25 @@ function Strenght() {
           <div className="relative max-lg:row-start-3 lg:col-start-2 lg:row-start-2">
             <div className="absolute inset-px rounded-lg bg-white"></div>
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
-              <div className="px-8 pt-8 sm:px-10 sm:pt-10">
-                <p className="mt-2 text-lg/7 font-medium tracking-tight text-gray-950 max-lg:text-center">
-                  Sicurezza Avanzata
-                </p>
-                <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
+              <div className="flex h-full flex-col justify-center px-8 py-12 sm:px-10">
+                <div className="mb-6 flex items-center gap-x-4">
+                  <div className="flex h-14 w-14 items-center justify-center rounded-full bg-green-100">
+                    <LockClosedIcon
+                      className="h-7 w-7 text-green-600"
+                      aria-hidden="true"
+                    />
+                  </div>
+                  <p className="text-xl font-medium tracking-tight text-gray-950 max-lg:text-center lg:text-left">
+                    Sicurezza Avanzata
+                  </p>
+                </div>
+                <p className="max-w-lg text-base/7 text-gray-600 max-lg:text-center">
                   Con i software custom, hai un controllo 1 a 1 sui dati del
                   programma, garantendo la massima sicurezza e protezione per le
                   informazioni aziendali sensibili.
                 </p>
               </div>
-              <div className="flex flex-1 items-center [container-type:inline-size] max-lg:py-6 lg:pb-2">
-                <img
-                  className="h-[min(152px,40cqw)] object-cover object-center"
-                  src="https://tailwindui.com/plus/img/component-images/bento-03-security.png"
-                  alt="sicurezza"
-                />
-              </div>
+              <div className="flex-1"></div>
             </div>
             <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5"></div>
           </div>
@@ -397,6 +401,131 @@ function Strenght() {
   )
 }
 
+function MobileAppFeatures() {
+  return (
+    <div className="py-24 sm:py-32">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-2xl text-center">
+          <Heading as="h2" className="mt-2 max-w-3xl">
+            Soluzioni Mobile per Ogni Esigenza
+          </Heading>
+          <p className="mt-6 text-lg leading-8 text-gray-600">
+            Sviluppiamo app mobili che trasformano le tue idee in soluzioni
+            concrete, offrendo un'esperienza utente impeccabile e funzionalità
+            avanzate per ogni esigenza del tuo business.
+          </p>
+        </div>
+        <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-4">
+          <div className="flex flex-col rounded-2xl bg-white p-8 shadow-lg ring-1 ring-gray-200">
+            <div className="flex h-14 w-14 items-center justify-center rounded-full bg-indigo-100">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="h-7 w-7 text-indigo-600"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
+                />
+              </svg>
+            </div>
+            <h3 className="mt-6 text-xl font-medium tracking-tight text-gray-950">
+              App Native
+            </h3>
+            <p className="mt-4 text-base/7 text-gray-600">
+              Sviluppiamo app native per iOS e Android, sfruttando al massimo le
+              caratteristiche specifiche di ogni piattaforma per garantire
+              prestazioni ottimali e massima sicurezza.
+            </p>
+          </div>
+          <div className="flex flex-col rounded-2xl bg-white p-8 shadow-lg ring-1 ring-gray-200">
+            <div className="flex h-14 w-14 items-center justify-center rounded-full bg-green-100">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="h-7 w-7 text-green-600"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5m.75-9 3-3 2.148 2.148A12.061 12.061 0 0 1 16.5 7.605"
+                />
+              </svg>
+            </div>
+            <h3 className="mt-6 text-xl font-medium tracking-tight text-gray-950">
+              App Cross-Platform
+            </h3>
+            <p className="mt-4 text-base/7 text-gray-600">
+              Le nostre soluzioni cross-platform ti permettono di raggiungere
+              tutti i dispositivi con un'unica codebase, riducendo tempi e costi
+              di sviluppo senza sacrificare qualità e prestazioni.
+            </p>
+          </div>
+          <div className="flex flex-col rounded-2xl bg-white p-8 shadow-lg ring-1 ring-gray-200">
+            <div className="flex h-14 w-14 items-center justify-center rounded-full bg-blue-100">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="h-7 w-7 text-blue-600"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125"
+                />
+              </svg>
+            </div>
+            <h3 className="mt-6 text-xl font-medium tracking-tight text-gray-950">
+              Integrazione Backend
+            </h3>
+            <p className="mt-4 text-base/7 text-gray-600">
+              Realizziamo infrastrutture backend robuste e scalabili che si
+              integrano perfettamente con le tue app mobile, garantendo
+              sincronizzazione dati e funzionalità avanzate in tempo reale.
+            </p>
+          </div>
+          <div className="flex flex-col rounded-2xl bg-white p-8 shadow-lg ring-1 ring-gray-200">
+            <div className="flex h-14 w-14 items-center justify-center rounded-full bg-purple-100">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="h-7 w-7 text-purple-600"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
+                />
+              </svg>
+            </div>
+            <h3 className="mt-6 text-xl font-medium tracking-tight text-gray-950">
+              UX/UI Innovative
+            </h3>
+            <p className="mt-4 text-base/7 text-gray-600">
+              Design moderno e intuitivo che migliora l'esperienza utente.
+              Creiamo interfacce accattivanti e funzionali che rendono
+              l'interazione con la tua app fluida e piacevole.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
 function FAQ() {
   const faqs = [
     {
@@ -456,20 +585,32 @@ function FAQ() {
                     <span className="ml-6 flex h-7 items-center">
                       <PlusSmallIcon
                         aria-hidden="true"
-                        className="h-6 w-6 group-data-[open]:hidden"
+                        className="h-6 w-6 transition-opacity duration-150 ease-in-out group-data-[open]:opacity-0"
                       />
                       <MinusSmallIcon
                         aria-hidden="true"
-                        className="h-6 w-6 [.group:not([data-open])_&]:hidden"
+                        className="absolute h-6 w-6 opacity-0 transition-opacity duration-150 ease-in-out group-data-[open]:opacity-100"
                       />
                     </span>
                   </DisclosureButton>
                 </dt>
-                <DisclosurePanel as="dd" className="mt-2 pr-12">
-                  <p className="text-base leading-7 text-gray-600">
-                    {faq.answer}
-                  </p>
-                </DisclosurePanel>
+                <Transition
+                  enter="transition duration-300 ease-out"
+                  enterFrom="transform -translate-y-2 opacity-0"
+                  enterTo="transform translate-y-0 opacity-100"
+                  leave="transition duration-200 ease-out"
+                  leaveFrom="transform translate-y-0 opacity-100"
+                  leaveTo="transform -translate-y-2 opacity-0"
+                >
+                  <DisclosurePanel
+                    as="dd"
+                    className="mt-2 overflow-hidden pr-12"
+                  >
+                    <p className="text-base leading-7 text-gray-600">
+                      {faq.answer}
+                    </p>
+                  </DisclosurePanel>
+                </Transition>
               </Disclosure>
             ))}
           </dl>
@@ -491,6 +632,7 @@ export default function CustomApp() {
         </Container>
         <Header />
         <Strenght />
+        <MobileAppFeatures />
         <FAQ />
         <Footer />
       </main>
