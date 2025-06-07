@@ -1,17 +1,20 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter } from "react-router-dom";
-import { ThemeProvider } from './providers/ThemeProvider.tsx';
+import { HelmetProvider } from 'react-helmet-async';
+import { LanguageProvider } from './providers/LanguageProvider';
 import './index.css'
-import App from './App.tsx'
+import App from './App'
 
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter>
-      <ThemeProvider>
-        <App />
-      </ThemeProvider>
-    </BrowserRouter>
+    <HelmetProvider>
+      <BrowserRouter>
+        <LanguageProvider>
+          <App />
+        </LanguageProvider>
+      </BrowserRouter>
+    </HelmetProvider>
   </StrictMode>
 )
