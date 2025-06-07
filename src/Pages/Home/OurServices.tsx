@@ -1,87 +1,128 @@
-import React from 'react';
-import { Icon } from '@iconify/react';
-import { motion } from 'framer-motion';
+import { Icon } from '@iconify/react'
+import { motion } from 'framer-motion'
 
-interface ServiceCardProps {
-  title: string;
-  description: string;
-  iconName: string;
-  index: number;
-}
-
-const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, iconName, index }) => {
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: index * 0.2 }}
-      viewport={{ once: true }}
-      whileHover={{ scale: 1.05 }}
-      className="bg-[#1A1A1A] p-6 rounded-2xl shadow-lg transition-shadow duration-300 border border-gray-800"
-    >
-      <motion.div 
-        className="text-primary text-4xl mb-4"
-        whileHover={{ rotate: 360 }}
-        transition={{ duration: 0.6 }}
-      >
-        <Icon icon={iconName} width="48" height="48" />
-      </motion.div>
-      <h3 className="text-xl font-bold mb-3 text-white">{title}</h3>
-      <p className="text-gray-400 leading-relaxed">{description}</p>
-    </motion.div>
-  );
-};
+const services = [
+  {
+    title: "Software Development",
+    description: "Sviluppiamo soluzioni software complete: applicazioni web, mobile apps, siti web, software personalizzato, MVP per startup e soluzioni basate su intelligenza artificiale.",
+    icon: "carbon:application-web",
+    features: [
+      "Mobile Apps",
+      "Web Applications",
+      "Websites",
+      "Custom Software",
+      "Startup MVP",
+      "AI-based Software"
+    ]
+  },  
+  {
+    title: "System Integration",
+    description: "Integriamo e ottimizziamo i tuoi sistemi aziendali attraverso cloud integration, sviluppo API, modernizzazione dei sistemi legacy e gestione delle infrastrutture applicative.",
+    icon: "material-symbols:cloud-outline",
+    features: [
+      "Cloud Integration",
+      "API Development",
+      "Infrastructure Management",
+      "DevOps & CI/CD"
+    ]
+  },{
+    title: "Consulting",
+    description: "Forniamo consulenza strategica e tecnica per guidare la tua trasformazione digitale con sicurezza, scalabilità e infrastrutture moderne.",
+    icon: "carbon:chart-relationship",
+    features: [
+      "Digital Strategy",
+      "Technical Architecture",
+      "Cloud Infrastructure Planning",
+      "Scalable System Design"
+    ]
+  }
+  
+]
 
 export default function OurServices() {
-  const services = [
-    {
-      title: "Sviluppo Software Personalizzato",
-      description: "Creiamo soluzioni software su misura per le tue esigenze specifiche, utilizzando le tecnologie più moderne e innovative per garantire prodotti di alta qualità e performanti.",
-      iconName: "mdi:code-braces"
-    },
-    {
-      title: "System Integration & Cloud Management",
-      description: "Gestiamo e integriamo infrastrutture cloud e tradizionali, garantendo efficienza, sicurezza e scalabilità per il tuo business con soluzioni all'avanguardia.",
-      iconName: "mdi:cloud-sync"
-    },
-    {
-      title: "Consulenza Strategica & Prodotto",
-      description: "Offriamo consulenza strategica per ottimizzare i tuoi processi aziendali e sviluppare prodotti innovativi, guidandoti verso il successo digitale.",
-      iconName: "mdi:lightbulb"
-    }
-  ];
-
   return (
-    <motion.section 
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 0.8 }}
-      viewport={{ once: true }}
-      className="py-16 bg-black rounded-t-[50px]"
-    >
-      <div className="container mx-auto px-4">
-        <motion.div 
-          initial={{ opacity: 0, y: -30 }}
+    <div className="bg-primary py-24 sm:py-32">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <motion.h2 
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-12"
+          transition={{ duration: 0.6 }}
+          className="text-4xl font-bold tracking-tight text-white text-center mb-20"
         >
-          <h2 className="text-3xl font-bold text-white mb-4">I Nostri Servizi</h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">
-            Offriamo soluzioni complete per trasformare e potenziare il tuo business digitale
-          </p>
-        </motion.div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          Ecco cosa facciamo.
+        </motion.h2>
+        
+        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-16 gap-y-20 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {services.map((service, index) => (
-            <ServiceCard
+            <motion.div 
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.2 }}
+              whileHover={{ scale: 1.02 }}
               key={index}
-              {...service}
-              index={index}
-            />
+              className="group relative p-8 cursor-pointer rounded-2xl border border-white/10"
+            >
+              <motion.div 
+                className="absolute inset-0 rounded-2xl bg-white/[0.05] transition-all duration-300 group-hover:bg-white/[0.1] backdrop-blur-sm" 
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.3 }}
+              />
+              <div className="relative">
+                <motion.div 
+                  className="flex items-center gap-4 mb-8"
+                  initial={{ x: -20 }}
+                  whileInView={{ x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.2 + 0.2 }}
+                >
+                  <div 
+                    
+                    className="rounded-xl bg-white/20 p-4 transition-all duration-300 group-hover:bg-white/30 shadow-lg"
+                  >
+                    <Icon icon={service.icon} className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="text-2xl font-semibold text-white">
+                    {service.title}
+                  </h3>
+                </motion.div>
+                <motion.p 
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.2 + 0.3 }}
+                  className="text-base text-white/80 leading-relaxed mb-6 transition-all duration-300 group-hover:text-white"
+                >
+                  {service.description}
+                </motion.p>
+                <motion.ul 
+                  className="space-y-2"
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.2 + 0.4 }}
+                >
+                  {service.features.map((feature, idx) => (
+                    <motion.li 
+                      key={idx} 
+                      initial={{ opacity: 0, x: -10 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.3, delay: idx * 0.1 }}
+                      className="text-sm text-white/70 flex items-center gap-2"
+                    >
+                      <Icon icon="ph:dot-outline-fill" className="w-4 h-4 text-white/40" />
+                      {feature}
+                    </motion.li>
+                  ))}
+                </motion.ul>
+              </div>
+            </motion.div>
           ))}
         </div>
       </div>
-    </motion.section>
-  );
+    </div>
+  )
 }

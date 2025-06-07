@@ -3,7 +3,7 @@
 import type {IconProps} from "@iconify/react";
 
 import React from "react";
-import {Button, Input, Link} from "@heroui/react";
+import {Link} from "@heroui/react";
 import {Icon} from "@iconify/react";
 import {useLanguage} from "../../context/LanguageContext";
 
@@ -101,7 +101,8 @@ export default function Footer() {
               <img src="/logo.png" alt="Space Design Italia Logo" className="h-36 w-auto" />
             </div>
             <p className="text-small text-default-500">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique
+            Trasformiamo l'ordinario in straordinario,
+            ispirati dalle meraviglie dello spazio!
             </p>
             <div className="flex space-x-6">
               {footerNavigation.social.map((item) => (

@@ -27,8 +27,8 @@ export const translations: Translations = {
     it: "Sviluppo Software"
   },
   "software-development-desc": {
-    en: "End-to-end software development services delivering scalable, secure, and innovative solutions tailored to your business needs",
-    it: "Servizi di sviluppo software completi che offrono soluzioni scalabili, sicure e innovative su misura per le tue esigenze aziendali"
+    en: "We develop complete software solutions: web applications, mobile apps, websites, custom software, startup MVPs, and AI-based solutions.",
+    it: "Sviluppiamo soluzioni software complete: applicazioni web, mobile apps, siti web, software personalizzato, MVP per startup e soluzioni basate su intelligenza artificiale."
   },
   "web-applications": {
     en: "Web Applications",
@@ -59,8 +59,8 @@ export const translations: Translations = {
     it: "Integrazione Sistemi"
   },
   "system-integration-desc": {
-    en: "Expert integration services connecting your systems, applications, and data for improved efficiency and seamless operations",
-    it: "Servizi di integrazione esperti che collegano i tuoi sistemi, applicazioni e dati per una maggiore efficienza e operazioni fluide"
+    en: "We integrate and optimize your business systems through cloud integration, API development, legacy system modernization, and application infrastructure management.",
+    it: "Integriamo e ottimizziamo i tuoi sistemi aziendali attraverso cloud integration, sviluppo API, modernizzazione dei sistemi legacy e gestione delle infrastrutture applicative."
   },
   "cloud-integration": {
     en: "Cloud Integration",
@@ -91,8 +91,8 @@ export const translations: Translations = {
     it: "Consulenza"
   },
   "consulting-desc": {
-    en: "Strategic technology consulting to guide your digital initiatives, optimize processes, and maximize ROI",
-    it: "Consulenza tecnologica strategica per guidare le tue iniziative digitali, ottimizzare i processi e massimizzare il ROI"
+    en: "We provide strategic and technical consulting to guide your digital transformation with security, scalability, and modern infrastructures.",
+    it: "Forniamo consulenza strategica e tecnica per guidare la tua trasformazione digitale con sicurezza, scalabilità e infrastrutture moderne."
   },
   "digital-strategy": {
     en: "Digital Strategy",
@@ -201,5 +201,125 @@ export const translations: Translations = {
   "startup-mvp-desc": {
     en: "Rapid development of market-ready MVPs to validate your startup idea and accelerate time-to-market",
     it: "Sviluppo rapido di MVP pronti per il mercato per validare la tua idea di startup e accelerare il time-to-market"
+  },
+  "how-we-work": {
+    en: "How we work with you",
+    it: "Come lavoriamo con te"
+  },
+  "engagement-models": {
+    en: "Engagement Models",
+    it: "Modelli di collaborazione"
+  },
+  "engagement-models-desc": {
+    en: "Choose the collaboration model that best suits your project needs. We offer flexible options to ensure successful project delivery.",
+    it: "Scegli il modello di collaborazione più adatto alle esigenze del tuo progetto. Offriamo opzioni flessibili per garantire il successo del progetto."
+  },
+  "time-material": {
+    en: "Time & Material",
+    it: "Tempo e Materiali"
+  },
+  "time-material-desc": {
+    en: "Flexible project structure where costs are based on the actual time spent and materials used. Perfect for projects with evolving requirements.",
+    it: "Struttura di progetto flessibile dove i costi si basano sul tempo effettivo e i materiali utilizzati. Perfetto per progetti con requisiti in evoluzione."
+  },
+  "fixed-price": {
+    en: "Fixed Price",
+    it: "Prezzo Fisso"
+  },
+  "fixed-price-desc": {
+    en: "Pre-defined project scope and cost. Ideal for projects with clear requirements and defined deliverables.",
+    it: "Ambito e costo del progetto predefiniti. Ideale per progetti con requisiti chiari e risultati definiti."
+  },
+  "flexible-scope": {
+    en: "Flexible scope",
+    it: "Ambito flessibile"
+  },
+  "regular-updates": {
+    en: "Regular progress updates",
+    it: "Aggiornamenti regolari"
+  },
+  "transparent-rates": {
+    en: "Transparent hourly rates",
+    it: "Tariffe orarie trasparenti"
+  },
+  "weekly-billing": {
+    en: "Weekly/Monthly billing",
+    it: "Fatturazione settimanale/mensile"
+  },
+  "direct-communication": {
+    en: "Direct communication with the team",
+    it: "Comunicazione diretta con il team"
+  },
+  "defined-scope": {
+    en: "Defined project scope",
+    it: "Ambito del progetto definito"
+  },
+  "fixed-budget": {
+    en: "Fixed budget",
+    it: "Budget fisso"
+  },
+  "milestone-payments": {
+    en: "Milestone-based payments",
+    it: "Pagamenti basati su milestone"
+  },
+  "detailed-planning": {
+    en: "Detailed project planning",
+    it: "Pianificazione dettagliata"
+  },
+  "risk-management": {
+    en: "Risk management included",
+    it: "Gestione del rischio inclusa"
+  },
+  "not-sure": {
+    en: "Not sure which to choose?",
+    it: "Non sai quale scegliere?"
+  },
+  "discuss-requirements": {
+    en: "Let's discuss your project requirements and help you decide the best engagement model for your needs.",
+    it: "Discutiamo insieme i requisiti del tuo progetto e ti aiutiamo a scegliere il modello più adatto alle tue esigenze."
+  },
+  "contact-us": {
+    en: "Contact us",
+    it: "Contattaci"
+  },
+  "ai-software": {
+    en: "AI-based Software",
+    it: "Software basato su IA"
+  },
+  "ai-software-desc": {
+    en: "Innovative solutions leveraging artificial intelligence and machine learning to automate processes and enhance decision-making",
+    it: "Soluzioni innovative che sfruttano l'intelligenza artificiale e il machine learning per automatizzare i processi e migliorare il processo decisionale"
+  },
+  "infrastructure-management": {
+    en: "Infrastructure Management",
+    it: "Gestione Infrastrutture"
+  },
+  "infrastructure-management-desc": {
+    en: "Comprehensive management and optimization of your application infrastructure for maximum reliability and performance",
+    it: "Gestione e ottimizzazione completa della tua infrastruttura applicativa per massima affidabilità e prestazioni"
+  },
+  "devops": {
+    en: "DevOps & CI/CD",
+    it: "DevOps & CI/CD"
+  },
+  "devops-desc": {
+    en: "Implementation of DevOps practices and CI/CD pipelines to accelerate development and ensure reliable deployments",
+    it: "Implementazione di pratiche DevOps e pipeline CI/CD per accelerare lo sviluppo e garantire deployment affidabili"
+  },
+  "cloud-infrastructure-planning": {
+    en: "Cloud Infrastructure Planning",
+    it: "Pianificazione Infrastruttura Cloud"
+  },
+  "cloud-infrastructure-planning-desc": {
+    en: "Strategic planning and design of cloud infrastructures optimized for your business needs and growth objectives",
+    it: "Pianificazione strategica e progettazione di infrastrutture cloud ottimizzate per le tue esigenze aziendali e obiettivi di crescita"
+  },
+  "system-design": {
+    en: "Scalable System Design",
+    it: "Design di Sistemi Scalabili"
+  },
+  "system-design-desc": {
+    en: "Design of highly scalable and resilient system architectures that grow with your business needs",
+    it: "Progettazione di architetture di sistema altamente scalabili e resilienti che crescono con le tue esigenze aziendali"
   }
 }; 

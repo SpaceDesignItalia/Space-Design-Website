@@ -22,18 +22,31 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   });
 
   const setLanguage = (newLang: Language) => {
-    setLanguageState(newLang);
-    const currentPath = location.pathname.split('/').slice(2).join('/');
-    navigate(`/${newLang}${currentPath ? `/${currentPath}` : ''}`);
+    if (newLang !== language) {
+      setLanguageState(newLang);
+      
+      // Get the current path parts
+      const pathParts = location.pathname.split('/').filter(Boolean);
+      
+      // If we're at the root or only have the language part
+      if (pathParts.length <= 1) {
+        navigate(`/${newLang}`);
+        return;
+      }
+      
+      // Replace the language part (first part) with the new language
+      pathParts[0] = newLang;
+      navigate(`/${pathParts.join('/')}`);
+    }
   };
 
-  // Sync language with URL changes
+  // Sync language with URL changes, but only if it's different from current language
   useEffect(() => {
     const pathLang = location.pathname.split('/')[1] as Language;
-    if (pathLang === 'it' || pathLang === 'en') {
+    if ((pathLang === 'it' || pathLang === 'en') && pathLang !== language) {
       setLanguageState(pathLang);
     }
-  }, [location.pathname]);
+  }, [location.pathname, language]);
 
   const t = (key: string): string => {
     return translations[key]?.[language] || key;

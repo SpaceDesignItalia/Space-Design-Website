@@ -21,7 +21,7 @@ const stagger = {
 const clients = [
   {
     name: "Syllog",
-    logo: "https://sa1telepasstestne.blob.core.windows.net/website/LogoNew.png?sp=r&st=2024-10-19T21:46:33Z&se=2026-11-11T06:46:33Z&spr=https&sv=2022-11-02&sr=c&sig=DfLgOe59oR0N8u0d6aFiPOVEZal4LvwocCFtjsiALxk%3D"
+    logo: "/Imgs/Home/syllog.webp"
   }
 ]
 
@@ -122,14 +122,13 @@ export default function Hero() {
             >
               <span className="flex items-center justify-center gap-2">
                 {t("hero-cta-services")}
-                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-primary-100 transition-transform duration-300 group-hover:translate-x-1 dark:bg-primary-900/30">
+               
                   <Icon
                     className="text-primary-500 dark:text-primary-400 [&>path]:stroke-[1.5]"
                     icon="solar:arrow-right-linear"
                     width={16}
                     aria-hidden="true"
                   />
-                </span>
               </span>
             </Button>
           </motion.div>
@@ -160,7 +159,7 @@ export default function Hero() {
                   whileTap={{ scale: 0.95 }}
                   role="listitem"
                 >
-                  <div className="h-12">
+                  <div className="h-10">
                     <img
                       src={client.logo}
                       alt={`${t("client-logo")} ${client.name}`}

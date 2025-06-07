@@ -3,20 +3,12 @@ import SEO from "../../Components/SEO"
 import { useLanguage } from "../../context/LanguageContext"
 import OurServices from "./OurServices";
 import CTA from "./CTA";
-import { useParams } from "react-router-dom";
-import { useEffect } from "react";
+import WhyUs from "./WhyUs";
+import ProjectTypes from "./ProjectTypes";
 
 export default function Home() {
-  const { t, language, setLanguage } = useLanguage();
-  const { lang } = useParams();
+  const { t, language } = useLanguage();
   
-  // Sync URL language parameter with context
-  useEffect(() => {
-    if (lang && (lang === 'en' || lang === 'it') && lang !== language) {
-      setLanguage(lang);
-    }
-  }, [lang, language, setLanguage]);
-
   return (
     <>
       <SEO 
@@ -33,6 +25,8 @@ export default function Home() {
       <main>
         <Hero />
         <OurServices/>
+        <WhyUs/>
+        <ProjectTypes/>
         <CTA/>
       </main>
     </>

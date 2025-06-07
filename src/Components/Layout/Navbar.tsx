@@ -3,6 +3,7 @@ import { Icon } from "@iconify/react";
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLanguage } from "../../context/LanguageContext";
+import { Link } from "react-router-dom";
 
 type ServiceItem = {
   name: string;
@@ -27,58 +28,64 @@ const services: Services = {
     descriptionKey: "software-development-desc",
     items: [
       { 
-        name: "Mobile Apps", 
+        name: "mobile-apps", 
         href: "/services/mobile-development", 
         icon: "bi:phone",
         descriptionKey: "mobile-apps-desc"
       },
       { 
-        name: "Web Applications", 
-        href: "/services/web-development", 
-        icon: "eos-icons:application-outlined",
-        descriptionKey: "web-applications-desc"
-      },
-      { 
-        name: "Websites", 
+        name: "websites", 
         href: "/services/websites", 
         icon: "mdi:web",
         descriptionKey: "websites-desc"
       },
       { 
-        name: "Custom Software", 
+        name: "custom-software", 
         href: "/services/custom-software", 
         icon: "clarity:design-line",
         descriptionKey: "custom-software-desc"
       },
       { 
-        name: "Startup MVP", 
+        name: "startup-mvp", 
         href: "/services/startup-mvp", 
         icon: "pajamas:rocket-launch",
         descriptionKey: "startup-mvp-desc"
       },
+      { 
+        name: "ai-software", 
+        href: "/services/ai-software", 
+        icon: "streamline:artificial-intelligence-spark-remix",
+        descriptionKey: "ai-software-desc"
+      },
     ],
   },
   "System Integration": {
-    icon: "carbon:integration",
+    icon: "material-symbols:cloud-outline",
     descriptionKey: "system-integration-desc",
     items: [
       { 
-        name: "Cloud Integration", 
+        name: "cloud-integration", 
         href: "/services/cloud-integration", 
         icon: "carbon:cloud-service-management",
         descriptionKey: "cloud-integration-desc"
       },
       { 
-        name: "API Development", 
+        name: "api-development", 
         href: "/services/api-development", 
-        icon: "carbon:api",
+        icon: "streamline-ultimate:coding-apps-website-web-dev-api-cloud",
         descriptionKey: "api-development-desc"
       },
       { 
-        name: "Legacy Systems", 
-        href: "/services/legacy-integration", 
-        icon: "carbon:system",
-        descriptionKey: "legacy-systems-desc"
+        name: "infrastructure-management", 
+        href: "/services/infrastructure", 
+        icon: "tabler:server-cog",
+        descriptionKey: "infrastructure-management-desc"
+      },
+      { 
+        name: "devops", 
+        href: "/services/devops", 
+        icon: "icon-park-outline:cycle-arrow",
+        descriptionKey: "devops-desc"
       },
     ],
   },
@@ -87,22 +94,28 @@ const services: Services = {
     descriptionKey: "consulting-desc",
     items: [
       { 
-        name: "Digital Strategy", 
+        name: "digital-strategy", 
         href: "/services/digital-strategy", 
-        icon: "carbon:strategy",
+        icon: "lucide:chart-line",
         descriptionKey: "digital-strategy-desc"
       },
       { 
-        name: "Technical Architecture", 
+        name: "tech-architecture", 
         href: "/services/tech-architecture", 
         icon: "carbon:network-3",
         descriptionKey: "tech-architecture-desc"
       },
       { 
-        name: "Security Consulting", 
-        href: "/services/security", 
-        icon: "carbon:security",
-        descriptionKey: "security-consulting-desc"
+        name: "cloud-infrastructure-planning", 
+        href: "/services/cloud-planning", 
+        icon: "carbon:cloud-infrastructure",
+        descriptionKey: "cloud-infrastructure-planning-desc"
+      },
+      { 
+        name: "system-design", 
+        href: "/services/system-design", 
+        icon: "carbon:scale",
+        descriptionKey: "system-design-desc"
       },
     ],
   },
@@ -168,23 +181,29 @@ export default function Navbar() {
     >
       <div className="container mx-auto flex h-[70px] max-w-[1200px] items-center justify-between px-4 md:px-8">
         {/* Logo */}
-        <motion.a
-          href={`/${language}`}
+        <Link
+          to={`/${language}`}
           className="text-xl font-bold text-black dark:text-white"
-          whileHover={{ scale: 1.02 }}
-          whileTap={{ scale: 0.98 }}
           aria-label={t('home')}
         >
-          <img src="./logo.png" alt="Space Design Italia Logo" className="h-20 w-auto" />
-        </motion.a>
+          <motion.img 
+            src="./logo.png" 
+            alt="Space Design Italia Logo" 
+            className="h-20 w-auto"
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+          />
+        </Link>
         
         {/* Desktop Navigation */}
         <div className="hidden items-center md:flex md:gap-8" role="menubar">
           {/* Services Dropdown */}
-          <Popover showArrow>
+          <Popover showArrow shouldBlockScroll>
             <PopoverTrigger>
               <motion.button
-                className={`text-sm font-medium text-gray-600 transition-colors hover:text-primary dark:text-gray-300 dark:hover:text-primary-400 flex items-center gap-2`}
+                className={`group flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium text-gray-600 transition-all duration-200 hover:bg-gray-100 hover:text-primary dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-primary-400 ${
+                  isServicesOpen ? 'bg-gray-100 text-primary dark:bg-gray-800 dark:text-primary-400' : ''
+                }`}
                 onClick={() => setIsServicesOpen(!isServicesOpen)}
                 aria-expanded={isServicesOpen}
                 aria-haspopup="true"
@@ -195,83 +214,78 @@ export default function Navbar() {
                 {t('services')}
                 <Icon
                   icon="heroicons:chevron-down"
-                  className={`transition-all duration-200 ${isServicesOpen ? 'rotate-180 text-primary-500 dark:text-primary-400' : ''}`}
+                  className={`transition-all duration-300 ${isServicesOpen ? 'rotate-180 text-primary-500 dark:text-primary-400' : ''}`}
                   width={16}
                   aria-hidden="true"
                 />
               </motion.button>
             </PopoverTrigger>
-            <PopoverContent>
-              <div className="flex gap-5 p-5" id="services-menu" role="menu">
+            <PopoverContent className="w-screen max-w-screen-lg rounded-xl border border-gray-200 bg-white shadow-xl dark:border-gray-800 dark:bg-gray-900 py-5">
+              <div className="flex gap-5" id="services-menu" role="menu">
                 {/* Categories Sidebar */}
-                <div className="w-[280px] min-w-[280px] space-y-1 border-r-2 px-2" role="tablist">
-                  {Object.entries(servicesWithLang).map(([category, { icon, descriptionKey }]) => (
-                    <button
+                <div className="w-[280px] min-w-[280px] space-y-2 border-r pr-3 border-gray-200 px-2 dark:border-gray-800" role="tablist">
+                  {Object.entries(servicesWithLang).map(([category, { icon }]) => (
+                    <motion.button
                       key={category}
                       onClick={() => setActiveCategory(category)}
-                      className={`group flex w-full items-start gap-3 rounded-lg p-3 text-left transition-colors ${
+                      className={`group flex w-full items-center gap-3 rounded-xl p-3 text-left transition-all duration-300 ${
                         activeCategory === category
-                          ? 'bg-primary dark:bg-primary-900/20 transition-all duration-300'
-                          : 'hover:border-primary border-2 transition-all duration-300'
+                          ? 'bg-primary/10 dark:bg-primary-900/20'
+                          : 'hover:bg-gray-50 dark:hover:bg-gray-800/50'
                       }`}
                       role="tab"
                       aria-selected={activeCategory === category}
                       aria-controls={`${category}-panel`}
                       id={`${category}-tab`}
+                      whileHover={{ scale: 1.02, x: 4 }}
+                      whileTap={{ scale: 0.98 }}
                     >
                       <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-lg transition-colors ${
                         activeCategory === category
-                          ? 'bg-white'
-                          : 'bg-gray-500 group-hover:bg-primary transition-all duration-300'
+                          ? 'bg-primary text-white dark:bg-primary-400 dark:text-gray-900'
+                          : 'bg-gray-100 text-gray-500 group-hover:bg-gray-200 group-hover:text-primary dark:bg-gray-800 dark:text-gray-400 dark:group-hover:bg-gray-700'
                       }`}>
                         <Icon 
-                          icon={icon} 
-                          className={`transition-colors ${
-                            activeCategory === category
-                              ? 'text-primary dark:text-primary-400'
-                              : 'text-white '
-                          }`}
+                          icon={icon}
                           width={24}
                           aria-hidden="true"
                         />
                       </span>
                       <div>
-                        <div className={`font-medium transition-colors ${
+                        <div className={`font-xs transition-colors ${
                           activeCategory === category
-                            ? 'text-white dark:text-primary-400'
-                            : 'text-gray-900 dark:text-white'
+                            ? 'text-primary dark:text-primary-400'
+                            : 'text-gray-900 group-hover:text-primary dark:text-white dark:group-hover:text-primary-400'
                         }`}>
                           {t(category.toLowerCase().replace(/\s+/g, '-'))}
                         </div>
-                        <p className="mt-0.5 text-sm text-gray-300">
-                          {t(descriptionKey)}
-                        </p>
                       </div>
-                    </button>
+                    </motion.button>
                   ))}
                 </div>
 
                 {/* Services Content */}
-                <div className="flex-1">
+                <div className="flex-1 overflow-hidden p-5">
                   <AnimatePresence mode="wait">
                     <motion.div
                       key={activeCategory}
                       initial={{ opacity: 0, x: 20 }}
                       animate={{ opacity: 1, x: 0 }}
                       exit={{ opacity: 0, x: -20 }}
-                      transition={{ duration: 0.15 }}
+                      transition={{ duration: 0.2, ease: "easeOut" }}
                       className="h-full"
                       role="tabpanel"
                       id={`${activeCategory}-panel`}
                       aria-labelledby={`${activeCategory}-tab`}
                     >
                       <div className="mb-4 flex items-center gap-2">
-                        <Icon 
-                          icon={servicesWithLang[activeCategory]?.icon || ''}
-                          className="text-primary-500 dark:text-primary-400"
-                          width={24}
-                          aria-hidden="true"
-                        />
+                        <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary dark:bg-primary-900/20 dark:text-primary-400">
+                          <Icon 
+                            icon={servicesWithLang[activeCategory]?.icon || ''}
+                            width={24}
+                            aria-hidden="true"
+                          />
+                        </span>
                         <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
                           {t(activeCategory.toLowerCase().replace(/\s+/g, '-'))}
                         </h3>
@@ -287,25 +301,26 @@ export default function Navbar() {
                             whileTap={{ scale: 0.98 }}
                             className="w-full"
                           >
-                            <a
-                              href={item.href}
-                              className="group flex h-full flex-col rounded-xl bg-white p-4 transition-all duration-200 hover:bg-primary hover:shadow-lg dark:bg-gray-900 dark:hover:bg-primary"
+                            <Link
+                              to={item.href}
+                              className="group flex h-full flex-col rounded-xl border border-gray-200 bg-white p-4 transition-all duration-200 hover:border-primary hover:shadow-lg dark:border-gray-800 dark:bg-gray-900 dark:hover:border-primary-400"
                               role="menuitem"
+                              onClick={() => setIsServicesOpen(false)}
                             >
-                              <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary transition-colors group-hover:bg-white group-hover:text-primary dark:bg-primary/20">
+                              <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-white dark:bg-primary-900/20 dark:text-primary-400 dark:group-hover:bg-primary-400 dark:group-hover:text-gray-900">
                                 <Icon 
                                   icon={item.icon}
                                   width={20}
                                   aria-hidden="true"
                                 />
                               </div>
-                              <h4 className="mb-2 font-medium text-gray-900 transition-colors group-hover:text-white dark:text-white">
-                                {t(item.name.toLowerCase().replace(/\s+/g, '-'))}
+                              <h4 className="mb-2 font-medium text-gray-900 transition-colors group-hover:text-primary dark:text-white dark:group-hover:text-primary-400">
+                                {t(item.name)}
                               </h4>
-                              <p className="text-sm text-gray-500 transition-colors group-hover:text-white/80 dark:text-gray-400">
+                              <p className="text-sm text-gray-500 dark:text-gray-400">
                                 {t(item.descriptionKey)}
                               </p>
-                            </a>
+                            </Link>
                           </motion.div>
                         ))}
                       </div>
@@ -318,17 +333,20 @@ export default function Navbar() {
 
           {/* Nav Links */}
           {navLinks.map((link) => (
-            <motion.a
+            <Link
               key={link.name}
-              href={link.href}
+              to={link.href}
               className="text-sm font-medium text-gray-600 transition-colors hover:text-primary dark:text-gray-300 dark:hover:text-primary-400"
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
               role="menuitem"
               aria-current={window.location.pathname === link.href ? 'page' : undefined}
             >
-              {link.name}
-            </motion.a>
+              <motion.span
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                {link.name}
+              </motion.span>
+            </Link>
           ))}
         </div>
 
@@ -336,7 +354,10 @@ export default function Navbar() {
           <Button
             className="h-9 min-w-[40px] rounded-full px-3 text-sm font-medium text-primary transition-colors hover:bg-primary-50 dark:hover:bg-primary-900/20"
             variant="bordered"
-            onClick={() => setLanguage(language === 'en' ? 'it' : 'en')}
+            onClick={() => {
+              const newLang = language === 'en' ? 'it' : 'en';
+              setLanguage(newLang);
+            }}
             aria-label={t('change-language')}
           >
             {language.toUpperCase()}
@@ -399,8 +420,8 @@ export default function Navbar() {
                     <ul className="ml-10 space-y-3" role="menu">
                       {items.map((item) => (
                         <li key={item.name} role="none">
-                          <a
-                            href={item.href}
+                          <Link
+                            to={item.href}
                             className="flex items-center gap-2 rounded-lg p-2 transition-colors hover:bg-primary-50 dark:hover:bg-primary-900/20"
                             onClick={() => setIsMenuOpen(false)}
                             role="menuitem"
@@ -415,11 +436,11 @@ export default function Navbar() {
                             </span>
                             <div>
                               <div className="text-sm text-gray-900 dark:text-white">
-                                {t(item.name.toLowerCase().replace(/\s+/g, '-'))}
+                                {t(item.name)}
                               </div>
                               <p className="text-xs text-gray-500 dark:text-gray-400">{t(item.descriptionKey)}</p>
                             </div>
-                          </a>
+                          </Link>
                         </li>
                       ))}
                     </ul>
@@ -430,16 +451,16 @@ export default function Navbar() {
               {/* Mobile Other Links */}
               <div className="p-4" role="menu">
                 {navLinks.map((link) => (
-                  <a
+                  <Link
                     key={link.name}
-                    href={link.href}
+                    to={link.href}
                     className="block py-2 text-sm font-medium text-gray-600 transition-colors hover:text-primary dark:text-gray-300 dark:hover:text-primary-400"
                     onClick={() => setIsMenuOpen(false)}
                     role="menuitem"
                     aria-current={window.location.pathname === link.href ? 'page' : undefined}
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>
