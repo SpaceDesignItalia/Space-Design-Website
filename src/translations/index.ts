@@ -26,8 +26,8 @@ export const translations: Translations = {
 
   // Hero Section
   "hero-title": {
-    en: "Transform your business with powerful custom software",
-    it: "Trasforma la tua azienda con software personalizzato di alta qualità",
+    en: "The right software can change your company's future",
+    it: "Il software giusto può cambiare il futuro della tua azienda",
   },
   "hero-subtitle": {
     en: "We create tailored software solutions that help businesses thrive by automating processes, boosting efficiency, and simplifying complex workflows.",
@@ -282,12 +282,12 @@ export const translations: Translations = {
     it: "Siamo impegnati in una crescita e un miglioramento continui, sia nelle nostre competenze che nelle soluzioni che forniamo ai nostri clienti.",
   },
   "chat-mockup-1": {
-    en: "We need to add a new feature to optimize our workflow.",
-    it: "Abbiamo bisogno di aggiungere una nuova funzionalità per ottimizzare il nostro flusso di lavoro.",
+    en: "I've seen the analytics dashboard mockup. The interface is exactly as I imagined!",
+    it: "Ho visto il mockup della dashboard di analisi. L'interfaccia è esattamente come la immaginavo!",
   },
   "chat-mockup-2": {
-    en: "We could implement an automated system that integrates with your existing tools.",
-    it: "Potremmo implementare un sistema automatizzato che si integra con i vostri strumenti esistenti.",
+    en: "Great! We were thinking of adding a section for data export in different formats. Could that be useful?",
+    it: "Ottimo! Stavamo pensando di aggiungere anche una sezione per l'esportazione dei dati in diversi formati. Potrebbe essere utile?",
   },
   "chat-mockup-3": {
     en: "That would be super useful! I love how you always anticipate our needs.",
