@@ -1,45 +1,37 @@
 import { Icon } from '@iconify/react'
 import { motion } from 'framer-motion'
+import { useLanguage } from '../../context/LanguageContext';
 
 const services = [
   {
-    title: "Software Development",
-    description: "Sviluppiamo soluzioni software complete: applicazioni web, mobile apps, siti web, software personalizzato, MVP per startup e soluzioni basate su intelligenza artificiale.",
+    title: "software-development",
+    description: "software-development-desc",
     icon: "carbon:application-web",
     features: [
-      "Mobile Apps",
-      "Web Applications",
-      "Websites",
-      "Custom Software",
-      "Startup MVP",
-      "AI-based Software"
+      "web-applications",
+      "mobile-apps",
+      "websites",
+      "custom-software",
+      "startup-mvp",
+      "ai-software"
     ]
   },  
   {
-    title: "System Integration",
-    description: "Integriamo e ottimizziamo i tuoi sistemi aziendali attraverso cloud integration, sviluppo API, modernizzazione dei sistemi legacy e gestione delle infrastrutture applicative.",
+    title: "system-integration",
+    description: "system-integration-desc",
     icon: "material-symbols:cloud-outline",
     features: [
-      "Cloud Integration",
-      "API Development",
-      "Infrastructure Management",
-      "DevOps & CI/CD"
+      "cloud-integration",
+      "api-development",
+      "infrastructure-management",
+      "devops-ci-cd"
     ]
-  },{
-    title: "Consulting",
-    description: "Forniamo consulenza strategica e tecnica per guidare la tua trasformazione digitale con sicurezza, scalabilità e infrastrutture moderne.",
-    icon: "carbon:chart-relationship",
-    features: [
-      "Digital Strategy",
-      "Technical Architecture",
-      "Cloud Infrastructure Planning",
-      "Scalable System Design"
-    ]
-  }
+  },
   
 ]
 
 export default function OurServices() {
+  const { t } = useLanguage();
   return (
     <div className="bg-primary py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -53,7 +45,7 @@ export default function OurServices() {
           Ecco cosa facciamo.
         </motion.h2>
         
-        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-16 gap-y-20 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-16 gap-y-20 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           {services.map((service, index) => (
             <motion.div 
               initial={{ opacity: 0, y: 30 }}
@@ -85,7 +77,7 @@ export default function OurServices() {
                     <Icon icon={service.icon} className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-2xl font-semibold text-white">
-                    {service.title}
+                    {t(service.title)}
                   </h3>
                 </motion.div>
                 <motion.p 
@@ -95,7 +87,7 @@ export default function OurServices() {
                   transition={{ duration: 0.5, delay: index * 0.2 + 0.3 }}
                   className="text-base text-white/80 leading-relaxed mb-6 transition-all duration-300 group-hover:text-white"
                 >
-                  {service.description}
+                  {t(service.description)}
                 </motion.p>
                 <motion.ul 
                   className="space-y-2"
@@ -114,7 +106,7 @@ export default function OurServices() {
                       className="text-sm text-white/70 flex items-center gap-2"
                     >
                       <Icon icon="ph:dot-outline-fill" className="w-4 h-4 text-white/40" />
-                      {feature}
+                      {t(feature)}
                     </motion.li>
                   ))}
                 </motion.ul>

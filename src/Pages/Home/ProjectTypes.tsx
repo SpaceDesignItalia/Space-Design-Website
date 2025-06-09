@@ -199,6 +199,9 @@ export default function ProjectTypes() {
                       ))}
                     </ul>
                   </div>
+                  <Button href={type.href} color="primary" className="mt-10">
+                    {t('learn-more')}
+                  </Button>
                 </motion.div>
               ))}
               <motion.div 

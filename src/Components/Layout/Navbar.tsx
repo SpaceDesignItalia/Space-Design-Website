@@ -82,40 +82,10 @@ const services: Services = {
         descriptionKey: "infrastructure-management-desc"
       },
       { 
-        name: "devops", 
+        name: "devops-ci-cd", 
         href: "/services/devops", 
         icon: "icon-park-outline:cycle-arrow",
-        descriptionKey: "devops-desc"
-      },
-    ],
-  },
-  "Consulting": {
-    icon: "carbon:chart-relationship",
-    descriptionKey: "consulting-desc",
-    items: [
-      { 
-        name: "digital-strategy", 
-        href: "/services/digital-strategy", 
-        icon: "lucide:chart-line",
-        descriptionKey: "digital-strategy-desc"
-      },
-      { 
-        name: "tech-architecture", 
-        href: "/services/tech-architecture", 
-        icon: "carbon:network-3",
-        descriptionKey: "tech-architecture-desc"
-      },
-      { 
-        name: "cloud-infrastructure-planning", 
-        href: "/services/cloud-planning", 
-        icon: "carbon:cloud-infrastructure",
-        descriptionKey: "cloud-infrastructure-planning-desc"
-      },
-      { 
-        name: "system-design", 
-        href: "/services/system-design", 
-        icon: "carbon:scale",
-        descriptionKey: "system-design-desc"
+        descriptionKey: "devops-ci-cd-desc"
       },
     ],
   },

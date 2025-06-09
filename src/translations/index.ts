@@ -6,13 +6,14 @@ type Translations = {
 };
 
 export const translations: Translations = {
-  services: {
-    en: "Services",
-    it: "Servizi"
-  },
+  // Navigation
   home: {
     en: "Home",
     it: "Home"
+  },
+  services: {
+    en: "Services",
+    it: "Servizi"
   },
   about: {
     en: "About",
@@ -22,6 +23,26 @@ export const translations: Translations = {
     en: "Contact",
     it: "Contatti"
   },
+
+  // Hero Section
+  "hero-title": {
+    en: "The right software can change your company's future",
+    it: "Il software giusto può cambiare il futuro della tua azienda"
+  },
+  "hero-subtitle": {
+    en: "We create custom software solutions for startups and businesses looking to grow, save time and increase efficiency by automating processes and simplifying daily work.",
+    it: "Creiamo soluzioni software su misura per startup e imprese che vogliono crescere, risparmiare tempo e aumentare l'efficienza automatizzando processi e semplificando il lavoro quotidiano."
+  },
+  "hero-cta-start": {
+    en: "Start your project",
+    it: "Avvia il tuo progetto"
+  },
+  "hero-cta-services": {
+    en: "Explore Solutions",
+    it: "Scopri le nostre soluzioni"
+  },
+
+  // Services
   "software-development": {
     en: "Software Development",
     it: "Sviluppo Software"
@@ -46,6 +67,14 @@ export const translations: Translations = {
     en: "Powerful native and cross-platform mobile applications that engage users and deliver exceptional performance on iOS and Android",
     it: "Potenti applicazioni mobile native e multi-piattaforma che coinvolgono gli utenti e offrono prestazioni eccezionali su iOS e Android"
   },
+  "websites": {
+    en: "Websites",
+    it: "Siti Web"
+  },
+  "websites-desc": {
+    en: "Custom websites tailored to your business needs, designed to enhance your online presence and drive growth",
+    it: "Siti web personalizzati adattati alle tue esigenze aziendali, progettati per migliorare la tua presenza online e guidare la crescita"
+  },
   "custom-software": {
     en: "Custom Software",
     it: "Software Personalizzato"
@@ -54,6 +83,24 @@ export const translations: Translations = {
     en: "Bespoke software solutions designed to streamline your operations, automate processes, and drive business growth",
     it: "Soluzioni software su misura progettate per ottimizzare le tue operazioni, automatizzare i processi e guidare la crescita aziendale"
   },
+  "startup-mvp": {
+    en: "Startup MVP",
+    it: "MVP per Startup"
+  },
+  "startup-mvp-desc": {
+    en: "Rapid development of market-ready MVPs to validate your startup idea and accelerate time-to-market",
+    it: "Sviluppo rapido di MVP pronti per il mercato per validare la tua idea di startup e accelerare il time-to-market"
+  },
+  "ai-software": {
+    en: "AI-based Software",
+    it: "Software basato su AI"
+  },
+  "ai-software-desc": {
+    en: "AI-powered software solutions that automate tasks, enhance decision-making, and drive innovation",
+    it: "Soluzioni software basate su AI che automatizzano task, migliorano la decisione e guidano l'innovazione"
+  },
+
+  // Integration & Infrastructure
   "system-integration": {
     en: "System Integration",
     it: "Integrazione Sistemi"
@@ -78,14 +125,16 @@ export const translations: Translations = {
     en: "Modern API development services creating robust, secure, and well-documented interfaces for seamless system communication",
     it: "Servizi di sviluppo API moderni che creano interfacce robuste, sicure e ben documentate per una comunicazione perfetta tra sistemi"
   },
-  "legacy-systems": {
-    en: "Legacy Systems",
-    it: "Sistemi Legacy"
+  "devops-ci-cd": {
+    en: "DevOps & CI/CD",
+    it: "DevOps & CI/CD"
   },
-  "legacy-systems-desc": {
-    en: "Strategic modernization of legacy systems to enhance functionality, security, and compatibility with current technologies",
-    it: "Modernizzazione strategica dei sistemi legacy per migliorare funzionalità, sicurezza e compatibilità con le tecnologie attuali"
+  "devops-ci-cd-desc": {
+    en: "DevOps and CI/CD services to streamline development processes, improve efficiency, and ensure smooth deployment",
+    it: "Servizi DevOps e CI/CD per semplificare i processi di sviluppo, migliorare l'efficienza e garantire un deployment fluido"
   },
+
+  // Consulting
   consulting: {
     en: "Consulting",
     it: "Consulenza"
@@ -110,38 +159,8 @@ export const translations: Translations = {
     en: "Advanced architectural solutions ensuring scalability, performance, and long-term sustainability of your systems",
     it: "Soluzioni architetturali avanzate che garantiscono scalabilità, prestazioni e sostenibilità a lungo termine dei tuoi sistemi"
   },
-  "security-consulting": {
-    en: "Security Consulting",
-    it: "Consulenza Sicurezza"
-  },
-  "security-consulting-desc": {
-    en: "Advanced security solutions and consulting to protect your assets, data, and reputation in the digital landscape",
-    it: "Soluzioni di sicurezza avanzate e consulenza per proteggere i tuoi asset, dati e reputazione nel panorama digitale"
-  },
-  "hero-title": {
-    en: "The right software can change your company's future",
-    it: "Il software giusto può cambiare il futuro della tua azienda"
-  },
-  "hero-subtitle": {
-    en: "We create custom software solutions for startups and businesses looking to grow, save time and increase efficiency by automating processes and simplifying daily work.",
-    it: "Creiamo soluzioni software su misura per startup e imprese che vogliono crescere, risparmiare tempo e aumentare l'efficienza automatizzando processi e semplificando il lavoro quotidiano."
-  },
-  "hero-cta-start": {
-    en: "Start your project",
-    it: "Avvia il tuo progetto"
-  },
-  "hero-cta-services": {
-    en: "Explore Solutions",
-    it: "Scopri le nostre soluzioni"
-  },
-  "trusted-by": {
-    en: "Trusted by Leading Companies",
-    it: "La scelta delle aziende leader"
-  },
-  "seo-keywords": {
-    en: "web development, mobile apps, custom software, digital solutions, IT consulting, system integration, cloud services, API development",
-    it: "sviluppo web, app mobile, software personalizzato, soluzioni digitali, consulenza IT, integrazione sistemi, servizi cloud, sviluppo API"
-  },
+
+  // UI Elements
   "main-navigation": {
     en: "Main navigation",
     it: "Navigazione principale"
@@ -162,18 +181,14 @@ export const translations: Translations = {
     en: "Close menu",
     it: "Chiudi menu"
   },
-  "client-list": {
-    en: "Our clients",
-    it: "I nostri clienti"
+
+  // SEO
+  "seo-keywords": {
+    en: "web development, mobile apps, custom software, digital solutions, IT consulting, system integration, cloud services, API development",
+    it: "sviluppo web, app mobile, software personalizzato, soluzioni digitali, consulenza IT, integrazione sistemi, servizi cloud, sviluppo API"
   },
-  "client-logo": {
-    en: "Logo of",
-    it: "Logo di"
-  },
-  "our-services-title":{
-    en: "Our services",
-    it: "I nostri servizi"
-  },
+
+  // CTA Section
   "cta-title": {
     en: "The software you're looking for starts here!",
     it: "Il software che stai cercando inizia da qui!"
@@ -186,89 +201,15 @@ export const translations: Translations = {
     en: "Request a free consultation",
     it: "Richiedi una consulenza gratuita"
   },
-  "websites": {
-    en: "Websites",
-    it: "Siti Web"
-  },
-  "websites-desc": {
-    en: "Stunning, high-performance websites that capture your brand essence and drive meaningful user engagement",
-    it: "Siti web straordinari e ad alte prestazioni che catturano l'essenza del tuo brand e generano coinvolgimento significativo degli utenti"
-  },
-  "startup-mvp": {
-    en: "Startup MVP",
-    it: "MVP per Startup"
-  },
-  "startup-mvp-desc": {
-    en: "Rapid development of market-ready MVPs to validate your startup idea and accelerate time-to-market",
-    it: "Sviluppo rapido di MVP pronti per il mercato per validare la tua idea di startup e accelerare il time-to-market"
-  },
+
+  // How We Work Section
   "how-we-work": {
     en: "How we work with you",
     it: "Come lavoriamo con te"
   },
-  "engagement-models": {
-    en: "Engagement Models",
-    it: "Modelli di collaborazione"
-  },
   "engagement-models-desc": {
     en: "Choose the collaboration model that best suits your project needs. We offer flexible options to ensure successful project delivery.",
     it: "Scegli il modello di collaborazione più adatto alle esigenze del tuo progetto. Offriamo opzioni flessibili per garantire il successo del progetto."
-  },
-  "time-material": {
-    en: "Time & Material",
-    it: "Tempo e Materiali"
-  },
-  "time-material-desc": {
-    en: "Flexible project structure where costs are based on the actual time spent and materials used. Perfect for projects with evolving requirements.",
-    it: "Struttura di progetto flessibile dove i costi si basano sul tempo effettivo e i materiali utilizzati. Perfetto per progetti con requisiti in evoluzione."
-  },
-  "fixed-price": {
-    en: "Fixed Price",
-    it: "Prezzo Fisso"
-  },
-  "fixed-price-desc": {
-    en: "Pre-defined project scope and cost. Ideal for projects with clear requirements and defined deliverables.",
-    it: "Ambito e costo del progetto predefiniti. Ideale per progetti con requisiti chiari e risultati definiti."
-  },
-  "flexible-scope": {
-    en: "Flexible scope",
-    it: "Ambito flessibile"
-  },
-  "regular-updates": {
-    en: "Regular progress updates",
-    it: "Aggiornamenti regolari"
-  },
-  "transparent-rates": {
-    en: "Transparent hourly rates",
-    it: "Tariffe orarie trasparenti"
-  },
-  "weekly-billing": {
-    en: "Weekly/Monthly billing",
-    it: "Fatturazione settimanale/mensile"
-  },
-  "direct-communication": {
-    en: "Direct communication with the team",
-    it: "Comunicazione diretta con il team"
-  },
-  "defined-scope": {
-    en: "Defined project scope",
-    it: "Ambito del progetto definito"
-  },
-  "fixed-budget": {
-    en: "Fixed budget",
-    it: "Budget fisso"
-  },
-  "milestone-payments": {
-    en: "Milestone-based payments",
-    it: "Pagamenti basati su milestone"
-  },
-  "detailed-planning": {
-    en: "Detailed project planning",
-    it: "Pianificazione dettagliata"
-  },
-  "risk-management": {
-    en: "Risk management included",
-    it: "Gestione del rischio inclusa"
   },
   "not-sure": {
     en: "Not sure which to choose?",
@@ -282,44 +223,82 @@ export const translations: Translations = {
     en: "Contact us",
     it: "Contattaci"
   },
-  "ai-software": {
-    en: "AI-based Software",
-    it: "Software basato su IA"
+  "learn-more": {
+    en: "Learn more",
+    it: "Scopri di più"
   },
-  "ai-software-desc": {
-    en: "Innovative solutions leveraging artificial intelligence and machine learning to automate processes and enhance decision-making",
-    it: "Soluzioni innovative che sfruttano l'intelligenza artificiale e il machine learning per automatizzare i processi e migliorare il processo decisionale"
+
+  // Why Us Section
+  "why-us-title": {
+    en: "Why choose us?",
+    it: "Perché scegliere noi?"
   },
-  "infrastructure-management": {
-    en: "Infrastructure Management",
-    it: "Gestione Infrastrutture"
+  "performance-title": {
+    en: "Performance",
+    it: "Performance"
   },
-  "infrastructure-management-desc": {
-    en: "Comprehensive management and optimization of your application infrastructure for maximum reliability and performance",
-    it: "Gestione e ottimizzazione completa della tua infrastruttura applicativa per massima affidabilità e prestazioni"
+  "performance-subtitle": {
+    en: "High-performance and polished software",
+    it: "Software performante e curato"
   },
-  "devops": {
-    en: "DevOps & CI/CD",
-    it: "DevOps & CI/CD"
+  "performance-desc": {
+    en: "We develop high-quality software solutions, paying special attention to performance and details. Every line of code is written with care to ensure an excellent final product.",
+    it: "Sviluppiamo soluzioni software di alta qualità, prestando particolare attenzione alle performance e ai dettagli. Ogni linea di codice è scritta con cura per garantire un prodotto finale eccellente."
   },
-  "devops-desc": {
-    en: "Implementation of DevOps practices and CI/CD pipelines to accelerate development and ensure reliable deployments",
-    it: "Implementazione di pratiche DevOps e pipeline CI/CD per accelerare lo sviluppo e garantire deployment affidabili"
+  "collaboration-title": {
+    en: "Collaboration",
+    it: "Collaborazione"
   },
-  "cloud-infrastructure-planning": {
-    en: "Cloud Infrastructure Planning",
-    it: "Pianificazione Infrastruttura Cloud"
+  "collaboration-subtitle": {
+    en: "Constant and transparent dialogue",
+    it: "Dialogo costante e trasparente"
   },
-  "cloud-infrastructure-planning-desc": {
-    en: "Strategic planning and design of cloud infrastructures optimized for your business needs and growth objectives",
-    it: "Pianificazione strategica e progettazione di infrastrutture cloud ottimizzate per le tue esigenze aziendali e obiettivi di crescita"
+  "collaboration-desc": {
+    en: "We believe that effective communication is the key to success. We work closely with our clients to create tailored solutions that perfectly reflect their needs.",
+    it: "Crediamo che una comunicazione efficace sia la chiave per il successo. Lavoriamo a stretto contatto con i nostri clienti per creare soluzioni su misura che rispecchiano perfettamente le loro esigenze."
   },
-  "system-design": {
-    en: "Scalable System Design",
-    it: "Design di Sistemi Scalabili"
+  "team-title": {
+    en: "Team",
+    it: "Team"
   },
-  "system-design-desc": {
-    en: "Design of highly scalable and resilient system architectures that grow with your business needs",
-    it: "Progettazione di architetture di sistema altamente scalabili e resilienti che crescono con le tue esigenze aziendali"
+  "team-subtitle": {
+    en: "Young and innovative",
+    it: "Giovani e innovativi"
+  },
+  "team-desc": {
+    en: "A young and dynamic team, always up to date with the latest technologies and ready to face new challenges with enthusiasm and creativity.",
+    it: "Un team giovane e dinamico, sempre aggiornato sulle ultime tecnologie e pronto ad affrontare nuove sfide con entusiasmo e creatività."
+  },
+  "growth-title": {
+    en: "Growth",
+    it: "Crescita"
+  },
+  "growth-subtitle": {
+    en: "We grow your business",
+    it: "Facciamo crescere il tuo business"
+  },
+  "growth-desc": {
+    en: "Our goal is to launch our clients' projects, transforming their ideas into successful solutions that generate real value.",
+    it: "Il nostro obiettivo è far decollare i progetti dei nostri clienti, trasformando le loro idee in soluzioni di successo che generano valore reale."
+  },
+  "chat-mockup-1": {
+    en: "I've seen the analytics dashboard mockup. The interface is exactly as I imagined!",
+    it: "Ho visto il mockup della dashboard di analisi. L'interfaccia è esattamente come la immaginavo!"
+  },
+  "chat-mockup-2": {
+    en: "Great! We were thinking of adding a section for data export in different formats. Could that be useful?",
+    it: "Ottimo! Stavamo pensando di aggiungere anche una sezione per l'esportazione dei dati in diversi formati. Potrebbe essere utile?"
+  },
+  "chat-mockup-3": {
+    en: "That would be super useful! I love how you always anticipate our needs.",
+    it: "Sarebbe utilissimo! Adoro come anticipate sempre le nostre esigenze."
+  },
+  "chat-mockup-4": {
+    en: "Our goal is to create software that really improves your work. Shall we start developing this feature?",
+    it: "Il nostro obiettivo è creare un software che migliori davvero il vostro lavoro. Iniziamo a sviluppare questa feature?"
+  },
+  "chat-status": {
+    en: "Innovating your business together",
+    it: "Innoviamo insieme il tuo business"
   }
 }; 
