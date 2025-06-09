@@ -1,5 +1,5 @@
-import { Helmet } from 'react-helmet-async';
-import { useLanguage } from '../context/LanguageContext';
+import { Helmet } from "react-helmet-async";
+import { useLanguage } from "../context/LanguageContext";
 
 interface SEOProps {
   title?: string;
@@ -13,15 +13,15 @@ interface SEOProps {
 }
 
 export default function SEO({
-  title = 'Space Design Italia - Digital Solutions',
-  description = 'Space Design Italia offre soluzioni digitali innovative per il tuo business. Sviluppo web, mobile e consulenza IT personalizzata.',
-  keywords = 'space design italia, sviluppo web, app mobile, consulenza IT, digital solutions',
-  image = '/og-image.jpg',
+  title = "Space Design Italia - Digital Solutions",
+  description = "Space Design Italia offre soluzioni digitali innovative per il tuo business. Sviluppo web, mobile e consulenza IT personalizzata.",
+  keywords = "space design italia, sviluppo web, app mobile, consulenza IT, digital solutions",
+  image = "/og-image.jpg",
   url,
   alternateUrls,
 }: SEOProps) {
   const { language } = useLanguage();
-  const baseUrl = 'https://www.spacedesign-italia.it';
+  const baseUrl = "https://www.spacedesign-italia.it";
   const currentUrl = url ? `${baseUrl}${url}` : `${baseUrl}/${language}`;
 
   return (
@@ -33,17 +33,20 @@ export default function SEO({
       <meta name="keywords" content={keywords} />
 
       {/* Language Meta Tags */}
-      <meta property="og:locale" content={language === 'it' ? 'it_IT' : 'en_US'} />
+      <meta
+        property="og:locale"
+        content={language === "it" ? "it_IT" : "en_US"}
+      />
       <meta name="language" content={language.toUpperCase()} />
       <link rel="canonical" href={currentUrl} />
-      
+
       {/* Alternate Language Links */}
       {alternateUrls && (
         <>
           {Object.entries(alternateUrls).map(([lang, path]) => (
             <link
               key={lang}
-              rel={lang === 'x-default' ? 'alternate' : 'alternate'}
+              rel={lang === "x-default" ? "alternate" : "alternate"}
               hrefLang={lang}
               href={`${baseUrl}${path}`}
             />
@@ -70,4 +73,4 @@ export default function SEO({
       <meta name="robots" content="index, follow" />
     </Helmet>
   );
-} 
+}
