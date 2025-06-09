@@ -26,37 +26,20 @@ export const translations: Translations = {
 
   // Hero Section
   "hero-title": {
-<<<<<<< Updated upstream
-    en: "The right software can change your company's future",
-    it: "Il software giusto può cambiare il futuro della tua azienda",
-  },
-  "hero-subtitle": {
-    en: "We create custom software solutions for startups and businesses looking to grow, save time and increase efficiency by automating processes and simplifying daily work.",
-    it: "Creiamo soluzioni software su misura per startup e imprese che vogliono crescere, risparmiare tempo e aumentare l'efficienza automatizzando processi e semplificando il lavoro quotidiano.",
-  },
-  "hero-cta-start": {
-    en: "Start your project",
-    it: "Avvia il tuo progetto",
-  },
-  "hero-cta-services": {
-    en: "Explore Solutions",
-    it: "Scopri le nostre soluzioni",
-=======
     en: "Transform your business with powerful custom software",
-    it: "Trasforma la tua azienda con software personalizzato di alta qualità"
+    it: "Trasforma la tua azienda con software personalizzato di alta qualità",
   },
   "hero-subtitle": {
     en: "We create tailored software solutions that help businesses thrive by automating processes, boosting efficiency, and simplifying complex workflows.",
-    it: "Realizziamo soluzioni software su misura che permettono alle aziende di eccellere, automatizzando i processi, aumentando l'efficienza e semplificando i flussi di lavoro complessi."
+    it: "Realizziamo soluzioni software su misura che permettono alle aziende di eccellere, automatizzando i processi, aumentando l'efficienza e semplificando i flussi di lavoro complessi.",
   },
   "hero-cta-start": {
     en: "Start your project",
-    it: "Inizia il tuo progetto"
+    it: "Inizia il tuo progetto",
   },
   "hero-cta-services": {
     en: "Discover our solutions",
-    it: "Scopri le nostre soluzioni"
->>>>>>> Stashed changes
+    it: "Scopri le nostre soluzioni",
   },
 
   // Services
@@ -65,13 +48,8 @@ export const translations: Translations = {
     it: "Sviluppo Software",
   },
   "software-development-desc": {
-<<<<<<< Updated upstream
-    en: "We develop complete software solutions: web applications, mobile apps, websites, custom software, startup MVPs, and AI-based solutions.",
-    it: "Sviluppiamo soluzioni software complete: applicazioni web, mobile apps, siti web, software personalizzato, MVP per startup e soluzioni basate su intelligenza artificiale.",
-=======
     en: "We develop comprehensive software solutions: from web and mobile applications to custom enterprise software, startup MVPs, and AI-powered innovations.",
-    it: "Sviluppiamo soluzioni software complete: dalle applicazioni web e mobile al software aziendale personalizzato, MVP per startup e innovazioni basate su intelligenza artificiale."
->>>>>>> Stashed changes
+    it: "Sviluppiamo soluzioni software complete: dalle applicazioni web e mobile al software aziendale personalizzato, MVP per startup e innovazioni basate su intelligenza artificiale.",
   },
   "web-applications": {
     en: "Web Applications",
@@ -102,13 +80,8 @@ export const translations: Translations = {
     it: "Software Personalizzato",
   },
   "custom-software-desc": {
-<<<<<<< Updated upstream
-    en: "Bespoke software solutions designed to streamline your operations, automate processes, and drive business growth",
-    it: "Soluzioni software su misura progettate per ottimizzare le tue operazioni, automatizzare i processi e guidare la crescita aziendale",
-=======
     en: "Tailored software solutions engineered to optimize your operations, automate workflows, and accelerate business growth",
-    it: "Soluzioni software personalizzate progettate per ottimizzare le tue operazioni, automatizzare i flussi di lavoro e accelerare la crescita aziendale"
->>>>>>> Stashed changes
+    it: "Soluzioni software personalizzate progettate per ottimizzare le tue operazioni, automatizzare i flussi di lavoro e accelerare la crescita aziendale",
   },
   "startup-mvp": {
     en: "Startup MVP",
@@ -281,71 +254,40 @@ export const translations: Translations = {
     it: "Dialogo costante e trasparente",
   },
   "collaboration-desc": {
-<<<<<<< Updated upstream
-    en: "We believe that effective communication is the key to success. We work closely with our clients to create tailored solutions that perfectly reflect their needs.",
-    it: "Crediamo che una comunicazione efficace sia la chiave per il successo. Lavoriamo a stretto contatto con i nostri clienti per creare soluzioni su misura che rispecchiano perfettamente le loro esigenze.",
-=======
     en: "We foster open and continuous communication with our clients. Our partnerships are built on trust, transparency, and shared success.",
-    it: "Coltiviamo una comunicazione aperta e continua con i nostri clienti. Le nostre partnership si basano su fiducia, trasparenza e successo condiviso."
->>>>>>> Stashed changes
+    it: "Coltiviamo una comunicazione aperta e continua con i nostri clienti. Le nostre partnership si basano su fiducia, trasparenza e successo condiviso.",
   },
   "team-title": {
     en: "Team",
     it: "Team",
   },
   "team-subtitle": {
-<<<<<<< Updated upstream
-    en: "Young and innovative",
-    it: "Giovani e innovativi",
-  },
-  "team-desc": {
-    en: "A young and dynamic team, always up to date with the latest technologies and ready to face new challenges with enthusiasm and creativity.",
-    it: "Un team giovane e dinamico, sempre aggiornato sulle ultime tecnologie e pronto ad affrontare nuove sfide con entusiasmo e creatività.",
-=======
     en: "Young and innovative developers",
-    it: "Sviluppatori giovani e innovativi"
+    it: "Sviluppatori giovani e innovativi",
   },
   "team-desc": {
     en: "Our team consists of young, passionate developers who combine technical expertise with innovative thinking to create cutting-edge solutions.",
-    it: "Il nostro team è composto da sviluppatori giovani e appassionati che combinano competenza tecnica e pensiero innovativo per creare soluzioni all'avanguardia."
->>>>>>> Stashed changes
+    it: "Il nostro team è composto da sviluppatori giovani e appassionati che combinano competenza tecnica e pensiero innovativo per creare soluzioni all'avanguardia.",
   },
   "growth-title": {
     en: "Growth",
     it: "Crescita",
   },
   "growth-subtitle": {
-<<<<<<< Updated upstream
-    en: "We grow your business",
-    it: "Facciamo crescere il tuo business",
-  },
-  "growth-desc": {
-    en: "Our goal is to launch our clients' projects, transforming their ideas into successful solutions that generate real value.",
-    it: "Il nostro obiettivo è far decollare i progetti dei nostri clienti, trasformando le loro idee in soluzioni di successo che generano valore reale.",
-  },
-  "chat-mockup-1": {
-    en: "I've seen the analytics dashboard mockup. The interface is exactly as I imagined!",
-    it: "Ho visto il mockup della dashboard di analisi. L'interfaccia è esattamente come la immaginavo!",
-  },
-  "chat-mockup-2": {
-    en: "Great! We were thinking of adding a section for data export in different formats. Could that be useful?",
-    it: "Ottimo! Stavamo pensando di aggiungere anche una sezione per l'esportazione dei dati in diversi formati. Potrebbe essere utile?",
-=======
     en: "Continuous improvement",
-    it: "Miglioramento continuo"
+    it: "Miglioramento continuo",
   },
   "growth-desc": {
     en: "We are committed to continuous growth and improvement, both in our skills and in the solutions we deliver to our clients.",
-    it: "Siamo impegnati in una crescita e un miglioramento continui, sia nelle nostre competenze che nelle soluzioni che forniamo ai nostri clienti."
+    it: "Siamo impegnati in una crescita e un miglioramento continui, sia nelle nostre competenze che nelle soluzioni che forniamo ai nostri clienti.",
   },
   "chat-mockup-1": {
     en: "We need to add a new feature to optimize our workflow.",
-    it: "Abbiamo bisogno di aggiungere una nuova funzionalità per ottimizzare il nostro flusso di lavoro."
+    it: "Abbiamo bisogno di aggiungere una nuova funzionalità per ottimizzare il nostro flusso di lavoro.",
   },
   "chat-mockup-2": {
     en: "We could implement an automated system that integrates with your existing tools.",
-    it: "Potremmo implementare un sistema automatizzato che si integra con i vostri strumenti esistenti."
->>>>>>> Stashed changes
+    it: "Potremmo implementare un sistema automatizzato che si integra con i vostri strumenti esistenti.",
   },
   "chat-mockup-3": {
     en: "That would be super useful! I love how you always anticipate our needs.",
@@ -357,236 +299,58 @@ export const translations: Translations = {
   },
   "chat-status": {
     en: "Innovating your business together",
-<<<<<<< Updated upstream
     it: "Innoviamo insieme il tuo business",
-  },
-
-  // Contact Form
-  "contact-title": {
-    en: "Contact Us",
-    it: "Contattaci",
-  },
-  "contact-subtitle": {
-    en: "Thank you for choosing to contact Space Design. We are here to answer your questions and provide the assistance you need. Fill out the form below and we will get back to you as soon as possible. Your opinion is important to us.",
-    it: "Grazie per aver scelto di contattare Space Design. Siamo qui per rispondere alle tue domande e fornirti l'assistenza di cui hai bisogno. Compila il modulo sottostante e ti risponderemo al più presto. La tua opinione è importante per noi.",
-  },
-  "contact-name": {
-    en: "Name",
-    it: "Nome",
-  },
-  "contact-surname": {
-    en: "Surname",
-    it: "Cognome",
-  },
-  "contact-email": {
-    en: "Email",
-    it: "Email",
-  },
-  "contact-company": {
-    en: "Company",
-    it: "Azienda",
-  },
-  "contact-subject": {
-    en: "Subject",
-    it: "Oggetto",
-  },
-  "contact-budget": {
-    en: "Budget",
-    it: "Budget",
-  },
-  "contact-message": {
-    en: "Message",
-    it: "Messaggio",
-  },
-  "contact-name-placeholder": {
-    en: "Enter your name",
-    it: "Inserisci il tuo nome",
-  },
-  "contact-surname-placeholder": {
-    en: "Enter your surname",
-    it: "Inserisci il tuo cognome",
-  },
-  "contact-email-placeholder": {
-    en: "Enter your email",
-    it: "Inserisci la tua email",
-  },
-  "contact-company-placeholder": {
-    en: "Enter your company name",
-    it: "Inserisci il nome dell'azienda",
-  },
-  "contact-subject-placeholder": {
-    en: "Select subject",
-    it: "Seleziona l'oggetto",
-  },
-  "contact-budget-placeholder": {
-    en: "Select budget",
-    it: "Seleziona budget",
-  },
-  "contact-message-placeholder": {
-    en: "Enter your message",
-    it: "Inserisci il tuo messaggio",
-  },
-  "contact-privacy": {
-    en: "*I declare that I have read the",
-    it: "*Dichiaro di aver preso visione della",
-  },
-  "contact-privacy-policy": {
-    en: "Privacy Policy",
-    it: "Privacy Policy",
-  },
-  "contact-submit": {
-    en: "Contact Us",
-    it: "Contattaci",
-  },
-  "contact-submitting": {
-    en: "Sending...",
-    it: "Invio in corso...",
-  },
-  "contact-success": {
-    en: "Message sent successfully! We will contact you as soon as possible.",
-    it: "Messaggio inviato con successo! Ti contatteremo al più presto.",
-  },
-  "contact-error": {
-    en: "An error occurred. Please try again later.",
-    it: "Si è verificato un errore. Riprova più tardi.",
-  },
-  "contact-required": {
-    en: "Required",
-    it: "Obbligatorio",
-  },
-  "contact-name-required": {
-    en: "Name is required",
-    it: "Il nome è obbligatorio",
-  },
-  "contact-surname-required": {
-    en: "Surname is required",
-    it: "Il cognome è obbligatorio",
-  },
-  "contact-email-required": {
-    en: "Email is required",
-    it: "L'email è obbligatoria",
-  },
-  "contact-email-invalid": {
-    en: "Please enter a valid email",
-    it: "Inserisci un'email valida",
-  },
-  "contact-subject-required": {
-    en: "Please select a subject",
-    it: "Seleziona un oggetto",
-  },
-  "contact-budget-required": {
-    en: "Please select a budget",
-    it: "Seleziona un budget",
-  },
-  "contact-message-required": {
-    en: "Message is required",
-    it: "Il messaggio è obbligatorio",
-  },
-  "contact-privacy-required": {
-    en: "You must accept the privacy policy to continue",
-    it: "Devi accettare la privacy policy per continuare",
-  },
-  "contact-subject-consulting": {
-    en: "Consulting",
-    it: "Consulenza",
-  },
-  "contact-subject-website": {
-    en: "Website",
-    it: "Sito Web",
-  },
-  "contact-subject-custom-software": {
-    en: "Custom Software",
-    it: "Software Personalizzato",
-  },
-  "contact-subject-mobile-app": {
-    en: "Mobile App",
-    it: "App Mobile",
-  },
-  "contact-subject-startup": {
-    en: "Startup",
-    it: "Startup",
-  },
-  "contact-subject-other": {
-    en: "Other",
-    it: "Altro",
-  },
-
-  // Contact Info Section
-  "contact-info-title": {
-    en: "Let's talk together",
-    it: "Parliamone insieme",
-  },
-  "contact-info-subtitle": {
-    en: "Tell us your idea and we'll help you make it a reality.",
-    it: "Raccontaci la tua idea e ti aiuteremo a trasformarla in realtà.",
-  },
-  "contact-info-free": {
-    en: "Free consultation",
-    it: "Consulenza gratuita",
-  },
-  "contact-info-quote": {
-    en: "Personalized quote",
-    it: "Preventivo personalizzato",
-  },
-  "contact-info-support": {
-    en: "Dedicated support",
-    it: "Supporto dedicato",
-  },
-};
-=======
-    it: "Innoviamo insieme il tuo business"
   },
   "time-material": {
     en: "Time & Material",
-    it: "Tempo e Materiali"
+    it: "Tempo e Materiali",
   },
   "time-material-desc": {
     en: "A dynamic collaboration model where costs reflect actual time and resources invested. Ideal for projects with evolving requirements and continuous innovation.",
-    it: "Un modello di collaborazione dinamico dove i costi riflettono il tempo e le risorse effettivamente investite. Ideale per progetti in evoluzione e innovazione continua."
+    it: "Un modello di collaborazione dinamico dove i costi riflettono il tempo e le risorse effettivamente investite. Ideale per progetti in evoluzione e innovazione continua.",
   },
   "fixed-price": {
     en: "Fixed Price",
-    it: "Prezzo Fisso"
+    it: "Prezzo Fisso",
   },
   "fixed-price-desc": {
     en: "A structured approach with predefined scope and budget. Perfect for projects with clear requirements and specific timelines.",
-    it: "Un approccio strutturato con ambito e budget predefiniti. Perfetto per progetti con requisiti chiari e tempistiche specifiche."
+    it: "Un approccio strutturato con ambito e budget predefiniti. Perfetto per progetti con requisiti chiari e tempistiche specifiche.",
   },
   "flexible-scope": {
     en: "Flexible scope",
-    it: "ambito flessibile"
+    it: "ambito flessibile",
   },
   "regular-updates": {
     en: "Continuous progress updates",
-    it: "Aggiornamenti continui sui progressi"
+    it: "Aggiornamenti continui sui progressi",
   },
   "transparent-rates": {
     en: "Clear and transparent pricing",
-    it: "Tariffe chiare e trasparenti"
+    it: "Tariffe chiare e trasparenti",
   },
   "weekly-billing": {
     en: "Periodic payments",
-    it: "Pagamenti periodici"
+    it: "Pagamenti periodici",
   },
   "project-flexibility": {
     en: "Project flexibility",
-    it: "Flessibilità progettuale"
+    it: "Flessibilità progettuale",
   },
   "defined-scope": {
     en: "In-depth initial analysis",
-    it: "Analisi iniziale approfondita"
+    it: "Analisi iniziale approfondita",
   },
   "milestone-payments": {
     en: "Milestone payments",
-    it: "Pagamenti a milestone"
+    it: "Pagamenti a milestone",
   },
   "detailed-planning": {
     en: "Clear and detailed offer",
-    it: "Offerta chiara e dettagliata"
+    it: "Offerta chiara e dettagliata",
   },
   "risk-management": {
     en: "Transparent contract",
-    it: "Contratto trasparente"
+    it: "Contratto trasparente",
   },
-}; 
->>>>>>> Stashed changes
+};
