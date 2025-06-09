@@ -26,6 +26,7 @@ export const translations: Translations = {
 
   // Hero Section
   "hero-title": {
+<<<<<<< Updated upstream
     en: "The right software can change your company's future",
     it: "Il software giusto può cambiare il futuro della tua azienda",
   },
@@ -40,6 +41,22 @@ export const translations: Translations = {
   "hero-cta-services": {
     en: "Explore Solutions",
     it: "Scopri le nostre soluzioni",
+=======
+    en: "Transform your business with powerful custom software",
+    it: "Trasforma la tua azienda con software personalizzato di alta qualità"
+  },
+  "hero-subtitle": {
+    en: "We create tailored software solutions that help businesses thrive by automating processes, boosting efficiency, and simplifying complex workflows.",
+    it: "Realizziamo soluzioni software su misura che permettono alle aziende di eccellere, automatizzando i processi, aumentando l'efficienza e semplificando i flussi di lavoro complessi."
+  },
+  "hero-cta-start": {
+    en: "Start your project",
+    it: "Inizia il tuo progetto"
+  },
+  "hero-cta-services": {
+    en: "Discover our solutions",
+    it: "Scopri le nostre soluzioni"
+>>>>>>> Stashed changes
   },
 
   // Services
@@ -48,8 +65,13 @@ export const translations: Translations = {
     it: "Sviluppo Software",
   },
   "software-development-desc": {
+<<<<<<< Updated upstream
     en: "We develop complete software solutions: web applications, mobile apps, websites, custom software, startup MVPs, and AI-based solutions.",
     it: "Sviluppiamo soluzioni software complete: applicazioni web, mobile apps, siti web, software personalizzato, MVP per startup e soluzioni basate su intelligenza artificiale.",
+=======
+    en: "We develop comprehensive software solutions: from web and mobile applications to custom enterprise software, startup MVPs, and AI-powered innovations.",
+    it: "Sviluppiamo soluzioni software complete: dalle applicazioni web e mobile al software aziendale personalizzato, MVP per startup e innovazioni basate su intelligenza artificiale."
+>>>>>>> Stashed changes
   },
   "web-applications": {
     en: "Web Applications",
@@ -80,8 +102,13 @@ export const translations: Translations = {
     it: "Software Personalizzato",
   },
   "custom-software-desc": {
+<<<<<<< Updated upstream
     en: "Bespoke software solutions designed to streamline your operations, automate processes, and drive business growth",
     it: "Soluzioni software su misura progettate per ottimizzare le tue operazioni, automatizzare i processi e guidare la crescita aziendale",
+=======
+    en: "Tailored software solutions engineered to optimize your operations, automate workflows, and accelerate business growth",
+    it: "Soluzioni software personalizzate progettate per ottimizzare le tue operazioni, automatizzare i flussi di lavoro e accelerare la crescita aziendale"
+>>>>>>> Stashed changes
   },
   "startup-mvp": {
     en: "Startup MVP",
@@ -254,26 +281,41 @@ export const translations: Translations = {
     it: "Dialogo costante e trasparente",
   },
   "collaboration-desc": {
+<<<<<<< Updated upstream
     en: "We believe that effective communication is the key to success. We work closely with our clients to create tailored solutions that perfectly reflect their needs.",
     it: "Crediamo che una comunicazione efficace sia la chiave per il successo. Lavoriamo a stretto contatto con i nostri clienti per creare soluzioni su misura che rispecchiano perfettamente le loro esigenze.",
+=======
+    en: "We foster open and continuous communication with our clients. Our partnerships are built on trust, transparency, and shared success.",
+    it: "Coltiviamo una comunicazione aperta e continua con i nostri clienti. Le nostre partnership si basano su fiducia, trasparenza e successo condiviso."
+>>>>>>> Stashed changes
   },
   "team-title": {
     en: "Team",
     it: "Team",
   },
   "team-subtitle": {
+<<<<<<< Updated upstream
     en: "Young and innovative",
     it: "Giovani e innovativi",
   },
   "team-desc": {
     en: "A young and dynamic team, always up to date with the latest technologies and ready to face new challenges with enthusiasm and creativity.",
     it: "Un team giovane e dinamico, sempre aggiornato sulle ultime tecnologie e pronto ad affrontare nuove sfide con entusiasmo e creatività.",
+=======
+    en: "Young and innovative developers",
+    it: "Sviluppatori giovani e innovativi"
+  },
+  "team-desc": {
+    en: "Our team consists of young, passionate developers who combine technical expertise with innovative thinking to create cutting-edge solutions.",
+    it: "Il nostro team è composto da sviluppatori giovani e appassionati che combinano competenza tecnica e pensiero innovativo per creare soluzioni all'avanguardia."
+>>>>>>> Stashed changes
   },
   "growth-title": {
     en: "Growth",
     it: "Crescita",
   },
   "growth-subtitle": {
+<<<<<<< Updated upstream
     en: "We grow your business",
     it: "Facciamo crescere il tuo business",
   },
@@ -288,6 +330,22 @@ export const translations: Translations = {
   "chat-mockup-2": {
     en: "Great! We were thinking of adding a section for data export in different formats. Could that be useful?",
     it: "Ottimo! Stavamo pensando di aggiungere anche una sezione per l'esportazione dei dati in diversi formati. Potrebbe essere utile?",
+=======
+    en: "Continuous improvement",
+    it: "Miglioramento continuo"
+  },
+  "growth-desc": {
+    en: "We are committed to continuous growth and improvement, both in our skills and in the solutions we deliver to our clients.",
+    it: "Siamo impegnati in una crescita e un miglioramento continui, sia nelle nostre competenze che nelle soluzioni che forniamo ai nostri clienti."
+  },
+  "chat-mockup-1": {
+    en: "We need to add a new feature to optimize our workflow.",
+    it: "Abbiamo bisogno di aggiungere una nuova funzionalità per ottimizzare il nostro flusso di lavoro."
+  },
+  "chat-mockup-2": {
+    en: "We could implement an automated system that integrates with your existing tools.",
+    it: "Potremmo implementare un sistema automatizzato che si integra con i vostri strumenti esistenti."
+>>>>>>> Stashed changes
   },
   "chat-mockup-3": {
     en: "That would be super useful! I love how you always anticipate our needs.",
@@ -299,6 +357,7 @@ export const translations: Translations = {
   },
   "chat-status": {
     en: "Innovating your business together",
+<<<<<<< Updated upstream
     it: "Innoviamo insieme il tuo business",
   },
 
@@ -474,3 +533,60 @@ export const translations: Translations = {
     it: "Supporto dedicato",
   },
 };
+=======
+    it: "Innoviamo insieme il tuo business"
+  },
+  "time-material": {
+    en: "Time & Material",
+    it: "Tempo e Materiali"
+  },
+  "time-material-desc": {
+    en: "A dynamic collaboration model where costs reflect actual time and resources invested. Ideal for projects with evolving requirements and continuous innovation.",
+    it: "Un modello di collaborazione dinamico dove i costi riflettono il tempo e le risorse effettivamente investite. Ideale per progetti in evoluzione e innovazione continua."
+  },
+  "fixed-price": {
+    en: "Fixed Price",
+    it: "Prezzo Fisso"
+  },
+  "fixed-price-desc": {
+    en: "A structured approach with predefined scope and budget. Perfect for projects with clear requirements and specific timelines.",
+    it: "Un approccio strutturato con ambito e budget predefiniti. Perfetto per progetti con requisiti chiari e tempistiche specifiche."
+  },
+  "flexible-scope": {
+    en: "Flexible scope",
+    it: "ambito flessibile"
+  },
+  "regular-updates": {
+    en: "Continuous progress updates",
+    it: "Aggiornamenti continui sui progressi"
+  },
+  "transparent-rates": {
+    en: "Clear and transparent pricing",
+    it: "Tariffe chiare e trasparenti"
+  },
+  "weekly-billing": {
+    en: "Periodic payments",
+    it: "Pagamenti periodici"
+  },
+  "project-flexibility": {
+    en: "Project flexibility",
+    it: "Flessibilità progettuale"
+  },
+  "defined-scope": {
+    en: "In-depth initial analysis",
+    it: "Analisi iniziale approfondita"
+  },
+  "milestone-payments": {
+    en: "Milestone payments",
+    it: "Pagamenti a milestone"
+  },
+  "detailed-planning": {
+    en: "Clear and detailed offer",
+    it: "Offerta chiara e dettagliata"
+  },
+  "risk-management": {
+    en: "Transparent contract",
+    it: "Contratto trasparente"
+  },
+}; 
+>>>>>>> Stashed changes

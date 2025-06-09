@@ -42,7 +42,7 @@ export default function OurServices() {
           transition={{ duration: 0.6 }}
           className="text-4xl font-bold tracking-tight text-white text-center mb-20"
         >
-          Ecco cosa facciamo.
+          {t('our-services-title')}
         </motion.h2>
         
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-16 gap-y-20 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-2">

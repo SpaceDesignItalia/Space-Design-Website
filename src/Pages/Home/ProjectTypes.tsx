@@ -11,11 +11,10 @@ const projectTypes = [
     href: '#',
     descriptionKey: 'time-material-desc',
     features: [
-      'flexible-scope',
       'regular-updates',
       'transparent-rates',
       'weekly-billing',
-      'direct-communication',
+      'project-flexibility',
     ],
   },
   {
@@ -26,7 +25,6 @@ const projectTypes = [
     descriptionKey: 'fixed-price-desc',
     features: [
       'defined-scope',
-      'fixed-budget',
       'milestone-payments',
       'detailed-planning',
       'risk-management',
