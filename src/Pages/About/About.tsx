@@ -76,22 +76,22 @@ export default function About() {
   const teamMembers = [
     {
       name: t("about-andrea-braia"),
-      image: "/company/1.jpg",
+      image: "/imgs/1.jpg",
       role: "CEO & Co-Founder",
     },
     {
       name: t("about-francesco-roviello"),
-      image: "/company/2.jpg",
+      image: "/imgs/2.jpg",
       role: "CTO & Co-Founder",
     },
     {
       name: t("about-marco-macherelli"),
-      image: "/company/3.jpg",
+      image: "/imgs/3.jpg",
       role: "Lead Developer",
     },
     {
       name: t("about-pablo-bertot"),
-      image: "/company/4.jpg",
+      image: "/imgs/4.jpg",
       role: "Full Stack Developer",
     },
   ];
@@ -394,9 +394,9 @@ export default function About() {
               >
                 <div className="relative overflow-hidden rounded-3xl">
                   <img
-                    src="/company/FoundersTeam.jpg"
-                    alt={t("about-team-alt-text")}
-                    className="w-full h-[500px] object-cover"
+                    src="/imgs/FoundersTeam.jpg"
+                    alt={t("about-team-alt-text") || "Team Space Design"}
+                    className="aspect-[4/5] w-full rounded-2xl bg-gray-100 object-cover dark:bg-gray-800"
                   />
                   <div className="absolute inset-0 bg-gradient-to-r from-black/20 to-gray-900/20" />
                 </div>

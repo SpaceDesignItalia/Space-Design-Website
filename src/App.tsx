@@ -4,6 +4,10 @@ import { useLocation } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import Contact from "./Pages/Contact/Contact";
 import About from "./Pages/About/About";
+import MobileDevelopment from "./Pages/Services/MobileDevelopment";
+import WebDevelopment from "./Pages/Services/WebDevelopment";
+import Websites from "./Pages/Services/Websites";
+import CustomSoftware from "./Pages/Services/CustomSoftware";
 import { LanguageProvider } from "./context/LanguageContext";
 import {
   CookieConsentProvider,
@@ -49,19 +53,10 @@ function AppContent() {
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
           <Route path="services">
-            <Route
-              path="mobile-development"
-              element={<div>Mobile Development</div>}
-            />
-            <Route
-              path="web-development"
-              element={<div>Web Development</div>}
-            />
-            <Route path="websites" element={<div>Websites</div>} />
-            <Route
-              path="custom-software"
-              element={<div>Custom Software</div>}
-            />
+            <Route path="mobile-development" element={<MobileDevelopment />} />
+            <Route path="web-development" element={<WebDevelopment />} />
+            <Route path="websites" element={<Websites />} />
+            <Route path="custom-software" element={<CustomSoftware />} />
             <Route path="startup-mvp" element={<div>Startup MVP</div>} />
             <Route
               path="cloud-integration"
