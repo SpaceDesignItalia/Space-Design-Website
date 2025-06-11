@@ -35,7 +35,7 @@ const services: Services = {
       },
       {
         name: "websites",
-        href: "/services/websites",
+        href: "/services/web-development",
         icon: "mdi:web",
         descriptionKey: "websites-desc",
       },

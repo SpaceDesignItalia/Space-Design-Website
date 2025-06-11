@@ -49,6 +49,13 @@ const Contact: React.FC = () => {
   const { t, language } = useLanguage();
   const navigate = useNavigate();
 
+  // Stile per le emoji Apple
+  const appleEmojiStyle = {
+    fontFamily:
+      '"Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif',
+    fontFeatureSettings: '"liga" off',
+  };
+
   // Funzione per estrarre ID numerici dai valori dei select
   const extractNumericId = (value: string): number | null => {
     if (!value) return null;
@@ -500,25 +507,33 @@ const Contact: React.FC = () => {
 
                       <div className="space-y-3">
                         <div className="flex items-center gap-3">
-                          <span className="text-base">💬</span>
+                          <span className="text-base" style={appleEmojiStyle}>
+                            💬
+                          </span>
                           <span className="text-xs">
                             {t("contact-info-free")}
                           </span>
                         </div>
                         <div className="flex items-center gap-3">
-                          <span className="text-base">📋</span>
+                          <span className="text-base" style={appleEmojiStyle}>
+                            📋
+                          </span>
                           <span className="text-xs">
                             {t("contact-info-quote")}
                           </span>
                         </div>
                         <div className="flex items-center gap-3">
-                          <span className="text-base">🤝</span>
+                          <span className="text-base" style={appleEmojiStyle}>
+                            🤝
+                          </span>
                           <span className="text-xs">
                             {t("contact-info-support")}
                           </span>
                         </div>
                         <div className="flex items-center gap-3">
-                          <span className="text-base">⚡</span>
+                          <span className="text-base" style={appleEmojiStyle}>
+                            ⚡
+                          </span>
                           <span className="text-xs">
                             {t("contact-response-time") || "Risposta entro 24h"}
                           </span>

@@ -6,7 +6,6 @@ import Contact from "./Pages/Contact/Contact";
 import About from "./Pages/About/About";
 import MobileDevelopment from "./Pages/Services/MobileDevelopment";
 import WebDevelopment from "./Pages/Services/WebDevelopment";
-import Websites from "./Pages/Services/Websites";
 import CustomSoftware from "./Pages/Services/CustomSoftware";
 import StartupMVP from "./Pages/Services/StartupMVP";
 import AISoftware from "./Pages/Services/AISoftware";
@@ -55,9 +54,9 @@ function AppContent() {
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
           <Route path="services">
-            <Route path="mobile-development" element={<MobileDevelopment />} />
             <Route path="web-development" element={<WebDevelopment />} />
-            <Route path="websites" element={<Websites />} />
+            <Route path="websites" element={<WebDevelopment />} />
+            <Route path="mobile-development" element={<MobileDevelopment />} />
             <Route path="custom-software" element={<CustomSoftware />} />
             <Route path="startup-mvp" element={<StartupMVP />} />
             <Route path="ai-software" element={<AISoftware />} />

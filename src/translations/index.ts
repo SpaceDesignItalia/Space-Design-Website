@@ -788,8 +788,8 @@ export const translations: Translations = {
     it: "Siti web moderni e applicazioni web performanti che offrono esperienze utente eccezionali e guidano la crescita del tuo business",
   },
   "web-meta-description": {
-    en: "We develop modern websites and high-performance web applications. Professional solutions for your online presence.",
-    it: "Sviluppiamo siti web moderni e applicazioni web performanti. Soluzioni professionali per la tua presenza online.",
+    en: "We develop websites, e-commerce and modern web applications. Complete solutions from showcase sites to SaaS platforms.",
+    it: "Sviluppiamo siti web, e-commerce e applicazioni web moderne. Soluzioni complete dal sito vetrina alle piattaforme SaaS.",
   },
   "web-seo-optimized": {
     en: "SEO Optimized",
@@ -844,28 +844,28 @@ export const translations: Translations = {
     it: "I nostri siti web offrono vantaggi concreti per la tua presenza online",
   },
   "web-benefit-1": {
-    en: "Professional online presence",
-    it: "Presenza online professionale",
+    en: "Custom and professional design",
+    it: "Design personalizzato e professionale",
   },
   "web-benefit-2": {
-    en: "Better search engine ranking",
-    it: "Miglior posizionamento sui motori di ricerca",
+    en: "Optimized for search engines (SEO)",
+    it: "Ottimizzato per motori di ricerca (SEO)",
   },
   "web-benefit-3": {
-    en: "Optimized user experience",
-    it: "Esperienza utente ottimizzata",
+    en: "Responsive on all devices",
+    it: "Responsive su tutti i dispositivi",
   },
   "web-benefit-4": {
-    en: "Cross-browser compatibility",
-    it: "Compatibilità cross-browser",
+    en: "Optimized performance and speed",
+    it: "Performance e velocità ottimizzate",
   },
   "web-benefit-5": {
-    en: "Scalability and maintainability",
-    it: "Scalabilità e manutenibilità",
+    en: "Security and automatic backups",
+    it: "Sicurezza e backup automatici",
   },
   "web-benefit-6": {
-    en: "Integration with existing systems",
-    it: "Integrazione con sistemi esistenti",
+    en: "Easy content management",
+    it: "Facile gestione contenuti",
   },
   "web-cta-title": {
     en: "Ready to Create Your Website?",
@@ -1866,5 +1866,137 @@ export const translations: Translations = {
   "ai-streaming": {
     en: "Stream Processing",
     it: "Elaborazione Stream",
+  },
+
+  // Additional Web Development translations for unified page
+  "web-subtitle": {
+    en: "Professional and Tailored",
+    it: "Professionali e Su Misura",
+  },
+  "web-types-title": {
+    en: "Types of Web Solutions",
+    it: "Tipologie di Soluzioni Web",
+  },
+  "web-types-description": {
+    en: "We create complete web solutions with everything you need for online success. Each solution is tailored to your specific business needs and goals.",
+    it: "Creiamo soluzioni web complete con tutto ciò di cui hai bisogno per il successo online. Ogni soluzione è adattata alle tue specifiche esigenze aziendali e obiettivi.",
+  },
+  "web-business-sites": {
+    en: "Business Websites",
+    it: "Siti Web Aziendali",
+  },
+  "web-business-description": {
+    en: "Professional websites that represent your company online with custom design and optimized content.",
+    it: "Siti web professionali che rappresentano la tua azienda online con design personalizzato e contenuti ottimizzati.",
+  },
+  "web-ecommerce": {
+    en: "E-commerce",
+    it: "E-commerce",
+  },
+  "web-ecommerce-description": {
+    en: "Complete online stores with product management, secure payments and sales analytics to grow your business.",
+    it: "Negozi online completi con gestione prodotti, pagamenti sicuri e analisi vendite per far crescere il tuo business.",
+  },
+  "web-applications-description": {
+    en: "Advanced web applications, SaaS platforms and management systems developed with modern and scalable technologies.",
+    it: "Applicazioni web avanzate, SaaS platforms e sistemi gestionali sviluppati con tecnologie moderne e scalabili.",
+  },
+  "web-landing-pages": {
+    en: "Landing Pages",
+    it: "Landing Pages",
+  },
+  "web-landing-description": {
+    en: "High-conversion landing pages for marketing campaigns, product launches and lead generation.",
+    it: "Pagine di atterraggio ad alta conversione per campagne marketing, lancio prodotti e generazione lead.",
+  },
+  "web-custom-title": {
+    en: "Custom Design",
+    it: "Design Personalizzato",
+  },
+  "web-custom-description": {
+    en: "We create unique business websites that reflect your brand identity and capture your customers' attention. Every element is carefully designed to represent your company's values and communicate your message effectively.",
+    it: "Creiamo siti web aziendali unici che riflettono la tua identità di brand e catturano l'attenzione dei tuoi clienti. Ogni elemento è attentamente progettato per rappresentare i valori della tua azienda e comunicare il tuo messaggio efficacemente.",
+  },
+  "web-custom-features": {
+    en: "Our custom designs include responsive layouts, modern aesthetics, intuitive navigation, and optimized user experience. We work closely with you to ensure every detail matches your vision and business objectives.",
+    it: "I nostri design personalizzati includono layout responsive, estetica moderna, navigazione intuitiva e user experience ottimizzata. Lavoriamo insieme a te per assicurarci che ogni dettaglio corrisponda alla tua visione e ai tuoi obiettivi aziendali.",
+  },
+  "web-custom-tags": {
+    en: "Brand Identity,Responsive Design,User Experience,Modern Aesthetics",
+    it: "Identità del Brand,Design Responsive,User Experience,Estetica Moderna",
+  },
+  "web-showcase-title": {
+    en: "Showcase Websites",
+    it: "Siti Vetrina",
+  },
+  "web-showcase-description": {
+    en: "Elegant websites designed to present your company, services and products professionally and attractively. Perfect for businesses that want to establish a strong online presence and build trust with potential customers.",
+    it: "Siti web eleganti progettati per presentare la tua azienda, servizi e prodotti in modo professionale e accattivante. Perfetti per le aziende che vogliono stabilire una forte presenza online e costruire fiducia con i potenziali clienti.",
+  },
+  "web-showcase-features": {
+    en: "These sites focus on visual storytelling, professional imagery, clear service descriptions, and compelling calls-to-action. Ideal for consultants, agencies, restaurants, hotels, and service-based businesses.",
+    it: "Questi siti si concentrano su storytelling visivo, immagini professionali, descrizioni chiare dei servizi e call-to-action convincenti. Ideali per consulenti, agenzie, ristoranti, hotel e attività basate sui servizi.",
+  },
+  "web-showcase-tags": {
+    en: "Professional Image,Visual Storytelling,Service Presentation,Trust Building",
+    it: "Immagine Professionale,Storytelling Visivo,Presentazione Servizi,Costruzione Fiducia",
+  },
+  "web-ecommerce-title": {
+    en: "E-commerce",
+    it: "E-commerce",
+  },
+  "web-ecommerce-features": {
+    en: "Features include product catalogs, inventory management, multiple payment gateways, shipping integration, customer accounts, order tracking, and detailed analytics. Built on platforms like Shopify, WooCommerce, or custom solutions.",
+    it: "Le funzionalità includono cataloghi prodotti, gestione inventario, gateway di pagamento multipli, integrazione spedizioni, account clienti, tracking ordini e analytics dettagliate. Realizzati su piattaforme come Shopify, WooCommerce o soluzioni personalizzate.",
+  },
+  "web-ecommerce-tags": {
+    en: "Online Sales,Payment Gateway,Inventory Management,Order Tracking",
+    it: "Vendite Online,Gateway di Pagamento,Gestione Inventario,Tracking Ordini",
+  },
+  "web-landing-title": {
+    en: "Landing Pages",
+    it: "Landing Pages",
+  },
+  "web-landing-features": {
+    en: "Each landing page includes compelling headlines, persuasive copy, social proof elements, clear value propositions, and strategically placed call-to-action buttons. A/B testing ready and analytics integrated for maximum performance.",
+    it: "Ogni landing page include titoli accattivanti, copy persuasivo, elementi di social proof, proposte di valore chiare e pulsanti call-to-action posizionati strategicamente. Pronti per A/B testing e analytics integrati per massime performance.",
+  },
+  "web-landing-tags": {
+    en: "High Conversion,Lead Generation,A/B Testing,Campaign Focused",
+    it: "Alta Conversione,Generazione Lead,A/B Testing,Focus Campagne",
+  },
+  "web-additional-title": {
+    en: "All Websites Include",
+    it: "Tutti i Siti Web Includono",
+  },
+  "web-feature-responsive": {
+    en: "Mobile Responsive",
+    it: "Mobile Responsive",
+  },
+  "web-feature-responsive-desc": {
+    en: "Perfect on all devices",
+    it: "Perfetti su tutti i dispositivi",
+  },
+  "web-feature-seo": {
+    en: "SEO Optimized",
+    it: "SEO Ottimizzato",
+  },
+  "web-feature-seo-desc": {
+    en: "Built for search engines",
+    it: "Costruiti per i motori di ricerca",
+  },
+  "web-feature-performance": {
+    en: "High Performance",
+    it: "Alte Performance",
+  },
+  "web-feature-performance-desc": {
+    en: "Fast loading speeds",
+    it: "Velocità di caricamento elevate",
+  },
+
+  // Web Development MorphingText translations
+  "web-morphing-types": {
+    en: "Business Websites|E-commerce|Web Applications|Landing Pages|SaaS Platforms|Progressive Web Apps",
+    it: "Siti Web Aziendali|E-commerce|Applicazioni Web|Landing Pages|SaaS Platforms|Progressive Web Apps",
   },
 };

@@ -53,4 +53,20 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+
+  <url>
+    <loc>https://www.spacedesign-italia.it/services/startup-mvp</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.spacedesign-italia.it/it/services/startup-mvp"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.spacedesign-italia.it/en/services/startup-mvp"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.spacedesign-italia.it/services/ai-software</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.spacedesign-italia.it/it/services/ai-software"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.spacedesign-italia.it/en/services/ai-software"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
 </urlset> 

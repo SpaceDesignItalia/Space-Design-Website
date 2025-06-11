@@ -35,82 +35,18 @@ export default function WebDevelopment() {
     navigate(`/${language}/contact`);
   };
 
-  const webTypes = [
-    "Web Applications",
-    "SaaS Platforms",
-    "Progressive Web Apps",
-    "Enterprise Solutions",
-    "API Systems",
-    "Dashboard Analytics",
-  ];
+  // Get morphing text types from translations
+  const webTypes = (
+    t("web-morphing-types") ||
+    "Siti Web Aziendali|E-commerce|Applicazioni Web|Landing Pages|SaaS Platforms|Progressive Web Apps"
+  ).split("|");
 
   const bentoItems = [
     {
-      title: t("web-applications") || "Applicazioni Web",
+      title: t("web-business-sites") || "Siti Web Aziendali",
       description:
-        t("web-applications-desc") ||
-        "Applicazioni web complete e scalabili con architetture moderne, database avanzati e interfacce utente intuitive.",
-      header: (
-        <div className="w-full h-full min-h-[6rem] rounded-xl bg-gray-100 dark:bg-gray-800 flex items-center justify-center">
-          <Icon
-            icon="material-symbols:web"
-            className="h-12 w-12 text-gray-600 dark:text-gray-400"
-          />
-        </div>
-      ),
-      icon: (
-        <Icon
-          icon="material-symbols:web"
-          className="h-4 w-4 text-neutral-500"
-        />
-      ),
-      className: "md:col-span-2",
-    },
-    {
-      title: t("web-saas-platforms") || "Piattaforme SaaS",
-      description:
-        t("web-saas-description") ||
-        "Soluzioni Software-as-a-Service multi-tenant con gestione utenti, fatturazione e integrazioni.",
-      header: (
-        <div className="w-full h-full min-h-[6rem] rounded-xl bg-gray-100 dark:bg-gray-800 flex items-center justify-center">
-          <Icon
-            icon="material-symbols:cloud"
-            className="h-12 w-12 text-gray-600 dark:text-gray-400"
-          />
-        </div>
-      ),
-      icon: (
-        <Icon
-          icon="material-symbols:cloud"
-          className="h-4 w-4 text-neutral-500"
-        />
-      ),
-    },
-    {
-      title: t("web-progressive-apps") || "Progressive Web Apps",
-      description:
-        t("web-progressive-description") ||
-        "PWA che funzionano offline, con notifiche push e installabili come app native.",
-      header: (
-        <div className="w-full h-full min-h-[6rem] rounded-xl bg-gray-100 dark:bg-gray-800 flex items-center justify-center">
-          <Icon
-            icon="material-symbols:install-mobile"
-            className="h-12 w-12 text-gray-600 dark:text-gray-400"
-          />
-        </div>
-      ),
-      icon: (
-        <Icon
-          icon="material-symbols:install-mobile"
-          className="h-4 w-4 text-neutral-500"
-        />
-      ),
-    },
-    {
-      title: t("web-enterprise-solutions") || "Soluzioni Enterprise",
-      description:
-        t("web-enterprise-description") ||
-        "Sistemi enterprise complessi con alta disponibilità, sicurezza avanzata e performance ottimizzate.",
+        t("web-business-description") ||
+        "Siti web professionali che rappresentano la tua azienda online con design personalizzato e contenuti ottimizzati.",
       header: (
         <div className="w-full h-full min-h-[6rem] rounded-xl bg-gray-100 dark:bg-gray-800 flex items-center justify-center">
           <Icon
@@ -127,24 +63,85 @@ export default function WebDevelopment() {
       ),
       className: "md:col-span-2",
     },
+    {
+      title: t("web-ecommerce") || "E-commerce",
+      description:
+        t("web-ecommerce-description") ||
+        "Negozi online completi con gestione prodotti, pagamenti sicuri e analisi vendite per far crescere il tuo business.",
+      header: (
+        <div className="w-full h-full min-h-[6rem] rounded-xl bg-gray-100 dark:bg-gray-800 flex items-center justify-center">
+          <Icon
+            icon="material-symbols:shopping-cart"
+            className="h-12 w-12 text-gray-600 dark:text-gray-400"
+          />
+        </div>
+      ),
+      icon: (
+        <Icon
+          icon="material-symbols:shopping-cart"
+          className="h-4 w-4 text-neutral-500"
+        />
+      ),
+    },
+    {
+      title: t("web-applications") || "Applicazioni Web",
+      description:
+        t("web-applications-description") ||
+        "Applicazioni web avanzate, SaaS platforms e sistemi gestionali sviluppati con tecnologie moderne e scalabili.",
+      header: (
+        <div className="w-full h-full min-h-[6rem] rounded-xl bg-gray-100 dark:bg-gray-800 flex items-center justify-center">
+          <Icon
+            icon="material-symbols:web"
+            className="h-12 w-12 text-gray-600 dark:text-gray-400"
+          />
+        </div>
+      ),
+      icon: (
+        <Icon
+          icon="material-symbols:web"
+          className="h-4 w-4 text-neutral-500"
+        />
+      ),
+    },
+    {
+      title: t("web-landing-pages") || "Landing Pages",
+      description:
+        t("web-landing-description") ||
+        "Pagine di atterraggio ad alta conversione per campagne marketing, lancio prodotti e generazione lead.",
+      header: (
+        <div className="w-full h-full min-h-[6rem] rounded-xl bg-gray-100 dark:bg-gray-800 flex items-center justify-center">
+          <Icon
+            icon="material-symbols:rocket-launch"
+            className="h-12 w-12 text-gray-600 dark:text-gray-400"
+          />
+        </div>
+      ),
+      icon: (
+        <Icon
+          icon="material-symbols:rocket-launch"
+          className="h-4 w-4 text-neutral-500"
+        />
+      ),
+      className: "md:col-span-2",
+    },
   ];
 
   const technologies = [
     { name: "React", icon: "logos:react" },
+    { name: "WordPress", icon: "logos:wordpress-icon" },
     { name: "Node.js", icon: "logos:nodejs-icon" },
+    { name: "Shopify", icon: "logos:shopify" },
     { name: "TypeScript", icon: "logos:typescript-icon" },
-    { name: "Next.js", icon: "logos:nextjs-icon" },
-    { name: "PostgreSQL", icon: "logos:postgresql" },
-    { name: "Docker", icon: "logos:docker-icon" },
+    { name: "Figma", icon: "logos:figma" },
   ];
 
   const benefits = [
-    t("web-benefit-1") || "Architetture scalabili e moderne",
-    t("web-benefit-2") || "Performance ottimizzate per carichi elevati",
-    t("web-benefit-3") || "Sicurezza enterprise-grade",
-    t("web-benefit-4") || "Interfacce utente intuitive",
-    t("web-benefit-5") || "Integrazione con sistemi esistenti",
-    t("web-benefit-6") || "Monitoraggio e analytics avanzati",
+    t("web-benefit-1") || "Design personalizzato e professionale",
+    t("web-benefit-2") || "Ottimizzato per motori di ricerca (SEO)",
+    t("web-benefit-3") || "Responsive su tutti i dispositivi",
+    t("web-benefit-4") || "Performance e velocità ottimizzate",
+    t("web-benefit-5") || "Sicurezza e backup automatici",
+    t("web-benefit-6") || "Facile gestione contenuti",
   ];
 
   return (
@@ -155,9 +152,9 @@ export default function WebDevelopment() {
         }`}
         description={
           t("web-meta-description") ||
-          "Sviluppiamo applicazioni web moderne e performanti. Soluzioni professionali per la tua presenza online."
+          "Sviluppiamo siti web, e-commerce e applicazioni web moderne. Soluzioni complete dal sito vetrina alle piattaforme SaaS."
         }
-        keywords={`sviluppo web, applicazioni web, saas, progressive web app, react, node.js, ${t(
+        keywords={`sviluppo web, siti web, e-commerce, applicazioni web, wordpress, react, ${t(
           "seo-keywords"
         )}`}
         url={`/${language}/services/web-development`}
@@ -213,7 +210,7 @@ export default function WebDevelopment() {
                   />
                 </h1>
                 <p className="text-xl text-gray-600 dark:text-gray-400 mt-4">
-                  {t("web-development-subtitle") || "Moderne e Scalabili"}
+                  {t("web-subtitle") || "Professionali e Su Misura"}
                 </p>
               </div>
 
@@ -224,7 +221,7 @@ export default function WebDevelopment() {
                 className="mx-auto max-w-2xl text-lg leading-8 text-gray-600 dark:text-gray-300"
               >
                 {t("web-hero-description") ||
-                  "Applicazioni web moderne e performanti che offrono esperienze utente eccezionali e guidano la crescita del tuo business"}
+                  "Siti web aziendali, e-commerce e landing page professionali per presentare la tua attività online e raggiungere nuovi clienti"}
               </motion.p>
 
               <motion.div
@@ -246,7 +243,7 @@ export default function WebDevelopment() {
           </div>
         </section>
 
-        {/* Bento Grid Features Section */}
+        {/* Types of Websites Section */}
         <section className="py-24 bg-white dark:bg-gray-900">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <motion.div
@@ -257,32 +254,261 @@ export default function WebDevelopment() {
               className="text-center mb-16"
             >
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl mb-4">
-                {t("web-features-title") || "Soluzioni Web Avanzate"}
+                {t("web-types-title") || "Types of Websites"}
               </h2>
-              <p className="text-lg text-gray-600 dark:text-gray-300">
-                {t("web-features-description") ||
-                  "Sviluppiamo applicazioni web complete con architetture moderne e tecnologie all'avanguardia"}
+              <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+                {t("web-types-description") ||
+                  "We create complete websites with everything you need for online success. Each solution is tailored to your specific business needs and goals."}
               </p>
             </motion.div>
 
+            <div className="grid lg:grid-cols-2 gap-8">
+              {/* Custom Design */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+                className="group relative p-8 rounded-2xl bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 hover:shadow-lg hover:border-gray-300 dark:hover:border-gray-600 transition-all duration-300"
+              >
+                <div className="flex items-start gap-6">
+                  <div className="flex-shrink-0">
+                    <div className="w-16 h-16 rounded-xl bg-gray-900 dark:bg-gray-100 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <Icon
+                        icon="material-symbols:design-services"
+                        className="h-8 w-8 text-white dark:text-gray-900"
+                      />
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                      {t("web-custom-title") || "Custom Design"}
+                    </h3>
+                    <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                      {t("web-custom-description") ||
+                        "We create unique business websites that reflect your brand identity and capture your customers' attention. Every element is carefully designed to represent your company's values and communicate your message effectively."}
+                    </p>
+                    <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
+                      {t("web-custom-features") ||
+                        "Our custom designs include responsive layouts, modern aesthetics, intuitive navigation, and optimized user experience. We work closely with you to ensure every detail matches your vision and business objectives."}
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      {(
+                        t("web-custom-tags") ||
+                        "Brand Identity,Responsive Design,User Experience,Modern Aesthetics"
+                      )
+                        .split(",")
+                        .map((tag, index) => (
+                          <span
+                            key={index}
+                            className="px-3 py-1 text-xs font-medium bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full"
+                          >
+                            {tag.trim()}
+                          </span>
+                        ))}
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* Showcase Websites */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                className="group relative p-8 rounded-2xl bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 hover:shadow-lg hover:border-gray-300 dark:hover:border-gray-600 transition-all duration-300"
+              >
+                <div className="flex items-start gap-6">
+                  <div className="flex-shrink-0">
+                    <div className="w-16 h-16 rounded-xl bg-gray-900 dark:bg-gray-100 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <Icon
+                        icon="material-symbols:storefront"
+                        className="h-8 w-8 text-white dark:text-gray-900"
+                      />
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                      {t("web-showcase-title") || "Showcase Websites"}
+                    </h3>
+                    <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                      {t("web-showcase-description") ||
+                        "Elegant websites designed to present your company, services and products professionally and attractively. Perfect for businesses that want to establish a strong online presence and build trust with potential customers."}
+                    </p>
+                    <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
+                      {t("web-showcase-features") ||
+                        "These sites focus on visual storytelling, professional imagery, clear service descriptions, and compelling calls-to-action. Ideal for consultants, agencies, restaurants, hotels, and service-based businesses."}
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      {(
+                        t("web-showcase-tags") ||
+                        "Professional Image,Visual Storytelling,Service Presentation,Trust Building"
+                      )
+                        .split(",")
+                        .map((tag, index) => (
+                          <span
+                            key={index}
+                            className="px-3 py-1 text-xs font-medium bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full"
+                          >
+                            {tag.trim()}
+                          </span>
+                        ))}
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* E-commerce */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                className="group relative p-8 rounded-2xl bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 hover:shadow-lg hover:border-gray-300 dark:hover:border-gray-600 transition-all duration-300"
+              >
+                <div className="flex items-start gap-6">
+                  <div className="flex-shrink-0">
+                    <div className="w-16 h-16 rounded-xl bg-gray-900 dark:bg-gray-100 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <Icon
+                        icon="material-symbols:shopping-cart"
+                        className="h-8 w-8 text-white dark:text-gray-900"
+                      />
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                      {t("web-ecommerce-title") || "E-commerce"}
+                    </h3>
+                    <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                      {t("web-ecommerce-description") ||
+                        "Complete online stores designed to sell your products with advanced shopping cart functionality, secure payment processing, and comprehensive order management systems. Turn your products into profitable online sales."}
+                    </p>
+                    <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
+                      {t("web-ecommerce-features") ||
+                        "Features include product catalogs, inventory management, multiple payment gateways, shipping integration, customer accounts, order tracking, and detailed analytics. Built on platforms like Shopify, WooCommerce, or custom solutions."}
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      {(
+                        t("web-ecommerce-tags") ||
+                        "Online Sales,Payment Gateway,Inventory Management,Order Tracking"
+                      )
+                        .split(",")
+                        .map((tag, index) => (
+                          <span
+                            key={index}
+                            className="px-3 py-1 text-xs font-medium bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full"
+                          >
+                            {tag.trim()}
+                          </span>
+                        ))}
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* Landing Pages */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+                className="group relative p-8 rounded-2xl bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 hover:shadow-lg hover:border-gray-300 dark:hover:border-gray-600 transition-all duration-300"
+              >
+                <div className="flex items-start gap-6">
+                  <div className="flex-shrink-0">
+                    <div className="w-16 h-16 rounded-xl bg-gray-900 dark:bg-gray-100 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <Icon
+                        icon="material-symbols:rocket-launch"
+                        className="h-8 w-8 text-white dark:text-gray-900"
+                      />
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                      {t("web-landing-title") || "Landing Pages"}
+                    </h3>
+                    <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                      {t("web-landing-description") ||
+                        "High-converting landing pages specifically optimized for conversions and perfect for marketing campaigns, product launches, and lead generation. Designed with a single focus: turning visitors into customers or leads."}
+                    </p>
+                    <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
+                      {t("web-landing-features") ||
+                        "Each landing page includes compelling headlines, persuasive copy, social proof elements, clear value propositions, and strategically placed call-to-action buttons. A/B testing ready and analytics integrated for maximum performance."}
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      {(
+                        t("web-landing-tags") ||
+                        "High Conversion,Lead Generation,A/B Testing,Campaign Focused"
+                      )
+                        .split(",")
+                        .map((tag, index) => (
+                          <span
+                            key={index}
+                            className="px-3 py-1 text-xs font-medium bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full"
+                          >
+                            {tag.trim()}
+                          </span>
+                        ))}
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+
+            {/* Additional Info Section */}
             <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.2 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
+              className="mt-16 text-center"
             >
-              <BentoGrid className="mx-auto">
-                {bentoItems.map((item, i) => (
-                  <BentoGridItem
-                    key={i}
-                    title={item.title}
-                    description={item.description}
-                    header={item.header}
-                    icon={item.icon}
-                    className={item.className}
-                  />
-                ))}
-              </BentoGrid>
+              <div className="max-w-4xl mx-auto p-8 rounded-2xl bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700">
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                  {t("web-additional-title") || "All Websites Include"}
+                </h3>
+                <div className="grid md:grid-cols-3 gap-6 mt-8">
+                  <div className="text-center">
+                    <Icon
+                      icon="material-symbols:mobile-friendly"
+                      className="h-12 w-12 text-gray-600 dark:text-gray-400 mx-auto mb-3"
+                    />
+                    <h4 className="font-semibold text-gray-900 dark:text-white mb-2">
+                      {t("web-feature-responsive") || "Mobile Responsive"}
+                    </h4>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">
+                      {t("web-feature-responsive-desc") ||
+                        "Perfect on all devices"}
+                    </p>
+                  </div>
+                  <div className="text-center">
+                    <Icon
+                      icon="material-symbols:search"
+                      className="h-12 w-12 text-gray-600 dark:text-gray-400 mx-auto mb-3"
+                    />
+                    <h4 className="font-semibold text-gray-900 dark:text-white mb-2">
+                      {t("web-feature-seo") || "SEO Optimized"}
+                    </h4>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">
+                      {t("web-feature-seo-desc") || "Built for search engines"}
+                    </p>
+                  </div>
+                  <div className="text-center">
+                    <Icon
+                      icon="material-symbols:speed"
+                      className="h-12 w-12 text-gray-600 dark:text-gray-400 mx-auto mb-3"
+                    />
+                    <h4 className="font-semibold text-gray-900 dark:text-white mb-2">
+                      {t("web-feature-performance") || "High Performance"}
+                    </h4>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">
+                      {t("web-feature-performance-desc") ||
+                        "Fast loading speeds"}
+                    </p>
+                  </div>
+                </div>
+              </div>
             </motion.div>
           </div>
         </section>
@@ -301,7 +527,7 @@ export default function WebDevelopment() {
                 variants={fadeInUp}
                 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl"
               >
-                {t("web-technologies-title") || "Tecnologie che Utilizziamo"}
+                {t("web-technologies-title") || "Piattaforme che Utilizziamo"}
               </motion.h2>
 
               <motion.div
@@ -330,107 +556,6 @@ export default function WebDevelopment() {
           </div>
         </section>
 
-        {/* Benefits Section */}
-        <section className="py-24 bg-white dark:bg-gray-900">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <motion.div
-              initial="initial"
-              whileInView="animate"
-              viewport={{ once: true }}
-              variants={stagger}
-              className="text-center mb-16"
-            >
-              <motion.h2
-                variants={fadeInUp}
-                className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl"
-              >
-                {t("web-benefits-title") ||
-                  "Perché Scegliere le Nostre Applicazioni Web"}
-              </motion.h2>
-              <motion.p
-                variants={fadeInUp}
-                className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"
-              >
-                {t("web-benefits-description") ||
-                  "Le nostre applicazioni web offrono vantaggi concreti per la tua presenza online"}
-              </motion.p>
-            </motion.div>
-
-            <motion.div
-              initial="initial"
-              whileInView="animate"
-              viewport={{ once: true }}
-              variants={stagger}
-              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-            >
-              {[
-                {
-                  icon: "material-symbols:architecture",
-                  title:
-                    t("web-benefit-1") || "Architetture scalabili e moderne",
-                  description:
-                    "Progettazione modulare e microservizi per crescere con il tuo business",
-                },
-                {
-                  icon: "material-symbols:speed",
-                  title:
-                    t("web-benefit-2") ||
-                    "Performance ottimizzate per carichi elevati",
-                  description:
-                    "Ottimizzazioni avanzate per gestire migliaia di utenti simultanei",
-                },
-                {
-                  icon: "material-symbols:security",
-                  title: t("web-benefit-3") || "Sicurezza enterprise-grade",
-                  description:
-                    "Protocolli di sicurezza all'avanguardia per proteggere i tuoi dati",
-                },
-                {
-                  icon: "material-symbols:design-services",
-                  title: t("web-benefit-4") || "Interfacce utente intuitive",
-                  description:
-                    "Design UX/UI moderno e accessibile per massima usabilità",
-                },
-                {
-                  icon: "material-symbols:integration-instructions",
-                  title:
-                    t("web-benefit-5") || "Integrazione con sistemi esistenti",
-                  description:
-                    "API e connettori per integrare la tua infrastruttura attuale",
-                },
-                {
-                  icon: "material-symbols:analytics",
-                  title:
-                    t("web-benefit-6") || "Monitoraggio e analytics avanzati",
-                  description:
-                    "Dashboard in tempo reale per monitorare performance e utilizzo",
-                },
-              ].map((benefit, index) => (
-                <motion.div
-                  key={index}
-                  variants={scaleIn}
-                  className="group relative rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-8 hover:border-gray-300 dark:hover:border-gray-600 transition-all duration-300 hover:shadow-lg"
-                >
-                  <div className="flex flex-col items-center text-center">
-                    <div className="flex h-16 w-16 items-center justify-center rounded-xl bg-black dark:bg-white mb-6 group-hover:scale-110 transition-transform duration-300">
-                      <Icon
-                        icon={benefit.icon}
-                        className="h-8 w-8 text-white dark:text-black"
-                      />
-                    </div>
-                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
-                      {benefit.title}
-                    </h3>
-                    <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
-                      {benefit.description}
-                    </p>
-                  </div>
-                </motion.div>
-              ))}
-            </motion.div>
-          </div>
-        </section>
-
         {/* CTA Section */}
         <section className="py-24 bg-black dark:bg-white">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -442,12 +567,11 @@ export default function WebDevelopment() {
               className="text-center"
             >
               <h2 className="text-3xl font-bold tracking-tight text-white dark:text-black sm:text-4xl">
-                {t("web-cta-title") ||
-                  "Pronto a Creare la Tua Applicazione Web?"}
+                {t("web-cta-title") || "Pronto a Creare il Tuo Sito Web?"}
               </h2>
               <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-300 dark:text-gray-700">
                 {t("web-cta-description") ||
-                  "Contattaci per discutere il tuo progetto e creare insieme l'applicazione web perfetta per te"}
+                  "Contattaci per discutere il tuo progetto e creare insieme il sito web perfetto per la tua azienda"}
               </p>
               <div className="mt-10">
                 <Button
