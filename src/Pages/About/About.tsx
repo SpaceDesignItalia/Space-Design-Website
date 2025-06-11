@@ -268,20 +268,13 @@ export default function About() {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ delay: index * 0.1 }}
                         viewport={{ once: true }}
-                        className={`relative overflow-hidden rounded-2xl ${
-                          index % 2 === 1 ? "mt-8" : ""
-                        }`}
+                        className="relative overflow-hidden rounded-2xl"
                       >
                         <img
                           src={member.image}
                           alt={member.name}
                           className="w-full h-full object-cover"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-                        <div className="absolute bottom-4 left-4 text-white">
-                          <h4 className="font-semibold">{member.name}</h4>
-                          <p className="text-sm text-gray-200">{member.role}</p>
-                        </div>
                       </motion.div>
                     ))}
                   </div>
