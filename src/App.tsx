@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import Contact from "./Pages/Contact/Contact";
+import About from "./Pages/About/About";
 import { LanguageProvider } from "./context/LanguageContext";
 import {
   CookieConsentProvider,
@@ -45,7 +46,7 @@ function AppContent() {
         {/* Language-specific routes */}
         <Route path="/:lang" element={<LanguageLayout />}>
           <Route index element={<Home />} />
-          <Route path="about" element={<div>About Page</div>} />
+          <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
           <Route path="services">
             <Route

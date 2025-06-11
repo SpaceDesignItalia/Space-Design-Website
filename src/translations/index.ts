@@ -525,4 +525,90 @@ export const translations: Translations = {
     en: "Dedicated support",
     it: "Supporto dedicato",
   },
+
+  // About Section
+  "about-hero-title": {
+    en: "Creating extraordinary solutions.",
+    it: "Creare soluzioni straordinarie.",
+  },
+  "about-hero-subtitle": {
+    en: "We are on a mission to revolutionize the way businesses interact with technology.",
+    it: "Siamo in missione per rivoluzionare il modo in cui le aziende interagiscono con la tecnologia.",
+  },
+  "about-mission-title": {
+    en: "Our Mission",
+    it: "La nostra missione",
+  },
+  "about-mission-description-1": {
+    en: "At Space Design, we are dedicated to creating innovative and aesthetically pleasing software that brings true innovation to businesses. Our mission is to design unique and tailored solutions, capable of meeting the specific needs of our clients and, at the same time, inspiring them to overcome every limit, giving shape to new possibilities.",
+    it: "In Space Design, ci dedichiamo a creare software innovativi e esteticamente piacevoli che portano vera innovazione nelle aziende. La nostra missione è progettare soluzioni uniche e su misura, capaci di soddisfare le esigenze specifiche dei nostri clienti e, allo stesso tempo, ispirarli a superare ogni limite, dando forma a nuove possibilità.",
+  },
+  "about-mission-description-2": {
+    en: "With a deep passion for technology and design, we believe that every project represents a unique opportunity to redefine the way businesses operate. We work closely with our clients, transforming their ideas into concrete solutions, so they can thrive in a constantly evolving digital world. Our growth is the direct result of our clients' success, and our goal is to make every experience an extraordinary journey.",
+    it: "Con una profonda passione per la tecnologia e il design, crediamo che ogni progetto rappresenti un'opportunità unica per ridefinire il modo in cui le aziende operano. Collaboriamo a stretto contatto con i nostri clienti, trasformando le loro idee in soluzioni concrete, affinché possano prosperare in un mondo digitale in continua evoluzione. La nostra crescita è il risultato diretto del successo dei nostri clienti, e il nostro obiettivo è rendere ogni esperienza un viaggio straordinario.",
+  },
+  "about-numbers-title": {
+    en: "The Numbers",
+    it: "I Numeri",
+  },
+  "about-projects-completed": {
+    en: "Projects Completed",
+    it: "Progetti Realizzati",
+  },
+  "about-lines-of-code": {
+    en: "Lines of code written",
+    it: "Linee di codice scritte",
+  },
+  "about-commits": {
+    en: "Repository commits",
+    it: "Commit nelle repository",
+  },
+  "about-coffee-cups": {
+    en: "Coffee cups drunk",
+    it: "Tazzine di caffè bevute",
+  },
+  "about-team-title": {
+    en: "Meet the Team",
+    it: "Incontra il Team",
+  },
+  "about-team-subtitle": {
+    en: "Founded by a team of visionaries.",
+    it: "Fondata da una squadra di visionari.",
+  },
+  "about-team-description": {
+    en: "Technology for everyone, passion and innovation at the service of people and businesses",
+    it: "Tecnologia per tutti, passione e innovazione al servizio di persone e aziende",
+  },
+  "about-company-story-1": {
+    en: "Space Design Italia was born from the vision of four young people passionate about technological innovation, united by the desire to make technology accessible, intuitive and understandable for everyone. Driven by inexhaustible curiosity and the desire to explore the potential of the future, they created a company that is not limited to developing technological solutions, but aims to transform the relationship with technology into a simple and stimulating experience.",
+    it: "Space Design Italia nasce dalla visione di quattro giovani appassionati di innovazione tecnologica, uniti dal desiderio di rendere la tecnologia accessibile, intuitiva e comprensibile per tutti. Animati da una curiosità inesauribile e dalla voglia di esplorare le potenzialità del futuro, hanno creato un'azienda che non si limita a sviluppare soluzioni tecnologiche, ma che mira a trasformare il rapporto con la tecnologia in un'esperienza semplice e stimolante.",
+  },
+  "about-company-story-2": {
+    en: "In addition to satisfying the needs of end users, Space Design Italia stands out for its ability to respond to the specific needs of companies, offering customized solutions that combine cutting-edge design, innovation and functionality. Their passion for innovation is the engine that fuels every project, pushing them to constantly seek new ideas to improve daily life and optimize business processes. Space Design Italia is not just a company, but a laboratory of ideas where creativity meets technology to create value and connection. For them, innovating means making the future closer, more inclusive and simpler to live.",
+    it: "Oltre a soddisfare i bisogni degli utenti finali, Space Design Italia si distingue per la capacità di rispondere alle esigenze specifiche delle aziende, offrendo soluzioni personalizzate che combinano design all'avanguardia, innovazione e funzionalità. La loro passione per l'innovazione è il motore che alimenta ogni progetto, spingendoli a cercare costantemente nuove idee per migliorare il quotidiano e ottimizzare i processi aziendali. Space Design Italia non è solo un'azienda, ma un laboratorio di idee dove la creatività incontra la tecnologia per creare valore e connessione. Per loro, innovare significa rendere il futuro più vicino, più inclusivo e più semplice da vivere.",
+  },
+  "about-contact-cta": {
+    en: "Contact us now!",
+    it: "Contattaci ora!",
+  },
+  "about-team-alt-text": {
+    en: "Team Space Design",
+    it: "Team Space Design",
+  },
+  "about-andrea-braia": {
+    en: "Andrea Braia",
+    it: "Andrea Braia",
+  },
+  "about-francesco-roviello": {
+    en: "Francesco Roviello",
+    it: "Francesco Roviello",
+  },
+  "about-marco-macherelli": {
+    en: "Marco Macherelli",
+    it: "Marco Macherelli",
+  },
+  "about-pablo-bertot": {
+    en: "Pablo Bertot",
+    it: "Pablo Bertot",
+  },
 };
