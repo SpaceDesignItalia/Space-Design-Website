@@ -2,15 +2,22 @@ import { Button } from "@heroui/react";
 import { useLanguage } from "../../context/LanguageContext";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 export default function CTA() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+  const navigate = useNavigate();
+
+  const handleContactClick = () => {
+    navigate(`/${language}/contact`);
+  };
+
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
         <div className="relative isolate overflow-hidden bg-primary px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
           <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
-            <motion.h2 
+            <motion.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
@@ -19,7 +26,7 @@ export default function CTA() {
             >
               {t("cta-title")}
             </motion.h2>
-            <motion.p 
+            <motion.p
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
@@ -28,7 +35,7 @@ export default function CTA() {
             >
               {t("cta-subtitle")}
             </motion.p>
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.6 }}
@@ -42,9 +49,9 @@ export default function CTA() {
                 className="w-full"
               >
                 <Button
-                  href="#"
                   radius="full"
                   className="bg-white w-4/6"
+                  onClick={handleContactClick}
                 >
                   {t("cta-button")}
                   <Icon icon="mdi:arrow-right" />
@@ -52,7 +59,7 @@ export default function CTA() {
               </motion.div>
             </motion.div>
           </div>
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: 100 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -70,5 +77,5 @@ export default function CTA() {
         </div>
       </div>
     </div>
-  )
+  );
 }

@@ -36,7 +36,7 @@ export default function MobileDevelopment() {
 
   const features = [
     {
-      icon: "material-symbols:phone-android",
+      icon: "bi:phone",
       title: t("mobile-native-apps") || "App Native",
       description:
         t("mobile-native-description") ||
@@ -134,7 +134,7 @@ export default function MobileDevelopment() {
                 className="mx-auto mb-8 flex h-24 w-24 items-center justify-center rounded-2xl bg-black dark:bg-white"
               >
                 <Icon
-                  icon="material-symbols:phone-android"
+                  icon="bi:phone"
                   className="h-12 w-12 text-white dark:text-black"
                 />
               </motion.div>

@@ -450,47 +450,79 @@ const Contact: React.FC = () => {
                   transition={{ duration: 0.5 }}
                   className="lg:sticky lg:top-24"
                 >
-                  <div className="bg-primary rounded-2xl p-6 text-white">
-                    <div className="flex items-center gap-3 mb-4">
-                      <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
-                        <Icon icon="solar:phone-bold" className="w-5 h-5" />
+                  {/* Contact Info Card con badge sopra */}
+                  <div className="relative">
+                    {/* Badge di stato sopra la card */}
+                    <div className="absolute -top-3 left-6 z-10">
+                      <div className="bg-white dark:bg-gray-800 rounded-full px-3 py-1.5 shadow-lg border border-gray-200 dark:border-gray-700 flex items-center gap-2">
+                        <div className="relative w-4 h-4 flex items-center justify-center">
+                          <motion.div
+                            animate={{ scale: [1, 1.2, 1] }}
+                            transition={{
+                              duration: 2,
+                              repeat: Infinity,
+                              ease: "easeInOut",
+                            }}
+                            className="w-2 h-2 bg-green-400 rounded-full"
+                          />
+                          <motion.div
+                            animate={{
+                              scale: [1, 1.8, 1],
+                              opacity: [0.8, 0, 0.8],
+                            }}
+                            transition={{
+                              duration: 2,
+                              repeat: Infinity,
+                              ease: "easeInOut",
+                            }}
+                            className="absolute w-2 h-2 bg-green-400 rounded-full"
+                          />
+                        </div>
+                        <span className="text-xs font-medium text-gray-900 dark:text-white">
+                          {t("contact-available-now") || "Siamo disponibili"}
+                        </span>
                       </div>
-                      <h2 className="text-xl font-bold">
-                        {t("contact-info-title")}
-                      </h2>
                     </div>
 
-                    <p className="text-white/90 mb-6 text-sm">
-                      {t("contact-info-subtitle")}
-                    </p>
+                    <div className="bg-primary rounded-2xl p-6 text-white pt-8">
+                      <div className="flex items-center gap-3 mb-4">
+                        <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
+                          <Icon icon="solar:phone-bold" className="w-5 h-5" />
+                        </div>
+                        <h2 className="text-xl font-bold">
+                          {t("contact-info-title")}
+                        </h2>
+                      </div>
 
-                    <div className="space-y-3">
-                      <div className="flex items-center gap-2">
-                        <Icon
-                          icon="solar:check-circle-bold"
-                          className="w-4 h-4 text-white"
-                        />
-                        <span className="text-xs">
-                          {t("contact-info-free")}
-                        </span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <Icon
-                          icon="solar:shield-check-bold"
-                          className="w-4 h-4 text-white"
-                        />
-                        <span className="text-xs">
-                          {t("contact-info-quote")}
-                        </span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <Icon
-                          icon="solar:star-bold"
-                          className="w-4 h-4 text-white"
-                        />
-                        <span className="text-xs">
-                          {t("contact-info-support")}
-                        </span>
+                      <p className="text-white/90 mb-6 text-sm">
+                        {t("contact-info-subtitle")}
+                      </p>
+
+                      <div className="space-y-3">
+                        <div className="flex items-center gap-3">
+                          <span className="text-base">💬</span>
+                          <span className="text-xs">
+                            {t("contact-info-free")}
+                          </span>
+                        </div>
+                        <div className="flex items-center gap-3">
+                          <span className="text-base">📋</span>
+                          <span className="text-xs">
+                            {t("contact-info-quote")}
+                          </span>
+                        </div>
+                        <div className="flex items-center gap-3">
+                          <span className="text-base">🤝</span>
+                          <span className="text-xs">
+                            {t("contact-info-support")}
+                          </span>
+                        </div>
+                        <div className="flex items-center gap-3">
+                          <span className="text-base">⚡</span>
+                          <span className="text-xs">
+                            {t("contact-response-time") || "Risposta entro 24h"}
+                          </span>
+                        </div>
                       </div>
                     </div>
                   </div>

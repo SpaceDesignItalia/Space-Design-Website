@@ -533,6 +533,50 @@ export const translations: Translations = {
     en: "Dedicated support",
     it: "Supporto dedicato",
   },
+  "contact-available-now": {
+    en: "We're available",
+    it: "Siamo disponibili",
+  },
+  "contact-response-time": {
+    en: "Response within 24h",
+    it: "Risposta entro 24h",
+  },
+  "contact-accepting-clients": {
+    en: "Accepting clients",
+    it: "Accettiamo clienti",
+  },
+  "contact-info-subtitle-short": {
+    en: "Your idea deserves to become reality",
+    it: "La tua idea merita di diventare realtà",
+  },
+  "contact-available-urgent": {
+    en: "🔥 Available NOW for new projects",
+    it: "🔥 Disponibili ORA per nuovi progetti",
+  },
+  "contact-limited-spots": {
+    en: "Only 3 spots available this month",
+    it: "Solo 3 posti disponibili questo mese",
+  },
+  "contact-info-free-enhanced": {
+    en: "FREE 30-minute consultation",
+    it: "Consulenza GRATUITA di 30 minuti",
+  },
+  "contact-info-quote-enhanced": {
+    en: "Detailed quote within 24h",
+    it: "Preventivo dettagliato in 24h",
+  },
+  "contact-info-guarantee": {
+    en: "Satisfaction or money back guarantee",
+    it: "Garanzia soddisfatti o rimborsati",
+  },
+  "contact-response-enhanced": {
+    en: "Guaranteed response within 2 hours",
+    it: "Risposta garantita entro 2 ore",
+  },
+  "contact-urgency": {
+    en: "⚡ The best projects start with a conversation",
+    it: "⚡ I migliori progetti partono con una conversazione",
+  },
 
   // About Section
   "about-hero-title": {
@@ -956,6 +1000,96 @@ export const translations: Translations = {
     it: "Contattaci per discutere il tuo progetto e creare insieme il sito web perfetto per la tua azienda",
   },
 
+  // Additional Websites Translations
+  "websites-subtitle": {
+    en: "Professional and Tailored",
+    it: "Professionali e Su Misura",
+  },
+  "websites-types-title": {
+    en: "Types of Websites",
+    it: "Tipologie di Siti Web",
+  },
+  "websites-types-description": {
+    en: "We create complete websites with everything you need for online success. Each solution is tailored to your specific business needs and goals.",
+    it: "Creiamo siti web completi con tutto ciò di cui hai bisogno per il successo online. Ogni soluzione è adattata alle tue specifiche esigenze aziendali e obiettivi.",
+  },
+  "websites-custom-title": {
+    en: "Custom Design",
+    it: "Design Personalizzato",
+  },
+  "websites-custom-features": {
+    en: "Our custom designs include responsive layouts, modern aesthetics, intuitive navigation, and optimized user experience. We work closely with you to ensure every detail matches your vision and business objectives.",
+    it: "I nostri design personalizzati includono layout responsive, estetica moderna, navigazione intuitiva e user experience ottimizzata. Lavoriamo insieme a te per assicurarci che ogni dettaglio corrisponda alla tua visione e ai tuoi obiettivi aziendali.",
+  },
+  "websites-custom-tags": {
+    en: "Brand Identity,Responsive Design,User Experience,Modern Aesthetics",
+    it: "Identità del Brand,Design Responsive,User Experience,Estetica Moderna",
+  },
+  "websites-showcase-title": {
+    en: "Showcase Websites",
+    it: "Siti Vetrina",
+  },
+  "websites-showcase-features": {
+    en: "These sites focus on visual storytelling, professional imagery, clear service descriptions, and compelling calls-to-action. Ideal for consultants, agencies, restaurants, hotels, and service-based businesses.",
+    it: "Questi siti si concentrano su storytelling visivo, immagini professionali, descrizioni chiare dei servizi e call-to-action convincenti. Ideali per consulenti, agenzie, ristoranti, hotel e attività basate sui servizi.",
+  },
+  "websites-showcase-tags": {
+    en: "Professional Image,Visual Storytelling,Service Presentation,Trust Building",
+    it: "Immagine Professionale,Storytelling Visivo,Presentazione Servizi,Costruzione Fiducia",
+  },
+  "websites-ecommerce-title": {
+    en: "E-commerce",
+    it: "E-commerce",
+  },
+  "websites-ecommerce-features": {
+    en: "Features include product catalogs, inventory management, multiple payment gateways, shipping integration, customer accounts, order tracking, and detailed analytics. Built on platforms like Shopify, WooCommerce, or custom solutions.",
+    it: "Le funzionalità includono cataloghi prodotti, gestione inventario, gateway di pagamento multipli, integrazione spedizioni, account clienti, tracking ordini e analytics dettagliate. Realizzati su piattaforme come Shopify, WooCommerce o soluzioni personalizzate.",
+  },
+  "websites-ecommerce-tags": {
+    en: "Online Sales,Payment Gateway,Inventory Management,Order Tracking",
+    it: "Vendite Online,Gateway di Pagamento,Gestione Inventario,Tracking Ordini",
+  },
+  "websites-landing-title": {
+    en: "Landing Pages",
+    it: "Landing Pages",
+  },
+  "websites-landing-features": {
+    en: "Each landing page includes compelling headlines, persuasive copy, social proof elements, clear value propositions, and strategically placed call-to-action buttons. A/B testing ready and analytics integrated for maximum performance.",
+    it: "Ogni landing page include titoli accattivanti, copy persuasivo, elementi di social proof, proposte di valore chiare e pulsanti call-to-action posizionati strategicamente. Pronti per A/B testing e analytics integrati per massime performance.",
+  },
+  "websites-landing-tags": {
+    en: "High Conversion,Lead Generation,A/B Testing,Campaign Focused",
+    it: "Alta Conversione,Generazione Lead,A/B Testing,Focus Campagne",
+  },
+  "websites-additional-title": {
+    en: "All Websites Include",
+    it: "Tutti i Siti Web Includono",
+  },
+  "websites-feature-responsive": {
+    en: "Mobile Responsive",
+    it: "Mobile Responsive",
+  },
+  "websites-feature-responsive-desc": {
+    en: "Perfect on all devices",
+    it: "Perfetti su tutti i dispositivi",
+  },
+  "websites-feature-seo": {
+    en: "SEO Optimized",
+    it: "SEO Ottimizzato",
+  },
+  "websites-feature-seo-desc": {
+    en: "Built for search engines",
+    it: "Costruiti per i motori di ricerca",
+  },
+  "websites-feature-performance": {
+    en: "High Performance",
+    it: "Alte Performance",
+  },
+  "websites-feature-performance-desc": {
+    en: "Fast loading speeds",
+    it: "Velocità di caricamento elevate",
+  },
+
   // Custom Software Page Translations
   "custom-software-meta-description": {
     en: "We develop custom software for your company. ERP, CRM, management systems tailored to optimize your processes.",
@@ -1052,5 +1186,685 @@ export const translations: Translations = {
   "custom-cta-description": {
     en: "Transform your processes with custom software. Contact us for a free consultation",
     it: "Trasforma i tuoi processi con software su misura. Contattaci per una consulenza gratuita",
+  },
+
+  // MVP for Startup Section
+  "mvp-rapid-prototype": {
+    en: "Rapid Prototype",
+    it: "Prototipo Rapido",
+  },
+  "mvp-rapid-description": {
+    en: "We transform your idea into a functional MVP in 4-8 weeks, allowing you to test the market quickly and get real user feedback.",
+    it: "Trasformiamo la tua idea in un MVP funzionante in 4-8 settimane, permettendoti di testare il mercato velocemente e ottenere feedback reali dagli utenti.",
+  },
+  "mvp-market-validation": {
+    en: "Market Validation",
+    it: "Validazione Mercato",
+  },
+  "mvp-validation-description": {
+    en: "Data-driven methodologies to validate your idea before major investments. Advanced analytics and A/B testing integrated.",
+    it: "Metodologie data-driven per validare la tua idea prima di investimenti importanti. Analytics avanzate e A/B testing integrati.",
+  },
+  "mvp-tech-stack": {
+    en: "Technology Stack",
+    it: "Stack Tecnologico",
+  },
+  "mvp-tech-description": {
+    en: "Optimal technology choices to ensure scalability, performance and long-term maintainability of your product.",
+    it: "Scelta ottimale delle tecnologie per garantire scalabilità, performance e mantenibilità del tuo prodotto nel lungo termine.",
+  },
+  "mvp-lean-approach": {
+    en: "Lean Approach",
+    it: "Approccio Lean",
+  },
+  "mvp-lean-description": {
+    en: "Lean Startup methodology to maximize learning with minimum effort. Build-Measure-Learn cycles optimized for success.",
+    it: "Metodologia Lean Startup per massimizzare l'apprendimento con il minimo sforzo. Cicli Build-Measure-Learn ottimizzati per il successo.",
+  },
+  "mvp-hero-title": {
+    en: "MVP for Startups",
+    it: "MVP per Startup",
+  },
+  "mvp-hero-description": {
+    en: "Transform your revolutionary idea into a functional and scalable MVP. Market validation, cutting-edge technologies and Lean Startup methodology for your startup's success",
+    it: "Trasformiamo la tua idea rivoluzionaria in un MVP funzionante e scalabile. Validazione del mercato, tecnologie all'avanguardia e metodologia Lean Startup per il successo della tua startup",
+  },
+  "start-mvp": {
+    en: "Start Your MVP",
+    it: "Inizia il tuo MVP",
+  },
+  "view-success-stories": {
+    en: "Success Stories",
+    it: "Storie di Successo",
+  },
+  "mvp-features-title": {
+    en: "Why Choose Our MVP Approach",
+    it: "Perché Scegliere il Nostro Approccio MVP",
+  },
+  "mvp-features-description": {
+    en: "Proven methodologies and innovative technologies to transform your idea into a successful product",
+    it: "Metodologie comprovate e tecnologie innovative per trasformare la tua idea in un prodotto di successo",
+  },
+  "mvp-process-title": {
+    en: "Our MVP Process",
+    it: "Il Nostro Processo MVP",
+  },
+  "mvp-process-description": {
+    en: "A structured path from your idea to the product that conquers the market",
+    it: "Un percorso strutturato dalla tua idea al prodotto che conquista il mercato",
+  },
+  "mvp-step-1": {
+    en: "Discovery & Strategy",
+    it: "Discovery & Strategia",
+  },
+  "mvp-step-1-desc": {
+    en: "We analyze your idea, target market and define MVP objectives",
+    it: "Analizziamo la tua idea, il mercato target e definiamo gli obiettivi del MVP",
+  },
+  "mvp-step-2": {
+    en: "Design & Prototyping",
+    it: "Design & Prototipazione",
+  },
+  "mvp-step-2-desc": {
+    en: "We create wireframes, mockups and interactive prototypes to validate UX",
+    it: "Creiamo wireframe, mockup e prototipi interattivi per validare l'UX",
+  },
+  "mvp-step-3": {
+    en: "Agile Development",
+    it: "Sviluppo Agile",
+  },
+  "mvp-step-3-desc": {
+    en: "We develop the MVP with agile methodology, frequent releases and continuous feedback",
+    it: "Sviluppiamo il MVP con metodologia agile, rilasci frequenti e feedback continuo",
+  },
+  "mvp-step-4": {
+    en: "Testing & Launch",
+    it: "Test & Lancio",
+  },
+  "mvp-step-4-desc": {
+    en: "Complete testing, deployment and go-to-market support with success metrics",
+    it: "Testing completo, deployment e supporto al go-to-market con metriche di successo",
+  },
+  "mvp-pricing-title": {
+    en: "MVP Packages",
+    it: "Pacchetti MVP",
+  },
+  "mvp-pricing-description": {
+    en: "Flexible solutions for every stage of your startup",
+    it: "Soluzioni flessibili per ogni fase della tua startup",
+  },
+  "mvp-popular": {
+    en: "Most Popular",
+    it: "Più Popolare",
+  },
+  "choose-plan": {
+    en: "Choose This Package",
+    it: "Scegli Questo Pacchetto",
+  },
+  "mvp-tech-title": {
+    en: "Technology Stack",
+    it: "Stack Tecnologico",
+  },
+  "mvp-benefits-title": {
+    en: "Benefits of Our Approach",
+    it: "Vantaggi del Nostro Approccio",
+  },
+  "mvp-benefits-description": {
+    en: "Concrete results that make the difference for your startup",
+    it: "Risultati concreti che fanno la differenza per la tua startup",
+  },
+  "mvp-benefit-1": {
+    en: "70% reduced time-to-market",
+    it: "Time-to-market ridotto del 70%",
+  },
+  "mvp-benefit-2": {
+    en: "Minimized investment risk",
+    it: "Rischio d'investimento minimizzato",
+  },
+  "mvp-benefit-3": {
+    en: "Real feedback from target users",
+    it: "Feedback reali da utenti target",
+  },
+  "mvp-benefit-4": {
+    en: "Data-driven iterations",
+    it: "Iterazioni basate sui dati",
+  },
+  "mvp-benefit-5": {
+    en: "Guaranteed scalability",
+    it: "Scalabilità garantita",
+  },
+  "mvp-benefit-6": {
+    en: "Continuous post-launch support",
+    it: "Supporto continuo post-lancio",
+  },
+  "mvp-cta-title": {
+    en: "Ready to Transform Your Idea into Reality?",
+    it: "Pronto a Trasformare la Tua Idea in Realtà?",
+  },
+  "mvp-cta-description": {
+    en: "Talk to our experts and discover how we can help you create a successful MVP",
+    it: "Parla con i nostri esperti e scopri come possiamo aiutarti a creare un MVP di successo",
+  },
+  "start-now": {
+    en: "Start Now",
+    it: "Inizia Ora",
+  },
+  "book-call": {
+    en: "Book a Call",
+    it: "Prenota una Call",
+  },
+  "mvp-meta-description": {
+    en: "Transform your idea into a functional MVP in 4-8 weeks. Market validation, scalable technologies and Lean Startup methodology.",
+    it: "Trasformiamo la tua idea in MVP funzionante in 4-8 settimane. Validazione mercato, tecnologie scalabili e metodologia Lean Startup.",
+  },
+
+  // AI Software Page - Complete translations
+  "ai-meta-description": {
+    en: "We develop AI-based software to automate processes, improve decisions, and innovate your business with artificial intelligence.",
+    it: "Sviluppiamo software basato su intelligenza artificiale per automatizzare processi, migliorare decisioni e innovare il tuo business con AI.",
+  },
+  "ai-hero-title": {
+    en: "AI-based Software",
+    it: "Software basato su AI",
+  },
+  "ai-hero-description": {
+    en: "Transform your business with cutting-edge artificial intelligence solutions. Machine learning, intelligent automation, and predictive analytics for sustainable competitive advantage",
+    it: "Trasformiamo il tuo business con soluzioni di intelligenza artificiale all'avanguardia. Machine learning, automazione intelligente e analytics predittive per un vantaggio competitivo sostenibile",
+  },
+  "start-ai-project": {
+    en: "Start your AI Project",
+    it: "Inizia il tuo Progetto AI",
+  },
+  "explore-solutions": {
+    en: "Explore Solutions",
+    it: "Esplora le Soluzioni",
+  },
+
+  // AI Capabilities (MorphingText)
+  "ai-capability-ml": {
+    en: "Machine Learning",
+    it: "Machine Learning",
+  },
+  "ai-capability-nlp": {
+    en: "Natural Language Processing",
+    it: "Natural Language Processing",
+  },
+  "ai-capability-cv": {
+    en: "Computer Vision",
+    it: "Computer Vision",
+  },
+  "ai-capability-analytics": {
+    en: "Predictive Analytics",
+    it: "Analytics Predittive",
+  },
+  "ai-capability-automation": {
+    en: "Intelligent Automation",
+    it: "Automazione Intelligente",
+  },
+  "ai-capability-neural": {
+    en: "Neural Networks",
+    it: "Reti Neurali",
+  },
+
+  // AI Solutions
+  "ai-solutions-title": {
+    en: "Our AI Solutions",
+    it: "Le Nostre Soluzioni AI",
+  },
+  "ai-solutions-description": {
+    en: "Discover how artificial intelligence can revolutionize your business",
+    it: "Scopri come l'intelligenza artificiale può rivoluzionare il tuo business",
+  },
+  "ai-automation": {
+    en: "Intelligent Automation",
+    it: "Automazione Intelligente",
+  },
+  "ai-automation-desc": {
+    en: "AI-based automation systems to optimize business processes, reduce human errors, and increase operational efficiency.",
+    it: "Sistemi di automazione basati su AI per ottimizzare processi aziendali, ridurre errori umani e aumentare l'efficienza operativa.",
+  },
+  "ai-analytics": {
+    en: "Predictive Analytics",
+    it: "Analytics Predittive",
+  },
+  "ai-analytics-desc": {
+    en: "Advanced analytics using machine learning to predict trends, customer behaviors, and business opportunities.",
+    it: "Analisi avanzate che utilizzano machine learning per predire trend, comportamenti dei clienti e opportunità di business.",
+  },
+  "ai-nlp": {
+    en: "Natural Language Processing",
+    it: "Natural Language Processing",
+  },
+  "ai-nlp-desc": {
+    en: "NLP solutions for intelligent chatbots, sentiment analysis, automatic translation, and natural language understanding.",
+    it: "Soluzioni NLP per chatbot intelligenti, analisi dei sentimenti, traduzione automatica e comprensione del linguaggio naturale.",
+  },
+  "ai-computer-vision": {
+    en: "Computer Vision",
+    it: "Computer Vision",
+  },
+  "ai-computer-vision-desc": {
+    en: "Computer vision systems for image recognition, quality control, security, and industrial automation.",
+    it: "Sistemi di visione artificiale per riconoscimento immagini, controllo qualità, sicurezza e automazione industriale.",
+  },
+
+  // AI Use Cases
+  "ai-use-cases-title": {
+    en: "Application Sectors",
+    it: "Settori di Applicazione",
+  },
+  "ai-use-cases-description": {
+    en: "AI finds application in various sectors, transforming processes and creating value",
+    it: "L'AI trova applicazione in diversi settori, trasformando processi e creando valore",
+  },
+  "ai-retail": {
+    en: "Retail & E-commerce",
+    it: "Retail & E-commerce",
+  },
+  "ai-retail-desc": {
+    en: "Personalization and optimization of customer experience",
+    it: "Personalizzazione e ottimizzazione dell'esperienza cliente",
+  },
+  "ai-retail-benefit": {
+    en: "45% increase in conversions",
+    it: "45% aumento conversioni",
+  },
+  "ai-retail-feature-1": {
+    en: "Personalized Recommendations",
+    it: "Raccomandazioni Personalizzate",
+  },
+  "ai-retail-feature-2": {
+    en: "Intelligent Inventory Management",
+    it: "Gestione Inventario Intelligente",
+  },
+  "ai-retail-feature-3": {
+    en: "Customer Service Chatbot",
+    it: "Chatbot Customer Service",
+  },
+  "ai-retail-feature-4": {
+    en: "Customer Behavior Analysis",
+    it: "Analisi Comportamento Clienti",
+  },
+  "ai-finance": {
+    en: "Finance & Banking",
+    it: "Finanza & Banking",
+  },
+  "ai-finance-desc": {
+    en: "Security and predictive analysis of financial risks",
+    it: "Sicurezza e analisi predittiva dei rischi finanziari",
+  },
+  "ai-finance-benefit": {
+    en: "80% fraud reduction",
+    it: "80% riduzione frodi",
+  },
+  "ai-finance-feature-1": {
+    en: "Fraud Detection",
+    it: "Rilevamento Frodi",
+  },
+  "ai-finance-feature-2": {
+    en: "Credit Scoring",
+    it: "Valutazione Creditizia",
+  },
+  "ai-finance-feature-3": {
+    en: "Algorithmic Trading",
+    it: "Trading Algoritmico",
+  },
+  "ai-finance-feature-4": {
+    en: "Risk Management",
+    it: "Gestione del Rischio",
+  },
+  "ai-healthcare": {
+    en: "Healthcare & Medicine",
+    it: "Sanità & Medicina",
+  },
+  "ai-healthcare-desc": {
+    en: "Assisted diagnosis and care optimization",
+    it: "Diagnosi assistita e ottimizzazione delle cure",
+  },
+  "ai-healthcare-benefit": {
+    en: "30% diagnostic accuracy",
+    it: "30% precisione diagnostica",
+  },
+  "ai-healthcare-feature-1": {
+    en: "Assisted Diagnosis",
+    it: "Diagnosi Assistita",
+  },
+  "ai-healthcare-feature-2": {
+    en: "Medical Image Analysis",
+    it: "Analisi Immagini Mediche",
+  },
+  "ai-healthcare-feature-3": {
+    en: "Drug Discovery",
+    it: "Scoperta Farmaci",
+  },
+  "ai-healthcare-feature-4": {
+    en: "Patient Monitoring",
+    it: "Monitoraggio Pazienti",
+  },
+  "ai-manufacturing": {
+    en: "Manufacturing",
+    it: "Manifatturiero",
+  },
+  "ai-manufacturing-desc": {
+    en: "Automation and intelligent predictive maintenance",
+    it: "Automazione e manutenzione predittiva intelligente",
+  },
+  "ai-manufacturing-benefit": {
+    en: "60% downtime reduction",
+    it: "60% riduzione downtime",
+  },
+  "ai-manufacturing-feature-1": {
+    en: "Predictive Maintenance",
+    it: "Manutenzione Predittiva",
+  },
+  "ai-manufacturing-feature-2": {
+    en: "Quality Control",
+    it: "Controllo Qualità",
+  },
+  "ai-manufacturing-feature-3": {
+    en: "Production Optimization",
+    it: "Ottimizzazione Produzione",
+  },
+  "ai-manufacturing-feature-4": {
+    en: "Supply Chain Intelligence",
+    it: "Intelligenza Supply Chain",
+  },
+
+  // AI Solutions - Additional features
+  "ai-automation-feature-1": {
+    en: "Process Automation",
+    it: "Automazione Processi",
+  },
+  "ai-automation-feature-2": {
+    en: "Intelligent Classification",
+    it: "Classificazione Intelligente",
+  },
+  "ai-automation-feature-3": {
+    en: "Optimized Workflows",
+    it: "Workflow Ottimizzati",
+  },
+  "ai-automation-feature-4": {
+    en: "Failure Prediction",
+    it: "Predizione Guasti",
+  },
+  "ai-analytics-feature-1": {
+    en: "Trend Forecasting",
+    it: "Trend Forecasting",
+  },
+  "ai-analytics-feature-2": {
+    en: "Customer Insights",
+    it: "Customer Insights",
+  },
+  "ai-analytics-feature-3": {
+    en: "Risk Assessment",
+    it: "Risk Assessment",
+  },
+  "ai-analytics-feature-4": {
+    en: "Market Analysis",
+    it: "Market Analysis",
+  },
+  "ai-nlp-feature-1": {
+    en: "Advanced Chatbots",
+    it: "Chatbot Avanzati",
+  },
+  "ai-nlp-feature-2": {
+    en: "Sentiment Analysis",
+    it: "Sentiment Analysis",
+  },
+  "ai-nlp-feature-3": {
+    en: "Text Mining",
+    it: "Text Mining",
+  },
+  "ai-nlp-feature-4": {
+    en: "Voice Recognition",
+    it: "Voice Recognition",
+  },
+  "ai-vision-feature-1": {
+    en: "Object Detection",
+    it: "Object Detection",
+  },
+  "ai-vision-feature-2": {
+    en: "Image Classification",
+    it: "Image Classification",
+  },
+  "ai-vision-feature-3": {
+    en: "Quality Control",
+    it: "Quality Control",
+  },
+  "ai-vision-feature-4": {
+    en: "Facial Recognition",
+    it: "Facial Recognition",
+  },
+
+  // AI Technologies
+  "ai-technologies-title": {
+    en: "AI Technologies",
+    it: "Tecnologie AI",
+  },
+  "ai-technologies-description": {
+    en: "We use the best AI technologies to create cutting-edge solutions",
+    it: "Utilizziamo le migliori tecnologie AI per creare soluzioni all'avanguardia",
+  },
+  "ai-tech-category-advanced": {
+    en: "Advanced AI",
+    it: "AI Avanzata",
+  },
+  "ai-tech-category-performance": {
+    en: "Optimal Performance",
+    it: "Performance Ottimali",
+  },
+  "ai-tech-category-security": {
+    en: "Guaranteed Security",
+    it: "Sicurezza Garantita",
+  },
+  "ai-tech-category-framework": {
+    en: "Framework",
+    it: "Framework",
+  },
+  "ai-tech-category-api": {
+    en: "API",
+    it: "API",
+  },
+  "ai-tech-category-language": {
+    en: "Language",
+    it: "Linguaggio",
+  },
+  "ai-tech-category-models": {
+    en: "Models",
+    it: "Modelli",
+  },
+  "ai-tech-category-cloud": {
+    en: "Cloud",
+    it: "Cloud",
+  },
+
+  // AI Benefits
+  "ai-benefits-title": {
+    en: "AI Advantages",
+    it: "Vantaggi dell'AI",
+  },
+  "ai-benefits-description": {
+    en: "Discover how artificial intelligence can transform your business",
+    it: "Scopri come l'intelligenza artificiale può trasformare il tuo business",
+  },
+  "ai-benefit-cost-reduction": {
+    en: "Cost Reduction",
+    it: "Riduzione Costi",
+  },
+  "ai-benefit-cost-reduction-desc": {
+    en: "Up to 40% reduction in operational costs",
+    it: "Fino al 40% di riduzione costi operativi",
+  },
+  "ai-benefit-automation": {
+    en: "Process Automation",
+    it: "Automazione Processi",
+  },
+  "ai-benefit-automation-desc": {
+    en: "Complete automation of repetitive processes",
+    it: "Automazione completa dei processi ripetitivi",
+  },
+  "ai-benefit-data-driven": {
+    en: "Data-Driven Decisions",
+    it: "Decisioni Data-Driven",
+  },
+  "ai-benefit-data-driven-desc": {
+    en: "Decisions based on data and advanced analytics",
+    it: "Decisioni basate su dati e analytics avanzate",
+  },
+  "ai-benefit-customer-experience": {
+    en: "Customer Experience",
+    it: "Customer Experience",
+  },
+  "ai-benefit-customer-experience-desc": {
+    en: "Significant improvement in customer experience",
+    it: "Miglioramento significativo dell'esperienza cliente",
+  },
+  "ai-benefit-competitive-advantage": {
+    en: "Competitive Advantage",
+    it: "Vantaggio Competitivo",
+  },
+  "ai-benefit-competitive-advantage-desc": {
+    en: "Sustainable competitive advantage in the market",
+    it: "Vantaggio competitivo sostenibile nel mercato",
+  },
+  "ai-benefit-scalability": {
+    en: "Scalability",
+    it: "Scalabilità",
+  },
+  "ai-benefit-scalability-desc": {
+    en: "Scalable solutions adaptable to growth",
+    it: "Soluzioni scalabili e adattabili alla crescita",
+  },
+
+  // AI CTA
+  "ai-cta-title": {
+    en: "Ready to Revolutionize Your Business with AI?",
+    it: "Pronto a Rivoluzionare il Tuo Business con l'AI?",
+  },
+  "ai-cta-description": {
+    en: "Discover how artificial intelligence can transform your processes and create value for your company",
+    it: "Scopri come l'intelligenza artificiale può trasformare i tuoi processi e creare valore per la tua azienda",
+  },
+  "contact-ai-expert": {
+    en: "Talk to an AI Expert",
+    it: "Parla con un Esperto AI",
+  },
+  "view-ai-portfolio": {
+    en: "View AI Portfolio",
+    it: "Vedi il Portfolio AI",
+  },
+
+  // Additional missing AI translations
+  "ai-hero-badge": {
+    en: "Artificial Intelligence Solutions",
+    it: "Soluzioni di Intelligenza Artificiale",
+  },
+  "ai-tech-category-frameworks": {
+    en: "AI Frameworks",
+    it: "Framework AI",
+  },
+  "ai-tech-category-libraries": {
+    en: "Libraries & Tools",
+    it: "Librerie & Strumenti",
+  },
+  "ai-development-process": {
+    en: "AI Development Process",
+    it: "Processo di Sviluppo AI",
+  },
+  "ai-consulting": {
+    en: "AI Strategy Consulting",
+    it: "Consulenza Strategica AI",
+  },
+  "ai-consulting-desc": {
+    en: "Strategic consulting to identify AI opportunities and create implementation roadmaps for your business transformation.",
+    it: "Consulenza strategica per identificare opportunità AI e creare roadmap di implementazione per la trasformazione del tuo business.",
+  },
+  "ai-case-studies": {
+    en: "Success Stories",
+    it: "Storie di Successo",
+  },
+  "ai-roi": {
+    en: "ROI Analysis",
+    it: "Analisi ROI",
+  },
+  "ai-implementation": {
+    en: "Implementation Support",
+    it: "Supporto all'Implementazione",
+  },
+  "ai-training": {
+    en: "Team Training",
+    it: "Formazione Team",
+  },
+  "ai-maintenance": {
+    en: "Maintenance & Support",
+    it: "Manutenzione & Supporto",
+  },
+  "ai-integration": {
+    en: "System Integration",
+    it: "Integrazione Sistemi",
+  },
+  "ai-custom-models": {
+    en: "Custom AI Models",
+    it: "Modelli AI Personalizzati",
+  },
+  "ai-data-preparation": {
+    en: "Data Preparation",
+    it: "Preparazione Dati",
+  },
+  "ai-model-training": {
+    en: "Model Training",
+    it: "Training Modelli",
+  },
+  "ai-deployment": {
+    en: "AI Deployment",
+    it: "Deployment AI",
+  },
+  "ai-monitoring": {
+    en: "Performance Monitoring",
+    it: "Monitoraggio Performance",
+  },
+  "ai-optimization": {
+    en: "Model Optimization",
+    it: "Ottimizzazione Modelli",
+  },
+  "ai-ethics": {
+    en: "Ethical AI",
+    it: "AI Etica",
+  },
+  "ai-explainability": {
+    en: "AI Explainability",
+    it: "Spiegabilità AI",
+  },
+  "ai-compliance": {
+    en: "AI Compliance",
+    it: "Conformità AI",
+  },
+  "ai-privacy": {
+    en: "Privacy-First AI",
+    it: "AI Privacy-First",
+  },
+  "ai-edge-computing": {
+    en: "Edge AI",
+    it: "AI Edge",
+  },
+  "ai-cloud-solutions": {
+    en: "Cloud AI Solutions",
+    it: "Soluzioni AI Cloud",
+  },
+  "ai-hybrid-solutions": {
+    en: "Hybrid AI Solutions",
+    it: "Soluzioni AI Ibride",
+  },
+  "ai-real-time": {
+    en: "Real-time AI",
+    it: "AI in Tempo Reale",
+  },
+  "ai-batch-processing": {
+    en: "Batch Processing",
+    it: "Elaborazione Batch",
+  },
+  "ai-streaming": {
+    en: "Stream Processing",
+    it: "Elaborazione Stream",
   },
 };

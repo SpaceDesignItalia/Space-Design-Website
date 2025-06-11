@@ -200,7 +200,7 @@ export default function WebDevelopment() {
                 className="mx-auto mb-8 flex h-24 w-24 items-center justify-center rounded-2xl bg-black dark:bg-white"
               >
                 <Icon
-                  icon="material-symbols:code"
+                  icon="mdi:web"
                   className="h-12 w-12 text-white dark:text-black"
                 />
               </motion.div>

@@ -3,7 +3,9 @@ import { useLanguage } from "../../context/LanguageContext";
 import { Button } from "@heroui/react";
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
+import { useMemo } from "react";
 import AnimatedNumber from "./AnimatedNumber";
+import TeamGallery from "../../Components/TeamGallery";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 30 },
@@ -73,69 +75,75 @@ const iconHover = {
 export default function About() {
   const { t, language } = useLanguage();
 
-  const teamMembers = [
-    {
-      name: t("about-andrea-braia"),
-      image: "/imgs/1.jpg",
-      role: "CEO & Co-Founder",
-    },
-    {
-      name: t("about-francesco-roviello"),
-      image: "/imgs/2.jpg",
-      role: "CTO & Co-Founder",
-    },
-    {
-      name: t("about-marco-macherelli"),
-      image: "/imgs/3.jpg",
-      role: "Lead Developer",
-    },
-    {
-      name: t("about-pablo-bertot"),
-      image: "/imgs/4.jpg",
-      role: "Full Stack Developer",
-    },
-  ];
+  const teamMembers = useMemo(
+    () => [
+      {
+        name: t("about-andrea-braia"),
+        image: "/imgs/1.jpg",
+        role: "CEO & Co-Founder",
+      },
+      {
+        name: t("about-francesco-roviello"),
+        image: "/imgs/2.jpg",
+        role: "CTO & Co-Founder",
+      },
+      {
+        name: t("about-marco-macherelli"),
+        image: "/imgs/3.jpg",
+        role: "Lead Developer",
+      },
+      {
+        name: t("about-pablo-bertot"),
+        image: "/imgs/4.jpg",
+        role: "Full Stack Developer",
+      },
+    ],
+    [t]
+  );
 
-  const stats = [
-    {
-      number: 20,
-      suffix: "+",
-      label: t("about-projects-completed"),
-      icon: "material-symbols:rocket-launch-outline",
-    },
-    {
-      number: 1.5,
-      suffix: "Mln +",
-      label: t("about-lines-of-code"),
-      decimals: 1,
-      icon: "custom-code",
-      customIcon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width={48}
-          height={48}
-          viewBox="0 0 24 24"
-        >
-          <path
-            fill="currentColor"
-            d="M4.825 12.025L8.7 15.9q.275.275.275.7t-.275.7t-.7.275t-.7-.275l-4.6-4.6q-.15-.15-.213-.325T2.426 12t.063-.375t.212-.325l4.6-4.6q.3-.3.713-.3t.712.3t.3.713t-.3.712zm14.35-.05L15.3 8.1q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l4.6 4.6q.15.15.213.325t.062.375t-.062.375t-.213.325l-4.6 4.6q-.3.3-.7.288t-.7-.313t-.3-.712t.3-.713z"
-          />
-        </svg>
-      ),
-    },
-    {
-      number: 30,
-      suffix: "K +",
-      label: t("about-commits"),
-      icon: "material-symbols:account-tree-outline",
-    },
-    {
-      number: 20,
-      suffix: "K +",
-      label: t("about-coffee-cups"),
-      icon: "material-symbols:local-cafe-outline",
-    },
-  ];
+  const stats = useMemo(
+    () => [
+      {
+        number: 20,
+        suffix: "+",
+        label: t("about-projects-completed"),
+        icon: "material-symbols:rocket-launch-outline",
+      },
+      {
+        number: 1.5,
+        suffix: "Mln +",
+        label: t("about-lines-of-code"),
+        decimals: 1,
+        icon: "custom-code",
+        customIcon: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width={48}
+            height={48}
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M4.825 12.025L8.7 15.9q.275.275.275.7t-.275.7t-.7.275t-.7-.275l-4.6-4.6q-.15-.15-.213-.325T2.426 12t.063-.375t.212-.325l4.6-4.6q.3-.3.713-.3t.712.3t.3.713t-.3.712zm14.35-.05L15.3 8.1q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l4.6 4.6q.15.15.213.325t.062.375t-.062.375t-.213.325l-4.6 4.6q-.3.3-.7.288t-.7-.313t-.3-.712t.3-.713z"
+            />
+          </svg>
+        ),
+      },
+      {
+        number: 30,
+        suffix: "K +",
+        label: t("about-commits"),
+        icon: "material-symbols:account-tree-outline",
+      },
+      {
+        number: 20,
+        suffix: "K +",
+        label: t("about-coffee-cups"),
+        icon: "material-symbols:local-cafe-outline",
+      },
+    ],
+    [t]
+  );
 
   return (
     <>
@@ -193,7 +201,7 @@ export default function About() {
             >
               <motion.h1
                 variants={fadeInUp}
-                className="text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.1] tracking-tight bg-gradient-to-r from-gray-900 via-gray-700 to-gray-900 bg-clip-text text-transparent dark:from-white dark:via-gray-200 dark:to-white"
+                className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight tracking-tight bg-gradient-to-r from-gray-900 via-gray-700 to-gray-900 bg-clip-text text-transparent dark:from-white dark:via-gray-200 dark:to-white px-4 py-2"
               >
                 {t("about-hero-title")}
               </motion.h1>
@@ -218,68 +226,37 @@ export default function About() {
                 variants={slideInLeft}
                 className="space-y-8"
               >
-                <div>
-                  <h2 className="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider">
-                    {t("about-mission-title")}
-                  </h2>
-                  <h3 className="mt-4 text-3xl font-bold text-gray-900 dark:text-white lg:text-4xl">
-                    La nostra visione del futuro
-                  </h3>
-                </div>
+                <div className="space-y-8">
+                  <div className="space-y-4">
+                    <h3 className="text-2xl font-bold text-gray-900 dark:text-white lg:text-3xl">
+                      {t("about-mission-title")}
+                    </h3>
+                    <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+                      {t("about-mission-description-1")}
+                    </p>
+                  </div>
 
-                <div className="space-y-6">
-                  <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                    {t("about-mission-description-1")}
-                  </p>
-                  <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                    {t("about-mission-description-2")}
-                  </p>
-                </div>
-
-                <motion.div
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <Button
-                    as="a"
-                    href={`/${language}/contact`}
-                    size="lg"
-                    className="bg-black dark:bg-white text-white dark:text-black font-semibold px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:bg-gray-800 dark:hover:bg-gray-200"
-                  >
-                    {t("about-contact-cta")}
-                    <Icon icon="solar:arrow-right-linear" width={20} />
-                  </Button>
-                </motion.div>
-              </motion.div>
-
-              <motion.div
-                initial="initial"
-                whileInView="animate"
-                viewport={{ once: true }}
-                variants={slideInRight}
-                className="relative"
-              >
-                <div className="relative h-[600px] rounded-3xl overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-700 p-8">
-                  <div className="grid grid-cols-2 gap-4 h-full">
-                    {teamMembers.map((member, index) => (
-                      <motion.div
-                        key={member.name}
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ delay: index * 0.1 }}
-                        viewport={{ once: true }}
-                        className="relative overflow-hidden rounded-2xl"
-                      >
-                        <img
-                          src={member.image}
-                          alt={member.name}
-                          className="w-full h-full object-cover"
-                        />
-                      </motion.div>
-                    ))}
+                  <div className="space-y-4">
+                    <h3 className="text-2xl font-bold text-gray-900 dark:text-white lg:text-3xl">
+                      {language === "it"
+                        ? "La nostra visione del futuro"
+                        : "Our vision of the future"}
+                    </h3>
+                    <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+                      {t("about-mission-description-2")}
+                    </p>
                   </div>
                 </div>
               </motion.div>
+
+              <div className="relative space-y-6">
+                <div className="text-center">
+                  <h2 className="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider">
+                    {language === "it" ? "Chi siamo" : "Who we are"}
+                  </h2>
+                </div>
+                <TeamGallery key="team-gallery" teamMembers={teamMembers} />
+              </div>
             </div>
           </div>
         </section>
@@ -304,7 +281,9 @@ export default function About() {
                 variants={fadeInUp}
                 className="mt-4 text-xl text-gray-400"
               >
-                I numeri che raccontano la nostra storia
+                {language === "it"
+                  ? "I numeri che raccontano la nostra storia"
+                  : "The numbers that tell our story"}
               </motion.p>
             </motion.div>
 
@@ -317,7 +296,7 @@ export default function About() {
             >
               {stats.map((stat, index) => (
                 <motion.div
-                  key={stat.label}
+                  key={`stat-${index}`}
                   variants={scaleIn}
                   whileHover={{ scale: 1.05, y: -5 }}
                   className="relative group"
@@ -419,21 +398,6 @@ export default function About() {
                 </div>
 
                 <div className="flex flex-wrap gap-4">
-                  <motion.div
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    <Button
-                      as="a"
-                      href={`/${language}/contact`}
-                      size="lg"
-                      className="bg-black dark:bg-white text-white dark:text-black font-semibold px-8 py-4 rounded-full hover:bg-gray-800 dark:hover:bg-gray-200 transition-all duration-300"
-                    >
-                      {t("about-contact-cta")}
-                      <Icon icon="solar:arrow-right-linear" width={20} />
-                    </Button>
-                  </motion.div>
-
                   <motion.div
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
