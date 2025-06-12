@@ -5,6 +5,7 @@ import { Button } from "@heroui/react";
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
 import { Iphone15Pro } from "../../Components/magicui/iphone-15-pro";
+import ServiceFAQ from "../../Components/FAQ/ServiceFAQ";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 30 },
@@ -329,6 +330,70 @@ export default function MobileDevelopment() {
             </motion.div>
           </div>
         </section>
+
+        {/* FAQ Section */}
+        <ServiceFAQ
+          title={t("faq-title") || "Domande Frequenti"}
+          subtitle={
+            t("faq-subtitle-mobile") ||
+            "Risposte alle domande più comuni sullo sviluppo app mobile"
+          }
+          ctaText={t("faq-cta-text") || "Hai altre domande?"}
+          ctaSubtext={
+            t("faq-cta-subtext-mobile") || "Parliamo del tuo progetto mobile"
+          }
+          benefitText={t("faq-benefit-text") || "Consulenza gratuita"}
+          faqs={[
+            {
+              question:
+                t("mobile-faq-question-1") ||
+                "Sviluppate sia per iOS che Android?",
+              answer:
+                t("mobile-faq-answer-1") ||
+                "Sì, sviluppiamo app native per entrambe le piattaforme o soluzioni cross-platform con React Native e Flutter.",
+              icon: "material-symbols:smartphone",
+              delay: 0.1,
+            },
+            {
+              question:
+                t("mobile-faq-question-2") ||
+                "Quanto tempo richiede lo sviluppo di un'app?",
+              answer:
+                t("mobile-faq-answer-2") ||
+                "Da 6-8 settimane per app semplici fino a 16-20 settimane per applicazioni complesse con funzionalità avanzate.",
+              icon: "material-symbols:schedule",
+              delay: 0.2,
+            },
+            {
+              question:
+                t("mobile-faq-question-3") ||
+                "Vi occupate della pubblicazione sugli store?",
+              answer:
+                t("mobile-faq-answer-3") ||
+                "Sì, ci occupiamo dell'intero processo di pubblicazione su App Store e Google Play, inclusa ottimizzazione e approvazione.",
+              icon: "material-symbols:store",
+              delay: 0.3,
+            },
+            {
+              question:
+                t("mobile-faq-question-4") || "L'app funzionerà offline?",
+              answer:
+                t("mobile-faq-answer-4") ||
+                "Possiamo implementare funzionalità offline per le caratteristiche essenziali, con sincronizzazione automatica al ritorno della connessione.",
+              icon: "material-symbols:wifi-off",
+              delay: 0.4,
+            },
+            {
+              question:
+                t("mobile-faq-question-5") || "Fornite supporto post-lancio?",
+              answer:
+                t("mobile-faq-answer-5") ||
+                "Sì, offriamo pacchetti di manutenzione con aggiornamenti, correzioni bug e supporto tecnico per mantenere la tua app sempre aggiornata.",
+              icon: "material-symbols:support-agent",
+              delay: 0.5,
+            },
+          ]}
+        />
 
         {/* CTA Section */}
         <section className="py-24 bg-black dark:bg-white">

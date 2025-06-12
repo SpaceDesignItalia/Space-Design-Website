@@ -24,7 +24,7 @@ type Services = {
 
 const services: Services = {
   "Software Development": {
-    icon: "carbon:application-web",
+    icon: "material-symbols:code",
     descriptionKey: "software-development-desc",
     items: [
       {
@@ -60,13 +60,13 @@ const services: Services = {
     ],
   },
   "System Integration": {
-    icon: "material-symbols:cloud-outline",
+    icon: "carbon:cloud-service-management",
     descriptionKey: "system-integration-desc",
     items: [
       {
         name: "cloud-integration",
         href: "/services/cloud-integration",
-        icon: "carbon:cloud-service-management",
+        icon: "material-symbols:cloud-outline",
         descriptionKey: "cloud-integration-desc",
       },
       {

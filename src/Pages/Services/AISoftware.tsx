@@ -5,6 +5,7 @@ import { Button } from "@heroui/react";
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
 import { MorphingText } from "../../Components/magicui/morphing-text";
+import ServiceFAQ from "../../Components/FAQ/ServiceFAQ";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 30 },
@@ -687,6 +688,69 @@ export default function AISoftware() {
             </div>
           </div>
         </section>
+
+        {/* FAQ Section */}
+        <ServiceFAQ
+          title={t("faq-title") || "Domande Frequenti"}
+          subtitle={
+            t("faq-subtitle-ai") ||
+            "Risposte alle domande più comuni sull'intelligenza artificiale"
+          }
+          ctaText={t("faq-cta-text") || "Hai altre domande?"}
+          ctaSubtext={t("faq-cta-subtext-ai") || "Parliamo del tuo progetto AI"}
+          benefitText={t("faq-benefit-text") || "Consulenza gratuita"}
+          faqs={[
+            {
+              question:
+                t("ai-faq-question-1") ||
+                "Abbiamo bisogno di grandi quantità di dati?",
+              answer:
+                t("ai-faq-answer-1") ||
+                "Non sempre. Possiamo utilizzare modelli pre-addestrati, transfer learning o generazione di dati sintetici a seconda del vostro caso d'uso.",
+              icon: "material-symbols:database",
+              delay: 0.1,
+            },
+            {
+              question:
+                t("ai-faq-question-2") ||
+                "Quanto tempo richiede l'implementazione AI?",
+              answer:
+                t("ai-faq-answer-2") ||
+                "Da 8-12 settimane per automazione semplice fino a 20-24 settimane per sistemi di machine learning complessi con modelli personalizzati.",
+              icon: "material-symbols:schedule",
+              delay: 0.2,
+            },
+            {
+              question:
+                t("ai-faq-question-3") ||
+                "L'AI sostituirà i nostri dipendenti?",
+              answer:
+                t("ai-faq-answer-3") ||
+                "Le nostre soluzioni AI sono progettate per potenziare le capacità umane, automatizzando compiti ripetitivi così il vostro team può concentrarsi sul lavoro strategico.",
+              icon: "material-symbols:people",
+              delay: 0.3,
+            },
+            {
+              question:
+                t("ai-faq-question-4") ||
+                "Come garantite l'accuratezza dell'AI?",
+              answer:
+                t("ai-faq-answer-4") ||
+                "Attraverso test rigorosi, dataset di validazione, monitoraggio continuo e supervisione umana per decisioni critiche.",
+              icon: "material-symbols:verified",
+              delay: 0.4,
+            },
+            {
+              question:
+                t("ai-faq-question-5") || "I nostri dati sono sicuri con l'AI?",
+              answer:
+                t("ai-faq-answer-5") ||
+                "Sì, implementiamo AI privacy-first con crittografia dati, elaborazione sicura e conformità GDPR e standard del settore.",
+              icon: "material-symbols:security",
+              delay: 0.5,
+            },
+          ]}
+        />
 
         {/* CTA Section */}
         <section className="py-24 bg-black dark:bg-white">

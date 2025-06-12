@@ -9,6 +9,9 @@ import WebDevelopment from "./Pages/Services/WebDevelopment";
 import CustomSoftware from "./Pages/Services/CustomSoftware";
 import StartupMVP from "./Pages/Services/StartupMVP";
 import AISoftware from "./Pages/Services/AISoftware";
+import CloudIntegration from "./Pages/Services/CloudIntegration";
+import ApiDevelopment from "./Pages/Services/ApiDevelopment";
+import DevOps from "./Pages/Services/DevOps";
 import { LanguageProvider } from "./context/LanguageContext";
 import {
   CookieConsentProvider,
@@ -60,13 +63,12 @@ function AppContent() {
             <Route path="custom-software" element={<CustomSoftware />} />
             <Route path="startup-mvp" element={<StartupMVP />} />
             <Route path="ai-software" element={<AISoftware />} />
+            <Route path="cloud-integration" element={<CloudIntegration />} />
+            <Route path="api-development" element={<ApiDevelopment />} />
+            <Route path="devops" element={<DevOps />} />
             <Route
-              path="cloud-integration"
-              element={<div>Cloud Integration</div>}
-            />
-            <Route
-              path="api-development"
-              element={<div>API Development</div>}
+              path="infrastructure"
+              element={<div>Infrastructure Management</div>}
             />
             <Route
               path="legacy-integration"
