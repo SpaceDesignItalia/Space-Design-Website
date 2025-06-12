@@ -518,7 +518,13 @@ export default function AISoftware() {
                   className="group relative bg-white dark:bg-gray-900 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500"
                 >
                   {/* Large emoji background */}
-                  <div className="absolute top-6 right-6 text-6xl opacity-10 group-hover:opacity-20 transition-opacity duration-300">
+                  <div
+                    className="absolute top-6 right-6 text-6xl opacity-10 group-hover:opacity-20 transition-opacity duration-300"
+                    style={{
+                      fontFamily:
+                        "Apple Color Emoji, Twemoji Mozilla, Noto Color Emoji, Android Emoji, EmojiSymbols, EmojiOne Mozilla, Segoe UI Emoji, Segoe UI Symbol",
+                    }}
+                  >
                     {useCase.image}
                   </div>
 

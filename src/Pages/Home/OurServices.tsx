@@ -1,7 +1,7 @@
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
 import { useLanguage } from "../../context/LanguageContext";
-import { WordRotate } from "../../Components/magicui/word-rotate.tsx";
+import { TypingAnimation } from "../../Components/magicui/typing-animation.tsx";
 
 const services = [
   {
@@ -46,10 +46,15 @@ export default function OurServices() {
           transition={{ duration: 0.6 }}
           className="text-center mb-20"
         >
-          <h2 className="text-2xl font-medium text-white/80 mb-4">Offriamo</h2>
-          <WordRotate
+          <h2 className="text-2xl font-medium text-white/80 mb-4">
+            {t("we-offer")}
+          </h2>
+          <TypingAnimation
             className="text-5xl font-bold tracking-tight text-white"
             words={morphingServices}
+            typingSpeed={120}
+            deletingSpeed={60}
+            pauseTime={2000}
           />
         </motion.div>
 

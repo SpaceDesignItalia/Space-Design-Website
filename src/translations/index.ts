@@ -51,6 +51,10 @@ export const translations: Translations = {
     en: "Our Services",
     it: "I Nostri Servizi",
   },
+  "we-offer": {
+    en: "We offer",
+    it: "Offriamo",
+  },
   "morphing-services": {
     en: "Mobile Apps|Websites|Custom Software|Startup MVP|AI-based Software|Cloud Integration|API Development|DevOps & CI/CD",
     it: "App Mobile|Siti Web|Software Personalizzato|MVP per Startup|Software basato su AI|Integrazione Cloud|Sviluppo API|DevOps & CI/CD",
@@ -1589,19 +1593,19 @@ export const translations: Translations = {
   },
   "ai-analytics-feature-1": {
     en: "Trend Forecasting",
-    it: "Trend Forecasting",
+    it: "Previsioni Trend",
   },
   "ai-analytics-feature-2": {
     en: "Customer Insights",
-    it: "Customer Insights",
+    it: "Insights Cliente",
   },
   "ai-analytics-feature-3": {
     en: "Risk Assessment",
-    it: "Risk Assessment",
+    it: "Valutazione Rischi",
   },
   "ai-analytics-feature-4": {
     en: "Market Analysis",
-    it: "Market Analysis",
+    it: "Analisi di Mercato",
   },
   "ai-nlp-feature-1": {
     en: "Advanced Chatbots",
@@ -1609,31 +1613,31 @@ export const translations: Translations = {
   },
   "ai-nlp-feature-2": {
     en: "Sentiment Analysis",
-    it: "Sentiment Analysis",
+    it: "Analisi dei Sentimenti",
   },
   "ai-nlp-feature-3": {
     en: "Text Mining",
-    it: "Text Mining",
+    it: "Estrazione Testi",
   },
   "ai-nlp-feature-4": {
     en: "Voice Recognition",
-    it: "Voice Recognition",
+    it: "Riconoscimento Vocale",
   },
   "ai-vision-feature-1": {
     en: "Object Detection",
-    it: "Object Detection",
+    it: "Rilevamento Oggetti",
   },
   "ai-vision-feature-2": {
     en: "Image Classification",
-    it: "Image Classification",
+    it: "Classificazione Immagini",
   },
   "ai-vision-feature-3": {
     en: "Quality Control",
-    it: "Quality Control",
+    it: "Controllo Qualità",
   },
   "ai-vision-feature-4": {
     en: "Facial Recognition",
-    it: "Facial Recognition",
+    it: "Riconoscimento Facciale",
   },
 
   // AI Technologies
@@ -1713,7 +1717,7 @@ export const translations: Translations = {
   },
   "ai-benefit-customer-experience": {
     en: "Customer Experience",
-    it: "Customer Experience",
+    it: "Esperienza Cliente",
   },
   "ai-benefit-customer-experience-desc": {
     en: "Significant improvement in customer experience",
