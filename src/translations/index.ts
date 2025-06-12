@@ -2003,4 +2003,1328 @@ export const translations: Translations = {
     en: "Business Websites|E-commerce|Web Applications|Landing Pages|SaaS Platforms|Progressive Web Apps",
     it: "Siti Web Aziendali|E-commerce|Applicazioni Web|Landing Pages|SaaS Platforms|Progressive Web Apps",
   },
+
+  // Cloud Integration Page
+  "cloud-integration-meta-title": {
+    en: "Space Design Italia - Cloud Integration",
+    it: "Space Design Italia - Integrazione Cloud",
+  },
+  "cloud-integration-meta-description": {
+    en: "Professional cloud integration services. Migration, architecture, serverless and optimization for AWS, Azure and Google Cloud.",
+    it: "Servizi di integrazione cloud professionali. Migrazione, architettura, serverless e ottimizzazione per AWS, Azure e Google Cloud.",
+  },
+  "cloud-integration-hero-title": {
+    en: "Cloud Integration",
+    it: "Integrazione Cloud",
+  },
+  "cloud-integration-hero-description": {
+    en: "We transform your IT infrastructure with modern, scalable and secure cloud solutions. From migration to optimization, we accompany you in every phase of your cloud journey.",
+    it: "Trasformiamo la tua infrastruttura IT con soluzioni cloud moderne, scalabili e sicure. Dalla migrazione all'ottimizzazione, ti accompagniamo in ogni fase del tuo percorso cloud.",
+  },
+  "cloud-integration-request-consultation": {
+    en: "Request Consultation",
+    it: "Richiedi Consulenza",
+  },
+  "cloud-integration-discover-services": {
+    en: "Discover Services",
+    it: "Scopri i Servizi",
+  },
+
+  // Cloud Services MorphingText
+  "cloud-services-morphing": {
+    en: "Cloud Migration|Cloud Architecture|Cost Optimization|Disaster Recovery|Advanced Monitoring|DevOps Automation",
+    it: "Migrazione Cloud|Architettura Cloud|Ottimizzazione Costi|Disaster Recovery|Monitoraggio Avanzato|Automazione DevOps",
+  },
+  "cloud-types-morphing": {
+    en: "AWS|Azure|Google Cloud|Multi-Cloud|Hybrid Cloud|Serverless",
+    it: "AWS|Azure|Google Cloud|Multi-Cloud|Hybrid Cloud|Serverless",
+  },
+
+  // Cloud Services Section
+  "cloud-services-title": {
+    en: "Our Cloud Services",
+    it: "I Nostri Servizi Cloud",
+  },
+  "cloud-services-description": {
+    en: "Complete cloud solutions for every business need. From migration to optimization, we support you in every phase of digital transformation.",
+    it: "Soluzioni cloud complete per ogni esigenza aziendale. Dalla migrazione all'ottimizzazione, ti supportiamo in ogni fase della trasformazione digitale.",
+  },
+  "cloud-migration-title": {
+    en: "Cloud Migration",
+    it: "Migrazione Cloud",
+  },
+  "cloud-migration-description-1": {
+    en: "We migrate your existing systems to the cloud with personalized strategies to minimize downtime and risks. We analyze your current infrastructure and design a tailor-made migration plan.",
+    it: "Migriamo i tuoi sistemi esistenti nel cloud con strategie personalizzate per minimizzare downtime e rischi. Analizziamo la tua infrastruttura attuale e progettiamo un piano di migrazione su misura.",
+  },
+  "cloud-migration-description-2": {
+    en: "We support lift-and-shift migrations, refactoring and complete rearchitecting. Includes initial assessment, detailed plan, testing and assisted go-live.",
+    it: "Supportiamo migrazioni lift-and-shift, refactoring e rearchitecting completo. Include assessment iniziale, piano dettagliato, testing e go-live assistito.",
+  },
+  "cloud-migration-tag-1": {
+    en: "Complete Assessment",
+    it: "Assessment Completo",
+  },
+  "cloud-migration-tag-2": {
+    en: "Migration Plan",
+    it: "Piano Migrazione",
+  },
+  "cloud-migration-tag-3": {
+    en: "Minimize Risks",
+    it: "Minimizza Rischi",
+  },
+  "cloud-migration-tag-4": {
+    en: "24/7 Support",
+    it: "Support 24/7",
+  },
+  "cloud-architecture-title": {
+    en: "Cloud Architecture",
+    it: "Architettura Cloud",
+  },
+  "cloud-architecture-description-1": {
+    en: "We design scalable, secure and optimized cloud architectures following industry best practices. Every solution is designed to grow with your business.",
+    it: "Progettiamo architetture cloud scalabili, sicure e ottimizzate seguendo le best practices del settore. Ogni soluzione è pensata per crescere con il tuo business.",
+  },
+  "cloud-architecture-description-2": {
+    en: "Includes microservices design, containerization, Kubernetes orchestration, load balancing, auto-scaling and automatic disaster recovery.",
+    it: "Include design di microservizi, containerizzazione, orchestrazione Kubernetes, load balancing, auto-scaling e disaster recovery automatico.",
+  },
+  "cloud-architecture-tag-1": {
+    en: "Microservices",
+    it: "Microservizi",
+  },
+  "cloud-architecture-tag-2": {
+    en: "Kubernetes",
+    it: "Kubernetes",
+  },
+  "cloud-architecture-tag-3": {
+    en: "Auto-scaling",
+    it: "Auto-scaling",
+  },
+  "cloud-architecture-tag-4": {
+    en: "High Availability",
+    it: "Alta Disponibilità",
+  },
+  "cloud-serverless-title": {
+    en: "Serverless Computing",
+    it: "Serverless Computing",
+  },
+  "cloud-serverless-description-1": {
+    en: "We implement serverless solutions to drastically reduce operational costs and increase automatic scalability. Pay only for what you use, when you use it.",
+    it: "Implementiamo soluzioni serverless per ridurre drasticamente i costi operativi e aumentare la scalabilità automatica. Paga solo per quello che usi, quando lo usi.",
+  },
+  "cloud-serverless-description-2": {
+    en: "We develop with AWS Lambda, Azure Functions, Google Cloud Functions. Includes API Gateway, event-driven architecture and managed database integration.",
+    it: "Sviluppiamo con AWS Lambda, Azure Functions, Google Cloud Functions. Include API Gateway, event-driven architecture e integrazione con database managed.",
+  },
+  "cloud-serverless-tag-1": {
+    en: "AWS Lambda",
+    it: "AWS Lambda",
+  },
+  "cloud-serverless-tag-2": {
+    en: "Event-Driven",
+    it: "Event-Driven",
+  },
+  "cloud-serverless-tag-3": {
+    en: "Zero Maintenance",
+    it: "Zero Manutenzione",
+  },
+  "cloud-serverless-tag-4": {
+    en: "Cost Effective",
+    it: "Cost Effective",
+  },
+  "cloud-monitoring-title": {
+    en: "Monitoring and Optimization",
+    it: "Monitoraggio e Ottimizzazione",
+  },
+  "cloud-monitoring-description-1": {
+    en: "We configure advanced monitoring systems to optimize performance, security and reduce operational cloud costs. Complete visibility across your entire cloud infrastructure.",
+    it: "Configuriamo sistemi di monitoraggio avanzati per ottimizzare performance, sicurezza e ridurre i costi operativi cloud. Visibilità completa su tutta l'infrastruttura cloud.",
+  },
+  "cloud-monitoring-description-2": {
+    en: "Includes custom dashboards, intelligent alerting, automatic cost optimization, security monitoring and advanced reporting for management.",
+    it: "Include dashboards personalizzate, alerting intelligente, cost optimization automatico, security monitoring e reportistica avanzata per il management.",
+  },
+  "cloud-monitoring-tag-1": {
+    en: "Real-time Monitoring",
+    it: "Real-time Monitoring",
+  },
+  "cloud-monitoring-tag-2": {
+    en: "Cost Optimization",
+    it: "Cost Optimization",
+  },
+  "cloud-monitoring-tag-3": {
+    en: "Security Alerts",
+    it: "Security Alerts",
+  },
+  "cloud-monitoring-tag-4": {
+    en: "Custom Dashboard",
+    it: "Custom Dashboard",
+  },
+
+  // Cloud Providers Section
+  "cloud-providers-title": {
+    en: "Cloud Platforms",
+    it: "Piattaforme Cloud",
+  },
+  "cloud-providers-description": {
+    en: "We work with the best cloud platforms on the market",
+    it: "Lavoriamo con le migliori piattaforme cloud del mercato",
+  },
+  "cloud-provider-aws-name": {
+    en: "Amazon Web Services",
+    it: "Amazon Web Services",
+  },
+  "cloud-provider-aws-description": {
+    en: "World-leading cloud platform",
+    it: "Piattaforma cloud leader mondiale",
+  },
+  "cloud-provider-azure-name": {
+    en: "Microsoft Azure",
+    it: "Microsoft Azure",
+  },
+  "cloud-provider-azure-description": {
+    en: "Microsoft enterprise cloud solution",
+    it: "Soluzione cloud enterprise Microsoft",
+  },
+  "cloud-provider-gcp-name": {
+    en: "Google Cloud Platform",
+    it: "Google Cloud Platform",
+  },
+  "cloud-provider-gcp-description": {
+    en: "Google's cloud infrastructure",
+    it: "Infrastruttura cloud di Google",
+  },
+  "cloud-provider-kubernetes-name": {
+    en: "Docker & Kubernetes",
+    it: "Docker & Kubernetes",
+  },
+  "cloud-provider-kubernetes-description": {
+    en: "Containerization and orchestration",
+    it: "Containerizzazione e orchestrazione",
+  },
+
+  // Cloud Benefits Section
+  "cloud-benefits-title": {
+    en: "Cloud Integration Benefits",
+    it: "Vantaggi dell'Integrazione Cloud",
+  },
+  "cloud-benefits-description": {
+    en: "Discover how the cloud can transform your business",
+    it: "Scopri come il cloud può trasformare il tuo business",
+  },
+  "cloud-benefit-cost-title": {
+    en: "Cost Reduction",
+    it: "Riduzione Costi",
+  },
+  "cloud-benefit-cost-description": {
+    en: "Up to 60% reduction in IT costs",
+    it: "Fino al 60% di riduzione dei costi IT",
+  },
+  "cloud-benefit-scalability-title": {
+    en: "Automatic Scalability",
+    it: "Scalabilità Automatica",
+  },
+  "cloud-benefit-scalability-description": {
+    en: "Resources that adapt automatically",
+    it: "Risorse che si adattano automaticamente",
+  },
+  "cloud-benefit-security-title": {
+    en: "Enterprise Security",
+    it: "Sicurezza Enterprise",
+  },
+  "cloud-benefit-security-description": {
+    en: "Advanced protection and compliance",
+    it: "Protezione avanzata e compliance",
+  },
+  "cloud-benefit-recovery-title": {
+    en: "Disaster Recovery",
+    it: "Disaster Recovery",
+  },
+  "cloud-benefit-recovery-description": {
+    en: "Automatic backups and fast recovery",
+    it: "Backup automatici e ripristino rapido",
+  },
+  "cloud-benefit-performance-title": {
+    en: "Optimized Performance",
+    it: "Performance Ottimizzate",
+  },
+  "cloud-benefit-performance-description": {
+    en: "Superior performance and reduced latency",
+    it: "Prestazioni superiori e latenza ridotta",
+  },
+  "cloud-benefit-updates-title": {
+    en: "Automatic Updates",
+    it: "Aggiornamenti Automatici",
+  },
+  "cloud-benefit-updates-description": {
+    en: "Always up to date with the latest technologies",
+    it: "Sempre aggiornato con le ultime tecnologie",
+  },
+
+  // Cloud CTA Section
+  "cloud-cta-title": {
+    en: "Ready for the Cloud?",
+    it: "Pronto per il Cloud?",
+  },
+  "cloud-cta-description": {
+    en: "Start your digital transformation today. Contact us for a personalized consultation and discover how the cloud can revolutionize your business.",
+    it: "Inizia la tua trasformazione digitale oggi stesso. Contattaci per una consulenza personalizzata e scopri come il cloud può rivoluzionare il tuo business.",
+  },
+  "cloud-cta-button": {
+    en: "Contact Us Now",
+    it: "Contattaci Ora",
+  },
+
+  // API Development Page
+  "api-development-meta-title": {
+    en: "Space Design Italia - API Development",
+    it: "Space Design Italia - Sviluppo API",
+  },
+  "api-development-meta-description": {
+    en: "Professional API development services. REST, GraphQL, microservices and integrations for modern and scalable applications.",
+    it: "Servizi di sviluppo API professionali. REST, GraphQL, microservizi e integrazioni per applicazioni moderne e scalabili.",
+  },
+  "api-development-hero-title": {
+    en: "API Development",
+    it: "Sviluppo API",
+  },
+  "api-development-hero-description": {
+    en: "We create robust, secure and well-documented APIs that connect your systems and enable seamless integrations. From REST to GraphQL, we build the digital backbone of your applications.",
+    it: "Creiamo API robuste, sicure e ben documentate che collegano i tuoi sistemi e abilitano integrazioni perfette. Da REST a GraphQL, costruiamo la spina dorsale digitale delle tue applicazioni.",
+  },
+  "api-development-request-consultation": {
+    en: "Request Consultation",
+    it: "Richiedi Consulenza",
+  },
+  "api-development-discover-services": {
+    en: "Discover Services",
+    it: "Scopri i Servizi",
+  },
+
+  // API Services MorphingText
+  "api-services-morphing": {
+    en: "REST APIs|GraphQL|Microservices|API Gateway|Documentation|Testing",
+    it: "API REST|GraphQL|Microservizi|API Gateway|Documentazione|Testing",
+  },
+  "api-types-morphing": {
+    en: "REST|GraphQL|gRPC|WebSocket|Webhook|OpenAPI",
+    it: "REST|GraphQL|gRPC|WebSocket|Webhook|OpenAPI",
+  },
+
+  // API Services Section
+  "api-services-title": {
+    en: "Our API Services",
+    it: "I Nostri Servizi API",
+  },
+  "api-services-description": {
+    en: "Complete API solutions for every integration need. From design to deployment, we create APIs that scale with your business.",
+    it: "Soluzioni API complete per ogni esigenza di integrazione. Dal design al deployment, creiamo API che crescono con il tuo business.",
+  },
+  "api-rest-title": {
+    en: "REST APIs",
+    it: "API REST",
+  },
+  "api-rest-description-1": {
+    en: "We develop RESTful APIs following industry best practices with clear resource structure, proper HTTP methods and comprehensive error handling.",
+    it: "Sviluppiamo API RESTful seguendo le best practices del settore con struttura delle risorse chiara, metodi HTTP appropriati e gestione completa degli errori.",
+  },
+  "api-rest-description-2": {
+    en: "Includes OpenAPI documentation, versioning, authentication, rate limiting and comprehensive testing suite for maximum reliability.",
+    it: "Include documentazione OpenAPI, versionamento, autenticazione, rate limiting e suite di test completa per massima affidabilità.",
+  },
+  "api-rest-tag-1": {
+    en: "OpenAPI Spec",
+    it: "Spec OpenAPI",
+  },
+  "api-rest-tag-2": {
+    en: "Authentication",
+    it: "Autenticazione",
+  },
+  "api-rest-tag-3": {
+    en: "Rate Limiting",
+    it: "Rate Limiting",
+  },
+  "api-rest-tag-4": {
+    en: "Comprehensive Testing",
+    it: "Testing Completo",
+  },
+  "api-graphql-title": {
+    en: "GraphQL APIs",
+    it: "API GraphQL",
+  },
+  "api-graphql-description-1": {
+    en: "Modern GraphQL APIs that allow clients to request exactly the data they need, reducing over-fetching and improving performance.",
+    it: "API GraphQL moderne che permettono ai client di richiedere esattamente i dati necessari, riducendo l'over-fetching e migliorando le performance.",
+  },
+  "api-graphql-description-2": {
+    en: "Features type-safe schemas, real-time subscriptions, introspection capabilities and powerful developer tools for optimal experience.",
+    it: "Include schemi type-safe, sottoscrizioni real-time, capacità di introspezione e potenti strumenti per sviluppatori per un'esperienza ottimale.",
+  },
+  "api-graphql-tag-1": {
+    en: "Type Safety",
+    it: "Type Safety",
+  },
+  "api-graphql-tag-2": {
+    en: "Real-time Subscriptions",
+    it: "Sottoscrizioni Real-time",
+  },
+  "api-graphql-tag-3": {
+    en: "Schema Introspection",
+    it: "Introspezione Schema",
+  },
+  "api-graphql-tag-4": {
+    en: "Developer Tools",
+    it: "Strumenti Developer",
+  },
+  "api-microservices-title": {
+    en: "Microservices Architecture",
+    it: "Architettura Microservizi",
+  },
+  "api-microservices-description-1": {
+    en: "We design and implement microservices architectures that enable independent deployment, scaling and technology choices for each service.",
+    it: "Progettiamo e implementiamo architetture a microservizi che abilitano deployment, scaling e scelte tecnologiche indipendenti per ogni servizio.",
+  },
+  "api-microservices-description-2": {
+    en: "Includes service discovery, load balancing, circuit breakers, distributed tracing and centralized logging for production-ready systems.",
+    it: "Include service discovery, load balancing, circuit breaker, distributed tracing e logging centralizzato per sistemi production-ready.",
+  },
+  "api-microservices-tag-1": {
+    en: "Service Discovery",
+    it: "Service Discovery",
+  },
+  "api-microservices-tag-2": {
+    en: "Load Balancing",
+    it: "Load Balancing",
+  },
+  "api-microservices-tag-3": {
+    en: "Circuit Breakers",
+    it: "Circuit Breaker",
+  },
+  "api-microservices-tag-4": {
+    en: "Distributed Tracing",
+    it: "Distributed Tracing",
+  },
+  "api-integration-title": {
+    en: "API Integration & Gateway",
+    it: "Integrazione API & Gateway",
+  },
+  "api-integration-description-1": {
+    en: "Complete API integration solutions with gateway management, protocol translation, security enforcement and traffic management.",
+    it: "Soluzioni complete di integrazione API con gestione gateway, traduzione protocolli, enforcement sicurezza e gestione traffico.",
+  },
+  "api-integration-description-2": {
+    en: "Features API composition, request/response transformation, caching, monitoring and analytics for optimal API ecosystem management.",
+    it: "Include composizione API, trasformazione request/response, caching, monitoraggio e analytics per gestione ottimale dell'ecosistema API.",
+  },
+  "api-integration-tag-1": {
+    en: "API Gateway",
+    it: "API Gateway",
+  },
+  "api-integration-tag-2": {
+    en: "Protocol Translation",
+    it: "Traduzione Protocolli",
+  },
+  "api-integration-tag-3": {
+    en: "Request Transformation",
+    it: "Trasformazione Request",
+  },
+  "api-integration-tag-4": {
+    en: "Traffic Management",
+    it: "Gestione Traffico",
+  },
+
+  // API Technologies Section
+  "api-technologies-title": {
+    en: "Technologies We Use",
+    it: "Tecnologie che Utilizziamo",
+  },
+  "api-technologies-description": {
+    en: "We use the best technologies and frameworks to create modern and performant APIs",
+    it: "Utilizziamo le migliori tecnologie e framework per creare API moderne e performanti",
+  },
+
+  // API Benefits Section
+  "api-benefits-title": {
+    en: "API Development Benefits",
+    it: "Vantaggi dello Sviluppo API",
+  },
+  "api-benefits-description": {
+    en: "Discover how professional APIs can transform your business integrations",
+    it: "Scopri come le API professionali possono trasformare le integrazioni del tuo business",
+  },
+  "api-benefit-integration-title": {
+    en: "Seamless Integration",
+    it: "Integrazione Perfetta",
+  },
+  "api-benefit-integration-description": {
+    en: "Connect systems and applications effortlessly",
+    it: "Collega sistemi e applicazioni senza sforzo",
+  },
+  "api-benefit-scalability-title": {
+    en: "Infinite Scalability",
+    it: "Scalabilità Infinita",
+  },
+  "api-benefit-scalability-description": {
+    en: "APIs that grow with your business needs",
+    it: "API che crescono con le esigenze del tuo business",
+  },
+  "api-benefit-security-title": {
+    en: "Enterprise Security",
+    it: "Sicurezza Enterprise",
+  },
+  "api-benefit-security-description": {
+    en: "Advanced authentication and authorization",
+    it: "Autenticazione e autorizzazione avanzate",
+  },
+  "api-benefit-documentation-title": {
+    en: "Complete Documentation",
+    it: "Documentazione Completa",
+  },
+  "api-benefit-documentation-description": {
+    en: "Interactive docs and developer resources",
+    it: "Documentazione interattiva e risorse developer",
+  },
+  "api-benefit-performance-title": {
+    en: "High Performance",
+    it: "Alte Performance",
+  },
+  "api-benefit-performance-description": {
+    en: "Optimized for speed and efficiency",
+    it: "Ottimizzate per velocità ed efficienza",
+  },
+  "api-benefit-monitoring-title": {
+    en: "Real-time Monitoring",
+    it: "Monitoraggio Real-time",
+  },
+  "api-benefit-monitoring-description": {
+    en: "Complete visibility and analytics",
+    it: "Visibilità completa e analytics",
+  },
+
+  // API CTA Section
+  "api-cta-title": {
+    en: "Ready to Build Your APIs?",
+    it: "Pronto a Costruire le Tue API?",
+  },
+  "api-cta-description": {
+    en: "Transform your integrations with professional APIs. Contact us for a personalized consultation and discover how we can connect your digital ecosystem.",
+    it: "Trasforma le tue integrazioni con API professionali. Contattaci per una consulenza personalizzata e scopri come possiamo connettere il tuo ecosistema digitale.",
+  },
+  "api-cta-button": {
+    en: "Contact Us Now",
+    it: "Contattaci Ora",
+  },
+
+  // FAQ Translations for all service pages
+
+  // Web Development FAQ - Updated to avoid content overlap
+  "web-faq-question-1": {
+    en: "Do you provide hosting and domain management?",
+    it: "Fornite hosting e gestione del dominio?",
+  },
+  "web-faq-answer-1": {
+    en: "Yes, we can handle hosting setup, domain registration, SSL certificates, and ongoing maintenance, or work with your preferred hosting provider.",
+    it: "Sì, possiamo gestire setup hosting, registrazione dominio, certificati SSL e manutenzione continua, oppure lavorare con il vostro provider preferito.",
+  },
+  "web-faq-question-2": {
+    en: "What happens if my site goes down?",
+    it: "Cosa succede se il mio sito va offline?",
+  },
+  "web-faq-answer-2": {
+    en: "We provide 24/7 monitoring and emergency support. Most issues are resolved within 2 hours with automatic backups for quick restoration.",
+    it: "Forniamo monitoraggio 24/7 e supporto di emergenza. La maggior parte dei problemi viene risolta entro 2 ore con backup automatici per ripristino rapido.",
+  },
+  "web-faq-question-3": {
+    en: "Can you redesign my existing website?",
+    it: "Potete ridisegnare il mio sito esistente?",
+  },
+  "web-faq-answer-3": {
+    en: "Absolutely! We can redesign your current site while preserving SEO rankings and migrating all existing content and functionality.",
+    it: "Assolutamente! Possiamo ridisegnare il vostro sito attuale preservando il ranking SEO e migrando tutti i contenuti e funzionalità esistenti.",
+  },
+  "web-faq-question-4": {
+    en: "Do you offer ongoing maintenance packages?",
+    it: "Offrite pacchetti di manutenzione continua?",
+  },
+  "web-faq-answer-4": {
+    en: "Yes, we offer monthly maintenance packages including updates, security monitoring, performance optimization, and content changes.",
+    it: "Sì, offriamo pacchetti di manutenzione mensili che includono aggiornamenti, monitoraggio sicurezza, ottimizzazione performance e modifiche contenuti.",
+  },
+
+  // Mobile Development FAQ - Focus on business and technical specifics
+  "mobile-faq-question-1": {
+    en: "How do you handle app updates after launch?",
+    it: "Come gestite gli aggiornamenti dell'app dopo il lancio?",
+  },
+  "mobile-faq-answer-1": {
+    en: "We provide ongoing support with regular updates for new OS versions, security patches, and feature enhancements based on user feedback.",
+    it: "Forniamo supporto continuo con aggiornamenti regolari per nuove versioni OS, patch di sicurezza e miglioramenti delle funzionalità basati sui feedback utenti.",
+  },
+  "mobile-faq-question-2": {
+    en: "Can you integrate with our existing backend systems?",
+    it: "Potete integrarvi con i nostri sistemi backend esistenti?",
+  },
+  "mobile-faq-answer-2": {
+    en: "Yes, we specialize in API integrations with existing CRM, ERP, databases, and third-party services to ensure seamless data flow.",
+    it: "Sì, siamo specializzati in integrazioni API con CRM, ERP, database e servizi di terze parti esistenti per garantire un flusso dati perfetto.",
+  },
+  "mobile-faq-question-3": {
+    en: "What about app analytics and user tracking?",
+    it: "Che dire di analytics dell'app e tracking utenti?",
+  },
+  "mobile-faq-answer-3": {
+    en: "We integrate comprehensive analytics (Firebase, Mixpanel) to track user behavior, app performance, and business metrics with GDPR compliance.",
+    it: "Integriamo analytics complete (Firebase, Mixpanel) per tracciare comportamento utenti, performance app e metriche business con conformità GDPR.",
+  },
+  "mobile-faq-question-4": {
+    en: "How do you ensure app security?",
+    it: "Come garantite la sicurezza dell'app?",
+  },
+  "mobile-faq-answer-4": {
+    en: "We implement encryption, secure authentication, API security, code obfuscation, and regular security audits following OWASP mobile guidelines.",
+    it: "Implementiamo crittografia, autenticazione sicura, sicurezza API, offuscamento codice e audit di sicurezza regolari seguendo le linee guida OWASP mobile.",
+  },
+  "mobile-faq-question-5": {
+    en: "What's your app testing process?",
+    it: "Qual è il vostro processo di testing dell'app?",
+  },
+  "mobile-faq-answer-5": {
+    en: "We conduct automated testing, device compatibility testing, performance testing, and user acceptance testing before launch.",
+    it: "Conduciamo test automatizzati, test di compatibilità dispositivi, test di performance e test di accettazione utente prima del lancio.",
+  },
+
+  // Custom Software FAQ - Focus on business process and implementation
+  "custom-faq-question-1": {
+    en: "How do you ensure the software fits our workflow?",
+    it: "Come garantite che il software si adatti al nostro workflow?",
+  },
+  "custom-faq-answer-1": {
+    en: "We conduct detailed workflow analysis, create process maps, and involve your team in iterative design sessions to ensure perfect alignment.",
+    it: "Conduciamo analisi dettagliate del workflow, creiamo mappe dei processi e coinvolgiamo il vostro team in sessioni di design iterative per garantire allineamento perfetto.",
+  },
+  "custom-faq-question-2": {
+    en: "What about data migration from our current systems?",
+    it: "Che dire della migrazione dati dai nostri sistemi attuali?",
+  },
+  "custom-faq-answer-2": {
+    en: "We handle complete data migration with validation, backup procedures, and parallel running periods to ensure zero data loss.",
+    it: "Gestiamo la migrazione completa dei dati con validazione, procedure di backup e periodi di funzionamento parallelo per garantire zero perdita dati.",
+  },
+  "custom-faq-question-3": {
+    en: "Can the software scale as our business grows?",
+    it: "Il software può scalare mentre la nostra azienda cresce?",
+  },
+  "custom-faq-answer-3": {
+    en: "Yes, we design modular architectures that can handle increased users, data volume, and new features without performance degradation.",
+    it: "Sì, progettiamo architetture modulari che possono gestire più utenti, volume dati e nuove funzionalità senza degradazione delle performance.",
+  },
+  "custom-faq-question-4": {
+    en: "What ongoing support do you provide?",
+    it: "Che supporto continuo fornite?",
+  },
+  "custom-faq-answer-4": {
+    en: "We offer comprehensive support including bug fixes, feature updates, performance monitoring, and dedicated technical assistance.",
+    it: "Offriamo supporto completo inclusi correzioni bug, aggiornamenti funzionalità, monitoraggio performance e assistenza tecnica dedicata.",
+  },
+
+  // Startup MVP FAQ - Focus on business validation and growth
+  "mvp-faq-question-1": {
+    en: "How do you help validate our business idea?",
+    it: "Come ci aiutate a validare la nostra idea di business?",
+  },
+  "mvp-faq-answer-1": {
+    en: "We implement analytics, A/B testing, user feedback systems, and key metrics tracking to provide data-driven validation insights.",
+    it: "Implementiamo analytics, A/B testing, sistemi di feedback utenti e tracking di metriche chiave per fornire insights di validazione basati sui dati.",
+  },
+  "mvp-faq-question-2": {
+    en: "What happens after MVP launch?",
+    it: "Cosa succede dopo il lancio dell'MVP?",
+  },
+  "mvp-faq-answer-2": {
+    en: "We provide post-launch support, analyze user data, iterate based on feedback, and help plan the roadmap for full product development.",
+    it: "Forniamo supporto post-lancio, analizziamo i dati utenti, iteriamo basandoci sui feedback e aiutiamo a pianificare la roadmap per lo sviluppo del prodotto completo.",
+  },
+  "mvp-faq-question-3": {
+    en: "How do you help with investor presentations?",
+    it: "Come ci aiutate con le presentazioni per investitori?",
+  },
+  "mvp-faq-answer-3": {
+    en: "We provide technical documentation, architecture diagrams, scalability plans, and demo preparation to support your investor pitches.",
+    it: "Forniamo documentazione tecnica, diagrammi architetturali, piani di scalabilità e preparazione demo per supportare le vostre presentazioni agli investitori.",
+  },
+
+  // AI Software FAQ - Focus on implementation and business impact
+  "ai-faq-question-1": {
+    en: "How do you measure AI ROI for our business?",
+    it: "Come misurate il ROI dell'AI per il nostro business?",
+  },
+  "ai-faq-answer-1": {
+    en: "We establish baseline metrics, track efficiency gains, cost reductions, and revenue improvements with detailed analytics and reporting dashboards.",
+    it: "Stabiliamo metriche di baseline, tracciamo guadagni di efficienza, riduzioni costi e miglioramenti ricavi con analytics dettagliate e dashboard di reporting.",
+  },
+  "ai-faq-question-2": {
+    en: "What if our AI model becomes inaccurate over time?",
+    it: "Cosa succede se il nostro modello AI diventa impreciso nel tempo?",
+  },
+  "ai-faq-answer-2": {
+    en: "We implement continuous monitoring, model retraining pipelines, and performance alerts to maintain accuracy and adapt to changing data patterns.",
+    it: "Implementiamo monitoraggio continuo, pipeline di riaddestramento modelli e alert di performance per mantenere accuratezza e adattarsi ai pattern di dati che cambiano.",
+  },
+  "ai-faq-question-3": {
+    en: "How do you handle AI bias and fairness?",
+    it: "Come gestite i bias e l'equità dell'AI?",
+  },
+  "ai-faq-answer-3": {
+    en: "We implement bias detection tools, diverse training datasets, fairness metrics, and regular audits to ensure ethical AI deployment.",
+    it: "Implementiamo strumenti di rilevamento bias, dataset di training diversificati, metriche di equità e audit regolari per garantire deployment AI etico.",
+  },
+  "ai-faq-question-4": {
+    en: "Can you integrate AI with our existing software?",
+    it: "Potete integrare l'AI con il nostro software esistente?",
+  },
+  "ai-faq-answer-4": {
+    en: "Yes, we create AI microservices and APIs that seamlessly integrate with your current systems without disrupting existing workflows.",
+    it: "Sì, creiamo microservizi AI e API che si integrano perfettamente con i vostri sistemi attuali senza interrompere i workflow esistenti.",
+  },
+  "ai-faq-question-5": {
+    en: "What about AI compliance and regulations?",
+    it: "Che dire di conformità AI e regolamentazioni?",
+  },
+  "ai-faq-answer-5": {
+    en: "We ensure compliance with GDPR, AI Act, and industry-specific regulations through privacy-by-design and comprehensive documentation.",
+    it: "Garantiamo conformità con GDPR, AI Act e regolamentazioni specifiche del settore attraverso privacy-by-design e documentazione completa.",
+  },
+
+  // Cloud Integration FAQ - Focus on migration concerns and business continuity
+  "cloud-faq-question-1": {
+    en: "How do you ensure business continuity during migration?",
+    it: "Come garantite la continuità aziendale durante la migrazione?",
+  },
+  "cloud-faq-answer-1": {
+    en: "We use phased migration approaches, maintain parallel systems, and implement rollback procedures to ensure zero business disruption.",
+    it: "Utilizziamo approcci di migrazione graduali, manteniamo sistemi paralleli e implementiamo procedure di rollback per garantire zero interruzioni aziendali.",
+  },
+  "cloud-faq-question-2": {
+    en: "What about compliance and data sovereignty?",
+    it: "Che dire di conformità e sovranità dei dati?",
+  },
+  "cloud-faq-answer-2": {
+    en: "We ensure compliance with GDPR, HIPAA, SOC2 and other regulations, with data residency controls and audit trails for complete transparency.",
+    it: "Garantiamo conformità con GDPR, HIPAA, SOC2 e altre regolamentazioni, con controlli di residenza dati e audit trail per completa trasparenza.",
+  },
+  "cloud-faq-question-3": {
+    en: "How do you optimize cloud costs long-term?",
+    it: "Come ottimizzate i costi cloud a lungo termine?",
+  },
+  "cloud-faq-answer-3": {
+    en: "We implement automated cost monitoring, right-sizing recommendations, reserved instances optimization, and regular cost reviews to minimize expenses.",
+    it: "Implementiamo monitoraggio costi automatizzato, raccomandazioni di right-sizing, ottimizzazione istanze riservate e revisioni costi regolari per minimizzare le spese.",
+  },
+  "cloud-faq-question-4": {
+    en: "What disaster recovery options do you provide?",
+    it: "Quali opzioni di disaster recovery fornite?",
+  },
+  "cloud-faq-answer-4": {
+    en: "We design multi-region backup strategies, automated failover systems, and recovery testing procedures to ensure business resilience.",
+    it: "Progettiamo strategie di backup multi-regione, sistemi di failover automatizzati e procedure di test di ripristino per garantire resilienza aziendale.",
+  },
+
+  // API Development FAQ - Focus on integration challenges and maintenance
+  "api-faq-question-1": {
+    en: "How do you handle API versioning and backward compatibility?",
+    it: "Come gestite il versionamento API e la compatibilità all'indietro?",
+  },
+  "api-faq-answer-1": {
+    en: "We implement semantic versioning, deprecation strategies, and maintain multiple API versions to ensure smooth transitions without breaking existing integrations.",
+    it: "Implementiamo versionamento semantico, strategie di deprecazione e manteniamo versioni API multiple per garantire transizioni fluide senza rompere integrazioni esistenti.",
+  },
+  "api-faq-question-2": {
+    en: "What monitoring and alerting do you provide?",
+    it: "Che monitoraggio e alerting fornite?",
+  },
+  "api-faq-answer-2": {
+    en: "We provide real-time monitoring, performance metrics, error tracking, usage analytics, and automated alerts for proactive issue resolution.",
+    it: "Forniamo monitoraggio real-time, metriche di performance, tracking errori, analytics di utilizzo e alert automatizzati per risoluzione proattiva dei problemi.",
+  },
+  "api-faq-question-3": {
+    en: "How do you handle high-traffic API scaling?",
+    it: "Come gestite lo scaling di API ad alto traffico?",
+  },
+  "api-faq-answer-3": {
+    en: "We implement auto-scaling, load balancing, caching strategies, and CDN integration to handle traffic spikes without performance degradation.",
+    it: "Implementiamo auto-scaling, load balancing, strategie di caching e integrazione CDN per gestire picchi di traffico senza degradazione delle performance.",
+  },
+  "api-faq-question-4": {
+    en: "What about API testing and quality assurance?",
+    it: "Che dire di testing API e quality assurance?",
+  },
+  "api-faq-answer-4": {
+    en: "We implement automated testing suites, contract testing, performance testing, and security testing to ensure API reliability and quality.",
+    it: "Implementiamo suite di test automatizzati, contract testing, test di performance e test di sicurezza per garantire affidabilità e qualità delle API.",
+  },
+  "api-faq-question-5": {
+    en: "How do you ensure API security against threats?",
+    it: "Come garantite la sicurezza API contro le minacce?",
+  },
+  "api-faq-answer-5": {
+    en: "We implement OAuth 2.0, rate limiting, input validation, SQL injection protection, and regular security audits following OWASP guidelines.",
+    it: "Implementiamo OAuth 2.0, rate limiting, validazione input, protezione SQL injection e audit di sicurezza regolari seguendo le linee guida OWASP.",
+  },
+  "api-faq-question-6": {
+    en: "Do you provide API analytics and business insights?",
+    it: "Fornite analytics API e insights di business?",
+  },
+  "api-faq-answer-6": {
+    en: "Yes, we provide detailed analytics on API usage patterns, performance metrics, user behavior, and business KPIs to drive data-driven decisions.",
+    it: "Sì, forniamo analytics dettagliate sui pattern di utilizzo API, metriche di performance, comportamento utenti e KPI di business per guidare decisioni data-driven.",
+  },
+
+  // FAQ Common Translations
+  "faq-title": {
+    en: "Frequently Asked Questions",
+    it: "Domande Frequenti",
+  },
+  "faq-cta-text": {
+    en: "Have other questions?",
+    it: "Hai altre domande?",
+  },
+  "faq-benefit-text": {
+    en: "Free consultation",
+    it: "Consulenza gratuita",
+  },
+
+  // FAQ Subtitles for each service
+  "faq-subtitle-web": {
+    en: "Answers to the most common questions about web development",
+    it: "Risposte alle domande più comuni sullo sviluppo web",
+  },
+  "faq-subtitle-mobile": {
+    en: "Answers to the most common questions about mobile app development",
+    it: "Risposte alle domande più comuni sullo sviluppo app mobile",
+  },
+  "faq-subtitle-custom": {
+    en: "Answers to the most common questions about custom software",
+    it: "Risposte alle domande più comuni sul software personalizzato",
+  },
+  "faq-subtitle-mvp": {
+    en: "Answers to the most common questions about MVPs for startups",
+    it: "Risposte alle domande più comuni sui MVP per startup",
+  },
+  "faq-subtitle-ai": {
+    en: "Answers to the most common questions about artificial intelligence",
+    it: "Risposte alle domande più comuni sull'intelligenza artificiale",
+  },
+  "faq-subtitle-cloud": {
+    en: "Answers to the most common questions about cloud integration",
+    it: "Risposte alle domande più comuni sull'integrazione cloud",
+  },
+  "faq-subtitle-api": {
+    en: "Answers to the most common questions about API development",
+    it: "Risposte alle domande più comuni sullo sviluppo API",
+  },
+
+  // FAQ CTA Subtexts for each service
+  "faq-cta-subtext-web": {
+    en: "Let's talk about your web project",
+    it: "Parliamo del tuo progetto web",
+  },
+  "faq-cta-subtext-mobile": {
+    en: "Let's talk about your mobile project",
+    it: "Parliamo del tuo progetto mobile",
+  },
+  "faq-cta-subtext-custom": {
+    en: "Let's talk about your software project",
+    it: "Parliamo del tuo progetto software",
+  },
+  "faq-cta-subtext-mvp": {
+    en: "Let's talk about your startup idea",
+    it: "Parliamo della tua idea di startup",
+  },
+  "faq-cta-subtext-ai": {
+    en: "Let's talk about your AI project",
+    it: "Parliamo del tuo progetto AI",
+  },
+  "faq-cta-subtext-cloud": {
+    en: "Let's talk about your cloud migration",
+    it: "Parliamo della tua migrazione cloud",
+  },
+  "faq-cta-subtext-api": {
+    en: "Let's talk about your API project",
+    it: "Parliamo del tuo progetto API",
+  },
+
+  // Special benefit texts
+  "faq-benefit-assessment": {
+    en: "Free assessment",
+    it: "Assessment gratuito",
+  },
+  "faq-benefit-response": {
+    en: "We respond within 24h",
+    it: "Rispondiamo in 24h",
+  },
+
+  // DevOps Page Translations
+  "devops-meta-title": {
+    en: "Space Design Italia - DevOps & CI/CD",
+    it: "Space Design Italia - DevOps & CI/CD",
+  },
+  "devops-meta-description": {
+    en: "Professional DevOps and CI/CD services. Automation, deployment pipelines, monitoring and infrastructure optimization.",
+    it: "Servizi DevOps e CI/CD professionali. Automazione, pipeline di deployment, monitoraggio e ottimizzazione infrastrutture.",
+  },
+  "devops-hero-title": {
+    en: "DevOps & CI/CD",
+    it: "DevOps & CI/CD",
+  },
+  "devops-hero-description": {
+    en: "Accelerate your development with modern DevOps practices. Automated pipelines, continuous integration, infrastructure as code and monitoring for faster, more reliable deployments.",
+    it: "Accelera il tuo sviluppo con pratiche DevOps moderne. Pipeline automatizzate, integrazione continua, infrastructure as code e monitoraggio per deployment più veloci e affidabili.",
+  },
+  "devops-start-transformation": {
+    en: "Start Transformation",
+    it: "Inizia la Trasformazione",
+  },
+  "devops-view-solutions": {
+    en: "View Solutions",
+    it: "Vedi le Soluzioni",
+  },
+
+  // DevOps Services MorphingText
+  "devops-services-morphing": {
+    en: "CI/CD Pipelines|Infrastructure as Code|Container Orchestration|Automated Testing|Monitoring & Alerting|Security Integration",
+    it: "Pipeline CI/CD|Infrastructure as Code|Orchestrazione Container|Testing Automatizzato|Monitoraggio & Alerting|Integrazione Sicurezza",
+  },
+  "devops-tools-morphing": {
+    en: "Jenkins|GitLab CI|Docker|Kubernetes|Terraform|Ansible",
+    it: "Jenkins|GitLab CI|Docker|Kubernetes|Terraform|Ansible",
+  },
+
+  // DevOps Services
+  "devops-services-title": {
+    en: "Our DevOps Services",
+    it: "I Nostri Servizi DevOps",
+  },
+  "devops-services-description": {
+    en: "Complete DevOps solutions to accelerate development and improve software quality",
+    it: "Soluzioni DevOps complete per accelerare lo sviluppo e migliorare la qualità del software",
+  },
+  "devops-cicd-title": {
+    en: "CI/CD Pipelines",
+    it: "Pipeline CI/CD",
+  },
+  "devops-cicd-description": {
+    en: "Automated pipelines for continuous integration and deployment with testing, security checks and automatic rollbacks.",
+    it: "Pipeline automatizzate per integrazione e deployment continui con testing, controlli di sicurezza e rollback automatici.",
+  },
+  "devops-iac-title": {
+    en: "Infrastructure as Code",
+    it: "Infrastructure as Code",
+  },
+  "devops-iac-description": {
+    en: "Infrastructure management through code with Terraform, Ansible and CloudFormation for consistency and scalability.",
+    it: "Gestione infrastrutture attraverso codice con Terraform, Ansible e CloudFormation per consistenza e scalabilità.",
+  },
+  "devops-containers-title": {
+    en: "Container Orchestration",
+    it: "Orchestrazione Container",
+  },
+  "devops-containers-description": {
+    en: "Docker containerization and Kubernetes orchestration for scalable and portable applications.",
+    it: "Containerizzazione Docker e orchestrazione Kubernetes per applicazioni scalabili e portabili.",
+  },
+  "devops-monitoring-title": {
+    en: "Monitoring & Observability",
+    it: "Monitoraggio & Osservabilità",
+  },
+  "devops-monitoring-description": {
+    en: "Complete monitoring with metrics, logs, traces and intelligent alerting for proactive issue resolution.",
+    it: "Monitoraggio completo con metriche, log, trace e alerting intelligente per risoluzione proattiva dei problemi.",
+  },
+
+  // DevOps Benefits
+  "devops-benefits-title": {
+    en: "DevOps Benefits",
+    it: "Vantaggi DevOps",
+  },
+  "devops-benefits-description": {
+    en: "Discover how DevOps can transform your development process",
+    it: "Scopri come DevOps può trasformare il tuo processo di sviluppo",
+  },
+  "devops-benefit-speed-title": {
+    en: "Deployment Speed",
+    it: "Velocità Deployment",
+  },
+  "devops-benefit-speed-description": {
+    en: "10x faster deployments",
+    it: "Deployment 10x più veloci",
+  },
+  "devops-benefit-reliability-title": {
+    en: "System Reliability",
+    it: "Affidabilità Sistema",
+  },
+  "devops-benefit-reliability-description": {
+    en: "99.9% uptime guaranteed",
+    it: "99.9% uptime garantito",
+  },
+  "devops-benefit-automation-title": {
+    en: "Process Automation",
+    it: "Automazione Processi",
+  },
+  "devops-benefit-automation-description": {
+    en: "80% reduction in manual tasks",
+    it: "80% riduzione task manuali",
+  },
+  "devops-benefit-quality-title": {
+    en: "Code Quality",
+    it: "Qualità Codice",
+  },
+  "devops-benefit-quality-description": {
+    en: "90% fewer production bugs",
+    it: "90% meno bug in produzione",
+  },
+
+  // DevOps Technologies
+  "devops-technologies-title": {
+    en: "DevOps Technologies",
+    it: "Tecnologie DevOps",
+  },
+  "devops-technologies-description": {
+    en: "We use the best tools and platforms for modern DevOps",
+    it: "Utilizziamo i migliori strumenti e piattaforme per DevOps moderno",
+  },
+
+  // DevOps Process
+  "devops-process-title": {
+    en: "Our DevOps Process",
+    it: "Il Nostro Processo DevOps",
+  },
+  "devops-process-description": {
+    en: "A structured approach to transform your development workflow",
+    it: "Un approccio strutturato per trasformare il tuo workflow di sviluppo",
+  },
+  "devops-step-assessment": {
+    en: "Current State Assessment",
+    it: "Assessment Stato Attuale",
+  },
+  "devops-step-assessment-desc": {
+    en: "Analysis of current processes and infrastructure",
+    it: "Analisi dei processi e infrastrutture attuali",
+  },
+  "devops-step-strategy": {
+    en: "DevOps Strategy",
+    it: "Strategia DevOps",
+  },
+  "devops-step-strategy-desc": {
+    en: "Custom roadmap and implementation plan",
+    it: "Roadmap personalizzata e piano di implementazione",
+  },
+  "devops-step-implementation": {
+    en: "Implementation",
+    it: "Implementazione",
+  },
+  "devops-step-implementation-desc": {
+    en: "Gradual implementation with continuous support",
+    it: "Implementazione graduale con supporto continuo",
+  },
+  "devops-step-optimization": {
+    en: "Optimization",
+    it: "Ottimizzazione",
+  },
+  "devops-step-optimization-desc": {
+    en: "Continuous monitoring and process improvement",
+    it: "Monitoraggio continuo e miglioramento processi",
+  },
+
+  // DevOps CTA
+  "devops-cta-title": {
+    en: "Ready to Accelerate Your Development?",
+    it: "Pronto ad Accelerare il Tuo Sviluppo?",
+  },
+  "devops-cta-description": {
+    en: "Transform your development process with modern DevOps practices. Contact us for a personalized consultation.",
+    it: "Trasforma il tuo processo di sviluppo con pratiche DevOps moderne. Contattaci per una consulenza personalizzata.",
+  },
+  "devops-cta-button": {
+    en: "Start Now",
+    it: "Inizia Ora",
+  },
+
+  // DevOps FAQ
+  "faq-subtitle-devops": {
+    en: "Answers to the most common questions about DevOps and CI/CD",
+    it: "Risposte alle domande più comuni su DevOps e CI/CD",
+  },
+  "faq-cta-subtext-devops": {
+    en: "Let's talk about your DevOps transformation",
+    it: "Parliamo della tua trasformazione DevOps",
+  },
+  "devops-faq-question-1": {
+    en: "How long does DevOps implementation take?",
+    it: "Quanto tempo richiede l'implementazione DevOps?",
+  },
+  "devops-faq-answer-1": {
+    en: "From 4-6 weeks for basic CI/CD pipelines to 12-16 weeks for complete DevOps transformation, depending on infrastructure complexity and team size.",
+    it: "Da 4-6 settimane per pipeline CI/CD base fino a 12-16 settimane per trasformazione DevOps completa, a seconda della complessità infrastrutturale e dimensione del team.",
+  },
+  "devops-faq-question-2": {
+    en: "Can you integrate with our existing tools?",
+    it: "Potete integrarvi con i nostri strumenti esistenti?",
+  },
+  "devops-faq-answer-2": {
+    en: "Yes, we integrate with existing development tools, version control systems, monitoring platforms and cloud providers to minimize disruption.",
+    it: "Sì, ci integriamo con strumenti di sviluppo esistenti, sistemi di version control, piattaforme di monitoraggio e cloud provider per minimizzare le interruzioni.",
+  },
+  "devops-faq-question-3": {
+    en: "What about security in CI/CD pipelines?",
+    it: "Che dire della sicurezza nelle pipeline CI/CD?",
+  },
+  "devops-faq-answer-3": {
+    en: "We implement DevSecOps practices with automated security scanning, vulnerability testing, compliance checks and secure secret management.",
+    it: "Implementiamo pratiche DevSecOps con scansioni di sicurezza automatizzate, test di vulnerabilità, controlli di compliance e gestione sicura dei segreti.",
+  },
+  "devops-faq-question-4": {
+    en: "How do you handle rollbacks and failures?",
+    it: "Come gestite rollback e fallimenti?",
+  },
+  "devops-faq-answer-4": {
+    en: "Automated rollback mechanisms, blue-green deployments, canary releases and comprehensive monitoring ensure quick recovery from failures.",
+    it: "Meccanismi di rollback automatizzati, deployment blue-green, canary release e monitoraggio completo garantiscono recupero rapido dai fallimenti.",
+  },
+  "devops-faq-question-5": {
+    en: "What training do you provide for our team?",
+    it: "Che formazione fornite per il nostro team?",
+  },
+  "devops-faq-answer-5": {
+    en: "Comprehensive training on DevOps tools, best practices, pipeline management and troubleshooting to ensure team autonomy.",
+    it: "Formazione completa su strumenti DevOps, best practices, gestione pipeline e troubleshooting per garantire autonomia del team.",
+  },
+
+  // DevOps Additional Translations
+  "devops-badge": {
+    en: "DevOps & CI/CD",
+    it: "DevOps & CI/CD",
+  },
+  "devops-hero-title-1": {
+    en: "Accelerate your",
+    it: "Accelera il tuo",
+  },
+  "devops-hero-title-2": {
+    en: "development",
+    it: "sviluppo",
+  },
+  "devops-implement": {
+    en: "We implement",
+    it: "Implementiamo",
+  },
+  "devops-free-assessment": {
+    en: "Free DevOps assessment",
+    it: "Assessment DevOps gratuito",
+  },
+
+  // DevOps Pipeline Stages
+  "devops-stage-code": {
+    en: "Code",
+    it: "Codice",
+  },
+  "devops-stage-build": {
+    en: "Build",
+    it: "Build",
+  },
+  "devops-stage-test": {
+    en: "Test",
+    it: "Test",
+  },
+  "devops-stage-deploy": {
+    en: "Deploy",
+    it: "Deploy",
+  },
+  "devops-stage-monitor": {
+    en: "Monitor",
+    it: "Monitor",
+  },
+  "devops-pipeline-title": {
+    en: "DevOps Pipeline",
+    it: "Pipeline DevOps",
+  },
+
+  // DevOps Service Features
+  "devops-feature-automated-testing": {
+    en: "Automated Testing",
+    it: "Testing Automatizzato",
+  },
+  "devops-feature-security-scanning": {
+    en: "Security Scanning",
+    it: "Scansione Sicurezza",
+  },
+  "devops-feature-deployment-automation": {
+    en: "Deployment Automation",
+    it: "Automazione Deployment",
+  },
+  "devops-feature-rollback-mechanisms": {
+    en: "Rollback Mechanisms",
+    it: "Meccanismi Rollback",
+  },
+  "devops-feature-terraform": {
+    en: "Terraform",
+    it: "Terraform",
+  },
+  "devops-feature-ansible": {
+    en: "Ansible",
+    it: "Ansible",
+  },
+  "devops-feature-cloudformation": {
+    en: "CloudFormation",
+    it: "CloudFormation",
+  },
+  "devops-feature-version-control": {
+    en: "Version Control",
+    it: "Controllo Versioni",
+  },
+  "devops-feature-docker-containers": {
+    en: "Docker Containers",
+    it: "Container Docker",
+  },
+  "devops-feature-kubernetes": {
+    en: "Kubernetes",
+    it: "Kubernetes",
+  },
+  "devops-feature-service-mesh": {
+    en: "Service Mesh",
+    it: "Service Mesh",
+  },
+  "devops-feature-auto-scaling": {
+    en: "Auto-scaling",
+    it: "Auto-scaling",
+  },
+  "devops-feature-metrics-logs": {
+    en: "Metrics & Logs",
+    it: "Metriche & Log",
+  },
+  "devops-feature-distributed-tracing": {
+    en: "Distributed Tracing",
+    it: "Tracing Distribuito",
+  },
+  "devops-feature-intelligent-alerting": {
+    en: "Intelligent Alerting",
+    it: "Alerting Intelligente",
+  },
+  "devops-feature-custom-dashboards": {
+    en: "Custom Dashboards",
+    it: "Dashboard Personalizzate",
+  },
+
+  // DevOps Technology Categories
+  "devops-tech-category-cicd": {
+    en: "CI/CD",
+    it: "CI/CD",
+  },
+  "devops-tech-category-containers": {
+    en: "Containers",
+    it: "Container",
+  },
+  "devops-tech-category-orchestration": {
+    en: "Orchestration",
+    it: "Orchestrazione",
+  },
+  "devops-tech-category-iac": {
+    en: "IaC",
+    it: "IaC",
+  },
+  "devops-tech-category-automation": {
+    en: "Automation",
+    it: "Automazione",
+  },
+  "devops-tech-category-monitoring": {
+    en: "Monitoring",
+    it: "Monitoraggio",
+  },
+  "devops-tech-category-visualization": {
+    en: "Visualization",
+    it: "Visualizzazione",
+  },
+
+  // DevOps Technology Names
+  "devops-tech-jenkins": {
+    en: "Jenkins",
+    it: "Jenkins",
+  },
+  "devops-tech-gitlab": {
+    en: "GitLab CI",
+    it: "GitLab CI",
+  },
+  "devops-tech-docker": {
+    en: "Docker",
+    it: "Docker",
+  },
+  "devops-tech-kubernetes": {
+    en: "Kubernetes",
+    it: "Kubernetes",
+  },
+  "devops-tech-terraform": {
+    en: "Terraform",
+    it: "Terraform",
+  },
+  "devops-tech-ansible": {
+    en: "Ansible",
+    it: "Ansible",
+  },
+  "devops-tech-prometheus": {
+    en: "Prometheus",
+    it: "Prometheus",
+  },
+  "devops-tech-grafana": {
+    en: "Grafana",
+    it: "Grafana",
+  },
+
+  // DevOps Benefit Metrics
+  "devops-metric-faster": {
+    en: "Faster",
+    it: "Più Veloce",
+  },
+  "devops-metric-uptime": {
+    en: "Uptime",
+    it: "Uptime",
+  },
+  "devops-metric-automation": {
+    en: "Automation",
+    it: "Automazione",
+  },
+  "devops-metric-fewer-bugs": {
+    en: "Fewer Bugs",
+    it: "Meno Bug",
+  },
+
+  // DevOps CTA Additional
+  "devops-cta-free-assessment": {
+    en: "Free assessment",
+    it: "Assessment gratuito",
+  },
+  "devops-cta-consultation-included": {
+    en: "Consultation included",
+    it: "Consulenza inclusa",
+  },
+
+  // DevOps Visualization
+  "devops-transformation-title": {
+    en: "DevOps Transformation",
+    it: "Trasformazione DevOps",
+  },
+  "devops-metric-10x-faster": {
+    en: "10x Faster",
+    it: "10x Più Veloce",
+  },
+  "devops-metric-uptime-999": {
+    en: "99.9% Uptime",
+    it: "99.9% Uptime",
+  },
+  "devops-metric-80-automation": {
+    en: "80% Automation",
+    it: "80% Automazione",
+  },
+  "devops-metric-90-fewer-bugs": {
+    en: "90% Fewer Bugs",
+    it: "90% Meno Bug",
+  },
 };

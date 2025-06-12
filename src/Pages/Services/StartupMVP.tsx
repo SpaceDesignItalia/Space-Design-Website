@@ -6,6 +6,7 @@ import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
 import { BentoGrid, BentoGridItem } from "../../Components/magicui/bento-grid";
 import { MorphingText } from "../../Components/magicui/morphing-text";
+import ServiceFAQ from "../../Components/FAQ/ServiceFAQ";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 30 },
@@ -832,6 +833,50 @@ export default function StartupMVP() {
             </motion.div>
           </div>
         </section>
+
+        {/* FAQ Section */}
+        <ServiceFAQ
+          title={t("faq-title") || "Domande Frequenti"}
+          subtitle={
+            t("faq-subtitle-mvp") ||
+            "Risposte alle domande più comuni sui MVP per startup"
+          }
+          ctaText={t("faq-cta-text") || "Hai altre domande?"}
+          ctaSubtext={
+            t("faq-cta-subtext-mvp") || "Parliamo della tua idea di startup"
+          }
+          benefitText={t("faq-benefit-text") || "Consulenza gratuita"}
+          faqs={[
+            {
+              question: t("mvp-faq-question-1") || "Cosa include un MVP?",
+              answer:
+                t("mvp-faq-answer-1") ||
+                "Funzionalità essenziali per validare la tua idea: funzionalità core, UI/UX di base, autenticazione utenti e integrazione analytics.",
+              icon: "material-symbols:checklist",
+              delay: 0.1,
+            },
+            {
+              question:
+                t("mvp-faq-question-2") ||
+                "Quanto velocemente possiamo lanciare?",
+              answer:
+                t("mvp-faq-answer-2") ||
+                "Tipicamente 4-8 settimane dal concept al lancio, a seconda della complessità e delle funzionalità richieste per la validazione del mercato.",
+              icon: "material-symbols:rocket-launch",
+              delay: 0.2,
+            },
+            {
+              question:
+                t("mvp-faq-question-3") ||
+                "L'MVP può scalare mentre cresciamo?",
+              answer:
+                t("mvp-faq-answer-3") ||
+                "Sì, costruiamo MVP con architettura scalabile che può evolversi in prodotti completi senza riscritture complete.",
+              icon: "material-symbols:trending-up",
+              delay: 0.3,
+            },
+          ]}
+        />
 
         {/* CTA Section */}
         <section className="py-24 bg-black dark:bg-white">

@@ -6,6 +6,7 @@ import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
 import { BentoGrid, BentoGridItem } from "../../Components/magicui/bento-grid";
 import { MorphingText } from "../../Components/magicui/morphing-text";
+import ServiceFAQ from "../../Components/FAQ/ServiceFAQ";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 30 },
@@ -555,6 +556,61 @@ export default function WebDevelopment() {
             </motion.div>
           </div>
         </section>
+
+        {/* FAQ Section */}
+        <ServiceFAQ
+          title={t("faq-title") || "Domande Frequenti"}
+          subtitle={
+            t("faq-subtitle-web") ||
+            "Risposte alle domande più comuni sullo sviluppo web"
+          }
+          ctaText={t("faq-cta-text") || "Hai altre domande?"}
+          ctaSubtext={
+            t("faq-cta-subtext-web") || "Parliamo del tuo progetto web"
+          }
+          benefitText={t("faq-benefit-text") || "Consulenza gratuita"}
+          faqs={[
+            {
+              question:
+                t("web-faq-question-1") ||
+                "Quanto tempo serve per creare un sito web?",
+              answer:
+                t("web-faq-answer-1") ||
+                "Da 2-3 settimane per siti semplici fino a 8-12 settimane per e-commerce complessi, a seconda delle funzionalità e personalizzazioni.",
+              icon: "material-symbols:schedule",
+              delay: 0.1,
+            },
+            {
+              question:
+                t("web-faq-question-2") ||
+                "Il sito sarà responsive per mobile?",
+              answer:
+                t("web-faq-answer-2") ||
+                "Assolutamente! Tutti i nostri siti sono progettati mobile-first e funzionano perfettamente su smartphone, tablet e desktop.",
+              icon: "material-symbols:mobile-friendly",
+              delay: 0.2,
+            },
+            {
+              question:
+                t("web-faq-question-3") || "Fornite l'ottimizzazione SEO?",
+              answer:
+                t("web-faq-answer-3") ||
+                "Sì, includiamo l'ottimizzazione SEO di base in tutti i progetti: meta tag, struttura del sito, velocità di caricamento e indicizzazione Google.",
+              icon: "material-symbols:search",
+              delay: 0.3,
+            },
+            {
+              question:
+                t("web-faq-question-4") ||
+                "Posso aggiornare i contenuti autonomamente?",
+              answer:
+                t("web-faq-answer-4") ||
+                "Sì, forniamo un sistema di gestione contenuti intuitivo e formazione per gestire il tuo sito in autonomia.",
+              icon: "material-symbols:edit",
+              delay: 0.4,
+            },
+          ]}
+        />
 
         {/* CTA Section */}
         <section className="py-24 bg-black dark:bg-white">
