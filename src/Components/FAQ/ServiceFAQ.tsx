@@ -1,7 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { Icon } from "@iconify/react";
 import { useState } from "react";
-import { useLanguage } from "../../context/LanguageContext";
 
 interface FAQItem {
   question: string;
@@ -22,13 +21,9 @@ interface ServiceFAQProps {
 export default function ServiceFAQ({
   title = "Domande Frequenti",
   subtitle = "Risposte alle domande più comuni",
-  ctaText = "Hai altre domande?",
-  ctaSubtext = "Parliamo del tuo progetto",
-  benefitText = "Consulenza gratuita",
   faqs,
 }: ServiceFAQProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
-  const { t } = useLanguage();
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -54,7 +49,7 @@ export default function ServiceFAQ({
   };
 
   return (
-    <section className="relative py-32 bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 overflow-hidden">
+    <section>
       {/* Background Pattern */}
       <div className="absolute inset-0" aria-hidden="true">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,0,0,0.02)_1px,transparent_1px)] dark:bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.02)_1px,transparent_1px)] [background-size:24px_24px]" />
@@ -174,63 +169,6 @@ export default function ServiceFAQ({
               </div>
             </motion.div>
           ))}
-        </motion.div>
-
-        {/* Enhanced CTA */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.3 }}
-          className="text-center"
-        >
-          <div className="relative">
-            {/* Background Glow */}
-            <div className="absolute inset-0 bg-gradient-to-r from-black/5 via-gray-500/5 to-black/5 dark:from-white/5 dark:via-gray-400/5 dark:to-white/5 rounded-3xl blur-xl" />
-
-            <div className="relative bg-white dark:bg-gray-800 rounded-3xl border border-gray-200 dark:border-gray-700 shadow-xl p-8">
-              <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
-                <div className="text-center lg:text-left">
-                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
-                    {ctaText}
-                  </h3>
-                  <p className="text-gray-600 dark:text-gray-400 text-lg">
-                    {ctaSubtext}
-                  </p>
-                </div>
-
-                <div className="flex flex-col sm:flex-row items-center gap-6">
-                  <div className="flex items-center gap-6 text-sm">
-                    <motion.div
-                      whileHover={{ scale: 1.05 }}
-                      className="flex items-center gap-2 px-4 py-2 bg-green-50 dark:bg-green-900/20 rounded-xl border border-green-200 dark:border-green-800"
-                    >
-                      <Icon
-                        icon="material-symbols:phone-in-talk"
-                        className="h-4 w-4 text-green-600 dark:text-green-400"
-                      />
-                      <span className="font-medium text-green-700 dark:text-green-300">
-                        {benefitText}
-                      </span>
-                    </motion.div>
-
-                    <motion.div
-                      whileHover={{ scale: 1.05 }}
-                      className="flex items-center gap-2 px-4 py-2 bg-blue-50 dark:bg-blue-900/20 rounded-xl border border-blue-200 dark:border-blue-800"
-                    >
-                      <Icon
-                        icon="material-symbols:schedule"
-                        className="h-4 w-4 text-blue-600 dark:text-blue-400"
-                      />
-                      <span className="font-medium text-blue-700 dark:text-blue-300">
-                        {t("faq-benefit-response") || "Rispondiamo in 24h"}
-                      </span>
-                    </motion.div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </motion.div>
       </div>
     </section>

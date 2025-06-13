@@ -674,12 +674,12 @@ export const translations: Translations = {
     it: "Sviluppo App Mobile",
   },
   "mobile-hero-title": {
-    en: "Mobile App Development",
-    it: "Sviluppo App Mobile",
+    en: "Your next game-changing mobile app starts here",
+    it: "La tua app mobile rivoluzionaria inizia qui",
   },
   "mobile-hero-description": {
-    en: "Powerful native and cross-platform mobile applications that engage users and deliver exceptional performance on iOS and Android",
-    it: "Potenti applicazioni mobile native e multi-piattaforma che coinvolgono gli utenti e offrono prestazioni eccezionali su iOS e Android",
+    en: "Dominate the app stores with a cutting-edge mobile experience that users will love. Native or cross-platform, iOS or Android - we deliver excellence that stands out",
+    it: "Domina gli app store con un'esperienza mobile all'avanguardia che gli utenti ameranno. Nativa o cross-platform, iOS o Android - consegniamo eccellenza che si distingue",
   },
   "mobile-seo-description": {
     en: "We develop native and cross-platform mobile apps for iOS and Android. Professional solutions for your mobile presence.",
@@ -741,21 +741,41 @@ export const translations: Translations = {
     en: "Professional mobile presence",
     it: "Presenza mobile professionale",
   },
+  "mobile-benefit-1-desc": {
+    en: "A professional app that grows your business",
+    it: "Un'app professionale che fa crescere il tuo business",
+  },
   "mobile-benefit-2": {
     en: "Direct access to customers",
     it: "Accesso diretto ai clienti",
+  },
+  "mobile-benefit-2-desc": {
+    en: "Your customers always have you in their pocket",
+    it: "I tuoi clienti ti hanno sempre in tasca",
   },
   "mobile-benefit-3": {
     en: "Personalized push notifications",
     it: "Notifiche push personalizzate",
   },
+  "mobile-benefit-3-desc": {
+    en: "Communicate immediately with your customers",
+    it: "Comunica subito con i tuoi clienti",
+  },
   "mobile-benefit-4": {
     en: "Offline functionality",
     it: "Funzionalità offline",
   },
+  "mobile-benefit-4-desc": {
+    en: "Use the app even without internet",
+    it: "Usa l'app anche senza internet",
+  },
   "mobile-benefit-5": {
     en: "Integration with existing systems",
     it: "Integrazione con sistemi esistenti",
+  },
+  "mobile-benefit-5-desc": {
+    en: "Connect the app to your existing systems",
+    it: "Collega l'app ai tuoi sistemi esistenti",
   },
   "mobile-benefit-6": {
     en: "Detailed analytics and insights",
@@ -2554,44 +2574,36 @@ export const translations: Translations = {
 
   // Mobile Development FAQ - Focus on business and technical specifics
   "mobile-faq-question-1": {
-    en: "How do you handle app updates after launch?",
-    it: "Come gestite gli aggiornamenti dell'app dopo il lancio?",
+    en: "How much does it cost to develop a mobile app?",
+    it: "Quanto costa sviluppare un'app mobile?",
   },
   "mobile-faq-answer-1": {
-    en: "We provide ongoing support with regular updates for new OS versions, security patches, and feature enhancements based on user feedback.",
-    it: "Forniamo supporto continuo con aggiornamenti regolari per nuove versioni OS, patch di sicurezza e miglioramenti delle funzionalità basati sui feedback utenti.",
+    en: "The cost depends on the app's complexity, features, design, and integrations. We provide a detailed estimate after an initial consultation to fully understand your needs.",
+    it: "Il costo dipende dalla complessità dell'app, dalle funzionalità, dal design e dalle integrazioni. Forniamo un preventivo dettagliato dopo una prima consulenza per comprendere appieno le vostre esigenze.",
   },
   "mobile-faq-question-2": {
-    en: "Can you integrate with our existing backend systems?",
-    it: "Potete integrarvi con i nostri sistemi backend esistenti?",
+    en: "How long does it take to develop a mobile app?",
+    it: "Quanto tempo richiede lo sviluppo di un'app mobile?",
   },
   "mobile-faq-answer-2": {
-    en: "Yes, we specialize in API integrations with existing CRM, ERP, databases, and third-party services to ensure seamless data flow.",
-    it: "Sì, siamo specializzati in integrazioni API con CRM, ERP, database e servizi di terze parti esistenti per garantire un flusso dati perfetto.",
+    en: "Development time typically ranges from 2 to 6 months depending on the project scope. We define a clear timeline during the planning phase to align with your goals.",
+    it: "I tempi di sviluppo variano solitamente da 2 a 6 mesi in base all'entità del progetto. Definiamo una timeline chiara nella fase di pianificazione per allinearci ai vostri obiettivi.",
   },
   "mobile-faq-question-3": {
-    en: "What about app analytics and user tracking?",
-    it: "Che dire di analytics dell'app e tracking utenti?",
+    en: "Do you provide maintenance and support after launch?",
+    it: "Offrite manutenzione e supporto dopo il lancio?",
   },
   "mobile-faq-answer-3": {
-    en: "We integrate comprehensive analytics (Firebase, Mixpanel) to track user behavior, app performance, and business metrics with GDPR compliance.",
-    it: "Integriamo analytics complete (Firebase, Mixpanel) per tracciare comportamento utenti, performance app e metriche business con conformità GDPR.",
+    en: "Yes, we offer post-launch maintenance plans that include bug fixes, performance monitoring, updates, and ongoing support to ensure your app remains stable and up-to-date.",
+    it: "Sì, offriamo piani di manutenzione post-lancio che includono correzione di bug, monitoraggio delle performance, aggiornamenti e supporto continuo per garantire che l'app rimanga stabile e aggiornata.",
   },
   "mobile-faq-question-4": {
-    en: "How do you ensure app security?",
-    it: "Come garantite la sicurezza dell'app?",
+    en: "Do you build native or cross-platform apps?",
+    it: "Sviluppate app native o cross-platform?",
   },
   "mobile-faq-answer-4": {
-    en: "We implement encryption, secure authentication, API security, code obfuscation, and regular security audits following OWASP mobile guidelines.",
-    it: "Implementiamo crittografia, autenticazione sicura, sicurezza API, offuscamento codice e audit di sicurezza regolari seguendo le linee guida OWASP mobile.",
-  },
-  "mobile-faq-question-5": {
-    en: "What's your app testing process?",
-    it: "Qual è il vostro processo di testing dell'app?",
-  },
-  "mobile-faq-answer-5": {
-    en: "We conduct automated testing, device compatibility testing, performance testing, and user acceptance testing before launch.",
-    it: "Conduciamo test automatizzati, test di compatibilità dispositivi, test di performance e test di accettazione utente prima del lancio.",
+    en: "We analyze your project needs to recommend the best approach. We develop both native apps (Swift, Kotlin) and cross-platform solutions (Flutter, React Native) depending on performance, budget, and feature requirements.",
+    it: "Analizziamo le esigenze del progetto per proporre la soluzione migliore. Sviluppiamo sia app native (Swift, Kotlin) che soluzioni cross-platform (Flutter, React Native), in base a performance, budget e funzionalità richieste.",
   },
 
   // Custom Software FAQ - Focus on business process and implementation
@@ -2783,7 +2795,7 @@ export const translations: Translations = {
   // FAQ Common Translations
   "faq-title": {
     en: "Frequently Asked Questions",
-    it: "Domande Frequenti",
+    it: "Domande frequenti",
   },
   "faq-cta-text": {
     en: "Have other questions?",

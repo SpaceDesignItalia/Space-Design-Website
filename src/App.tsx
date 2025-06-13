@@ -4,9 +4,9 @@ import { useLocation } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import Contact from "./Pages/Contact/Contact";
 import About from "./Pages/About/About";
-import MobileDevelopment from "./Pages/Services/MobileDevelopment";
+import MobileDevelopment from "./Pages/Services/AppMobile/MobileDevelopment";
 import WebDevelopment from "./Pages/Services/WebDevelopment";
-import CustomSoftware from "./Pages/Services/CustomSoftware";
+import Websites from "./Pages/Services/Websites";
 import StartupMVP from "./Pages/Services/StartupMVP";
 import AISoftware from "./Pages/Services/AISoftware";
 import CloudIntegration from "./Pages/Services/CloudIntegration";
@@ -21,6 +21,7 @@ import LanguageLayout from "./Components/Layout/LanguageLayout";
 import Footer from "./Components/Layout/Footer";
 import CookieBanner from "./Components/Layout/CookieBanner";
 import * as analytics from "./utils/analytics";
+import CustomSoftware from "./Pages/Services/CustomSoftware/CustomSoftware";
 
 // Language redirect component
 function LanguageRedirect() {
@@ -67,6 +68,22 @@ function AppContent() {
             <Route path="api-development" element={<ApiDevelopment />} />
             <Route path="devops" element={<DevOps />} />
             <Route
+              path="mobile-development"
+              element={<div>Mobile Development</div>}
+            />
+            <Route
+              path="web-development"
+              element={<div>Web Development</div>}
+            />
+            <Route path="websites" element={<div>Websites</div>} />
+            <Route
+              path="/:lang/services/custom-software"
+              element={<CustomSoftware />}
+            />
+            <Route path="startup-mvp" element={<div>Startup MVP</div>} />
+            <Route
+              path="cloud-integration"
+              element={<div>Cloud Integration</div>}
               path="infrastructure"
               element={<div>Infrastructure Management</div>}
             />
