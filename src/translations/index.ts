@@ -3339,4 +3339,1023 @@ export const translations: Translations = {
     en: "90% Fewer Bugs",
     it: "90% Meno Bug",
   },
+
+  // Footer Translations
+  "footer-description": {
+    en: "We transform ordinary into extraordinary, inspired by the wonders of space!",
+    it: "Trasformiamo l'ordinario in straordinario, ispirati dalle meraviglie dello spazio!",
+  },
+  "footer-about-us": {
+    en: "About Us",
+    it: "Chi Siamo",
+  },
+  "footer-legal": {
+    en: "Legal",
+    it: "Legale",
+  },
+  "footer-blog": {
+    en: "Blog",
+    it: "Blog",
+  },
+  "footer-careers": {
+    en: "Careers",
+    it: "Carriere",
+  },
+  "footer-press": {
+    en: "Press",
+    it: "Stampa",
+  },
+  "footer-partners": {
+    en: "Partners",
+    it: "Partner",
+  },
+  "footer-privacy-policy": {
+    en: "Privacy Policy",
+    it: "Privacy Policy",
+  },
+  "footer-terms-of-service": {
+    en: "Terms of Service",
+    it: "Termini di Servizio",
+  },
+  "footer-cookie-policy": {
+    en: "Cookie Policy",
+    it: "Cookie Policy",
+  },
+  "footer-gdpr": {
+    en: "GDPR",
+    it: "GDPR",
+  },
+  "footer-copyright": {
+    en: "All rights reserved.",
+    it: "Tutti i diritti riservati.",
+  },
+  "footer-social-facebook": {
+    en: "Facebook",
+    it: "Facebook",
+  },
+  "footer-social-instagram": {
+    en: "Instagram",
+    it: "Instagram",
+  },
+  "footer-social-linkedin": {
+    en: "LinkedIn",
+    it: "LinkedIn",
+  },
+
+  // Privacy Policy Translations
+  "privacy-hero-description": {
+    en: "Your privacy is important to us. This policy explains how we collect, use, and protect your personal information.",
+    it: "La tua privacy è importante per noi. Questa policy spiega come raccogliamo, utilizziamo e proteggiamo le tue informazioni personali.",
+  },
+  "privacy-last-updated": {
+    en: "Last updated: 17/06/2024",
+    it: "Ultimo aggiornamento: 17/06/2024",
+  },
+  "privacy-introduction-title": {
+    en: "Introduction",
+    it: "Introduzione",
+  },
+  "privacy-introduction-content": {
+    en: "Space Design Italia respects your privacy and is committed to protecting your personal data. This privacy policy explains how we collect, use, and safeguard your information when you visit our website or use our services.",
+    it: "Space Design Italia rispetta la tua privacy ed è impegnata a proteggere i tuoi dati personali. Questa privacy policy spiega come raccogliamo, utilizziamo e salvaguardiamo le tue informazioni quando visiti il nostro sito web o utilizzi i nostri servizi.",
+  },
+  "privacy-data-collection-title": {
+    en: "Data Collection",
+    it: "Raccolta Dati",
+  },
+  "privacy-personal-data-title": {
+    en: "Personal Data",
+    it: "Dati Personali",
+  },
+  "privacy-personal-data-content": {
+    en: "We collect personal information you provide directly to us, such as when you create an account, request a consultation, or contact us. This may include your name, email address, phone number, company information, and project details.",
+    it: "Raccogliamo informazioni personali che ci fornisci direttamente, come quando crei un account, richiedi una consulenza o ci contatti. Questo può includere il tuo nome, indirizzo email, numero di telefono, informazioni sull'azienda e dettagli del progetto.",
+  },
+  "privacy-technical-data-title": {
+    en: "Technical Data",
+    it: "Dati Tecnici",
+  },
+  "privacy-technical-data-content": {
+    en: "We automatically collect certain technical information when you visit our website, including IP address, browser type, operating system, device information, and usage patterns through cookies and similar technologies.",
+    it: "Raccogliamo automaticamente certe informazioni tecniche quando visiti il nostro sito web, incluso indirizzo IP, tipo di browser, sistema operativo, informazioni del dispositivo e pattern di utilizzo attraverso cookie e tecnologie simili.",
+  },
+  "privacy-data-usage-title": {
+    en: "How We Use Your Data",
+    it: "Come Utilizziamo i Tuoi Dati",
+  },
+  "privacy-usage-1": {
+    en: "To provide and improve our services",
+    it: "Per fornire e migliorare i nostri servizi",
+  },
+  "privacy-usage-2": {
+    en: "To communicate with you about your projects",
+    it: "Per comunicare con te riguardo ai tuoi progetti",
+  },
+  "privacy-usage-3": {
+    en: "To send you relevant information and updates",
+    it: "Per inviarti informazioni rilevanti e aggiornamenti",
+  },
+  "privacy-usage-4": {
+    en: "To analyze website usage and improve user experience",
+    it: "Per analizzare l'utilizzo del sito web e migliorare l'esperienza utente",
+  },
+  "privacy-usage-5": {
+    en: "To comply with legal obligations",
+    it: "Per rispettare obblighi legali",
+  },
+  "privacy-legal-basis-title": {
+    en: "Legal Basis for Processing",
+    it: "Base Giuridica per il Trattamento",
+  },
+  "privacy-legal-basis-content": {
+    en: "We process your personal data based on legitimate interests, contractual necessity, legal compliance, and your consent where required by applicable law, including GDPR and other data protection regulations.",
+    it: "Trattiamo i tuoi dati personali sulla base di interessi legittimi, necessità contrattuale, conformità legale e il tuo consenso dove richiesto dalla legge applicabile, incluso GDPR e altre normative sulla protezione dei dati.",
+  },
+  "privacy-data-sharing-title": {
+    en: "Data Sharing",
+    it: "Condivisione Dati",
+  },
+  "privacy-data-sharing-content": {
+    en: "We do not sell or rent your personal information. We may share data with trusted service providers, legal authorities when required by law, or with your explicit consent. All third parties are bound by strict confidentiality agreements.",
+    it: "Non vendiamo né affittiamo le tue informazioni personali. Possiamo condividere i dati con fornitori di servizi fidati, autorità legali quando richiesto dalla legge, o con il tuo consenso esplicito. Tutte le terze parti sono vincolate da rigorosi accordi di riservatezza.",
+  },
+  "privacy-security-title": {
+    en: "Data Security",
+    it: "Sicurezza dei Dati",
+  },
+  "privacy-security-content": {
+    en: "We implement appropriate technical and organizational measures to protect your personal data against unauthorized access, alteration, disclosure, or destruction. This includes encryption, secure servers, and regular security assessments.",
+    it: "Implementiamo misure tecniche e organizzative appropriate per proteggere i tuoi dati personali contro accesso non autorizzato, alterazione, divulgazione o distruzione. Questo include crittografia, server sicuri e valutazioni di sicurezza regolari.",
+  },
+  "privacy-rights-title": {
+    en: "Your Rights",
+    it: "I Tuoi Diritti",
+  },
+  "privacy-rights-intro": {
+    en: "Under applicable data protection laws, you have the following rights:",
+    it: "Secondo le leggi applicabili sulla protezione dei dati, hai i seguenti diritti:",
+  },
+  "privacy-right-access": {
+    en: "Right to access your personal data",
+    it: "Diritto di accedere ai tuoi dati personali",
+  },
+  "privacy-right-rectification": {
+    en: "Right to rectify inaccurate data",
+    it: "Diritto di rettificare dati inesatti",
+  },
+  "privacy-right-erasure": {
+    en: "Right to erasure ('right to be forgotten')",
+    it: "Diritto alla cancellazione ('diritto all'oblio')",
+  },
+  "privacy-right-portability": {
+    en: "Right to data portability",
+    it: "Diritto alla portabilità dei dati",
+  },
+  "privacy-right-objection": {
+    en: "Right to object to processing",
+    it: "Diritto di opporsi al trattamento",
+  },
+  "privacy-right-withdraw": {
+    en: "Right to withdraw consent at any time",
+    it: "Diritto di revocare il consenso in qualsiasi momento",
+  },
+  "privacy-cookies-title": {
+    en: "Cookies and Tracking",
+    it: "Cookie e Tracciamento",
+  },
+  "privacy-cookies-content": {
+    en: "We use cookies and similar technologies to enhance your browsing experience, analyze website traffic, and provide personalized content. You can manage your cookie preferences through your browser settings or our cookie banner.",
+    it: "Utilizziamo cookie e tecnologie simili per migliorare la tua esperienza di navigazione, analizzare il traffico del sito web e fornire contenuti personalizzati. Puoi gestire le tue preferenze sui cookie attraverso le impostazioni del browser o il nostro banner sui cookie.",
+  },
+  "privacy-retention-title": {
+    en: "Data Retention",
+    it: "Conservazione dei Dati",
+  },
+  "privacy-retention-content": {
+    en: "We retain your personal data only for as long as necessary to fulfill the purposes outlined in this policy, comply with legal obligations, resolve disputes, and enforce our agreements. Data retention periods vary based on the type of data and legal requirements.",
+    it: "Conserviamo i tuoi dati personali solo per il tempo necessario a soddisfare gli scopi delineati in questa policy, rispettare obblighi legali, risolvere controversie e far rispettare i nostri accordi. I periodi di conservazione variano in base al tipo di dati e ai requisiti legali.",
+  },
+  "privacy-contact-title": {
+    en: "Contact Information",
+    it: "Informazioni di Contatto",
+  },
+  "privacy-contact-content": {
+    en: "If you have any questions about this privacy policy or wish to exercise your rights, please contact us:",
+    it: "Se hai domande su questa privacy policy o desideri esercitare i tuoi diritti, contattaci:",
+  },
+  "privacy-company-info": {
+    en: "Space Design Italia",
+    it: "Space Design Italia",
+  },
+  "privacy-company-vat": {
+    en: "P.IVA 07420400488",
+    it: "P.IVA 07420400488",
+  },
+  "privacy-changes-title": {
+    en: "Changes to This Policy",
+    it: "Modifiche a Questa Policy",
+  },
+  "privacy-changes-content": {
+    en: "We may update this privacy policy from time to time. We will notify you of any material changes by posting the new policy on our website and updating the 'last updated' date. Your continued use of our services constitutes acceptance of the updated policy.",
+    it: "Potremmo aggiornare questa privacy policy di tanto in tanto. Ti informeremo di eventuali modifiche sostanziali pubblicando la nuova policy sul nostro sito web e aggiornando la data dell'ultimo aggiornamento. Il tuo uso continuato dei nostri servizi costituisce accettazione della policy aggiornata.",
+  },
+
+  // Privacy Policy Meta Translations
+  "privacy-policy-title": {
+    en: "Privacy Policy - Space Design Italia",
+    it: "Privacy Policy - Space Design Italia",
+  },
+  "privacy-policy-meta-description": {
+    en: "Learn how Space Design Italia collects, uses, and protects your personal data. Our privacy policy explains your rights and our data protection practices.",
+    it: "Scopri come Space Design Italia raccoglie, utilizza e protegge i tuoi dati personali. La nostra privacy policy spiega i tuoi diritti e le nostre pratiche di protezione dei dati.",
+  },
+  "privacy-policy-breadcrumb": {
+    en: "Privacy Policy",
+    it: "Privacy Policy",
+  },
+
+  // Terms of Service Meta Translations
+  "terms-of-service-title": {
+    en: "Terms of Service - Space Design Italia",
+    it: "Termini di Servizio - Space Design Italia",
+  },
+  "terms-of-service-meta-description": {
+    en: "Read the terms and conditions that govern the use of Space Design Italia's services. Important legal information for all users.",
+    it: "Leggi i termini e condizioni che regolano l'uso dei servizi di Space Design Italia. Informazioni legali importanti per tutti gli utenti.",
+  },
+  "terms-of-service-breadcrumb": {
+    en: "Terms of Service",
+    it: "Termini di Servizio",
+  },
+
+  // Cookie Policy Meta Translations
+  "cookie-policy-title": {
+    en: "Cookie Policy - Space Design Italia",
+    it: "Cookie Policy - Space Design Italia",
+  },
+  "cookie-policy-meta-description": {
+    en: "Learn about how Space Design Italia uses cookies and similar technologies. Manage your cookie preferences and understand our tracking practices.",
+    it: "Scopri come Space Design Italia utilizza i cookie e tecnologie simili. Gestisci le tue preferenze sui cookie e comprendi le nostre pratiche di tracciamento.",
+  },
+  "cookie-policy-breadcrumb": {
+    en: "Cookie Policy",
+    it: "Cookie Policy",
+  },
+
+  // GDPR Meta Translations
+  "gdpr-title": {
+    en: "GDPR Compliance - Space Design Italia",
+    it: "Conformità GDPR - Space Design Italia",
+  },
+  "gdpr-meta-description": {
+    en: "Information about how Space Design Italia complies with GDPR regulations and your data protection rights under European law.",
+    it: "Informazioni su come Space Design Italia rispetta le normative GDPR e i tuoi diritti di protezione dei dati secondo la legge europea.",
+  },
+  "gdpr-breadcrumb": {
+    en: "GDPR",
+    it: "GDPR",
+  },
+
+  // Terms of Service Translations
+  "terms-hero-description": {
+    en: "These terms govern your use of our services. Please read them carefully before using our platform.",
+    it: "Questi termini regolano l'uso dei nostri servizi. Ti preghiamo di leggerli attentamente prima di utilizzare la nostra piattaforma.",
+  },
+  "terms-last-updated": {
+    en: "Last updated: 17/06/2025",
+    it: "Ultimo aggiornamento: 17/06/2025",
+  },
+  "terms-acceptance-title": {
+    en: "Acceptance of Terms",
+    it: "Accettazione dei Termini",
+  },
+  "terms-acceptance-content": {
+    en: "By accessing and using Space Design Italia's services, you agree to be bound by these Terms of Service and all applicable laws and regulations. If you do not agree with any of these terms, you are prohibited from using our services.",
+    it: "Accedendo e utilizzando i servizi di Space Design Italia, accetti di essere vincolato da questi Termini di Servizio e da tutte le leggi e regolamenti applicabili. Se non sei d'accordo con uno qualsiasi di questi termini, ti è vietato utilizzare i nostri servizi.",
+  },
+
+  // Definitions
+  "terms-definitions-title": {
+    en: "Definitions",
+    it: "Definizioni",
+  },
+  "terms-def-company": {
+    en: "Space Design Italia, including all its representatives and employees",
+    it: "Space Design Italia, inclusi tutti i suoi rappresentanti e dipendenti",
+  },
+  "terms-def-client": {
+    en: "The person or entity using our services",
+    it: "La persona o entità che utilizza i nostri servizi",
+  },
+  "terms-def-services": {
+    en: "All software development, consulting, and related services provided by Space Design Italia",
+    it: "Tutti i servizi di sviluppo software, consulenza e servizi correlati forniti da Space Design Italia",
+  },
+  "terms-def-project": {
+    en: "Any specific work engagement or deliverable agreed upon between the parties",
+    it: "Qualsiasi specifico impegno di lavoro o deliverable concordato tra le parti",
+  },
+
+  "terms-services-title": {
+    en: "Our Services",
+    it: "I Nostri Servizi",
+  },
+  "terms-services-intro": {
+    en: "Space Design Italia provides comprehensive technology solutions including:",
+    it: "Space Design Italia fornisce soluzioni tecnologiche complete tra cui:",
+  },
+  "terms-service-web": {
+    en: "Web development and website creation",
+    it: "Sviluppo web e creazione siti web",
+  },
+  "terms-service-mobile": {
+    en: "Mobile application development for iOS and Android",
+    it: "Sviluppo applicazioni mobile per iOS e Android",
+  },
+  "terms-service-custom": {
+    en: "Custom software development and enterprise solutions",
+    it: "Sviluppo software personalizzato e soluzioni enterprise",
+  },
+  "terms-service-mvp": {
+    en: "MVP development for startups and product validation",
+    it: "Sviluppo MVP per startup e validazione prodotti",
+  },
+  "terms-service-ai": {
+    en: "Artificial intelligence and machine learning solutions",
+    it: "Soluzioni di intelligenza artificiale e machine learning",
+  },
+  "terms-service-cloud": {
+    en: "Cloud integration and infrastructure services",
+    it: "Servizi di integrazione cloud e infrastrutture",
+  },
+  "terms-service-api": {
+    en: "API development and system integration",
+    it: "Sviluppo API e integrazione sistemi",
+  },
+  "terms-service-devops": {
+    en: "DevOps and CI/CD implementation",
+    it: "Implementazione DevOps e CI/CD",
+  },
+  "terms-service-consulting": {
+    en: "Technical consulting and digital strategy",
+    it: "Consulenza tecnica e strategia digitale",
+  },
+
+  // Workflow
+  "terms-workflow-title": {
+    en: "Our Workflow",
+    it: "Il Nostro Processo",
+  },
+  "terms-workflow-consultation": {
+    en: "Initial Consultation",
+    it: "Consulenza Iniziale",
+  },
+  "terms-workflow-consultation-desc": {
+    en: "We analyze your requirements and provide recommendations",
+    it: "Analizziamo i tuoi requisiti e forniamo raccomandazioni",
+  },
+  "terms-workflow-proposal": {
+    en: "Proposal and Agreement",
+    it: "Proposta e Accordo",
+  },
+  "terms-workflow-proposal-desc": {
+    en: "We prepare a detailed proposal with timeline and costs",
+    it: "Prepariamo una proposta dettagliata con tempistiche e costi",
+  },
+  "terms-workflow-development": {
+    en: "Development and Delivery",
+    it: "Sviluppo e Consegna",
+  },
+  "terms-workflow-development-desc": {
+    en: "We execute the project with regular updates and final delivery",
+    it: "Eseguiamo il progetto con aggiornamenti regolari e consegna finale",
+  },
+
+  // Client Obligations
+  "terms-client-obligations-title": {
+    en: "Client Obligations",
+    it: "Obblighi del Cliente",
+  },
+  "terms-client-info": {
+    en: "Provide accurate and complete information necessary for project execution",
+    it: "Fornire informazioni accurate e complete necessarie per l'esecuzione del progetto",
+  },
+  "terms-client-feedback": {
+    en: "Provide timely feedback during development phases",
+    it: "Fornire feedback tempestivi durante le fasi di sviluppo",
+  },
+  "terms-client-content": {
+    en: "Provide all necessary content, materials, and assets",
+    it: "Fornire tutti i contenuti, materiali e asset necessari",
+  },
+  "terms-client-payment": {
+    en: "Make payments according to agreed terms",
+    it: "Effettuare pagamenti secondo i termini concordati",
+  },
+  "terms-client-cooperation": {
+    en: "Cooperate in testing and approval processes",
+    it: "Cooperare nei processi di test e approvazione",
+  },
+  "terms-client-legal": {
+    en: "Ensure all provided content complies with applicable laws",
+    it: "Garantire che tutti i contenuti forniti rispettino le leggi applicabili",
+  },
+
+  // Payment Terms
+  "terms-payment-title": {
+    en: "Payment Terms",
+    it: "Termini di Pagamento",
+  },
+  "terms-payment-terms": {
+    en: "Payment terms are specified in individual project agreements",
+    it: "I termini di pagamento sono specificati nei singoli accordi di progetto",
+  },
+  "terms-payment-advance": {
+    en: "An advance payment may be required before project commencement",
+    it: "Potrebbe essere richiesto un anticipo prima dell'inizio del progetto",
+  },
+  "terms-payment-schedule": {
+    en: "Payments are typically scheduled in milestones or monthly installments",
+    it: "I pagamenti sono tipicamente programmati per milestone o rate mensili",
+  },
+  "terms-payment-delay": {
+    en: "Payment delays may result in project suspension",
+    it: "Ritardi nei pagamenti possono comportare la sospensione del progetto",
+  },
+  "terms-payment-late": {
+    en: "Late payments may incur additional charges as specified in agreements",
+    it: "Pagamenti in ritardo possono comportare costi aggiuntivi come specificato negli accordi",
+  },
+  "terms-payment-currency": {
+    en: "All payments are in Euro unless otherwise specified",
+    it: "Tutti i pagamenti sono in Euro salvo diversa specifica",
+  },
+
+  // Intellectual Property
+  "terms-ip-title": {
+    en: "Intellectual Property",
+    it: "Proprietà Intellettuale",
+  },
+  "terms-ip-client-title": {
+    en: "Client IP Rights",
+    it: "Diritti IP del Cliente",
+  },
+  "terms-ip-client-content": {
+    en: "Upon full payment, clients own the intellectual property rights to custom-developed solutions, excluding our pre-existing tools, frameworks, and methodologies.",
+    it: "Al completamento del pagamento, i clienti posseggono i diritti di proprietà intellettuale delle soluzioni sviluppate su misura, esclusi i nostri strumenti, framework e metodologie preesistenti.",
+  },
+  "terms-ip-company-title": {
+    en: "Company IP Rights",
+    it: "Diritti IP dell'Azienda",
+  },
+  "terms-ip-company-content": {
+    en: "Space Design Italia retains rights to general methodologies, tools, techniques, and any improvements to our existing intellectual property developed during projects.",
+    it: "Space Design Italia mantiene i diritti su metodologie generali, strumenti, tecniche e qualsiasi miglioramento alla nostra proprietà intellettuale esistente sviluppato durante i progetti.",
+  },
+
+  // Warranties
+  "terms-warranties-title": {
+    en: "Warranties and Guarantees",
+    it: "Garanzie",
+  },
+  "terms-warranty-period": {
+    en: "Warranty Period",
+    it: "Periodo di Garanzia",
+  },
+  "terms-warranty-period-desc": {
+    en: "We provide a 90-day warranty for bug fixes on delivered software from the date of final delivery",
+    it: "Forniamo una garanzia di 90 giorni per la correzione di bug nel software consegnato dalla data di consegna finale",
+  },
+  "terms-warranty-exclusions": {
+    en: "Warranty Exclusions",
+    it: "Esclusioni dalla Garanzia",
+  },
+  "terms-warranty-exclusions-desc": {
+    en: "Warranty does not cover issues arising from client modifications, third-party integrations, or changes in external dependencies",
+    it: "La garanzia non copre problemi derivanti da modifiche del cliente, integrazioni di terze parti o cambiamenti nelle dipendenze esterne",
+  },
+
+  // Liability
+  "terms-liability-title": {
+    en: "Limitation of Liability",
+    it: "Limitazione di Responsabilità",
+  },
+  "terms-liability-content": {
+    en: "Our liability is limited to the total amount paid for the specific project. We are not liable for indirect, consequential, or incidental damages, lost profits, or business interruption.",
+    it: "La nostra responsabilità è limitata all'importo totale pagato per il progetto specifico. Non siamo responsabili per danni indiretti, consequenziali o accidentali, mancati profitti o interruzioni dell'attività.",
+  },
+
+  // Confidentiality
+  "terms-confidentiality-title": {
+    en: "Confidentiality",
+    it: "Riservatezza",
+  },
+  "terms-confidentiality-content": {
+    en: "Both parties agree to maintain strict confidentiality regarding proprietary information shared during the project. Non-disclosure agreements may be executed separately for additional protection.",
+    it: "Entrambe le parti si impegnano a mantenere stretta riservatezza riguardo alle informazioni proprietarie condivise durante il progetto. Accordi di non divulgazione possono essere stipulati separatamente per protezione aggiuntiva.",
+  },
+
+  // Termination
+  "terms-termination-title": {
+    en: "Termination",
+    it: "Risoluzione",
+  },
+  "terms-termination-notice": {
+    en: "Either party may terminate with 30 days written notice",
+    it: "Entrambe le parti possono risolvere con 30 giorni di preavviso scritto",
+  },
+  "terms-termination-breach": {
+    en: "Immediate termination is allowed for material breach of terms",
+    it: "È consentita la risoluzione immediata per violazione sostanziale dei termini",
+  },
+  "terms-termination-payment": {
+    en: "Payment is due for all work completed up to termination date",
+    it: "Il pagamento è dovuto per tutto il lavoro completato fino alla data di risoluzione",
+  },
+  "terms-termination-materials": {
+    en: "Upon termination, all project materials will be delivered in their current state",
+    it: "Al momento della risoluzione, tutti i materiali del progetto saranno consegnati nel loro stato attuale",
+  },
+
+  // Changes to Terms
+  "terms-changes-title": {
+    en: "Changes to Terms",
+    it: "Modifiche ai Termini",
+  },
+  "terms-changes-content": {
+    en: "We may update these terms periodically. Continued use of our services constitutes acceptance of updated terms. Material changes will be communicated via email or website notice.",
+    it: "Potremmo aggiornare questi termini periodicamente. L'uso continuato dei nostri servizi costituisce accettazione dei termini aggiornati. Le modifiche sostanziali saranno comunicate via email o avviso sul sito web.",
+  },
+
+  // Governing Law
+  "terms-law-title": {
+    en: "Governing Law",
+    it: "Legge Applicabile",
+  },
+  "terms-law-content": {
+    en: "These terms are governed by Italian law. Any disputes will be resolved in the competent courts of Italy.",
+    it: "Questi termini sono regolati dalla legge italiana. Eventuali controversie saranno risolte presso i tribunali competenti d'Italia.",
+  },
+
+  // Contact Information for Terms
+  "terms-contact-title": {
+    en: "Contact Information",
+    it: "Informazioni di Contatto",
+  },
+  "terms-contact-content": {
+    en: "For questions about these terms of service, contact us:",
+    it: "Per domande su questi termini di servizio, contattaci:",
+  },
+
+  "terms-services-content": {
+    en: "Space Design Italia provides software development, web development, mobile app development, and related technology consulting services. We reserve the right to modify, suspend, or discontinue any part of our services at any time.",
+    it: "Space Design Italia fornisce sviluppo software, sviluppo web, sviluppo di app mobile e servizi di consulenza tecnologica correlati. Ci riserviamo il diritto di modificare, sospendere o interrompere qualsiasi parte dei nostri servizi in qualsiasi momento.",
+  },
+
+  // Cookie Policy Translations
+  "cookie-hero-description": {
+    en: "Learn how we use cookies and similar technologies to improve your browsing experience and analyze website usage.",
+    it: "Scopri come utilizziamo i cookie e tecnologie simili per migliorare la tua esperienza di navigazione e analizzare l'utilizzo del sito web.",
+  },
+  "cookie-last-updated": {
+    en: "Last updated: 17/06/2024",
+    it: "Ultimo aggiornamento: 17/06/2024",
+  },
+  "cookie-what-are-title": {
+    en: "What Are Cookies",
+    it: "Cosa Sono i Cookie",
+  },
+  "cookie-what-are-content": {
+    en: "Cookies are small files stored on your device that help our website work better and remember your preferences.",
+    it: "I cookie sono piccoli file memorizzati sul tuo dispositivo che aiutano il nostro sito web a funzionare meglio e ricordare le tue preferenze.",
+  },
+
+  // Cookie Usage
+  "cookie-how-we-use-title": {
+    en: "How We Use Cookies",
+    it: "Come Utilizziamo i Cookie",
+  },
+  "cookie-how-we-use-content": {
+    en: "We use cookies for various purposes, including:",
+    it: "Utilizziamo i cookie per vari scopi, tra cui:",
+  },
+  "cookie-use-functionality": {
+    en: "Ensure proper website functionality",
+    it: "Garantire il corretto funzionamento del sito web",
+  },
+  "cookie-use-preferences": {
+    en: "Remember your preferences and settings",
+    it: "Ricordare le tue preferenze e impostazioni",
+  },
+  "cookie-use-analytics": {
+    en: "Analyze how the site is used to improve it",
+    it: "Analizzare come viene utilizzato il sito per migliorarlo",
+  },
+  "cookie-use-security": {
+    en: "Maintain site security",
+    it: "Mantenere la sicurezza del sito",
+  },
+  "cookie-use-marketing": {
+    en: "Personalize content and advertising (only with consent)",
+    it: "Personalizzare contenuti e pubblicità (solo con consenso)",
+  },
+
+  "cookie-types-title": {
+    en: "How We Use Cookies",
+    it: "Come Utilizziamo i Cookie",
+  },
+  "cookie-essential-title": {
+    en: "Essential Cookies",
+    it: "Cookie Essenziali",
+  },
+  "cookie-essential-content": {
+    en: "These cookies are necessary for the website to work properly. They cannot be disabled.",
+    it: "Questi cookie sono necessari per il corretto funzionamento del sito web. Non possono essere disabilitati.",
+  },
+  "cookie-essential-description": {
+    en: "These cookies are necessary for the website to function and cannot be disabled. They include:",
+    it: "Questi cookie sono necessari per il funzionamento del sito web e non possono essere disabilitati. Includono:",
+  },
+  "cookie-session": {
+    en: "Keep your session active during browsing",
+    it: "Mantengono la tua sessione attiva durante la navigazione",
+  },
+  "cookie-security": {
+    en: "Protect against attacks and fraud",
+    it: "Proteggono da attacchi e frodi",
+  },
+  "cookie-language": {
+    en: "Remember the selected language",
+    it: "Ricordano la lingua selezionata",
+  },
+  "cookie-consent": {
+    en: "Remember your cookie preferences",
+    it: "Ricordano le tue preferenze sui cookie",
+  },
+  "cookie-essential-duration": {
+    en: "Duration: Session or up to 1 year",
+    it: "Durata: Sessione o fino a 1 anno",
+  },
+
+  "cookie-analytics-title": {
+    en: "Analytics Cookies",
+    it: "Cookie di Analisi",
+  },
+  "cookie-analytics-content": {
+    en: "These cookies help us understand how visitors use our website to improve it.",
+    it: "Questi cookie ci aiutano a capire come i visitatori utilizzano il nostro sito web per migliorarlo.",
+  },
+  "cookie-analytics-description": {
+    en: "Help us understand how visitors interact with the site by collecting anonymous information:",
+    it: "Ci aiutano a capire come i visitatori interagiscono con il sito raccogliendo informazioni anonime:",
+  },
+  "cookie-ga": {
+    en: "Site usage statistics",
+    it: "Statistiche di utilizzo del sito",
+  },
+  "cookie-popular-pages": {
+    en: "Identify the most popular content",
+    it: "Identificano i contenuti più popolari",
+  },
+  "cookie-time": {
+    en: "Measure how long you spend on the site",
+    it: "Misurano quanto tempo passi sul sito",
+  },
+  "cookie-traffic-source": {
+    en: "Where visitors come from",
+    it: "Da dove arrivano i visitatori",
+  },
+  "cookie-analytics-duration": {
+    en: "Duration: Up to 2 years",
+    it: "Durata: Fino a 2 anni",
+  },
+
+  // Marketing Cookies
+  "cookie-marketing-title": {
+    en: "Marketing Cookies",
+    it: "Cookie di Marketing",
+  },
+  "cookie-marketing-description": {
+    en: "Used to display personalized advertising and measure campaign effectiveness:",
+    it: "Utilizzati per mostrare pubblicità personalizzata e misurare l'efficacia delle campagne:",
+  },
+  "cookie-remarketing": {
+    en: "Show ads on other sites based on your visit",
+    it: "Mostrano annunci su altri siti basati sulla tua visita",
+  },
+  "cookie-social": {
+    en: "Enable sharing on social networks",
+    it: "Permettono la condivisione sui social network",
+  },
+  "cookie-conversions": {
+    en: "Measure advertising campaign effectiveness",
+    it: "Misurano l'efficacia delle campagne pubblicitarie",
+  },
+  "cookie-marketing-duration": {
+    en: "Duration: Up to 1 year",
+    it: "Durata: Fino a 1 anno",
+  },
+  "cookie-marketing-consent": {
+    en: "These cookies require your explicit consent",
+    it: "Questi cookie richiedono il tuo consenso esplicito",
+  },
+
+  // Third Party Cookies
+  "cookie-third-party-title": {
+    en: "Third-Party Cookies",
+    it: "Cookie di Terze Parti",
+  },
+  "cookie-third-party-description": {
+    en: "Some cookies are set by external services that appear on our site:",
+    it: "Alcuni cookie sono impostati da servizi esterni che appaiono sul nostro sito:",
+  },
+  "cookie-third-party-note": {
+    en: "These services have their own cookie policies",
+    it: "Questi servizi hanno le proprie policy sui cookie",
+  },
+
+  "cookie-management-title": {
+    en: "Managing Cookies",
+    it: "Gestione Cookie",
+  },
+  "cookie-management-content": {
+    en: "You can control cookies through your browser settings or by using our cookie banner when you first visit our site.",
+    it: "Puoi controllare i cookie attraverso le impostazioni del tuo browser o utilizzando il nostro banner sui cookie quando visiti per la prima volta il nostro sito.",
+  },
+
+  // Cookie Preference Center
+  "cookie-preference-center": {
+    en: "Cookie Preference Center",
+    it: "Centro Preferenze Cookie",
+  },
+  "cookie-preference-center-desc": {
+    en: "You can manage your cookie preferences using our preference center:",
+    it: "Puoi gestire le tue preferenze sui cookie utilizzando il nostro centro preferenze:",
+  },
+  "cookie-manage-preferences": {
+    en: "Manage Cookie Preferences",
+    it: "Gestisci Preferenze Cookie",
+  },
+  "cookie-manage-note": {
+    en: "Click here to open the preference center and modify your cookie choices",
+    it: "Clicca qui per aprire il centro preferenze e modificare le tue scelte sui cookie",
+  },
+
+  // Browser Settings
+  "cookie-browser-settings": {
+    en: "Browser Settings",
+    it: "Impostazioni del Browser",
+  },
+  "cookie-browser-settings-desc": {
+    en: "You can also manage cookies directly from your browser settings:",
+    it: "Puoi anche gestire i cookie direttamente dalle impostazioni del tuo browser:",
+  },
+  "cookie-chrome-instructions": {
+    en: "Settings > Privacy and security > Cookies and other site data",
+    it: "Impostazioni > Privacy e sicurezza > Cookie e altri dati dei siti",
+  },
+  "cookie-firefox-instructions": {
+    en: "Preferences > Privacy & Security > Cookies and Site Data",
+    it: "Preferenze > Privacy e sicurezza > Cookie e dati dei siti web",
+  },
+  "cookie-safari-instructions": {
+    en: "Preferences > Privacy > Manage Website Data",
+    it: "Preferenze > Privacy > Gestisci dati siti web",
+  },
+  "cookie-edge-instructions": {
+    en: "Settings > Privacy, search, and services > Cookies and site permissions",
+    it: "Impostazioni > Privacy, ricerca e servizi > Cookie e autorizzazioni sito",
+  },
+
+  // Disable Effects
+  "cookie-disable-effects-title": {
+    en: "What Happens if You Disable Cookies",
+    it: "Cosa Succede se Disabiliti i Cookie",
+  },
+  "cookie-disable-essential": {
+    en: "Disabling Essential Cookies",
+    it: "Disabilitazione Cookie Essenziali",
+  },
+  "cookie-disable-essential-desc": {
+    en: "If you disable essential cookies, some parts of the site may not work properly. You may need to re-enter your preferences on each visit and some features may not be available.",
+    it: "Se disabiliti i cookie essenziali, alcune parti del sito potrebbero non funzionare correttamente. Potresti dover reinserire le tue preferenze ad ogni visita e alcune funzionalità potrebbero non essere disponibili.",
+  },
+  "cookie-disable-analytics": {
+    en: "Disabling Analytics Cookies",
+    it: "Disabilitazione Cookie Analitici",
+  },
+  "cookie-disable-analytics-desc": {
+    en: "Disabling analytics cookies will not compromise site functionality, but will prevent us from improving the user experience based on usage data.",
+    it: "Disabilitando i cookie analitici, non comprometterai la funzionalità del sito, ma ci impedirai di migliorare l'esperienza utente basandoci sui dati di utilizzo.",
+  },
+  "cookie-disable-marketing": {
+    en: "Disabling Marketing Cookies",
+    it: "Disabilitazione Cookie di Marketing",
+  },
+  "cookie-disable-marketing-desc": {
+    en: "Disabling marketing cookies means you'll still see advertising, but it won't be personalized based on your interests and browsing activity.",
+    it: "Disabilitando i cookie di marketing, continuerai a vedere pubblicità, ma queste non saranno personalizzate in base ai tuoi interessi e alla tua attività di navigazione.",
+  },
+
+  // Updates
+  "cookie-updates-title": {
+    en: "Updates to Cookie Policy",
+    it: "Aggiornamenti alla Cookie Policy",
+  },
+  "cookie-updates-content": {
+    en: "We may update this Cookie Policy from time to time to reflect changes in the cookies we use or for other operational, legal or regulatory reasons. We recommend checking this page regularly to stay informed about how we use cookies.",
+    it: "Possiamo aggiornare questa Cookie Policy di tanto in tanto per riflettere cambiamenti nei cookie che utilizziamo o per altri motivi operativi, legali o normativi. Ti consigliamo di consultare regolarmente questa pagina per rimanere informato su come utilizziamo i cookie.",
+  },
+
+  // Contact
+  "cookie-contact-title": {
+    en: "Contact",
+    it: "Contatti",
+  },
+  "cookie-contact-content": {
+    en: "If you have questions about our Cookie Policy or how we use cookies, you can contact us:",
+    it: "Se hai domande sulla nostra Cookie Policy o su come utilizziamo i cookie, puoi contattarci:",
+  },
+
+  // GDPR Translations
+  "gdpr-full-name": {
+    en: "General Data Protection Regulation",
+    it: "Regolamento Generale sulla Protezione dei Dati",
+  },
+  "gdpr-hero-description": {
+    en: "Your rights under GDPR and how Space Design Italia protects your personal data",
+    it: "I tuoi diritti secondo il GDPR e come Space Design Italia protegge i tuoi dati personali",
+  },
+  "gdpr-last-updated": {
+    en: "Last updated: 17/06/2025",
+    it: "Ultimo aggiornamento: 17/06/2025",
+  },
+  "gdpr-introduction-title": {
+    en: "1. Introduction to GDPR",
+    it: "1. Introduzione al GDPR",
+  },
+  "gdpr-introduction-content": {
+    en: "The General Data Protection Regulation (GDPR) came into force on May 25, 2018 and represents the most advanced data protection legislation in the world. Space Design Italia is committed to fully complying with all GDPR requirements to ensure maximum protection of your personal data.",
+    it: "Il Regolamento Generale sulla Protezione dei Dati (GDPR) è entrato in vigore il 25 maggio 2018 e rappresenta la normativa più avanzata al mondo in materia di protezione dei dati personali. Space Design Italia si impegna a rispettare pienamente tutti i requisiti del GDPR per garantire la massima protezione dei tuoi dati personali.",
+  },
+  "gdpr-compliance-title": {
+    en: "2. Our Compliance",
+    it: "2. La Nostra Conformità",
+  },
+  "gdpr-compliance-content": {
+    en: "As a company that processes personal data, we are committed to:",
+    it: "Come azienda che tratta dati personali, ci impegniamo a:",
+  },
+  "gdpr-compliance-1": {
+    en: "Process data lawfully, fairly and transparently",
+    it: "Trattare i dati in modo lecito, corretto e trasparente",
+  },
+  "gdpr-compliance-2": {
+    en: "Collect data only for specific and legitimate purposes",
+    it: "Raccogliere dati solo per finalità specifiche e legittime",
+  },
+  "gdpr-compliance-3": {
+    en: "Limit processing to the minimum necessary",
+    it: "Limitare il trattamento al minimo necessario",
+  },
+  "gdpr-compliance-4": {
+    en: "Keep data accurate and up to date",
+    it: "Mantenere i dati accurati e aggiornati",
+  },
+  "gdpr-compliance-5": {
+    en: "Retain data only for as long as necessary",
+    it: "Conservare i dati solo per il tempo necessario",
+  },
+  "gdpr-compliance-6": {
+    en: "Ensure data security",
+    it: "Garantire la sicurezza dei dati",
+  },
+  "gdpr-rights-title": {
+    en: "3. Your Rights",
+    it: "3. I Tuoi Diritti",
+  },
+  "gdpr-rights-intro": {
+    en: "GDPR grants you the following rights regarding your personal data:",
+    it: "Il GDPR ti garantisce i seguenti diritti riguardo ai tuoi dati personali:",
+  },
+  "gdpr-right-access": {
+    en: "Right of Access",
+    it: "Diritto di Accesso",
+  },
+  "gdpr-right-access-desc": {
+    en: "You have the right to know if we process your personal data and to obtain a free copy of all data we hold about you, along with information about how we use it.",
+    it: "Hai il diritto di sapere se trattiamo i tuoi dati personali e di ottenere una copia gratuita di tutti i dati che conserviamo su di te, insieme a informazioni su come li utilizziamo.",
+  },
+  "gdpr-right-rectification": {
+    en: "Right of Rectification",
+    it: "Diritto di Rettifica",
+  },
+  "gdpr-right-rectification-desc": {
+    en: "You have the right to have inaccurate personal data corrected or to complete incomplete data we hold about you.",
+    it: "Hai il diritto di far correggere i dati personali inesatti o di completare i dati incompleti che conserviamo su di te.",
+  },
+  "gdpr-right-erasure": {
+    en: "Right to Erasure",
+    it: "Diritto alla Cancellazione",
+  },
+  "gdpr-right-erasure-desc": {
+    en: "Also known as the 'right to be forgotten', it allows you to request the deletion of your personal data when it is no longer necessary for the purposes for which it was collected.",
+    it: "Noto anche come 'diritto all'oblio', ti permette di richiedere la cancellazione dei tuoi dati personali quando non sono più necessari per le finalità per cui sono stati raccolti.",
+  },
+  "gdpr-right-restriction": {
+    en: "Right to Restriction",
+    it: "Diritto di Limitazione",
+  },
+  "gdpr-right-restriction-desc": {
+    en: "You have the right to request restriction of processing of your personal data in certain circumstances, for example when you contest the accuracy of the data.",
+    it: "Hai il diritto di richiedere la limitazione del trattamento dei tuoi dati personali in determinate circostanze, ad esempio quando contesti l'accuratezza dei dati.",
+  },
+  "gdpr-right-portability": {
+    en: "Right to Data Portability",
+    it: "Diritto alla Portabilità",
+  },
+  "gdpr-right-portability-desc": {
+    en: "You have the right to receive your personal data in a structured, commonly used and machine-readable format, and to transmit that data to another data controller.",
+    it: "Hai il diritto di ricevere i tuoi dati personali in un formato strutturato, di uso comune e leggibile da dispositivo automatico, e di trasmettere tali dati a un altro titolare del trattamento.",
+  },
+  "gdpr-right-objection": {
+    en: "Right to Object",
+    it: "Diritto di Opposizione",
+  },
+  "gdpr-right-objection-desc": {
+    en: "You have the right to object to the processing of your personal data for direct marketing purposes or when processing is based on our legitimate interest.",
+    it: "Hai il diritto di opporti al trattamento dei tuoi dati personali per motivi di marketing diretto o quando il trattamento è basato sul nostro interesse legittimo.",
+  },
+  "gdpr-right-withdraw": {
+    en: "Right to Withdraw Consent",
+    it: "Diritto di Revoca del Consenso",
+  },
+  "gdpr-right-withdraw-desc": {
+    en: "When processing is based on consent, you have the right to withdraw your consent at any time, without affecting the lawfulness of processing based on consent before its withdrawal.",
+    it: "Quando il trattamento è basato sul consenso, hai il diritto di revocare il tuo consenso in qualsiasi momento, senza compromettere la liceità del trattamento basata sul consenso prestato prima della revoca.",
+  },
+  "gdpr-exercise-rights-title": {
+    en: "4. How to Exercise Your Rights",
+    it: "4. Come Esercitare i Tuoi Diritti",
+  },
+  "gdpr-exercise-rights-content": {
+    en: "To exercise any of your GDPR rights, you can contact us using the following methods:",
+    it: "Per esercitare uno qualsiasi dei tuoi diritti GDPR, puoi contattarci utilizzando i seguenti metodi:",
+  },
+  "gdpr-contact-email": {
+    en: "Email: privacy@spacedesignitalia.com",
+    it: "Email: privacy@spacedesignitalia.com",
+  },
+  "gdpr-contact-form": {
+    en: "Contact form on our website",
+    it: "Modulo di contatto sul nostro sito web",
+  },
+  "gdpr-contact-written": {
+    en: "Written communication to our registered office address",
+    it: "Comunicazione scritta all'indirizzo della sede legale",
+  },
+  "gdpr-response-time": {
+    en: "We will respond to your request within 30 days of receipt. In complex cases, this period may be extended by another 60 days, informing you of the reasons for the delay.",
+    it: "Risponderemo alla tua richiesta entro 30 giorni dalla ricezione. In casi complessi, questo periodo può essere esteso di altri 60 giorni, informandoti dei motivi del ritardo.",
+  },
+  "gdpr-data-controller-title": {
+    en: "5. Data Controller",
+    it: "5. Titolare del Trattamento",
+  },
+  "gdpr-data-controller-content": {
+    en: "Space Design Italia acts as the data controller for the personal data we collect and process. We are responsible for determining the purposes and means of processing your personal data and for ensuring that such processing complies with GDPR.",
+    it: "Space Design Italia agisce come titolare del trattamento per i dati personali che raccogliamo e trattiamo. Siamo responsabili di determinare le finalità e i mezzi del trattamento dei tuoi dati personali e di garantire che tale trattamento sia conforme al GDPR.",
+  },
+  "gdpr-security-title": {
+    en: "6. Security Measures",
+    it: "6. Misure di Sicurezza",
+  },
+  "gdpr-security-content": {
+    en: "We implement appropriate technical and organisational measures to ensure a level of security appropriate to the risk, including pseudonymisation and encryption of personal data, the ability to ensure the confidentiality, integrity, availability and resilience of processing systems.",
+    it: "Implementiamo misure tecniche e organizzative appropriate per garantire un livello di sicurezza adeguato al rischio, inclusi la pseudonimizzazione e la cifratura dei dati personali, la capacità di assicurare la riservatezza, l'integrità, la disponibilità e la resilienza dei sistemi di trattamento.",
+  },
+  "gdpr-breach-title": {
+    en: "7. Breach Notification",
+    it: "7. Notifica di Violazioni",
+  },
+  "gdpr-breach-content": {
+    en: "In the event of a personal data breach that is likely to result in a high risk to the rights and freedoms of natural persons, we will inform you without undue delay and in clear and plain language of the nature of the breach and the measures taken to address it.",
+    it: "In caso di violazione dei dati personali che possa comportare un rischio elevato per i diritti e le libertà delle persone fisiche, ti informeremo senza ingiustificato ritardo e in linguaggio semplice e chiaro della natura della violazione e delle misure adottate per affrontarla.",
+  },
+  "gdpr-authority-title": {
+    en: "8. Supervisory Authority",
+    it: "8. Autorità di Controllo",
+  },
+  "gdpr-authority-content": {
+    en: "You have the right to lodge a complaint with a supervisory authority, in particular in the Member State of your habitual residence, place of work or place of the alleged infringement. For Italy, the competent authority is the Garante per la Protezione dei Dati Personali.",
+    it: "Hai il diritto di presentare un reclamo a un'autorità di controllo, in particolare nello Stato membro in cui risiedi abitualmente, lavori o nel luogo dove si è verificata la presunta violazione. Per l'Italia, l'autorità competente è il Garante per la Protezione dei Dati Personali.",
+  },
+  "gdpr-contact-title": {
+    en: "9. Contact",
+    it: "9. Contatti",
+  },
+  "gdpr-contact-content": {
+    en: "For any questions related to GDPR or to exercise your rights, contact us:",
+    it: "Per qualsiasi domanda relativa al GDPR o per esercitare i tuoi diritti, contattaci:",
+  },
 };

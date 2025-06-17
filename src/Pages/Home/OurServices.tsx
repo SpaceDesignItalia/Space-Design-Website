@@ -21,12 +21,7 @@ const services = [
     title: "system-integration",
     description: "system-integration-desc",
     icon: "material-symbols:cloud-outline",
-    features: [
-      "cloud-integration",
-      "api-development",
-      "infrastructure-management",
-      "devops-ci-cd",
-    ],
+    features: ["cloud-integration", "api-development", "devops-ci-cd"],
   },
 ];
 

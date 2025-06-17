@@ -11,62 +11,40 @@ type SocialIconProps = Omit<IconProps, "icon">;
 
 const footerNavigation = {
   services: [
-    { name: "Mobile Apps", href: "/services/mobile-development" },
-    { name: "Web Applications", href: "/services/web-development" },
-    { name: "Websites", href: "/services/web-development" },
-    { name: "Custom Software", href: "/services/custom-software" },
-    { name: "Startup MVP", href: "/services/startup-mvp" },
-    { name: "Cloud Integration", href: "/services/cloud-integration" },
-    { name: "API Development", href: "/services/api-development" },
-    { name: "Legacy Systems", href: "/services/legacy-integration" },
-    { name: "Digital Strategy", href: "/services/digital-strategy" },
-    { name: "Technical Architecture", href: "/services/tech-architecture" },
-    { name: "Security Consulting", href: "/services/security" },
+    { nameKey: "mobile-apps", href: "/services/mobile-development" },
+    { nameKey: "websites", href: "/services/web-development" },
+    { nameKey: "custom-software", href: "/services/custom-software" },
+    { nameKey: "startup-mvp", href: "/services/startup-mvp" },
+    { nameKey: "ai-software", href: "/services/ai-software" },
+    { nameKey: "cloud-integration", href: "/services/cloud-integration" },
+    { nameKey: "api-development", href: "/services/api-development" },
+    { nameKey: "devops-ci-cd", href: "/services/devops" },
   ],
-  supportOptions: [
-    { name: "Documentation", href: "/docs" },
-    { name: "API Reference", href: "/api" },
-    { name: "Support Center", href: "/support" },
-    { name: "Contact Sales", href: "/contact" },
-  ],
-  aboutUs: [
-    { name: "About", href: "/about" },
-    { name: "Blog", href: "/blog" },
-    { name: "Careers", href: "/careers" },
-    { name: "Press", href: "/press" },
-    { name: "Partners", href: "/partners" },
-  ],
+  aboutUs: [{ nameKey: "about", href: "/about" }],
   legal: [
-    { name: "Privacy Policy", href: "/privacy" },
-    { name: "Terms of Service", href: "/terms" },
-    { name: "Cookie Policy", href: "/cookies" },
-    { name: "GDPR", href: "/gdpr" },
+    { nameKey: "footer-privacy-policy", href: "/privacy-policy" },
+    { nameKey: "footer-terms-of-service", href: "/terms-of-service" },
+    { nameKey: "footer-cookie-policy", href: "/cookie-policy" },
+    { nameKey: "footer-gdpr", href: "/gdpr" },
   ],
   social: [
     {
-      name: "Facebook",
+      nameKey: "footer-social-facebook",
       href: "https://facebook.com/spacedesignitalia",
       icon: (props: SocialIconProps) => (
         <Icon {...props} icon="fontisto:facebook" />
       ),
     },
     {
-      name: "Instagram",
+      nameKey: "footer-social-instagram",
       href: "https://instagram.com/spacedesignitalia",
       icon: (props: SocialIconProps) => (
         <Icon {...props} icon="fontisto:instagram" />
       ),
     },
     {
-      name: "Twitter",
-      href: "https://twitter.com/spacedesignitalia",
-      icon: (props: SocialIconProps) => (
-        <Icon {...props} icon="fontisto:twitter" />
-      ),
-    },
-    {
-      name: "LinkedIn",
-      href: "https://linkedin.com/company/spacedesignitalia",
+      nameKey: "footer-social-linkedin",
+      href: "https://www.linkedin.com/company/space-design-italia",
       icon: (props: SocialIconProps) => (
         <Icon {...props} icon="fontisto:linkedin" />
       ),
@@ -75,7 +53,7 @@ const footerNavigation = {
 };
 
 export default function Footer() {
-  const { language } = useLanguage();
+  const { language, t } = useLanguage();
 
   const renderList = React.useCallback(
     ({
@@ -83,13 +61,13 @@ export default function Footer() {
       items,
     }: {
       title: string;
-      items: { name: string; href: string }[];
+      items: { name?: string; nameKey?: string; href: string }[];
     }) => (
       <div>
         <h3 className="text-small font-semibold text-default-600">{title}</h3>
         <ul className="mt-6 space-y-4">
           {items.map((item) => (
-            <li key={item.name}>
+            <li key={item.nameKey || item.name}>
               <Link
                 className="text-default-400"
                 href={
@@ -100,14 +78,14 @@ export default function Footer() {
                 size="sm"
                 isExternal={item.href.startsWith("http")}
               >
-                {item.name}
+                {item.nameKey ? t(item.nameKey) : item.name}
               </Link>
             </li>
           ))}
         </ul>
       </div>
     ),
-    [language]
+    [language, t]
   );
 
   return (
@@ -129,34 +107,26 @@ export default function Footer() {
             <div className="flex space-x-6">
               {footerNavigation.social.map((item) => (
                 <Link
-                  key={item.name}
+                  key={item.nameKey}
                   isExternal
                   className="text-default-400"
                   href={item.href}
                 >
-                  <span className="sr-only">{item.name}</span>
+                  <span className="sr-only">{item.nameKey}</span>
                   <item.icon aria-hidden="true" className="w-6" />
                 </Link>
               ))}
             </div>
           </div>
-          <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
-            <div className="md:grid md:grid-cols-2 md:gap-8">
+          <div className="mt-16 grid grid-cols-1 gap-8 xl:col-span-2 xl:mt-0">
+            <div className="md:grid md:grid-cols-3 md:gap-8">
               <div>
                 {renderList({
-                  title: "Services",
+                  title: t("services") || "Servizi",
                   items: footerNavigation.services,
                 })}
               </div>
               <div className="mt-10 md:mt-0">
-                {renderList({
-                  title: "Support",
-                  items: footerNavigation.supportOptions,
-                })}
-              </div>
-            </div>
-            <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>
                 {renderList({
                   title: "About Us",
                   items: footerNavigation.aboutUs,

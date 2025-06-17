@@ -76,12 +76,6 @@ const services: Services = {
         descriptionKey: "api-development-desc",
       },
       {
-        name: "infrastructure-management",
-        href: "/services/infrastructure",
-        icon: "tabler:server-cog",
-        descriptionKey: "infrastructure-management-desc",
-      },
-      {
         name: "devops-ci-cd",
         href: "/services/devops",
         icon: "icon-park-outline:cycle-arrow",
