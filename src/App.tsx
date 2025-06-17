@@ -37,19 +37,15 @@ function LanguageRedirect() {
 
 function AppContent() {
   const location = useLocation();
-  const { cookiesAccepted } = useCookieConsent();
+  const { preferences, cookiesAccepted } = useCookieConsent();
 
   useEffect(() => {
-    if (cookiesAccepted) {
-      analytics.initGA();
-    }
-  }, [cookiesAccepted]);
-
-  useEffect(() => {
-    if (cookiesAccepted) {
+    // Track pageview solo se i cookie analitici sono accettati
+    if (cookiesAccepted && preferences.analytics) {
       analytics.pageview(location.pathname);
+      console.log("📊 Pageview tracked:", location.pathname);
     }
-  }, [location, cookiesAccepted]);
+  }, [location, cookiesAccepted, preferences.analytics]);
 
   return (
     <>

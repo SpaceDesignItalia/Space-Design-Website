@@ -4358,4 +4358,74 @@ export const translations: Translations = {
     en: "For any questions related to GDPR or to exercise your rights, contact us:",
     it: "Per qualsiasi domanda relativa al GDPR o per esercitare i tuoi diritti, contattaci:",
   },
+
+  // Cookie Banner Advanced Translations
+  "cookie-banner-title": {
+    en: "We use cookies to enhance your experience",
+    it: "Utilizziamo i cookie per migliorare la tua esperienza",
+  },
+  "cookie-banner-description": {
+    en: "We use cookies and similar technologies to provide you with a personalized experience and analyze our traffic. Choose which cookies you want to accept.",
+    it: "Utilizziamo cookie e tecnologie simili per offrirti un'esperienza personalizzata e analizzare il nostro traffico. Scegli quali cookie vuoi accettare.",
+  },
+  "cookie-banner-accept-all": {
+    en: "Accept All",
+    it: "Accetta Tutti",
+  },
+  "cookie-banner-reject-all": {
+    en: "Reject All",
+    it: "Rifiuta Tutti",
+  },
+  "cookie-banner-preferences": {
+    en: "Preferences",
+    it: "Preferenze",
+  },
+  "cookie-banner-essential-short": {
+    en: "Essential",
+    it: "Essenziali",
+  },
+  "cookie-banner-analytics-short": {
+    en: "Analytics",
+    it: "Analitici",
+  },
+  "cookie-banner-marketing-short": {
+    en: "Marketing",
+    it: "Marketing",
+  },
+  "cookie-preferences-title": {
+    en: "Cookie Preferences",
+    it: "Preferenze Cookie",
+  },
+  "cookie-preferences-description": {
+    en: "Choose which cookies you want to accept. You can change your preferences at any time.",
+    it: "Scegli quali cookie vuoi accettare. Puoi cambiare le tue preferenze in qualsiasi momento.",
+  },
+  "cookie-preferences-essential-desc": {
+    en: "Essential cookies are required for the basic functionality of the website. These cannot be disabled.",
+    it: "I cookie essenziali sono necessari per il funzionamento base del sito web. Questi non possono essere disabilitati.",
+  },
+  "cookie-preferences-analytics-desc": {
+    en: "Analytics cookies help us understand how visitors interact with our website by collecting and reporting information anonymously.",
+    it: "I cookie analitici ci aiutano a capire come i visitatori interagiscono con il nostro sito web raccogliendo e riportando informazioni in modo anonimo.",
+  },
+  "cookie-preferences-marketing-desc": {
+    en: "Marketing cookies are used to track visitors across websites. The intention is to display ads that are relevant and engaging for the individual user.",
+    it: "I cookie di marketing vengono utilizzati per tracciare i visitatori sui siti web. L'intenzione è quella di visualizzare annunci pertinenti e coinvolgenti per il singolo utente.",
+  },
+  "cookie-preferences-save": {
+    en: "Save Preferences",
+    it: "Salva Preferenze",
+  },
+  "cookie-preferences-close": {
+    en: "Close",
+    it: "Chiudi",
+  },
+  "cookie-preferences-learn-more": {
+    en: "Learn more in our Cookie Policy",
+    it: "Scopri di più nella nostra Cookie Policy",
+  },
+  "cookie-banner-powered-by": {
+    en: "Powered by Space Design Italia",
+    it: "Alimentato da Space Design Italia",
+  },
 };

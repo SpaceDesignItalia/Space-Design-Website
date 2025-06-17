@@ -1,5 +1,6 @@
 import SEO from "../../Components/SEO";
 import { useLanguage } from "../../context/LanguageContext";
+import { useCookieConsent } from "../../context/CookieConsentContext";
 import { motion } from "framer-motion";
 
 const fadeInUp = {
@@ -10,6 +11,7 @@ const fadeInUp = {
 
 export default function CookiePolicy() {
   const { t, language } = useLanguage();
+  const { openPreferences } = useCookieConsent();
 
   return (
     <>
@@ -282,7 +284,10 @@ export default function CookiePolicy() {
                           "Puoi gestire le tue preferenze sui cookie utilizzando il nostro centro preferenze:"}
                       </p>
                       <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
-                        <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-colors">
+                        <button
+                          onClick={openPreferences}
+                          className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-colors"
+                        >
                           {t("cookie-manage-preferences") ||
                             "Gestisci Preferenze Cookie"}
                         </button>
