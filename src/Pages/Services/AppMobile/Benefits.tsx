@@ -23,6 +23,34 @@ const scaleIn = {
   transition: { duration: 0.5, ease: "easeOut" },
 };
 
+const iconAnimation = {
+  initial: { scale: 0, rotate: -180 },
+  animate: { scale: 1, rotate: 0 },
+  transition: { duration: 0.5, ease: "backOut" },
+};
+
+const titleAnimation = {
+  initial: { opacity: 0, x: -20 },
+  animate: { opacity: 1, x: 0 },
+  transition: { duration: 0.5, ease: "easeOut" },
+};
+
+const descriptionAnimation = {
+  initial: { opacity: 0, y: 10 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 0.5, delay: 0.2, ease: "easeOut" },
+};
+
+const phoneAnimation = {
+  initial: { opacity: 0, y: 50 },
+  animate: { opacity: 1, y: 0 },
+  transition: {
+    duration: 0.8,
+    ease: [0.6, -0.05, 0.01, 0.99],
+    delay: 0.2,
+  },
+};
+
 export default function Benefits() {
   const { t } = useLanguage();
 
@@ -65,49 +93,68 @@ export default function Benefits() {
         <motion.div
           initial="initial"
           whileInView="animate"
-          viewport={{ once: true }}
+          viewport={{ once: true, margin: "-100px" }}
           variants={stagger}
           className="grid lg:grid-cols-2 gap-12 items-center"
         >
           <motion.div variants={fadeInUp} className="space-y-8">
-            <div>
+            <motion.div variants={titleAnimation}>
               <h2 className="text-3xl font-bold text-primary dark:text-primary">
                 {t("mobile-benefits-title") ||
                   "Perché Scegliere le Nostre App Mobile"}
               </h2>
-              <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
+              <motion.p
+                variants={descriptionAnimation}
+                className="mt-4 text-lg text-gray-600 dark:text-gray-300"
+              >
                 {t("mobile-benefits-description") ||
                   "App semplici da usare che fanno crescere il tuo business"}
-              </p>
-            </div>
+              </motion.p>
+            </motion.div>
 
             <div className="space-y-4">
               {benefits.map((benefit, index) => (
                 <motion.div
                   key={index}
                   variants={fadeInUp}
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
                   className="flex items-start gap-4 p-4 bg-primary/5 dark:bg-primary/10 rounded-xl"
                 >
-                  <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-primary dark:bg-primary flex items-center justify-center">
+                  <motion.div
+                    variants={iconAnimation}
+                    className="flex-shrink-0 w-10 h-10 rounded-lg bg-primary dark:bg-primary flex items-center justify-center"
+                  >
                     <Icon
                       icon={benefit.icon}
                       className="h-5 w-5 text-white dark:text-white"
                     />
-                  </div>
+                  </motion.div>
                   <div>
-                    <h3 className="font-semibold text-primary dark:text-primary">
+                    <motion.h3
+                      variants={titleAnimation}
+                      className="font-semibold text-primary dark:text-primary"
+                    >
                       {benefit.title}
-                    </h3>
-                    <p className="text-gray-600 dark:text-gray-300 text-sm mt-1">
+                    </motion.h3>
+                    <motion.p
+                      variants={descriptionAnimation}
+                      className="text-gray-600 dark:text-gray-300 text-sm mt-1"
+                    >
                       {benefit.description}
-                    </p>
+                    </motion.p>
                   </div>
                 </motion.div>
               ))}
             </div>
           </motion.div>
 
-          <motion.div variants={scaleIn} className="relative">
+          <motion.div
+            variants={phoneAnimation}
+            className="relative"
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.3 }}
+          >
             <div className="flex items-center justify-center py-4">
               <Iphone15Pro
                 src="/imgs/app-mockup.png"

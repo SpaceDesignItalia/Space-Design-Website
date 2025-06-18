@@ -78,6 +78,22 @@ function AppContent() {
             <Route
               path="infrastructure"
               element={<div>Infrastructure Management</div>}
+              path="mobile-development"
+              element={<div>Mobile Development</div>}
+            />
+            <Route
+              path="web-development"
+              element={<div>Web Development</div>}
+            />
+            <Route path="websites" element={<div>Websites</div>} />
+            <Route
+              path="/:lang/services/custom-software"
+              element={<CustomSoftware />}
+            />
+            <Route path="startup-mvp" element={<div>Startup MVP</div>} />
+            <Route
+              path="cloud-integration"
+              element={<div>Cloud Integration</div>}
             />
             <Route
               path="legacy-integration"
