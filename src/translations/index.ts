@@ -42,6 +42,11 @@ export const translations: Translations = {
     it: "Scopri le nostre soluzioni",
   },
 
+  "trusted-by": {
+    en: "Trusted by",
+    it: "Ci hanno già scelto",
+  },
+
   // Services
   "software-development": {
     en: "Software Development",
@@ -322,8 +327,8 @@ export const translations: Translations = {
     it: "Un modello di collaborazione dinamico dove i costi riflettono il tempo e le risorse effettivamente investite. Ideale per progetti in evoluzione e innovazione continua.",
   },
   "fixed-price": {
-    en: "Fixed Price",
-    it: "Prezzo Fisso",
+    en: "Project",
+    it: "Progetto",
   },
   "fixed-price-desc": {
     en: "A structured approach with predefined scope and budget. Perfect for projects with clear requirements and specific timelines.",
@@ -4427,5 +4432,47 @@ export const translations: Translations = {
   "cookie-banner-powered-by": {
     en: "Powered by Space Design Italia",
     it: "Alimentato da Space Design Italia",
+  },
+
+  // Our Services Section
+  "our-services-section-title": {
+    en: "We transform your ideas into digital solutions",
+    it: "Trasformiamo le tue idee in soluzioni digitali",
+  },
+  "our-services-section-paragraph-1": {
+    en: "We are a software house that creates complete solutions for digital transformation. From web design to artificial intelligence, we cover every technological aspect to make your company grow.",
+    it: "Siamo una software house che realizza soluzioni complete per la trasformazione digitale. Dal web design all'intelligenza artificiale, copriamo ogni aspetto tecnologico per far crescere la tua azienda.",
+  },
+  "our-services-section-paragraph-2": {
+    en: "We develop web and mobile applications, create custom software and manage cloud infrastructures. Our mission is to simplify business processes through innovative technologies and tailored solutions.",
+    it: "Sviluppiamo applicazioni web e mobile, creiamo software personalizzato e gestiamo infrastrutture cloud. La nostra missione è semplificare i processi aziendali attraverso tecnologie innovative e soluzioni su misura.",
+  },
+  "our-services-section-paragraph-3": {
+    en: "We collaborate with startups and large companies to create digital products that generate real value. From strategy to maintenance, we are the technological partner that accompanies you towards success.",
+    it: "Collaboriamo con startup e grandi aziende per creare prodotti digitali che generano valore reale. Dalla strategia alla manutenzione, siamo il partner tecnologico che ti accompagna verso il successo.",
+  },
+  "projects-completed": {
+    en: "Completed Projects",
+    it: "Progetti Completati",
+  },
+  "years-experience": {
+    en: "Years of Experience",
+    it: "Anni di Esperienza",
+  },
+  technologies: {
+    en: "Technologies",
+    it: "Tecnologie",
+  },
+  "testimonial-text": {
+    en: "Space Design has completely transformed our digital presence. From the website to the mobile app, everything works perfectly and has significantly increased our operational efficiency.",
+    it: "Space Design ha trasformato completamente la nostra presenza digitale. Dal sito web all'app mobile, tutto funziona perfettamente e ha aumentato significativamente la nostra efficienza operativa.",
+  },
+  "testimonial-author": {
+    en: "Marco Rossi",
+    it: "Marco Rossi",
+  },
+  "testimonial-role": {
+    en: "CEO of TechCorp",
+    it: "CEO di TechCorp",
   },
 };

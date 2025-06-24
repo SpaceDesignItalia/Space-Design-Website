@@ -51,7 +51,7 @@ export default function CTA() {
                 <Button
                   radius="full"
                   className="bg-white w-4/6"
-                  onClick={handleContactClick}
+                  onPress={handleContactClick}
                 >
                   {t("cta-button")}
                   <Icon icon="mdi:arrow-right" />

@@ -2,6 +2,7 @@ import { Button } from "@heroui/react";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { useLanguage } from "../../context/LanguageContext";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const projectTypes = [
   {
@@ -19,7 +20,7 @@ const projectTypes = [
   },
   {
     nameKey: "fixed-price",
-    icon: "material-symbols--price-check",
+    icon: "material-symbols:folder",
     id: "fixed-price",
     href: "#",
     descriptionKey: "fixed-price-desc",
@@ -110,7 +111,13 @@ const subtitleVariants = {
 };
 
 export default function ProjectTypes() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+  const navigate = useNavigate();
+
+  const handleContactClick = () => {
+    navigate(`/${language}/contact`);
+  };
+
   return (
     <div className="isolate overflow-hidden bg-primary">
       <div className="mx-auto max-w-7xl px-6 pb-96 pt-24 text-center sm:pt-32 lg:px-8">
@@ -244,7 +251,7 @@ export default function ProjectTypes() {
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.2 }}
                 >
-                  <Button href="#" color="primary">
+                  <Button onPress={handleContactClick} color="primary">
                     {t("contact-us")} <span aria-hidden="true">&rarr;</span>
                   </Button>
                 </motion.div>

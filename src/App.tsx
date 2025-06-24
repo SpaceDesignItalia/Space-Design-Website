@@ -1,5 +1,5 @@
 import { Route, Routes, Navigate } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import Contact from "./Pages/Contact/Contact";
@@ -38,6 +38,7 @@ function LanguageRedirect() {
 function AppContent() {
   const location = useLocation();
   const { preferences, cookiesAccepted } = useCookieConsent();
+  const prevPathRef = useRef<string>("");
 
   useEffect(() => {
     // Track pageview solo se i cookie analitici sono accettati
@@ -46,6 +47,19 @@ function AppContent() {
       console.log("📊 Pageview tracked:", location.pathname);
     }
   }, [location, cookiesAccepted, preferences.analytics]);
+
+  // Effetto per far tornare la vista in cima solo se cambio pagina, non lingua
+  useEffect(() => {
+    // Estrai il percorso senza la lingua (es. "/it/about" -> "/about")
+    const pathWithoutLang = location.pathname.split("/").slice(2).join("/");
+    const currentPath = pathWithoutLang || "/";
+
+    // Se il percorso è cambiato (non la lingua), scrolla in cima
+    if (prevPathRef.current !== currentPath) {
+      window.scrollTo(0, 0);
+      prevPathRef.current = currentPath;
+    }
+  }, [location.pathname]);
 
   return (
     <>
@@ -78,22 +92,6 @@ function AppContent() {
             <Route
               path="infrastructure"
               element={<div>Infrastructure Management</div>}
-              path="mobile-development"
-              element={<div>Mobile Development</div>}
-            />
-            <Route
-              path="web-development"
-              element={<div>Web Development</div>}
-            />
-            <Route path="websites" element={<div>Websites</div>} />
-            <Route
-              path="/:lang/services/custom-software"
-              element={<CustomSoftware />}
-            />
-            <Route path="startup-mvp" element={<div>Startup MVP</div>} />
-            <Route
-              path="cloud-integration"
-              element={<div>Cloud Integration</div>}
             />
             <Route
               path="legacy-integration"
