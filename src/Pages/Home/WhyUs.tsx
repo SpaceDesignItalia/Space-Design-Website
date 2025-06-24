@@ -1,8 +1,60 @@
-import { ResponsiveContainer, AreaChart, Area, YAxis } from "recharts";
-import { cn } from "@heroui/react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useLanguage } from "../../context/LanguageContext";
 import { useRef } from "react";
+import ScrollingBanner from "../../Components/Home/ScrollingBanner";
+
+// Array di membri del team con stile Apple
+const teamMembers = [
+  {
+    id: 1,
+    name: "Marco Rossi",
+    role: "Lead Developer",
+    avatar: "/Imgs/Home/memoji/memoji2.avif",
+    color: "bg-blue-500",
+  },
+  {
+    id: 2,
+    name: "Elena Ferraro",
+    role: "UX Designer",
+    avatar: "/Imgs/Home/memoji/memoji1.avif",
+    color: "bg-purple-500",
+  },
+  {
+    id: 3,
+    name: "Luca Bianchi",
+    role: "Product Manager",
+    avatar: "/Imgs/Home/memoji/memoji4.avif",
+    color: "bg-green-500",
+  },
+  {
+    id: 4,
+    name: "Sara Rinaldi",
+    role: "Frontend Engineer",
+    avatar: "/Imgs/Home/memoji/memoji3.avif",
+    color: "bg-pink-500",
+  },
+  {
+    id: 5,
+    name: "Giovanni Gialli",
+    role: "Backend Developer",
+    avatar: "/Imgs/Home/memoji/memoji5.avif",
+    color: "bg-orange-500",
+  },
+  {
+    id: 6,
+    name: "Davide Conti",
+    role: "DevOps Engineer",
+    avatar: "/Imgs/Home/memoji/memoji7.avif",
+    color: "bg-indigo-500",
+  },
+  {
+    id: 7,
+    name: "Matteo De Angelis",
+    role: "Mobile Developer",
+    avatar: "/Imgs/Home/memoji/memoji6.avif",
+    color: "bg-teal-500",
+  },
+];
 
 const chartData = [
   { value: 10 },
@@ -217,55 +269,36 @@ export default function WhyUs() {
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-bl-[calc(2rem+1px)]">
               <motion.div
                 variants={imageVariants}
-                className="h-80 bg-gray-800/50 p-4 overflow-hidden"
+                className="h-80 relative overflow-hidden flex items-center"
               >
-                <div className="space-y-4">
-                  {/* Code editor-like interface */}
-                  <div className="flex items-center space-x-2 mb-4">
-                    <div className="w-3 h-3 rounded-full bg-red-500" />
-                    <div className="w-3 h-3 rounded-full bg-yellow-500" />
-                    <div className="w-3 h-3 rounded-full bg-green-500" />
-                    <span className="ml-2 text-gray-400 text-sm">
-                      team-project.tsx
-                    </span>
-                  </div>
+                <ScrollingBanner shouldPauseOnHover duration={50} gap="20px">
+                  {teamMembers.map((member) => (
+                    <div
+                      key={member.id}
+                      className="flex-shrink-0 w-56 h-32 bg-gray-800 rounded-lg border border-gray-700 p-4 flex items-center space-x-3 hover:bg-gray-700 transition-colors duration-200"
+                    >
+                      {member.avatar.startsWith("/") ? (
+                        <img
+                          src={member.avatar}
+                          alt={member.name}
+                          className="w-12 h-12 rounded-lg object-cover"
+                        />
+                      ) : (
+                        <div className="w-12 h-12 rounded-lg bg-gray-600 flex items-center justify-center text-xl">
+                          {member.avatar}
+                        </div>
+                      )}
 
-                  {/* Code snippets */}
-                  <div className="font-mono text-sm">
-                    <p className="text-blue-400">
-                      function InnovativeTeam() {"{"}
-                    </p>
-                    <p className="pl-4 text-green-400">
-                      // Giovani sviluppatori al lavoro
-                    </p>
-                    <p className="pl-4 text-purple-400">
-                      const technologies = ["React", "Node.js", "AI", "Cloud"];
-                    </p>
-                    <p className="pl-4 text-orange-400">
-                      const passion = "Infinite";
-                    </p>
-                    <p className="pl-4 text-yellow-400">
-                      const innovation = true;
-                    </p>
-                    <p className="text-blue-400">{"}"}</p>
-                  </div>
-
-                  {/* Commit messages */}
-                  <div className="mt-6 space-y-2">
-                    <div className="flex items-center text-sm text-gray-400">
-                      <div className="w-6 h-6 rounded-full bg-green-600 flex items-center justify-center mr-2">
-                        ✓
+                      <div className="flex-1 min-w-0">
+                        <h4 className="text-white font-medium text-sm">
+                          {member.name}
+                        </h4>
+                        <p className="text-gray-400 text-xs">{member.role}</p>
                       </div>
-                      <span>Feature: Implementata nuova UI dashboard</span>
                     </div>
-                    <div className="flex items-center text-sm text-gray-400">
-                      <div className="w-6 h-6 rounded-full bg-blue-600 flex items-center justify-center mr-2">
-                        ⟲
-                      </div>
-                      <span>Update: Ottimizzazione performance</span>
-                    </div>
-                  </div>
-                </div>
+                  ))}
+                </ScrollingBanner>
+                <div className="absolute inset-0 bg-primary/20" />
               </motion.div>
               <motion.div variants={contentVariants} className="p-10 pt-4">
                 <h3 className="text-sm/4 font-semibold text-gray-300">
@@ -290,76 +323,31 @@ export default function WhyUs() {
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-br-[calc(2rem+1px)]">
               <motion.div
                 variants={imageVariants}
-                className="h-80 bg-gray-800/50 backdrop-blur-sm"
+                className="h-80 bg-primary relative overflow-hidden"
               >
-                <ResponsiveContainer
-                  className="[&_.recharts-surface]:outline-none"
-                  width="100%"
-                >
-                  <AreaChart accessibilityLayer data={chartData}>
-                    <defs>
-                      <linearGradient
-                        id={"colorUv" + index}
-                        x1="0"
-                        x2="0"
-                        y1="0"
-                        y2="1"
-                      >
-                        <stop
-                          offset="5%"
-                          stopColor={cn({
-                            "hsl(var(--heroui-foreground))":
-                              color === "default",
-                            "hsl(var(--heroui-success))": color === "success",
-                            "hsl(var(--heroui-danger))": color === "danger",
-                            "hsl(var(--heroui-warning))": color === "warning",
-                            "hsl(var(--heroui-secondary))":
-                              color === "secondary",
-                            "hsl(var(--heroui-primary))": color === "primary",
-                          })}
-                          stopOpacity={0.2}
-                        />
-                        <stop
-                          offset="10%"
-                          stopColor={cn({
-                            "hsl(var(--heroui-foreground))":
-                              color === "default",
-                            "hsl(var(--heroui-success))": color === "success",
-                            "hsl(var(--heroui-danger))": color === "danger",
-                            "hsl(var(--heroui-warning))": color === "warning",
-                            "hsl(var(--heroui-secondary))":
-                              color === "secondary",
-                            "hsl(var(--heroui-primary))": color === "primary",
-                          })}
-                          stopOpacity={0}
-                        />
-                      </linearGradient>
-                    </defs>
-                    <YAxis
-                      domain={[
-                        Math.min(...chartData.map((d) => d.value)),
-                        "auto",
-                      ]}
-                      hide={true}
-                    />
-                    <Area
-                      dataKey="value"
-                      type="monotone"
-                      fill={`url(#colorUv${index})`}
-                      stroke={cn({
-                        "hsl(var(--heroui-foreground))": color === "default",
-                        "hsl(var(--heroui-success))": color === "success",
-                        "hsl(var(--heroui-danger))": color === "danger",
-                        "hsl(var(--heroui-warning))": color === "warning",
-                        "hsl(var(--heroui-secondary))": color === "secondary",
-                        "hsl(var(--heroui-primary))": color === "primary",
-                      })}
-                      strokeWidth={2}
-                      fillOpacity={0.15}
-                      animationDuration={1500}
-                    />
-                  </AreaChart>
-                </ResponsiveContainer>
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="text-center space-y-12">
+                    {/* Single elegant progress indicator */}
+                    <div className="relative">
+                      <div className="w-24 h-24 rounded-full border-2 border-white/20 flex items-center justify-center">
+                        <div className="w-20 h-20 rounded-full border-2 border-white border-t-transparent animate-spin"></div>
+                      </div>
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <span className="text-white text-xl font-light">∞</span>
+                      </div>
+                    </div>
+
+                    {/* Minimal text */}
+                    <div className="space-y-2">
+                      <div className="text-white text-lg font-light tracking-wide">
+                        Miglioramento
+                      </div>
+                      <div className="text-white/70 text-sm font-light">
+                        Continuo
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </motion.div>
               <motion.div variants={contentVariants} className="p-10 pt-4">
                 <h3 className="text-sm/4 font-semibold text-gray-300">
