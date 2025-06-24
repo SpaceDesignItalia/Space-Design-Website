@@ -1,4 +1,4 @@
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import { useLanguage } from "../../context/LanguageContext";
 import { useRef } from "react";
 import ScrollingBanner from "../../Components/Home/ScrollingBanner";
@@ -55,25 +55,6 @@ const teamMembers = [
     color: "bg-teal-500",
   },
 ];
-
-const chartData = [
-  { value: 10 },
-  { value: 15 },
-  { value: 12 },
-  { value: 18 },
-  { value: 20 },
-  { value: 25 },
-];
-
-const index = 0;
-const changeType: "positive" | "negative" | "neutral" = "positive";
-const color:
-  | "default"
-  | "success"
-  | "danger"
-  | "warning"
-  | "secondary"
-  | "primary" = "success";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -144,15 +125,6 @@ const contentVariants = {
 export default function WhyUs() {
   const { t } = useLanguage();
   const containerRef = useRef<HTMLDivElement>(null);
-
-  // Traccia lo scroll relativo al container
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start 0.8", "start 0.2"],
-  });
-
-  // Larghezza della rivelazione (da 0% a 100%)
-  const revealWidth = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
   return (
     <div ref={containerRef} className="bg-primary py-24 sm:py-32">
@@ -323,29 +295,137 @@ export default function WhyUs() {
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-br-[calc(2rem+1px)]">
               <motion.div
                 variants={imageVariants}
-                className="h-80 bg-primary relative overflow-hidden"
+                className="h-80 bg-gradient-to-br from-slate-800 to-slate-600 relative overflow-hidden"
               >
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center space-y-12">
-                    {/* Single elegant progress indicator */}
-                    <div className="relative">
-                      <div className="w-24 h-24 rounded-full border-2 border-white/20 flex items-center justify-center">
-                        <div className="w-20 h-20 rounded-full border-2 border-white border-t-transparent animate-spin"></div>
-                      </div>
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <span className="text-white text-xl font-light">∞</span>
-                      </div>
-                    </div>
+                <div className="absolute inset-0 flex items-center justify-center p-6">
+                  <div className="text-center w-full">
+                    {/* Curva di crescita minimalista */}
+                    <motion.div
+                      className="mb-8"
+                      initial={{ opacity: 0, scale: 0.9 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      transition={{ delay: 0.3, duration: 0.8 }}
+                    >
+                      <div className="relative w-full h-32">
+                        <svg
+                          className="w-full h-full"
+                          viewBox="0 0 200 100"
+                          preserveAspectRatio="none"
+                        >
+                          {/* Curva di crescita semplice */}
+                          <motion.path
+                            d="M10 90 Q30 85 60 40 Q90 15 190 10"
+                            fill="none"
+                            stroke="white"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeDasharray="300"
+                            strokeDashoffset="300"
+                            initial={{ strokeDashoffset: 300 }}
+                            animate={{ strokeDashoffset: 0 }}
+                            transition={{
+                              duration: 2,
+                              delay: 0.5,
+                              ease: "easeOut",
+                            }}
+                          />
 
-                    {/* Minimal text */}
-                    <div className="space-y-2">
-                      <div className="text-white text-lg font-light tracking-wide">
-                        Miglioramento
+                          {/* Frecce verso l'alto */}
+                          <motion.path
+                            d="M25 80 L25 70 L20 75 L25 70 L30 75"
+                            fill="none"
+                            stroke="white"
+                            strokeWidth="1.5"
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ delay: 1, duration: 0.3 }}
+                          />
+                          <motion.path
+                            d="M45 65 L45 55 L40 60 L45 55 L50 60"
+                            fill="none"
+                            stroke="white"
+                            strokeWidth="1.5"
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ delay: 1.2, duration: 0.3 }}
+                          />
+                          <motion.path
+                            d="M65 45 L65 35 L60 40 L65 35 L70 40"
+                            fill="none"
+                            stroke="white"
+                            strokeWidth="1.5"
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ delay: 1.4, duration: 0.3 }}
+                          />
+                          <motion.path
+                            d="M85 25 L85 15 L80 20 L85 15 L90 20"
+                            fill="none"
+                            stroke="white"
+                            strokeWidth="1.5"
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ delay: 1.6, duration: 0.3 }}
+                          />
+                          <motion.path
+                            d="M105 20 L105 10 L100 15 L105 10 L110 15"
+                            fill="none"
+                            stroke="white"
+                            strokeWidth="1.5"
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ delay: 1.8, duration: 0.3 }}
+                          />
+                          <motion.path
+                            d="M125 18 L125 8 L120 13 L125 8 L130 13"
+                            fill="none"
+                            stroke="white"
+                            strokeWidth="1.5"
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ delay: 2, duration: 0.3 }}
+                          />
+                          <motion.path
+                            d="M145 16 L145 6 L140 11 L145 6 L150 11"
+                            fill="none"
+                            stroke="white"
+                            strokeWidth="1.5"
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ delay: 2.2, duration: 0.3 }}
+                          />
+                          <motion.path
+                            d="M165 14 L165 4 L160 9 L165 4 L170 9"
+                            fill="none"
+                            stroke="white"
+                            strokeWidth="1.5"
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ delay: 2.4, duration: 0.3 }}
+                          />
+                          <motion.path
+                            d="M185 12 L185 2 L180 7 L185 2 L190 7"
+                            fill="none"
+                            stroke="white"
+                            strokeWidth="1.5"
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ delay: 2.6, duration: 0.3 }}
+                          />
+                        </svg>
                       </div>
-                      <div className="text-white/70 text-sm font-light">
-                        Continuo
+                    </motion.div>
+
+                    {/* Testo semplice */}
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: 1.2, duration: 0.6 }}
+                    >
+                      <div className="text-white/80 text-sm font-light">
+                        Crescita Continua
                       </div>
-                    </div>
+                    </motion.div>
                   </div>
                 </div>
               </motion.div>
