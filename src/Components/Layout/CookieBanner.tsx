@@ -16,21 +16,16 @@ export default function CookieBanner() {
     showBanner,
     showPreferences,
     preferences,
-    cookiesAccepted,
     acceptAllCookies,
     rejectAllCookies,
     savePreferences,
     openPreferences,
     closePreferences,
-    resetConsent,
   } = useCookieConsent();
 
   const { language, t } = useLanguage();
   const [localPreferences, setLocalPreferences] =
     useState<CookiePreferences>(preferences);
-
-  // Debug info (only in development)
-  const isDevelopment = import.meta.env.DEV;
 
   const handleSavePreferences = () => {
     savePreferences(localPreferences);
