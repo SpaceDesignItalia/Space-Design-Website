@@ -1,17 +1,28 @@
+import { useLanguage } from "../../../context/LanguageContext";
+import { useNavigate } from "react-router-dom";
+import { Button } from "@heroui/react";
+import { Icon } from "@iconify/react";
+
 export default function ServiceStack() {
+  const { t, language } = useLanguage();
+  const navigate = useNavigate();
+
+  const handleContactClick = () => {
+    navigate(`/${language}/contact`);
+  };
+
   return (
     <div className="bg-primary py-24 sm:py-32">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-base/7 font-semibold text-white tracking-wider uppercase">
-            Tecnologie Moderne
+            {t("mobile-stack-title")}
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-pretty text-4xl font-bold tracking-tight text-white sm:text-5xl">
-            Sviluppiamo la tua app meglio di chiunque altro
+            {t("mobile-stack-headline")}
           </p>
           <p className="mt-6 text-lg text-white/90 max-w-2xl mx-auto">
-            Soluzioni innovative e personalizzate per trasformare la tua visione
-            in realtà
+            {t("mobile-stack-subtitle")}
           </p>
         </div>
 
@@ -65,30 +76,34 @@ export default function ServiceStack() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-white">
-                      Mobile Apps
+                      {t("mobile-apps-title")}
                     </h3>
-                    <p className="text-sm text-white/80">iOS & Android</p>
+                    <p className="text-sm text-white/80">
+                      {t("mobile-apps-subtitle")}
+                    </p>
                   </div>
                 </div>
                 <p className="text-white/90 mb-6">
-                  Creiamo app native performanti e intuitive per entrambe le
-                  piattaforme, garantendo la migliore esperienza utente
-                  possibile.
+                  {t("mobile-apps-description")}
                 </p>
                 <div className="space-y-3">
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-white"></div>
                     <span className="text-sm text-white">
-                      Swift & Objective-C
+                      {t("mobile-tech-swift")}
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-white"></div>
-                    <span className="text-sm text-white">Kotlin & Java</span>
+                    <span className="text-sm text-white">
+                      {t("mobile-tech-kotlin")}
+                    </span>
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-white"></div>
-                    <span className="text-sm text-white">UI/UX Design</span>
+                    <span className="text-sm text-white">
+                      {t("mobile-tech-uiux")}
+                    </span>
                   </div>
                 </div>
               </div>
@@ -145,39 +160,43 @@ export default function ServiceStack() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-white">Expo</h3>
+                    <h3 className="text-lg font-semibold text-white">
+                      {t("mobile-expo-title")}
+                    </h3>
                     <p className="text-sm text-white/80">
-                      Development & Testing
+                      {t("mobile-expo-subtitle")}
                     </p>
                   </div>
                 </div>
                 <p className="text-white/90 mb-6">
-                  Ampliamo la portabilità e l'accessibilità del tuo progetto,
-                  permettendo di sviluppare e testare applicazioni anche sul
-                  web.
+                  {t("mobile-expo-description")}
                 </p>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="space-y-3">
                     <div className="flex items-center gap-2">
                       <div className="w-2 h-2 rounded-full bg-white"></div>
-                      <span className="text-sm text-white">Expo SDK</span>
+                      <span className="text-sm text-white">
+                        {t("mobile-tech-expo-sdk")}
+                      </span>
                     </div>
                     <div className="flex items-center gap-2">
                       <div className="w-2 h-2 rounded-full bg-white"></div>
-                      <span className="text-sm text-white">Live Reload</span>
+                      <span className="text-sm text-white">
+                        {t("mobile-tech-live-reload")}
+                      </span>
                     </div>
                   </div>
                   <div className="space-y-3">
                     <div className="flex items-center gap-2">
                       <div className="w-2 h-2 rounded-full bg-white"></div>
                       <span className="text-sm text-white">
-                        Over-the-air Updates
+                        {t("mobile-tech-ota-updates")}
                       </span>
                     </div>
                     <div className="flex items-center gap-2">
                       <div className="w-2 h-2 rounded-full bg-white"></div>
                       <span className="text-sm text-white">
-                        Push Notifications
+                        {t("mobile-tech-push-notifications")}
                       </span>
                     </div>
                   </div>
@@ -235,37 +254,54 @@ export default function ServiceStack() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-white">
-                      Assistenza
+                      {t("mobile-support-title")}
                     </h3>
                     <p className="text-sm text-white/80">
-                      Support & Maintenance
+                      {t("mobile-support-subtitle")}
                     </p>
                   </div>
                 </div>
                 <p className="text-white/90 mb-6">
-                  Offriamo contratti di manutenzione post rilascio e supporto
-                  tecnico dedicato per garantire il perfetto funzionamento della
-                  tua app.
+                  {t("mobile-support-description")}
                 </p>
                 <div className="space-y-3">
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-white"></div>
-                    <span className="text-sm text-white">24/7 Support</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 rounded-full bg-white"></div>
-                    <span className="text-sm text-white">Bug Fixing</span>
+                    <span className="text-sm text-white">
+                      {t("mobile-tech-24-7-support")}
+                    </span>
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-white"></div>
                     <span className="text-sm text-white">
-                      Performance Optimization
+                      {t("mobile-tech-bug-fixing")}
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 rounded-full bg-white"></div>
+                    <span className="text-sm text-white">
+                      {t("mobile-tech-performance-optimization")}
                     </span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Aggiungo il pulsante "Richiedi Preventivo" */}
+        <div className="text-center mt-16">
+          <Button
+            size="lg"
+            radius="full"
+            onPress={handleContactClick}
+            className="bg-white text-black hover:bg-gray-100 px-8 py-4 text-lg font-semibold"
+            endContent={
+              <Icon icon="material-symbols:arrow-forward" className="text-xl" />
+            }
+          >
+            {t("get-quote")}
+          </Button>
         </div>
       </div>
     </div>

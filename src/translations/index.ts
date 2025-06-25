@@ -586,6 +586,10 @@ export const translations: Translations = {
     en: "⚡ The best projects start with a conversation",
     it: "⚡ I migliori progetti partono con una conversazione",
   },
+  "custom-pricing-note": {
+    en: "Every project is unique. Contact us for a custom quote.",
+    it: "Ogni progetto è unico. Contattaci per un preventivo personalizzato.",
+  },
 
   // About Section
   "about-hero-title": {
@@ -4474,5 +4478,97 @@ export const translations: Translations = {
   "testimonial-role": {
     en: "CEO of TechCorp",
     it: "CEO di TechCorp",
+  },
+
+  // Mobile Development ServiceStack
+  "mobile-stack-title": {
+    en: "Modern Technologies",
+    it: "Tecnologie Moderne",
+  },
+  "mobile-stack-headline": {
+    en: "We develop your app better than anyone else",
+    it: "Sviluppiamo la tua app meglio di chiunque altro",
+  },
+  "mobile-stack-subtitle": {
+    en: "Innovative and personalized solutions to transform your vision into reality",
+    it: "Soluzioni innovative e personalizzate per trasformare la tua visione in realtà",
+  },
+  "mobile-apps-title": {
+    en: "Mobile Apps",
+    it: "Mobile Apps",
+  },
+  "mobile-apps-subtitle": {
+    en: "iOS & Android",
+    it: "iOS & Android",
+  },
+  "mobile-apps-description": {
+    en: "We create high-performance and intuitive native apps for both platforms, ensuring the best possible user experience.",
+    it: "Creiamo app native performanti e intuitive per entrambe le piattaforme, garantendo la migliore esperienza utente possibile.",
+  },
+  "mobile-expo-title": {
+    en: "Expo",
+    it: "Expo",
+  },
+  "mobile-expo-subtitle": {
+    en: "Development & Testing",
+    it: "Development & Testing",
+  },
+  "mobile-expo-description": {
+    en: "We expand the portability and accessibility of your project, allowing you to develop and test applications on the web too.",
+    it: "Ampliamo la portabilità e l'accessibilità del tuo progetto, permettendo di sviluppare e testare applicazioni anche sul web.",
+  },
+  "mobile-support-title": {
+    en: "Support",
+    it: "Assistenza",
+  },
+  "mobile-support-subtitle": {
+    en: "Support & Maintenance",
+    it: "Support & Maintenance",
+  },
+  "mobile-support-description": {
+    en: "We offer post-release maintenance contracts and dedicated technical support to ensure the perfect functioning of your app.",
+    it: "Offriamo contratti di manutenzione post rilascio e supporto tecnico dedicato per garantire il perfetto funzionamento della tua app.",
+  },
+
+  // Mobile Technologies
+  "mobile-tech-swift": {
+    en: "Swift & Objective-C",
+    it: "Swift & Objective-C",
+  },
+  "mobile-tech-kotlin": {
+    en: "Kotlin & Java",
+    it: "Kotlin & Java",
+  },
+  "mobile-tech-uiux": {
+    en: "UI/UX Design",
+    it: "Design UI/UX",
+  },
+  "mobile-tech-expo-sdk": {
+    en: "Expo SDK",
+    it: "Expo SDK",
+  },
+  "mobile-tech-live-reload": {
+    en: "Live Reload",
+    it: "Live Reload",
+  },
+  "mobile-tech-ota-updates": {
+    en: "Over-the-air Updates",
+    it: "Aggiornamenti OTA",
+  },
+  "mobile-tech-push-notifications": {
+    en: "Push Notifications",
+    it: "Notifiche Push",
+  },
+  "mobile-tech-24-7-support": {
+    en: "24/7 Support",
+    it: "Supporto 24/7",
+  },
+  "mobile-tech-bug-fixing": {
+    en: "Bug Fixing",
+    it: "Correzione Bug",
+  },
+  "mobile-tech-performance-optimization": {
+    en: "Performance Optimization",
+    it: "Ottimizzazione Performance",
   },
 };

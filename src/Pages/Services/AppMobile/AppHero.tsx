@@ -2,9 +2,15 @@ import { Button } from "@heroui/react";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { motion } from "framer-motion";
 import { useLanguage } from "../../../context/LanguageContext";
+import { useNavigate } from "react-router-dom";
 
 export default function AppHero() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+  const navigate = useNavigate();
+
+  const handleContactClick = () => {
+    navigate(`/${language}/contact`);
+  };
 
   const fadeInUp = {
     initial: { opacity: 0, y: 30 },
@@ -69,17 +75,19 @@ export default function AppHero() {
 
           <motion.div
             variants={fadeInUp}
-            className="mt-12"
+            className="mt-12 relative z-50"
             animate={pulseAnimation}
           >
             <Button
               size="lg"
               color="primary"
               radius="full"
+              onPress={handleContactClick}
+              className="bg-black text-white hover:bg-gray-800 px-8 py-4 text-lg font-semibold relative z-50 cursor-pointer"
               endContent={
                 <Icon
                   icon="material-symbols:arrow-forward"
-                  className="ml-2 text-xl"
+                  className="text-xl"
                 />
               }
             >
