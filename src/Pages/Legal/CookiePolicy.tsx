@@ -34,7 +34,7 @@ export default function CookiePolicy() {
         }}
       />
 
-      <div className="min-h-screen bg-white dark:bg-gray-900">
+      <div className="min-h-screen bg-white dark:bg-black">
         {/* Hero Section */}
         <section className="relative py-24 sm:py-32">
           <div className="mx-auto max-w-4xl px-6 lg:px-8">
@@ -44,10 +44,10 @@ export default function CookiePolicy() {
               variants={fadeInUp}
               className="text-center"
             >
-              <h1 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-6xl">
+              <h1 className="text-4xl font-bold tracking-tight text-black dark:text-white sm:text-6xl">
                 {t("footer-cookie-policy") || "Cookie Policy"}
               </h1>
-              <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
+              <p className="mt-6 text-lg leading-8 text-gray-700 dark:text-gray-300">
                 {t("cookie-hero-description") ||
                   "Informazioni sui cookie utilizzati sul nostro sito web e come gestire le tue preferenze"}
               </p>
@@ -70,10 +70,10 @@ export default function CookiePolicy() {
               <div className="space-y-8">
                 {/* Cosa sono i cookie */}
                 <div>
-                  <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                  <h2 className="text-2xl font-bold text-black dark:text-white mb-4">
                     {t("cookie-what-are-title") || "1. Cosa sono i Cookie"}
                   </h2>
-                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                     {t("cookie-what-are-content") ||
                       "I cookie sono piccoli file di testo che vengono memorizzati sul tuo dispositivo quando visiti il nostro sito web. Questi file permettono al sito di ricordare le tue azioni e preferenze (come lingua, dimensione del testo e altre impostazioni di visualizzazione) per un periodo di tempo, così non devi reinserirle ogni volta che torni sul sito o navighi da una pagina all'altra."}
                   </p>
@@ -81,15 +81,15 @@ export default function CookiePolicy() {
 
                 {/* Come utilizziamo i cookie */}
                 <div>
-                  <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                  <h2 className="text-2xl font-bold text-black dark:text-white mb-4">
                     {t("cookie-how-we-use-title") ||
                       "2. Come Utilizziamo i Cookie"}
                   </h2>
-                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
                     {t("cookie-how-we-use-content") ||
                       "Utilizziamo i cookie per vari scopi, tra cui:"}
                   </p>
-                  <ul className="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300">
+                  <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
                     <li>
                       {t("cookie-use-functionality") ||
                         "Garantire il corretto funzionamento del sito web"}
@@ -115,22 +115,22 @@ export default function CookiePolicy() {
 
                 {/* Tipi di cookie */}
                 <div>
-                  <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                  <h2 className="text-2xl font-bold text-black dark:text-white mb-4">
                     {t("cookie-types-title") ||
                       "3. Tipi di Cookie che Utilizziamo"}
                   </h2>
 
                   <div className="space-y-6">
                     {/* Cookie essenziali */}
-                    <div className="border-l-4 border-blue-500 pl-4">
-                      <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                    <div className="border-l-4 border-black dark:border-white pl-4">
+                      <h3 className="text-xl font-semibold text-black dark:text-white mb-2">
                         {t("cookie-essential-title") || "Cookie Essenziali"}
                       </h3>
-                      <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-2">
+                      <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-2">
                         {t("cookie-essential-description") ||
                           "Questi cookie sono necessari per il funzionamento del sito web e non possono essere disabilitati. Includono:"}
                       </p>
-                      <ul className="list-disc list-inside space-y-1 text-gray-600 dark:text-gray-300 text-sm">
+                      <ul className="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300 text-sm">
                         <li>
                           <strong>Sessione:</strong>{" "}
                           {t("cookie-session") ||
@@ -159,15 +159,15 @@ export default function CookiePolicy() {
                     </div>
 
                     {/* Cookie analitici */}
-                    <div className="border-l-4 border-green-500 pl-4">
-                      <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                    <div className="border-l-4 border-gray-600 dark:border-gray-400 pl-4">
+                      <h3 className="text-xl font-semibold text-black dark:text-white mb-2">
                         {t("cookie-analytics-title") || "Cookie Analitici"}
                       </h3>
-                      <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-2">
+                      <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-2">
                         {t("cookie-analytics-description") ||
                           "Ci aiutano a capire come i visitatori interagiscono con il sito raccogliendo informazioni anonime:"}
                       </p>
-                      <ul className="list-disc list-inside space-y-1 text-gray-600 dark:text-gray-300 text-sm">
+                      <ul className="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300 text-sm">
                         <li>
                           <strong>Google Analytics:</strong>{" "}
                           {t("cookie-ga") || "Statistiche di utilizzo del sito"}
@@ -195,15 +195,15 @@ export default function CookiePolicy() {
                     </div>
 
                     {/* Cookie di marketing */}
-                    <div className="border-l-4 border-orange-500 pl-4">
-                      <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                    <div className="border-l-4 border-gray-800 dark:border-gray-300 pl-4">
+                      <h3 className="text-xl font-semibold text-black dark:text-white mb-2">
                         {t("cookie-marketing-title") || "Cookie di Marketing"}
                       </h3>
-                      <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-2">
+                      <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-2">
                         {t("cookie-marketing-description") ||
                           "Utilizzati per mostrare pubblicità personalizzata e misurare l'efficacia delle campagne:"}
                       </p>
-                      <ul className="list-disc list-inside space-y-1 text-gray-600 dark:text-gray-300 text-sm">
+                      <ul className="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300 text-sm">
                         <li>
                           <strong>Remarketing:</strong>{" "}
                           {t("cookie-remarketing") ||
@@ -224,8 +224,8 @@ export default function CookiePolicy() {
                         {t("cookie-marketing-duration") ||
                           "Durata: Fino a 1 anno"}
                       </p>
-                      <div className="mt-2 p-2 bg-orange-50 dark:bg-orange-900/20 rounded">
-                        <p className="text-sm text-orange-700 dark:text-orange-300">
+                      <div className="mt-2 p-2 bg-gray-100 dark:bg-gray-800 rounded border border-gray-300 dark:border-gray-600">
+                        <p className="text-sm text-gray-800 dark:text-gray-200">
                           ⚠️{" "}
                           {t("cookie-marketing-consent") ||
                             "Questi cookie richiedono il tuo consenso esplicito"}
@@ -234,16 +234,16 @@ export default function CookiePolicy() {
                     </div>
 
                     {/* Cookie di terze parti */}
-                    <div className="border-l-4 border-purple-500 pl-4">
-                      <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                    <div className="border-l-4 border-gray-500 dark:border-gray-500 pl-4">
+                      <h3 className="text-xl font-semibold text-black dark:text-white mb-2">
                         {t("cookie-third-party-title") ||
                           "Cookie di Terze Parti"}
                       </h3>
-                      <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-2">
+                      <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-2">
                         {t("cookie-third-party-description") ||
                           "Alcuni cookie sono impostati da servizi esterni che appaiono sul nostro sito:"}
                       </p>
-                      <ul className="list-disc list-inside space-y-1 text-gray-600 dark:text-gray-300 text-sm">
+                      <ul className="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300 text-sm">
                         <li>
                           <strong>Google:</strong> Analytics, Maps, Fonts
                         </li>
@@ -268,30 +268,30 @@ export default function CookiePolicy() {
 
                 {/* Gestione cookie */}
                 <div>
-                  <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                  <h2 className="text-2xl font-bold text-black dark:text-white mb-4">
                     {t("cookie-management-title") || "4. Come Gestire i Cookie"}
                   </h2>
 
                   <div className="space-y-6">
                     {/* Centro preferenze */}
                     <div>
-                      <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                      <h3 className="text-xl font-semibold text-black dark:text-white mb-2">
                         {t("cookie-preference-center") ||
                           "Centro Preferenze Cookie"}
                       </h3>
-                      <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
+                      <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
                         {t("cookie-preference-center-desc") ||
                           "Puoi gestire le tue preferenze sui cookie utilizzando il nostro centro preferenze:"}
                       </p>
-                      <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
+                      <div className="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg border border-gray-300 dark:border-gray-600">
                         <button
                           onClick={openPreferences}
-                          className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-colors"
+                          className="bg-black hover:bg-gray-800 dark:bg-white dark:hover:bg-gray-200 text-white dark:text-black font-medium py-2 px-4 rounded-lg transition-colors"
                         >
                           {t("cookie-manage-preferences") ||
                             "Gestisci Preferenze Cookie"}
                         </button>
-                        <p className="text-sm text-blue-700 dark:text-blue-300 mt-2">
+                        <p className="text-sm text-gray-700 dark:text-gray-300 mt-2">
                           {t("cookie-manage-note") ||
                             "Clicca qui per aprire il centro preferenze e modificare le tue scelte sui cookie"}
                         </p>
@@ -300,48 +300,48 @@ export default function CookiePolicy() {
 
                     {/* Browser settings */}
                     <div>
-                      <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                      <h3 className="text-xl font-semibold text-black dark:text-white mb-2">
                         {t("cookie-browser-settings") ||
                           "Impostazioni del Browser"}
                       </h3>
-                      <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
+                      <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
                         {t("cookie-browser-settings-desc") ||
                           "Puoi anche gestire i cookie direttamente dalle impostazioni del tuo browser:"}
                       </p>
 
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div className="p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
-                          <h4 className="font-semibold text-gray-900 dark:text-white mb-2">
+                        <div className="p-4 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-900">
+                          <h4 className="font-semibold text-black dark:text-white mb-2">
                             Chrome
                           </h4>
-                          <p className="text-sm text-gray-600 dark:text-gray-300">
+                          <p className="text-sm text-gray-700 dark:text-gray-300">
                             {t("cookie-chrome-instructions") ||
                               "Impostazioni > Privacy e sicurezza > Cookie e altri dati dei siti"}
                           </p>
                         </div>
-                        <div className="p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
-                          <h4 className="font-semibold text-gray-900 dark:text-white mb-2">
+                        <div className="p-4 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-900">
+                          <h4 className="font-semibold text-black dark:text-white mb-2">
                             Firefox
                           </h4>
-                          <p className="text-sm text-gray-600 dark:text-gray-300">
+                          <p className="text-sm text-gray-700 dark:text-gray-300">
                             {t("cookie-firefox-instructions") ||
                               "Preferenze > Privacy e sicurezza > Cookie e dati dei siti web"}
                           </p>
                         </div>
-                        <div className="p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
-                          <h4 className="font-semibold text-gray-900 dark:text-white mb-2">
+                        <div className="p-4 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-900">
+                          <h4 className="font-semibold text-black dark:text-white mb-2">
                             Safari
                           </h4>
-                          <p className="text-sm text-gray-600 dark:text-gray-300">
+                          <p className="text-sm text-gray-700 dark:text-gray-300">
                             {t("cookie-safari-instructions") ||
                               "Preferenze > Privacy > Gestisci dati siti web"}
                           </p>
                         </div>
-                        <div className="p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
-                          <h4 className="font-semibold text-gray-900 dark:text-white mb-2">
+                        <div className="p-4 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-900">
+                          <h4 className="font-semibold text-black dark:text-white mb-2">
                             Edge
                           </h4>
-                          <p className="text-sm text-gray-600 dark:text-gray-300">
+                          <p className="text-sm text-gray-700 dark:text-gray-300">
                             {t("cookie-edge-instructions") ||
                               "Impostazioni > Privacy, ricerca e servizi > Cookie e autorizzazioni sito"}
                           </p>
@@ -353,37 +353,37 @@ export default function CookiePolicy() {
 
                 {/* Disabilitazione effetti */}
                 <div>
-                  <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                  <h2 className="text-2xl font-bold text-black dark:text-white mb-4">
                     {t("cookie-disable-effects-title") ||
                       "5. Cosa Succede se Disabiliti i Cookie"}
                   </h2>
                   <div className="space-y-4">
                     <div>
-                      <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                      <h3 className="text-lg font-semibold text-black dark:text-white mb-2">
                         {t("cookie-disable-essential") ||
                           "Disabilitazione Cookie Essenziali"}
                       </h3>
-                      <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                      <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                         {t("cookie-disable-essential-desc") ||
                           "Se disabiliti i cookie essenziali, alcune parti del sito potrebbero non funzionare correttamente. Potresti dover reinserire le tue preferenze ad ogni visita e alcune funzionalità potrebbero non essere disponibili."}
                       </p>
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                      <h3 className="text-lg font-semibold text-black dark:text-white mb-2">
                         {t("cookie-disable-analytics") ||
                           "Disabilitazione Cookie Analitici"}
                       </h3>
-                      <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                      <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                         {t("cookie-disable-analytics-desc") ||
                           "Disabilitando i cookie analitici, non comprometterai la funzionalità del sito, ma ci impedirai di migliorare l'esperienza utente basandoci sui dati di utilizzo."}
                       </p>
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                      <h3 className="text-lg font-semibold text-black dark:text-white mb-2">
                         {t("cookie-disable-marketing") ||
                           "Disabilitazione Cookie di Marketing"}
                       </h3>
-                      <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                      <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                         {t("cookie-disable-marketing-desc") ||
                           "Disabilitando i cookie di marketing, continuerai a vedere pubblicità, ma queste non saranno personalizzate in base ai tuoi interessi e alla tua attività di navigazione."}
                       </p>
@@ -393,11 +393,11 @@ export default function CookiePolicy() {
 
                 {/* Aggiornamenti */}
                 <div>
-                  <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                  <h2 className="text-2xl font-bold text-black dark:text-white mb-4">
                     {t("cookie-updates-title") ||
                       "6. Aggiornamenti alla Cookie Policy"}
                   </h2>
-                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                     {t("cookie-updates-content") ||
                       "Possiamo aggiornare questa Cookie Policy di tanto in tanto per riflettere cambiamenti nei cookie che utilizziamo o per altri motivi operativi, legali o normativi. Ti consigliamo di consultare regolarmente questa pagina per rimanere informato su come utilizziamo i cookie."}
                   </p>
@@ -405,24 +405,24 @@ export default function CookiePolicy() {
 
                 {/* Contatti */}
                 <div>
-                  <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                  <h2 className="text-2xl font-bold text-black dark:text-white mb-4">
                     {t("cookie-contact-title") || "7. Contatti"}
                   </h2>
-                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                     {t("cookie-contact-content") ||
                       "Se hai domande sulla nostra Cookie Policy o su come utilizziamo i cookie, puoi contattarci:"}
                   </p>
-                  <div className="mt-4 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
-                    <p className="font-semibold text-gray-900 dark:text-white">
+                  <div className="mt-4 p-4 bg-gray-100 dark:bg-gray-800 rounded-lg border border-gray-300 dark:border-gray-600">
+                    <p className="font-semibold text-black dark:text-white">
                       Space Design Italia
                     </p>
-                    <p className="text-gray-600 dark:text-gray-300">
+                    <p className="text-gray-700 dark:text-gray-300">
                       P.IVA: 07420400488
                     </p>
-                    <p className="text-gray-600 dark:text-gray-300">
+                    <p className="text-gray-700 dark:text-gray-300">
                       Email: privacy@spacedesignitalia.com
                     </p>
-                    <p className="text-gray-600 dark:text-gray-300">
+                    <p className="text-gray-700 dark:text-gray-300">
                       Sito web: www.spacedesignitalia.com
                     </p>
                   </div>

@@ -44,10 +44,6 @@ export default function CookieBanner() {
     }));
   };
 
-  if (!showBanner) {
-    return null;
-  }
-
   return (
     <>
       {/* Cookie Banner - Sobrio e discreto */}
@@ -128,7 +124,7 @@ export default function CookieBanner() {
         )}
       </AnimatePresence>
 
-      {/* Cookie Preferences Modal - Bianco e nero */}
+      {/* Cookie Preferences Modal - Rimosso il controllo showBanner */}
       <AnimatePresence>
         {showPreferences && (
           <motion.div
