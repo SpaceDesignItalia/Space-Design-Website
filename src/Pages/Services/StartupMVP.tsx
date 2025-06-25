@@ -231,13 +231,25 @@ export default function StartupMVP() {
   ];
 
   const benefits = [
-    t("mvp-benefit-1") || "Time-to-market ridotto del 70%",
-    t("mvp-benefit-2") || "Rischio d'investimento minimizzato",
-    t("mvp-benefit-3") || "Feedback reali da utenti target",
-    t("mvp-benefit-4") || "Iterazioni basate sui dati",
-    t("mvp-benefit-5") || "Scalabilità garantita",
-    t("mvp-benefit-6") || "Supporto continuo post-lancio",
+    t("mvp-benefit-1") || "Validazione rapida del mercato",
+    t("mvp-benefit-2") || "Tempo di lancio ridotto",
+    t("mvp-benefit-3") || "Costi di sviluppo ottimizzati",
+    t("mvp-benefit-4") || "Feedback utenti reali",
+    t("mvp-benefit-5") || "Iterazioni basate su dati",
+    t("mvp-benefit-6") || "Scalabilità futura garantita",
+    t("mvp-benefit-7") || "Tecnologie moderne",
+    t("mvp-benefit-8") || "Supporto post-lancio",
+    t("mvp-benefit-9") || "Analytics integrate",
   ];
+
+  const pulseAnimation = {
+    scale: [1, 1.05, 1],
+    transition: {
+      duration: 2,
+      repeat: Infinity,
+      ease: "easeInOut",
+    },
+  };
 
   const pricingPlans = [
     {
@@ -392,19 +404,32 @@ export default function StartupMVP() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.5 }}
-                className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
+                className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 relative z-[9999]"
               >
-                <Button
-                  size="lg"
-                  className="bg-black text-white dark:bg-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-200"
-                  endContent={<Icon icon="material-symbols:arrow-forward" />}
-                  onClick={handleContactClick}
+                <motion.div
+                  animate={pulseAnimation}
+                  className="relative z-[9999]"
                 >
-                  {t("start-mvp") || "Inizia il tuo MVP"}
-                </Button>
+                  <Button
+                    size="lg"
+                    color="primary"
+                    radius="full"
+                    className="bg-black text-white dark:bg-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-200 px-8 py-4 text-lg font-semibold relative z-[9999] cursor-pointer"
+                    endContent={
+                      <Icon
+                        icon="material-symbols:arrow-forward"
+                        className="text-xl"
+                      />
+                    }
+                    onPress={handleContactClick}
+                  >
+                    {t("start-mvp") || "Inizia il tuo MVP"}
+                  </Button>
+                </motion.div>
                 <Button
                   variant="bordered"
                   size="lg"
+                  radius="full"
                   className="border-gray-300 text-gray-700 dark:border-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800"
                 >
                   {t("view-success-stories") || "Storie di Successo"}
@@ -684,23 +709,31 @@ export default function StartupMVP() {
                   </ul>
 
                   <div className="space-y-3">
-                    <Button
-                      className={`w-full ${
-                        plan.popular
-                          ? "bg-gradient-to-r from-gray-800 to-gray-900 text-white dark:from-gray-200 dark:to-gray-100 dark:text-black hover:from-gray-700 hover:to-gray-800 dark:hover:from-gray-300 dark:hover:to-gray-200"
-                          : "bg-gray-900 text-white dark:bg-gray-100 dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200"
-                      } shadow-lg hover:shadow-xl transition-all duration-300`}
-                      size="lg"
-                      onClick={handleContactClick}
-                      endContent={
-                        <Icon icon="material-symbols:arrow-forward" />
-                      }
-                    >
-                      {t("get-quote") || "Richiedi Preventivo"}
-                    </Button>
+                    <motion.div animate={pulseAnimation}>
+                      <Button
+                        className={`w-full ${
+                          plan.popular
+                            ? "bg-gradient-to-r from-gray-800 to-gray-900 text-white dark:from-gray-200 dark:to-gray-100 dark:text-black hover:from-gray-700 hover:to-gray-800 dark:hover:from-gray-300 dark:hover:to-gray-200"
+                            : "bg-gray-900 text-white dark:bg-gray-100 dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200"
+                        } px-8 py-4 text-lg font-semibold relative z-[9999] cursor-pointer`}
+                        size="lg"
+                        color="primary"
+                        radius="full"
+                        onPress={handleContactClick}
+                        endContent={
+                          <Icon
+                            icon="material-symbols:arrow-forward"
+                            className="text-xl"
+                          />
+                        }
+                      >
+                        {t("get-quote") || "Richiedi Preventivo"}
+                      </Button>
+                    </motion.div>
 
                     <Button
                       variant="bordered"
+                      radius="full"
                       className="w-full border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800"
                       size="lg"
                     >
@@ -896,18 +929,31 @@ export default function StartupMVP() {
                 {t("mvp-cta-description") ||
                   "Parla con i nostri esperti e scopri come possiamo aiutarti a creare un MVP di successo"}
               </p>
-              <div className="mt-10 flex items-center justify-center gap-x-6">
-                <Button
-                  size="lg"
-                  className="bg-white text-black dark:bg-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800"
-                  endContent={<Icon icon="material-symbols:arrow-forward" />}
-                  onClick={handleContactClick}
+              <div className="mt-10 flex items-center justify-center gap-x-6 relative z-[9999]">
+                <motion.div
+                  animate={pulseAnimation}
+                  className="relative z-[9999]"
                 >
-                  {t("start-now") || "Inizia Ora"}
-                </Button>
+                  <Button
+                    size="lg"
+                    color="primary"
+                    radius="full"
+                    className="bg-white text-black dark:bg-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 px-8 py-4 text-lg font-semibold relative z-[9999] cursor-pointer"
+                    onPress={handleContactClick}
+                    endContent={
+                      <Icon
+                        icon="material-symbols:arrow-forward"
+                        className="text-xl"
+                      />
+                    }
+                  >
+                    {t("mvp-cta-button") || "Inizia il Tuo MVP"}
+                  </Button>
+                </motion.div>
                 <Button
                   variant="bordered"
                   size="lg"
+                  radius="full"
                   className="border-white text-white dark:border-black dark:text-black hover:bg-white/10 dark:hover:bg-black/10"
                 >
                   {t("book-call") || "Prenota una Call"}

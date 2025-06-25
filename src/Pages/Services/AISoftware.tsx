@@ -244,6 +244,15 @@ export default function AISoftware() {
     },
   ];
 
+  const pulseAnimation = {
+    scale: [1, 1.05, 1],
+    transition: {
+      duration: 2,
+      repeat: Infinity,
+      ease: "easeInOut",
+    },
+  };
+
   return (
     <>
       <SEO
@@ -346,19 +355,32 @@ export default function AISoftware() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.5 }}
-                className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
+                className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 relative z-[9999]"
               >
-                <Button
-                  size="lg"
-                  className="bg-black text-white dark:bg-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-200 shadow-lg"
-                  endContent={<Icon icon="material-symbols:arrow-forward" />}
-                  onClick={handleContactClick}
+                <motion.div
+                  animate={pulseAnimation}
+                  className="relative z-[9999]"
                 >
-                  {t("start-ai-project") || "Inizia il tuo Progetto AI"}
-                </Button>
+                  <Button
+                    size="lg"
+                    color="primary"
+                    radius="full"
+                    className="bg-black text-white dark:bg-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-200 px-8 py-4 text-lg font-semibold relative z-[9999] cursor-pointer"
+                    endContent={
+                      <Icon
+                        icon="material-symbols:arrow-forward"
+                        className="text-xl"
+                      />
+                    }
+                    onPress={handleContactClick}
+                  >
+                    {t("start-ai-project") || "Inizia il tuo Progetto AI"}
+                  </Button>
+                </motion.div>
                 <Button
                   variant="bordered"
                   size="lg"
+                  radius="full"
                   className="border-gray-300 text-gray-700 dark:border-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800"
                 >
                   {t("explore-solutions") || "Esplora le Soluzioni"}
@@ -770,18 +792,31 @@ export default function AISoftware() {
                 {t("ai-cta-description") ||
                   "Scopri come l'intelligenza artificiale può trasformare i tuoi processi e creare valore per la tua azienda"}
               </p>
-              <div className="mt-10 flex items-center justify-center gap-x-6">
-                <Button
-                  size="lg"
-                  className="bg-white text-black dark:bg-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 shadow-lg"
-                  endContent={<Icon icon="material-symbols:arrow-forward" />}
-                  onClick={handleContactClick}
+              <div className="mt-10 flex items-center justify-center gap-x-6 relative z-[9999]">
+                <motion.div
+                  animate={pulseAnimation}
+                  className="relative z-[9999]"
                 >
-                  {t("contact-ai-expert") || "Parla con un Esperto AI"}
-                </Button>
+                  <Button
+                    size="lg"
+                    color="primary"
+                    radius="full"
+                    className="bg-white text-black dark:bg-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 px-8 py-4 text-lg font-semibold relative z-[9999] cursor-pointer"
+                    endContent={
+                      <Icon
+                        icon="material-symbols:arrow-forward"
+                        className="text-xl"
+                      />
+                    }
+                    onPress={handleContactClick}
+                  >
+                    {t("contact-ai-expert") || "Parla con un Esperto AI"}
+                  </Button>
+                </motion.div>
                 <Button
                   variant="bordered"
                   size="lg"
+                  radius="full"
                   className="border-white text-white dark:border-black dark:text-black hover:bg-white/10 dark:hover:bg-black/10"
                 >
                   {t("view-ai-portfolio") || "Vedi il Portfolio AI"}

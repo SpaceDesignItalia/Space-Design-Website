@@ -135,6 +135,15 @@ export default function ApiDevelopment() {
     },
   ];
 
+  const pulseAnimation = {
+    scale: [1, 1.05, 1],
+    transition: {
+      duration: 2,
+      repeat: Infinity,
+      ease: "easeInOut",
+    },
+  };
+
   return (
     <>
       <SEO
@@ -227,17 +236,29 @@ export default function ApiDevelopment() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.6 }}
-                  className="flex flex-col sm:flex-row items-start sm:items-center gap-4"
+                  className="flex flex-col sm:flex-row items-start sm:items-center gap-4 relative z-[9999]"
                 >
-                  <Button
-                    size="lg"
-                    className="bg-black text-white dark:bg-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-200 shadow-lg"
-                    endContent={<Icon icon="material-symbols:arrow-forward" />}
-                    onClick={handleContactClick}
+                  <motion.div
+                    animate={pulseAnimation}
+                    className="relative z-[9999]"
                   >
-                    {t("api-development-request-consultation") ||
-                      "Richiedi Consulenza"}
-                  </Button>
+                    <Button
+                      size="lg"
+                      color="primary"
+                      radius="full"
+                      className="bg-black text-white dark:bg-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-200 px-8 py-4 text-lg font-semibold relative z-[9999] cursor-pointer"
+                      endContent={
+                        <Icon
+                          icon="material-symbols:arrow-forward"
+                          className="text-xl"
+                        />
+                      }
+                      onPress={handleContactClick}
+                    >
+                      {t("api-development-request-consultation") ||
+                        "Richiedi Consulenza"}
+                    </Button>
+                  </motion.div>
                   <div className="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400">
                     <Icon
                       icon="material-symbols:check-circle"
@@ -651,15 +672,27 @@ export default function ApiDevelopment() {
                   "Trasforma le tue integrazioni con API professionali. Contattaci per una consulenza personalizzata e scopri come possiamo connettere il tuo ecosistema digitale."}
               </p>
 
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-                <Button
-                  size="lg"
-                  className="bg-white text-black dark:bg-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 shadow-xl px-8 py-4"
-                  onClick={handleContactClick}
-                  endContent={<Icon icon="material-symbols:arrow-forward" />}
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-6 relative z-[9999]">
+                <motion.div
+                  animate={pulseAnimation}
+                  className="relative z-[9999]"
                 >
-                  {t("api-cta-button") || "Contattaci Ora"}
-                </Button>
+                  <Button
+                    size="lg"
+                    color="primary"
+                    radius="full"
+                    className="bg-white text-black dark:bg-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 px-8 py-4 text-lg font-semibold relative z-[9999] cursor-pointer"
+                    onPress={handleContactClick}
+                    endContent={
+                      <Icon
+                        icon="material-symbols:arrow-forward"
+                        className="text-xl"
+                      />
+                    }
+                  >
+                    {t("api-cta-button") || "Contattaci Ora"}
+                  </Button>
+                </motion.div>
 
                 <div className="flex items-center gap-4 text-white/80 dark:text-black/80">
                   <div className="flex items-center gap-2">

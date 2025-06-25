@@ -26,7 +26,7 @@ import LanguageLayout from "./Components/Layout/LanguageLayout";
 import Footer from "./Components/Layout/Footer";
 import CookieBanner from "./Components/Layout/CookieBanner";
 import * as analytics from "./utils/analytics";
-import CustomSoftware from "./Pages/Services/CustomSoftware/CustomSoftware";
+import CustomSoftware from "./Pages/Services/CustomSoftware";
 
 // Language redirect component
 function LanguageRedirect() {

@@ -28,6 +28,15 @@ const scaleIn = {
   transition: { duration: 0.5, ease: "easeOut" },
 };
 
+const pulseAnimation = {
+  scale: [1, 1.05, 1],
+  transition: {
+    duration: 2,
+    repeat: Infinity,
+    ease: "easeInOut",
+  },
+};
+
 export default function WebDevelopment() {
   const { t, language } = useLanguage();
   const navigate = useNavigate();
@@ -229,16 +238,29 @@ export default function WebDevelopment() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.6 }}
-                className="mt-10 flex items-center justify-center gap-x-6"
+                className="mt-10 flex items-center justify-center gap-x-6 relative z-[9999]"
+                whileHover={{ scale: 1.02 }}
               >
-                <Button
-                  size="lg"
-                  className="bg-black text-white hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200"
-                  endContent={<Icon icon="material-symbols:arrow-forward" />}
-                  onClick={handleContactClick}
+                <motion.div
+                  animate={pulseAnimation}
+                  className="relative z-[9999]"
                 >
-                  {t("get-quote") || "Richiedi Preventivo"}
-                </Button>
+                  <Button
+                    size="lg"
+                    color="primary"
+                    radius="full"
+                    className="bg-black text-white hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200 px-8 py-4 text-lg font-semibold relative z-[9999] cursor-pointer"
+                    endContent={
+                      <Icon
+                        icon="material-symbols:arrow-forward"
+                        className="text-xl"
+                      />
+                    }
+                    onPress={handleContactClick}
+                  >
+                    {t("get-quote") || "Richiedi Preventivo"}
+                  </Button>
+                </motion.div>
               </motion.div>
             </motion.div>
           </div>
@@ -630,14 +652,23 @@ export default function WebDevelopment() {
                   "Contattaci per discutere il tuo progetto e creare insieme il sito web perfetto per la tua azienda"}
               </p>
               <div className="mt-10">
-                <Button
-                  size="lg"
-                  className="bg-white text-black hover:bg-gray-100 dark:bg-black dark:text-white dark:hover:bg-gray-800"
-                  endContent={<Icon icon="material-symbols:arrow-forward" />}
-                  onClick={handleContactClick}
-                >
-                  {t("contact-us") || "Contattaci Ora"}
-                </Button>
+                <motion.div animate={pulseAnimation}>
+                  <Button
+                    size="lg"
+                    color="primary"
+                    radius="full"
+                    className="bg-white text-black hover:bg-gray-100 dark:bg-black dark:text-white dark:hover:bg-gray-800 px-8 py-4 text-lg font-semibold relative z-[9999] cursor-pointer"
+                    endContent={
+                      <Icon
+                        icon="material-symbols:arrow-forward"
+                        className="text-xl"
+                      />
+                    }
+                    onPress={handleContactClick}
+                  >
+                    {t("contact-us") || "Contattaci Ora"}
+                  </Button>
+                </motion.div>
               </div>
             </motion.div>
           </div>
