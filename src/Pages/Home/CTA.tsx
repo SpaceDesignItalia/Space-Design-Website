@@ -68,7 +68,7 @@ export default function CTA() {
           >
             <img
               alt="App screenshot"
-              src="/Imgs/Home/home-cta.webp"
+              src="/imgs/Home/home-cta.webp"
               width={1824}
               height={1080}
               className="absolute left-0 top-0 w-[57rem] max-w-none rounded-xl bg-white/5 ring-1 ring-white/10"

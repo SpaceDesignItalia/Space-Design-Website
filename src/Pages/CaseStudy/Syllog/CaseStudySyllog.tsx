@@ -248,7 +248,7 @@ export default function CaseStudySyllog() {
             ? `space design italia, syllog ai, refactoring, editor corsi, django, vue.js, sviluppo software, ${category.toLowerCase()}`
             : `space design italia, syllog ai, refactoring, course editor, django, vue.js, software development, ${category.toLowerCase()}`
         }
-        image="/Imgs/CaseStudy/SyllogHeading.png"
+        image="/imgs/CaseStudy/SyllogHeading.png"
         url={`/${language}/case-study/syllog`}
         alternateUrls={{
           it: "/it/case-study/syllog",
@@ -268,7 +268,7 @@ export default function CaseStudySyllog() {
           {/* Background Image with Parallax */}
           <motion.div className="absolute inset-0 z-0" style={{ y }}>
             <img
-              src="/Imgs/CaseStudy/SyllogHeading.png"
+              src="/imgs/CaseStudy/SyllogHeading.png"
               alt="Hero background"
               className="object-cover w-full h-full scale-110"
             />

@@ -9,49 +9,49 @@ const teamMembers = [
     id: 1,
     name: "Marco Rossi",
     role: "Lead Developer",
-    avatar: "/Imgs/Home/memoji/memoji2.avif",
+    avatar: "/imgs/Home/memoji/memoji2.avif",
     color: "bg-blue-500",
   },
   {
     id: 2,
     name: "Elena Ferraro",
     role: "UX Designer",
-    avatar: "/Imgs/Home/memoji/memoji1.avif",
+    avatar: "/imgs/Home/memoji/memoji1.avif",
     color: "bg-purple-500",
   },
   {
     id: 3,
     name: "Luca Bianchi",
     role: "Product Manager",
-    avatar: "/Imgs/Home/memoji/memoji4.avif",
+    avatar: "/imgs/Home/memoji/memoji4.avif",
     color: "bg-green-500",
   },
   {
     id: 4,
     name: "Sara Rinaldi",
     role: "Frontend Engineer",
-    avatar: "/Imgs/Home/memoji/memoji3.avif",
+    avatar: "/imgs/Home/memoji/memoji3.avif",
     color: "bg-pink-500",
   },
   {
     id: 5,
     name: "Giovanni Gialli",
     role: "Backend Developer",
-    avatar: "/Imgs/Home/memoji/memoji5.avif",
+    avatar: "/imgs/Home/memoji/memoji5.avif",
     color: "bg-orange-500",
   },
   {
     id: 6,
     name: "Davide Conti",
     role: "DevOps Engineer",
-    avatar: "/Imgs/Home/memoji/memoji7.avif",
+    avatar: "/imgs/Home/memoji/memoji7.avif",
     color: "bg-indigo-500",
   },
   {
     id: 7,
     name: "Matteo De Angelis",
     role: "Mobile Developer",
-    avatar: "/Imgs/Home/memoji/memoji6.avif",
+    avatar: "/imgs/Home/memoji/memoji6.avif",
     color: "bg-teal-500",
   },
 ];
@@ -153,7 +153,7 @@ export default function WhyUs() {
               <motion.img
                 variants={imageVariants}
                 alt={t("performance-subtitle")}
-                src="/Imgs/Home/why-1.webp"
+                src="/imgs/Home/why-1.webp"
                 className="h-80 object-cover object-left"
               />
               <motion.div variants={contentVariants} className="p-10 pt-4">
