@@ -89,7 +89,6 @@ export default function Navbar() {
   const { language, setLanguage, t } = useLanguage();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const [activeCategory, setActiveCategory] = useState<string>(
     Object.keys(services)[0]
@@ -117,10 +116,6 @@ export default function Navbar() {
   );
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
-    };
-
     const handleClickOutside = (event: MouseEvent) => {
       if (
         dropdownRef.current &&
@@ -130,11 +125,9 @@ export default function Navbar() {
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
     document.addEventListener("mousedown", handleClickOutside);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
@@ -143,11 +136,7 @@ export default function Navbar() {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed top-0 z-[100] w-full backdrop-blur-lg transition-all duration-300 ${
-        scrolled
-          ? "border-b border-gray-200 bg-white/90 shadow-sm dark:border-gray-800 dark:bg-background/90"
-          : "bg-transparent"
-      }`}
+      className="fixed top-0 z-[100] w-full bg-white border-b border-gray-200 shadow-sm dark:bg-gray-900 dark:border-gray-800"
       role="navigation"
       aria-label={t("main-navigation")}
     >

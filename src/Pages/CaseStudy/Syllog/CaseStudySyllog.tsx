@@ -12,7 +12,7 @@ const translations: Record<"it" | "en", Translations> = {
   it: {
     "syllog-title": "Refactoring rapido, impatto su larga scala",
     "syllog-subtitle":
-      "Trasformazione digitale completa per un'esperienza di acquisto fluida e intuitiva",
+      "In sole due settimane abbiamo riprogettato l'editor dei corsi di Syllog AI, migliorando performance, UX e time to production del 50%.",
     "syllog-client": "Syllog AI",
     "syllog-duration": "2 settimane",
     "syllog-team": "3 sviluppatori",
@@ -45,11 +45,11 @@ const translations: Record<"it" | "en", Translations> = {
       "L'intera attività dalla progettazione allo sviluppo fino alla messa in produzione è stata completata in 14 giorni, senza interruzioni di servizio.",
     "syllog-results-title": "Risultati",
     "syllog-results-subtitle":
-      "L’intervento ha avuto un impatto immediato sia sul prodotto che sull’esperienza degli utenti. La collaborazione tra Space Design Italia e Syllog AI ha portato a benefici tangibili, misurabili e duraturi.",
+      "L'intervento ha avuto un impatto immediato sia sul prodotto che sull'esperienza degli utenti. La collaborazione tra Space Design Italia e Syllog AI ha portato a benefici tangibili, misurabili e duraturi.",
     "syllog-result-1-metric": "Time to production ridotto",
     "syllog-result-1-value": "+50%",
     "syllog-result-1-description":
-      "La nuova implementazione dell’editor ha permesso di accelerare il ciclo di rilascio della funzionalità, dimezzando il time to production.",
+      "La nuova implementazione dell'editor ha permesso di accelerare il ciclo di rilascio della funzionalità, dimezzando il time to production.",
     "syllog-result-2-metric": "Velocità di sviluppo funzionalità future",
     "syllog-result-2-value": "3x",
     "syllog-result-2-description":
@@ -61,7 +61,7 @@ const translations: Record<"it" | "en", Translations> = {
     "syllog-result-4-metric": "Engagement degli utenti nei contenuti formativi",
     "syllog-result-4-value": "+25%",
     "syllog-result-4-description":
-      "Un’interfaccia più fluida ha migliorato l'interazione con i contenuti, misurabile su LMS integrati.",
+      "Un'interfaccia più fluida ha migliorato l'interazione con i contenuti, misurabile su LMS integrati.",
     "syllog-technologies-title": "Tecnologie Utilizzate",
     "syllog-cta-button": "Inizia il Progetto",
     "scroll-discover": "Scorri per scoprire",
@@ -71,9 +71,9 @@ const translations: Record<"it" | "en", Translations> = {
     "category-label": "Categoria",
   },
   en: {
-    "syllog-title": "Syllog - Modern E-commerce Platform",
+    "syllog-title": "Rapid refactoring, large-scale impact",
     "syllog-subtitle":
-      "Complete digital transformation for a seamless and intuitive shopping experience",
+      "In just two weeks we redesigned Syllog AI's course editor, improving performance, UX and time to production by 50%.",
     "syllog-client": "Syllog AI",
     "syllog-duration": "2 weeks",
     "syllog-team": "3 developers",
@@ -237,24 +237,6 @@ export default function CaseStudySyllog() {
 
   const technologies = ["Vue.Js", "Django", "Tailwind CSS", "SQLite"];
 
-  const images = [
-    {
-      src: "/placeholder.svg?height=600&width=800",
-      alt: "Homepage design",
-      caption: "Modern homepage with improved navigation",
-    },
-    {
-      src: "/placeholder.svg?height=600&width=800",
-      alt: "Product page",
-      caption: "Enhanced product detail pages",
-    },
-    {
-      src: "/placeholder.svg?height=600&width=800",
-      alt: "Checkout process",
-      caption: "Streamlined checkout experience",
-    },
-  ];
-
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
@@ -272,7 +254,7 @@ export default function CaseStudySyllog() {
             alt="Hero background"
             className="object-cover w-full h-full scale-110"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/90" />
         </motion.div>
 
         {/* Animated Background Elements */}
@@ -320,13 +302,16 @@ export default function CaseStudySyllog() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.6 }}
               >
-                <Chip color="primary" className="mb-6 text-sm px-4 py-2">
+                <Chip
+                  color="primary"
+                  className="mb-6 text-sm px-4 py-2 drop-shadow-lg"
+                >
                   {category}
                 </Chip>
               </motion.div>
 
               <motion.h1
-                className="text-5xl md:text-7xl lg:text-8xl font-light mb-6 leading-tight tracking-tight"
+                className="text-5xl md:text-7xl lg:text-8xl font-light mb-6 leading-tight tracking-tight text-white"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4, duration: 0.8, ease: "easeOut" }}
@@ -335,7 +320,7 @@ export default function CaseStudySyllog() {
               </motion.h1>
 
               <motion.p
-                className="text-xl md:text-2xl text-gray-300 mb-8 font-light max-w-3xl mx-auto leading-relaxed"
+                className="text-xl md:text-2xl text-white mb-8 font-light max-w-3xl mx-auto leading-relaxed"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6, duration: 0.6 }}
@@ -356,11 +341,11 @@ export default function CaseStudySyllog() {
                 animate={{ y: [0, 10, 0] }}
                 transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
               >
-                <span className="text-white/60 text-sm font-light tracking-wider">
+                <span className="text-white/80 text-sm font-light tracking-wider drop-shadow-md">
                   {t("scroll-discover")}
                 </span>
                 <motion.div
-                  className="w-px h-16 bg-gradient-to-b from-white/60 to-transparent"
+                  className="w-px h-16 bg-gradient-to-b from-white/80 to-transparent drop-shadow-sm"
                   animate={{ scaleY: [1, 0.5, 1] }}
                   transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
                 />
@@ -439,7 +424,7 @@ export default function CaseStudySyllog() {
               transition={{ delay: 0.3 }}
             >
               <Icon
-                icon="solar:trending-up-linear"
+                icon="material-symbols:category-rounded"
                 className="h-6 w-6 text-black mx-auto mb-4"
               />
               <h3 className="font-medium text-black mb-2 text-sm uppercase tracking-wider">
@@ -594,7 +579,7 @@ export default function CaseStudySyllog() {
                 <motion.div
                   key={index}
                   variants={scaleIn}
-                  className="text-center p-8 bg-white border border-gray-100 hover:shadow-sm transition-all duration-300"
+                  className="text-center p-8 bg-white border-2 rounded-2xl border-gray-100 hover:shadow-sm transition-all duration-300"
                   whileHover={{ scale: 1.02 }}
                 >
                   <div className="text-4xl font-light text-black mb-4 tracking-tight">
