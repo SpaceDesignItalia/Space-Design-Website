@@ -27,6 +27,7 @@ import Footer from "./Components/Layout/Footer";
 import CookieBanner from "./Components/Layout/CookieBanner";
 import * as analytics from "./utils/analytics";
 import CustomSoftware from "./Pages/Services/CustomSoftware";
+import CaseStudySyllog from "./Pages/CaseStudy/Syllog/CaseStudySyllog";
 
 // Language redirect component
 function LanguageRedirect() {
@@ -106,6 +107,11 @@ function AppContent() {
               element={<div>Technical Architecture</div>}
             />
             <Route path="security" element={<div>Security Consulting</div>} />
+          </Route>
+
+          {/* Case Studies routes */}
+          <Route path="case-studies">
+            <Route path="syllog" element={<CaseStudySyllog />} />
           </Route>
         </Route>
 
