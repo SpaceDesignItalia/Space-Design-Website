@@ -579,7 +579,7 @@ export default function CaseStudySyllog() {
                 <motion.div
                   key={index}
                   variants={scaleIn}
-                  className="text-center p-8 bg-white border-2 rounded-2xl border-gray-100 hover:shadow-sm transition-all duration-300"
+                  className="text-center p-8 bg-white border-2 rounded-2xl hover:shadow-sm transition-all duration-300"
                   whileHover={{ scale: 1.02 }}
                 >
                   <div className="text-4xl font-light text-black mb-4 tracking-tight">
