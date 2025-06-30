@@ -1,9 +1,10 @@
 import { motion, useScroll, useTransform } from "framer-motion";
-import { Chip, Card, CardBody } from "@heroui/react";
+import { Chip } from "@heroui/react";
 import { Icon } from "@iconify/react";
 import { useLanguage } from "../../../context/LanguageContext";
 import { useRef } from "react";
 import CTA from "../../../Pages/Home/CTA";
+import SEO from "../../../Components/SEO";
 
 type Translations = Record<string, string>;
 
@@ -238,409 +239,430 @@ export default function CaseStudySyllog() {
   const technologies = ["Vue.Js", "Django", "Tailwind CSS", "SQLite"];
 
   return (
-    <div className="min-h-screen bg-white">
-      {/* Hero Section */}
-      <motion.section
-        ref={heroRef}
-        className="relative overflow-hidden bg-black text-white min-h-screen flex items-center"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.8 }}
-      >
-        {/* Background Image with Parallax */}
-        <motion.div className="absolute inset-0 z-0" style={{ y }}>
-          <img
-            src="/Imgs/CaseStudy/SyllogHeading.png"
-            alt="Hero background"
-            className="object-cover w-full h-full scale-110"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/90" />
-        </motion.div>
-
-        {/* Animated Background Elements */}
-        <div className="absolute inset-0 z-0">
-          <motion.div
-            className="absolute top-20 left-10 w-32 h-32 bg-white/5 rounded-full blur-xl"
-            animate={{
-              scale: [1, 1.2, 1],
-              opacity: [0.3, 0.6, 0.3],
-            }}
-            transition={{
-              duration: 4,
-              repeat: Number.POSITIVE_INFINITY,
-              ease: "easeInOut",
-            }}
-          />
-          <motion.div
-            className="absolute bottom-20 right-10 w-24 h-24 bg-white/5 rounded-full blur-xl"
-            animate={{
-              scale: [1.2, 1, 1.2],
-              opacity: [0.6, 0.3, 0.6],
-            }}
-            transition={{
-              duration: 3,
-              repeat: Number.POSITIVE_INFINITY,
-              ease: "easeInOut",
-              delay: 1,
-            }}
-          />
-        </div>
-
-        <motion.div
-          className="relative z-10 container mx-auto px-4 py-20 lg:py-32"
-          style={{ opacity }}
+    <>
+      <SEO
+        title={`Space Design Italia - ${title}`}
+        description={subtitle}
+        keywords={
+          language === "it"
+            ? `space design italia, syllog ai, refactoring, editor corsi, django, vue.js, sviluppo software, ${category.toLowerCase()}`
+            : `space design italia, syllog ai, refactoring, course editor, django, vue.js, software development, ${category.toLowerCase()}`
+        }
+        image="/Imgs/CaseStudy/SyllogHeading.png"
+        url={`/${language}/case-study/syllog`}
+        alternateUrls={{
+          it: "/it/case-study/syllog",
+          en: "/en/case-study/syllog",
+          "x-default": "/case-study/syllog",
+        }}
+      />
+      <div className="min-h-screen bg-white">
+        {/* Hero Section */}
+        <motion.section
+          ref={heroRef}
+          className="relative overflow-hidden bg-black text-white min-h-screen flex items-center"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8 }}
         >
+          {/* Background Image with Parallax */}
+          <motion.div className="absolute inset-0 z-0" style={{ y }}>
+            <img
+              src="/Imgs/CaseStudy/SyllogHeading.png"
+              alt="Hero background"
+              className="object-cover w-full h-full scale-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/90" />
+          </motion.div>
+
+          {/* Animated Background Elements */}
+          <div className="absolute inset-0 z-0">
+            <motion.div
+              className="absolute top-20 left-10 w-32 h-32 bg-white/5 rounded-full blur-xl"
+              animate={{
+                scale: [1, 1.2, 1],
+                opacity: [0.3, 0.6, 0.3],
+              }}
+              transition={{
+                duration: 4,
+                repeat: Number.POSITIVE_INFINITY,
+                ease: "easeInOut",
+              }}
+            />
+            <motion.div
+              className="absolute bottom-20 right-10 w-24 h-24 bg-white/5 rounded-full blur-xl"
+              animate={{
+                scale: [1.2, 1, 1.2],
+                opacity: [0.6, 0.3, 0.6],
+              }}
+              transition={{
+                duration: 3,
+                repeat: Number.POSITIVE_INFINITY,
+                ease: "easeInOut",
+                delay: 1,
+              }}
+            />
+          </div>
+
           <motion.div
-            className="max-w-4xl mx-auto text-center"
-            variants={staggerContainer}
-            initial="initial"
-            animate="animate"
+            className="relative z-10 container mx-auto px-4 py-20 lg:py-32"
+            style={{ opacity }}
           >
-            <motion.div variants={fadeInUp} className="mb-8">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.2, duration: 0.6 }}
-              >
-                <Chip
-                  color="primary"
-                  className="mb-6 text-sm px-4 py-2 drop-shadow-lg"
+            <motion.div
+              className="max-w-4xl mx-auto text-center"
+              variants={staggerContainer}
+              initial="initial"
+              animate="animate"
+            >
+              <motion.div variants={fadeInUp} className="mb-8">
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.2, duration: 0.6 }}
                 >
-                  {category}
-                </Chip>
+                  <Chip
+                    color="primary"
+                    className="mb-6 text-sm px-4 py-2 drop-shadow-lg"
+                  >
+                    {category}
+                  </Chip>
+                </motion.div>
+
+                <motion.h1
+                  className="text-5xl md:text-7xl lg:text-8xl font-light mb-6 leading-tight tracking-tight text-white"
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.4, duration: 0.8, ease: "easeOut" }}
+                >
+                  {title}
+                </motion.h1>
+
+                <motion.p
+                  className="text-xl md:text-2xl text-white mb-8 font-light max-w-3xl mx-auto leading-relaxed"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.6, duration: 0.6 }}
+                >
+                  {subtitle}
+                </motion.p>
               </motion.div>
 
-              <motion.h1
-                className="text-5xl md:text-7xl lg:text-8xl font-light mb-6 leading-tight tracking-tight text-white"
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.4, duration: 0.8, ease: "easeOut" }}
-              >
-                {title}
-              </motion.h1>
-
-              <motion.p
-                className="text-xl md:text-2xl text-white mb-8 font-light max-w-3xl mx-auto leading-relaxed"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.6, duration: 0.6 }}
-              >
-                {subtitle}
-              </motion.p>
-            </motion.div>
-
-            {/* Enhanced Scroll Indicator */}
-            <motion.div
-              className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 1.2, duration: 0.5 }}
-            >
+              {/* Enhanced Scroll Indicator */}
               <motion.div
-                className="flex flex-col items-center space-y-2"
-                animate={{ y: [0, 10, 0] }}
-                transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
+                className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 1.2, duration: 0.5 }}
               >
-                <span className="text-white/80 text-sm font-light tracking-wider drop-shadow-md">
-                  {t("scroll-discover")}
-                </span>
                 <motion.div
-                  className="w-px h-16 bg-gradient-to-b from-white/80 to-transparent drop-shadow-sm"
-                  animate={{ scaleY: [1, 0.5, 1] }}
+                  className="flex flex-col items-center space-y-2"
+                  animate={{ y: [0, 10, 0] }}
                   transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
-                />
+                >
+                  <span className="text-white/80 text-sm font-light tracking-wider drop-shadow-md">
+                    {t("scroll-discover")}
+                  </span>
+                  <motion.div
+                    className="w-px h-16 bg-gradient-to-b from-white/80 to-transparent drop-shadow-sm"
+                    animate={{ scaleY: [1, 0.5, 1] }}
+                    transition={{
+                      duration: 2,
+                      repeat: Number.POSITIVE_INFINITY,
+                    }}
+                  />
+                </motion.div>
               </motion.div>
             </motion.div>
           </motion.div>
-        </motion.div>
-      </motion.section>
+        </motion.section>
 
-      {/* Project Info */}
-      <motion.section
-        className="py-20 bg-white border-b border-gray-100"
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        viewport={{ once: true }}
-      >
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-12 max-w-4xl mx-auto">
-            <motion.div
-              className="text-center"
-              variants={scaleIn}
-              initial="initial"
-              whileInView="animate"
-              viewport={{ once: true }}
-            >
-              <Icon
-                icon="solar:users-group-rounded-linear"
-                className="h-6 w-6 text-black mx-auto mb-4"
-              />
-              <h3 className="font-medium text-black mb-2 text-sm uppercase tracking-wider">
-                {t("client-label")}
-              </h3>
-              <p className="text-gray-600 font-light">{client}</p>
-            </motion.div>
-            <motion.div
-              className="text-center"
-              variants={scaleIn}
-              initial="initial"
-              whileInView="animate"
-              viewport={{ once: true }}
-              transition={{ delay: 0.1 }}
-            >
-              <Icon
-                icon="solar:calendar-linear"
-                className="h-6 w-6 text-black mx-auto mb-4"
-              />
-              <h3 className="font-medium text-black mb-2 text-sm uppercase tracking-wider">
-                {t("duration-label")}
-              </h3>
-              <p className="text-gray-600 font-light">{duration}</p>
-            </motion.div>
-            <motion.div
-              className="text-center"
-              variants={scaleIn}
-              initial="initial"
-              whileInView="animate"
-              viewport={{ once: true }}
-              transition={{ delay: 0.2 }}
-            >
-              <Icon
-                icon="solar:target-linear"
-                className="h-6 w-6 text-black mx-auto mb-4"
-              />
-              <h3 className="font-medium text-black mb-2 text-sm uppercase tracking-wider">
-                {t("team-label")}
-              </h3>
-              <p className="text-gray-600 font-light">{team}</p>
-            </motion.div>
-            <motion.div
-              className="text-center"
-              variants={scaleIn}
-              initial="initial"
-              whileInView="animate"
-              viewport={{ once: true }}
-              transition={{ delay: 0.3 }}
-            >
-              <Icon
-                icon="material-symbols:category-rounded"
-                className="h-6 w-6 text-black mx-auto mb-4"
-              />
-              <h3 className="font-medium text-black mb-2 text-sm uppercase tracking-wider">
-                {t("category-label")}
-              </h3>
-              <p className="text-gray-600 font-light">{category}</p>
-            </motion.div>
+        {/* Project Info */}
+        <motion.section
+          className="py-20 bg-white border-b border-gray-100"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+        >
+          <div className="container mx-auto px-4">
+            <div className="grid md:grid-cols-4 gap-12 max-w-4xl mx-auto">
+              <motion.div
+                className="text-center"
+                variants={scaleIn}
+                initial="initial"
+                whileInView="animate"
+                viewport={{ once: true }}
+              >
+                <Icon
+                  icon="solar:users-group-rounded-linear"
+                  className="h-6 w-6 text-black mx-auto mb-4"
+                />
+                <h3 className="font-medium text-black mb-2 text-sm uppercase tracking-wider">
+                  {t("client-label")}
+                </h3>
+                <p className="text-gray-600 font-light">{client}</p>
+              </motion.div>
+              <motion.div
+                className="text-center"
+                variants={scaleIn}
+                initial="initial"
+                whileInView="animate"
+                viewport={{ once: true }}
+                transition={{ delay: 0.1 }}
+              >
+                <Icon
+                  icon="solar:calendar-linear"
+                  className="h-6 w-6 text-black mx-auto mb-4"
+                />
+                <h3 className="font-medium text-black mb-2 text-sm uppercase tracking-wider">
+                  {t("duration-label")}
+                </h3>
+                <p className="text-gray-600 font-light">{duration}</p>
+              </motion.div>
+              <motion.div
+                className="text-center"
+                variants={scaleIn}
+                initial="initial"
+                whileInView="animate"
+                viewport={{ once: true }}
+                transition={{ delay: 0.2 }}
+              >
+                <Icon
+                  icon="solar:target-linear"
+                  className="h-6 w-6 text-black mx-auto mb-4"
+                />
+                <h3 className="font-medium text-black mb-2 text-sm uppercase tracking-wider">
+                  {t("team-label")}
+                </h3>
+                <p className="text-gray-600 font-light">{team}</p>
+              </motion.div>
+              <motion.div
+                className="text-center"
+                variants={scaleIn}
+                initial="initial"
+                whileInView="animate"
+                viewport={{ once: true }}
+                transition={{ delay: 0.3 }}
+              >
+                <Icon
+                  icon="material-symbols:category-rounded"
+                  className="h-6 w-6 text-black mx-auto mb-4"
+                />
+                <h3 className="font-medium text-black mb-2 text-sm uppercase tracking-wider">
+                  {t("category-label")}
+                </h3>
+                <p className="text-gray-600 font-light">{category}</p>
+              </motion.div>
+            </div>
           </div>
-        </div>
-      </motion.section>
+        </motion.section>
 
-      {/* Challenge Section */}
-      <motion.section
-        className="py-24 bg-primary"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
-      >
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <motion.div
-              className="text-center mb-16"
-              variants={fadeInUp}
-              initial="initial"
-              whileInView="animate"
-              viewport={{ once: true }}
-            >
-              <h2 className="text-4xl md:text-5xl font-light text-white mb-6 tracking-tight">
-                {challenge.title}
-              </h2>
-              <p className="text-xl text-gray-300 max-w-3xl mx-auto font-light leading-relaxed">
-                {challenge.description}
-              </p>
-            </motion.div>
+        {/* Challenge Section */}
+        <motion.section
+          className="py-24 bg-primary"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <motion.div
+                className="text-center mb-16"
+                variants={fadeInUp}
+                initial="initial"
+                whileInView="animate"
+                viewport={{ once: true }}
+              >
+                <h2 className="text-4xl md:text-5xl font-light text-white mb-6 tracking-tight">
+                  {challenge.title}
+                </h2>
+                <p className="text-xl text-gray-300 max-w-3xl mx-auto font-light leading-relaxed">
+                  {challenge.description}
+                </p>
+              </motion.div>
 
-            <motion.div
-              className="grid md:grid-cols-2 gap-8"
-              variants={staggerContainer}
-              initial="initial"
-              whileInView="animate"
-              viewport={{ once: true }}
-            >
-              {challenge.points.map((point, index) => (
-                <motion.div
-                  key={index}
-                  variants={fadeInUp}
-                  className="flex items-start space-x-4 p-8 bg-gray-600/30 rounded-2xl"
-                >
-                  <div className="flex-shrink-0 w-2 h-2 bg-white rounded-full mt-3" />
-                  <p className="text-white font-light leading-relaxed">
-                    {point}
-                  </p>
-                </motion.div>
-              ))}
-            </motion.div>
+              <motion.div
+                className="grid md:grid-cols-2 gap-8"
+                variants={staggerContainer}
+                initial="initial"
+                whileInView="animate"
+                viewport={{ once: true }}
+              >
+                {challenge.points.map((point, index) => (
+                  <motion.div
+                    key={index}
+                    variants={fadeInUp}
+                    className="flex items-start space-x-4 p-8 bg-gray-600/30 rounded-2xl"
+                  >
+                    <div className="flex-shrink-0 w-2 h-2 bg-white rounded-full mt-3" />
+                    <p className="text-white font-light leading-relaxed">
+                      {point}
+                    </p>
+                  </motion.div>
+                ))}
+              </motion.div>
+            </div>
           </div>
-        </div>
-      </motion.section>
+        </motion.section>
 
-      {/* Solution Section */}
-      <motion.section
-        className="py-24 bg-white"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
-      >
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <motion.div
-              className="text-center mb-20"
-              variants={fadeInUp}
-              initial="initial"
-              whileInView="animate"
-              viewport={{ once: true }}
-            >
-              <h2 className="text-4xl md:text-5xl font-light text-black mb-6 tracking-tight">
-                {solution.title}
-              </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto font-light leading-relaxed">
-                {solution.description}
-              </p>
-            </motion.div>
+        {/* Solution Section */}
+        <motion.section
+          className="py-24 bg-white"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <motion.div
+                className="text-center mb-20"
+                variants={fadeInUp}
+                initial="initial"
+                whileInView="animate"
+                viewport={{ once: true }}
+              >
+                <h2 className="text-4xl md:text-5xl font-light text-black mb-6 tracking-tight">
+                  {solution.title}
+                </h2>
+                <p className="text-xl text-gray-600 max-w-3xl mx-auto font-light leading-relaxed">
+                  {solution.description}
+                </p>
+              </motion.div>
 
-            <motion.div
-              className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"
-              variants={staggerContainer}
-              initial="initial"
-              whileInView="animate"
-              viewport={{ once: true }}
-            >
-              {solution.features.map((feature, index) => (
-                <motion.div
-                  key={index}
-                  variants={scaleIn}
-                  className="text-center p-8 border-2 hover:shadow-sm transition-all duration-300 rounded-2xl"
-                  whileHover={{ y: -2 }}
-                >
-                  <div className="text-3xl mb-6 grayscale">
-                    <Icon
-                      icon={feature.icon}
-                      className="h-12 w-12 mx-auto text-gray-600"
-                    />
-                  </div>
-                  <h3 className="text-lg font-medium text-black mb-4 tracking-wide">
-                    {feature.title}
-                  </h3>
-                  <p className="text-gray-600 font-light leading-relaxed">
-                    {feature.description}
-                  </p>
-                </motion.div>
-              ))}
-            </motion.div>
+              <motion.div
+                className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"
+                variants={staggerContainer}
+                initial="initial"
+                whileInView="animate"
+                viewport={{ once: true }}
+              >
+                {solution.features.map((feature, index) => (
+                  <motion.div
+                    key={index}
+                    variants={scaleIn}
+                    className="text-center p-8 border-2 hover:shadow-sm transition-all duration-300 rounded-2xl"
+                    whileHover={{ y: -2 }}
+                  >
+                    <div className="text-3xl mb-6 grayscale">
+                      <Icon
+                        icon={feature.icon}
+                        className="h-12 w-12 mx-auto text-gray-600"
+                      />
+                    </div>
+                    <h3 className="text-lg font-medium text-black mb-4 tracking-wide">
+                      {feature.title}
+                    </h3>
+                    <p className="text-gray-600 font-light leading-relaxed">
+                      {feature.description}
+                    </p>
+                  </motion.div>
+                ))}
+              </motion.div>
+            </div>
           </div>
-        </div>
-      </motion.section>
+        </motion.section>
 
-      {/* Results Section */}
-      <motion.section
-        className="py-24 bg-gray-50"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
-      >
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <motion.div
-              className="text-center mb-20"
-              variants={fadeInUp}
-              initial="initial"
-              whileInView="animate"
-              viewport={{ once: true }}
-            >
-              <h2 className="text-4xl md:text-5xl font-light text-black mb-6 tracking-tight">
-                {t("syllog-results-title")}
-              </h2>
-              <p className="text-xl text-gray-600 font-light">
-                {t("syllog-results-subtitle")}
-              </p>
-            </motion.div>
+        {/* Results Section */}
+        <motion.section
+          className="py-24 bg-gray-50"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <motion.div
+                className="text-center mb-20"
+                variants={fadeInUp}
+                initial="initial"
+                whileInView="animate"
+                viewport={{ once: true }}
+              >
+                <h2 className="text-4xl md:text-5xl font-light text-black mb-6 tracking-tight">
+                  {t("syllog-results-title")}
+                </h2>
+                <p className="text-xl text-gray-600 font-light">
+                  {t("syllog-results-subtitle")}
+                </p>
+              </motion.div>
 
-            <motion.div
-              className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"
-              variants={staggerContainer}
-              initial="initial"
-              whileInView="animate"
-              viewport={{ once: true }}
-            >
-              {results.map((result, index) => (
-                <motion.div
-                  key={index}
-                  variants={scaleIn}
-                  className="text-center p-8 bg-white border-2 rounded-2xl hover:shadow-sm transition-all duration-300"
-                  whileHover={{ scale: 1.02 }}
-                >
-                  <div className="text-4xl font-light text-black mb-4 tracking-tight">
-                    {result.value}
-                  </div>
-                  <h3 className="text-sm font-medium text-black mb-3 uppercase tracking-wider">
-                    {result.metric}
-                  </h3>
-                  <p className="text-gray-600 text-sm font-light leading-relaxed">
-                    {result.description}
-                  </p>
-                </motion.div>
-              ))}
-            </motion.div>
+              <motion.div
+                className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"
+                variants={staggerContainer}
+                initial="initial"
+                whileInView="animate"
+                viewport={{ once: true }}
+              >
+                {results.map((result, index) => (
+                  <motion.div
+                    key={index}
+                    variants={scaleIn}
+                    className="text-center p-8 bg-white border-2 rounded-2xl hover:shadow-sm transition-all duration-300"
+                    whileHover={{ scale: 1.02 }}
+                  >
+                    <div className="text-4xl font-light text-black mb-4 tracking-tight">
+                      {result.value}
+                    </div>
+                    <h3 className="text-sm font-medium text-black mb-3 uppercase tracking-wider">
+                      {result.metric}
+                    </h3>
+                    <p className="text-gray-600 text-sm font-light leading-relaxed">
+                      {result.description}
+                    </p>
+                  </motion.div>
+                ))}
+              </motion.div>
+            </div>
           </div>
-        </div>
-      </motion.section>
+        </motion.section>
 
-      {/* Technologies Section */}
-      <motion.section
-        className="py-24 bg-white"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
-      >
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <motion.h2
-              className="text-4xl md:text-5xl font-light text-black mb-12 tracking-tight"
-              variants={fadeInUp}
-              initial="initial"
-              whileInView="animate"
-              viewport={{ once: true }}
-            >
-              {t("syllog-technologies-title")}
-            </motion.h2>
+        {/* Technologies Section */}
+        <motion.section
+          className="py-24 bg-white"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto text-center">
+              <motion.h2
+                className="text-4xl md:text-5xl font-light text-black mb-12 tracking-tight"
+                variants={fadeInUp}
+                initial="initial"
+                whileInView="animate"
+                viewport={{ once: true }}
+              >
+                {t("syllog-technologies-title")}
+              </motion.h2>
 
-            <motion.div
-              className="flex flex-wrap justify-center gap-4"
-              variants={staggerContainer}
-              initial="initial"
-              whileInView="animate"
-              viewport={{ once: true }}
-            >
-              {technologies.map((tech, index) => (
-                <motion.div
-                  key={index}
-                  variants={scaleIn}
-                  whileHover={{ scale: 1.05 }}
-                >
-                  <Chip color="primary">{tech}</Chip>
-                </motion.div>
-              ))}
-            </motion.div>
+              <motion.div
+                className="flex flex-wrap justify-center gap-4"
+                variants={staggerContainer}
+                initial="initial"
+                whileInView="animate"
+                viewport={{ once: true }}
+              >
+                {technologies.map((tech, index) => (
+                  <motion.div
+                    key={index}
+                    variants={scaleIn}
+                    whileHover={{ scale: 1.05 }}
+                  >
+                    <Chip color="primary">{tech}</Chip>
+                  </motion.div>
+                ))}
+              </motion.div>
+            </div>
           </div>
-        </div>
-      </motion.section>
+        </motion.section>
 
-      {/* CTA Section */}
-      <CTA />
-    </div>
+        {/* CTA Section */}
+        <CTA />
+      </div>
+    </>
   );
 }

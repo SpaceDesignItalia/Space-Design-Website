@@ -95,6 +95,7 @@ export default function Navbar() {
   );
 
   const navLinks = [
+    { name: t("case-studies"), href: `/${language}/case-studies` },
     { name: t("about"), href: `/${language}/about` },
     { name: t("contact"), href: `/${language}/contact` },
   ];

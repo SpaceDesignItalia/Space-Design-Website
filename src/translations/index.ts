@@ -15,6 +15,10 @@ export const translations: Translations = {
     en: "Services",
     it: "Servizi",
   },
+  "case-studies": {
+    en: "Case Studies",
+    it: "Casi di studio",
+  },
   about: {
     en: "About",
     it: "Chi Siamo",
