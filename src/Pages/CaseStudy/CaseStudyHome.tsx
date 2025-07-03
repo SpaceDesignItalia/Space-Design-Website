@@ -10,12 +10,12 @@ const caseStudies = [
   {
     id: "syllog",
     title: {
-      it: "Refactoring rapido, impatto su larga scala",
-      en: "Rapid refactoring, large-scale impact",
+      it: "Trasformazione rapida, impatto straordinario",
+      en: "Rapid transformation, extraordinary impact",
     },
     subtitle: {
-      it: "In sole due settimane abbiamo riprogettato l'editor dei corsi di Syllog AI, migliorando performance, UX e time to production del 50%.",
-      en: "In just two weeks we redesigned Syllog AI's course editor, improving performance, UX and time to production by 50%.",
+      it: "In sole due settimane abbiamo rivoluzionato l'editor dei corsi di Syllog AI, migliorando performance, esperienza utente e velocità di sviluppo del 50%.",
+      en: "In just two weeks we revolutionized Syllog AI's course editor, improving performance, user experience and development speed by 50%.",
     },
     client: {
       it: "Syllog AI",
@@ -55,12 +55,12 @@ const caseStudies = [
   {
     id: "climawell-website",
     title: {
-      it: "Sito web aziendale con gestionale prodotti",
-      en: "Corporate website with product management system",
+      it: "Sito web moderno con catalogo prodotti integrato",
+      en: "Modern website with integrated product catalog",
     },
     subtitle: {
-      it: "Abbiamo sviluppato un sito web completo per Climawell con un gestionale integrato per la gestione del catalogo prodotti, ordini e magazzino.",
-      en: "We developed a complete website for Climawell with an integrated management system for product catalog, orders and inventory management.",
+      it: "Abbiamo creato un sito web elegante e facile da navigare per Climawell che mostra i loro prodotti in modo professionale, collegato a un sistema di gestione magazzino su misura che permette di tenere tutto sotto controllo.",
+      en: "We created an elegant and easy-to-navigate website for Climawell that showcases their products professionally, connected to a custom warehouse management system that keeps everything under control.",
     },
     client: {
       it: "Climawell",
@@ -123,8 +123,8 @@ const caseStudies = [
       en: "3 developers",
     },
     category: {
-      it: "Marketing Automation",
-      en: "Marketing Automation",
+      it: "Software Personalizzato",
+      en: "Custom Software",
     },
     image: "/imgs/CaseStudy/ClimawellMarketingHeading.webp",
     technologies: [
