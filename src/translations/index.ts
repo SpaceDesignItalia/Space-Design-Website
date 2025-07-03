@@ -1374,6 +1374,18 @@ export const translations: Translations = {
     en: "Continuous post-launch support",
     it: "Supporto continuo post-lancio",
   },
+  "mvp-benefit-7": {
+    en: "Modern technologies",
+    it: "Tecnologie moderne",
+  },
+  "mvp-benefit-8": {
+    en: "Post-launch support",
+    it: "Supporto post-lancio",
+  },
+  "mvp-benefit-9": {
+    en: "Integrated analytics",
+    it: "Analytics integrate",
+  },
   "mvp-cta-title": {
     en: "Ready to Transform Your Idea into Reality?",
     it: "Pronto a Trasformare la Tua Idea in Realtà?",

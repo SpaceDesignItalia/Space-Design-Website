@@ -237,9 +237,6 @@ export default function StartupMVP() {
     t("mvp-benefit-4") || "Feedback utenti reali",
     t("mvp-benefit-5") || "Iterazioni basate su dati",
     t("mvp-benefit-6") || "Scalabilità futura garantita",
-    t("mvp-benefit-7") || "Tecnologie moderne",
-    t("mvp-benefit-8") || "Supporto post-lancio",
-    t("mvp-benefit-9") || "Analytics integrate",
   ];
 
   const pulseAnimation = {
