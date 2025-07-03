@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { Chip } from "@heroui/react";
 import { Icon } from "@iconify/react";
@@ -34,7 +33,7 @@ const caseStudies = [
       it: "Software Personalizzato",
       en: "Custom Software",
     },
-    image: "/Imgs/CaseStudy/SyllogHeading.png",
+    image: "/imgs/CaseStudy/SyllogHeading.png",
     technologies: ["Django", "Vue.js", "Python", "JavaScript"],
     results: [
       {
@@ -50,7 +49,7 @@ const caseStudies = [
         value: "70%",
       },
     ],
-    path: "/case-study/syllog",
+    path: "/case-studies/syllog",
     size: "large", // 2x2
   },
   {
@@ -79,7 +78,7 @@ const caseStudies = [
       it: "Sviluppo Web",
       en: "Web Development",
     },
-    image: "/Imgs/CaseStudy/ClimawellHeading.webp",
+    image: "/imgs/CaseStudy/ClimawellHeading.webp",
     technologies: [
       "React",
       "Node.js",
@@ -98,7 +97,7 @@ const caseStudies = [
         value: "1.8s",
       },
     ],
-    path: "/case-study/climawell-website",
+    path: "/case-studies/climawell-website",
     size: "medium", // 1x2
   },
   {
@@ -127,7 +126,7 @@ const caseStudies = [
       it: "Marketing Automation",
       en: "Marketing Automation",
     },
-    image: "/Imgs/CaseStudy/ClimawellMarketingHeading.webp",
+    image: "/imgs/CaseStudy/ClimawellMarketingHeading.webp",
     technologies: [
       "React",
       "TypeScript",
@@ -143,12 +142,12 @@ const caseStudies = [
       { metric: { it: "Messaggi/mese", en: "Messages/month" }, value: "10K+" },
       { metric: { it: "Tasso apertura", en: "Open rate" }, value: "85%" },
     ],
-    path: "/case-study/climawell-marketing",
+    path: "/case-studies/climawell-marketing",
     size: "medium", // 1x2
   },
 ];
 
-// Animazioni
+// Animazioni semplificate
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
@@ -163,30 +162,27 @@ const containerVariants = {
 const cardVariants = {
   hidden: {
     opacity: 0,
-    y: 50,
-    scale: 0.95,
+    y: 30,
   },
   visible: {
     opacity: 1,
     y: 0,
-    scale: 1,
     transition: {
-      duration: 0.6,
+      duration: 0.5,
       ease: "easeOut",
     },
   },
   hover: {
-    y: -10,
-    scale: 1.02,
+    y: -5,
     transition: {
-      duration: 0.3,
+      duration: 0.2,
       ease: "easeOut",
     },
   },
 };
 
 const fadeInUp = {
-  hidden: { opacity: 0, y: 30 },
+  hidden: { opacity: 0, y: 20 },
   visible: {
     opacity: 1,
     y: 0,
@@ -283,23 +279,24 @@ export default function CaseStudyHome() {
           animate="visible"
         >
           <div className="grid grid-cols-1 md:grid-cols-3 md:auto-rows-[320px] gap-8">
-            {caseStudies.map((study, index) => (
+            {caseStudies.map((study) => (
               <motion.div
                 key={study.id}
-                className={`group relative bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 overflow-hidden border border-slate-100 hover:border-primary/20 ${getCardSize(
+                className={`group relative bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-slate-100 hover:border-primary/20 ${getCardSize(
                   study.size
                 )}`}
                 variants={cardVariants}
                 whileHover="hover"
+                onClick={() => handleCaseStudyClick(study.path)}
               >
                 {/* Image with overlay */}
                 <div className="relative h-48 md:h-56 overflow-hidden">
                   <img
                     src={study.image}
                     alt={study.title[language]}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
                   {/* Category Badge */}
                   <div className="absolute top-4 left-4">
@@ -385,7 +382,7 @@ export default function CaseStudyHome() {
                     </div>
                   </div>
 
-                  {/* Results Preview - Only for large cards */}
+                  {/* Results Preview - Solo per card grandi */}
                   {study.size === "large" && (
                     <div className="mb-5">
                       <h4 className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-3">
@@ -393,11 +390,9 @@ export default function CaseStudyHome() {
                       </h4>
                       <div className="grid grid-cols-3 gap-3">
                         {study.results.slice(0, 3).map((result, idx) => (
-                          <motion.div
+                          <div
                             key={idx}
                             className="text-center bg-gradient-to-br from-slate-50 to-slate-100 rounded-xl p-3 border border-slate-200 hover:border-primary/30 transition-colors duration-200"
-                            whileHover={{ scale: 1.02 }}
-                            transition={{ duration: 0.2 }}
                           >
                             <div className="text-lg font-bold text-primary mb-1">
                               {result.value}
@@ -405,7 +400,7 @@ export default function CaseStudyHome() {
                             <div className="text-xs text-slate-600 line-clamp-1 font-medium">
                               {result.metric[language]}
                             </div>
-                          </motion.div>
+                          </div>
                         ))}
                       </div>
                     </div>
@@ -415,10 +410,8 @@ export default function CaseStudyHome() {
                   <div className="flex-1" />
 
                   {/* CTA Button */}
-                  <motion.button
+                  <button
                     className="w-full bg-primary hover:bg-primary/90 text-white font-semibold py-3 px-4 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl group-hover:shadow-primary/25"
-                    whileHover={{ scale: 1.02, y: -2 }}
-                    whileTap={{ scale: 0.98 }}
                     onClick={() => handleCaseStudyClick(study.path)}
                   >
                     <div className="flex items-center justify-center space-x-2">
@@ -428,11 +421,11 @@ export default function CaseStudyHome() {
                         className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200"
                       />
                     </div>
-                  </motion.button>
+                  </button>
                 </div>
 
                 {/* Hover effect overlay */}
-                <div className="absolute inset-0 bg-gradient-to-r from-primary/0 to-primary/0 group-hover:from-primary/5 group-hover:to-primary/5 transition-all duration-500 pointer-events-none rounded-2xl" />
+                <div className="absolute inset-0 bg-gradient-to-r from-primary/0 to-primary/0 group-hover:from-primary/5 group-hover:to-primary/5 transition-all duration-300 pointer-events-none rounded-2xl" />
               </motion.div>
             ))}
           </div>

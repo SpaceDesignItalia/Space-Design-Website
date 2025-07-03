@@ -1,4 +1,3 @@
-import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Chip } from "@heroui/react";
 import { Icon } from "@iconify/react";
@@ -23,17 +22,17 @@ export default function CaseStudyClimawellWebsite() {
       it: {
         "page-title": "Sito web moderno con catalogo prodotti integrato",
         "page-subtitle":
-          "Abbiamo sviluppato un sito web moderno e reattivo per Climawell che funge da vetrina per il catalogo prodotti, collegato al nostro software di magazzino personalizzato con pannello amministrativo per la gestione dei dati.",
+          "Abbiamo creato un sito web elegante e facile da navigare per Climawell che mostra i loro prodotti in modo professionale, collegato a un sistema di gestione magazzino su misura che permette di tenere tutto sotto controllo.",
         "client-label": "Cliente",
         "duration-label": "Durata",
         "team-label": "Team",
         "category-label": "Categoria",
         "challenge-title": "La Sfida",
         "challenge-description":
-          "Climawell aveva bisogno di un sito web moderno e reattivo che fungesse da vetrina per il loro catalogo prodotti, integrato con un software di magazzino personalizzato senza funzionalità di acquisto online.",
+          "Climawell voleva un sito web moderno che mostrasse i loro prodotti in modo professionale, integrato con un sistema di gestione magazzino personalizzato che permettesse di tenere tutto sotto controllo senza vendite online.",
         "solution-title": "La Soluzione",
         "solution-description":
-          "Abbiamo sviluppato un sito web moderno con catalogo prodotti integrato, collegato al nostro software di magazzino personalizzato e dotato di pannello amministrativo per la gestione dei dati.",
+          "Abbiamo realizzato un sito web elegante con catalogo prodotti integrato, collegato a un sistema di gestione magazzino su misura e dotato di un pannello di controllo per gestire facilmente tutti i dati.",
         "results-title": "Risultati",
         "results-subtitle": "I risultati ottenuti dal progetto",
         "technologies-title": "Tecnologie Utilizzate",
@@ -42,17 +41,17 @@ export default function CaseStudyClimawellWebsite() {
       en: {
         "page-title": "Modern website with integrated product catalog",
         "page-subtitle":
-          "We developed a modern and responsive website for Climawell that serves as a showcase for their product catalog, connected to our custom warehouse software with administrative panel for data management.",
+          "We created an elegant and easy-to-navigate website for Climawell that showcases their products professionally, connected to a custom warehouse management system that keeps everything under control.",
         "client-label": "Client",
         "duration-label": "Duration",
         "team-label": "Team",
         "category-label": "Category",
         "challenge-title": "The Challenge",
         "challenge-description":
-          "Climawell needed a modern and responsive website that would serve as a showcase for their product catalog, integrated with custom warehouse software without online purchasing functionality.",
+          "Climawell wanted a modern website that would showcase their products professionally, integrated with a custom warehouse management system that would keep everything under control without online sales.",
         "solution-title": "The Solution",
         "solution-description":
-          "We developed a modern website with integrated product catalog, connected to our custom warehouse software and equipped with administrative panel for data management.",
+          "We created an elegant website with integrated product catalog, connected to a custom warehouse management system and equipped with a control panel to easily manage all data.",
         "results-title": "Results",
         "results-subtitle": "Results achieved from the project",
         "technologies-title": "Technologies Used",
@@ -74,20 +73,20 @@ export default function CaseStudyClimawellWebsite() {
     description: t("challenge-description"),
     points: [
       language === "it"
-        ? "Creazione di un sito web moderno e reattivo come vetrina prodotti"
-        : "Creation of a modern and responsive website as a product showcase",
+        ? "Creare un sito web elegante che mostrasse i prodotti in modo professionale"
+        : "Create an elegant website that would showcase products professionally",
       language === "it"
-        ? "Sviluppo di un software di magazzino personalizzato per la gestione completa"
-        : "Development of custom warehouse software for complete management",
+        ? "Sviluppare un sistema di gestione magazzino su misura per tenere tutto sotto controllo"
+        : "Develop a custom warehouse management system to keep everything under control",
       language === "it"
-        ? "Integrazione tra sito web e software di magazzino per sincronizzazione dati"
-        : "Integration between website and warehouse software for data synchronization",
+        ? "Collegare sito web e sistema magazzino per avere dati sempre aggiornati"
+        : "Connect website and warehouse system to have always updated data",
       language === "it"
-        ? "Sviluppo di un pannello amministrativo per la gestione dei dati e metriche"
-        : "Development of an administrative panel for data management and metrics",
+        ? "Creare un pannello di controllo semplice per gestire facilmente tutti i dati"
+        : "Create a simple control panel to easily manage all data",
       language === "it"
-        ? "Design di un'interfaccia utente intuitiva senza funzionalità di acquisto"
-        : "Design of an intuitive user interface without purchasing functionality",
+        ? "Progettare un'interfaccia facile da usare senza funzionalità di vendita online"
+        : "Design an easy-to-use interface without online sales functionality",
     ],
   };
 
@@ -100,32 +99,32 @@ export default function CaseStudyClimawellWebsite() {
         title: language === "it" ? "Catalogo Prodotti" : "Product Catalog",
         description:
           language === "it"
-            ? "Vetrina completa dei prodotti con categorie, filtri e ricerca avanzata"
-            : "Complete product showcase with categories, filters and advanced search",
+            ? "Mostra tutti i prodotti in modo elegante con categorie organizzate e ricerca facile"
+            : "Showcase all products elegantly with organized categories and easy search",
       },
       {
         icon: "solar:database-linear",
-        title: language === "it" ? "Software Magazzino" : "Warehouse Software",
+        title: language === "it" ? "Sistema Magazzino" : "Warehouse System",
         description:
           language === "it"
-            ? "Software di magazzino personalizzato per gestione completa inventario"
-            : "Custom warehouse software for complete inventory management",
+            ? "Sistema di gestione magazzino su misura per tenere tutto sotto controllo"
+            : "Custom warehouse management system to keep everything under control",
       },
       {
         icon: "solar:chart-2-linear",
-        title: language === "it" ? "Pannello Amministrativo" : "Admin Panel",
+        title: language === "it" ? "Pannello di Controllo" : "Control Panel",
         description:
           language === "it"
-            ? "Gestione dati, metriche e controllo del valore del magazzino"
-            : "Data management, metrics and warehouse value control",
+            ? "Gestisci facilmente tutti i dati e controlla il valore del magazzino"
+            : "Easily manage all data and control warehouse value",
       },
       {
         icon: "gridicons:resize",
-        title: language === "it" ? "Design Responsive" : "Responsive Design",
+        title: language === "it" ? "Design Adattivo" : "Adaptive Design",
         description:
           language === "it"
-            ? "Interfaccia ottimizzata per tutti i dispositivi e browser"
-            : "Interface optimized for all devices and browsers",
+            ? "Funziona perfettamente su computer, tablet e smartphone"
+            : "Works perfectly on computers, tablets and smartphones",
       },
     ],
   };
@@ -133,32 +132,36 @@ export default function CaseStudyClimawellWebsite() {
   const results = [
     {
       metric:
-        language === "it" ? "Prodotti visualizzati" : "Products displayed",
+        language === "it" ? "Prodotti nel catalogo" : "Products in catalog",
       value: "500+",
       description:
         language === "it"
-          ? "Prodotti nel catalogo online"
-          : "Products in online catalog",
+          ? "Prodotti mostrati in modo professionale"
+          : "Products showcased professionally",
     },
     {
-      metric: language === "it" ? "Visite/mese" : "Visits/month",
+      metric: language === "it" ? "Visite mensili" : "Monthly visits",
       value: "500+",
       description:
         language === "it"
-          ? "Utenti che consultano il catalogo"
-          : "Users consulting the catalog",
+          ? "Persone che consultano il catalogo ogni mese"
+          : "People consulting the catalog every month",
     },
     {
-      metric: language === "it" ? "Tempo caricamento" : "Loading time",
+      metric: language === "it" ? "Velocità di caricamento" : "Loading speed",
       value: "1.2s",
       description:
-        language === "it" ? "Velocità ottimizzata" : "Optimized speed",
+        language === "it"
+          ? "Sito web veloce e reattivo"
+          : "Fast and responsive website",
     },
     {
-      metric: language === "it" ? "Sincronizzazione" : "Synchronization",
-      value: "Real-time",
+      metric: language === "it" ? "Aggiornamenti" : "Updates",
+      value: "Tempo reale",
       description:
-        language === "it" ? "Dati sempre aggiornati" : "Always updated data",
+        language === "it"
+          ? "Dati sempre aggiornati automaticamente"
+          : "Data always updated automatically",
     },
   ];
 
@@ -176,7 +179,7 @@ export default function CaseStudyClimawellWebsite() {
         title={`Space Design Italia - ${title}`}
         description={subtitle}
         keywords={`space design italia, climawell, sito web, gestionale prodotti, react, node.js, sviluppo web, ${category.toLowerCase()}`}
-        image="/Imgs/CaseStudy/ClimawellHeading.webp"
+        image="/imgs/CaseStudy/ClimawellHeading.webp"
         url={`/${language}/case-study/climawell-website`}
       />
 
@@ -192,7 +195,7 @@ export default function CaseStudyClimawellWebsite() {
           {/* Background Image with Parallax */}
           <motion.div className="absolute inset-0 z-0" style={{ y }}>
             <img
-              src="/Imgs/CaseStudy/ClimawellWebsiteHeading.webp"
+              src="/imgs/CaseStudy/ClimawellWebsiteHeading.webp"
               alt="Hero background"
               className="object-cover w-full h-full scale-110"
             />

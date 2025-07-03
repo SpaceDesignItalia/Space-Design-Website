@@ -11,50 +11,50 @@ type Translations = Record<string, string>;
 // Traduzioni locali per il case study Syllog
 const translations: Record<"it" | "en", Translations> = {
   it: {
-    "syllog-title": "Refactoring rapido, impatto su larga scala",
+    "syllog-title": "Trasformazione rapida, impatto straordinario",
     "syllog-subtitle":
-      "In sole due settimane abbiamo riprogettato l'editor dei corsi di Syllog AI, migliorando performance, UX e time to production del 50%.",
+      "In sole due settimane abbiamo rivoluzionato l'editor dei corsi di Syllog AI, migliorando performance, esperienza utente e velocità di sviluppo del 50%.",
     "syllog-client": "Syllog AI",
     "syllog-duration": "2 settimane",
     "syllog-team": "3 sviluppatori",
     "syllog-category": "Software Personalizzato",
     "syllog-challenge-title": "La Sfida",
     "syllog-challenge-description":
-      "Syllog AI aveva bisogno di intervenire rapidamente sull'editor dei corsi, uno strumento centrale nella piattaforma, usato quotidianamente da centinaia di utenti. Il progetto richiedeva velocità, precisione e totale compatibilità con l'infrastruttura esistente. Le principali sfide erano:",
+      "Syllog AI aveva bisogno di intervenire rapidamente sull'editor dei corsi, uno strumento centrale nella piattaforma, utilizzato quotidianamente da centinaia di utenti. Il progetto richiedeva velocità, precisione e totale compatibilità con l'infrastruttura esistente. Le principali sfide erano:",
     "syllog-challenge-point-1":
-      "L'architettura dell'editor limitava l'introduzione di nuove funzionalità richieste dal team prodotto.",
+      "L'architettura dell'editor limitava l'introduzione di nuove funzionalità richieste dal team di prodotto, rallentando l'innovazione.",
     "syllog-challenge-point-2":
-      "Il ciclo di sviluppo e rilascio delle modifiche era troppo lento per sostenere la crescita della piattaforma.",
+      "Il ciclo di sviluppo e rilascio delle modifiche era troppo lento per sostenere la crescita della piattaforma e rispondere alle esigenze dei clienti.",
     "syllog-challenge-point-3":
-      "Garantire che il refactoring fosse pienamente integrato con Django (backend) e Vue.js (frontend), senza introdurre disallineamenti o problemi di interoperabilità.",
+      "Garantire che la trasformazione fosse pienamente integrata con il sistema esistente, senza introdurre problemi o interruzioni del servizio.",
     "syllog-challenge-point-4":
       "Progettare, sviluppare e testare la nuova versione dell'editor in sole due settimane, senza compromettere qualità e stabilità del prodotto.",
     "syllog-solution-title": "La Soluzione",
     "syllog-solution-description":
-      "Per affrontare le sfide emerse, Space Design Italia ha affiancato il team interno di Syllog AI con un intervento rapido, su misura e completamente integrato nel loro flusso di sviluppo. Il progetto è stato gestito in modo snello e orientato al risultato, con un focus su performance, usabilità e compatibilità.",
+      "Per affrontare le sfide emerse, Space Design Italia ha affiancato il team interno di Syllog AI con un intervento rapido, su misura e completamente integrato nel loro flusso di lavoro. Il progetto è stato gestito in modo efficiente e orientato al risultato, con un focus su performance, usabilità e compatibilità.",
     "syllog-feature-1-title": "Team dedicato full stack",
     "syllog-feature-1-description":
-      "Tre sviluppatori full stack hanno lavorato su stack Django + Vue.js, garantendo un'elevata coesione tecnica e velocità d'esecuzione.",
+      "Tre sviluppatori full stack hanno lavorato su tecnologie Django + Vue.js, garantendo un'elevata coesione tecnica e velocità d'esecuzione.",
     "syllog-feature-2-title": "Progettazione condivisa e snella",
     "syllog-feature-2-description":
       "Abbiamo collaborato direttamente con il team di prodotto di Syllog AI per definire le priorità e allineare design, logiche di business e vincoli tecnici.",
-    "syllog-feature-3-title": "Refactoring completo e personalizzato",
+    "syllog-feature-3-title": "Trasformazione completa e personalizzata",
     "syllog-feature-3-description":
       "Il nuovo editor è stato riprogettato da zero, con un'architettura più modulare, stabile e facilmente estendibile nel tempo.",
     "syllog-feature-4-title": "Consegna in due settimane",
     "syllog-feature-4-description":
       "L'intera attività dalla progettazione allo sviluppo fino alla messa in produzione è stata completata in 14 giorni, senza interruzioni di servizio.",
-    "syllog-results-title": "Risultati",
+    "syllog-results-title": "Risultati Straordinari",
     "syllog-results-subtitle":
-      "L'intervento ha avuto un impatto immediato sia sul prodotto che sull'esperienza degli utenti. La collaborazione tra Space Design Italia e Syllog AI ha portato a benefici tangibili, misurabili e duraturi.",
-    "syllog-result-1-metric": "Time to production ridotto",
+      "L'intervento ha avuto un impatto immediato e misurabile sia sul prodotto che sull'esperienza degli utenti. La collaborazione tra Space Design Italia e Syllog AI ha portato a benefici tangibili, misurabili e duraturi.",
+    "syllog-result-1-metric": "Tempi di produzione ridotti",
     "syllog-result-1-value": "+50%",
     "syllog-result-1-description":
-      "La nuova implementazione dell'editor ha permesso di accelerare il ciclo di rilascio della funzionalità, dimezzando il time to production.",
+      "La nuova implementazione dell'editor ha permesso di accelerare il ciclo di rilascio delle funzionalità, dimezzando i tempi di produzione.",
     "syllog-result-2-metric": "Velocità di sviluppo funzionalità future",
     "syllog-result-2-value": "3x",
     "syllog-result-2-description":
-      "La nuova architettura ha triplicato la rapidità con cui il team può integrare nuove feature.",
+      "La nuova architettura ha triplicato la rapidità con cui il team può integrare nuove funzionalità.",
     "syllog-result-3-metric": "Codice riutilizzabile",
     "syllog-result-3-value": "70%",
     "syllog-result-3-description":
@@ -62,7 +62,7 @@ const translations: Record<"it" | "en", Translations> = {
     "syllog-result-4-metric": "Engagement degli utenti nei contenuti formativi",
     "syllog-result-4-value": "+25%",
     "syllog-result-4-description":
-      "Un'interfaccia più fluida ha migliorato l'interazione con i contenuti, misurabile su LMS integrati.",
+      "Un'interfaccia più fluida ha migliorato l'interazione con i contenuti, misurabile sui sistemi di apprendimento integrati.",
     "syllog-technologies-title": "Tecnologie Utilizzate",
     "syllog-cta-button": "Inizia il Progetto",
     "scroll-discover": "Scorri per scoprire",
@@ -72,9 +72,9 @@ const translations: Record<"it" | "en", Translations> = {
     "category-label": "Categoria",
   },
   en: {
-    "syllog-title": "Rapid refactoring, large-scale impact",
+    "syllog-title": "Rapid transformation, extraordinary impact",
     "syllog-subtitle":
-      "In just two weeks we redesigned Syllog AI's course editor, improving performance, UX and time to production by 50%.",
+      "In just two weeks we revolutionized Syllog AI's course editor, improving performance, user experience and development speed by 50%.",
     "syllog-client": "Syllog AI",
     "syllog-duration": "2 weeks",
     "syllog-team": "3 developers",
@@ -83,35 +83,35 @@ const translations: Record<"it" | "en", Translations> = {
     "syllog-challenge-description":
       "Syllog AI needed to intervene quickly on the course editor, a central tool in the platform, used daily by hundreds of users. The project required speed, precision, and total compatibility with the existing infrastructure. The main challenges were:",
     "syllog-challenge-point-1":
-      "The editor's architecture limited the introduction of new features requested by the product team.",
+      "The editor's architecture limited the introduction of new features requested by the product team, slowing down innovation.",
     "syllog-challenge-point-2":
-      "The development and release cycle for changes was too slow to support the platform's growth.",
+      "The development and release cycle for changes was too slow to support the platform's growth and respond to client needs.",
     "syllog-challenge-point-3":
-      "Ensuring that the refactoring was fully integrated with Django (backend) and Vue.js (frontend), without introducing misalignments or interoperability issues.",
+      "Ensuring that the transformation was fully integrated with the existing system, without introducing problems or service interruptions.",
     "syllog-challenge-point-4":
       "Designing, developing, and testing the new version of the editor in just two weeks, without compromising product quality and stability.",
     "syllog-solution-title": "The Solution",
     "syllog-solution-description":
-      "To address the emerging challenges, Space Design Italia supported Syllog AI's internal team with a rapid, tailored intervention that was fully integrated into their development workflow. The project was managed in a lean and results-oriented manner, with a focus on performance, usability, and compatibility.",
+      "To address the emerging challenges, Space Design Italia supported Syllog AI's internal team with a rapid, tailored intervention that was fully integrated into their workflow. The project was managed in an efficient and results-oriented manner, with a focus on performance, usability, and compatibility.",
     "syllog-feature-1-title": "Dedicated full stack team",
     "syllog-feature-1-description":
-      "Three full stack developers worked on Django + Vue.js stack, ensuring high technical cohesion and execution speed.",
+      "Three full stack developers worked on Django + Vue.js technologies, ensuring high technical cohesion and execution speed.",
     "syllog-feature-2-title": "Shared and lean design",
     "syllog-feature-2-description":
       "We collaborated directly with Syllog AI's product team to define priorities and align design, business logic, and technical constraints.",
-    "syllog-feature-3-title": "Complete and customized refactoring",
+    "syllog-feature-3-title": "Complete and customized transformation",
     "syllog-feature-3-description":
       "The new editor was redesigned from scratch, with a more modular, stable, and easily extensible architecture over time.",
     "syllog-feature-4-title": "Delivery in two weeks",
     "syllog-feature-4-description":
       "The entire activity from design to development through to production deployment was completed in 14 days, without service interruptions.",
-    "syllog-results-title": "Results",
+    "syllog-results-title": "Extraordinary Results",
     "syllog-results-subtitle":
-      "The intervention had an immediate impact on both the product and user experience. The collaboration between Space Design Italia and Syllog AI led to tangible, measurable, and lasting benefits.",
-    "syllog-result-1-metric": "Reduced time to production",
+      "The intervention had an immediate and measurable impact on both the product and user experience. The collaboration between Space Design Italia and Syllog AI led to tangible, measurable, and lasting benefits.",
+    "syllog-result-1-metric": "Reduced production times",
     "syllog-result-1-value": "+50%",
     "syllog-result-1-description":
-      "The new editor implementation allowed us to accelerate the feature release cycle, halving the time to production.",
+      "The new editor implementation allowed us to accelerate the feature release cycle, halving production times.",
     "syllog-result-2-metric": "Future feature development speed",
     "syllog-result-2-value": "3x",
     "syllog-result-2-description":
@@ -123,7 +123,7 @@ const translations: Record<"it" | "en", Translations> = {
     "syllog-result-4-metric": "User engagement in training content",
     "syllog-result-4-value": "+25%",
     "syllog-result-4-description":
-      "A smoother interface improved interaction with content, measurable on integrated LMS.",
+      "A smoother interface improved interaction with content, measurable on integrated learning systems.",
     "syllog-technologies-title": "Technologies Used",
     "syllog-cta-button": "Start Project",
     "scroll-discover": "Scroll to discover",

@@ -1,13 +1,18 @@
-import React from "react";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { Chip } from "@heroui/react";
 import { Icon } from "@iconify/react";
 import { useLanguage } from "../../../context/LanguageContext";
+import { useRef } from "react";
 import SEO from "../../../Components/SEO";
 import CTA from "../../../Pages/Home/CTA";
 
 export default function CaseStudyClimawellMarketing() {
   const { language } = useLanguage();
+  const heroRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: heroRef,
+    offset: ["start start", "end start"],
+  });
 
   const t = (key: string): string => {
     const translations: Record<string, Record<string, string>> = {
@@ -59,7 +64,7 @@ export default function CaseStudyClimawellMarketing() {
   const duration = language === "it" ? "6 settimane" : "6 weeks";
   const team = language === "it" ? "3 sviluppatori" : "3 developers";
   const category =
-    language === "it" ? "Marketing Automation" : "Marketing Automation";
+    language === "it" ? "Software Personalizzato" : "Custom Software";
 
   const challenge = {
     title: t("challenge-title"),
@@ -82,7 +87,7 @@ export default function CaseStudyClimawellMarketing() {
     description: t("solution-description"),
     features: [
       {
-        icon: "solar:mail-linear",
+        icon: "oui:email",
         title: language === "it" ? "Campagne Email" : "Email Campaigns",
         description:
           language === "it"
@@ -150,39 +155,70 @@ export default function CaseStudyClimawellMarketing() {
     "WhatsApp API",
   ];
 
+  const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
+  const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
+
   return (
     <>
       <SEO
         title={`Space Design Italia - ${title}`}
         description={subtitle}
         keywords={`space design italia, climawell, marketing automation, email campaigns, whatsapp api, react, typescript, ${category.toLowerCase()}`}
-        image="/Imgs/CaseStudy/ClimawellMarketingHeading.webp"
+        image="/imgs/CaseStudy/ClimawellMarketingHeading.webp"
         url={`/${language}/case-study/climawell-marketing`}
       />
 
       <div className="min-h-screen">
         {/* Hero Section */}
         <motion.section
-          className="relative h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900"
+          ref={heroRef}
+          className="relative overflow-hidden bg-black text-white min-h-screen flex items-center"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
         >
           {/* Background Pattern */}
-          <div className="absolute inset-0 opacity-10">
-            <div
-              className="absolute inset-0"
-              style={{
-                backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+          <motion.div className="absolute inset-0 z-0" style={{ y }}>
+            <img
+              src="/imgs/CaseStudy/ClimawellMarketingHeading.webp"
+              alt="Hero background"
+              className="object-cover w-full h-full scale-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/90" />
+          </motion.div>
+
+          {/* Animated Background Elements */}
+          <div className="absolute inset-0 z-0">
+            <motion.div
+              className="absolute top-20 left-10 w-32 h-32 bg-white/5 rounded-full blur-xl"
+              animate={{
+                scale: [1, 1.2, 1],
+                opacity: [0.3, 0.6, 0.3],
+              }}
+              transition={{
+                duration: 4,
+                repeat: Number.POSITIVE_INFINITY,
+                ease: "easeInOut",
+              }}
+            />
+            <motion.div
+              className="absolute bottom-20 right-10 w-24 h-24 bg-white/5 rounded-full blur-xl"
+              animate={{
+                scale: [1.2, 1, 1.2],
+                opacity: [0.6, 0.3, 0.6],
+              }}
+              transition={{
+                duration: 3,
+                repeat: Number.POSITIVE_INFINITY,
+                ease: "easeInOut",
+                delay: 1,
               }}
             />
           </div>
 
           <motion.div
             className="relative z-10 container mx-auto px-4 py-20 lg:py-32"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            style={{ opacity }}
           >
             <div className="max-w-4xl mx-auto text-center">
               <motion.div
@@ -216,6 +252,32 @@ export default function CaseStudyClimawellMarketing() {
                 {subtitle}
               </motion.p>
             </div>
+
+            {/* Enhanced Scroll Indicator */}
+            <motion.div
+              className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 1.2, duration: 0.5 }}
+            >
+              <motion.div
+                className="flex flex-col items-center space-y-2"
+                animate={{ y: [0, 10, 0] }}
+                transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
+              >
+                <span className="text-white/80 text-sm font-light tracking-wider drop-shadow-md">
+                  {t("scroll-discover")}
+                </span>
+                <motion.div
+                  className="w-px h-16 bg-gradient-to-b from-white/80 to-transparent drop-shadow-sm"
+                  animate={{ scaleY: [1, 0.5, 1] }}
+                  transition={{
+                    duration: 2,
+                    repeat: Number.POSITIVE_INFINITY,
+                  }}
+                />
+              </motion.div>
+            </motion.div>
           </motion.div>
         </motion.section>
 
