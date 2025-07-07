@@ -118,12 +118,6 @@ export default function MobileDevelopment() {
               icon: "pajamas:work-item-maintenance",
               delay: 0.3,
             },
-            {
-              question: t("mobile-faq-question-4"),
-              answer: t("mobile-faq-answer-4"),
-              icon: "streamline-cyber:multi-platform-2",
-              delay: 0.4,
-            },
           ]}
         />
 

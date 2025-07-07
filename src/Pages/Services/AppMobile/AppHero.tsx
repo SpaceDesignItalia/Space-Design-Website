@@ -61,7 +61,7 @@ export default function AppHero() {
         >
           <motion.h1
             variants={fadeInUp}
-            className="text-4xl max-w-4xl mx-auto sm:text-5xl md:text-6xl font-bold leading-[1.1] tracking-tight bg-gradient-to-r from-gray-900 via-gray-700 to-gray-900 bg-clip-text text-transparent dark:from-white dark:via-gray-200 dark:to-white mb-8"
+            className="text-4xl max-w-4xl mx-auto sm:text-5xl md:text-6xl font-bold leading-[1.2] tracking-tight bg-gradient-to-r from-gray-900 via-gray-700 to-gray-900 bg-clip-text text-transparent dark:from-white dark:via-gray-200 dark:to-white mb-8 py-2"
           >
             {t("mobile-hero-title") || "Sviluppo App Mobile"}
           </motion.h1>

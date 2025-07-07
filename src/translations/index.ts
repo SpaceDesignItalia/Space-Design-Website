@@ -96,10 +96,6 @@ export const translations: Translations = {
     en: "Custom websites tailored to your business needs, designed to enhance your online presence and drive growth",
     it: "Siti web personalizzati adattati alle tue esigenze aziendali, progettati per migliorare la tua presenza online e guidare la crescita",
   },
-  "custom-software": {
-    en: "Custom Software",
-    it: "Software Personalizzato",
-  },
   "custom-software-desc": {
     en: "Tailored software solutions engineered to optimize your operations, automate workflows, and accelerate business growth",
     it: "Soluzioni software personalizzate progettate per ottimizzare le tue operazioni, automatizzare i flussi di lavoro e accelerare la crescita aziendale",
@@ -2604,23 +2600,23 @@ export const translations: Translations = {
   },
   "mobile-faq-answer-1": {
     en: "The cost depends on the app's complexity, features, design, and integrations. We provide a detailed estimate after an initial consultation to fully understand your needs.",
-    it: "Il costo dipende dalla complessità dell'app, dalle funzionalità, dal design e dalle integrazioni. Forniamo un preventivo dettagliato dopo una prima consulenza per comprendere appieno le vostre esigenze.",
+    it: "Il costo varia in base alla complessità dell'app, alle funzionalità richieste e alle piattaforme target. Offriamo preventivi personalizzati dopo un'analisi dettagliata dei tuoi requisiti.",
   },
   "mobile-faq-question-2": {
     en: "How long does it take to develop a mobile app?",
-    it: "Quanto tempo richiede lo sviluppo di un'app mobile?",
+    it: "Quanto tempo ci vuole per sviluppare un'app?",
   },
   "mobile-faq-answer-2": {
     en: "Development time typically ranges from 2 to 6 months depending on the project scope. We define a clear timeline during the planning phase to align with your goals.",
-    it: "I tempi di sviluppo variano solitamente da 2 a 6 mesi in base all'entità del progetto. Definiamo una timeline chiara nella fase di pianificazione per allinearci ai vostri obiettivi.",
+    it: "I tempi di sviluppo dipendono dalla complessità del progetto. Un'app semplice richiede 2-3 mesi, mentre app più complesse possono richiedere 4-6 mesi o più.",
   },
   "mobile-faq-question-3": {
-    en: "Do you provide maintenance and support after launch?",
-    it: "Offrite manutenzione e supporto dopo il lancio?",
+    en: "What type of support do you offer after launch?",
+    it: "Che tipo di supporto offrite dopo il lancio?",
   },
   "mobile-faq-answer-3": {
-    en: "Yes, we offer post-launch maintenance plans that include bug fixes, performance monitoring, updates, and ongoing support to ensure your app remains stable and up-to-date.",
-    it: "Sì, offriamo piani di manutenzione post-lancio che includono correzione di bug, monitoraggio delle performance, aggiornamenti e supporto continuo per garantire che l'app rimanga stabile e aggiornata.",
+    en: "We offer continuous support, regular updates, and performance monitoring to ensure your app stays at the top.",
+    it: "Offriamo assistenza continua, aggiornamenti regolari e monitoraggio delle performance per garantire che la tua app sia sempre al top.",
   },
   "mobile-faq-question-4": {
     en: "Do you build native or cross-platform apps?",
@@ -4587,4 +4583,361 @@ export const translations: Translations = {
     en: "Performance Optimization",
     it: "Ottimizzazione Performance",
   },
+
+  // Mobile Stack Approach Section
+  "mobile-approach-title": {
+    en: "Our Approach",
+    it: "Il nostro approccio",
+  },
+  "mobile-approach-analysis": {
+    en: "🎯 In-depth Analysis",
+    it: "🎯 Analisi approfondita",
+  },
+  "mobile-approach-analysis-desc": {
+    en: "Before starting development, we analyze your market, competitors and user needs to create an app that truly stands out.",
+    it: "Prima di iniziare lo sviluppo, analizziamo il tuo mercato, i tuoi competitor e le esigenze degli utenti per creare un'app che si distingua davvero.",
+  },
+  "mobile-approach-agile": {
+    en: "🚀 Agile Development",
+    it: "🚀 Sviluppo agile",
+  },
+  "mobile-approach-agile-desc": {
+    en: "We use agile methodologies to ensure fast deliveries and the ability to make changes during development.",
+    it: "Utilizziamo metodologie agili per garantire consegne rapide e la possibilità di apportare modifiche durante lo sviluppo.",
+  },
+  "mobile-approach-design": {
+    en: "📱 User-centered Design",
+    it: "📱 Design user-centered",
+  },
+  "mobile-approach-design-desc": {
+    en: "Every interface is designed thinking about the end user, with usability testing and continuous optimizations to maximize engagement.",
+    it: "Ogni interfaccia è progettata pensando all'utente finale, con test di usabilità e ottimizzazioni continue per massimizzare l'engagement.",
+  },
+  "mobile-approach-support": {
+    en: "🔧 Post-launch Support",
+    it: "🔧 Supporto post-lancio",
+  },
+  "mobile-approach-support-desc": {
+    en: "We don't leave you alone after launch: we monitor performance, manage updates and help you grow your app.",
+    it: "Non ti lasciamo solo dopo il lancio: monitoriamo le performance, gestiamo gli aggiornamenti e ti aiutiamo a far crescere la tua app.",
+  },
+
+  // Mobile Statistics
+  "mobile-stat-crossplatform": {
+    en: "Cross-Platform",
+    it: "Cross-Platform",
+  },
+  "mobile-stat-crossplatform-desc": {
+    en: "Multi-platform development",
+    it: "Sviluppo multipiattaforma",
+  },
+  "mobile-stat-technologies": {
+    en: "Technologies used",
+    it: "Tecnologie utilizzate",
+  },
+  "mobile-stat-support": {
+    en: "Dedicated support",
+    it: "Supporto dedicato",
+  },
+
+  "mobile-cta-subtitle": {
+    en: "Contact us for a free consultation and discover how we can bring your idea to life with a professional mobile app.",
+    it: "Contattaci per una consulenza gratuita e scopri come possiamo dare vita alla tua idea con un'app mobile professionale.",
+  },
+  "mobile-cta-button": {
+    en: "Start Your Project",
+    it: "Inizia il Tuo Progetto",
+  },
+
+  // Mobile Stack Advantages
+  "mobile-advantage-growth": {
+    en: "Business Growth",
+    it: "Crescita del business",
+  },
+  "mobile-advantage-growth-desc": {
+    en: "Our apps help your company reach new customers and markets.",
+    it: "Le nostre app aiutano la tua azienda a raggiungere nuovi clienti e mercati.",
+  },
+  "mobile-advantage-clients": {
+    en: "Always Connected Clients",
+    it: "Clienti sempre connessi",
+  },
+  "mobile-advantage-clients-desc": {
+    en: "Stay in direct contact with your users thanks to notifications and smart features.",
+    it: "Resta in contatto diretto con i tuoi utenti grazie a notifiche e funzionalità smart.",
+  },
+  "mobile-advantage-security": {
+    en: "Advanced Security",
+    it: "Sicurezza avanzata",
+  },
+  "mobile-advantage-security-desc": {
+    en: "We protect your users' data with latest generation security protocols.",
+    it: "Proteggiamo i dati dei tuoi utenti con protocolli di sicurezza di ultima generazione.",
+  },
+  "mobile-advantage-support": {
+    en: "Continuous Support",
+    it: "Supporto continuo",
+  },
+  "mobile-advantage-support-desc": {
+    en: "Dedicated assistance and constant updates for maximum peace of mind.",
+    it: "Assistenza dedicata e aggiornamenti costanti per la massima tranquillità.",
+  },
+
+  // Custom Software Page Translations
+  "custom-software": {
+    en: "Custom Software",
+    it: "Software Personalizzato",
+  },
+  "custom-software-badge": {
+    en: "Custom Software",
+    it: "Software Su Misura",
+  },
+  "custom-software-hero-title": {
+    en: "Custom software for your business",
+    it: "Software personalizzato per il tuo business",
+  },
+  "custom-software-hero-description": {
+    en: "We develop complete and customized software solutions that automate your business processes, improve efficiency and grow your business.",
+    it: "Sviluppiamo soluzioni software complete e personalizzate che automatizzano i tuoi processi aziendali, migliorano l'efficienza e fanno crescere il tuo business.",
+  },
+  "custom-software-cta-primary": {
+    en: "Request Consultation",
+    it: "Richiedi Consulenza",
+  },
+  "custom-software-cta-secondary": {
+    en: "View Portfolio",
+    it: "Vedi Portfolio",
+  },
+  "custom-software-subtitle": {
+    en: "Tailor-made for You",
+    it: "Su Misura per Te",
+  },
+  "custom-hero-description": {
+    en: "We transform your ideas into complete software solutions. From business management to process automation, we create the perfect software for your needs",
+    it: "Trasformiamo le tue idee in soluzioni software complete. Dalla gestione aziendale all'automazione dei processi, creiamo il software perfetto per le tue esigenze",
+  },
+  "custom-solutions-title": {
+    en: "Our Solutions",
+    it: "Le Nostre Soluzioni",
+  },
+  "custom-solutions-description": {
+    en: "Enterprise software to digitize and optimize every aspect of your business",
+    it: "Software enterprise per digitalizzare e ottimizzare ogni aspetto del tuo business",
+  },
+  "custom-erp": {
+    en: "ERP Systems",
+    it: "Sistemi ERP",
+  },
+  "custom-erp-desc": {
+    en: "Integrated management systems that unify all business processes in a single scalable and customizable platform.",
+    it: "Sistemi di gestione integrata che unificano tutti i processi aziendali in un'unica piattaforma scalabile e personalizzabile.",
+  },
+  "custom-crm": {
+    en: "CRM Solutions",
+    it: "Soluzioni CRM",
+  },
+  "custom-crm-desc": {
+    en: "Advanced customer management with sales funnel automation, interaction tracking and predictive analytics.",
+    it: "Gestione clienti avanzata con automazione del sales funnel, tracking delle interazioni e analytics predittive.",
+  },
+  "custom-inventory": {
+    en: "Warehouse Management",
+    it: "Gestione Magazzino",
+  },
+  "custom-inventory-desc": {
+    en: "Intelligent systems for inventory control, movement tracking and automatic order optimization.",
+    it: "Sistemi intelligenti per controllo scorte, tracking movimenti e ottimizzazione automatica degli ordini.",
+  },
+  "custom-why-advantages": {
+    en: "Our Strengths",
+    it: "I nostri punti di forza",
+  },
+  "custom-why-headline": {
+    en: "Why choose Space Design Italia for your custom software",
+    it: "Perché scegliere Space Design Italia per il tuo software personalizzato",
+  },
+  "custom-why-subtitle": {
+    en: "We create enterprise software solutions that transform your business, with cutting-edge technologies and dedicated support.",
+    it: "Creiamo soluzioni software enterprise che trasformano il tuo business, con tecnologie all'avanguardia e supporto dedicato.",
+  },
+  "custom-why-expertise": {
+    en: "Consolidated Expertise",
+    it: "Expertise consolidata",
+  },
+  "custom-why-expertise-desc": {
+    en: "Years of experience in developing enterprise software for companies of all sizes and sectors.",
+    it: "Anni di esperienza nello sviluppo di software enterprise per aziende di ogni dimensione e settore.",
+  },
+  "custom-why-partnership": {
+    en: "Long-term Partnership",
+    it: "Partnership a lungo termine",
+  },
+  "custom-why-partnership-desc": {
+    en: "We don't just develop software, we become your technology partner for future growth.",
+    it: "Non solo sviluppiamo il software, ma diventiamo il tuo partner tecnologico per la crescita futura.",
+  },
+  "custom-why-security": {
+    en: "Enterprise Security",
+    it: "Sicurezza enterprise",
+  },
+  "custom-why-security-desc": {
+    en: "We implement the highest security standards to protect your company's critical data.",
+    it: "Implementiamo i più alti standard di sicurezza per proteggere i dati critici della tua azienda.",
+  },
+  "custom-why-approach-title": {
+    en: "Our Unique Approach",
+    it: "Il nostro approccio unico",
+  },
+  "custom-why-step-consultation": {
+    en: "Consultation",
+    it: "Consulenza",
+  },
+  "custom-why-step-consultation-desc": {
+    en: "In-depth analysis of your needs and business processes",
+    it: "Analisi approfondita delle tue esigenze e processi aziendali",
+  },
+  "custom-why-step-architecture": {
+    en: "Architecture",
+    it: "Architettura",
+  },
+  "custom-why-step-architecture-desc": {
+    en: "Design of scalable and maintainable systems",
+    it: "Progettazione di sistemi scalabili e maintainabili",
+  },
+  "custom-why-step-implementation": {
+    en: "Implementation",
+    it: "Implementazione",
+  },
+  "custom-why-step-implementation-desc": {
+    en: "Agile development with continuous testing and quality assurance",
+    it: "Sviluppo agile con testing continuo e quality assurance",
+  },
+  "custom-why-step-growth": {
+    en: "Growth",
+    it: "Crescita",
+  },
+  "custom-why-step-growth-desc": {
+    en: "Continuous support and optimizations for business growth",
+    it: "Supporto continuo e ottimizzazioni per la crescita del business",
+  },
+  "custom-why-stat-projects": {
+    en: "Completed Projects",
+    it: "Progetti completati",
+  },
+  "custom-why-stat-time": {
+    en: "Reduced Process Time",
+    it: "Tempi di processo ridotti",
+  },
+  "custom-why-stat-uptime": {
+    en: "Guaranteed Reliability",
+    it: "Affidabilità garantita",
+  },
+  "custom-technologies-title": {
+    en: "Enterprise Technologies",
+    it: "Tecnologie Enterprise",
+  },
+
+  // Custom Software Features Translations
+  "custom-feature-accounting": {
+    en: "Accounting Management",
+    it: "Gestione Contabilità",
+  },
+  "custom-feature-inventory-control": {
+    en: "Inventory Control",
+    it: "Controllo Inventario",
+  },
+  "custom-feature-hr": {
+    en: "HR Management",
+    it: "Gestione HR",
+  },
+  "custom-feature-reporting": {
+    en: "Advanced Reporting",
+    it: "Reportistica Avanzata",
+  },
+  "custom-feature-lead-management": {
+    en: "Lead Management",
+    it: "Gestione Lead",
+  },
+  "custom-feature-sales-pipeline": {
+    en: "Sales Pipeline",
+    it: "Pipeline Vendite",
+  },
+  "custom-feature-customer-analytics": {
+    en: "Customer Analytics",
+    it: "Analisi Clienti",
+  },
+  "custom-feature-marketing-automation": {
+    en: "Marketing Automation",
+    it: "Automazione Marketing",
+  },
+  "custom-feature-realtime-tracking": {
+    en: "Real-time Tracking",
+    it: "Tracciamento Real-time",
+  },
+  "custom-feature-auto-reordering": {
+    en: "Auto Reordering",
+    it: "Riordino Automatico",
+  },
+  "custom-feature-barcode-integration": {
+    en: "Barcode Integration",
+    it: "Integrazione Barcode",
+  },
+  "custom-feature-multi-warehouse": {
+    en: "Multi-warehouse",
+    it: "Multi-magazzino",
+  },
+
+  "custom-software-meta-description": {
+    en: "We develop custom software for your company. ERP, CRM, management systems tailored to optimize your processes.",
+    it: "Sviluppiamo software personalizzato per la tua azienda. ERP, CRM, sistemi gestionali su misura per ottimizzare i tuoi processi.",
+  },
+  "faq-subtitle-custom": {
+    en: "Answers to the most common questions about custom software",
+    it: "Risposte alle domande più comuni sul software personalizzato",
+  },
+  "faq-cta-subtext-custom": {
+    en: "Let's talk about your software project",
+    it: "Parliamo del tuo progetto software",
+  },
+  "custom-faq-question-1": {
+    en: "How do you understand our specific needs?",
+    it: "Come capite le nostre esigenze specifiche?",
+  },
+  "custom-faq-answer-1": {
+    en: "We start with detailed analysis sessions to understand your processes, challenges and objectives before proposing solutions.",
+    it: "Iniziamo con sessioni di analisi dettagliate per comprendere i vostri processi, sfide e obiettivi prima di proporre soluzioni.",
+  },
+  "custom-faq-question-2": {
+    en: "Can you integrate with our existing systems?",
+    it: "Potete integrarvi con i nostri sistemi esistenti?",
+  },
+  "custom-faq-answer-2": {
+    en: "Absolutely! We specialize in integrations with ERP, CRM, databases and legacy systems through modern APIs.",
+    it: "Assolutamente! Siamo specializzati in integrazioni con ERP, CRM, database e sistemi legacy attraverso API moderne.",
+  },
+  "custom-faq-question-3": {
+    en: "What happens if we need changes during development?",
+    it: "Cosa succede se abbiamo bisogno di modifiche durante lo sviluppo?",
+  },
+  "custom-faq-answer-3": {
+    en: "We use agile methodology that allows changes during development, with regular reviews and continuous feedback.",
+    it: "Utilizziamo metodologia agile che permette modifiche durante lo sviluppo, con revisioni regolari e feedback continuo.",
+  },
+  "custom-faq-question-4": {
+    en: "Do you provide training for our team?",
+    it: "Fornite formazione per il nostro team?",
+  },
+  "custom-faq-answer-4": {
+    en: "Yes, we include comprehensive training and detailed documentation to ensure your team can use the software effectively.",
+    it: "Sì, includiamo formazione completa e documentazione dettagliata per assicurare che il vostro team possa utilizzare il software efficacemente.",
+  },
+  "custom-cta-title": {
+    en: "Ready to Digitize Your Company?",
+    it: "Pronto a Digitalizzare la Tua Azienda?",
+  },
+  "custom-cta-description": {
+    en: "Transform your processes with custom software. Contact us for a free consultation",
+    it: "Trasforma i tuoi processi con software su misura. Contattaci per una consulenza gratuita",
+  },
+  // Mobile Stack Section
 };

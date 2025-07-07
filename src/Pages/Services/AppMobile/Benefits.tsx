@@ -2,6 +2,9 @@ import { motion } from "framer-motion";
 import { Icon } from "@iconify/react";
 import { useLanguage } from "../../../context/LanguageContext";
 import { Iphone15Pro } from "../../../Components/magicui/iphone-15-pro";
+import "keen-slider/keen-slider.min.css";
+import { useKeenSlider } from "keen-slider/react";
+import { useEffect } from "react";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 30 },
@@ -87,82 +90,82 @@ export default function Benefits() {
     },
   ];
 
+  const technologies = [
+    { icon: "devicon:swift", label: "Swift", color: "text-orange-500" },
+    { icon: "devicon:kotlin", label: "Kotlin", color: "text-purple-500" },
+    { icon: "devicon:react", label: "React Native", color: "text-cyan-500" },
+    { icon: "devicon:flutter", label: "Flutter", color: "text-blue-500" },
+    { icon: "devicon:java", label: "Java", color: "text-red-700" },
+    { icon: "devicon:typescript", label: "TypeScript", color: "text-blue-400" },
+  ];
+
   return (
     <section className="py-24 bg-white dark:bg-gray-900">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <motion.div
-          initial="initial"
-          whileInView="animate"
-          viewport={{ once: true, margin: "-100px" }}
-          variants={stagger}
-          className="grid lg:grid-cols-2 gap-12 items-center"
-        >
-          <motion.div variants={fadeInUp} className="space-y-8">
-            <motion.div variants={titleAnimation}>
-              <h2 className="text-3xl font-bold text-primary dark:text-primary">
-                {t("mobile-benefits-title") ||
-                  "Perché Scegliere le Nostre App Mobile"}
-              </h2>
-              <motion.p
-                variants={descriptionAnimation}
-                className="mt-4 text-lg text-gray-600 dark:text-gray-300"
-              >
-                {t("mobile-benefits-description") ||
-                  "App semplici da usare che fanno crescere il tuo business"}
-              </motion.p>
-            </motion.div>
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-primary dark:text-primary mb-4">
+            {t("mobile-benefits-title") || "Tecnologie che utilizziamo"}
+          </h2>
+          <p className="text-lg text-gray-600 dark:text-gray-300">
+            {t("mobile-benefits-description") ||
+              "Le migliori tecnologie per sviluppare la tua app mobile"}
+          </p>
+        </div>
 
-            <div className="space-y-4">
-              {benefits.map((benefit, index) => (
-                <motion.div
-                  key={index}
-                  variants={fadeInUp}
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                  className="flex items-start gap-4 p-4 bg-primary/5 dark:bg-primary/10 rounded-xl"
-                >
-                  <motion.div
-                    variants={iconAnimation}
-                    className="flex-shrink-0 w-10 h-10 rounded-lg bg-primary dark:bg-primary flex items-center justify-center"
-                  >
-                    <Icon
-                      icon={benefit.icon}
-                      className="h-5 w-5 text-white dark:text-white"
-                    />
-                  </motion.div>
-                  <div>
-                    <motion.h3
-                      variants={titleAnimation}
-                      className="font-semibold text-primary dark:text-primary"
-                    >
-                      {benefit.title}
-                    </motion.h3>
-                    <motion.p
-                      variants={descriptionAnimation}
-                      className="text-gray-600 dark:text-gray-300 text-sm mt-1"
-                    >
-                      {benefit.description}
-                    </motion.p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* iPhone 15 Pro */}
           <motion.div
-            variants={phoneAnimation}
-            className="relative"
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.3 }}
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="flex items-center justify-center py-4"
           >
-            <div className="flex items-center justify-center py-4">
-              <Iphone15Pro
-                src="/imgs/app-mockup.png"
-                className="mx-auto dark max-w-[550px] max-h-[550px] w-auto h-auto"
-              />
-            </div>
+            <Iphone15Pro
+              src="/imgs/app-mockup.png"
+              className="mx-auto dark max-w-[400px] max-h-[550px] w-full h-auto"
+            />
           </motion.div>
-        </motion.div>
+
+          {/* Griglia tecnologie */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="grid grid-cols-2 gap-6"
+          >
+            {technologies.map((tech, idx) => (
+              <motion.div
+                key={tech.label}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: idx * 0.1 }}
+                whileHover={{
+                  scale: 1.05,
+                  rotate: 2,
+                  boxShadow: "0 10px 30px rgba(0,0,0,0.1)",
+                }}
+                className="flex flex-col items-center justify-center bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8 border border-gray-200 dark:border-gray-700 hover:border-primary/30 transition-all duration-300 cursor-pointer group"
+              >
+                <motion.div
+                  whileHover={{ scale: 1.2, rotate: 10 }}
+                  transition={{ duration: 0.3 }}
+                  className="mb-4"
+                >
+                  <Icon
+                    icon={tech.icon}
+                    className={`w-16 h-16 ${tech.color} group-hover:drop-shadow-lg`}
+                  />
+                </motion.div>
+                <span className="font-bold text-xl text-center text-gray-800 dark:text-gray-200 group-hover:text-primary transition-colors">
+                  {tech.label}
+                </span>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
       </div>
     </section>
   );
