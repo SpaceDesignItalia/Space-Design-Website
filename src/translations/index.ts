@@ -4497,6 +4497,10 @@ export const translations: Translations = {
     en: "Modern Technologies",
     it: "Tecnologie Moderne",
   },
+  "mobile-stack-advantages": {
+    en: "Our Advantages",
+    it: "I nostri vantaggi",
+  },
   "mobile-stack-headline": {
     en: "We develop your app better than anyone else",
     it: "Sviluppiamo la tua app meglio di chiunque altro",
