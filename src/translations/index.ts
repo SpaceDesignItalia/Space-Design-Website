@@ -88,10 +88,7 @@ export const translations: Translations = {
     en: "Powerful native and cross-platform mobile applications that engage users and deliver exceptional performance on iOS and Android",
     it: "Potenti applicazioni mobile native e multi-piattaforma che coinvolgono gli utenti e offrono prestazioni eccezionali su iOS e Android",
   },
-  websites: {
-    en: "Websites",
-    it: "Siti Web",
-  },
+
   "websites-desc": {
     en: "Custom websites tailored to your business needs, designed to enhance your online presence and drive growth",
     it: "Siti web personalizzati adattati alle tue esigenze aziendali, progettati per migliorare la tua presenza online e guidare la crescita",
@@ -799,8 +796,8 @@ export const translations: Translations = {
     it: "Contattaci oggi per discutere il tuo progetto e scoprire come possiamo aiutarti a raggiungere i tuoi obiettivi",
   },
   "get-quote": {
-    en: "Get Quote",
-    it: "Richiedi Preventivo",
+    en: "Get quote",
+    it: "Richiedi preventivo",
   },
   "view-portfolio": {
     en: "View Portfolio",
@@ -813,314 +810,16 @@ export const translations: Translations = {
     it: "Sviluppo Web",
   },
   "web-hero-title": {
-    en: "Web Development",
-    it: "Sviluppo Web",
+    en: "Strategic web solutions for business growth",
+    it: "Soluzioni web strategiche per la crescita aziendale",
   },
   "web-hero-description": {
-    en: "Modern websites and high-performance web applications that deliver exceptional user experiences and drive business growth",
-    it: "Siti web moderni e applicazioni web performanti che offrono esperienze utente eccezionali e guidano la crescita del tuo business",
-  },
-  "web-meta-description": {
-    en: "We develop websites, e-commerce and modern web applications. Complete solutions from showcase sites to SaaS platforms.",
-    it: "Sviluppiamo siti web, e-commerce e applicazioni web moderne. Soluzioni complete dal sito vetrina alle piattaforme SaaS.",
-  },
-  "web-seo-optimized": {
-    en: "SEO Optimized",
-    it: "SEO Ottimizzato",
-  },
-  "web-seo-optimized-description": {
-    en: "We develop websites optimized for search engines, improving online visibility and Google ranking.",
-    it: "Sviluppiamo siti web ottimizzati per i motori di ricerca, migliorando la visibilità online e il posizionamento su Google.",
-  },
-  "web-features-title": {
-    en: "Key Features",
-    it: "Caratteristiche Principali",
-  },
-  "web-features-description": {
-    en: "We develop complete websites with all the modern features necessary for online success",
-    it: "Sviluppiamo siti web completi con tutte le funzionalità moderne necessarie per il successo online",
-  },
-  "web-responsive-design": {
-    en: "Responsive Design",
-    it: "Design Responsive",
-  },
-  "web-responsive-description": {
-    en: "We create websites that adapt perfectly to every device, ensuring an optimal experience on desktop, tablet and smartphone.",
-    it: "Creiamo siti web che si adattano perfettamente a ogni dispositivo, garantendo un'esperienza ottimale su desktop, tablet e smartphone.",
-  },
-  "web-performance": {
-    en: "High Performance",
-    it: "Performance Elevate",
-  },
-  "web-performance-description": {
-    en: "We optimize every aspect of the website to ensure fast loading times and a smooth user experience.",
-    it: "Ottimizziamo ogni aspetto del sito web per garantire tempi di caricamento rapidi e un'esperienza utente fluida.",
-  },
-  "web-security": {
-    en: "Advanced Security",
-    it: "Sicurezza Avanzata",
-  },
-  "web-security-description": {
-    en: "We implement security best practices to protect your website from threats and vulnerabilities.",
-    it: "Implementiamo le migliori pratiche di sicurezza per proteggere il tuo sito web da minacce e vulnerabilità.",
-  },
-  "web-technologies-title": {
-    en: "Technologies We Use",
-    it: "Tecnologie che Utilizziamo",
-  },
-  "web-benefits-title": {
-    en: "Why Choose Our Websites",
-    it: "Perché Scegliere i Nostri Siti Web",
-  },
-  "web-benefits-description": {
-    en: "Our websites offer concrete advantages for your online presence",
-    it: "I nostri siti web offrono vantaggi concreti per la tua presenza online",
-  },
-  "web-benefit-1": {
-    en: "Custom and professional design",
-    it: "Design personalizzato e professionale",
-  },
-  "web-benefit-2": {
-    en: "Optimized for search engines (SEO)",
-    it: "Ottimizzato per motori di ricerca (SEO)",
-  },
-  "web-benefit-3": {
-    en: "Responsive on all devices",
-    it: "Responsive su tutti i dispositivi",
-  },
-  "web-benefit-4": {
-    en: "Optimized performance and speed",
-    it: "Performance e velocità ottimizzate",
-  },
-  "web-benefit-5": {
-    en: "Security and automatic backups",
-    it: "Sicurezza e backup automatici",
-  },
-  "web-benefit-6": {
-    en: "Easy content management",
-    it: "Facile gestione contenuti",
-  },
-  "web-cta-title": {
-    en: "Ready to Create Your Website?",
-    it: "Pronto a Creare il Tuo Sito Web?",
-  },
-  "web-cta-description": {
-    en: "Contact us today to discuss your project and discover how we can create the perfect website for you",
-    it: "Contattaci oggi per discutere il tuo progetto e scoprire come possiamo creare il sito web perfetto per te",
-  },
-
-  // Web Development Page Additional Translations
-  "web-development-subtitle": {
-    en: "Modern and Scalable",
-    it: "Moderne e Scalabili",
-  },
-  "web-saas-platforms": {
-    en: "SaaS Platforms",
-    it: "Piattaforme SaaS",
-  },
-  "web-saas-description": {
-    en: "Multi-tenant Software-as-a-Service solutions with user management, billing and integrations.",
-    it: "Soluzioni Software-as-a-Service multi-tenant con gestione utenti, fatturazione e integrazioni.",
-  },
-  "web-progressive-apps": {
-    en: "Progressive Web Apps",
-    it: "Progressive Web Apps",
-  },
-  "web-progressive-description": {
-    en: "PWAs that work offline, with push notifications and installable like native apps.",
-    it: "PWA che funzionano offline, con notifiche push e installabili come app native.",
-  },
-  "web-enterprise-solutions": {
-    en: "Enterprise Solutions",
-    it: "Soluzioni Enterprise",
-  },
-  "web-enterprise-description": {
-    en: "Complex enterprise systems with high availability, advanced security and optimized performance.",
-    it: "Sistemi enterprise complessi con alta disponibilità, sicurezza avanzata e performance ottimizzate.",
-  },
-
-  // Websites Page Translations
-  "websites-meta-description": {
-    en: "We create custom and professional websites. Unique design, responsive and optimized for your business.",
-    it: "Creiamo siti web personalizzati e professionali. Design unico, responsive e ottimizzato per il tuo business.",
-  },
-  "websites-hero-description": {
-    en: "Business websites, e-commerce and professional landing pages to showcase your business online and reach new customers",
-    it: "Siti web aziendali, e-commerce e landing page professionali per presentare la tua attività online e raggiungere nuovi clienti",
-  },
-  "websites-features-title": {
-    en: "Types of Websites",
-    it: "Tipologie di Siti Web",
-  },
-  "websites-features-description": {
-    en: "We create complete websites with everything you need for online success",
-    it: "Creiamo siti web completi con tutto ciò di cui hai bisogno per il successo online",
-  },
-  "websites-custom-design": {
-    en: "Custom Design",
-    it: "Design Personalizzato",
-  },
-  "websites-custom-description": {
-    en: "We create unique business websites that reflect your brand identity and capture your customers' attention.",
-    it: "Creiamo siti web aziendali unici che riflettono la tua identità di brand e catturano l'attenzione dei tuoi clienti.",
-  },
-  "websites-showcase": {
-    en: "Showcase Websites",
-    it: "Siti Vetrina",
-  },
-  "websites-showcase-description": {
-    en: "Elegant websites to present your company, services and products professionally and attractively.",
-    it: "Siti web eleganti per presentare la tua azienda, i tuoi servizi e prodotti in modo professionale e accattivante.",
-  },
-  "websites-ecommerce": {
-    en: "E-commerce",
-    it: "E-commerce",
-  },
-  "websites-ecommerce-description": {
-    en: "Complete online stores to sell your products with cart, secure payments and order management.",
-    it: "Negozi online completi per vendere i tuoi prodotti con carrello, pagamenti sicuri e gestione ordini.",
-  },
-  "websites-landing": {
-    en: "Landing Pages",
-    it: "Landing Pages",
-  },
-  "websites-landing-description": {
-    en: "Landing pages optimized for conversions, perfect for marketing campaigns and product launches.",
-    it: "Pagine di atterraggio ottimizzate per conversioni, perfette per campagne marketing e lancio prodotti.",
-  },
-  "websites-technologies-title": {
-    en: "Platforms We Use",
-    it: "Piattaforme che Utilizziamo",
-  },
-  "websites-benefits-title": {
-    en: "Why Choose Our Websites",
-    it: "Perché Scegliere i Nostri Siti Web",
-  },
-  "websites-benefits-description": {
-    en: "Our websites are designed for your business success",
-    it: "I nostri siti web sono progettati per il successo del tuo business",
-  },
-  "websites-benefit-1": {
-    en: "Immediate online presence",
-    it: "Presenza online immediata",
-  },
-  "websites-benefit-2": {
-    en: "Easy to update independently",
-    it: "Facile da aggiornare autonomamente",
-  },
-  "websites-benefit-3": {
-    en: "Contained costs and fast times",
-    it: "Costi contenuti e tempi rapidi",
-  },
-  "websites-benefit-4": {
-    en: "Modern and professional design",
-    it: "Design moderno e professionale",
-  },
-  "websites-benefit-5": {
-    en: "Optimized for Google",
-    it: "Ottimizzato per Google",
-  },
-  "websites-benefit-6": {
-    en: "Responsive on all devices",
-    it: "Responsive su tutti i dispositivi",
-  },
-  "websites-cta-title": {
-    en: "Ready to Create Your Website?",
-    it: "Pronto a Creare il Tuo Sito Web?",
-  },
-  "websites-cta-description": {
-    en: "Contact us to discuss your project and create together the perfect website for your company",
-    it: "Contattaci per discutere il tuo progetto e creare insieme il sito web perfetto per la tua azienda",
-  },
-
-  // Additional Websites Translations
-  "websites-subtitle": {
-    en: "Professional and Tailored",
-    it: "Professionali e Su Misura",
-  },
-  "websites-types-title": {
-    en: "Types of Websites",
-    it: "Tipologie di Siti Web",
-  },
-  "websites-types-description": {
-    en: "We create complete websites with everything you need for online success. Each solution is tailored to your specific business needs and goals.",
-    it: "Creiamo siti web completi con tutto ciò di cui hai bisogno per il successo online. Ogni soluzione è adattata alle tue specifiche esigenze aziendali e obiettivi.",
-  },
-  "websites-custom-title": {
-    en: "Custom Design",
-    it: "Design Personalizzato",
-  },
-  "websites-custom-features": {
-    en: "Our custom designs include responsive layouts, modern aesthetics, intuitive navigation, and optimized user experience. We work closely with you to ensure every detail matches your vision and business objectives.",
-    it: "I nostri design personalizzati includono layout responsive, estetica moderna, navigazione intuitiva e user experience ottimizzata. Lavoriamo insieme a te per assicurarci che ogni dettaglio corrisponda alla tua visione e ai tuoi obiettivi aziendali.",
-  },
-  "websites-custom-tags": {
-    en: "Brand Identity,Responsive Design,User Experience,Modern Aesthetics",
-    it: "Identità del Brand,Design Responsive,User Experience,Estetica Moderna",
-  },
-  "websites-showcase-title": {
-    en: "Showcase Websites",
-    it: "Siti Vetrina",
-  },
-  "websites-showcase-features": {
-    en: "These sites focus on visual storytelling, professional imagery, clear service descriptions, and compelling calls-to-action. Ideal for consultants, agencies, restaurants, hotels, and service-based businesses.",
-    it: "Questi siti si concentrano su storytelling visivo, immagini professionali, descrizioni chiare dei servizi e call-to-action convincenti. Ideali per consulenti, agenzie, ristoranti, hotel e attività basate sui servizi.",
-  },
-  "websites-showcase-tags": {
-    en: "Professional Image,Visual Storytelling,Service Presentation,Trust Building",
-    it: "Immagine Professionale,Storytelling Visivo,Presentazione Servizi,Costruzione Fiducia",
-  },
-  "websites-ecommerce-title": {
-    en: "E-commerce",
-    it: "E-commerce",
-  },
-  "websites-ecommerce-features": {
-    en: "Features include product catalogs, inventory management, multiple payment gateways, shipping integration, customer accounts, order tracking, and detailed analytics. Built on platforms like Shopify, WooCommerce, or custom solutions.",
-    it: "Le funzionalità includono cataloghi prodotti, gestione inventario, gateway di pagamento multipli, integrazione spedizioni, account clienti, tracking ordini e analytics dettagliate. Realizzati su piattaforme come Shopify, WooCommerce o soluzioni personalizzate.",
-  },
-  "websites-ecommerce-tags": {
-    en: "Online Sales,Payment Gateway,Inventory Management,Order Tracking",
-    it: "Vendite Online,Gateway di Pagamento,Gestione Inventario,Tracking Ordini",
-  },
-  "websites-landing-title": {
-    en: "Landing Pages",
-    it: "Landing Pages",
-  },
-  "websites-landing-features": {
-    en: "Each landing page includes compelling headlines, persuasive copy, social proof elements, clear value propositions, and strategically placed call-to-action buttons. A/B testing ready and analytics integrated for maximum performance.",
-    it: "Ogni landing page include titoli accattivanti, copy persuasivo, elementi di social proof, proposte di valore chiare e pulsanti call-to-action posizionati strategicamente. Pronti per A/B testing e analytics integrati per massime performance.",
-  },
-  "websites-landing-tags": {
-    en: "High Conversion,Lead Generation,A/B Testing,Campaign Focused",
-    it: "Alta Conversione,Generazione Lead,A/B Testing,Focus Campagne",
-  },
-  "websites-additional-title": {
-    en: "All Websites Include",
-    it: "Tutti i Siti Web Includono",
-  },
-  "websites-feature-responsive": {
-    en: "Mobile Responsive",
-    it: "Mobile Responsive",
-  },
-  "websites-feature-responsive-desc": {
-    en: "Perfect on all devices",
-    it: "Perfetti su tutti i dispositivi",
-  },
-  "websites-feature-seo": {
-    en: "SEO Optimized",
-    it: "SEO Ottimizzato",
-  },
-  "websites-feature-seo-desc": {
-    en: "Built for search engines",
-    it: "Costruiti per i motori di ricerca",
-  },
-  "websites-feature-performance": {
-    en: "High Performance",
-    it: "Alte Performance",
-  },
-  "websites-feature-performance-desc": {
-    en: "Fast loading speeds",
-    it: "Velocità di caricamento elevate",
+    en: "We create websites that are not just beautiful, but also functional and optimized for search engines. Our team of experts will help you achieve your business goals with a website that is both beautiful and functional.",
+    it: "Creiamo siti web che non solo sono belli, ma anche funzionali e ottimizzati per i motori di ricerca. Il nostro team di esperti ti aiuterà a raggiungere i tuoi obiettivi di business con un sito web che sia bello e funzionale.",
+  },
+  "web-cta-button": {
+    en: "Get quote",
+    it: "Richiedi un preventivo",
   },
 
   // Custom Software Page Translations
@@ -4712,46 +4411,7 @@ export const translations: Translations = {
     en: "View Portfolio",
     it: "Vedi Portfolio",
   },
-  "custom-software-subtitle": {
-    en: "Tailor-made for You",
-    it: "Su Misura per Te",
-  },
-  "custom-hero-description": {
-    en: "We transform your ideas into complete software solutions. From business management to process automation, we create the perfect software for your needs",
-    it: "Trasformiamo le tue idee in soluzioni software complete. Dalla gestione aziendale all'automazione dei processi, creiamo il software perfetto per le tue esigenze",
-  },
-  "custom-solutions-title": {
-    en: "Our Solutions",
-    it: "Le Nostre Soluzioni",
-  },
-  "custom-solutions-description": {
-    en: "Enterprise software to digitize and optimize every aspect of your business",
-    it: "Software enterprise per digitalizzare e ottimizzare ogni aspetto del tuo business",
-  },
-  "custom-erp": {
-    en: "ERP Systems",
-    it: "Sistemi ERP",
-  },
-  "custom-erp-desc": {
-    en: "Integrated management systems that unify all business processes in a single scalable and customizable platform.",
-    it: "Sistemi di gestione integrata che unificano tutti i processi aziendali in un'unica piattaforma scalabile e personalizzabile.",
-  },
-  "custom-crm": {
-    en: "CRM Solutions",
-    it: "Soluzioni CRM",
-  },
-  "custom-crm-desc": {
-    en: "Advanced customer management with sales funnel automation, interaction tracking and predictive analytics.",
-    it: "Gestione clienti avanzata con automazione del sales funnel, tracking delle interazioni e analytics predittive.",
-  },
-  "custom-inventory": {
-    en: "Warehouse Management",
-    it: "Gestione Magazzino",
-  },
-  "custom-inventory-desc": {
-    en: "Intelligent systems for inventory control, movement tracking and automatic order optimization.",
-    it: "Sistemi intelligenti per controllo scorte, tracking movimenti e ottimizzazione automatica degli ordini.",
-  },
+
   "custom-why-advantages": {
     en: "Our Strengths",
     it: "I nostri punti di forza",
@@ -4836,112 +4496,68 @@ export const translations: Translations = {
     en: "Guaranteed Reliability",
     it: "Affidabilità garantita",
   },
-  "custom-technologies-title": {
-    en: "Enterprise Technologies",
-    it: "Tecnologie Enterprise",
-  },
 
-  // Custom Software Features Translations
-  "custom-feature-accounting": {
-    en: "Accounting Management",
-    it: "Gestione Contabilità",
-  },
-  "custom-feature-inventory-control": {
-    en: "Inventory Control",
-    it: "Controllo Inventario",
-  },
-  "custom-feature-hr": {
-    en: "HR Management",
-    it: "Gestione HR",
-  },
-  "custom-feature-reporting": {
-    en: "Advanced Reporting",
-    it: "Reportistica Avanzata",
-  },
-  "custom-feature-lead-management": {
-    en: "Lead Management",
-    it: "Gestione Lead",
-  },
-  "custom-feature-sales-pipeline": {
-    en: "Sales Pipeline",
-    it: "Pipeline Vendite",
-  },
-  "custom-feature-customer-analytics": {
-    en: "Customer Analytics",
-    it: "Analisi Clienti",
-  },
-  "custom-feature-marketing-automation": {
-    en: "Marketing Automation",
-    it: "Automazione Marketing",
-  },
-  "custom-feature-realtime-tracking": {
-    en: "Real-time Tracking",
-    it: "Tracciamento Real-time",
-  },
-  "custom-feature-auto-reordering": {
-    en: "Auto Reordering",
-    it: "Riordino Automatico",
-  },
-  "custom-feature-barcode-integration": {
-    en: "Barcode Integration",
-    it: "Integrazione Barcode",
-  },
-  "custom-feature-multi-warehouse": {
-    en: "Multi-warehouse",
-    it: "Multi-magazzino",
-  },
-
-  "custom-software-meta-description": {
-    en: "We develop custom software for your company. ERP, CRM, management systems tailored to optimize your processes.",
-    it: "Sviluppiamo software personalizzato per la tua azienda. ERP, CRM, sistemi gestionali su misura per ottimizzare i tuoi processi.",
-  },
-  "faq-subtitle-custom": {
-    en: "Answers to the most common questions about custom software",
-    it: "Risposte alle domande più comuni sul software personalizzato",
-  },
-  "faq-cta-subtext-custom": {
-    en: "Let's talk about your software project",
-    it: "Parliamo del tuo progetto software",
-  },
-  "custom-faq-question-1": {
-    en: "How do you understand our specific needs?",
-    it: "Come capite le nostre esigenze specifiche?",
-  },
-  "custom-faq-answer-1": {
-    en: "We start with detailed analysis sessions to understand your processes, challenges and objectives before proposing solutions.",
-    it: "Iniziamo con sessioni di analisi dettagliate per comprendere i vostri processi, sfide e obiettivi prima di proporre soluzioni.",
-  },
-  "custom-faq-question-2": {
-    en: "Can you integrate with our existing systems?",
-    it: "Potete integrarvi con i nostri sistemi esistenti?",
-  },
-  "custom-faq-answer-2": {
-    en: "Absolutely! We specialize in integrations with ERP, CRM, databases and legacy systems through modern APIs.",
-    it: "Assolutamente! Siamo specializzati in integrazioni con ERP, CRM, database e sistemi legacy attraverso API moderne.",
-  },
-  "custom-faq-question-3": {
-    en: "What happens if we need changes during development?",
-    it: "Cosa succede se abbiamo bisogno di modifiche durante lo sviluppo?",
-  },
-  "custom-faq-answer-3": {
-    en: "We use agile methodology that allows changes during development, with regular reviews and continuous feedback.",
-    it: "Utilizziamo metodologia agile che permette modifiche durante lo sviluppo, con revisioni regolari e feedback continuo.",
-  },
-  "custom-faq-question-4": {
-    en: "Do you provide training for our team?",
-    it: "Fornite formazione per il nostro team?",
-  },
-  "custom-faq-answer-4": {
-    en: "Yes, we include comprehensive training and detailed documentation to ensure your team can use the software effectively.",
-    it: "Sì, includiamo formazione completa e documentazione dettagliata per assicurare che il vostro team possa utilizzare il software efficacemente.",
-  },
-  "custom-cta-title": {
-    en: "Ready to Digitize Your Company?",
-    it: "Pronto a Digitalizzare la Tua Azienda?",
-  },
-  "custom-cta-description": {
-    en: "Transform your processes with custom software. Contact us for a free consultation",
-    it: "Trasforma i tuoi processi con software su misura. Contattaci per una consulenza gratuita",
-  },
   // Mobile Stack Section
+
+  // Website Modern Advantages
+  "website-modern-title": {
+    en: "Advantages of Our Modern Websites",
+    it: "Vantaggi dei Nostri Siti Web Moderni",
+  },
+  "website-modern-subtitle": {
+    en: "Cutting-edge websites that combine modern design, exceptional performance and innovative technologies to deliver a superior user experience",
+    it: "Siti web all'avanguardia che combinano design moderno, performance eccezionali e tecnologie innovative per offrire un'esperienza utente superiore",
+  },
+  "website-modern-cta": {
+    en: "Discover more about our services",
+    it: "Scopri di più sui nostri servizi",
+  },
+  "website-advantage-performance": {
+    en: "Exceptional Performance",
+    it: "Performance Eccezionali",
+  },
+  "website-advantage-performance-desc": {
+    en: "Ultra-fast websites with optimized loading times and excellent performance on all devices and browsers.",
+    it: "Siti web ultra-veloci con tempi di caricamento ottimizzati e performance eccellenti su tutti i dispositivi e browser.",
+  },
+  "website-advantage-responsive": {
+    en: "Responsive Design",
+    it: "Design Responsive",
+  },
+  "website-advantage-responsive-desc": {
+    en: "Adaptive design that fits perfectly on any device: desktop, tablet and smartphone.",
+    it: "Design adattivo che si adatta perfettamente a qualsiasi dispositivo: desktop, tablet e smartphone.",
+  },
+  "website-advantage-security": {
+    en: "Advanced Security",
+    it: "Sicurezza Avanzata",
+  },
+  "website-advantage-security-desc": {
+    en: "Implementation of advanced security protocols, SSL certificates and protection against cyber threats.",
+    it: "Implementazione di protocolli di sicurezza avanzati, certificati SSL e protezione contro minacce informatiche.",
+  },
+  "website-advantage-seo": {
+    en: "SEO Optimized",
+    it: "SEO Ottimizzato",
+  },
+  "website-advantage-seo-desc": {
+    en: "Complete optimization for search engines to improve online visibility and increase organic traffic.",
+    it: "Ottimizzazione completa per i motori di ricerca per migliorare la visibilità online e aumentare il traffico organico.",
+  },
+  "website-advantage-speed": {
+    en: "Loading Speed",
+    it: "Velocità di Caricamento",
+  },
+  "website-advantage-speed-desc": {
+    en: "Modern technologies and advanced optimizations to ensure fast loading times and smooth user experience.",
+    it: "Tecnologie moderne e ottimizzazioni avanzate per garantire tempi di caricamento rapidi e un'esperienza utente fluida.",
+  },
+  "website-advantage-scalability": {
+    en: "Scalability",
+    it: "Scalabilità",
+  },
+  "website-advantage-scalability-desc": {
+    en: "Scalable architecture that grows with your business, easily managing traffic increases and functionality.",
+    it: "Architettura scalabile che cresce con la tua azienda, gestendo facilmente l'aumento di traffico e funzionalità.",
+  },
 };
