@@ -2,6 +2,7 @@ import { Button } from "@heroui/react";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { useLanguage } from "../../context/LanguageContext";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -26,7 +27,16 @@ const clients = [
 ];
 
 export default function Hero() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+  const navigate = useNavigate();
+
+  const handleContactClick = () => {
+    navigate(`/${language}/contact`);
+  };
+
+  const handleServicesClick = () => {
+    navigate(`/${language}/case-studies`);
+  };
 
   return (
     <div className="relative flex h-dvh w-full flex-col overflow-hidden bg-background pt-[70px]">
@@ -98,6 +108,7 @@ export default function Hero() {
               className="group relative h-12 overflow-hidden bg-primary px-6 py-3 text-base font-medium text-white transition-all hover:bg-primary-600 hover:shadow-lg"
               radius="full"
               aria-label={t("hero-cta-start")}
+              onPress={handleContactClick}
             >
               <span className="relative z-10 flex items-center justify-center gap-2">
                 {t("hero-cta-start")}
@@ -119,6 +130,7 @@ export default function Hero() {
               radius="full"
               variant="bordered"
               aria-label={t("hero-cta-services")}
+              onPress={handleServicesClick}
             >
               <span className="flex items-center justify-center gap-2">
                 {t("hero-cta-services")}
