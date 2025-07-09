@@ -170,7 +170,10 @@ export default function ApiDevelopment() {
 
       <div className="min-h-screen bg-white dark:bg-gray-900">
         <ServiceHero
-          title="Connetti il tuo ecosistema digitale"
+          title={
+            t("api-development-hero-title") ||
+            "Connetti il tuo ecosistema digitale"
+          }
           description={
             t("api-development-hero-description") ||
             "Creiamo API robuste, sicure e ben documentate che collegano i tuoi sistemi e abilitano integrazioni perfette. Da REST a GraphQL, costruiamo la spina dorsale digitale delle tue applicazioni."

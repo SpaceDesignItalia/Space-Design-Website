@@ -1762,8 +1762,8 @@ export const translations: Translations = {
     it: "Servizi di integrazione cloud professionali. Migrazione, architettura, serverless e ottimizzazione per AWS, Azure e Google Cloud.",
   },
   "cloud-integration-hero-title": {
-    en: "Cloud Integration",
-    it: "Integrazione Cloud",
+    en: "Transform your IT infrastructure",
+    it: "Trasforma la tua infrastruttura IT",
   },
   "cloud-integration-hero-description": {
     en: "We transform your IT infrastructure with modern, scalable and secure cloud solutions. From migration to optimization, we accompany you in every phase of your cloud journey.",
@@ -2034,8 +2034,8 @@ export const translations: Translations = {
     it: "Servizi di sviluppo API professionali. REST, GraphQL, microservizi e integrazioni per applicazioni moderne e scalabili.",
   },
   "api-development-hero-title": {
-    en: "API Development",
-    it: "Sviluppo API",
+    en: "Connect your digital ecosystem",
+    it: "Connetti il tuo ecosistema digitale",
   },
   "api-development-hero-description": {
     en: "We create robust, secure and well-documented APIs that connect your systems and enable seamless integrations. From REST to GraphQL, we build the digital backbone of your applications.",
@@ -2616,6 +2616,10 @@ export const translations: Translations = {
   "devops-hero-title": {
     en: "DevOps & CI/CD",
     it: "DevOps & CI/CD",
+  },
+  "devops-hero-title": {
+    en: "Accelerate your development",
+    it: "Accelera il tuo sviluppo",
   },
   "devops-hero-description": {
     en: "Accelerate your development with modern DevOps practices. Automated pipelines, continuous integration, infrastructure as code and monitoring for faster, more reliable deployments.",

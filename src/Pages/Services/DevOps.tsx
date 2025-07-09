@@ -244,7 +244,7 @@ export default function DevOps() {
 
       <div className="min-h-screen bg-white dark:bg-gray-900">
         <ServiceHero
-          title="Accelera il tuo sviluppo"
+          title={t("devops-hero-title") || "Accelera il tuo sviluppo"}
           description={
             t("devops-hero-description") ||
             "Accelera il tuo sviluppo con pratiche DevOps moderne. Pipeline automatizzate, integrazione continua, infrastructure as code e monitoraggio per deployment più veloci e affidabili."

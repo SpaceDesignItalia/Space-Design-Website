@@ -170,7 +170,10 @@ export default function CloudIntegration() {
 
       <div className="min-h-screen bg-white dark:bg-gray-900">
         <ServiceHero
-          title="Trasforma la tua infrastruttura IT"
+          title={
+            t("cloud-integration-hero-title") ||
+            "Trasforma la tua infrastruttura IT"
+          }
           description={
             t("cloud-integration-hero-description") ||
             "Trasformiamo la tua infrastruttura IT con soluzioni cloud moderne, scalabili e sicure. Dalla migrazione all'ottimizzazione, ti accompagniamo in ogni fase del tuo percorso cloud."
