@@ -1,5 +1,6 @@
 import SEO from "../../Components/SEO";
 import { useLanguage } from "../../context/LanguageContext";
+import { useNavigate } from "react-router-dom";
 import { Button } from "@heroui/react";
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
@@ -74,6 +75,11 @@ const iconHover = {
 
 export default function About() {
   const { t, language } = useLanguage();
+  const navigate = useNavigate();
+
+  const handleCaseStudyClick = () => {
+    navigate(`/${language}/case-studies`);
+  };
 
   const teamMembers = useMemo(
     () => [
@@ -162,52 +168,42 @@ export default function About() {
       />
 
       <div className="min-h-screen bg-white dark:bg-gray-900">
-        {/* Hero Section with Modern Gradient */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 pt-[70px]">
-          {/* Animated Background Shapes */}
-          <div className="absolute inset-0" aria-hidden="true">
-            <motion.div
-              className="absolute -top-40 -right-40 h-80 w-80 rounded-full bg-gradient-to-r from-gray-200 to-gray-300 dark:from-gray-700 dark:to-gray-600 blur-3xl opacity-30"
-              animate={{
-                scale: [1, 1.2, 1],
-                rotate: [0, 180, 360],
-              }}
-              transition={{
-                duration: 20,
-                repeat: Infinity,
-                ease: "linear",
-              }}
-            />
-            <motion.div
-              className="absolute -bottom-40 -left-40 h-80 w-80 rounded-full bg-gradient-to-r from-gray-300 to-gray-200 dark:from-gray-600 dark:to-gray-700 blur-3xl opacity-30"
-              animate={{
-                scale: [1.2, 1, 1.2],
-                rotate: [360, 180, 0],
-              }}
-              transition={{
-                duration: 20,
-                repeat: Infinity,
-                ease: "linear",
-              }}
-            />
-          </div>
+        {/* Hero Section */}
+        <section
+          className="relative h-dvh w-full overflow-hidden bg-background pt-[70px]"
+          aria-labelledby="about-hero-heading"
+          role="banner"
+        >
+          {/* Simple background gradient */}
+          <div
+            className="absolute inset-0 bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900"
+            aria-hidden="true"
+          />
 
-          <div className="relative mx-auto max-w-7xl px-6 py-24 lg:px-8">
+          {/* Centered content */}
+          <div className="relative flex h-full items-center justify-center px-6">
             <motion.div
-              variants={stagger}
+              className="text-center max-w-4xl"
               initial="initial"
               animate="animate"
-              className="text-center"
+              variants={stagger}
             >
+              {/* Main heading with semantic structure */}
               <motion.h1
+                id="about-hero-heading"
                 variants={fadeInUp}
-                className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight tracking-tight bg-gradient-to-r from-gray-900 via-gray-700 to-gray-900 bg-clip-text text-transparent dark:from-white dark:via-gray-200 dark:to-white px-4 py-2"
+                className="text-5xl sm:text-6xl md:text-7xl font-bold leading-[1.1] tracking-tight mb-8"
               >
-                {t("about-hero-title")}
+                <span className="bg-gradient-to-r from-primary-600 to-primary-800 bg-clip-text text-transparent dark:from-primary-400 dark:to-primary-200">
+                  {t("about-hero-title")}
+                </span>
               </motion.h1>
+
+              {/* Descriptive subtitle with semantic meaning */}
               <motion.p
                 variants={fadeInUp}
-                className="mt-8 max-w-3xl mx-auto text-xl text-gray-600 dark:text-gray-300 leading-relaxed"
+                className="text-xl sm:text-2xl text-gray-600 dark:text-gray-300 mb-12 max-w-3xl mx-auto"
+                role="doc-subtitle"
               >
                 {t("about-hero-subtitle")}
               </motion.p>
@@ -216,8 +212,8 @@ export default function About() {
         </section>
 
         {/* Mission Section with Cards */}
-        <section className="py-24 bg-white dark:bg-gray-900">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <section className="h-dvh bg-white dark:bg-gray-900 flex items-center">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8 w-full">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <motion.div
                 initial="initial"
@@ -262,8 +258,8 @@ export default function About() {
         </section>
 
         {/* Stats Section with Animated Numbers and Icons */}
-        <section className="py-24 bg-black">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <section className="h-dvh bg-black flex items-center">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8 w-full">
             <motion.div
               initial="initial"
               whileInView="animate"
@@ -334,8 +330,8 @@ export default function About() {
         </section>
 
         {/* Team Story Section */}
-        <section className="py-24 bg-gray-50 dark:bg-gray-800">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <section className="h-dvh bg-gray-50 dark:bg-gray-800 flex items-center">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8 w-full">
             <motion.div
               initial="initial"
               whileInView="animate"
@@ -406,6 +402,8 @@ export default function About() {
                       variant="bordered"
                       size="lg"
                       className="border-2 border-gray-900 dark:border-white text-gray-900 dark:text-white hover:bg-gray-900 hover:text-white dark:hover:bg-white dark:hover:text-black transition-all duration-300 px-8 py-4 rounded-full font-semibold"
+                      onPress={handleCaseStudyClick}
+                      onClick={handleCaseStudyClick}
                     >
                       Scopri i nostri progetti
                       <Icon icon="solar:eye-linear" width={20} />

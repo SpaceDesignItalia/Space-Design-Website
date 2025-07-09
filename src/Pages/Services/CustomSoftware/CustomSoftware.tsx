@@ -32,6 +32,8 @@ const staggerChildren = {
 };
 import { MorphingText } from "../../../Components/magicui/morphing-text";
 import ServiceFAQ from "../../../Components/FAQ/ServiceFAQ";
+import ServiceCTA from "../../../Components/ServiceCTA";
+import ServiceHero from "../../../Components/ServiceHero";
 
 const stagger = {
   animate: {
@@ -148,95 +150,14 @@ export default function CustomSoftware() {
       />
 
       <div className="min-h-screen bg-white dark:bg-gray-900">
-        {/* Hero Section with MorphingText */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 pt-[70px]">
-          <div className="absolute inset-0" aria-hidden="true">
-            <motion.div
-              className="absolute -top-40 -right-40 h-80 w-80 rounded-full bg-gradient-to-r from-gray-200 to-gray-300 dark:from-gray-700 dark:to-gray-600 blur-3xl opacity-30"
-              animate={{
-                scale: [1, 1.2, 1],
-                rotate: [0, 180, 360],
-              }}
-              transition={{
-                duration: 20,
-                repeat: Infinity,
-                ease: "linear",
-              }}
-            />
-          </div>
-
-          <div className="relative mx-auto max-w-7xl px-6 py-24 lg:px-8">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="text-center"
-            >
-              <motion.div
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-                className="mx-auto mb-8 flex h-24 w-24 items-center justify-center rounded-2xl bg-black dark:bg-white"
-              >
-                <Icon
-                  icon="clarity:design-line"
-                  className="h-12 w-12 text-white dark:text-black"
-                />
-              </motion.div>
-
-              <div className="mb-6">
-                <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold leading-[1.1] tracking-tight text-gray-900 dark:text-white">
-                  <MorphingText
-                    texts={softwareTypes}
-                    className="text-gray-900 dark:text-white"
-                  />
-                </h1>
-                <p className="text-xl text-gray-600 dark:text-gray-400 mt-4">
-                  {t("custom-software-subtitle") || "Su Misura per Te"}
-                </p>
-              </div>
-
-              <motion.p
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.6, delay: 0.4 }}
-                className="mx-auto max-w-2xl text-lg leading-8 text-gray-600 dark:text-gray-300"
-              >
-                {t("custom-hero-description") ||
-                  "Trasformiamo le tue idee in soluzioni software complete. Dalla gestione aziendale all'automazione dei processi, creiamo il software perfetto per le tue esigenze"}
-              </motion.p>
-
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.6 }}
-                className="mt-10 flex items-center justify-center gap-x-6 relative z-[9999]"
-                whileHover={{ scale: 1.02 }}
-              >
-                <motion.div
-                  animate={pulseAnimation}
-                  className="relative z-[9999]"
-                >
-                  <Button
-                    size="lg"
-                    color="primary"
-                    radius="full"
-                    className="bg-black text-white hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200 px-8 py-4 text-lg font-semibold relative z-[9999] cursor-pointer"
-                    endContent={
-                      <Icon
-                        icon="material-symbols:arrow-forward"
-                        className="text-xl"
-                      />
-                    }
-                    onPress={handleContactClick}
-                  >
-                    {t("get-quote") || "Richiedi Preventivo"}
-                  </Button>
-                </motion.div>
-              </motion.div>
-            </motion.div>
-          </div>
-        </section>
+        <ServiceHero
+          title={t("custom-software") || "Software Personalizzato"}
+          description={
+            t("custom-hero-description") ||
+            "Trasformiamo le tue idee in soluzioni software complete. Dalla gestione aziendale all'automazione dei processi, creiamo il software perfetto per le tue esigenze"
+          }
+          buttonText={t("get-quote") || "Richiedi Preventivo"}
+        />
 
         {/* Solutions Section */}
         <section className="py-24 bg-gray-50 dark:bg-gray-800">
@@ -324,47 +245,72 @@ export default function CustomSoftware() {
               </p>
             </div>
 
-            <div className="mt-10 grid grid-cols-1 gap-8 sm:mt-16 lg:grid-cols-3">
-              <div className="rounded-2xl bg-white/5 backdrop-blur-sm p-8 text-white text-center flex flex-col items-center border border-white/10">
-                <Icon
-                  icon="material-symbols:psychology"
-                  className="w-12 h-12 mb-4 text-gray-300"
-                />
-                <h3 className="text-xl font-semibold mb-3">
-                  {t("custom-why-expertise") || "Expertise consolidata"}
-                </h3>
-                <p className="text-gray-300 leading-relaxed">
-                  {t("custom-why-expertise-desc") ||
-                    "Anni di esperienza nello sviluppo di software enterprise per aziende di ogni dimensione e settore."}
-                </p>
+            <div className="mt-16 grid grid-cols-1 gap-12 sm:mt-20 lg:grid-cols-3">
+              <div className="group">
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0">
+                    <div className="w-12 h-12 bg-primary-500 rounded-xl flex items-center justify-center">
+                      <Icon
+                        icon="material-symbols:psychology"
+                        className="w-6 h-6 text-white"
+                      />
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-semibold mb-3 text-white">
+                      {t("custom-why-expertise") || "Expertise consolidata"}
+                    </h3>
+                    <p className="text-gray-300 leading-relaxed">
+                      {t("custom-why-expertise-desc") ||
+                        "Anni di esperienza nello sviluppo di software enterprise per aziende di ogni dimensione e settore."}
+                    </p>
+                  </div>
+                </div>
               </div>
 
-              <div className="rounded-2xl bg-white/5 backdrop-blur-sm p-8 text-white text-center flex flex-col items-center border border-white/10">
-                <Icon
-                  icon="material-symbols:handshake"
-                  className="w-12 h-12 mb-4 text-gray-300"
-                />
-                <h3 className="text-xl font-semibold mb-3">
-                  {t("custom-why-partnership") || "Partnership a lungo termine"}
-                </h3>
-                <p className="text-gray-300 leading-relaxed">
-                  {t("custom-why-partnership-desc") ||
-                    "Non solo sviluppiamo il software, ma diventiamo il tuo partner tecnologico per la crescita futura."}
-                </p>
+              <div className="group">
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0">
+                    <div className="w-12 h-12 bg-primary-500 rounded-xl flex items-center justify-center">
+                      <Icon
+                        icon="material-symbols:handshake"
+                        className="w-6 h-6 text-white"
+                      />
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-semibold mb-3 text-white">
+                      {t("custom-why-partnership") ||
+                        "Partnership a lungo termine"}
+                    </h3>
+                    <p className="text-gray-300 leading-relaxed">
+                      {t("custom-why-partnership-desc") ||
+                        "Non solo sviluppiamo il software, ma diventiamo il tuo partner tecnologico per la crescita futura."}
+                    </p>
+                  </div>
+                </div>
               </div>
 
-              <div className="rounded-2xl bg-white/5 backdrop-blur-sm p-8 text-white text-center flex flex-col items-center border border-white/10">
-                <Icon
-                  icon="material-symbols:shield-lock"
-                  className="w-12 h-12 mb-4 text-gray-300"
-                />
-                <h3 className="text-xl font-semibold mb-3">
-                  {t("custom-why-security") || "Sicurezza enterprise"}
-                </h3>
-                <p className="text-gray-300 leading-relaxed">
-                  {t("custom-why-security-desc") ||
-                    "Implementiamo i più alti standard di sicurezza per proteggere i dati critici della tua azienda."}
-                </p>
+              <div className="group">
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0">
+                    <div className="w-12 h-12 bg-primary-500 rounded-xl flex items-center justify-center">
+                      <Icon
+                        icon="material-symbols:shield-lock"
+                        className="w-6 h-6 text-white"
+                      />
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-semibold mb-3 text-white">
+                      {t("custom-why-security") || "Sicurezza enterprise"}
+                    </h3>
+                    <p className="text-gray-300 leading-relaxed">
+                      {t("custom-why-security-desc") ||
+                        "Implementiamo i più alti standard di sicurezza per proteggere i dati critici della tua azienda."}
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -573,48 +519,16 @@ export default function CustomSoftware() {
         </div>
 
         {/* CTA Section */}
-        <section className="py-24 bg-black dark:bg-white">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="text-center"
-            >
-              <h2 className="text-3xl font-bold tracking-tight text-white dark:text-black sm:text-4xl">
-                {t("custom-cta-title") ||
-                  "Pronto a Digitalizzare la Tua Azienda?"}
-              </h2>
-              <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-300 dark:text-gray-700">
-                {t("custom-cta-description") ||
-                  "Trasforma i tuoi processi con software su misura. Contattaci per una consulenza gratuita"}
-              </p>
-              <div className="mt-10 relative z-[9999]">
-                <motion.div
-                  animate={pulseAnimation}
-                  className="relative z-[9999]"
-                >
-                  <Button
-                    size="lg"
-                    color="primary"
-                    radius="full"
-                    className="bg-white text-black hover:bg-gray-100 dark:bg-black dark:text-white dark:hover:bg-gray-800 px-8 py-4 text-lg font-semibold relative z-[9999] cursor-pointer"
-                    endContent={
-                      <Icon
-                        icon="material-symbols:arrow-forward"
-                        className="text-xl"
-                      />
-                    }
-                    onPress={handleContactClick}
-                  >
-                    {t("contact-us") || "Contattaci Ora"}
-                  </Button>
-                </motion.div>
-              </div>
-            </motion.div>
-          </div>
-        </section>
+        <ServiceCTA
+          title={
+            t("custom-cta-title") || "Pronto a Digitalizzare la Tua Azienda?"
+          }
+          subtitle={
+            t("custom-cta-description") ||
+            "Trasforma i tuoi processi con software su misura. Contattaci per una consulenza gratuita"
+          }
+          buttonText={t("contact-us") || "Contattaci Ora"}
+        />
       </div>
     </>
   );

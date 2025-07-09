@@ -1,66 +1,13 @@
 import SEO from "../../../Components/SEO";
 import { useLanguage } from "../../../context/LanguageContext";
-import { Icon } from "@iconify/react";
-import { motion } from "framer-motion";
 import CTA from "./CTA";
-import AppHero from "./AppHero";
+import ServiceHero from "../../../Components/ServiceHero";
 import ServiceFAQ from "../../../Components/FAQ/ServiceFAQ";
 import Benefits from "./Benefits";
 import ServiceStack from "./ServiceStack";
 
-const scaleIn = {
-  initial: { opacity: 0, scale: 0.95 },
-  animate: { opacity: 1, scale: 1 },
-  transition: { duration: 0.5, ease: "easeOut" },
-};
-
 export default function MobileDevelopment() {
   const { t, language } = useLanguage();
-
-  const fadeInUp = {
-    initial: { opacity: 0, y: 30 },
-    animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.6, ease: "easeOut" },
-  };
-
-  const stagger = {
-    animate: {
-      transition: {
-        staggerChildren: 0.15,
-      },
-    },
-  };
-
-  const features = [
-    {
-      icon: "bi:phone",
-      title: t("mobile-native-apps") || "App Native",
-      description:
-        t("mobile-native-description") ||
-        "Sviluppiamo app native per iOS e Android che sfruttano al massimo le potenzialità del dispositivo, garantendo performance eccellenti e un'esperienza utente fluida.",
-    },
-    {
-      icon: "material-symbols:devices",
-      title: t("mobile-cross-platform") || "Cross-Platform",
-      description:
-        t("mobile-cross-platform-description") ||
-        "Realizziamo app multi-piattaforma con React Native e Flutter, riducendo i tempi di sviluppo mantenendo alta qualità e funzionalità native.",
-    },
-    {
-      icon: "material-symbols:speed",
-      title: t("mobile-performance") || "Performance Ottimizzate",
-      description:
-        t("mobile-performance-description") ||
-        "Ottimizziamo ogni aspetto dell'app per garantire velocità, fluidità e un consumo efficiente della batteria.",
-    },
-    {
-      icon: "material-symbols:security",
-      title: t("mobile-security") || "Sicurezza Avanzata",
-      description:
-        t("mobile-security-description") ||
-        "Implementiamo protocolli di sicurezza all'avanguardia per proteggere i dati sensibili degli utenti.",
-    },
-  ];
 
   return (
     <>
@@ -86,7 +33,17 @@ export default function MobileDevelopment() {
       <div className="min-h-screen bg-white dark:bg-gray-900">
         {/* Hero Section */}
 
-        <AppHero />
+        <ServiceHero
+          title={
+            t("mobile-hero-title") ||
+            "La tua app mobile rivoluzionaria inizia qui"
+          }
+          description={
+            t("mobile-hero-description") ||
+            "Domina gli app store con un'esperienza mobile all'avanguardia che gli utenti ameranno. Nativa o cross-platform, iOS o Android - consegniamo eccellenza che si distingue"
+          }
+          buttonText={t("get-quote") || "Richiedi Preventivo"}
+        />
 
         <ServiceStack />
 

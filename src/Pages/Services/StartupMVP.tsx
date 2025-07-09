@@ -7,6 +7,8 @@ import { motion } from "framer-motion";
 import { BentoGrid, BentoGridItem } from "../../Components/magicui/bento-grid";
 import { MorphingText } from "../../Components/magicui/morphing-text";
 import ServiceFAQ from "../../Components/FAQ/ServiceFAQ";
+import ServiceCTA from "../../Components/ServiceCTA";
+import ServiceHero from "../../Components/ServiceHero";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 30 },
@@ -321,149 +323,14 @@ export default function StartupMVP() {
       />
 
       <div className="min-h-screen bg-white dark:bg-gray-900">
-        {/* Hero Section with MorphingText */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 pt-[70px]">
-          <div className="absolute inset-0" aria-hidden="true">
-            <motion.div
-              className="absolute -top-40 -right-40 h-80 w-80 rounded-full bg-gradient-to-r from-gray-200 to-gray-300 dark:from-gray-700 dark:to-gray-600 blur-3xl opacity-30"
-              animate={{
-                scale: [1, 1.2, 1],
-                rotate: [0, 180, 360],
-              }}
-              transition={{
-                duration: 20,
-                repeat: Infinity,
-                ease: "linear",
-              }}
-            />
-            <motion.div
-              className="absolute -bottom-40 -left-40 h-60 w-60 rounded-full bg-gradient-to-r from-gray-300 to-gray-400 dark:from-gray-600 dark:to-gray-500 blur-3xl opacity-20"
-              animate={{
-                scale: [1.2, 1, 1.2],
-                rotate: [360, 180, 0],
-              }}
-              transition={{
-                duration: 15,
-                repeat: Infinity,
-                ease: "linear",
-              }}
-            />
-          </div>
-
-          <div className="relative mx-auto max-w-7xl px-6 py-24 lg:px-8">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="text-center"
-            >
-              <motion.div
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-                className="mx-auto mb-8 flex h-24 w-24 items-center justify-center rounded-2xl bg-black dark:bg-white shadow-lg"
-              >
-                <Icon
-                  icon="pajamas:rocket-launch"
-                  className="h-12 w-12 text-white dark:text-black"
-                />
-              </motion.div>
-
-              <div className="mb-8">
-                <MorphingText
-                  texts={mvpFeatures}
-                  className="text-lg font-medium text-gray-600 dark:text-gray-400"
-                />
-              </div>
-
-              <motion.h1
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-                className="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.1] tracking-tight"
-              >
-                <span className="bg-gradient-to-r from-gray-900 via-gray-700 to-gray-900 bg-clip-text text-transparent dark:from-white dark:via-gray-200 dark:to-white">
-                  {t("mvp-hero-title") || "MVP per Startup"}
-                </span>
-              </motion.h1>
-
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.4 }}
-                className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-gray-600 dark:text-gray-300"
-              >
-                {t("mvp-hero-description") ||
-                  "Trasformiamo la tua idea rivoluzionaria in un MVP funzionante e scalabile. Validazione del mercato, tecnologie all'avanguardia e metodologia Lean Startup per il successo della tua startup"}
-              </motion.p>
-
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.5 }}
-                className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 relative z-[9999]"
-              >
-                <motion.div
-                  animate={pulseAnimation}
-                  className="relative z-[9999]"
-                >
-                  <Button
-                    size="lg"
-                    color="primary"
-                    radius="full"
-                    className="bg-black text-white dark:bg-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-200 px-8 py-4 text-lg font-semibold relative z-[9999] cursor-pointer"
-                    endContent={
-                      <Icon
-                        icon="material-symbols:arrow-forward"
-                        className="text-xl"
-                      />
-                    }
-                    onPress={handleContactClick}
-                  >
-                    {t("start-mvp") || "Inizia il tuo MVP"}
-                  </Button>
-                </motion.div>
-                <Button
-                  variant="bordered"
-                  size="lg"
-                  radius="full"
-                  className="border-gray-300 text-gray-700 dark:border-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800"
-                >
-                  {t("view-success-stories") || "Storie di Successo"}
-                </Button>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.6 }}
-                className="mt-12 flex items-center justify-center space-x-8 text-sm text-gray-500 dark:text-gray-400"
-              >
-                <div className="flex items-center">
-                  <Icon
-                    icon="material-symbols:schedule"
-                    className="h-4 w-4 mr-2"
-                  />
-                  <span>4-8 settimane</span>
-                </div>
-                <div className="flex items-center">
-                  <Icon
-                    icon="material-symbols:verified"
-                    className="h-4 w-4 mr-2"
-                  />
-                  <span>Metodologia Lean</span>
-                </div>
-                <div className="flex items-center">
-                  <Icon
-                    icon="material-symbols:trending-up"
-                    className="h-4 w-4 mr-2"
-                  />
-                  <span>Scalabilità garantita</span>
-                </div>
-              </motion.div>
-            </motion.div>
-          </div>
-        </section>
+        <ServiceHero
+          title={t("mvp-hero-title") || "MVP per Startup"}
+          description={
+            t("mvp-hero-description") ||
+            "Trasformiamo la tua idea rivoluzionaria in un MVP funzionante e scalabile. Validazione del mercato, tecnologie all'avanguardia e metodologia Lean Startup per il successo della tua startup"
+          }
+          buttonText={t("start-mvp") || "Inizia il tuo MVP"}
+        />
 
         {/* Process Section */}
         <section className="py-24 bg-white dark:bg-gray-900 relative overflow-hidden">
@@ -909,56 +776,17 @@ export default function StartupMVP() {
         />
 
         {/* CTA Section */}
-        <section className="py-24 bg-black dark:bg-white">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="text-center"
-            >
-              <h2 className="text-3xl font-bold tracking-tight text-white dark:text-black sm:text-4xl">
-                {t("mvp-cta-title") ||
-                  "Pronto a Trasformare la Tua Idea in Realtà?"}
-              </h2>
-              <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-200 dark:text-gray-700">
-                {t("mvp-cta-description") ||
-                  "Parla con i nostri esperti e scopri come possiamo aiutarti a creare un MVP di successo"}
-              </p>
-              <div className="mt-10 flex items-center justify-center gap-x-6 relative z-[9999]">
-                <motion.div
-                  animate={pulseAnimation}
-                  className="relative z-[9999]"
-                >
-                  <Button
-                    size="lg"
-                    color="primary"
-                    radius="full"
-                    className="bg-white text-black dark:bg-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 px-8 py-4 text-lg font-semibold relative z-[9999] cursor-pointer"
-                    onPress={handleContactClick}
-                    endContent={
-                      <Icon
-                        icon="material-symbols:arrow-forward"
-                        className="text-xl"
-                      />
-                    }
-                  >
-                    {t("mvp-cta-button") || "Inizia il Tuo MVP"}
-                  </Button>
-                </motion.div>
-                <Button
-                  variant="bordered"
-                  size="lg"
-                  radius="full"
-                  className="border-white text-white dark:border-black dark:text-black hover:bg-white/10 dark:hover:bg-black/10"
-                >
-                  {t("book-call") || "Prenota una Call"}
-                </Button>
-              </div>
-            </motion.div>
-          </div>
-        </section>
+        <ServiceCTA
+          title={
+            t("mvp-cta-title") || "Pronto a Trasformare la Tua Idea in Realtà?"
+          }
+          subtitle={
+            t("mvp-cta-description") ||
+            "Parla con i nostri esperti e scopri come possiamo aiutarti a creare un MVP di successo"
+          }
+          buttonText={t("mvp-cta-button") || "Inizia il Tuo MVP"}
+          secondaryButtonText={t("book-call") || "Prenota una Call"}
+        />
       </div>
     </>
   );

@@ -6,6 +6,8 @@ import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
 import { MorphingText } from "../../Components/magicui/morphing-text";
 import ServiceFAQ from "../../Components/FAQ/ServiceFAQ";
+import ServiceCTA from "../../Components/ServiceCTA";
+import ServiceHero from "../../Components/ServiceHero";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 30 },
@@ -275,154 +277,14 @@ export default function AISoftware() {
       />
 
       <div className="min-h-screen bg-white dark:bg-gray-900">
-        {/* Hero Section */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 pt-[70px]">
-          <div className="absolute inset-0" aria-hidden="true">
-            <motion.div
-              className="absolute -top-40 -right-40 h-80 w-80 rounded-full bg-gradient-to-r from-gray-200 to-gray-400 dark:from-gray-700 dark:to-gray-500 blur-3xl opacity-20"
-              animate={{
-                scale: [1, 1.2, 1],
-                rotate: [0, 180, 360],
-              }}
-              transition={{
-                duration: 20,
-                repeat: Infinity,
-                ease: "linear",
-              }}
-            />
-            <motion.div
-              className="absolute -bottom-40 -left-40 h-60 w-60 rounded-full bg-gradient-to-r from-black to-gray-800 dark:from-gray-600 dark:to-gray-400 blur-3xl opacity-15"
-              animate={{
-                scale: [1.2, 1, 1.2],
-                rotate: [360, 180, 0],
-              }}
-              transition={{
-                duration: 15,
-                repeat: Infinity,
-                ease: "linear",
-              }}
-            />
-          </div>
-
-          <div className="relative mx-auto max-w-7xl px-6 py-24 lg:px-8">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="text-center"
-            >
-              <motion.div
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-                className="mx-auto mb-8 flex h-24 w-24 items-center justify-center rounded-2xl bg-gradient-to-br from-black to-gray-800 dark:from-white dark:to-gray-200 shadow-2xl"
-              >
-                <Icon
-                  icon="streamline:artificial-intelligence-spark-remix"
-                  className="h-12 w-12 text-white dark:text-black"
-                />
-              </motion.div>
-
-              <div className="mb-8">
-                <MorphingText
-                  texts={aiCapabilities}
-                  className="text-lg font-medium bg-gradient-to-r from-black to-gray-600 bg-clip-text text-transparent dark:from-white dark:to-gray-400"
-                />
-              </div>
-
-              <motion.h1
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-                className="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.1] tracking-tight"
-              >
-                <span className="bg-gradient-to-r from-gray-900 via-black to-gray-800 bg-clip-text text-transparent dark:from-white dark:via-gray-200 dark:to-gray-300">
-                  {t("ai-hero-title") || "Software basato su AI"}
-                </span>
-              </motion.h1>
-
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.4 }}
-                className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-gray-600 dark:text-gray-300"
-              >
-                {t("ai-hero-description") ||
-                  "Trasformiamo il tuo business con soluzioni di intelligenza artificiale all'avanguardia. Machine learning, automazione intelligente e analytics predittive per un vantaggio competitivo sostenibile"}
-              </motion.p>
-
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.5 }}
-                className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 relative z-[9999]"
-              >
-                <motion.div
-                  animate={pulseAnimation}
-                  className="relative z-[9999]"
-                >
-                  <Button
-                    size="lg"
-                    color="primary"
-                    radius="full"
-                    className="bg-black text-white dark:bg-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-200 px-8 py-4 text-lg font-semibold relative z-[9999] cursor-pointer"
-                    endContent={
-                      <Icon
-                        icon="material-symbols:arrow-forward"
-                        className="text-xl"
-                      />
-                    }
-                    onPress={handleContactClick}
-                  >
-                    {t("start-ai-project") || "Inizia il tuo Progetto AI"}
-                  </Button>
-                </motion.div>
-                <Button
-                  variant="bordered"
-                  size="lg"
-                  radius="full"
-                  className="border-gray-300 text-gray-700 dark:border-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800"
-                >
-                  {t("explore-solutions") || "Esplora le Soluzioni"}
-                </Button>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.6 }}
-                className="mt-12 flex items-center justify-center space-x-8 text-sm text-gray-500 dark:text-gray-400"
-              >
-                <div className="flex items-center">
-                  <Icon
-                    icon="material-symbols:auto-awesome"
-                    className="h-4 w-4 mr-2"
-                  />
-                  <span>{t("ai-tech-category-advanced") || "AI Avanzata"}</span>
-                </div>
-                <div className="flex items-center">
-                  <Icon
-                    icon="material-symbols:speed"
-                    className="h-4 w-4 mr-2"
-                  />
-                  <span>
-                    {t("ai-tech-category-performance") ||
-                      "Performance Ottimali"}
-                  </span>
-                </div>
-                <div className="flex items-center">
-                  <Icon
-                    icon="material-symbols:security"
-                    className="h-4 w-4 mr-2"
-                  />
-                  <span>
-                    {t("ai-tech-category-security") || "Sicurezza Garantita"}
-                  </span>
-                </div>
-              </motion.div>
-            </motion.div>
-          </div>
-        </section>
+        <ServiceHero
+          title={t("ai-hero-title") || "Software basato su AI"}
+          description={
+            t("ai-hero-description") ||
+            "Trasformiamo il tuo business con soluzioni di intelligenza artificiale all'avanguardia. Machine learning, automazione intelligente e analytics predittive per un vantaggio competitivo sostenibile"
+          }
+          buttonText={t("start-ai-project") || "Inizia il tuo Progetto AI"}
+        />
 
         {/* AI Solutions Section */}
         <section className="py-24 bg-white dark:bg-gray-900">
@@ -775,56 +637,18 @@ export default function AISoftware() {
         />
 
         {/* CTA Section */}
-        <section className="py-24 bg-black dark:bg-white">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="text-center"
-            >
-              <h2 className="text-3xl font-bold tracking-tight text-white dark:text-black sm:text-4xl">
-                {t("ai-cta-title") ||
-                  "Pronto a Rivoluzionare il Tuo Business con l'AI?"}
-              </h2>
-              <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-300 dark:text-gray-700">
-                {t("ai-cta-description") ||
-                  "Scopri come l'intelligenza artificiale può trasformare i tuoi processi e creare valore per la tua azienda"}
-              </p>
-              <div className="mt-10 flex items-center justify-center gap-x-6 relative z-[9999]">
-                <motion.div
-                  animate={pulseAnimation}
-                  className="relative z-[9999]"
-                >
-                  <Button
-                    size="lg"
-                    color="primary"
-                    radius="full"
-                    className="bg-white text-black dark:bg-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 px-8 py-4 text-lg font-semibold relative z-[9999] cursor-pointer"
-                    endContent={
-                      <Icon
-                        icon="material-symbols:arrow-forward"
-                        className="text-xl"
-                      />
-                    }
-                    onPress={handleContactClick}
-                  >
-                    {t("contact-ai-expert") || "Parla con un Esperto AI"}
-                  </Button>
-                </motion.div>
-                <Button
-                  variant="bordered"
-                  size="lg"
-                  radius="full"
-                  className="border-white text-white dark:border-black dark:text-black hover:bg-white/10 dark:hover:bg-black/10"
-                >
-                  {t("view-ai-portfolio") || "Vedi il Portfolio AI"}
-                </Button>
-              </div>
-            </motion.div>
-          </div>
-        </section>
+        <ServiceCTA
+          title={
+            t("ai-cta-title") ||
+            "Pronto a Rivoluzionare il Tuo Business con l'AI?"
+          }
+          subtitle={
+            t("ai-cta-description") ||
+            "Scopri come l'intelligenza artificiale può trasformare i tuoi processi e creare valore per la tua azienda"
+          }
+          buttonText={t("contact-ai-expert") || "Parla con un Esperto AI"}
+          secondaryButtonText={t("view-ai-portfolio") || "Vedi il Portfolio AI"}
+        />
       </div>
     </>
   );

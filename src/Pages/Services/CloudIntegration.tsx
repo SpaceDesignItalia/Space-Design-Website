@@ -6,6 +6,8 @@ import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
 import { MorphingText } from "../../Components/magicui/morphing-text";
 import ServiceFAQ from "../../Components/FAQ/ServiceFAQ";
+import ServiceCTA from "../../Components/ServiceCTA";
+import ServiceHero from "../../Components/ServiceHero";
 
 export default function CloudIntegration() {
   const { t, language } = useLanguage();
@@ -167,154 +169,16 @@ export default function CloudIntegration() {
       />
 
       <div className="min-h-screen bg-white dark:bg-gray-900">
-        {/* Hero Section with Cloud Animation */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 pt-[70px]">
-          <div className="relative mx-auto max-w-7xl px-6 py-24 lg:px-8">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              {/* Left Column - Content */}
-              <motion.div
-                initial={{ opacity: 0, x: -50 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-              >
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5, delay: 0.2 }}
-                  className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full bg-black/5 dark:bg-white/5 border border-gray-200 dark:border-gray-700"
-                >
-                  <Icon
-                    icon="material-symbols:cloud-outline"
-                    className="h-5 w-5 text-gray-600 dark:text-gray-400"
-                  />
-                  <span className="text-sm font-medium text-gray-600 dark:text-gray-400">
-                    {t("cloud-integration") || "Integrazione Cloud"}
-                  </span>
-                </motion.div>
-
-                <motion.h1
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.3 }}
-                  className="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.1] tracking-tight mb-6"
-                >
-                  <span className="bg-gradient-to-r from-gray-900 via-black to-gray-800 bg-clip-text text-transparent dark:from-white dark:via-gray-200 dark:to-gray-300">
-                    Trasforma la tua
-                  </span>
-                  <br />
-                  <span className="bg-gradient-to-r from-gray-600 to-gray-800 bg-clip-text text-transparent dark:from-gray-300 dark:to-gray-100">
-                    infrastruttura IT
-                  </span>
-                </motion.h1>
-
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.4 }}
-                  className="mb-6"
-                >
-                  <div className="flex items-center gap-2 text-lg font-medium text-gray-600 dark:text-gray-400">
-                    <span>Offriamo</span>
-                    <MorphingText
-                      texts={cloudServices}
-                      className="text-lg font-medium text-gray-600 dark:text-gray-400"
-                    />
-                  </div>
-                </motion.div>
-
-                <motion.p
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.5 }}
-                  className="text-lg leading-8 text-gray-600 dark:text-gray-300 mb-8"
-                >
-                  {t("cloud-integration-hero-description") ||
-                    "Trasformiamo la tua infrastruttura IT con soluzioni cloud moderne, scalabili e sicure. Dalla migrazione all'ottimizzazione, ti accompagniamo in ogni fase del tuo percorso cloud."}
-                </motion.p>
-
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.6 }}
-                  className="flex flex-col sm:flex-row items-start sm:items-center gap-4 relative z-[9999]"
-                >
-                  <motion.div
-                    animate={pulseAnimation}
-                    className="relative z-[9999]"
-                  >
-                    <Button
-                      size="lg"
-                      color="primary"
-                      radius="full"
-                      className="bg-black text-white dark:bg-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-200 px-8 py-4 text-lg font-semibold relative z-[9999] cursor-pointer"
-                      endContent={
-                        <Icon
-                          icon="material-symbols:arrow-forward"
-                          className="text-xl"
-                        />
-                      }
-                      onPress={handleContactClick}
-                    >
-                      {t("cloud-integration-request-consultation") ||
-                        "Richiedi Consulenza"}
-                    </Button>
-                  </motion.div>
-                  <div className="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400">
-                    <Icon
-                      icon="material-symbols:check-circle"
-                      className="h-4 w-4 text-green-500"
-                    />
-                    <span>Assessment gratuito della tua infrastruttura</span>
-                  </div>
-                </motion.div>
-              </motion.div>
-
-              {/* Right Column - Cloud Migration Flow */}
-              <motion.div
-                initial={{ opacity: 0, x: 50 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                className="relative"
-              >
-                <div className="bg-white dark:bg-gray-900 rounded-2xl p-6 shadow-xl border border-gray-100 dark:border-gray-800">
-                  <div className="flex items-center gap-3 mb-6">
-                    <div className="w-3 h-3 rounded-full bg-black dark:bg-white"></div>
-                    <span className="text-lg font-semibold text-gray-900 dark:text-white">
-                      Cloud Migration Flow
-                    </span>
-                  </div>
-
-                  <div className="space-y-4">
-                    {cloudFlow.map((item, index) => (
-                      <motion.div
-                        key={index}
-                        initial={{ opacity: 0, x: 20 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.6, delay: 0.8 + index * 0.1 }}
-                        className="flex items-center gap-4"
-                      >
-                        <div className="w-10 h-10 rounded-full bg-black dark:bg-white flex items-center justify-center shadow-lg">
-                          <Icon
-                            icon={item.icon}
-                            className="h-5 w-5 text-white dark:text-black"
-                          />
-                        </div>
-                        <div className="flex-1">
-                          <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                            {item.step}
-                          </h3>
-                          <p className="text-sm text-gray-600 dark:text-gray-400">
-                            Step {index + 1}
-                          </p>
-                        </div>
-                      </motion.div>
-                    ))}
-                  </div>
-                </div>
-              </motion.div>
-            </div>
-          </div>
-        </section>
+        <ServiceHero
+          title="Trasforma la tua infrastruttura IT"
+          description={
+            t("cloud-integration-hero-description") ||
+            "Trasformiamo la tua infrastruttura IT con soluzioni cloud moderne, scalabili e sicure. Dalla migrazione all'ottimizzazione, ti accompagniamo in ogni fase del tuo percorso cloud."
+          }
+          buttonText={
+            t("cloud-integration-request-consultation") || "Richiedi Consulenza"
+          }
+        />
 
         {/* Cloud Services with Interactive Cards */}
         <section className="py-24 bg-white dark:bg-gray-900">
@@ -618,89 +482,15 @@ export default function CloudIntegration() {
           ]}
         />
 
-        {/* CTA Section with Interactive Elements */}
-        <section className="py-24 bg-gradient-to-r from-gray-900 to-black dark:from-gray-100 dark:to-white relative overflow-hidden">
-          {/* Animated Background */}
-          <div className="absolute inset-0">
-            {[...Array(15)].map((_, i) => (
-              <motion.div
-                key={i}
-                className="absolute w-2 h-2 bg-white/10 dark:bg-black/10 rounded-full"
-                style={{
-                  left: `${Math.random() * 100}%`,
-                  top: `${Math.random() * 100}%`,
-                }}
-                animate={{
-                  y: [0, -80, 0],
-                  opacity: [0, 1, 0],
-                }}
-                transition={{
-                  duration: 4 + Math.random() * 2,
-                  repeat: Infinity,
-                  delay: Math.random() * 3,
-                }}
-              />
-            ))}
-          </div>
-
-          <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="mx-auto max-w-3xl text-center"
-            >
-              <h2 className="text-3xl font-bold tracking-tight text-white dark:text-black sm:text-4xl mb-6">
-                {t("cloud-cta-title") || "Pronto per il Cloud?"}
-              </h2>
-              <p className="text-lg leading-8 text-gray-300 dark:text-gray-700 mb-10">
-                {t("cloud-cta-description") ||
-                  "Inizia la tua trasformazione digitale oggi stesso. Contattaci per una consulenza personalizzata e scopri come il cloud può rivoluzionare il tuo business."}
-              </p>
-
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-6 relative z-[9999]">
-                <motion.div
-                  animate={pulseAnimation}
-                  className="relative z-[9999]"
-                >
-                  <Button
-                    size="lg"
-                    color="primary"
-                    radius="full"
-                    className="bg-white text-black dark:bg-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 px-8 py-4 text-lg font-semibold relative z-[9999] cursor-pointer"
-                    onPress={handleContactClick}
-                    endContent={
-                      <Icon
-                        icon="material-symbols:arrow-forward"
-                        className="text-xl"
-                      />
-                    }
-                  >
-                    {t("cloud-cta-button") || "Contattaci Ora"}
-                  </Button>
-                </motion.div>
-
-                <div className="flex items-center gap-4 text-white/80 dark:text-black/80">
-                  <div className="flex items-center gap-2">
-                    <Icon
-                      icon="material-symbols:schedule"
-                      className="h-5 w-5"
-                    />
-                    <span className="text-sm">Assessment gratuito</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Icon
-                      icon="material-symbols:verified"
-                      className="h-5 w-5"
-                    />
-                    <span className="text-sm">Consulenza inclusa</span>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-          </div>
-        </section>
+        {/* CTA Section */}
+        <ServiceCTA
+          title={t("cloud-cta-title") || "Pronto per il Cloud?"}
+          subtitle={
+            t("cloud-cta-description") ||
+            "Inizia la tua trasformazione digitale oggi stesso. Contattaci per una consulenza personalizzata e scopri come il cloud può rivoluzionare il tuo business."
+          }
+          buttonText={t("cloud-cta-button") || "Contattaci Ora"}
+        />
       </div>
     </>
   );

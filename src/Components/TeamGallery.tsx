@@ -21,7 +21,7 @@ const TeamGallery: React.FC<TeamGalleryProps> = ({ teamMembers }) => {
           >
             <img
               src={member.image}
-              alt={member.name}
+              alt=""
               className="w-full h-full object-cover"
             />
           </div>

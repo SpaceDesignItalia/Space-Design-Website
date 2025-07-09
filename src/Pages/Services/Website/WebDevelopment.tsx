@@ -1,8 +1,7 @@
-import WebsiteHero from "./WebsiteHero";
 import SEO from "../../../Components/SEO";
 import { useLanguage } from "../../../context/LanguageContext";
 import CTA from "../../Home/CTA";
-import WebJamstack from "./WebJamstack";
+import ServiceHero from "../../../Components/ServiceHero";
 import WebsiteModern from "./WebsiteModern";
 import WebsiteTechnologies from "./WebsiteTechnologies";
 
@@ -29,8 +28,17 @@ export default function WebDevelopment() {
           "x-default": "/services/web-development",
         }}
       />
-      <WebsiteHero />
-      <WebJamstack />
+      <ServiceHero
+        title={
+          t("web-hero-title") ||
+          "Soluzioni web strategiche per la crescita aziendale"
+        }
+        description={
+          t("web-hero-description") ||
+          "Creiamo siti web che non solo sono belli, ma anche funzionali e ottimizzati per i motori di ricerca. Il nostro team di esperti ti aiuterà a raggiungere i tuoi obiettivi di business con un sito web che sia bello e funzionale."
+        }
+        buttonText={t("web-cta-button") || "Richiedi Preventivo"}
+      />
       <WebsiteModern />
       <WebsiteTechnologies />
       <CTA />

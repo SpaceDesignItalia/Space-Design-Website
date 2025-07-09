@@ -6,6 +6,8 @@ import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
 import { MorphingText } from "../../Components/magicui/morphing-text";
 import ServiceFAQ from "../../Components/FAQ/ServiceFAQ";
+import ServiceCTA from "../../Components/ServiceCTA";
+import ServiceHero from "../../Components/ServiceHero";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 30 },
@@ -241,221 +243,16 @@ export default function DevOps() {
       />
 
       <div className="min-h-screen bg-white dark:bg-gray-900">
-        {/* Hero Section with Pipeline Animation */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 pt-[70px]">
-          {/* Animated Pipeline Background */}
-          <div className="absolute inset-0" aria-hidden="true">
-            {[...Array(8)].map((_, i) => (
-              <motion.div
-                key={i}
-                className="absolute w-1 bg-gradient-to-b from-transparent via-gray-300 dark:via-gray-600 to-transparent"
-                style={{
-                  left: `${10 + i * 12}%`,
-                  height: "100%",
-                }}
-                animate={{
-                  opacity: [0.2, 0.8, 0.2],
-                  scaleY: [0.5, 1, 0.5],
-                }}
-                transition={{
-                  duration: 3,
-                  repeat: Infinity,
-                  delay: i * 0.3,
-                  ease: "easeInOut",
-                }}
-              />
-            ))}
-          </div>
-
-          <div className="relative mx-auto max-w-7xl px-6 py-24 lg:px-8">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              {/* Left Column - Content */}
-              <motion.div
-                initial={{ opacity: 0, x: -50 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-              >
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5, delay: 0.2 }}
-                  className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full bg-black/5 dark:bg-white/5 border border-gray-200 dark:border-gray-700"
-                >
-                  <Icon
-                    icon="icon-park-outline:cycle-arrow"
-                    className="h-5 w-5 text-gray-600 dark:text-gray-400"
-                  />
-                  <span className="text-sm font-medium text-gray-600 dark:text-gray-400">
-                    {t("devops-badge") || "DevOps & CI/CD"}
-                  </span>
-                </motion.div>
-
-                <motion.h1
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.3 }}
-                  className="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.1] tracking-tight mb-6"
-                >
-                  <span className="bg-gradient-to-r from-gray-900 via-black to-gray-800 bg-clip-text text-transparent dark:from-white dark:via-gray-200 dark:to-gray-300">
-                    {t("devops-hero-title-1") || "Accelera il tuo"}
-                  </span>
-                  <br />
-                  <span className="bg-gradient-to-r from-gray-600 to-gray-800 bg-clip-text text-transparent dark:from-gray-300 dark:to-gray-100">
-                    {t("devops-hero-title-2") || "sviluppo"}
-                  </span>
-                </motion.h1>
-
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.4 }}
-                  className="mb-6"
-                >
-                  <div className="flex items-center gap-2 text-lg font-medium text-gray-600 dark:text-gray-400">
-                    <span>{t("devops-implement") || "Implementiamo"}</span>
-                    <MorphingText
-                      texts={devopsServices}
-                      className="text-lg font-medium text-gray-600 dark:text-gray-400"
-                    />
-                  </div>
-                </motion.div>
-
-                <motion.p
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.5 }}
-                  className="text-lg leading-8 text-gray-600 dark:text-gray-300 mb-8"
-                >
-                  {t("devops-hero-description") ||
-                    "Accelera il tuo sviluppo con pratiche DevOps moderne. Pipeline automatizzate, integrazione continua, infrastructure as code e monitoraggio per deployment più veloci e affidabili."}
-                </motion.p>
-
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.6 }}
-                  className="flex flex-col sm:flex-row items-start sm:items-center gap-4 relative z-[9999]"
-                >
-                  <motion.div
-                    animate={pulseAnimation}
-                    className="relative z-[9999]"
-                  >
-                    <Button
-                      size="lg"
-                      color="primary"
-                      radius="full"
-                      className="bg-black text-white dark:bg-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-200 px-8 py-4 text-lg font-semibold relative z-[9999] cursor-pointer"
-                      endContent={
-                        <Icon
-                          icon="material-symbols:arrow-forward"
-                          className="text-xl"
-                        />
-                      }
-                      onPress={handleContactClick}
-                    >
-                      {t("devops-start-transformation") ||
-                        "Inizia la Trasformazione"}
-                    </Button>
-                  </motion.div>
-                  <div className="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400">
-                    <Icon
-                      icon="material-symbols:check-circle"
-                      className="h-4 w-4 text-green-500"
-                    />
-                    <span>
-                      {t("devops-free-assessment") ||
-                        "Assessment DevOps gratuito"}
-                    </span>
-                  </div>
-                </motion.div>
-              </motion.div>
-
-              {/* Right Column - DevOps Visualization */}
-              <motion.div
-                initial={{ opacity: 0, x: 50 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                className="relative"
-              >
-                <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-xl border border-gray-100 dark:border-gray-800">
-                  <div className="text-center">
-                    <motion.div
-                      className="w-32 h-32 mx-auto bg-gradient-to-br from-black to-gray-800 dark:from-white dark:to-gray-200 rounded-full flex items-center justify-center shadow-lg mb-6"
-                      animate={{
-                        scale: [1, 1.05, 1],
-                        rotate: [0, 360],
-                      }}
-                      transition={{
-                        scale: {
-                          duration: 2,
-                          repeat: Infinity,
-                          ease: "easeInOut",
-                        },
-                        rotate: {
-                          duration: 20,
-                          repeat: Infinity,
-                          ease: "linear",
-                        },
-                      }}
-                    >
-                      <Icon
-                        icon="icon-park-outline:cycle-arrow"
-                        className="h-16 w-16 text-white dark:text-black"
-                      />
-                    </motion.div>
-
-                    <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                      {t("devops-transformation-title") ||
-                        "DevOps Transformation"}
-                    </h3>
-
-                    <div className="grid grid-cols-2 gap-4">
-                      {[
-                        {
-                          icon: "material-symbols:speed",
-                          label: t("devops-metric-10x-faster") || "10x Faster",
-                        },
-                        {
-                          icon: "material-symbols:verified",
-                          label:
-                            t("devops-metric-uptime-999") || "99.9% Uptime",
-                        },
-                        {
-                          icon: "material-symbols:automation",
-                          label:
-                            t("devops-metric-80-automation") ||
-                            "80% Automation",
-                        },
-                        {
-                          icon: "material-symbols:bug-report",
-                          label:
-                            t("devops-metric-90-fewer-bugs") ||
-                            "90% Fewer Bugs",
-                        },
-                      ].map((item, index) => (
-                        <motion.div
-                          key={index}
-                          initial={{ opacity: 0, scale: 0.8 }}
-                          animate={{ opacity: 1, scale: 1 }}
-                          transition={{ duration: 0.5, delay: 1 + index * 0.1 }}
-                          className="p-4 bg-gray-50 dark:bg-gray-800 rounded-xl text-center"
-                        >
-                          <Icon
-                            icon={item.icon}
-                            className="h-8 w-8 mx-auto mb-2 text-gray-700 dark:text-gray-300"
-                          />
-                          <span className="text-sm font-medium text-gray-600 dark:text-gray-400">
-                            {item.label}
-                          </span>
-                        </motion.div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
-            </div>
-          </div>
-        </section>
+        <ServiceHero
+          title="Accelera il tuo sviluppo"
+          description={
+            t("devops-hero-description") ||
+            "Accelera il tuo sviluppo con pratiche DevOps moderne. Pipeline automatizzate, integrazione continua, infrastructure as code e monitoraggio per deployment più veloci e affidabili."
+          }
+          buttonText={
+            t("devops-start-transformation") || "Inizia la Trasformazione"
+          }
+        />
 
         {/* DevOps Services Section */}
         <section className="py-24 bg-white dark:bg-gray-900">
@@ -796,89 +593,16 @@ export default function DevOps() {
         />
 
         {/* CTA Section */}
-        <section className="py-24 bg-gradient-to-r from-gray-900 to-black dark:from-gray-100 dark:to-white relative overflow-hidden">
-          {/* Animated Background */}
-          <div className="absolute inset-0">
-            {[...Array(20)].map((_, i) => (
-              <motion.div
-                key={i}
-                className="absolute w-1 h-1 bg-white/20 dark:bg-black/20 rounded-full"
-                style={{
-                  left: `${Math.random() * 100}%`,
-                  top: `${Math.random() * 100}%`,
-                }}
-                animate={{
-                  y: [0, -100, 0],
-                  opacity: [0, 1, 0],
-                }}
-                transition={{
-                  duration: 3 + Math.random() * 2,
-                  repeat: Infinity,
-                  delay: Math.random() * 2,
-                }}
-              />
-            ))}
-          </div>
-
-          <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="mx-auto max-w-3xl text-center"
-            >
-              <h2 className="text-3xl font-bold tracking-tight text-white dark:text-black sm:text-4xl mb-6">
-                {t("devops-cta-title") ||
-                  "Pronto ad Accelerare il Tuo Sviluppo?"}
-              </h2>
-              <p className="text-lg leading-8 text-gray-300 dark:text-gray-700 mb-10">
-                {t("devops-cta-description") ||
-                  "Trasforma il tuo processo di sviluppo con pratiche DevOps moderne. Contattaci per una consulenza personalizzata."}
-              </p>
-
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-6 relative z-[9999]">
-                <motion.div
-                  animate={pulseAnimation}
-                  className="relative z-[9999]"
-                >
-                  <Button
-                    size="lg"
-                    color="primary"
-                    radius="full"
-                    className="bg-white text-black dark:bg-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 px-8 py-4 text-lg font-semibold relative z-[9999] cursor-pointer"
-                    onPress={handleContactClick}
-                    endContent={
-                      <Icon
-                        icon="material-symbols:arrow-forward"
-                        className="text-xl"
-                      />
-                    }
-                  >
-                    {t("devops-cta-button") || "Inizia Ora"}
-                  </Button>
-                </motion.div>
-
-                <div className="flex items-center gap-4 text-white/80 dark:text-black/80">
-                  <div className="flex items-center gap-2">
-                    <Icon
-                      icon="material-symbols:schedule"
-                      className="h-5 w-5"
-                    />
-                    <span className="text-sm">Assessment gratuito</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Icon
-                      icon="material-symbols:verified"
-                      className="h-5 w-5"
-                    />
-                    <span className="text-sm">Consulenza inclusa</span>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-          </div>
-        </section>
+        <ServiceCTA
+          title={
+            t("devops-cta-title") || "Pronto ad Accelerare il Tuo Sviluppo?"
+          }
+          subtitle={
+            t("devops-cta-description") ||
+            "Trasforma il tuo processo di sviluppo con pratiche DevOps moderne. Contattaci per una consulenza personalizzata."
+          }
+          buttonText={t("devops-cta-button") || "Inizia Ora"}
+        />
       </div>
     </>
   );

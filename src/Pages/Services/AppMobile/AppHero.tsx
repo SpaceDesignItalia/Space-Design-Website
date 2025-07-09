@@ -36,7 +36,7 @@ export default function AppHero() {
   };
 
   return (
-    <div className="relative overflow-hidden bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 pt-[70px]">
+    <div className="relative overflow-hidden bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 h-screen flex items-center">
       <div className="absolute inset-0" aria-hidden="true">
         <motion.div
           className="absolute -top-40 -right-40 h-80 w-80 rounded-full bg-gradient-to-r from-gray-200 to-gray-300 dark:from-gray-700 dark:to-gray-600 blur-3xl opacity-30"
@@ -52,7 +52,7 @@ export default function AppHero() {
         />
       </div>
 
-      <div className="relative mx-auto max-w-7xl px-6 py-24 lg:px-8">
+      <div className="relative mx-auto max-w-7xl px-6 lg:px-8 w-full">
         <motion.div
           variants={stagger}
           initial="initial"
