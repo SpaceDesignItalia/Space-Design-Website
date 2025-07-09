@@ -785,7 +785,7 @@ export default function StartupMVP() {
             "Parla con i nostri esperti e scopri come possiamo aiutarti a creare un MVP di successo"
           }
           buttonText={t("mvp-cta-button") || "Inizia il Tuo MVP"}
-          secondaryButtonText={t("book-call") || "Prenota una Call"}
+          secondaryButtonText={t("view-mvp-cases") || "Vedi Casi di Successo"}
         />
       </div>
     </>

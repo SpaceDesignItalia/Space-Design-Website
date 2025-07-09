@@ -4,32 +4,6 @@ import { Button } from "@heroui/react";
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
 
-const fadeInUp = {
-  initial: { opacity: 0, y: 30 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.6, ease: "easeOut" },
-};
-
-const fadeInLeft = {
-  initial: { opacity: 0, x: -30 },
-  animate: { opacity: 1, x: 0 },
-  transition: { duration: 0.6, ease: "easeOut" },
-};
-
-const fadeInRight = {
-  initial: { opacity: 0, x: 30 },
-  animate: { opacity: 1, x: 0 },
-  transition: { duration: 0.6, ease: "easeOut" },
-};
-
-const staggerChildren = {
-  animate: {
-    transition: {
-      staggerChildren: 0.1,
-    },
-  },
-};
-
 export default function CustomSoftwareAdvantages() {
   const { t, language } = useLanguage();
   const navigate = useNavigate();
@@ -38,155 +12,123 @@ export default function CustomSoftwareAdvantages() {
     navigate(`/${language}/contact`);
   };
 
+  const solutions = [
+    {
+      icon: "material-symbols:business-center",
+      title: t("custom-erp-title") || "Sistemi ERP",
+      description:
+        t("custom-erp-description") ||
+        "Sistemi di gestione integrata che unificano tutti i processi aziendali in un'unica piattaforma scalabile e personalizzabile.",
+      features: [
+        "Gestione contabilità completa",
+        "Controllo inventario e gestione magazzino",
+        "Gestione risorse umane",
+        "Reporting avanzato e analytics",
+      ],
+    },
+    {
+      icon: "material-symbols:group",
+      title: t("custom-crm-title") || "Soluzioni CRM",
+      description:
+        t("custom-crm-description") ||
+        "Gestione clienti avanzata con automazione del funnel di vendita, tracking delle interazioni e analytics predittive.",
+      features: [
+        "Gestione e qualifica dei lead",
+        "Automazione pipeline vendite",
+        "Analytics clienti e insights",
+        "Automazione marketing",
+      ],
+    },
+    {
+      icon: "material-symbols:inventory",
+      title: t("custom-inventory-title") || "Gestione inventario",
+      description:
+        t("custom-inventory-description") ||
+        "Sistemi intelligenti per controllo inventario, tracking dei movimenti e ottimizzazione automatica degli ordini.",
+      features: [
+        "Tracking inventario in tempo reale",
+        "Sistema riordino automatico",
+        "Integrazione barcode e codici QR",
+        "Gestione multi-magazzino",
+      ],
+    },
+  ];
+
   return (
     <div className="py-24 sm:py-32 bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-800">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <motion.div
-          className="text-center mb-12"
-          initial="initial"
-          whileInView="animate"
-          viewport={{ once: true }}
-          variants={staggerChildren}
-        >
+        <div className="text-center mb-16">
           <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             className="text-base/7 font-semibold text-blue-200 tracking-wider uppercase"
-            variants={fadeInUp}
           >
-            {t("custom-software-advantages") || "I nostri punti di forza"}
+            Le nostre soluzioni
           </motion.h2>
           <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
             className="mt-4 max-w-3xl mx-auto text-pretty text-4xl font-bold tracking-tight text-white sm:text-5xl"
-            variants={fadeInUp}
           >
-            {t("custom-software-headline") ||
-              "Perché scegliere Space Design Italia"}
+            Software personalizzato per ogni esigenza
           </motion.p>
           <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
             className="mt-6 text-lg text-blue-100 max-w-3xl mx-auto"
-            variants={fadeInUp}
           >
-            {t("custom-software-subtitle") ||
-              "Creiamo soluzioni software su misura che trasformano il tuo business. Analisi, progettazione, sviluppo e supporto continuo per garantire il successo del tuo progetto."}
+            Dalle soluzioni ERP complete ai sistemi CRM avanzati, sviluppiamo
+            software enterprise che digitalizzano e ottimizzano ogni aspetto del
+            tuo business.
           </motion.p>
-        </motion.div>
+        </div>
 
-        <motion.div
-          className="mt-10 grid grid-cols-1 gap-6 sm:mt-16 lg:grid-cols-3 max-w-6xl mx-auto"
-          initial="initial"
-          whileInView="animate"
-          viewport={{ once: true }}
-          variants={staggerChildren}
-        >
-          <motion.div
-            className="rounded-2xl bg-white/10 backdrop-blur-sm p-6 text-white text-center flex flex-col items-center border border-white/20"
-            variants={fadeInLeft}
-          >
-            <Icon
-              icon="material-symbols:automation"
-              className="w-10 h-10 mb-3 text-blue-200"
-            />
-            <h3 className="text-lg font-semibold mb-2">
-              {t("custom-software-advantage-automation") ||
-                "Automazione completa"}
-            </h3>
-            <p className="text-blue-100 text-sm leading-relaxed">
-              {t("custom-software-advantage-automation-desc") ||
-                "Automatizziamo i tuoi processi aziendali, riducendo errori e tempi di esecuzione."}
-            </p>
-          </motion.div>
-
-          <motion.div
-            className="rounded-2xl bg-white/10 backdrop-blur-sm p-6 text-white text-center flex flex-col items-center border border-white/20"
-            variants={fadeInUp}
-          >
-            <Icon
-              icon="material-symbols:integration-instructions"
-              className="w-10 h-10 mb-3 text-blue-200"
-            />
-            <h3 className="text-lg font-semibold mb-2">
-              {t("custom-software-advantage-integration") ||
-                "Integrazione perfetta"}
-            </h3>
-            <p className="text-blue-100 text-sm leading-relaxed">
-              {t("custom-software-advantage-integration-desc") ||
-                "Integriamo il software con i tuoi sistemi esistenti per un flusso di lavoro fluido."}
-            </p>
-          </motion.div>
-
-          <motion.div
-            className="rounded-2xl bg-white/10 backdrop-blur-sm p-6 text-white text-center flex flex-col items-center border border-white/20"
-            variants={fadeInRight}
-          >
-            <Icon
-              icon="material-symbols:trending-up"
-              className="w-10 h-10 mb-3 text-blue-200"
-            />
-            <h3 className="text-lg font-semibold mb-2">
-              {t("custom-software-advantage-scalability") ||
-                "Scalabilità garantita"}
-            </h3>
-            <p className="text-blue-100 text-sm leading-relaxed">
-              {t("custom-software-advantage-scalability-desc") ||
-                "Progettiamo soluzioni che crescono con il tuo business e le tue esigenze future."}
-            </p>
-          </motion.div>
-        </motion.div>
-
-        {/* Statistiche essenziali */}
-        <motion.div
-          className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto"
-          initial="initial"
-          whileInView="animate"
-          viewport={{ once: true }}
-          variants={staggerChildren}
-        >
-          <div className="text-center">
-            <div className="flex items-center justify-center mb-3">
-              <Icon
-                icon="material-symbols:speed"
-                className="text-blue-200 w-6 h-6 mr-2"
-              />
-              <div className="text-3xl font-bold text-white">3x</div>
-            </div>
-            <div className="text-blue-100 text-sm">
-              {t("custom-software-stat-efficiency") ||
-                "Aumento dell'efficienza"}
-            </div>
-          </div>
-          <div className="text-center">
-            <div className="flex items-center justify-center mb-3">
-              <Icon
-                icon="material-symbols:savings"
-                className="text-blue-200 w-6 h-6 mr-2"
-              />
-              <div className="text-3xl font-bold text-white">60%</div>
-            </div>
-            <div className="text-blue-100 text-sm">
-              {t("custom-software-stat-cost-reduction") ||
-                "Riduzione dei costi"}
-            </div>
-          </div>
-          <div className="text-center">
-            <div className="flex items-center justify-center mb-3">
-              <Icon
-                icon="material-symbols:support"
-                className="text-blue-200 w-6 h-6 mr-2"
-              />
-              <div className="text-3xl font-bold text-white">24/7</div>
-            </div>
-            <div className="text-blue-100 text-sm">
-              {t("custom-software-stat-support") || "Supporto dedicato"}
-            </div>
-          </div>
-        </motion.div>
+        {/* Layout a griglia pulito */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 max-w-6xl mx-auto">
+          {solutions.map((solution, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+              className="text-center"
+            >
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-xl bg-white/20 mb-6">
+                <Icon icon={solution.icon} className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-4">
+                {solution.title}
+              </h3>
+              <p className="text-blue-100 text-lg leading-relaxed mb-6">
+                {solution.description}
+              </p>
+              <ul className="text-blue-100 text-sm space-y-2">
+                {solution.features.map((feature, featureIndex) => (
+                  <li key={featureIndex} className="flex items-center">
+                    <Icon
+                      icon="material-symbols:check-circle"
+                      className="w-4 h-4 text-white mr-2"
+                    />
+                    {feature}
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+          ))}
+        </div>
 
         {/* CTA */}
         <motion.div
-          className="mt-16 text-center"
-          initial="initial"
-          whileInView="animate"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          variants={fadeInUp}
+          className="mt-16 text-center"
         >
           <Button
             size="lg"

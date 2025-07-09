@@ -503,6 +503,9 @@ export default function ApiDevelopment() {
             "Trasforma le tue integrazioni con API professionali. Contattaci per una consulenza personalizzata e scopri come possiamo connettere il tuo ecosistema digitale."
           }
           buttonText={t("api-cta-button") || "Contattaci Ora"}
+          secondaryButtonText={
+            t("view-case-studies") || "Vedi i nostri progetti"
+          }
         />
       </div>
     </>

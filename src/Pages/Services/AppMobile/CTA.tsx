@@ -12,6 +12,10 @@ export default function CTA() {
     navigate(`/${language}/contact`);
   };
 
+  const handleCaseStudyClick = () => {
+    navigate(`/${language}/case-studies`);
+  };
+
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
@@ -40,20 +44,36 @@ export default function CTA() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.6 }}
               viewport={{ once: true }}
-              className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start"
+              className="mt-10 flex flex-col sm:flex-row sm:flex-wrap items-center justify-center gap-3 lg:justify-start"
             >
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                className="w-full"
+                className="w-full sm:w-auto"
               >
                 <Button
                   radius="full"
-                  className="bg-white w-4/6"
+                  className="bg-white text-black hover:bg-gray-100 px-5 py-2.5 text-sm font-semibold whitespace-nowrap w-full sm:w-auto"
                   onClick={handleContactClick}
                 >
                   {t("cta-button")}
+                  <Icon icon="mdi:arrow-right" />
+                </Button>
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                className="w-full sm:w-auto"
+              >
+                <Button
+                  variant="bordered"
+                  radius="full"
+                  className="border-white text-white hover:bg-white/10 px-5 py-2.5 text-sm font-semibold whitespace-nowrap w-full sm:w-auto"
+                  onClick={handleCaseStudyClick}
+                >
+                  {t("view-case-studies") || "Vedi i nostri progetti"}
                   <Icon icon="mdi:arrow-right" />
                 </Button>
               </motion.div>
@@ -68,7 +88,7 @@ export default function CTA() {
           >
             <img
               alt="App screenshot"
-              src="/imgs/Home/home-cta.webp"
+              src="/Imgs/Home/home-cta.webp"
               width={1824}
               height={1080}
               className="absolute left-0 top-0 w-[57rem] max-w-none rounded-xl bg-white/5 ring-1 ring-white/10"

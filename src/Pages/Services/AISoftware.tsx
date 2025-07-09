@@ -518,61 +518,6 @@ export default function AISoftware() {
           </div>
         </section>
 
-        {/* Benefits Section */}
-        <section className="py-24 bg-gray-50 dark:bg-gray-800">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <motion.div
-              initial="initial"
-              whileInView="animate"
-              viewport={{ once: true }}
-              variants={stagger}
-              className="mx-auto max-w-2xl text-center mb-20"
-            >
-              <motion.h2
-                variants={fadeInUp}
-                className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl"
-              >
-                {t("ai-benefits-title") || "Vantaggi dell'AI"}
-              </motion.h2>
-              <motion.p
-                variants={fadeInUp}
-                className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300"
-              >
-                {t("ai-benefits-description") ||
-                  "Scopri come l'intelligenza artificiale può trasformare il tuo business"}
-              </motion.p>
-            </motion.div>
-
-            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-              {benefits.map((benefit, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="group bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300"
-                >
-                  <div
-                    className={`w-14 h-14 rounded-xl bg-gray-100 dark:bg-gray-800 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}
-                  >
-                    <Icon
-                      icon={benefit.icon}
-                      className={`h-7 w-7 ${benefit.color}`}
-                    />
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
-                    {benefit.title}
-                  </h3>
-                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                    {benefit.description}
-                  </p>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
-
         {/* FAQ Section */}
         <ServiceFAQ
           title={t("faq-title") || "Domande Frequenti"}

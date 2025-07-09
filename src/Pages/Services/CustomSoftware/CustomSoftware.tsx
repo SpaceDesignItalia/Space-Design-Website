@@ -68,48 +68,6 @@ export default function CustomSoftware() {
     "Document Management",
   ];
 
-  const solutions = [
-    {
-      icon: "material-symbols:business-center",
-      title: t("custom-erp") || "Sistemi ERP",
-      description:
-        t("custom-erp-desc") ||
-        "Sistemi di gestione integrata che unificano tutti i processi aziendali in un'unica piattaforma scalabile e personalizzabile.",
-      features: [
-        t("custom-feature-accounting") || "Gestione Contabilità",
-        t("custom-feature-inventory-control") || "Controllo Inventario",
-        t("custom-feature-hr") || "Gestione HR",
-        t("custom-feature-reporting") || "Reportistica Avanzata",
-      ],
-    },
-    {
-      icon: "material-symbols:group",
-      title: t("custom-crm") || "Soluzioni CRM",
-      description:
-        t("custom-crm-desc") ||
-        "Gestione clienti avanzata con automazione del sales funnel, tracking delle interazioni e analytics predittive.",
-      features: [
-        t("custom-feature-lead-management") || "Lead Management",
-        t("custom-feature-sales-pipeline") || "Sales Pipeline",
-        t("custom-feature-customer-analytics") || "Customer Analytics",
-        t("custom-feature-marketing-automation") || "Marketing Automation",
-      ],
-    },
-    {
-      icon: "material-symbols:inventory",
-      title: t("custom-inventory") || "Gestione Magazzino",
-      description:
-        t("custom-inventory-desc") ||
-        "Sistemi intelligenti per controllo scorte, tracking movimenti e ottimizzazione automatica degli ordini.",
-      features: [
-        t("custom-feature-realtime-tracking") || "Real-time Tracking",
-        t("custom-feature-auto-reordering") || "Auto Reordering",
-        t("custom-feature-barcode-integration") || "Barcode Integration",
-        t("custom-feature-multi-warehouse") || "Multi-warehouse",
-      ],
-    },
-  ];
-
   const technologies = [
     { name: "Python", icon: "logos:python" },
     { name: "Django", icon: "logos:django-icon" },
@@ -159,257 +117,172 @@ export default function CustomSoftware() {
           buttonText={t("get-quote") || "Richiedi Preventivo"}
         />
 
-        {/* Solutions Section */}
-        <section className="py-24 bg-gray-50 dark:bg-gray-800">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <motion.div
-              initial="initial"
-              whileInView="animate"
-              viewport={{ once: true }}
-              variants={stagger}
-              className="text-center mb-16"
-            >
-              <motion.h2
-                variants={fadeInUp}
-                className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl"
-              >
-                {t("custom-solutions-title") || "Le Nostre Soluzioni"}
-              </motion.h2>
-              <motion.p
-                variants={fadeInUp}
-                className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300"
-              >
-                {t("custom-solutions-description") ||
-                  "Software enterprise per digitalizzare e ottimizzare ogni aspetto del tuo business"}
-              </motion.p>
-            </motion.div>
-
-            <motion.div
-              initial="initial"
-              whileInView="animate"
-              viewport={{ once: true }}
-              variants={stagger}
-              className="grid grid-cols-1 lg:grid-cols-3 gap-8"
-            >
-              {solutions.map((solution, index) => (
-                <motion.div
-                  key={index}
-                  variants={scaleIn}
-                  className="group relative rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 p-8 hover:border-gray-300 dark:hover:border-gray-600 transition-all duration-300 hover:shadow-xl"
-                >
-                  <div className="flex h-16 w-16 items-center justify-center rounded-xl bg-black dark:bg-white mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <Icon
-                      icon={solution.icon}
-                      className="h-8 w-8 text-white dark:text-black"
-                    />
-                  </div>
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
-                    {solution.title}
-                  </h3>
-                  <p className="text-gray-600 dark:text-gray-300 mb-6">
-                    {solution.description}
-                  </p>
-                  <ul className="space-y-2">
-                    {solution.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-center gap-2">
-                        <Icon
-                          icon="material-symbols:check-circle"
-                          className="h-4 w-4 text-black dark:text-white flex-shrink-0"
-                        />
-                        <span className="text-sm text-gray-700 dark:text-gray-300">
-                          {feature}
-                        </span>
-                      </li>
-                    ))}
-                  </ul>
-                </motion.div>
-              ))}
-            </motion.div>
-          </div>
-        </section>
-
-        {/* Why Choose Space Design Italia - Dark Section */}
+        {/* Software Types Section - Dark Section */}
         <div className="bg-black py-24 sm:py-32">
           <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-base/7 font-semibold text-gray-300 tracking-wider uppercase">
-                {t("custom-why-advantages") || "I nostri punti di forza"}
+                {t("custom-types-section") || "Tipologie di Software"}
               </h2>
               <p className="mt-4 max-w-2xl mx-auto text-pretty text-4xl font-bold tracking-tight text-white sm:text-5xl">
-                {t("custom-why-headline") ||
-                  "Perché scegliere Space Design Italia per il tuo software personalizzato"}
+                {t("custom-types-headline") ||
+                  "Software personalizzato per ogni esigenza aziendale"}
               </p>
               <p className="mt-6 text-lg text-gray-300 max-w-2xl mx-auto">
-                {t("custom-why-subtitle") ||
-                  "Creiamo soluzioni software enterprise che trasformano il tuo business, con tecnologie all'avanguardia e supporto dedicato."}
+                {t("custom-types-subtitle") ||
+                  "Sviluppiamo soluzioni software su misura per ottimizzare i processi aziendali e aumentare la produttività"}
               </p>
             </div>
 
-            <div className="mt-16 grid grid-cols-1 gap-12 sm:mt-20 lg:grid-cols-3">
-              <div className="group">
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0">
-                    <div className="w-12 h-12 bg-primary-500 rounded-xl flex items-center justify-center">
-                      <Icon
-                        icon="material-symbols:psychology"
-                        className="w-6 h-6 text-white"
-                      />
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              {/* ERP Systems */}
+              <div className="group h-full">
+                <div className="bg-white/5 backdrop-blur-sm rounded-3xl p-8 border border-white/10 hover:border-primary-500/30 transition-all duration-300 h-full flex flex-col min-h-[200px]">
+                  <div className="flex items-start space-x-4 flex-1">
+                    <div className="flex-shrink-0">
+                      <div className="w-12 h-12 bg-primary-500 rounded-xl flex items-center justify-center">
+                        <Icon
+                          icon="material-symbols:business-center"
+                          className="w-6 h-6 text-white"
+                        />
+                      </div>
                     </div>
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-semibold mb-3 text-white">
-                      {t("custom-why-expertise") || "Expertise consolidata"}
-                    </h3>
-                    <p className="text-gray-300 leading-relaxed">
-                      {t("custom-why-expertise-desc") ||
-                        "Anni di esperienza nello sviluppo di software enterprise per aziende di ogni dimensione e settore."}
-                    </p>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-semibold mb-3 text-white">
+                        {t("custom-type-erp") || "Sistemi ERP"}
+                      </h3>
+                      <p className="text-gray-300 leading-relaxed">
+                        {t("custom-type-erp-desc") ||
+                          "Soluzioni integrate per la gestione completa dell'azienda: contabilità, magazzino, risorse umane e molto altro."}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div className="group">
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0">
-                    <div className="w-12 h-12 bg-primary-500 rounded-xl flex items-center justify-center">
-                      <Icon
-                        icon="material-symbols:handshake"
-                        className="w-6 h-6 text-white"
-                      />
+              {/* CRM Systems */}
+              <div className="group h-full">
+                <div className="bg-white/5 backdrop-blur-sm rounded-3xl p-8 border border-white/10 hover:border-primary-500/30 transition-all duration-300 h-full flex flex-col min-h-[200px]">
+                  <div className="flex items-start space-x-4 flex-1">
+                    <div className="flex-shrink-0">
+                      <div className="w-12 h-12 bg-primary-500 rounded-xl flex items-center justify-center">
+                        <Icon
+                          icon="material-symbols:groups"
+                          className="w-6 h-6 text-white"
+                        />
+                      </div>
                     </div>
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-semibold mb-3 text-white">
-                      {t("custom-why-partnership") ||
-                        "Partnership a lungo termine"}
-                    </h3>
-                    <p className="text-gray-300 leading-relaxed">
-                      {t("custom-why-partnership-desc") ||
-                        "Non solo sviluppiamo il software, ma diventiamo il tuo partner tecnologico per la crescita futura."}
-                    </p>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-semibold mb-3 text-white">
+                        {t("custom-type-crm") || "Sistemi CRM"}
+                      </h3>
+                      <p className="text-gray-300 leading-relaxed">
+                        {t("custom-type-crm-desc") ||
+                          "Gestione clienti avanzata con automazione del marketing, tracking vendite e analisi comportamentali."}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div className="group">
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0">
-                    <div className="w-12 h-12 bg-primary-500 rounded-xl flex items-center justify-center">
-                      <Icon
-                        icon="material-symbols:shield-lock"
-                        className="w-6 h-6 text-white"
-                      />
+              {/* Business Intelligence */}
+              <div className="group h-full">
+                <div className="bg-white/5 backdrop-blur-sm rounded-3xl p-8 border border-white/10 hover:border-primary-500/30 transition-all duration-300 h-full flex flex-col min-h-[200px]">
+                  <div className="flex items-start space-x-4 flex-1">
+                    <div className="flex-shrink-0">
+                      <div className="w-12 h-12 bg-primary-500 rounded-xl flex items-center justify-center">
+                        <Icon
+                          icon="material-symbols:analytics"
+                          className="w-6 h-6 text-white"
+                        />
+                      </div>
                     </div>
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-semibold mb-3 text-white">
-                      {t("custom-why-security") || "Sicurezza enterprise"}
-                    </h3>
-                    <p className="text-gray-300 leading-relaxed">
-                      {t("custom-why-security-desc") ||
-                        "Implementiamo i più alti standard di sicurezza per proteggere i dati critici della tua azienda."}
-                    </p>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-semibold mb-3 text-white">
+                        {t("custom-type-bi") || "Business Intelligence"}
+                      </h3>
+                      <p className="text-gray-300 leading-relaxed">
+                        {t("custom-type-bi-desc") ||
+                          "Sistemi di analisi dati avanzati per reporting, dashboard interattive e supporto alle decisioni strategiche."}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            {/* Sezione dettagli aggiuntivi */}
-            <div className="mt-16 max-w-5xl mx-auto">
-              <div className="bg-white/5 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
-                <h3 className="text-2xl font-bold text-white mb-8 text-center">
-                  {t("custom-why-approach-title") ||
-                    "Il nostro approccio unico"}
-                </h3>
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                  <div className="text-center">
-                    <div className="bg-white/20 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                      <Icon
-                        icon="material-symbols:person-search"
-                        className="w-8 h-8 text-white"
-                      />
+              {/* Document Management */}
+              <div className="group h-full">
+                <div className="bg-white/5 backdrop-blur-sm rounded-3xl p-8 border border-white/10 hover:border-primary-500/30 transition-all duration-300 h-full flex flex-col min-h-[200px]">
+                  <div className="flex items-start space-x-4 flex-1">
+                    <div className="flex-shrink-0">
+                      <div className="w-12 h-12 bg-primary-500 rounded-xl flex items-center justify-center">
+                        <Icon
+                          icon="material-symbols:description"
+                          className="w-6 h-6 text-white"
+                        />
+                      </div>
                     </div>
-                    <h4 className="text-lg font-semibold text-white mb-2">
-                      {t("custom-why-step-consultation") || "Consulenza"}
-                    </h4>
-                    <p className="text-gray-300 text-sm">
-                      {t("custom-why-step-consultation-desc") ||
-                        "Analisi approfondita delle tue esigenze e processi aziendali"}
-                    </p>
-                  </div>
-                  <div className="text-center">
-                    <div className="bg-white/20 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                      <Icon
-                        icon="material-symbols:architecture"
-                        className="w-8 h-8 text-white"
-                      />
+                    <div className="flex-1">
+                      <h3 className="text-xl font-semibold mb-3 text-white">
+                        {t("custom-type-dms") || "Gestione Documentale"}
+                      </h3>
+                      <p className="text-gray-300 leading-relaxed">
+                        {t("custom-type-dms-desc") ||
+                          "Sistemi per archiviazione, organizzazione e condivisione sicura di documenti aziendali."}
+                      </p>
                     </div>
-                    <h4 className="text-lg font-semibold text-white mb-2">
-                      {t("custom-why-step-architecture") || "Architettura"}
-                    </h4>
-                    <p className="text-gray-300 text-sm">
-                      {t("custom-why-step-architecture-desc") ||
-                        "Progettazione di sistemi scalabili e maintainabili"}
-                    </p>
-                  </div>
-                  <div className="text-center">
-                    <div className="bg-white/20 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                      <Icon
-                        icon="material-symbols:build"
-                        className="w-8 h-8 text-white"
-                      />
-                    </div>
-                    <h4 className="text-lg font-semibold text-white mb-2">
-                      {t("custom-why-step-implementation") || "Implementazione"}
-                    </h4>
-                    <p className="text-gray-300 text-sm">
-                      {t("custom-why-step-implementation-desc") ||
-                        "Sviluppo agile con testing continuo e quality assurance"}
-                    </p>
-                  </div>
-                  <div className="text-center">
-                    <div className="bg-white/20 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                      <Icon
-                        icon="material-symbols:trending-up"
-                        className="w-8 h-8 text-white"
-                      />
-                    </div>
-                    <h4 className="text-lg font-semibold text-white mb-2">
-                      {t("custom-why-step-growth") || "Crescita"}
-                    </h4>
-                    <p className="text-gray-300 text-sm">
-                      {t("custom-why-step-growth-desc") ||
-                        "Supporto continuo e ottimizzazioni per la crescita del business"}
-                    </p>
                   </div>
                 </div>
               </div>
-            </div>
 
-            {/* Statistiche */}
-            <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
-              <div className="text-center">
-                <div className="flex items-center justify-center mb-3">
-                  <Icon
-                    icon="material-symbols:schedule"
-                    className="text-gray-300 w-8 h-8 mr-3"
-                  />
-                  <div className="text-4xl font-bold text-white">-50%</div>
-                </div>
-                <div className="text-gray-300 text-lg">
-                  {t("custom-why-stat-time") || "Tempi di processo ridotti"}
+              {/* Workflow Automation */}
+              <div className="group h-full">
+                <div className="bg-white/5 backdrop-blur-sm rounded-3xl p-8 border border-white/10 hover:border-primary-500/30 transition-all duration-300 h-full flex flex-col min-h-[200px]">
+                  <div className="flex items-start space-x-4 flex-1">
+                    <div className="flex-shrink-0">
+                      <div className="w-12 h-12 bg-primary-500 rounded-xl flex items-center justify-center">
+                        <Icon
+                          icon="material-symbols:automation"
+                          className="w-6 h-6 text-white"
+                        />
+                      </div>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-semibold mb-3 text-white">
+                        {t("custom-type-workflow") || "Automazione Workflow"}
+                      </h3>
+                      <p className="text-gray-300 leading-relaxed">
+                        {t("custom-type-workflow-desc") ||
+                          "Automazione dei processi aziendali per ridurre errori, tempi e costi operativi."}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div className="text-center">
-                <div className="flex items-center justify-center mb-3">
-                  <Icon
-                    icon="material-symbols:verified"
-                    className="text-gray-300 w-8 h-8 mr-3"
-                  />
-                  <div className="text-4xl font-bold text-white">99.9%</div>
-                </div>
-                <div className="text-gray-300 text-lg">
-                  {t("custom-why-stat-uptime") || "Affidabilità garantita"}
+
+              {/* Custom Web Portals */}
+              <div className="group h-full">
+                <div className="bg-white/5 backdrop-blur-sm rounded-3xl p-8 border border-white/10 hover:border-primary-500/30 transition-all duration-300 h-full flex flex-col min-h-[200px]">
+                  <div className="flex items-start space-x-4 flex-1">
+                    <div className="flex-shrink-0">
+                      <div className="w-12 h-12 bg-primary-500 rounded-xl flex items-center justify-center">
+                        <Icon
+                          icon="material-symbols:web"
+                          className="w-6 h-6 text-white"
+                        />
+                      </div>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-semibold mb-3 text-white">
+                        {t("custom-type-portal") ||
+                          "Portali Web Personalizzati"}
+                      </h3>
+                      <p className="text-gray-300 leading-relaxed">
+                        {t("custom-type-portal-desc") ||
+                          "Portali aziendali per dipendenti, clienti e partner con funzionalità specifiche per ogni ruolo."}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -460,63 +333,60 @@ export default function CustomSoftware() {
         </section>
 
         {/* FAQ Section */}
-        <div className="pt-16">
-          <ServiceFAQ
-            title={t("faq-title") || "Domande Frequenti"}
-            subtitle={
-              t("faq-subtitle-custom") ||
-              "Risposte alle domande più comuni sul software personalizzato"
-            }
-            ctaText={t("faq-cta-text") || "Hai altre domande?"}
-            ctaSubtext={
-              t("faq-cta-subtext-custom") ||
-              "Parliamo del tuo progetto software"
-            }
-            benefitText={t("faq-benefit-text") || "Consulenza gratuita"}
-            faqs={[
-              {
-                question:
-                  t("custom-faq-question-1") ||
-                  "Come capite le nostre esigenze specifiche?",
-                answer:
-                  t("custom-faq-answer-1") ||
-                  "Iniziamo con sessioni di analisi dettagliate per comprendere i vostri processi, sfide e obiettivi prima di proporre soluzioni.",
-                icon: "material-symbols:analytics",
-                delay: 0.1,
-              },
-              {
-                question:
-                  t("custom-faq-question-2") ||
-                  "Potete integrarvi con i nostri sistemi esistenti?",
-                answer:
-                  t("custom-faq-answer-2") ||
-                  "Assolutamente! Siamo specializzati in integrazioni con ERP, CRM, database e sistemi legacy attraverso API moderne.",
-                icon: "material-symbols:integration-instructions",
-                delay: 0.2,
-              },
-              {
-                question:
-                  t("custom-faq-question-3") ||
-                  "Cosa succede se abbiamo bisogno di modifiche durante lo sviluppo?",
-                answer:
-                  t("custom-faq-answer-3") ||
-                  "Utilizziamo metodologia agile che permette modifiche durante lo sviluppo, con revisioni regolari e feedback continuo.",
-                icon: "material-symbols:edit",
-                delay: 0.3,
-              },
-              {
-                question:
-                  t("custom-faq-question-4") ||
-                  "Fornite formazione per il nostro team?",
-                answer:
-                  t("custom-faq-answer-4") ||
-                  "Sì, includiamo formazione completa e documentazione dettagliata per assicurare che il vostro team possa utilizzare il software efficacemente.",
-                icon: "material-symbols:school",
-                delay: 0.4,
-              },
-            ]}
-          />
-        </div>
+        <ServiceFAQ
+          title={t("faq-title") || "Domande Frequenti"}
+          subtitle={
+            t("faq-subtitle-custom") ||
+            "Risposte alle domande più comuni sul software personalizzato"
+          }
+          ctaText={t("faq-cta-text") || "Hai altre domande?"}
+          ctaSubtext={
+            t("faq-cta-subtext-custom") || "Parliamo del tuo progetto software"
+          }
+          benefitText={t("faq-benefit-text") || "Consulenza gratuita"}
+          faqs={[
+            {
+              question:
+                t("custom-faq-question-1") ||
+                "Come capite le nostre esigenze specifiche?",
+              answer:
+                t("custom-faq-answer-1") ||
+                "Iniziamo con sessioni di analisi dettagliate per comprendere i vostri processi, sfide e obiettivi prima di proporre soluzioni.",
+              icon: "material-symbols:analytics",
+              delay: 0.1,
+            },
+            {
+              question:
+                t("custom-faq-question-2") ||
+                "Potete integrarvi con i nostri sistemi esistenti?",
+              answer:
+                t("custom-faq-answer-2") ||
+                "Assolutamente! Siamo specializzati in integrazioni con ERP, CRM, database e sistemi legacy attraverso API moderne.",
+              icon: "material-symbols:integration-instructions",
+              delay: 0.2,
+            },
+            {
+              question:
+                t("custom-faq-question-3") ||
+                "Cosa succede se abbiamo bisogno di modifiche durante lo sviluppo?",
+              answer:
+                t("custom-faq-answer-3") ||
+                "Utilizziamo metodologia agile che permette modifiche durante lo sviluppo, con revisioni regolari e feedback continuo.",
+              icon: "material-symbols:edit",
+              delay: 0.3,
+            },
+            {
+              question:
+                t("custom-faq-question-4") ||
+                "Fornite formazione per il nostro team?",
+              answer:
+                t("custom-faq-answer-4") ||
+                "Sì, includiamo formazione completa e documentazione dettagliata per assicurare che il vostro team possa utilizzare il software efficacemente.",
+              icon: "material-symbols:school",
+              delay: 0.4,
+            },
+          ]}
+        />
 
         {/* CTA Section */}
         <ServiceCTA
@@ -528,6 +398,9 @@ export default function CustomSoftware() {
             "Trasforma i tuoi processi con software su misura. Contattaci per una consulenza gratuita"
           }
           buttonText={t("contact-us") || "Contattaci Ora"}
+          secondaryButtonText={
+            t("view-case-studies") || "Vedi i nostri progetti"
+          }
         />
       </div>
     </>

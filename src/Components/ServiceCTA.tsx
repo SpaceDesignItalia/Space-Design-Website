@@ -24,11 +24,15 @@ export default function ServiceCTA({
     navigate(`/${language}/contact`);
   };
 
+  const handleCaseStudyClick = () => {
+    navigate(`/${language}/case-studies`);
+  };
+
   return (
     <div className="bg-white dark:bg-gray-900">
       <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
-        <div className="relative isolate overflow-hidden bg-primary px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
-          <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
+        <div className="relative isolate overflow-hidden bg-primary px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-12 lg:px-24 lg:pt-0">
+          <div className="mx-auto max-w-lg text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left lg:max-w-xl xl:max-w-2xl">
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -56,37 +60,41 @@ export default function ServiceCTA({
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.6 }}
               viewport={{ once: true }}
-              className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start"
+              className="mt-10 flex flex-col sm:flex-row sm:flex-wrap items-center justify-center gap-3 lg:justify-start"
             >
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                className="w-full sm:w-auto"
               >
                 <Button
                   radius="full"
-                  className="bg-white text-black hover:bg-gray-100 px-8 py-3 text-lg font-semibold"
+                  className="bg-white text-black hover:bg-gray-100 px-5 py-2.5 text-sm font-semibold whitespace-nowrap w-full sm:w-auto"
                   onClick={handleContactClick}
                 >
                   {buttonText || t("cta-button") || "Contattaci Ora"}
                   <Icon icon="mdi:arrow-right" />
                 </Button>
               </motion.div>
-              {secondaryButtonText && (
-                <motion.div
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  transition={{ type: "spring", stiffness: 400, damping: 17 }}
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                className="w-full sm:w-auto"
+              >
+                <Button
+                  variant="bordered"
+                  radius="full"
+                  className="border-white text-white hover:bg-white/10 px-5 py-2.5 text-sm font-semibold whitespace-nowrap w-full sm:w-auto"
+                  onClick={handleCaseStudyClick}
                 >
-                  <Button
-                    variant="bordered"
-                    radius="full"
-                    className="border-white text-white hover:bg-white/10 px-8 py-3 text-lg font-semibold"
-                  >
-                    {secondaryButtonText}
-                  </Button>
-                </motion.div>
-              )}
+                  {secondaryButtonText ||
+                    t("view-case-studies") ||
+                    "Vedi i nostri progetti"}
+                  <Icon icon="mdi:arrow-right" />
+                </Button>
+              </motion.div>
             </motion.div>
           </div>
           <motion.div
@@ -94,14 +102,14 @@ export default function ServiceCTA({
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true }}
-            className="relative mt-16 h-80 lg:mt-8"
+            className="relative mt-16 h-80 lg:mt-8 lg:flex-shrink-0 lg:w-96 xl:w-[480px]"
           >
             <img
               alt="App screenshot"
               src="/Imgs/Home/home-cta.webp"
               width={1824}
               height={1080}
-              className="absolute left-0 top-0 w-[57rem] max-w-none rounded-xl bg-white/5 ring-1 ring-white/10"
+              className="absolute left-0 top-0 h-full w-auto max-w-none rounded-xl bg-white/5 ring-1 ring-white/10 object-cover object-left"
             />
           </motion.div>
         </div>

@@ -602,6 +602,9 @@ export default function DevOps() {
             "Trasforma il tuo processo di sviluppo con pratiche DevOps moderne. Contattaci per una consulenza personalizzata."
           }
           buttonText={t("devops-cta-button") || "Inizia Ora"}
+          secondaryButtonText={
+            t("view-case-studies") || "Vedi i nostri progetti"
+          }
         />
       </div>
     </>

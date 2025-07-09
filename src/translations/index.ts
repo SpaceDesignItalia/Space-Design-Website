@@ -241,6 +241,10 @@ export const translations: Translations = {
     en: "Learn more",
     it: "Scopri di più",
   },
+  "view-case-studies": {
+    en: "View our projects",
+    it: "Vedi i nostri progetti",
+  },
 
   // Why Us Section
   "why-us-title": {
@@ -590,12 +594,12 @@ export const translations: Translations = {
 
   // About Section
   "about-hero-title": {
-    en: "Creating extraordinary solutions.",
-    it: "Creare soluzioni straordinarie.",
+    en: "Meet the team behind Space Design Italia.",
+    it: "Incontra il team di Space Design Italia.",
   },
   "about-hero-subtitle": {
-    en: "We are on a mission to revolutionize the way businesses interact with technology.",
-    it: "Siamo in missione per rivoluzionare il modo in cui le aziende interagiscono con la tecnologia.",
+    en: "We are a team of young visionaries passionate about technological innovation, united by the desire to make technology accessible and understandable for everyone.",
+    it: "Siamo una squadra di giovani visionari appassionati di innovazione tecnologica, uniti dal desiderio di rendere la tecnologia accessibile e comprensibile per tutti.",
   },
   "about-mission-title": {
     en: "Our Mission",
@@ -736,8 +740,8 @@ export const translations: Translations = {
     it: "Tecnologie che Utilizziamo",
   },
   "mobile-benefits-title": {
-    en: "Why Choose Our Mobile Apps",
-    it: "Perché Scegliere le Nostre App Mobile",
+    en: "Why Choose our Mobile Apps",
+    it: "Perché Scegliere le nostre App Mobile",
   },
   "mobile-benefits-description": {
     en: "Our mobile apps offer concrete advantages for your business",
@@ -865,7 +869,7 @@ export const translations: Translations = {
   },
   "custom-crm-desc": {
     en: "Advanced customer management with sales funnel automation, interaction tracking and predictive analytics.",
-    it: "Gestione clienti avanzata con automazione del sales funnel, tracking delle interazioni e analytics predittive.",
+    it: "Gestione clienti avanzata con automazione del funnel di vendita, tracking delle interazioni e analytics predittive.",
   },
   "custom-inventory": {
     en: "Inventory Management",
@@ -1089,13 +1093,17 @@ export const translations: Translations = {
     en: "Talk to our experts and discover how we can help you create a successful MVP",
     it: "Parla con i nostri esperti e scopri come possiamo aiutarti a creare un MVP di successo",
   },
+  "mvp-cta-button": {
+    en: "Start your MVP",
+    it: "Inizia il tuo MVP",
+  },
   "start-now": {
     en: "Start Now",
     it: "Inizia Ora",
   },
-  "book-call": {
-    en: "Book a Call",
-    it: "Prenota una Call",
+  "view-mvp-cases": {
+    en: "View Success Stories",
+    it: "Vedi Casi di Successo",
   },
   "mvp-meta-description": {
     en: "Transform your idea into a functional MVP in 4-8 weeks. Market validation, scalable technologies and Lean Startup methodology.",
@@ -4351,6 +4359,43 @@ export const translations: Translations = {
     en: "Start Your Project",
     it: "Inizia il Tuo Progetto",
   },
+  // Mobile App Types
+  "mobile-types-title": {
+    en: "App Types",
+    it: "Tipologie di App",
+  },
+  "mobile-types-headline": {
+    en: "We build every type of mobile app",
+    it: "Realizziamo ogni tipo di app mobile",
+  },
+  "mobile-types-subtitle": {
+    en: "From e-commerce to business solutions, we develop mobile applications for every sector and need with advanced features.",
+    it: "Dalle app e-commerce alle soluzioni aziendali, sviluppiamo applicazioni mobile per ogni settore e necessità con funzionalità avanzate.",
+  },
+  "mobile-type-ecommerce": {
+    en: "E-commerce & Marketplace",
+    it: "E-commerce & Marketplace",
+  },
+  "mobile-type-ecommerce-desc": {
+    en: "Complete solutions for online sales with advanced catalogs, secure payments and integrated order management.",
+    it: "Soluzioni complete per vendite online con cataloghi avanzati, pagamenti sicuri e gestione ordini integrata.",
+  },
+  "mobile-type-business": {
+    en: "Business & Enterprise",
+    it: "Business & Enterprise",
+  },
+  "mobile-type-business-desc": {
+    en: "Business apps for team management, mobile CRM, personalized dashboards and advanced analytics.",
+    it: "App aziendali per gestione team, CRM mobile, dashboard personalizzate e analytics avanzate.",
+  },
+  "mobile-type-social": {
+    en: "Social & Community",
+    it: "Social & Community",
+  },
+  "mobile-type-social-desc": {
+    en: "Social platforms with dynamic feeds, messaging, user profiles and push notification systems.",
+    it: "Piattaforme social con feed dinamici, messaging, profili utente e sistemi di notifica push.",
+  },
 
   // Mobile Stack Advantages
   "mobile-advantage-growth": {
@@ -4362,7 +4407,7 @@ export const translations: Translations = {
     it: "Le nostre app aiutano la tua azienda a raggiungere nuovi clienti e mercati.",
   },
   "mobile-advantage-clients": {
-    en: "Always Connected Clients",
+    en: "Always connected clients",
     it: "Clienti sempre connessi",
   },
   "mobile-advantage-clients-desc": {
@@ -4497,6 +4542,68 @@ export const translations: Translations = {
     it: "Affidabilità garantita",
   },
 
+  // Custom Software Types Section
+  "custom-types-section": {
+    en: "Software Types",
+    it: "Tipologie di Software",
+  },
+  "custom-types-headline": {
+    en: "Custom software for every business need",
+    it: "Software personalizzato per ogni esigenza aziendale",
+  },
+  "custom-types-subtitle": {
+    en: "We develop custom software solutions to optimize business processes and increase productivity",
+    it: "Sviluppiamo soluzioni software su misura per ottimizzare i processi aziendali e aumentare la produttività",
+  },
+  "custom-type-erp": {
+    en: "ERP Systems",
+    it: "Sistemi ERP",
+  },
+  "custom-type-erp-desc": {
+    en: "Integrated solutions for complete company management: accounting, inventory, human resources and much more.",
+    it: "Soluzioni integrate per la gestione completa dell'azienda: contabilità, magazzino, risorse umane e molto altro.",
+  },
+  "custom-type-crm": {
+    en: "CRM Systems",
+    it: "Sistemi CRM",
+  },
+  "custom-type-crm-desc": {
+    en: "Advanced customer management with marketing automation, sales tracking and behavioral analysis.",
+    it: "Gestione clienti avanzata con automazione del marketing, tracking vendite e analisi comportamentali.",
+  },
+  "custom-type-bi": {
+    en: "Business Intelligence",
+    it: "Business Intelligence",
+  },
+  "custom-type-bi-desc": {
+    en: "Advanced data analysis systems for reporting, interactive dashboards and strategic decision support.",
+    it: "Sistemi di analisi dati avanzati per reporting, dashboard interattive e supporto alle decisioni strategiche.",
+  },
+  "custom-type-dms": {
+    en: "Document Management",
+    it: "Gestione Documentale",
+  },
+  "custom-type-dms-desc": {
+    en: "Systems for secure archiving, organization and sharing of business documents.",
+    it: "Sistemi per archiviazione, organizzazione e condivisione sicura di documenti aziendali.",
+  },
+  "custom-type-workflow": {
+    en: "Workflow Automation",
+    it: "Automazione Workflow",
+  },
+  "custom-type-workflow-desc": {
+    en: "Business process automation to reduce errors, time and operational costs.",
+    it: "Automazione dei processi aziendali per ridurre errori, tempi e costi operativi.",
+  },
+  "custom-type-portal": {
+    en: "Custom Web Portals",
+    it: "Portali Web Personalizzati",
+  },
+  "custom-type-portal-desc": {
+    en: "Business portals for employees, customers and partners with specific functionality for each role.",
+    it: "Portali aziendali per dipendenti, clienti e partner con funzionalità specifiche per ogni ruolo.",
+  },
+
   // Mobile Stack Section
 
   // Website Modern Advantages
@@ -4559,5 +4666,93 @@ export const translations: Translations = {
   "website-advantage-scalability-desc": {
     en: "Scalable architecture that grows with your business, easily managing traffic increases and functionality.",
     it: "Architettura scalabile che cresce con la tua azienda, gestendo facilmente l'aumento di traffico e funzionalità.",
+  },
+
+  // Custom Software Solutions Section
+  "custom-solutions-title": {
+    en: "Our Solutions",
+    it: "Le nostre soluzioni",
+  },
+  "custom-solutions-subtitle": {
+    en: "Enterprise software to digitize and optimize every aspect of your business",
+    it: "Software enterprise per digitalizzare e ottimizzare ogni aspetto del tuo business",
+  },
+
+  // ERP Systems
+  "custom-erp-title": {
+    en: "ERP Systems",
+    it: "Sistemi ERP",
+  },
+  "custom-erp-description": {
+    en: "Integrated management systems that unify all business processes in a single scalable and customizable platform.",
+    it: "Sistemi di gestione integrati che unificano tutti i processi aziendali in un'unica piattaforma scalabile e personalizzabile.",
+  },
+  "custom-feature-accounting": {
+    en: "Complete accounting management",
+    it: "Gestione contabilità completa",
+  },
+  "custom-feature-inventory-control": {
+    en: "Inventory control and warehouse management",
+    it: "Controllo inventario e gestione magazzino",
+  },
+  "custom-feature-hr": {
+    en: "Human resources management",
+    it: "Gestione risorse umane",
+  },
+  "custom-feature-reporting": {
+    en: "Advanced reporting and analytics",
+    it: "Reporting avanzato e analytics",
+  },
+
+  // CRM Solutions
+  "custom-crm-title": {
+    en: "CRM Solutions",
+    it: "Soluzioni CRM",
+  },
+  "custom-crm-description": {
+    en: "Advanced customer management with sales funnel automation, interaction tracking and predictive analytics.",
+    it: "Gestione clienti avanzata con automazione del funnel di vendita, tracking delle interazioni e analytics predittive.",
+  },
+  "custom-feature-lead-management": {
+    en: "Lead management and qualification",
+    it: "Gestione e qualifica dei lead",
+  },
+  "custom-feature-sales-pipeline": {
+    en: "Sales pipeline automation",
+    it: "Automazione pipeline vendite",
+  },
+  "custom-feature-customer-analytics": {
+    en: "Customer analytics and insights",
+    it: "Analytics clienti e insights",
+  },
+  "custom-feature-marketing-automation": {
+    en: "Marketing automation",
+    it: "Automazione marketing",
+  },
+
+  // Inventory Management
+  "custom-inventory-title": {
+    en: "Inventory Management",
+    it: "Gestione inventario",
+  },
+  "custom-inventory-description": {
+    en: "Intelligent systems for inventory control, movement tracking and automatic order optimization.",
+    it: "Sistemi intelligenti per controllo inventario, tracking dei movimenti e ottimizzazione automatica degli ordini.",
+  },
+  "custom-feature-realtime-tracking": {
+    en: "Real-time inventory tracking",
+    it: "Tracking inventario in tempo reale",
+  },
+  "custom-feature-auto-reordering": {
+    en: "Automatic reordering system",
+    it: "Sistema riordino automatico",
+  },
+  "custom-feature-barcode-integration": {
+    en: "Barcode and QR code integration",
+    it: "Integrazione barcode e codici QR",
+  },
+  "custom-feature-multi-warehouse": {
+    en: "Multi-warehouse management",
+    it: "Gestione multi-magazzino",
   },
 };

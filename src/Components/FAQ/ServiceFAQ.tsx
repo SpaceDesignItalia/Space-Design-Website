@@ -49,7 +49,7 @@ export default function ServiceFAQ({
   };
 
   return (
-    <section>
+    <section className="pt-24">
       {/* Background Pattern */}
       <div className="absolute inset-0" aria-hidden="true">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,0,0,0.02)_1px,transparent_1px)] dark:bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.02)_1px,transparent_1px)] [background-size:24px_24px]" />

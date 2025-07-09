@@ -170,7 +170,7 @@ export default function About() {
       <div className="min-h-screen bg-white dark:bg-gray-900">
         {/* Hero Section */}
         <section
-          className="relative h-dvh w-full overflow-hidden bg-background pt-[70px]"
+          className="relative min-h-screen w-full overflow-hidden bg-background pt-[70px]"
           aria-labelledby="about-hero-heading"
           role="banner"
         >
@@ -181,7 +181,7 @@ export default function About() {
           />
 
           {/* Centered content */}
-          <div className="relative flex h-full items-center justify-center px-6">
+          <div className="relative flex min-h-screen items-center justify-center px-6">
             <motion.div
               className="text-center max-w-4xl"
               initial="initial"
@@ -212,7 +212,7 @@ export default function About() {
         </section>
 
         {/* Mission Section with Cards */}
-        <section className="h-dvh bg-white dark:bg-gray-900 flex items-center">
+        <section className="min-h-screen bg-white dark:bg-gray-900 flex items-center py-16">
           <div className="mx-auto max-w-7xl px-6 lg:px-8 w-full">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <motion.div
@@ -258,7 +258,7 @@ export default function About() {
         </section>
 
         {/* Stats Section with Animated Numbers and Icons */}
-        <section className="h-dvh bg-black flex items-center">
+        <section className="min-h-screen bg-black flex items-center py-16">
           <div className="mx-auto max-w-7xl px-6 lg:px-8 w-full">
             <motion.div
               initial="initial"
@@ -330,7 +330,7 @@ export default function About() {
         </section>
 
         {/* Team Story Section */}
-        <section className="h-dvh bg-gray-50 dark:bg-gray-800 flex items-center">
+        <section className="min-h-screen bg-gray-50 dark:bg-gray-800 flex items-center py-16">
           <div className="mx-auto max-w-7xl px-6 lg:px-8 w-full">
             <motion.div
               initial="initial"

@@ -490,6 +490,9 @@ export default function CloudIntegration() {
             "Inizia la tua trasformazione digitale oggi stesso. Contattaci per una consulenza personalizzata e scopri come il cloud può rivoluzionare il tuo business."
           }
           buttonText={t("cloud-cta-button") || "Contattaci Ora"}
+          secondaryButtonText={
+            t("view-case-studies") || "Vedi i nostri progetti"
+          }
         />
       </div>
     </>
