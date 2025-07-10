@@ -44,6 +44,19 @@ function AppContent() {
   const { preferences, cookiesAccepted } = useCookieConsent();
   const prevPathRef = useRef<string>("");
 
+  // Stabilizza la posizione orizzontale della pagina
+  useEffect(() => {
+    // Assicura che la pagina rimanga sempre nella stessa posizione orizzontale
+    document.documentElement.style.scrollbarGutter = "stable";
+    document.documentElement.style.overflowY = "scroll";
+    document.body.style.margin = "0";
+    document.body.style.padding = "0";
+
+    return () => {
+      // Cleanup non necessario perché vogliamo mantenere queste impostazioni
+    };
+  }, []);
+
   useEffect(() => {
     // Track pageview solo se i cookie analitici sono accettati
     if (cookiesAccepted && preferences.analytics) {

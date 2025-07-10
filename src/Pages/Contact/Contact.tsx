@@ -1,5 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { Button, Select, SelectItem, Switch } from "@heroui/react";
+import {
+  Button,
+  Input,
+  Select,
+  SelectItem,
+  Switch,
+  Textarea,
+} from "@heroui/react";
 import { Icon } from "@iconify/react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLanguage } from "../../context/LanguageContext";
@@ -97,6 +104,23 @@ const Contact: React.FC = () => {
   const [subjectOptions, setSubjectOptions] = useState<SubjectOption[]>([]);
   const [budgetOptions, setBudgetOptions] = useState<BudgetOption[]>([]);
   const [isLoadingOptions, setIsLoadingOptions] = useState(true);
+  const [isSelectOpen, setIsSelectOpen] = useState(false);
+
+  // Blocca/sblocca lo scroll quando si apre/chiude un select
+  useEffect(() => {
+    if (isSelectOpen) {
+      // Blocca lo scroll quando il select è aperto
+      document.body.style.overflow = "hidden";
+    } else {
+      // Ripristina lo scroll normale
+      document.body.style.overflow = "";
+    }
+
+    return () => {
+      // Cleanup quando il componente si smonta
+      document.body.style.overflow = "";
+    };
+  }, [isSelectOpen]);
 
   // Funzione per verificare se il form è completo
   const isFormComplete = () => {
@@ -559,148 +583,93 @@ const Contact: React.FC = () => {
                       {/* Name and Surname Row */}
                       <div className="grid gap-6 sm:grid-cols-2">
                         <div className="space-y-2">
-                          <label
-                            htmlFor="name"
-                            className="block text-sm font-semibold text-gray-900"
-                          >
-                            {t("contact-name")}{" "}
-                            <span className="text-red-300">*</span>
-                          </label>
-                          <input
-                            type="text"
-                            id="name"
+                          <Input
                             name="name"
                             value={formData.name}
                             onChange={handleInputChange}
-                            placeholder={t("contact-name-placeholder")}
-                            aria-label={t("contact-name")}
-                            aria-required="true"
-                            aria-invalid={!!errors.name}
-                            className={`w-full rounded-xl border-2 bg-white/10 px-4 py-3 text-gray-900 placeholder-gray-500 transition-all focus:bg-white/20 focus:outline-none focus:ring-2 ${
-                              errors.name
-                                ? "border-red-300 focus:border-red-300 focus:ring-red-300/20"
-                                : "border-gray-200 focus:border-gray-400 focus:ring-gray-200"
-                            }`}
+                            placeholder=""
+                            label={t("contact-name")}
+                            isRequired
+                            isInvalid={!!errors.name}
+                            errorMessage={errors.name}
+                            variant="bordered"
+                            radius="lg"
+                            size="md"
+                            classNames={{
+                              input: "text-gray-900 placeholder:text-gray-500",
+                              inputWrapper:
+                                "bg-white/10 border-gray-200 data-[hover=true]:border-gray-400",
+                            }}
                           />
-                          <AnimatePresence>
-                            {errors.name && (
-                              <motion.p
-                                initial={{ opacity: 0, y: -10 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                exit={{ opacity: 0, y: -10 }}
-                                className="text-sm text-red-300"
-                              >
-                                {errors.name}
-                              </motion.p>
-                            )}
-                          </AnimatePresence>
                         </div>
 
                         <div className="space-y-2">
-                          <label
-                            htmlFor="surname"
-                            className="block text-sm font-semibold text-gray-900"
-                          >
-                            {t("contact-surname")}{" "}
-                            <span className="text-red-300">*</span>
-                          </label>
-                          <input
-                            type="text"
-                            id="surname"
+                          <Input
                             name="surname"
                             value={formData.surname}
                             onChange={handleInputChange}
-                            placeholder={t("contact-surname-placeholder")}
-                            aria-label={t("contact-surname")}
-                            aria-required="true"
-                            aria-invalid={!!errors.surname}
-                            className={`w-full rounded-xl border-2 bg-white/10 px-4 py-3 text-gray-900 placeholder-gray-500 transition-all focus:bg-white/20 focus:outline-none focus:ring-2 ${
-                              errors.surname
-                                ? "border-red-300 focus:border-red-300 focus:ring-red-300/20"
-                                : "border-gray-200 focus:border-gray-400 focus:ring-gray-200"
-                            }`}
+                            placeholder=""
+                            label={t("contact-surname")}
+                            isRequired
+                            isInvalid={!!errors.surname}
+                            errorMessage={errors.surname}
+                            variant="bordered"
+                            radius="lg"
+                            size="md"
+                            classNames={{
+                              input: "text-gray-900 placeholder:text-gray-500",
+                              inputWrapper:
+                                "bg-white/10 border-gray-200 data-[hover=true]:border-gray-400",
+                            }}
                           />
-                          <AnimatePresence>
-                            {errors.surname && (
-                              <motion.p
-                                initial={{ opacity: 0, y: -10 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                exit={{ opacity: 0, y: -10 }}
-                                className="text-sm text-red-300"
-                              >
-                                {errors.surname}
-                              </motion.p>
-                            )}
-                          </AnimatePresence>
                         </div>
                       </div>
 
                       {/* Email */}
                       <div className="space-y-2">
-                        <label
-                          htmlFor="email"
-                          className="block text-sm font-semibold text-gray-900"
-                        >
-                          {t("contact-email")}{" "}
-                          <span className="text-red-300">*</span>
-                        </label>
-                        <input
+                        <Input
                           type="email"
-                          id="email"
                           name="email"
                           value={formData.email}
                           onChange={handleInputChange}
-                          placeholder={t("contact-email-placeholder")}
-                          aria-label={t("contact-email")}
-                          aria-required="true"
-                          aria-invalid={!!errors.email}
-                          className={`w-full rounded-xl border-2 bg-white/10 px-4 py-3 text-gray-900 placeholder-gray-500 transition-all focus:bg-white/20 focus:outline-none focus:ring-2 ${
-                            errors.email
-                              ? "border-red-300 focus:border-red-300 focus:ring-red-300/20"
-                              : "border-gray-200 focus:border-gray-400 focus:ring-gray-200"
-                          }`}
+                          placeholder=""
+                          label={t("contact-email")}
+                          isRequired
+                          isInvalid={!!errors.email}
+                          errorMessage={errors.email}
+                          variant="bordered"
+                          radius="lg"
+                          size="md"
+                          classNames={{
+                            input: "text-gray-900 placeholder:text-gray-500",
+                            inputWrapper:
+                              "bg-white/10 border-gray-200 data-[hover=true]:border-gray-400",
+                          }}
                         />
-                        <AnimatePresence>
-                          {errors.email && (
-                            <motion.p
-                              initial={{ opacity: 0, y: -10 }}
-                              animate={{ opacity: 1, y: 0 }}
-                              exit={{ opacity: 0, y: -10 }}
-                              className="text-sm text-red-300"
-                            >
-                              {errors.email}
-                            </motion.p>
-                          )}
-                        </AnimatePresence>
                       </div>
 
                       {/* Company */}
                       <div className="space-y-2">
-                        <label
-                          htmlFor="company"
-                          className="block text-sm font-semibold text-gray-900"
-                        >
-                          {t("contact-company")}
-                        </label>
-                        <input
-                          type="text"
-                          id="company"
+                        <Input
                           name="company"
                           value={formData.company}
                           onChange={handleInputChange}
-                          placeholder={t("contact-company-placeholder")}
-                          aria-label={t("contact-company")}
-                          className="w-full rounded-xl border-2 border-gray-200 bg-white/10 px-4 py-3 text-gray-900 placeholder-gray-500 transition-all focus:border-gray-400 focus:bg-white/20 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                          placeholder=""
+                          label={t("contact-company")}
+                          variant="bordered"
+                          radius="lg"
+                          size="md"
+                          classNames={{
+                            input: "text-gray-900 placeholder:text-gray-500",
+                            inputWrapper:
+                              "bg-white/10 border-gray-200 data-[hover=true]:border-gray-400",
+                          }}
                         />
                       </div>
 
                       {/* Subject and Budget Row */}
                       <div className="grid gap-6 sm:grid-cols-2">
                         <div className="space-y-2">
-                          <label className="block text-sm font-semibold text-gray-900">
-                            {t("contact-subject")}{" "}
-                            <span className="text-red-300">*</span>
-                          </label>
                           <Select
                             placeholder={t("contact-subject-placeholder")}
                             selectedKeys={
@@ -710,19 +679,21 @@ const Contact: React.FC = () => {
                               const selectedKey = Array.from(keys)[0] as string;
                               handleSelectChange("subject", selectedKey || "");
                             }}
+                            onOpenChange={(isOpen) => setIsSelectOpen(isOpen)}
                             isInvalid={!!errors.subject}
                             errorMessage={errors.subject}
                             variant="bordered"
                             radius="lg"
-                            size="lg"
+                            size="md"
                             isLoading={isLoadingOptions}
-                            aria-label={t("contact-subject")}
-                            aria-required="true"
+                            label={t("contact-subject")}
+                            isRequired
                             classNames={{
                               trigger:
                                 "bg-white/10 border-gray-200 data-[hover=true]:border-gray-400",
                               value: "text-gray-900",
-                              popoverContent: "bg-white dark:bg-gray-800 z-50",
+                              popoverContent:
+                                "bg-white dark:bg-gray-800 z-50 max-h-60 overflow-y-auto",
                             }}
                           >
                             {subjectOptions.map((option) => {
@@ -736,10 +707,6 @@ const Contact: React.FC = () => {
                         </div>
 
                         <div className="space-y-2">
-                          <label className="block text-sm font-semibold text-gray-900">
-                            {t("contact-budget")}{" "}
-                            <span className="text-red-300">*</span>
-                          </label>
                           <Select
                             placeholder={t("contact-budget-placeholder")}
                             selectedKeys={
@@ -749,19 +716,21 @@ const Contact: React.FC = () => {
                               const selectedKey = Array.from(keys)[0] as string;
                               handleSelectChange("budget", selectedKey || "");
                             }}
+                            onOpenChange={(isOpen) => setIsSelectOpen(isOpen)}
                             isInvalid={!!errors.budget}
                             errorMessage={errors.budget}
                             variant="bordered"
                             radius="lg"
-                            size="lg"
+                            size="md"
                             isLoading={isLoadingOptions}
-                            aria-label={t("contact-budget")}
-                            aria-required="true"
+                            label={t("contact-budget")}
+                            isRequired
                             classNames={{
                               trigger:
                                 "bg-white/10 border-gray-200 data-[hover=true]:border-gray-400",
                               value: "text-gray-900",
-                              popoverContent: "bg-white dark:bg-gray-800 z-50",
+                              popoverContent:
+                                "bg-white dark:bg-gray-800 z-50 max-h-60 overflow-y-auto",
                             }}
                           >
                             {budgetOptions.map((option) => {
@@ -777,41 +746,26 @@ const Contact: React.FC = () => {
 
                       {/* Message */}
                       <div className="space-y-2">
-                        <label
-                          htmlFor="message"
-                          className="block text-sm font-semibold text-gray-900"
-                        >
-                          {t("contact-message")}{" "}
-                          <span className="text-red-300">*</span>
-                        </label>
-                        <textarea
-                          id="message"
+                        <Textarea
                           name="message"
                           value={formData.message}
                           onChange={handleInputChange}
-                          placeholder={t("contact-message-placeholder")}
-                          rows={5}
-                          aria-label={t("contact-message")}
-                          aria-required="true"
-                          aria-invalid={!!errors.message}
-                          className={`w-full resize-y rounded-xl border-2 bg-white/10 px-4 py-3 text-gray-900 placeholder-gray-500 transition-all focus:bg-white/20 focus:outline-none focus:ring-2 ${
-                            errors.message
-                              ? "border-red-300 focus:border-red-300 focus:ring-red-300/20"
-                              : "border-gray-200 focus:border-gray-400 focus:ring-gray-200"
-                          }`}
+                          placeholder=""
+                          label={t("contact-message")}
+                          isRequired
+                          isInvalid={!!errors.message}
+                          errorMessage={errors.message}
+                          variant="bordered"
+                          radius="lg"
+                          size="md"
+                          minRows={4}
+                          classNames={{
+                            input:
+                              "text-gray-900 resize-y placeholder:text-gray-500",
+                            inputWrapper:
+                              "bg-white/10 border-gray-200 data-[hover=true]:border-gray-400",
+                          }}
                         />
-                        <AnimatePresence>
-                          {errors.message && (
-                            <motion.p
-                              initial={{ opacity: 0, y: -10 }}
-                              animate={{ opacity: 1, y: 0 }}
-                              exit={{ opacity: 0, y: -10 }}
-                              className="text-sm text-red-300"
-                            >
-                              {errors.message}
-                            </motion.p>
-                          )}
-                        </AnimatePresence>
                       </div>
 
                       {/* Privacy Switch */}
