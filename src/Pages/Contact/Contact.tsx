@@ -553,7 +553,7 @@ const Contact: React.FC = () => {
                 >
                   <div className="bg-white/80 backdrop-blur-sm dark:bg-gray-800/80 rounded-2xl p-8 shadow-xl">
                     <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">
-                      Iniziamo il tuo progetto
+                      {t("hero-cta-start")}
                     </h3>
                     <form onSubmit={handleSubmit} className="space-y-6">
                       {/* Name and Surname Row */}
@@ -722,7 +722,7 @@ const Contact: React.FC = () => {
                               trigger:
                                 "bg-white/10 border-gray-200 data-[hover=true]:border-gray-400",
                               value: "text-gray-900",
-                              popoverContent: "bg-white dark:bg-gray-800",
+                              popoverContent: "bg-white dark:bg-gray-800 z-50",
                             }}
                           >
                             {subjectOptions.map((option) => {
@@ -761,7 +761,7 @@ const Contact: React.FC = () => {
                               trigger:
                                 "bg-white/10 border-gray-200 data-[hover=true]:border-gray-400",
                               value: "text-gray-900",
-                              popoverContent: "bg-white dark:bg-gray-800",
+                              popoverContent: "bg-white dark:bg-gray-800 z-50",
                             }}
                           >
                             {budgetOptions.map((option) => {
@@ -828,19 +828,18 @@ const Contact: React.FC = () => {
                               wrapper: "group-data-[selected=true]:bg-black",
                               thumb: "group-data-[selected=true]:bg-white",
                             }}
-                          >
-                            <span className="text-sm text-gray-900/80">
-                              {t("contact-privacy")}{" "}
-                              <a
-                                href="/privacy-policy"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-gray-900 underline hover:no-underline font-medium"
-                              >
-                                {t("contact-privacy-policy")}
-                              </a>
-                            </span>
-                          </Switch>
+                          />
+                          <span className="text-sm text-gray-900/80">
+                            {t("contact-privacy")}{" "}
+                            <a
+                              href={`/${language}/privacy-policy`}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-gray-900 underline hover:no-underline font-medium"
+                            >
+                              {t("contact-privacy-policy")}
+                            </a>
+                          </span>
                         </div>
                         <AnimatePresence>
                           {errors.privacyAccepted && (
