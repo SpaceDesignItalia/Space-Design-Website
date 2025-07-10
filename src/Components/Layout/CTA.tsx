@@ -61,22 +61,6 @@ export default function CTA() {
                   <Icon icon="mdi:arrow-right" />
                 </Button>
               </motion.div>
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                className="w-full sm:w-auto"
-              >
-                <Button
-                  variant="bordered"
-                  radius="full"
-                  className="border-white text-white hover:bg-white/10 px-5 py-2.5 text-sm font-semibold whitespace-nowrap w-full sm:w-auto"
-                  onPress={handleCaseStudyClick}
-                >
-                  {t("view-case-studies") || "Vedi i nostri progetti"}
-                  <Icon icon="mdi:arrow-right" />
-                </Button>
-              </motion.div>
             </motion.div>
           </div>
           <motion.div
@@ -88,7 +72,7 @@ export default function CTA() {
           >
             <img
               alt="App screenshot"
-              src="/Imgs/Home/home-cta.webp"
+              src="/imgs/Home/home-cta.webp"
               width={1824}
               height={1080}
               className="absolute left-0 top-0 w-[57rem] max-w-none rounded-xl bg-white/5 ring-1 ring-white/10"

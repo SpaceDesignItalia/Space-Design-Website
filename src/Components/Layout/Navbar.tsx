@@ -28,6 +28,12 @@ const services: Services = {
     descriptionKey: "software-development-desc",
     items: [
       {
+        name: "custom-software",
+        href: "/services/custom-software",
+        icon: "clarity:design-line",
+        descriptionKey: "custom-software-desc",
+      },
+      {
         name: "mobile-apps",
         href: "/services/mobile-development",
         icon: "bi:phone",
@@ -40,22 +46,10 @@ const services: Services = {
         descriptionKey: "websites-desc",
       },
       {
-        name: "custom-software",
-        href: "/services/custom-software",
-        icon: "clarity:design-line",
-        descriptionKey: "custom-software-desc",
-      },
-      {
         name: "startup-mvp",
         href: "/services/startup-mvp",
         icon: "pajamas:rocket-launch",
         descriptionKey: "startup-mvp-desc",
-      },
-      {
-        name: "ai-software",
-        href: "/services/ai-software",
-        icon: "streamline:artificial-intelligence-spark-remix",
-        descriptionKey: "ai-software-desc",
       },
     ],
   },
@@ -137,7 +131,7 @@ export default function Navbar() {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className="fixed top-0 z-[100] w-full bg-white border-b border-gray-200 shadow-sm dark:bg-gray-900 dark:border-gray-800"
+      className="fixed top-0 z-50 w-full bg-white border-b border-gray-200 shadow-sm dark:bg-gray-900 dark:border-gray-800 pointer-events-auto"
       role="navigation"
       aria-label={t("main-navigation")}
     >

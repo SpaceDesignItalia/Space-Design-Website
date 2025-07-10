@@ -88,7 +88,10 @@ export const translations: Translations = {
     en: "Powerful native and cross-platform mobile applications that engage users and deliver exceptional performance on iOS and Android",
     it: "Potenti applicazioni mobile native e multi-piattaforma che coinvolgono gli utenti e offrono prestazioni eccezionali su iOS e Android",
   },
-
+  websites: {
+    en: "Websites",
+    it: "Siti Web",
+  },
   "websites-desc": {
     en: "Custom websites tailored to your business needs, designed to enhance your online presence and drive growth",
     it: "Siti web personalizzati adattati alle tue esigenze aziendali, progettati per migliorare la tua presenza online e guidare la crescita",
@@ -824,6 +827,22 @@ export const translations: Translations = {
   "web-cta-button": {
     en: "Get quote",
     it: "Richiedi un preventivo",
+  },
+  "web-technologies-title": {
+    en: "Cutting-edge technologies for business growth",
+    it: "Tecnologie all'avanguardia per la crescita aziendale",
+  },
+  "web-technologies-description": {
+    en: "Don't settle for mediocre websites that blend into the crowd. Our expert team leverages the most powerful and innovative technologies available today to create websites that not only look stunning but also convert visitors into customers, load lightning-fast, and dominate search engine rankings. Your competitors will wish they had chosen us first.",
+    it: "Non accontentarti di siti web mediocri che si confondono nella massa. Il nostro team di esperti utilizza le tecnologie più potenti e innovative disponibili oggi per creare siti web che non solo sono visivamente straordinari, ma anche convertono i visitatori in clienti, caricano alla velocità della luce e dominano le classifiche dei motori di ricerca. I tuoi competitor vorranno averci scelto per primi.",
+  },
+  "web-jamstack-title": {
+    en: "Blazing fast and secure",
+    it: "Velocità e sicurezza",
+  },
+  "web-jamstack-description": {
+    en: "We use Jamstack architecture to build websites that are lightning fast and highly secure. They automatically handle any amount of traffic with zero downtime. No more slow loading times or security worries - just pure performance that converts visitors into customers.",
+    it: "Utilizziamo l’architettura JAMstack per costruire siti web estremamente veloci e sicuri. I nostri siti gestiscono facilmente qualsiasi quantità di traffico, senza rallentamenti o interruzioni. Così potrai dimenticare i lunghi tempi di caricamento e le preoccupazioni legate alla sicurezza. Il risultato? Una performance ottimale che cattura l’attenzione dei visitatori e li trasforma in clienti.",
   },
 
   // Custom Software Page Translations
@@ -2276,12 +2295,12 @@ export const translations: Translations = {
     it: "Sì, possiamo gestire setup hosting, registrazione dominio, certificati SSL e manutenzione continua, oppure lavorare con il vostro provider preferito.",
   },
   "web-faq-question-2": {
-    en: "What happens if my site goes down?",
-    it: "Cosa succede se il mio sito va offline?",
+    en: "How long does it take to develop a website?",
+    it: "Quanto tempo ci vuole per sviluppare un sito web?",
   },
   "web-faq-answer-2": {
-    en: "We provide 24/7 monitoring and emergency support. Most issues are resolved within 2 hours with automatic backups for quick restoration.",
-    it: "Forniamo monitoraggio 24/7 e supporto di emergenza. La maggior parte dei problemi viene risolta entro 2 ore con backup automatici per ripristino rapido.",
+    en: "The development time depends on the project scope. A simple website can be developed in 1-3 months, while more complex projects may take 4-6 months or more.",
+    it: "I tempi di sviluppo dipendono dalla complessità del progetto. Un sito web semplice richiede 1-3 mesi, mentre progetti più complessi possono richiedere 4-6 mesi o più.",
   },
   "web-faq-question-3": {
     en: "Can you redesign my existing website?",
@@ -2292,12 +2311,12 @@ export const translations: Translations = {
     it: "Assolutamente! Possiamo ridisegnare il vostro sito attuale preservando il ranking SEO e migrando tutti i contenuti e funzionalità esistenti.",
   },
   "web-faq-question-4": {
-    en: "Do you offer ongoing maintenance packages?",
-    it: "Offrite pacchetti di manutenzione continua?",
+    en: "How much does it cost to develop a website?",
+    it: "Quanto costa sviluppare un sito web?",
   },
   "web-faq-answer-4": {
-    en: "Yes, we offer monthly maintenance packages including updates, security monitoring, performance optimization, and content changes.",
-    it: "Sì, offriamo pacchetti di manutenzione mensili che includono aggiornamenti, monitoraggio sicurezza, ottimizzazione performance e modifiche contenuti.",
+    en: "The cost varies based on the website's complexity, features, design, and integrations. We provide a detailed estimate after an initial consultation to fully understand your needs.",
+    it: "Il costo varia in base alla complessità del sito web, alle funzionalità richieste e alle integrazioni. Offriamo preventivi personalizzati dopo un'analisi dettagliata dei tuoi requisiti.",
   },
 
   // Mobile Development FAQ - Focus on business and technical specifics
@@ -2612,10 +2631,6 @@ export const translations: Translations = {
   "devops-meta-description": {
     en: "Professional DevOps and CI/CD services. Automation, deployment pipelines, monitoring and infrastructure optimization.",
     it: "Servizi DevOps e CI/CD professionali. Automazione, pipeline di deployment, monitoraggio e ottimizzazione infrastrutture.",
-  },
-  "devops-hero-title": {
-    en: "DevOps & CI/CD",
-    it: "DevOps & CI/CD",
   },
   "devops-hero-title": {
     en: "Accelerate your development",
@@ -4673,10 +4688,6 @@ export const translations: Translations = {
   },
 
   // Custom Software Solutions Section
-  "custom-solutions-title": {
-    en: "Our Solutions",
-    it: "Le nostre soluzioni",
-  },
   "custom-solutions-subtitle": {
     en: "Enterprise software to digitize and optimize every aspect of your business",
     it: "Software enterprise per digitalizzare e ottimizzare ogni aspetto del tuo business",

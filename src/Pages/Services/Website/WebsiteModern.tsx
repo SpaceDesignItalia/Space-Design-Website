@@ -59,26 +59,25 @@ export default function WebsiteModern() {
   ];
 
   return (
-    <section className="py-20 bg-white dark:bg-gray-900">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-20">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-16">
         {/* Header Section */}
         <motion.div
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
           variants={stagger}
-          className="text-center mb-16"
+          className="mx-auto max-w-3xl text-center"
         >
           <motion.h2
             variants={fadeInUp}
-            className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4"
+            className="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl"
           >
-            {t("website-modern-title") ||
-              "Vantaggi dei Nostri Siti Web Moderni"}
+            {t("website-modern-title")}
           </motion.h2>
           <motion.p
             variants={fadeInUp}
-            className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"
+            className="mt-6 text-lg leading-8 text-gray-500"
           >
             {t("website-modern-subtitle") ||
               "Siti web all'avanguardia che combinano design moderno, performance eccezionali e tecnologie innovative per offrire un'esperienza utente superiore"}

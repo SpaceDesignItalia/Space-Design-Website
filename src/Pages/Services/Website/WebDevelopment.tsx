@@ -1,9 +1,11 @@
 import SEO from "../../../Components/SEO";
 import { useLanguage } from "../../../context/LanguageContext";
-import CTA from "../../Home/CTA";
-import ServiceHero from "../../../Components/ServiceHero";
+import CTA from "../../../Components/Layout/CTA";
 import WebsiteModern from "./WebsiteModern";
 import WebsiteTechnologies from "./WebsiteTechnologies";
+import ServiceFAQ from "../../../Components/FAQ/ServiceFAQ";
+import WebsiteHero from "./WebsiteHero";
+import WebsiteJamstack from "./WebJamstack";
 
 export default function WebDevelopment() {
   const { t, language } = useLanguage();
@@ -11,13 +13,8 @@ export default function WebDevelopment() {
   return (
     <>
       <SEO
-        title={`Space Design Italia - ${
-          t("web-development") || "Sviluppo Web"
-        }`}
-        description={
-          t("web-meta-description") ||
-          "Sviluppiamo siti web, e-commerce e applicazioni web moderne. Soluzioni complete dal sito vetrina alle piattaforme SaaS."
-        }
+        title={`Space Design Italia - ${t("web-development")}`}
+        description={t("web-meta-description")}
         keywords={`sviluppo web, siti web, e-commerce, applicazioni web, responsive design, SEO, ${t(
           "seo-keywords"
         )}`}
@@ -28,19 +25,40 @@ export default function WebDevelopment() {
           "x-default": "/services/web-development",
         }}
       />
-      <ServiceHero
-        title={
-          t("web-hero-title") ||
-          "Soluzioni web strategiche per la crescita aziendale"
-        }
-        description={
-          t("web-hero-description") ||
-          "Creiamo siti web che non solo sono belli, ma anche funzionali e ottimizzati per i motori di ricerca. Il nostro team di esperti ti aiuterà a raggiungere i tuoi obiettivi di business con un sito web che sia bello e funzionale."
-        }
-        buttonText={t("web-cta-button") || "Richiedi Preventivo"}
-      />
+      <WebsiteHero />
       <WebsiteModern />
+      <WebsiteJamstack />
       <WebsiteTechnologies />
+      <ServiceFAQ
+        title={t("faq-title")}
+        subtitle={t("faq-subtitle-web")}
+        faqs={[
+          {
+            question: t("web-faq-question-1"),
+            answer: t("web-faq-answer-1"),
+            icon: "solar:server-2-linear",
+            delay: 0.1,
+          },
+          {
+            question: t("web-faq-question-2"),
+            answer: t("web-faq-answer-2"),
+            icon: "iconamoon:clock",
+            delay: 0.2,
+          },
+          {
+            question: t("web-faq-question-3"),
+            answer: t("web-faq-answer-3"),
+            icon: "pajamas:work-item-maintenance",
+            delay: 0.3,
+          },
+          {
+            question: t("web-faq-question-4"),
+            answer: t("web-faq-answer-4"),
+            icon: "solar:wallet-money-line-duotone",
+            delay: 0.4,
+          },
+        ]}
+      />
       <CTA />
     </>
   );

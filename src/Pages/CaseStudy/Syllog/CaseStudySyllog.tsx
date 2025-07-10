@@ -3,7 +3,7 @@ import { Chip } from "@heroui/react";
 import { Icon } from "@iconify/react";
 import { useLanguage } from "../../../context/LanguageContext";
 import { useRef } from "react";
-import CTA from "../../../Pages/Home/CTA";
+import CTA from "../../../Components/Layout/CTA";
 import SEO from "../../../Components/SEO";
 
 type Translations = Record<string, string>;

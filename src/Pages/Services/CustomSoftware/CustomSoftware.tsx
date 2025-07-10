@@ -1,72 +1,13 @@
 import SEO from "../../../Components/SEO";
 import { useLanguage } from "../../../context/LanguageContext";
-import { useNavigate } from "react-router-dom";
-import { Button } from "@heroui/react";
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
-
-const fadeInUp = {
-  initial: { opacity: 0, y: 60 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.6 },
-};
-
-const fadeInLeft = {
-  initial: { opacity: 0, x: -60 },
-  animate: { opacity: 1, x: 0 },
-  transition: { duration: 0.6 },
-};
-
-const fadeInRight = {
-  initial: { opacity: 0, x: 60 },
-  animate: { opacity: 1, x: 0 },
-  transition: { duration: 0.6 },
-};
-
-const staggerChildren = {
-  animate: {
-    transition: {
-      staggerChildren: 0.1,
-    },
-  },
-};
-import { MorphingText } from "../../../Components/magicui/morphing-text";
 import ServiceFAQ from "../../../Components/FAQ/ServiceFAQ";
-import ServiceCTA from "../../../Components/ServiceCTA";
 import ServiceHero from "../../../Components/ServiceHero";
-
-const stagger = {
-  animate: {
-    transition: {
-      staggerChildren: 0.15,
-    },
-  },
-};
-
-const scaleIn = {
-  initial: { opacity: 0, scale: 0.95 },
-  animate: { opacity: 1, scale: 1 },
-  transition: { duration: 0.5, ease: "easeOut" },
-};
+import CTA from "../../../Components/Layout/CTA";
 
 export default function CustomSoftware() {
   const { t, language } = useLanguage();
-  const navigate = useNavigate();
-
-  const handleContactClick = () => {
-    navigate(`/${language}/contact`);
-  };
-
-  const softwareTypes = [
-    "ERP Systems",
-    "CRM Solutions",
-    "Inventory Management",
-    "HR Management",
-    "Accounting Software",
-    "Workflow Automation",
-    "Business Intelligence",
-    "Document Management",
-  ];
 
   const technologies = [
     { name: "Python", icon: "logos:python" },
@@ -77,13 +18,24 @@ export default function CustomSoftware() {
     { name: "AWS", icon: "logos:aws" },
   ];
 
-  const pulseAnimation = {
-    scale: [1, 1.05, 1],
-    transition: {
-      duration: 2,
-      repeat: Infinity,
-      ease: "easeInOut",
+  const stagger = {
+    animate: {
+      transition: {
+        staggerChildren: 0.15,
+      },
     },
+  };
+
+  const fadeInUp = {
+    initial: { opacity: 0, y: 60 },
+    animate: { opacity: 1, y: 0 },
+    transition: { duration: 0.6 },
+  };
+
+  const scaleIn = {
+    initial: { opacity: 0, scale: 0.95 },
+    animate: { opacity: 1, scale: 1 },
+    transition: { duration: 0.5, ease: "easeOut" },
   };
 
   return (
@@ -389,19 +341,7 @@ export default function CustomSoftware() {
         />
 
         {/* CTA Section */}
-        <ServiceCTA
-          title={
-            t("custom-cta-title") || "Pronto a Digitalizzare la Tua Azienda?"
-          }
-          subtitle={
-            t("custom-cta-description") ||
-            "Trasforma i tuoi processi con software su misura. Contattaci per una consulenza gratuita"
-          }
-          buttonText={t("contact-us") || "Contattaci Ora"}
-          secondaryButtonText={
-            t("view-case-studies") || "Vedi i nostri progetti"
-          }
-        />
+        <CTA />
       </div>
     </>
   );

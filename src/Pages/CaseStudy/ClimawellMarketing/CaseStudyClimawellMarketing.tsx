@@ -4,7 +4,7 @@ import { Icon } from "@iconify/react";
 import { useLanguage } from "../../../context/LanguageContext";
 import { useRef } from "react";
 import SEO from "../../../Components/SEO";
-import CTA from "../../../Pages/Home/CTA";
+import CTA from "../../../Components/Layout/CTA";
 
 export default function CaseStudyClimawellMarketing() {
   const { language } = useLanguage();

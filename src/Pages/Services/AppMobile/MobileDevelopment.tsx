@@ -1,6 +1,6 @@
 import SEO from "../../../Components/SEO";
 import { useLanguage } from "../../../context/LanguageContext";
-import CTA from "./CTA";
+import CTA from "../../../Components/Layout/CTA";
 import ServiceHero from "../../../Components/ServiceHero";
 import ServiceFAQ from "../../../Components/FAQ/ServiceFAQ";
 import Benefits from "./Benefits";
