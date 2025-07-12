@@ -73,20 +73,37 @@ export const event = ({
   }
 };
 
-// Funzioni per PostHog
+// Funzioni migliorate per PostHog
 export const initPostHog = () => {
-  // PostHog viene inizializzato tramite il provider nel main.tsx
-  if (typeof window.posthog !== "undefined") {
-    window.posthog.opt_in_capturing();
-    console.log("✅ PostHog tracking enabled");
+  try {
+    if (typeof window.posthog !== "undefined") {
+      // PostHog è già inizializzato tramite il provider
+      window.posthog.opt_in_capturing();
+      console.log("✅ PostHog tracking enabled");
+    } else {
+      console.log("⚠️ PostHog not initialized - check environment variables");
+    }
+  } catch (error) {
+    console.error("❌ Error enabling PostHog:", error);
   }
 };
 
 export const disablePostHog = () => {
-  if (typeof window.posthog !== "undefined") {
-    window.posthog.opt_out_capturing();
-    console.log("❌ PostHog tracking disabled");
+  try {
+    if (typeof window.posthog !== "undefined") {
+      window.posthog.opt_out_capturing();
+      console.log("❌ PostHog tracking disabled");
+    } else {
+      console.log("⚠️ PostHog not initialized - nothing to disable");
+    }
+  } catch (error) {
+    console.error("❌ Error disabling PostHog:", error);
   }
+};
+
+// Verifica se PostHog è disponibile
+export const isPostHogAvailable = (): boolean => {
+  return typeof window.posthog !== "undefined";
 };
 
 // Funzione per gestire tutte le analytics in base alle preferenze

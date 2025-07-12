@@ -15,7 +15,6 @@ const footerNavigation = {
     { nameKey: "websites", href: "/services/web-development" },
     { nameKey: "custom-software", href: "/services/custom-software" },
     { nameKey: "startup-mvp", href: "/services/startup-mvp" },
-    { nameKey: "ai-software", href: "/services/ai-software" },
     { nameKey: "cloud-integration", href: "/services/cloud-integration" },
     { nameKey: "api-development", href: "/services/api-development" },
     { nameKey: "devops-ci-cd", href: "/services/devops" },

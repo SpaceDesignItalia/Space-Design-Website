@@ -62,6 +62,9 @@ export function CookieConsentProvider({ children }: { children: ReactNode }) {
     localStorage.setItem("cookiePreferences", JSON.stringify(preferences));
     // Aggiorna il consenso per analytics ogni volta che le preferenze cambiano
     updateAnalyticsConsent(preferences);
+
+    // Emette un evento personalizzato per notificare i cambiamenti delle preferenze
+    window.dispatchEvent(new CustomEvent("cookiePreferencesChanged"));
   }, [preferences]);
 
   const acceptAllCookies = () => {

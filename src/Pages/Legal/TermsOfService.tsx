@@ -18,7 +18,7 @@ export default function TermsOfService() {
           t("footer-terms-of-service") || "Termini di Servizio"
         }`}
         description={
-          t("terms-meta-description") ||
+          t("terms-of-service-meta-description") ||
           "Termini e condizioni del servizio di Space Design Italia. Regole e condizioni per l'utilizzo dei nostri servizi di sviluppo software."
         }
         keywords={`termini servizio, condizioni, contratto, ${t(
@@ -225,10 +225,73 @@ export default function TermsOfService() {
                   </ul>
                 </div>
 
+                {/* Uso lecito dei servizi */}
+                <div>
+                  <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                    {t("terms-lawful-use-title") || "6. Uso Lecito dei Servizi"}
+                  </h2>
+                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
+                    {t("terms-lawful-use-content") ||
+                      "Il Cliente si impegna a utilizzare i servizi di Space Design Italia esclusivamente per scopi leciti e conformi alla normativa vigente. È vietato:"}
+                  </p>
+                  <ul className="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300">
+                    <li>
+                      {t("terms-lawful-use-illegal") ||
+                        "Utilizzare i servizi per attività illegali, fraudolente o contrarie alla legge"}
+                    </li>
+                    <li>
+                      {t("terms-lawful-use-harmful") ||
+                        "Sviluppare software che possa causare danni a terzi o violare diritti di proprietà intellettuale"}
+                    </li>
+                    <li>
+                      {t("terms-lawful-use-malware") ||
+                        "Creare malware, virus o software dannoso"}
+                    </li>
+                    <li>
+                      {t("terms-lawful-use-spam") ||
+                        "Utilizzare i servizi per attività di spam o phishing"}
+                    </li>
+                    <li>
+                      {t("terms-lawful-use-unauthorized") ||
+                        "Tentare di accedere non autorizzato a sistemi o reti di terzi"}
+                    </li>
+                  </ul>
+                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed mt-4">
+                    {t("terms-lawful-use-violation") ||
+                      "La violazione di queste disposizioni comporta la risoluzione immediata del contratto e può comportare azioni legali a tutela dei nostri diritti."}
+                  </p>
+                </div>
+
+                {/* Trattamento dei dati personali */}
+                <div>
+                  <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                    {t("terms-data-processing-title") ||
+                      "7. Trattamento dei Dati Personali"}
+                  </h2>
+                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
+                    {t("terms-data-processing-content") ||
+                      "Il trattamento dei dati personali del Cliente è regolato dalla nostra Privacy Policy e dal Regolamento Generale sulla Protezione dei Dati (GDPR). Utilizzando i nostri servizi, il Cliente accetta il trattamento dei propri dati personali secondo le modalità descritte nella Privacy Policy."}
+                  </p>
+                  <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
+                    <p className="text-sm text-blue-800 dark:text-blue-200">
+                      <strong>ℹ️ Informazione:</strong>{" "}
+                      {t("terms-data-processing-link") ||
+                        "Per maggiori informazioni sul trattamento dei dati personali, consulta la nostra "}
+                      <a
+                        href={`/${language}/privacy-policy`}
+                        className="underline hover:text-blue-600 dark:hover:text-blue-300"
+                      >
+                        Privacy Policy
+                      </a>
+                      .
+                    </p>
+                  </div>
+                </div>
+
                 {/* Pagamenti */}
                 <div>
                   <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                    {t("terms-payment-title") || "6. Pagamenti e Fatturazione"}
+                    {t("terms-payment-title") || "8. Pagamenti e Fatturazione"}
                   </h2>
                   <ul className="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300">
                     <li>
@@ -258,10 +321,48 @@ export default function TermsOfService() {
                   </ul>
                 </div>
 
+                {/* Sospensione dei Servizi */}
+                <div>
+                  <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                    {t("terms-suspension-title") ||
+                      "9. Sospensione dei Servizi"}
+                  </h2>
+                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
+                    {t("terms-suspension-content") ||
+                      "Space Design Italia si riserva il diritto di sospendere temporaneamente o definitivamente i servizi nei seguenti casi:"}
+                  </p>
+                  <ul className="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300">
+                    <li>
+                      {t("terms-suspension-payment") ||
+                        "Mancato pagamento delle fatture scadute o ritardi significativi nei pagamenti"}
+                    </li>
+                    <li>
+                      {t("terms-suspension-violation") ||
+                        "Violazione dei termini di servizio o uso improprio dei servizi"}
+                    </li>
+                    <li>
+                      {t("terms-suspension-illegal") ||
+                        "Utilizzo dei servizi per attività illegali o contrarie alla legge"}
+                    </li>
+                    <li>
+                      {t("terms-suspension-force-majeure") ||
+                        "Eventi di forza maggiore che impediscono la prestazione dei servizi"}
+                    </li>
+                    <li>
+                      {t("terms-suspension-maintenance") ||
+                        "Manutenzione programmata o aggiornamenti necessari dei sistemi"}
+                    </li>
+                  </ul>
+                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed mt-4">
+                    {t("terms-suspension-notice") ||
+                      "Ove possibile, forniremo un preavviso ragionevole prima della sospensione. La sospensione non comporta la risoluzione del contratto e i servizi saranno ripristinati una volta risolte le cause della sospensione."}
+                  </p>
+                </div>
+
                 {/* Proprietà intellettuale */}
                 <div>
                   <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                    {t("terms-ip-title") || "7. Proprietà Intellettuale"}
+                    {t("terms-ip-title") || "10. Proprietà Intellettuale"}
                   </h2>
                   <div className="space-y-4">
                     <div>
@@ -286,10 +387,49 @@ export default function TermsOfService() {
                   </div>
                 </div>
 
+                {/* Supporto e Manutenzione */}
+                <div>
+                  <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                    {t("terms-support-title") || "11. Supporto e Manutenzione"}
+                  </h2>
+                  <div className="space-y-4">
+                    <div>
+                      <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                        {t("terms-support-warranty") || "Garanzia di Base"}
+                      </h3>
+                      <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                        {t("terms-support-warranty-desc") ||
+                          "Forniamo una garanzia di 90 giorni dalla consegna del progetto per difetti di funzionamento. Durante questo periodo, correggeremo gratuitamente eventuali bug e problemi di compatibilità."}
+                      </p>
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                        {t("terms-support-continuous") ||
+                          "Supporto Continuativo"}
+                      </h3>
+                      <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                        {t("terms-support-continuous-desc") ||
+                          "Il supporto tecnico continuativo, la manutenzione ordinaria e gli aggiornamenti sono disponibili solo attraverso accordi di supporto aggiuntivi. Questi servizi non sono inclusi nella garanzia di base e richiedono un contratto separato."}
+                      </p>
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                        {t("terms-support-emergency") ||
+                          "Supporto di Emergenza"}
+                      </h3>
+                      <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                        {t("terms-support-emergency-desc") ||
+                          "Per problemi critici che impediscono il funzionamento del software, forniamo supporto di emergenza secondo i termini dell'accordo di supporto in vigore o a tariffe orarie concordate."}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
                 {/* Garanzie */}
                 <div>
                   <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                    {t("terms-warranties-title") || "8. Garanzie e Limitazioni"}
+                    {t("terms-warranties-title") ||
+                      "12. Garanzie e Limitazioni"}
                   </h2>
                   <div className="space-y-4">
                     <div>
@@ -317,7 +457,7 @@ export default function TermsOfService() {
                 <div>
                   <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
                     {t("terms-liability-title") ||
-                      "9. Limitazione di Responsabilità"}
+                      "13. Limitazione di Responsabilità"}
                   </h2>
                   <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                     {t("terms-liability-content") ||
@@ -328,7 +468,7 @@ export default function TermsOfService() {
                 {/* Riservatezza */}
                 <div>
                   <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                    {t("terms-confidentiality-title") || "10. Riservatezza"}
+                    {t("terms-confidentiality-title") || "14. Riservatezza"}
                   </h2>
                   <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                     {t("terms-confidentiality-content") ||
@@ -336,11 +476,57 @@ export default function TermsOfService() {
                   </p>
                 </div>
 
+                {/* Forza Maggiore */}
+                <div>
+                  <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                    {t("terms-force-majeure-title") || "15. Forza Maggiore"}
+                  </h2>
+                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                    {t("terms-force-majeure-content") ||
+                      "Nessuna delle parti sarà responsabile per il mancato adempimento delle proprie obbligazioni contrattuali se tale inadempimento è dovuto a eventi di forza maggiore, inclusi ma non limitati a: calamità naturali, guerre, rivolte, atti di terrorismo, interruzioni di corrente, guasti ai sistemi informatici, pandemie, decisioni governative o altri eventi imprevisti e inevitabili al di fuori del controllo delle parti."}
+                  </p>
+                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed mt-4">
+                    {t("terms-force-majeure-notice") ||
+                      "In caso di forza maggiore, la parte interessata dovrà notificare immediatamente l'altra parte e adottare tutte le misure ragionevoli per minimizzare l'impatto. Se l'evento di forza maggiore persiste per più di 30 giorni, entrambe le parti potranno risolvere il contratto senza penalità."}
+                  </p>
+                </div>
+
+                {/* Accettazione Digitale */}
+                <div>
+                  <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                    {t("terms-digital-acceptance-title") ||
+                      "16. Accettazione Digitale"}
+                  </h2>
+                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                    {t("terms-digital-acceptance-content") ||
+                      "L'accettazione di questi Termini di Servizio può avvenire attraverso mezzi digitali, inclusi ma non limitati a: accettazione tramite sito web, conferma via email, firma digitale o altri mezzi elettronici. L'accettazione digitale ha la stessa validità legale dell'accettazione tradizionale su carta."}
+                  </p>
+                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed mt-4">
+                    {t("terms-digital-acceptance-proof") ||
+                      "I log di sistema, le registrazioni email e altri mezzi di prova elettronica saranno considerati validi per dimostrare l'accettazione di questi termini."}
+                  </p>
+                </div>
+
+                {/* Clausola Salvatoria */}
+                <div>
+                  <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                    {t("terms-severability-title") || "17. Clausola Salvatoria"}
+                  </h2>
+                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                    {t("terms-severability-content") ||
+                      "Se una qualsiasi disposizione di questi Termini di Servizio dovesse essere ritenuta nulla, invalida o inapplicabile da un tribunale competente, tale disposizione sarà considerata separabile dal resto del contratto e non influenzerà la validità e l'applicabilità delle restanti disposizioni."}
+                  </p>
+                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed mt-4">
+                    {t("terms-severability-replacement") ||
+                      "Le parti si impegnano a sostituire la disposizione nulla con una disposizione valida che si avvicini il più possibile all'intento originale della disposizione dichiarata nulla."}
+                  </p>
+                </div>
+
                 {/* Risoluzione */}
                 <div>
                   <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
                     {t("terms-termination-title") ||
-                      "11. Risoluzione del Contratto"}
+                      "18. Risoluzione del Contratto"}
                   </h2>
                   <ul className="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300">
                     <li>
@@ -365,7 +551,7 @@ export default function TermsOfService() {
                 {/* Modifiche */}
                 <div>
                   <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                    {t("terms-changes-title") || "12. Modifiche ai Termini"}
+                    {t("terms-changes-title") || "19. Modifiche ai Termini"}
                   </h2>
                   <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                     {t("terms-changes-content") ||
@@ -377,7 +563,7 @@ export default function TermsOfService() {
                 <div>
                   <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
                     {t("terms-law-title") ||
-                      "13. Legge Applicabile e Foro Competente"}
+                      "20. Legge Applicabile e Foro Competente"}
                   </h2>
                   <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                     {t("terms-law-content") ||
@@ -388,7 +574,7 @@ export default function TermsOfService() {
                 {/* Contatti */}
                 <div>
                   <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                    {t("terms-contact-title") || "14. Contatti"}
+                    {t("terms-contact-title") || "21. Contatti"}
                   </h2>
                   <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                     {t("terms-contact-content") ||

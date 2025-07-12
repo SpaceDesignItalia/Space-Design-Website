@@ -3660,6 +3660,10 @@ export const translations: Translations = {
   },
 
   // Cookie Policy Translations
+  "cookie-meta-description": {
+    en: "Cookie Policy of Space Design Italia. Information about cookies used, purposes and how to manage cookie preferences.",
+    it: "Cookie Policy di Space Design Italia. Informazioni sui cookie utilizzati, finalità e come gestire le preferenze sui cookie.",
+  },
   "cookie-hero-description": {
     en: "Learn how we use cookies and similar technologies to improve your browsing experience and analyze website usage.",
     it: "Scopri come utilizziamo i cookie e tecnologie simili per migliorare la tua esperienza di navigazione e analizzare l'utilizzo del sito web.",
@@ -3760,6 +3764,10 @@ export const translations: Translations = {
     en: "Site usage statistics",
     it: "Statistiche di utilizzo del sito",
   },
+  "cookie-posthog": {
+    en: "User behavior analysis and product functionality",
+    it: "Analisi del comportamento utente e funzionalità del prodotto",
+  },
   "cookie-popular-pages": {
     en: "Identify the most popular content",
     it: "Identificano i contenuti più popolari",
@@ -3771,6 +3779,10 @@ export const translations: Translations = {
   "cookie-traffic-source": {
     en: "Where visitors come from",
     it: "Da dove arrivano i visitatori",
+  },
+  "cookie-user-events": {
+    en: "Specific user interactions and actions on the site",
+    it: "Interazioni e azioni specifiche sul sito",
   },
   "cookie-analytics-duration": {
     en: "Duration: Up to 2 years",
@@ -3922,6 +3934,170 @@ export const translations: Translations = {
   "cookie-contact-content": {
     en: "If you have questions about our Cookie Policy or how we use cookies, you can contact us:",
     it: "Se hai domande sulla nostra Cookie Policy o su come utilizziamo i cookie, puoi contattarci:",
+  },
+
+  // PostHog Specific Translations
+  "cookie-posthog-section-title": {
+    en: "PostHog - Product Analytics Service",
+    it: "PostHog - Servizio di Product Analytics",
+  },
+  "cookie-posthog-description": {
+    en: "We use PostHog as a product analytics service to better understand how users interact with our website. PostHog helps us improve the user experience by collecting anonymous data about browsing behavior.",
+    it: "Utilizziamo PostHog come servizio di product analytics per comprendere meglio come gli utenti interagiscono con il nostro sito web. PostHog ci aiuta a migliorare l'esperienza utente raccogliendo dati anonimi sul comportamento di navigazione.",
+  },
+  "cookie-posthog-what-collects": {
+    en: "What PostHog collects:",
+    it: "Cosa raccoglie PostHog:",
+  },
+  "cookie-posthog-privacy": {
+    en: "Privacy and Security:",
+    it: "Privacy e Sicurezza:",
+  },
+  "cookie-posthog-consent": {
+    en: "PostHog is only activated after obtaining your explicit consent for analytics cookies. You can modify this choice at any time through the cookie preference center.",
+    it: "PostHog viene attivato solo dopo aver ottenuto il tuo consenso esplicito per i cookie analitici. Puoi modificare questa scelta in qualsiasi momento tramite il centro preferenze cookie.",
+  },
+
+  // Terms of Service Additional Translations
+  "terms-lawful-use-title": {
+    en: "Lawful Use of Services",
+    it: "Uso Lecito dei Servizi",
+  },
+  "terms-lawful-use-content": {
+    en: "The Client undertakes to use Space Design Italia's services exclusively for lawful purposes and in compliance with current regulations. It is prohibited:",
+    it: "Il Cliente si impegna a utilizzare i servizi di Space Design Italia esclusivamente per scopi leciti e conformi alla normativa vigente. È vietato:",
+  },
+  "terms-lawful-use-illegal": {
+    en: "Using services for illegal, fraudulent or unlawful activities",
+    it: "Utilizzare i servizi per attività illegali, fraudolente o contrarie alla legge",
+  },
+  "terms-lawful-use-harmful": {
+    en: "Developing software that may cause harm to third parties or violate intellectual property rights",
+    it: "Sviluppare software che possa causare danni a terzi o violare diritti di proprietà intellettuale",
+  },
+  "terms-lawful-use-malware": {
+    en: "Creating malware, viruses or harmful software",
+    it: "Creare malware, virus o software dannoso",
+  },
+  "terms-lawful-use-spam": {
+    en: "Using services for spam or phishing activities",
+    it: "Utilizzare i servizi per attività di spam o phishing",
+  },
+  "terms-lawful-use-unauthorized": {
+    en: "Attempting unauthorized access to third-party systems or networks",
+    it: "Tentare di accedere non autorizzato a sistemi o reti di terzi",
+  },
+  "terms-lawful-use-violation": {
+    en: "Violation of these provisions results in immediate contract termination and may result in legal action to protect our rights.",
+    it: "La violazione di queste disposizioni comporta la risoluzione immediata del contratto e può comportare azioni legali a tutela dei nostri diritti.",
+  },
+  "terms-data-processing-title": {
+    en: "Personal Data Processing",
+    it: "Trattamento dei Dati Personali",
+  },
+  "terms-data-processing-content": {
+    en: "The processing of Client's personal data is governed by our Privacy Policy and the General Data Protection Regulation (GDPR). By using our services, the Client accepts the processing of their personal data according to the methods described in the Privacy Policy.",
+    it: "Il trattamento dei dati personali del Cliente è regolato dalla nostra Privacy Policy e dal Regolamento Generale sulla Protezione dei Dati (GDPR). Utilizzando i nostri servizi, il Cliente accetta il trattamento dei propri dati personali secondo le modalità descritte nella Privacy Policy.",
+  },
+  "terms-data-processing-link": {
+    en: "For more information on personal data processing, consult our ",
+    it: "Per maggiori informazioni sul trattamento dei dati personali, consulta la nostra ",
+  },
+  "terms-suspension-title": {
+    en: "Service Suspension",
+    it: "Sospensione dei Servizi",
+  },
+  "terms-suspension-content": {
+    en: "Space Design Italia reserves the right to temporarily or permanently suspend services in the following cases:",
+    it: "Space Design Italia si riserva il diritto di sospendere temporaneamente o definitivamente i servizi nei seguenti casi:",
+  },
+  "terms-suspension-payment": {
+    en: "Non-payment of overdue invoices or significant payment delays",
+    it: "Mancato pagamento delle fatture scadute o ritardi significativi nei pagamenti",
+  },
+  "terms-suspension-violation": {
+    en: "Violation of terms of service or improper use of services",
+    it: "Violazione dei termini di servizio o uso improprio dei servizi",
+  },
+  "terms-suspension-illegal": {
+    en: "Using services for illegal activities or contrary to law",
+    it: "Utilizzo dei servizi per attività illegali o contrarie alla legge",
+  },
+  "terms-suspension-force-majeure": {
+    en: "Force majeure events that prevent service delivery",
+    it: "Eventi di forza maggiore che impediscono la prestazione dei servizi",
+  },
+  "terms-suspension-maintenance": {
+    en: "Scheduled maintenance or necessary system updates",
+    it: "Manutenzione programmata o aggiornamenti necessari dei sistemi",
+  },
+  "terms-suspension-notice": {
+    en: "Where possible, we will provide reasonable notice before suspension. Suspension does not constitute contract termination and services will be restored once the causes of suspension are resolved.",
+    it: "Ove possibile, forniremo un preavviso ragionevole prima della sospensione. La sospensione non comporta la risoluzione del contratto e i servizi saranno ripristinati una volta risolte le cause della sospensione.",
+  },
+  "terms-support-title": {
+    en: "Support and Maintenance",
+    it: "Supporto e Manutenzione",
+  },
+  "terms-support-warranty": {
+    en: "Basic Warranty",
+    it: "Garanzia di Base",
+  },
+  "terms-support-warranty-desc": {
+    en: "We provide a 90-day warranty from project delivery for functional defects. During this period, we will fix any bugs and compatibility issues free of charge.",
+    it: "Forniamo una garanzia di 90 giorni dalla consegna del progetto per difetti di funzionamento. Durante questo periodo, correggeremo gratuitamente eventuali bug e problemi di compatibilità.",
+  },
+  "terms-support-continuous": {
+    en: "Continuous Support",
+    it: "Supporto Continuativo",
+  },
+  "terms-support-continuous-desc": {
+    en: "Ongoing technical support, routine maintenance and updates are only available through additional support agreements. These services are not included in the basic warranty and require a separate contract.",
+    it: "Il supporto tecnico continuativo, la manutenzione ordinaria e gli aggiornamenti sono disponibili solo attraverso accordi di supporto aggiuntivi. Questi servizi non sono inclusi nella garanzia di base e richiedono un contratto separato.",
+  },
+  "terms-support-emergency": {
+    en: "Emergency Support",
+    it: "Supporto di Emergenza",
+  },
+  "terms-support-emergency-desc": {
+    en: "For critical issues that prevent software operation, we provide emergency support according to the terms of the support agreement in force or at agreed hourly rates.",
+    it: "Per problemi critici che impediscono il funzionamento del software, forniamo supporto di emergenza secondo i termini dell'accordo di supporto in vigore o a tariffe orarie concordate.",
+  },
+  "terms-force-majeure-title": {
+    en: "Force Majeure",
+    it: "Forza Maggiore",
+  },
+  "terms-force-majeure-content": {
+    en: "Neither party will be responsible for the non-performance of their contractual obligations if such non-performance is due to force majeure events, including but not limited to: natural disasters, wars, riots, acts of terrorism, power outages, computer system failures, pandemics, government decisions or other unforeseen and unavoidable events beyond the control of the parties.",
+    it: "Nessuna delle parti sarà responsabile per il mancato adempimento delle proprie obbligazioni contrattuali se tale inadempimento è dovuto a eventi di forza maggiore, inclusi ma non limitati a: calamità naturali, guerre, rivolte, atti di terrorismo, interruzioni di corrente, guasti ai sistemi informatici, pandemie, decisioni governative o altri eventi imprevisti e inevitabili al di fuori del controllo delle parti.",
+  },
+  "terms-force-majeure-notice": {
+    en: "In case of force majeure, the affected party must immediately notify the other party and take all reasonable measures to minimize the impact. If the force majeure event persists for more than 30 days, both parties may terminate the contract without penalty.",
+    it: "In caso di forza maggiore, la parte interessata dovrà notificare immediatamente l'altra parte e adottare tutte le misure ragionevoli per minimizzare l'impatto. Se l'evento di forza maggiore persiste per più di 30 giorni, entrambe le parti potranno risolvere il contratto senza penalità.",
+  },
+  "terms-digital-acceptance-title": {
+    en: "Digital Acceptance",
+    it: "Accettazione Digitale",
+  },
+  "terms-digital-acceptance-content": {
+    en: "Acceptance of these Terms of Service may occur through digital means, including but not limited to: acceptance via website, email confirmation, digital signature or other electronic means. Digital acceptance has the same legal validity as traditional paper acceptance.",
+    it: "L'accettazione di questi Termini di Servizio può avvenire attraverso mezzi digitali, inclusi ma non limitati a: accettazione tramite sito web, conferma via email, firma digitale o altri mezzi elettronici. L'accettazione digitale ha la stessa validità legale dell'accettazione tradizionale su carta.",
+  },
+  "terms-digital-acceptance-proof": {
+    en: "System logs, email records and other electronic evidence will be considered valid to demonstrate acceptance of these terms.",
+    it: "I log di sistema, le registrazioni email e altri mezzi di prova elettronica saranno considerati validi per dimostrare l'accettazione di questi termini.",
+  },
+  "terms-severability-title": {
+    en: "Severability Clause",
+    it: "Clausola Salvatoria",
+  },
+  "terms-severability-content": {
+    en: "If any provision of these Terms of Service should be deemed null, void or unenforceable by a competent court, such provision will be considered severable from the rest of the contract and will not affect the validity and enforceability of the remaining provisions.",
+    it: "Se una qualsiasi disposizione di questi Termini di Servizio dovesse essere ritenuta nulla, invalida o inapplicabile da un tribunale competente, tale disposizione sarà considerata separabile dal resto del contratto e non influenzerà la validità e l'applicabilità delle restanti disposizioni.",
+  },
+  "terms-severability-replacement": {
+    en: "The parties undertake to replace the null provision with a valid provision that comes as close as possible to the original intent of the provision declared null.",
+    it: "Le parti si impegnano a sostituire la disposizione nulla con una disposizione valida che si avvicini il più possibile all'intento originale della disposizione dichiarata nulla.",
   },
 
   // GDPR Translations
