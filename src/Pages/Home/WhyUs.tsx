@@ -295,135 +295,139 @@ export default function WhyUs() {
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-br-[calc(2rem+1px)]">
               <motion.div
                 variants={imageVariants}
-                className="h-80 bg-gradient-to-br from-slate-800 to-slate-600 relative overflow-hidden"
+                className="h-80 bg-gradient-to-br from-neutral-900 to-neutral-950 relative overflow-hidden p-0"
               >
-                <div className="absolute inset-0 flex items-center justify-center p-6">
-                  <div className="text-center w-full">
-                    {/* Curva di crescita minimalista */}
+                <div className="absolute inset-0 flex items-center justify-center p-0 m-0">
+                  <div className="text-center w-full h-full">
+                    {/* Visual: pallino minimal a metà curva, più curve, sinistra opaca, destra più blanda, curva sempre crescente e varia */}
                     <motion.div
-                      className="mb-8"
-                      initial={{ opacity: 0, scale: 0.9 }}
+                      className="h-full w-full"
+                      initial={{ opacity: 0, scale: 0.98 }}
                       animate={{ opacity: 1, scale: 1 }}
-                      transition={{ delay: 0.3, duration: 0.8 }}
+                      transition={{ delay: 0.2, duration: 0.7 }}
                     >
-                      <div className="relative w-full h-32">
+                      <div className="relative w-full h-80 flex items-center justify-center">
                         <svg
-                          className="w-full h-full"
-                          viewBox="0 0 200 100"
-                          preserveAspectRatio="none"
+                          className="w-full h-full block"
+                          viewBox="0 0 300 320"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          style={{ display: "block" }}
                         >
-                          {/* Curva di crescita semplice */}
+                          {/* Definizione gradienti per fade alle linee */}
+                          <defs>
+                            <linearGradient
+                              id="fadeLine"
+                              x1="0"
+                              y1="10"
+                              x2="0"
+                              y2="310"
+                              gradientUnits="userSpaceOnUse"
+                            >
+                              <stop stopColor="#fff" stopOpacity="0" />
+                              <stop
+                                offset="0.12"
+                                stopColor="#fff"
+                                stopOpacity="0.13"
+                              />
+                              <stop
+                                offset="0.88"
+                                stopColor="#fff"
+                                stopOpacity="0.13"
+                              />
+                              <stop
+                                offset="1"
+                                stopColor="#fff"
+                                stopOpacity="0"
+                              />
+                            </linearGradient>
+                          </defs>
+                          {/* Linee verticali a quasi tutta altezza, con fade */}
+                          {[0, 60, 120, 180, 240, 299].map((x, i) => (
+                            <line
+                              key={i}
+                              x1={x}
+                              y1={10}
+                              x2={x}
+                              y2={310}
+                              stroke="url(#fadeLine)"
+                              strokeWidth="2"
+                            />
+                          ))}
+                          {/* Curva: parte sinistra (opaca) e parte destra (blanda), ora con più curve */}
+                          <filter
+                            id="glow"
+                            x="-50%"
+                            y="-50%"
+                            width="200%"
+                            height="200%"
+                          >
+                            <feGaussianBlur
+                              stdDeviation="6"
+                              result="coloredBlur"
+                            />
+                            <feMerge>
+                              <feMergeNode in="coloredBlur" />
+                              <feMergeNode in="SourceGraphic" />
+                            </feMerge>
+                          </filter>
+                          {/* Curva sinistra (opacità 1) */}
                           <motion.path
-                            d="M10 90 Q30 85 60 40 Q90 15 190 10"
+                            d="M10 290 C40 250, 60 270, 90 220 S130 170, 150 120 S170 70, 190 100"
                             fill="none"
-                            stroke="white"
-                            strokeWidth="2"
+                            stroke="#7be87b"
+                            strokeWidth="6"
                             strokeLinecap="round"
+                            strokeLinejoin="round"
+                            filter="url(#glow)"
+                            strokeDasharray="400"
+                            strokeDashoffset="400"
+                            initial={{ strokeDashoffset: 400 }}
+                            animate={{ strokeDashoffset: 0 }}
+                            transition={{
+                              duration: 1.1,
+                              delay: 0.3,
+                              ease: "easeOut",
+                            }}
+                            opacity={1}
+                          />
+                          {/* Curva destra (opacità 0.3) */}
+                          <motion.path
+                            d="M190 100 S210 130, 230 80 S260 40, 290 30"
+                            fill="none"
+                            stroke="#7be87b"
+                            strokeWidth="6"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            filter="url(#glow)"
                             strokeDasharray="300"
                             strokeDashoffset="300"
                             initial={{ strokeDashoffset: 300 }}
                             animate={{ strokeDashoffset: 0 }}
                             transition={{
-                              duration: 2,
-                              delay: 0.5,
+                              duration: 1.1,
+                              delay: 0.7,
                               ease: "easeOut",
                             }}
+                            opacity={0.3}
                           />
-
-                          {/* Frecce verso l'alto */}
-                          <motion.path
-                            d="M25 80 L25 70 L20 75 L25 70 L30 75"
-                            fill="none"
-                            stroke="white"
-                            strokeWidth="1.5"
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ delay: 1, duration: 0.3 }}
-                          />
-                          <motion.path
-                            d="M45 65 L45 55 L40 60 L45 55 L50 60"
-                            fill="none"
-                            stroke="white"
-                            strokeWidth="1.5"
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ delay: 1.2, duration: 0.3 }}
-                          />
-                          <motion.path
-                            d="M65 45 L65 35 L60 40 L65 35 L70 40"
-                            fill="none"
-                            stroke="white"
-                            strokeWidth="1.5"
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ delay: 1.4, duration: 0.3 }}
-                          />
-                          <motion.path
-                            d="M85 25 L85 15 L80 20 L85 15 L90 20"
-                            fill="none"
-                            stroke="white"
-                            strokeWidth="1.5"
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ delay: 1.6, duration: 0.3 }}
-                          />
-                          <motion.path
-                            d="M105 20 L105 10 L100 15 L105 10 L110 15"
-                            fill="none"
-                            stroke="white"
-                            strokeWidth="1.5"
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ delay: 1.8, duration: 0.3 }}
-                          />
-                          <motion.path
-                            d="M125 18 L125 8 L120 13 L125 8 L130 13"
-                            fill="none"
-                            stroke="white"
-                            strokeWidth="1.5"
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ delay: 2, duration: 0.3 }}
-                          />
-                          <motion.path
-                            d="M145 16 L145 6 L140 11 L145 6 L150 11"
-                            fill="none"
-                            stroke="white"
-                            strokeWidth="1.5"
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ delay: 2.2, duration: 0.3 }}
-                          />
-                          <motion.path
-                            d="M165 14 L165 4 L160 9 L165 4 L170 9"
-                            fill="none"
-                            stroke="white"
-                            strokeWidth="1.5"
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ delay: 2.4, duration: 0.3 }}
-                          />
-                          <motion.path
-                            d="M185 12 L185 2 L180 7 L185 2 L190 7"
-                            fill="none"
-                            stroke="white"
-                            strokeWidth="1.5"
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ delay: 2.6, duration: 0.3 }}
+                          {/* Pallino minimal, solo un piccolo cerchio verde, animazione discreta */}
+                          <motion.circle
+                            cx="190"
+                            cy="100"
+                            r="6"
+                            fill="#7be87b"
+                            animate={{
+                              scale: [1, 1.15, 1],
+                              opacity: [1, 0.8, 1],
+                            }}
+                            transition={{
+                              duration: 1.6,
+                              repeat: Infinity,
+                              ease: "easeInOut",
+                            }}
                           />
                         </svg>
-                      </div>
-                    </motion.div>
-
-                    {/* Testo semplice */}
-                    <motion.div
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ delay: 1.2, duration: 0.6 }}
-                    >
-                      <div className="text-white/80 text-sm font-light">
-                        Crescita Continua
                       </div>
                     </motion.div>
                   </div>
