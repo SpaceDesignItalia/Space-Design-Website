@@ -19,7 +19,13 @@ const footerNavigation = {
     { nameKey: "api-development", href: "/services/api-development" },
     { nameKey: "devops-ci-cd", href: "/services/devops" },
   ],
-  aboutUs: [{ nameKey: "about", href: "/about" }],
+  caseStudies: [
+    { nameKey: "case-studies", href: "/case-studies" },
+    { name: "Syllog", href: "/case-studies/syllog" },
+    { name: "Climawell Website", href: "/case-studies/climawell-website" },
+    { name: "Climawell Marketing", href: "/case-studies/climawell-marketing" },
+  ],
+  aboutUs: [],
   legal: [
     { nameKey: "footer-privacy-policy", href: "/privacy-policy" },
     { nameKey: "footer-terms-of-service", href: "/terms-of-service" },
@@ -127,8 +133,8 @@ export default function Footer() {
               </div>
               <div className="mt-10 md:mt-0">
                 {renderList({
-                  title: "About Us",
-                  items: footerNavigation.aboutUs,
+                  title: t("case-studies") || "Case Studies",
+                  items: footerNavigation.caseStudies,
                 })}
               </div>
               <div className="mt-10 md:mt-0">
