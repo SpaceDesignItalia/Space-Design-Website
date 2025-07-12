@@ -3,7 +3,6 @@ import { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import Contact from "./Pages/Contact/Contact";
-import About from "./Pages/About/About";
 import MobileDevelopment from "./Pages/Services/AppMobile/MobileDevelopment";
 import WebDevelopment from "./Pages/Services/Website/WebDevelopment";
 import StartupMVP from "./Pages/Services/StartupMVP";
@@ -87,7 +86,6 @@ function AppContent() {
         {/* Language-specific routes */}
         <Route path="/:lang" element={<LanguageLayout />}>
           <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
 
           {/* Legal routes */}

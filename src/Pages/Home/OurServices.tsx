@@ -4,7 +4,6 @@ export default function OurServices() {
   const { t } = useLanguage();
 
   const stats = [
-    { label: t("projects-completed"), value: "20+" },
     { label: t("years-experience"), value: "3" },
     { label: t("technologies"), value: "15+" },
   ];
@@ -73,9 +72,9 @@ export default function OurServices() {
                 <p className="mt-8">{t("our-services-section-paragraph-3")}</p>
               </div>
             </div>
-            <dl className="mt-10 grid grid-cols-2 gap-8 border-t border-gray-700 pt-10 sm:grid-cols-4">
+            <dl className="mt-10 grid grid-cols-2 gap-8 border-t border-gray-700 pt-10">
               {stats.map((stat, statIdx) => (
-                <div key={statIdx}>
+                <div key={statIdx} className="text-center">
                   <dt className="text-sm/6 font-semibold text-gray-400">
                     {stat.label}
                   </dt>

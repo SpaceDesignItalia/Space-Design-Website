@@ -9,7 +9,7 @@ const projectTypes = [
     nameKey: "time-material",
     icon: "lets-icons:time",
     id: "time-material",
-    href: "#",
+    href: "/case-studies",
     descriptionKey: "time-material-desc",
     features: [
       "regular-updates",
@@ -22,7 +22,7 @@ const projectTypes = [
     nameKey: "fixed-price",
     icon: "material-symbols:folder",
     id: "fixed-price",
-    href: "#",
+    href: "/case-studies",
     descriptionKey: "fixed-price-desc",
     features: [
       "defined-scope",
@@ -116,6 +116,10 @@ export default function ProjectTypes() {
 
   const handleContactClick = () => {
     navigate(`/${language}/contact`);
+  };
+
+  const handleCaseStudiesClick = () => {
+    navigate(`/${language}/case-studies`);
   };
 
   return (
@@ -218,7 +222,11 @@ export default function ProjectTypes() {
                       ))}
                     </ul>
                   </div>
-                  <Button href={type.href} color="primary" className="mt-10">
+                  <Button
+                    onPress={handleCaseStudiesClick}
+                    color="primary"
+                    className="mt-10"
+                  >
                     {t("learn-more")}
                   </Button>
                 </motion.div>
