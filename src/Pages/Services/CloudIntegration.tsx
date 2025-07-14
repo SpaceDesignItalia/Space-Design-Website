@@ -1,63 +1,13 @@
 import SEO from "../../Components/SEO";
 import { useLanguage } from "../../context/LanguageContext";
-import { useNavigate } from "react-router-dom";
-import { Button } from "@heroui/react";
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
-import { MorphingText } from "../../Components/magicui/morphing-text";
 import ServiceFAQ from "../../Components/FAQ/ServiceFAQ";
 import ServiceCTA from "../../Components/ServiceCTA";
 import ServiceHero from "../../Components/ServiceHero";
 
 export default function CloudIntegration() {
   const { t, language } = useLanguage();
-  const navigate = useNavigate();
-
-  const handleContactClick = () => {
-    navigate(`/${language}/contact`);
-  };
-
-  // Get morphing text types from translations
-  const cloudServices = (
-    t("cloud-services-morphing") ||
-    "Migrazione Cloud|Architettura Cloud|Ottimizzazione Costi|Disaster Recovery|Monitoraggio Avanzato|Automazione DevOps"
-  ).split("|");
-
-  const cloudElements = [
-    "AWS EC2",
-    "Azure Functions",
-    "Google Cloud Run",
-    "Kubernetes",
-    "Docker Containers",
-  ];
-
-  const cloudFlow = [
-    {
-      step: "Assessment",
-      icon: "material-symbols:analytics",
-      color: "from-gray-600 to-gray-700",
-    },
-    {
-      step: "Migration Plan",
-      icon: "material-symbols:route",
-      color: "from-gray-700 to-gray-800",
-    },
-    {
-      step: "Implementation",
-      icon: "material-symbols:build",
-      color: "from-gray-800 to-gray-900",
-    },
-    {
-      step: "Optimization",
-      icon: "material-symbols:tune",
-      color: "from-gray-700 to-gray-800",
-    },
-    {
-      step: "Monitoring",
-      icon: "material-symbols:monitoring",
-      color: "from-gray-600 to-gray-700",
-    },
-  ];
 
   const cloudProviders = [
     {
@@ -137,15 +87,6 @@ export default function CloudIntegration() {
     },
   ];
 
-  const pulseAnimation = {
-    scale: [1, 1.05, 1],
-    transition: {
-      duration: 2,
-      repeat: Infinity,
-      ease: "easeInOut",
-    },
-  };
-
   return (
     <>
       <SEO
@@ -168,7 +109,7 @@ export default function CloudIntegration() {
         }}
       />
 
-      <div className="min-h-screen bg-white dark:bg-gray-900">
+      <div className="min-h-screen bg-white dark:bg-gray-900 hero-section">
         <ServiceHero
           title={
             t("cloud-integration-hero-title") ||

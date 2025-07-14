@@ -42,14 +42,6 @@ export const servicesTranslations: Translations = {
     en: "Rapid development of market-ready MVPs to validate your startup idea and accelerate time-to-market",
     it: "Sviluppo rapido di MVP pronti per il mercato per validare la tua idea di startup e accelerare il time-to-market",
   },
-  "ai-software": {
-    en: "AI-based Software",
-    it: "Software basato su AI",
-  },
-  "ai-software-desc": {
-    en: "AI-powered software solutions that automate tasks, enhance decision-making, and drive innovation",
-    it: "Soluzioni software basate su AI che automatizzano task, migliorano la decisione e guidano l'innovazione",
-  },
 
   // Integration & Infrastructure
   "system-integration": {

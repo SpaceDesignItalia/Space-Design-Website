@@ -322,7 +322,7 @@ export default function StartupMVP() {
         }}
       />
 
-      <div className="min-h-screen bg-white dark:bg-gray-900">
+      <div className="min-h-screen bg-white dark:bg-gray-900 hero-section">
         <ServiceHero
           title={t("mvp-hero-title") || "MVP per Startup"}
           description={

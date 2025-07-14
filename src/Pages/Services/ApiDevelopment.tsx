@@ -168,7 +168,7 @@ export default function ApiDevelopment() {
         }}
       />
 
-      <div className="min-h-screen bg-white dark:bg-gray-900">
+      <div className="min-h-screen bg-white dark:bg-gray-900 hero-section">
         <ServiceHero
           title={
             t("api-development-hero-title") ||

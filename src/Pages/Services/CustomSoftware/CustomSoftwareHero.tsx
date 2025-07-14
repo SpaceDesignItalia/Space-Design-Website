@@ -23,21 +23,50 @@ export default function CustomSoftwareHero() {
       className="relative h-dvh w-full overflow-hidden bg-background pt-[70px] select-text"
       aria-labelledby="hero-heading"
       role="banner"
+      style={{
+        WebkitUserSelect: "text",
+        userSelect: "text",
+        pointerEvents: "auto",
+      }}
     >
       {/* Centered content */}
-      <div className="relative flex h-full items-center justify-center px-6 z-10 pointer-events-auto">
+      <div
+        className="relative flex h-full items-center justify-center px-6 z-10 pointer-events-auto"
+        style={{
+          WebkitUserSelect: "text",
+          userSelect: "text",
+          pointerEvents: "auto",
+        }}
+      >
         <motion.div
           className="text-center max-w-4xl pointer-events-auto"
           initial="initial"
           animate="animate"
+          style={{
+            WebkitUserSelect: "text",
+            userSelect: "text",
+            pointerEvents: "auto",
+          }}
         >
           {/* Main heading with semantic structure */}
           <motion.h1
             id="hero-heading"
             variants={fadeInUp}
             className="text-5xl sm:text-6xl md:text-7xl font-semibold leading-[1.1] tracking-tight mb-8 select-text pointer-events-auto"
+            style={{
+              WebkitUserSelect: "text",
+              userSelect: "text",
+              pointerEvents: "auto",
+            }}
           >
-            <span className="bg-gradient-to-r from-primary-600 to-primary-800 bg-clip-text text-transparent dark:from-primary-400 dark:to-primary-200 select-text pointer-events-auto">
+            <span
+              className="bg-gradient-to-r from-primary-600 to-primary-800 bg-clip-text text-transparent dark:from-primary-400 dark:to-primary-200 select-text pointer-events-auto"
+              style={{
+                WebkitUserSelect: "text",
+                userSelect: "text",
+                pointerEvents: "auto",
+              }}
+            >
               {t("custom-software-hero-title")}
             </span>
           </motion.h1>
@@ -47,6 +76,11 @@ export default function CustomSoftwareHero() {
             variants={fadeInUp}
             className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 mb-12 max-w-2xl mx-auto select-text pointer-events-auto"
             role="doc-subtitle"
+            style={{
+              WebkitUserSelect: "text",
+              userSelect: "text",
+              pointerEvents: "auto",
+            }}
           >
             {t("custom-software-hero-description")}
           </motion.p>
@@ -55,6 +89,11 @@ export default function CustomSoftwareHero() {
           <motion.div
             variants={fadeInUp}
             className="flex justify-center pointer-events-auto"
+            style={{
+              WebkitUserSelect: "text",
+              userSelect: "text",
+              pointerEvents: "auto",
+            }}
           >
             <Button
               size="lg"
@@ -63,6 +102,11 @@ export default function CustomSoftwareHero() {
               onPress={handleContactClick}
               aria-label={t("web-cta-button")}
               className="select-none cursor-pointer z-20 relative pointer-events-auto"
+              style={{
+                WebkitUserSelect: "none",
+                userSelect: "none",
+                pointerEvents: "auto",
+              }}
               endContent={
                 <Icon
                   icon="material-symbols:arrow-forward"

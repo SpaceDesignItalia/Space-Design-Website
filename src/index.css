@@ -14,3 +14,125 @@
 .animate-scroll {
   animation: scroll 20s linear infinite;
 }
+
+/* Forza la selezione del testo sui componenti motion */
+[data-framer-motion] {
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  -ms-user-select: text !important;
+  user-select: text !important;
+  pointer-events: auto !important;
+}
+
+/* Stili specifici per i componenti Hero */
+.hero-section {
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  -ms-user-select: text !important;
+  user-select: text !important;
+  pointer-events: auto !important;
+}
+
+.hero-section * {
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  -ms-user-select: text !important;
+  user-select: text !important;
+  pointer-events: auto !important;
+}
+
+/* Escludi i pulsanti dalla selezione del testo */
+.hero-section button,
+.hero-section .select-none {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+  pointer-events: auto !important;
+}
+
+/* Override per Framer Motion */
+[data-framer-motion] * {
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  -ms-user-select: text !important;
+  user-select: text !important;
+  pointer-events: auto !important;
+}
+
+/* Escludi elementi specifici dalla selezione */
+[data-framer-motion] button,
+[data-framer-motion] .select-none,
+[data-framer-motion] [role="button"] {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+  pointer-events: auto !important;
+}
+
+/* Forza la selezione del testo sui wrapper dei componenti padre */
+.min-h-screen {
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  -ms-user-select: text !important;
+  user-select: text !important;
+  pointer-events: auto !important;
+}
+
+/* Override per tutti i div che potrebbero interferire */
+div {
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  -ms-user-select: text !important;
+  user-select: text !important;
+  pointer-events: auto !important;
+}
+
+/* Escludi elementi specifici dalla selezione globale */
+button,
+.select-none,
+[role="button"],
+input,
+textarea,
+select {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+  pointer-events: auto !important;
+}
+
+/* Forza la selezione del testo su tutti i testi */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+div {
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  -ms-user-select: text !important;
+  user-select: text !important;
+  pointer-events: auto !important;
+}
+
+/* Override specifico per i componenti Hero */
+section[role="banner"] {
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  -ms-user-select: text !important;
+  user-select: text !important;
+  pointer-events: auto !important;
+}
+
+section[role="banner"] * {
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  -ms-user-select: text !important;
+  user-select: text !important;
+  pointer-events: auto !important;
+}

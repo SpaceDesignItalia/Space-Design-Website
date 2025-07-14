@@ -30,7 +30,7 @@ export default function MobileDevelopment() {
         }}
       />
 
-      <div className="min-h-screen bg-white dark:bg-gray-900">
+      <div className="min-h-screen bg-white dark:bg-gray-900 hero-section">
         {/* Hero Section */}
 
         <ServiceHero

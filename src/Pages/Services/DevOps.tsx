@@ -242,7 +242,7 @@ export default function DevOps() {
         }}
       />
 
-      <div className="min-h-screen bg-white dark:bg-gray-900">
+      <div className="min-h-screen bg-white dark:bg-gray-900 hero-section">
         <ServiceHero
           title={t("devops-hero-title") || "Accelera il tuo sviluppo"}
           description={

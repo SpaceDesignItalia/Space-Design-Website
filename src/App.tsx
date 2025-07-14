@@ -6,7 +6,7 @@ import Contact from "./Pages/Contact/Contact";
 import MobileDevelopment from "./Pages/Services/AppMobile/MobileDevelopment";
 import WebDevelopment from "./Pages/Services/Website/WebDevelopment";
 import StartupMVP from "./Pages/Services/StartupMVP";
-import AISoftware from "./Pages/Services/AISoftware";
+
 import CloudIntegration from "./Pages/Services/CloudIntegration";
 import ApiDevelopment from "./Pages/Services/ApiDevelopment";
 import DevOps from "./Pages/Services/DevOps";
@@ -114,7 +114,7 @@ function AppContent() {
             <Route path="mobile-development" element={<MobileDevelopment />} />
             <Route path="custom-software" element={<CustomSoftware />} />
             <Route path="startup-mvp" element={<StartupMVP />} />
-            <Route path="ai-software" element={<AISoftware />} />
+
             <Route path="cloud-integration" element={<CloudIntegration />} />
             <Route path="api-development" element={<ApiDevelopment />} />
             <Route path="devops" element={<DevOps />} />
