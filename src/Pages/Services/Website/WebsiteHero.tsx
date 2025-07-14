@@ -25,7 +25,7 @@ export default function WebsiteHero() {
       role="banner"
     >
       {/* Centered content */}
-      <div className="relative flex h-full items-center justify-center px-6 z-10 pointer-events-auto">
+      <div className="relative flex h-full items-center justify-center px-6 z-0 pointer-events-auto">
         <motion.div
           className="text-center max-w-4xl pointer-events-auto"
           initial="initial"
@@ -37,7 +37,10 @@ export default function WebsiteHero() {
             variants={fadeInUp}
             className="text-5xl sm:text-6xl md:text-7xl font-semibold leading-[1.1] tracking-tight mb-8 select-text pointer-events-auto"
           >
-            <span className="bg-gradient-to-r from-primary-600 to-primary-800 bg-clip-text text-transparent dark:from-primary-400 dark:to-primary-200 select-text pointer-events-auto">
+            <span
+              className="text-primary-600 dark:text-primary-400 select-text pointer-events-auto"
+              style={{ WebkitUserSelect: "text", userSelect: "text" }}
+            >
               {t("web-hero-title")}
             </span>
           </motion.h1>
@@ -62,7 +65,7 @@ export default function WebsiteHero() {
               radius="full"
               onPress={handleContactClick}
               aria-label={t("web-cta-button")}
-              className="select-none cursor-pointer z-20 relative pointer-events-auto"
+              className="select-none cursor-pointer z-40 relative pointer-events-auto"
               endContent={
                 <Icon
                   icon="material-symbols:arrow-forward"

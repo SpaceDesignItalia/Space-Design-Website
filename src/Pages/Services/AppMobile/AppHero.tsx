@@ -36,7 +36,7 @@ export default function AppHero() {
   };
 
   return (
-    <div className="relative overflow-hidden bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 h-screen flex items-center">
+    <div className="relative overflow-hidden bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 h-screen flex items-center select-text">
       <div className="absolute inset-0" aria-hidden="true">
         <motion.div
           className="absolute -top-40 -right-40 h-80 w-80 rounded-full bg-gradient-to-r from-gray-200 to-gray-300 dark:from-gray-700 dark:to-gray-600 blur-3xl opacity-30"
@@ -61,21 +61,22 @@ export default function AppHero() {
         >
           <motion.h1
             variants={fadeInUp}
-            className="text-4xl max-w-4xl mx-auto sm:text-5xl md:text-6xl font-bold leading-[1.2] tracking-tight bg-gradient-to-r from-gray-900 via-gray-700 to-gray-900 bg-clip-text text-transparent dark:from-white dark:via-gray-200 dark:to-white mb-8 py-2"
+            className="text-4xl max-w-4xl mx-auto sm:text-5xl md:text-6xl font-bold leading-[1.2] tracking-tight text-gray-900 dark:text-white mb-8 py-2 select-text pointer-events-auto"
+            style={{ WebkitUserSelect: "text", userSelect: "text" }}
           >
             {t("mobile-hero-title") || "Sviluppo App Mobile"}
           </motion.h1>
 
           <motion.p
             variants={fadeInUp}
-            className="mx-auto mt-6 max-w-2xl text-xl leading-8 text-gray-600 dark:text-gray-300"
+            className="mx-auto mt-6 max-w-2xl text-xl leading-8 text-gray-600 dark:text-gray-300 select-text pointer-events-auto"
           >
             {t("mobile-hero-description")}
           </motion.p>
 
           <motion.div
             variants={fadeInUp}
-            className="mt-12 relative z-50"
+            className="mt-12 relative z-40"
             animate={pulseAnimation}
           >
             <Button
@@ -83,7 +84,7 @@ export default function AppHero() {
               color="primary"
               radius="full"
               onPress={handleContactClick}
-              className="bg-black text-white hover:bg-gray-800 px-8 py-4 text-lg font-semibold relative z-50 cursor-pointer"
+              className="bg-black text-white hover:bg-gray-800 px-8 py-4 text-lg font-semibold relative z-40 cursor-pointer"
               endContent={
                 <Icon
                   icon="material-symbols:arrow-forward"

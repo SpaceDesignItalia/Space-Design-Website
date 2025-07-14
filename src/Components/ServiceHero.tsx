@@ -56,7 +56,7 @@ export default function ServiceHero({
 
   return (
     <section
-      className="relative h-dvh w-full overflow-hidden bg-background pt-[70px]"
+      className="relative h-dvh w-full overflow-hidden bg-background pt-[70px] select-text"
       aria-labelledby="hero-heading"
       role="banner"
     >
@@ -78,9 +78,12 @@ export default function ServiceHero({
           <motion.h1
             id="hero-heading"
             variants={fadeInUp}
-            className="text-5xl sm:text-6xl md:text-7xl font-bold leading-[1.1] tracking-tight mb-8"
+            className="text-5xl sm:text-6xl md:text-7xl font-bold leading-[1.1] tracking-tight mb-8 select-text pointer-events-auto"
           >
-            <span className="bg-gradient-to-r from-primary-600 to-primary-800 bg-clip-text text-transparent dark:from-primary-400 dark:to-primary-200">
+            <span
+              className="text-primary-600 dark:text-primary-400 select-text pointer-events-auto"
+              style={{ WebkitUserSelect: "text", userSelect: "text" }}
+            >
               {title}
             </span>
           </motion.h1>
@@ -88,7 +91,7 @@ export default function ServiceHero({
           {/* Descriptive subtitle with semantic meaning */}
           <motion.p
             variants={fadeInUp}
-            className="text-xl sm:text-2xl text-gray-600 dark:text-gray-300 mb-12 max-w-2xl mx-auto"
+            className="text-xl sm:text-2xl text-gray-600 dark:text-gray-300 mb-12 max-w-2xl mx-auto select-text pointer-events-auto"
             role="doc-subtitle"
           >
             {description}
@@ -103,7 +106,7 @@ export default function ServiceHero({
               onPress={handlePress}
               onClick={handleClick}
               aria-label={buttonText || t("get-quote") || "Richiedi Preventivo"}
-              className="cursor-pointer z-50"
+              className="cursor-pointer z-40"
               endContent={
                 <Icon
                   icon="material-symbols:arrow-forward"
