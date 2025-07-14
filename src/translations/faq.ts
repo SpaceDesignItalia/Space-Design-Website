@@ -6,10 +6,6 @@ export const faqTranslations: Translations = {
     en: "Frequently Asked Questions",
     it: "Domande Frequenti",
   },
-  "faq-subtitle": {
-    en: "Find answers to the most common questions about our services",
-    it: "Trova risposte alle domande più comuni sui nostri servizi",
-  },
   "faq-cta-title": {
     en: "Still have questions?",
     it: "Hai ancora domande?",
@@ -18,63 +14,67 @@ export const faqTranslations: Translations = {
     en: "Contact Us",
     it: "Contattaci",
   },
+  "faq-benefit-text": {
+    en: "Free consultation",
+    it: "Consulenza gratuita",
+  },
 
   // FAQ Subtitles for each service
-  "faq-web-subtitle": {
+  "web-faq-subtitle": {
     en: "Everything you need to know about our web development services",
     it: "Tutto quello che devi sapere sui nostri servizi di sviluppo web",
   },
-  "faq-mobile-subtitle": {
+  "mobile-faq-subtitle": {
     en: "Common questions about mobile app development",
     it: "Domande comuni sullo sviluppo di app mobile",
   },
-  "faq-custom-subtitle": {
+  "custom-faq-subtitle": {
     en: "Frequently asked questions about custom software development",
     it: "Domande frequenti sullo sviluppo di software personalizzato",
   },
-  "faq-mvp-subtitle": {
+  "mvp-faq-subtitle": {
     en: "Everything about MVP development for startups",
     it: "Tutto sullo sviluppo MVP per startup",
   },
-  "faq-ai-subtitle": {
+  "ai-faq-subtitle": {
     en: "Questions about AI-based software development",
     it: "Domande sullo sviluppo di software basato su AI",
   },
-  "faq-cloud-subtitle": {
+  "cloud-faq-subtitle": {
     en: "Cloud integration and migration questions",
     it: "Domande su integrazione e migrazione cloud",
   },
-  "faq-api-subtitle": {
+  "api-faq-subtitle": {
     en: "API development and integration questions",
     it: "Domande su sviluppo e integrazione API",
   },
 
   // FAQ CTA Subtexts for each service
-  "faq-web-cta-subtext": {
+  "web-faq-cta-subtext": {
     en: "Ready to start your web project?",
     it: "Pronto a iniziare il tuo progetto web?",
   },
-  "faq-mobile-cta-subtext": {
+  "mobile-faq-cta-subtext": {
     en: "Ready to build your mobile app?",
     it: "Pronto a costruire la tua app mobile?",
   },
-  "faq-custom-cta-subtext": {
+  "custom-faq-cta-subtext": {
     en: "Ready to digitize your business?",
     it: "Pronto a digitalizzare la tua azienda?",
   },
-  "faq-mvp-cta-subtext": {
+  "mvp-faq-cta-subtext": {
     en: "Ready to validate your startup idea?",
     it: "Pronto a validare la tua idea di startup?",
   },
-  "faq-ai-cta-subtext": {
+  "ai-faq-cta-subtext": {
     en: "Ready to implement AI in your business?",
     it: "Pronto a implementare l'AI nel tuo business?",
   },
-  "faq-cloud-cta-subtext": {
+  "cloud-faq-cta-subtext": {
     en: "Ready to migrate to the cloud?",
     it: "Pronto a migrare al cloud?",
   },
-  "faq-api-cta-subtext": {
+  "api-faq-cta-subtext": {
     en: "Ready to develop your APIs?",
     it: "Pronto a sviluppare le tue API?",
   },
@@ -315,5 +315,164 @@ export const faqTranslations: Translations = {
   "api-faq-4-answer": {
     en: "Yes, we provide comprehensive API documentation, developer guides, and ongoing support. We also offer API monitoring, performance optimization, and maintenance services.",
     it: "Sì, forniamo documentazione API completa, guide per sviluppatori e supporto continuo. Offriamo anche servizi di monitoraggio API, ottimizzazione performance e manutenzione.",
+  },
+
+  // --- DEVOPS FAQ ---
+  "devops-faq-title": {
+    en: "Frequently Asked Questions",
+    it: "Domande Frequenti",
+  },
+  "devops-faq-subtitle": {
+    en: "Answers to the most common questions about DevOps and CI/CD",
+    it: "Risposte alle domande più comuni su DevOps e CI/CD",
+  },
+  "devops-faq-cta-text": {
+    en: "Still have questions?",
+    it: "Hai altre domande?",
+  },
+  "devops-faq-cta-subtext": {
+    en: "Let's talk about your DevOps transformation",
+    it: "Parliamo della tua trasformazione DevOps",
+  },
+  "devops-faq-benefit-text": {
+    en: "Free consultation",
+    it: "Consulenza gratuita",
+  },
+  "devops-faq-question-1": {
+    en: "How long does DevOps implementation take?",
+    it: "Quanto tempo richiede l'implementazione DevOps?",
+  },
+  "devops-faq-answer-1": {
+    en: "From 4-6 weeks for basic CI/CD pipelines up to 12-16 weeks for full DevOps transformation, depending on infrastructure complexity and team size.",
+    it: "Da 4-6 settimane per pipeline CI/CD base fino a 12-16 settimane per trasformazione DevOps completa, a seconda della complessità infrastrutturale e dimensione del team.",
+  },
+  "devops-faq-question-2": {
+    en: "Can you integrate with our existing tools?",
+    it: "Potete integrarvi con i nostri strumenti esistenti?",
+  },
+  "devops-faq-answer-2": {
+    en: "Yes, we integrate with existing development tools, version control systems, monitoring platforms and cloud providers to minimize disruption.",
+    it: "Sì, ci integriamo con strumenti di sviluppo esistenti, sistemi di version control, piattaforme di monitoraggio e cloud provider per minimizzare le interruzioni.",
+  },
+  "devops-faq-question-3": {
+    en: "What about security in CI/CD pipelines?",
+    it: "Che dire della sicurezza nelle pipeline CI/CD?",
+  },
+  "devops-faq-answer-3": {
+    en: "We implement DevSecOps practices with automated security scans, vulnerability tests, compliance checks and secure secrets management.",
+    it: "Implementiamo pratiche DevSecOps con scansioni di sicurezza automatizzate, test di vulnerabilità, controlli di compliance e gestione sicura dei segreti.",
+  },
+  "devops-faq-question-4": {
+    en: "How do you handle rollbacks and failures?",
+    it: "Come gestite rollback e fallimenti?",
+  },
+  "devops-faq-answer-4": {
+    en: "Automated rollback mechanisms, blue-green deployments, canary releases and full monitoring ensure quick recovery from failures.",
+    it: "Meccanismi di rollback automatizzati, deployment blue-green, canary release e monitoraggio completo garantiscono recupero rapido dai fallimenti.",
+  },
+
+  // --- API FAQ ---
+  "api-faq-title": {
+    en: "Frequently Asked Questions",
+    it: "Domande Frequenti",
+  },
+  "api-faq-subtitle": {
+    en: "Answers to the most common questions about API development",
+    it: "Risposte alle domande più comuni sullo sviluppo API",
+  },
+  "api-faq-cta-text": { en: "Still have questions?", it: "Hai altre domande?" },
+  "api-faq-cta-subtext": {
+    en: "Let's talk about your API project",
+    it: "Parliamo del tuo progetto API",
+  },
+  "api-faq-benefit-text": {
+    en: "Free consultation",
+    it: "Consulenza gratuita",
+  },
+  "api-faq-question-1": {
+    en: "Will our APIs be secure?",
+    it: "Le nostre API saranno sicure?",
+  },
+  "api-faq-answer-1": {
+    en: "We implement OAuth 2.0 authentication, end-to-end encryption and advanced rate limiting for maximum security.",
+    it: "Implementiamo autenticazione OAuth 2.0, crittografia end-to-end e rate limiting avanzato per garantire massima sicurezza.",
+  },
+  "api-faq-question-2": {
+    en: "How long does integration take?",
+    it: "Quanto tempo richiede l'integrazione?",
+  },
+  "api-faq-answer-2": {
+    en: "From 2-4 weeks for simple APIs up to 8-12 weeks for complex systems, using agile methodology.",
+    it: "Dalle 2-4 settimane per API semplici fino a 8-12 settimane per sistemi complessi, con metodologia agile.",
+  },
+  "api-faq-question-3": {
+    en: "Will the APIs scale as we grow?",
+    it: "Le API si adatteranno alla crescita?",
+  },
+  "api-faq-answer-3": {
+    en: "We design scalable architectures that automatically grow with your business without compromise.",
+    it: "Progettiamo architetture scalabili che crescono automaticamente con il tuo business senza compromessi.",
+  },
+  "api-faq-question-4": {
+    en: "Do you provide complete documentation?",
+    it: "Fornite documentazione completa?",
+  },
+  "api-faq-answer-4": {
+    en: "We provide interactive OpenAPI documentation and detailed developer guides to facilitate integration.",
+    it: "Forniamo documentazione OpenAPI interattiva e guide per sviluppatori dettagliate per facilitare l'integrazione.",
+  },
+
+  // --- CLOUD FAQ ---
+  "cloud-faq-title": {
+    en: "Frequently Asked Questions",
+    it: "Domande Frequenti",
+  },
+  "cloud-faq-subtitle": {
+    en: "Answers to the most common questions about cloud integration",
+    it: "Risposte alle domande più comuni sull'integrazione cloud",
+  },
+  "cloud-faq-cta-text": {
+    en: "Still have questions?",
+    it: "Hai altre domande?",
+  },
+  "cloud-faq-cta-subtext": {
+    en: "Let's talk about your cloud migration",
+    it: "Parliamo della tua migrazione cloud",
+  },
+  "cloud-faq-benefit-text": {
+    en: "Free consultation",
+    it: "Consulenza gratuita",
+  },
+  "cloud-faq-question-1": {
+    en: "How long does a cloud migration take?",
+    it: "Quanto tempo richiede una migrazione cloud?",
+  },
+  "cloud-faq-answer-1": {
+    en: "From 4-8 weeks for simple applications up to 6-12 months for complex enterprise systems, with a gradual approach and minimal downtime.",
+    it: "Da 4-8 settimane per applicazioni semplici fino a 6-12 mesi per sistemi enterprise complessi, con approccio graduale e minimo downtime.",
+  },
+  "cloud-faq-question-2": {
+    en: "Which cloud provider do you recommend?",
+    it: "Quale provider cloud consigliate?",
+  },
+  "cloud-faq-answer-2": {
+    en: "We evaluate your specific needs to recommend AWS, Azure or Google Cloud. Often a multi-cloud strategy offers more flexibility.",
+    it: "Valutiamo le vostre esigenze specifiche per consigliare AWS, Azure o Google Cloud. Spesso una strategia multi-cloud offre maggiore flessibilità.",
+  },
+  "cloud-faq-question-3": {
+    en: "How do you handle cloud security?",
+    it: "Come gestite la sicurezza nel cloud?",
+  },
+  "cloud-faq-answer-3": {
+    en: "We implement best security practices: end-to-end encryption, identity management, GDPR compliance and continuous threat monitoring.",
+    it: "Implementiamo best practices di sicurezza: crittografia end-to-end, gestione identità, compliance GDPR e monitoraggio continuo delle minacce.",
+  },
+  "cloud-faq-question-4": {
+    en: "Can we reduce cloud costs?",
+    it: "Possiamo ridurre i costi cloud?",
+  },
+  "cloud-faq-answer-4": {
+    en: "Yes, we optimize resource usage, implement auto-scaling and saving strategies to reduce costs by 30-50%.",
+    it: "Sì, ottimizziamo l'utilizzo delle risorse, implementiamo auto-scaling e strategie di risparmio per ridurre i costi del 30-50%.",
   },
 };

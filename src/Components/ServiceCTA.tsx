@@ -77,24 +77,6 @@ export default function ServiceCTA({
                   <Icon icon="mdi:arrow-right" />
                 </Button>
               </motion.div>
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                className="w-full sm:w-auto"
-              >
-                <Button
-                  variant="bordered"
-                  radius="full"
-                  className="border-white text-white hover:bg-white/10 px-5 py-2.5 text-sm font-semibold whitespace-nowrap w-full sm:w-auto"
-                  onClick={handleCaseStudyClick}
-                >
-                  {secondaryButtonText ||
-                    t("view-case-studies") ||
-                    "Vedi i nostri progetti"}
-                  <Icon icon="mdi:arrow-right" />
-                </Button>
-              </motion.div>
             </motion.div>
           </div>
           <motion.div

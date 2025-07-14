@@ -102,4 +102,130 @@ export const servicesTranslations: Translations = {
     en: "Advanced architectural solutions ensuring scalability, performance, and long-term sustainability of your systems",
     it: "Soluzioni architetturali avanzate che garantiscono scalabilità, prestazioni e sostenibilità a lungo termine dei tuoi sistemi",
   },
+
+  // --- DEVOPS ---
+  "devops-meta-title": {
+    en: "Space Design Italia - DevOps & CI/CD",
+    it: "Space Design Italia - DevOps & CI/CD",
+  },
+  "devops-meta-description": {
+    en: "Professional DevOps and CI/CD services. Automation, deployment pipelines, monitoring and infrastructure optimization.",
+    it: "Servizi DevOps e CI/CD professionali. Automazione, pipeline di deployment, monitoraggio e ottimizzazione infrastrutture.",
+  },
+  "devops-hero-title": {
+    en: "Accelerate your development",
+    it: "Accelera il tuo sviluppo",
+  },
+  "devops-hero-description": {
+    en: "Accelerate your development with modern DevOps practices. Automated pipelines, continuous integration, infrastructure as code and monitoring for faster and more reliable deployments.",
+    it: "Accelera il tuo sviluppo con pratiche DevOps moderne. Pipeline automatizzate, integrazione continua, infrastructure as code e monitoraggio per deployment più veloci e affidabili.",
+  },
+  "devops-request-consultation": {
+    en: "Request Consultation",
+    it: "Richiedi Consulenza",
+  },
+  "devops-services-title": {
+    en: "Our DevOps Services",
+    it: "I Nostri Servizi DevOps",
+  },
+  "devops-services-description": {
+    en: "Complete DevOps solutions to accelerate your development and improve the reliability of your applications.",
+    it: "Soluzioni DevOps complete per accelerare il tuo sviluppo e migliorare l'affidabilità delle tue applicazioni.",
+  },
+  "devops-cta-title": {
+    en: "Ready to Accelerate Your Development?",
+    it: "Pronto ad Accelerare il Tuo Sviluppo?",
+  },
+  "devops-cta-description": {
+    en: "Transform your development process with modern DevOps practices. Contact us for a personalized consultation.",
+    it: "Trasforma il tuo processo di sviluppo con pratiche DevOps moderne. Contattaci per una consulenza personalizzata.",
+  },
+  "devops-cta-button": {
+    en: "Start Now",
+    it: "Inizia Ora",
+  },
+
+  // --- API ---
+  "api-development-meta-title": {
+    en: "Space Design Italia - API Development",
+    it: "Space Design Italia - Sviluppo API",
+  },
+  "api-development-meta-description": {
+    en: "Professional API development services. REST, GraphQL, microservices and integrations for modern and scalable applications.",
+    it: "Servizi di sviluppo API professionali. REST, GraphQL, microservizi e integrazioni per applicazioni moderne e scalabili.",
+  },
+  "api-development-hero-title": {
+    en: "Connect your digital ecosystem",
+    it: "Connetti il tuo ecosistema digitale",
+  },
+  "api-development-hero-description": {
+    en: "We create robust, secure and well-documented APIs that connect your systems and enable seamless integrations. From REST to GraphQL, we build the digital backbone of your applications.",
+    it: "Creiamo API robuste, sicure e ben documentate che collegano i tuoi sistemi e abilitano integrazioni perfette. Da REST a GraphQL, costruiamo la spina dorsale digitale delle tue applicazioni.",
+  },
+  "api-development-request-consultation": {
+    en: "Request Consultation",
+    it: "Richiedi Consulenza",
+  },
+  "api-services-title": {
+    en: "Our API Services",
+    it: "I Nostri Servizi API",
+  },
+  "api-services-description": {
+    en: "Complete API solutions for every integration need. From design to deployment, we create APIs that grow with your business.",
+    it: "Soluzioni API complete per ogni esigenza di integrazione. Dal design al deployment, creiamo API che crescono con il tuo business.",
+  },
+  "api-cta-title": {
+    en: "Ready to Build Your APIs?",
+    it: "Pronto a Costruire le Tue API?",
+  },
+  "api-cta-description": {
+    en: "Transform your integrations with professional APIs. Contact us for a personalized consultation and discover how we can connect your digital ecosystem.",
+    it: "Trasforma le tue integrazioni con API professionali. Contattaci per una consulenza personalizzata e scopri come possiamo connettere il tuo ecosistema digitale.",
+  },
+  "api-cta-button": {
+    en: "Contact Us Now",
+    it: "Contattaci Ora",
+  },
+
+  // --- CLOUD ---
+  "cloud-integration-meta-title": {
+    en: "Space Design Italia - Cloud Integration",
+    it: "Space Design Italia - Integrazione Cloud",
+  },
+  "cloud-integration-meta-description": {
+    en: "Professional cloud integration services. Migration, multi-cloud, security and optimization for modern applications.",
+    it: "Servizi di integrazione cloud professionali. Migrazione, multi-cloud, sicurezza e ottimizzazione per applicazioni moderne.",
+  },
+  "cloud-integration-hero-title": {
+    en: "Transform your business in the cloud",
+    it: "Trasforma il tuo business nel cloud",
+  },
+  "cloud-integration-hero-description": {
+    en: "Accelerate your digital transformation with modern cloud solutions. Secure migration, multi-cloud strategies and optimization to maximize efficiency and scalability.",
+    it: "Accelera la tua trasformazione digitale con soluzioni cloud moderne. Migrazione sicura, strategie multi-cloud e ottimizzazione per massimizzare efficienza e scalabilità.",
+  },
+  "cloud-integration-request-consultation": {
+    en: "Request Consultation",
+    it: "Richiedi Consulenza",
+  },
+  "cloud-services-title": {
+    en: "Our Cloud Services",
+    it: "I Nostri Servizi Cloud",
+  },
+  "cloud-services-description": {
+    en: "Complete cloud solutions to modernize your infrastructure and accelerate digital innovation.",
+    it: "Soluzioni cloud complete per modernizzare la tua infrastruttura e accelerare l'innovazione digitale.",
+  },
+  "cloud-cta-title": {
+    en: "Ready for Cloud Transformation?",
+    it: "Pronto per la Trasformazione Cloud?",
+  },
+  "cloud-cta-description": {
+    en: "Accelerate your digital transformation with modern cloud solutions. Contact us for a personalized consultation.",
+    it: "Accelera la tua trasformazione digitale con soluzioni cloud moderne. Contattaci per una consulenza personalizzata.",
+  },
+  "cloud-cta-button": {
+    en: "Start Now",
+    it: "Inizia Ora",
+  },
 };

@@ -1,89 +1,64 @@
 import SEO from "../../Components/SEO";
 import { useLanguage } from "../../context/LanguageContext";
+import { useNavigate } from "react-router-dom";
+import { Button } from "@heroui/react";
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
+import ServiceHero from "../../Components/ServiceHero";
 import ServiceFAQ from "../../Components/FAQ/ServiceFAQ";
 import ServiceCTA from "../../Components/ServiceCTA";
-import ServiceHero from "../../Components/ServiceHero";
 
 export default function CloudIntegration() {
   const { t, language } = useLanguage();
+  const navigate = useNavigate();
 
-  const cloudProviders = [
-    {
-      name: "Amazon Web Services",
-      description: "Piattaforma cloud leader mondiale",
-      icon: "logos:aws",
-      category: "Public Cloud",
-    },
-    {
-      name: "Microsoft Azure",
-      description: "Soluzione cloud enterprise Microsoft",
-      icon: "logos:microsoft-azure",
-      category: "Enterprise",
-    },
-    {
-      name: "Google Cloud Platform",
-      description: "Infrastruttura cloud di Google",
-      icon: "logos:google-cloud",
-      category: "AI/ML Focus",
-    },
-    {
-      name: "Docker & Kubernetes",
-      description: "Containerizzazione e orchestrazione",
-      icon: "logos:docker-icon",
-      category: "Container Platform",
-    },
-    {
-      name: "Terraform",
-      description: "Infrastructure as Code",
-      icon: "logos:terraform-icon",
-      category: "IaC",
-    },
-    {
-      name: "Serverless",
-      description: "Computing senza server",
-      icon: "material-symbols:cloud-sync",
-      category: "Serverless",
-    },
-  ];
+  const handleContactClick = () => {
+    navigate(`/${language}/contact`);
+  };
 
-  const benefits = [
+  const cloudServices = [
     {
-      icon: "material-symbols:savings",
-      title: t("cloud-benefit-cost-title") || "Riduzione Costi",
+      title: "Migrazione Cloud",
       description:
-        t("cloud-benefit-cost-description") ||
-        "Fino al 60% di riduzione dei costi IT",
-      metric: "60%",
-      metricLabel: "Cost Reduction",
+        "Migrazione sicura e pianificata di applicazioni e dati verso piattaforme cloud moderne.",
+      icon: "material-symbols:cloud-upload",
+      features: [
+        "Analisi Preliminare",
+        "Strategia di Migrazione",
+        "Testing Completo",
+        "Go-Live Supportato",
+      ],
     },
     {
-      icon: "material-symbols:trending-up",
-      title: t("cloud-benefit-scalability-title") || "Scalabilità Automatica",
+      title: "Multi-Cloud Strategy",
       description:
-        t("cloud-benefit-scalability-description") ||
-        "Risorse che si adattano automaticamente",
-      metric: "∞",
-      metricLabel: "Scalability",
+        "Gestione di infrastrutture distribuite su più provider cloud per massima flessibilità.",
+      icon: "material-symbols:account-tree",
+      features: ["AWS", "Azure", "Google Cloud", "Orchestrazione Unificata"],
     },
     {
+      title: "Cloud Security",
+      description:
+        "Implementazione di sicurezza avanzata per proteggere applicazioni e dati nel cloud.",
       icon: "material-symbols:security",
-      title: t("cloud-benefit-security-title") || "Sicurezza Enterprise",
-      description:
-        t("cloud-benefit-security-description") ||
-        "Protezione avanzata e compliance",
-      metric: "99.9%",
-      metricLabel: "Security SLA",
+      features: [
+        "Identity Management",
+        "Data Encryption",
+        "Compliance",
+        "Threat Detection",
+      ],
     },
     {
-      icon: "material-symbols:speed",
-      title: t("cloud-benefit-performance-title") || "Performance Ottimizzate",
+      title: "Cloud Optimization",
       description:
-        t("cloud-benefit-performance-description") ||
-        "Prestazioni superiori e latenza ridotta",
-      metric: "<50ms",
-      metricLabel: "Latency",
+        "Ottimizzazione costi e performance per massimizzare l'efficienza delle risorse cloud.",
+      icon: "material-symbols:trending-up",
+      features: [
+        "Cost Optimization",
+        "Performance Tuning",
+        "Auto-scaling",
+        "Monitoring",
+      ],
     },
   ];
 
@@ -96,9 +71,9 @@ export default function CloudIntegration() {
         }
         description={
           t("cloud-integration-meta-description") ||
-          "Servizi di integrazione cloud professionali. Migrazione, architettura, serverless e ottimizzazione per AWS, Azure e Google Cloud."
+          "Servizi di integrazione cloud professionali. Migrazione, multi-cloud, sicurezza e ottimizzazione per applicazioni moderne."
         }
-        keywords={`integrazione cloud, aws, azure, google cloud, migrazione cloud, ${t(
+        keywords={`cloud integration, aws, azure, google cloud, migration, ${t(
           "seo-keywords"
         )}`}
         url={`/${language}/services/cloud-integration`}
@@ -109,23 +84,24 @@ export default function CloudIntegration() {
         }}
       />
 
-      <div className="min-h-screen bg-white dark:bg-gray-900 hero-section">
+      <div className="min-h-screen bg-white dark:bg-gray-900">
+        {/* Hero Section */}
         <ServiceHero
           title={
             t("cloud-integration-hero-title") ||
-            "Trasforma la tua infrastruttura IT"
+            "Trasforma il tuo business nel cloud"
           }
           description={
             t("cloud-integration-hero-description") ||
-            "Trasformiamo la tua infrastruttura IT con soluzioni cloud moderne, scalabili e sicure. Dalla migrazione all'ottimizzazione, ti accompagniamo in ogni fase del tuo percorso cloud."
+            "Accelera la tua trasformazione digitale con soluzioni cloud moderne. Migrazione sicura, strategie multi-cloud e ottimizzazione per massimizzare efficienza e scalabilità."
           }
           buttonText={
             t("cloud-integration-request-consultation") || "Richiedi Consulenza"
           }
         />
 
-        {/* Cloud Services with Interactive Cards */}
-        <section className="py-24 bg-white dark:bg-gray-900">
+        {/* Cloud Services Section */}
+        <section className="py-24 bg-gray-50 dark:bg-gray-800">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -139,232 +115,54 @@ export default function CloudIntegration() {
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
                 {t("cloud-services-description") ||
-                  "Soluzioni cloud complete per ogni esigenza aziendale. Dalla migrazione all'ottimizzazione, ti supportiamo in ogni fase della trasformazione digitale."}
+                  "Soluzioni cloud complete per modernizzare la tua infrastruttura e accelerare l'innovazione digitale."}
               </p>
             </motion.div>
 
-            {/* Interactive Service Cards */}
             <div className="grid lg:grid-cols-2 gap-8">
-              {[
-                {
-                  title: "Migrazione Cloud",
-                  description:
-                    "Migrazione sicura e ottimizzata dei tuoi sistemi esistenti",
-                  icon: "material-symbols:cloud-sync",
-                  features: [
-                    "Assessment Completo",
-                    "Piano Migrazione",
-                    "Minimizza Rischi",
-                    "Support 24/7",
-                  ],
-                  color: "from-gray-800 to-gray-900",
-                },
-                {
-                  title: "Architettura Cloud",
-                  description:
-                    "Progettazione di infrastrutture scalabili e sicure",
-                  icon: "material-symbols:architecture",
-                  features: [
-                    "Microservizi",
-                    "Kubernetes",
-                    "Auto-scaling",
-                    "Alta Disponibilità",
-                  ],
-                  color: "from-gray-700 to-gray-800",
-                },
-                {
-                  title: "Serverless Computing",
-                  description:
-                    "Soluzioni serverless per ridurre costi e aumentare scalabilità",
-                  icon: "material-symbols:bolt",
-                  features: [
-                    "AWS Lambda",
-                    "Event-Driven",
-                    "Zero Manutenzione",
-                    "Cost Effective",
-                  ],
-                  color: "from-gray-800 to-gray-900",
-                },
-                {
-                  title: "Monitoraggio e Ottimizzazione",
-                  description:
-                    "Sistemi avanzati per performance e cost optimization",
-                  icon: "material-symbols:monitoring",
-                  features: [
-                    "Real-time Monitoring",
-                    "Cost Optimization",
-                    "Security Alerts",
-                    "Custom Dashboard",
-                  ],
-                  color: "from-gray-700 to-gray-800",
-                },
-              ].map((service, index) => (
+              {cloudServices.map((service, index) => (
                 <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 30 }}
+                  key={service.title}
+                  initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
-                  whileHover={{ y: -5, scale: 1.02 }}
-                  className="group relative p-8 rounded-2xl bg-gradient-to-br from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 border border-gray-200 dark:border-gray-700 hover:shadow-2xl hover:border-gray-300 dark:hover:border-gray-600 transition-all duration-300 overflow-hidden"
+                  className="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300"
                 >
-                  {/* Background Gradient */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300" />
-
-                  <div className="relative">
-                    <div className="flex items-start gap-6 mb-6">
-                      <div
-                        className={`w-16 h-16 rounded-xl bg-gradient-to-r ${service.color} flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg`}
-                      >
+                  <div className="flex items-center mb-6">
+                    <div className="flex-shrink-0">
+                      <div className="w-12 h-12 bg-gradient-to-r from-gray-900 to-black rounded-lg flex items-center justify-center">
                         <Icon
                           icon={service.icon}
-                          className="h-8 w-8 text-white"
+                          className="w-6 h-6 text-white"
                         />
                       </div>
-                      <div className="flex-1">
-                        <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
-                          {service.title}
-                        </h3>
-                        <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                          {service.description}
-                        </p>
-                      </div>
                     </div>
-
-                    <div className="grid grid-cols-2 gap-3">
-                      {service.features.map((feature, featureIndex) => (
-                        <motion.div
-                          key={featureIndex}
-                          initial={{ opacity: 0, scale: 0.9 }}
-                          whileInView={{ opacity: 1, scale: 1 }}
-                          viewport={{ once: true }}
-                          transition={{
-                            duration: 0.3,
-                            delay: index * 0.1 + featureIndex * 0.05,
-                          }}
-                          className="flex items-center gap-2 p-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 group-hover:border-gray-300 dark:group-hover:border-gray-600 transition-colors duration-300"
-                        >
-                          <div className="w-2 h-2 rounded-full bg-gray-400 dark:bg-gray-500" />
-                          <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
-                            {feature}
-                          </span>
-                        </motion.div>
-                      ))}
-                    </div>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Cloud Providers with Animated Grid */}
-        <section className="py-24 bg-gray-50 dark:bg-gray-800/50">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="text-center mb-16"
-            >
-              <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl mb-4">
-                {t("cloud-providers-title") || "Piattaforme Cloud"}
-              </h2>
-              <p className="text-lg text-gray-600 dark:text-gray-300">
-                {t("cloud-providers-description") ||
-                  "Lavoriamo con le migliori piattaforme cloud del mercato"}
-              </p>
-            </motion.div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {cloudProviders.map((provider, index) => (
-                <motion.div
-                  key={provider.name}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  whileHover={{ y: -5, scale: 1.05 }}
-                  className="group relative p-6 rounded-2xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 hover:shadow-xl hover:border-gray-300 dark:hover:border-gray-600 transition-all duration-300"
-                >
-                  <div className="flex items-center gap-4 mb-4">
-                    <div className="w-12 h-12 rounded-xl bg-gray-100 dark:bg-gray-700 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                      <Icon icon={provider.icon} className="h-6 w-6" />
-                    </div>
-                    <div>
-                      <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                        {provider.name}
+                    <div className="ml-4">
+                      <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+                        {service.title}
                       </h3>
-                      <span className="text-xs font-medium text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded-full">
-                        {provider.category}
-                      </span>
                     </div>
                   </div>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">
-                    {provider.description}
+
+                  <p className="text-gray-600 dark:text-gray-300 mb-6">
+                    {service.description}
                   </p>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
 
-        {/* Benefits with Metrics */}
-        <section className="py-24 bg-white dark:bg-gray-900">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="text-center mb-16"
-            >
-              <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl mb-4">
-                {t("cloud-benefits-title") ||
-                  "Vantaggi dell'Integrazione Cloud"}
-              </h2>
-              <p className="text-lg text-gray-600 dark:text-gray-300">
-                {t("cloud-benefits-description") ||
-                  "Scopri come il cloud può trasformare il tuo business"}
-              </p>
-            </motion.div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {benefits.map((benefit, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  whileHover={{ y: -10, scale: 1.05 }}
-                  className="group relative p-8 rounded-2xl bg-gradient-to-br from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 border border-gray-200 dark:border-gray-700 hover:shadow-2xl hover:border-gray-300 dark:hover:border-gray-600 transition-all duration-300 text-center"
-                >
-                  <div className="flex flex-col items-center">
-                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-r from-gray-900 to-black dark:from-white dark:to-gray-200 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                      <Icon
-                        icon={benefit.icon}
-                        className="h-8 w-8 text-white dark:text-gray-900"
-                      />
-                    </div>
-
-                    <div className="mb-4">
-                      <div className="text-3xl font-bold text-gray-900 dark:text-white mb-1">
-                        {benefit.metric}
-                      </div>
-                      <div className="text-sm text-gray-500 dark:text-gray-400">
-                        {benefit.metricLabel}
-                      </div>
-                    </div>
-
-                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">
-                      {benefit.title}
-                    </h3>
-                    <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
-                      {benefit.description}
-                    </p>
-                  </div>
+                  <ul className="space-y-2">
+                    {service.features.map((feature, featureIndex) => (
+                      <li
+                        key={featureIndex}
+                        className="flex items-center text-sm text-gray-600 dark:text-gray-400"
+                      >
+                        <Icon
+                          icon="material-symbols:check-circle"
+                          className="w-4 h-4 text-green-500 mr-2 flex-shrink-0"
+                        />
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
                 </motion.div>
               ))}
             </div>
@@ -373,54 +171,54 @@ export default function CloudIntegration() {
 
         {/* FAQ Section */}
         <ServiceFAQ
-          title={t("faq-title") || "Domande Frequenti"}
+          title={t("cloud-faq-title") || "Domande Frequenti"}
           subtitle={
-            t("faq-subtitle-cloud") ||
+            t("cloud-faq-subtitle") ||
             "Risposte alle domande più comuni sull'integrazione cloud"
           }
-          ctaText={t("faq-cta-text") || "Hai altre domande?"}
+          ctaText={t("cloud-faq-cta-text") || "Hai altre domande?"}
           ctaSubtext={
-            t("faq-cta-subtext-cloud") || "Parliamo della tua migrazione cloud"
+            t("cloud-faq-cta-subtext") || "Parliamo della tua migrazione cloud"
           }
-          benefitText={t("faq-benefit-assessment") || "Assessment gratuito"}
+          benefitText={t("cloud-faq-benefit-text") || "Consulenza gratuita"}
           faqs={[
             {
               question:
-                t("cloud-faq-question-1") || "La migrazione causerà downtime?",
+                t("cloud-faq-question-1") ||
+                "Quanto tempo richiede una migrazione cloud?",
               answer:
                 t("cloud-faq-answer-1") ||
-                "Pianifichiamo le migrazioni per minimizzare il downtime, spesso ottenendo migrazioni a downtime zero attraverso approcci graduali e load balancing.",
-              icon: "material-symbols:cloud-sync",
+                "Da 4-8 settimane per applicazioni semplici fino a 6-12 mesi per sistemi enterprise complessi, con approccio graduale e minimo downtime.",
+              icon: "material-symbols:schedule",
               delay: 0.1,
             },
             {
               question:
                 t("cloud-faq-question-2") ||
-                "Quanto possiamo risparmiare con il cloud?",
+                "Quale provider cloud consigliate?",
               answer:
                 t("cloud-faq-answer-2") ||
-                "Tipicamente 30-60% di riduzione dei costi IT attraverso uso ottimizzato delle risorse, eliminazione manutenzione hardware e modelli pay-as-you-use.",
-              icon: "material-symbols:savings",
+                "Valutiamo le vostre esigenze specifiche per consigliare AWS, Azure o Google Cloud. Spesso una strategia multi-cloud offre maggiore flessibilità.",
+              icon: "material-symbols:cloud",
               delay: 0.2,
             },
             {
               question:
                 t("cloud-faq-question-3") ||
-                "Quale piattaforma cloud è migliore?",
+                "Come gestite la sicurezza nel cloud?",
               answer:
                 t("cloud-faq-answer-3") ||
-                "Analizziamo le vostre esigenze specifiche per raccomandare AWS, Azure o Google Cloud basandoci sui vostri requisiti, budget e infrastruttura esistente.",
-              icon: "material-symbols:cloud",
+                "Implementiamo best practices di sicurezza: crittografia end-to-end, gestione identità, compliance GDPR e monitoraggio continuo delle minacce.",
+              icon: "material-symbols:security",
               delay: 0.3,
             },
             {
               question:
-                t("cloud-faq-question-4") ||
-                "Come garantite la sicurezza cloud?",
+                t("cloud-faq-question-4") || "Possiamo ridurre i costi cloud?",
               answer:
                 t("cloud-faq-answer-4") ||
-                "Attraverso sicurezza multi-livello: crittografia, controlli accesso, monitoraggio, framework di compliance e audit di sicurezza regolari.",
-              icon: "material-symbols:security",
+                "Sì, ottimizziamo l'utilizzo delle risorse, implementiamo auto-scaling e strategie di risparmio per ridurre i costi del 30-50%.",
+              icon: "material-symbols:savings",
               delay: 0.4,
             },
           ]}
@@ -428,15 +226,12 @@ export default function CloudIntegration() {
 
         {/* CTA Section */}
         <ServiceCTA
-          title={t("cloud-cta-title") || "Pronto per il Cloud?"}
+          title={t("cloud-cta-title") || "Pronto per la Trasformazione Cloud?"}
           subtitle={
             t("cloud-cta-description") ||
-            "Inizia la tua trasformazione digitale oggi stesso. Contattaci per una consulenza personalizzata e scopri come il cloud può rivoluzionare il tuo business."
+            "Accelera la tua trasformazione digitale con soluzioni cloud moderne. Contattaci per una consulenza personalizzata."
           }
-          buttonText={t("cloud-cta-button") || "Contattaci Ora"}
-          secondaryButtonText={
-            t("view-case-studies") || "Vedi i nostri progetti"
-          }
+          buttonText={t("cloud-cta-button") || "Inizia Ora"}
         />
       </div>
     </>
