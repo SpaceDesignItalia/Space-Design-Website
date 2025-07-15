@@ -96,7 +96,6 @@ const Contact: React.FC = () => {
 
   const [errors, setErrors] = useState<FormErrors>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSuccess, setIsSuccess] = useState(false);
   const [isRedirecting, setIsRedirecting] = useState(false);
   const [countdown, setCountdown] = useState(3);
 
@@ -109,9 +108,6 @@ const Contact: React.FC = () => {
   // Gestione dello scroll quando si apre/chiude un select
   useEffect(() => {
     if (isSelectOpen) {
-      // Salva la posizione corrente dello scroll
-      const scrollY = window.scrollY;
-
       // Previeni solo lo scroll automatico del browser, ma permetti lo scroll manuale
       const preventAutoScroll = (e: Event) => {
         // Permetti lo scroll manuale ma previeni quello automatico
