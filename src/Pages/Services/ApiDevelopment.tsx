@@ -1,6 +1,5 @@
 import SEO from "../../Components/SEO";
 import { useLanguage } from "../../context/LanguageContext";
-import { useNavigate } from "react-router-dom";
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
 import ServiceHero from "../../Components/ServiceHero";

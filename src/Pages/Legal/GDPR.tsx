@@ -293,13 +293,14 @@ export default function GDPR() {
                       Space Design Italia
                     </p>
                     <p className="text-gray-600 dark:text-gray-300">
-                      P.IVA: 07420400488
+                      {t("company-vat") || "P.IVA: 07420400488"}
                     </p>
-                    <p className="text-gray-600 dark:text-gray-300">
-                      Email: privacy@spacedesignitalia.com
+                    <p className="text-gray-700 dark:text-gray-300">
+                      Email: amministrazione@spacedesignitalia.com
                     </p>
-                    <p className="text-gray-600 dark:text-gray-300">
-                      Sito web: www.spacedesignitalia.com
+                    <p className="text-gray-700 dark:text-gray-300">
+                      {t("company-website") ||
+                        "Sito web: https://www.spacedesign-italia.it/"}
                     </p>
                   </div>
                 </div>

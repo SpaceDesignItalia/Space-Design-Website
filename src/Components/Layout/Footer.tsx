@@ -101,13 +101,13 @@ export default function Footer() {
             <div className="flex items-center justify-start">
               <img
                 src="/logo.png"
-                alt="Space Design Italia Logo"
+                alt={t("footer-company-logo-alt") || "Space Design Italia Logo"}
                 className="h-36 w-auto"
               />
             </div>
             <p className="text-small text-default-500">
-              Trasformiamo l'ordinario in straordinario, ispirati dalle
-              meraviglie dello spazio!
+              {t("footer-company-description") ||
+                "Trasformiamo l'ordinario in straordinario, ispirati dalle meraviglie dello spazio!"}
             </p>
             <div className="flex space-x-6">
               {footerNavigation.social.map((item) => (
@@ -138,7 +138,10 @@ export default function Footer() {
                 })}
               </div>
               <div className="mt-10 md:mt-0">
-                {renderList({ title: "Legal", items: footerNavigation.legal })}
+                {renderList({
+                  title: t("footer-legal-title") || "Legal",
+                  items: footerNavigation.legal,
+                })}
               </div>
             </div>
           </div>
@@ -146,10 +149,12 @@ export default function Footer() {
 
         <div className="flex flex-wrap justify-between gap-2 pt-8">
           <p className="text-small text-default-400">
-            &copy; {new Date().getFullYear()} Space Design Italia. All rights
-            reserved.
+            &copy; {new Date().getFullYear()} Space Design Italia.{" "}
+            {t("footer-copyright") || "All rights reserved."}
           </p>
-          <p className="text-small text-default-400">P.IVA 07420400488</p>
+          <p className="text-small text-default-400">
+            {t("company-vat") || "P.IVA 07420400488"}
+          </p>
         </div>
       </div>
     </footer>

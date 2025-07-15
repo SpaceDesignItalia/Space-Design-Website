@@ -274,14 +274,16 @@ export default function TermsOfService() {
                   </p>
                   <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
                     <p className="text-sm text-blue-800 dark:text-blue-200">
-                      <strong>ℹ️ Informazione:</strong>{" "}
+                      <strong>
+                        ℹ️ {t("terms-information") || "Informazione"}:
+                      </strong>{" "}
                       {t("terms-data-processing-link") ||
                         "Per maggiori informazioni sul trattamento dei dati personali, consulta la nostra "}
                       <a
                         href={`/${language}/privacy-policy`}
                         className="underline hover:text-blue-600 dark:hover:text-blue-300"
                       >
-                        Privacy Policy
+                        {t("footer-privacy-policy") || "Privacy Policy"}
                       </a>
                       .
                     </p>
@@ -585,13 +587,14 @@ export default function TermsOfService() {
                       Space Design Italia
                     </p>
                     <p className="text-gray-600 dark:text-gray-300">
-                      P.IVA: 07420400488
+                      {t("company-vat") || "P.IVA: 07420400488"}
                     </p>
-                    <p className="text-gray-600 dark:text-gray-300">
-                      Email: info@spacedesignitalia.com
+                    <p className="text-gray-700 dark:text-gray-300">
+                      Email: amministrazione@spacedesignitalia.com
                     </p>
-                    <p className="text-gray-600 dark:text-gray-300">
-                      Sito web: www.spacedesignitalia.com
+                    <p className="text-gray-700 dark:text-gray-300">
+                      {t("company-website") ||
+                        "Sito web: https://www.spacedesign-italia.it/"}
                     </p>
                   </div>
                 </div>

@@ -7,6 +7,8 @@ import { mobileDevelopmentTranslations } from "./mobile-development";
 import { customSoftwareTranslations } from "./custom-software";
 import { faqTranslations } from "./faq";
 import { legalTranslations } from "./legal";
+import { contactTranslations } from "./contact";
+import { footerTranslations } from "./footer";
 
 // Combine all translations
 export const translations: Translations = {
@@ -18,6 +20,8 @@ export const translations: Translations = {
   ...customSoftwareTranslations,
   ...faqTranslations,
   ...legalTranslations,
+  ...contactTranslations,
+  ...footerTranslations,
 };
 
 export type { Translations };

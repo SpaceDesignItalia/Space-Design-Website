@@ -132,22 +132,30 @@ export default function CookiePolicy() {
                       </p>
                       <ul className="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300 text-sm">
                         <li>
-                          <strong>Sessione:</strong>{" "}
+                          <strong>
+                            {t("cookie-session-label") || "Sessione:"}
+                          </strong>{" "}
                           {t("cookie-session") ||
                             "Mantengono la tua sessione attiva durante la navigazione"}
                         </li>
                         <li>
-                          <strong>Sicurezza:</strong>{" "}
+                          <strong>
+                            {t("cookie-security-label") || "Sicurezza:"}
+                          </strong>{" "}
                           {t("cookie-security") ||
                             "Proteggono da attacchi e frodi"}
                         </li>
                         <li>
-                          <strong>Preferenze lingua:</strong>{" "}
+                          <strong>
+                            {t("cookie-language-label") || "Preferenze lingua:"}
+                          </strong>{" "}
                           {t("cookie-language") ||
                             "Ricordano la lingua selezionata"}
                         </li>
                         <li>
-                          <strong>Consenso cookie:</strong>{" "}
+                          <strong>
+                            {t("cookie-consent-label") || "Consenso cookie:"}
+                          </strong>{" "}
                           {t("cookie-consent") ||
                             "Ricordano le tue preferenze sui cookie"}
                         </li>
@@ -169,31 +177,45 @@ export default function CookiePolicy() {
                       </p>
                       <ul className="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300 text-sm">
                         <li>
-                          <strong>Google Analytics:</strong>{" "}
+                          <strong>
+                            {t("cookie-ga-label") || "Google Analytics:"}
+                          </strong>{" "}
                           {t("cookie-ga") || "Statistiche di utilizzo del sito"}
                         </li>
                         <li>
-                          <strong>PostHog:</strong>{" "}
+                          <strong>
+                            {t("cookie-posthog-label") || "PostHog:"}
+                          </strong>{" "}
                           {t("cookie-posthog") ||
                             "Analisi del comportamento utente e funzionalità del prodotto"}
                         </li>
                         <li>
-                          <strong>Pagine più visitate:</strong>{" "}
+                          <strong>
+                            {t("cookie-popular-pages-label") ||
+                              "Pagine più visitate:"}
+                          </strong>{" "}
                           {t("cookie-popular-pages") ||
                             "Identificano i contenuti più popolari"}
                         </li>
                         <li>
-                          <strong>Tempo di permanenza:</strong>{" "}
+                          <strong>
+                            {t("cookie-time-label") || "Tempo di permanenza:"}
+                          </strong>{" "}
                           {t("cookie-time") ||
                             "Misurano quanto tempo passi sul sito"}
                         </li>
                         <li>
-                          <strong>Fonte di traffico:</strong>{" "}
+                          <strong>
+                            {t("cookie-traffic-source-label") ||
+                              "Fonte di traffico:"}
+                          </strong>{" "}
                           {t("cookie-traffic-source") ||
                             "Da dove arrivano i visitatori"}
                         </li>
                         <li>
-                          <strong>Eventi utente:</strong>{" "}
+                          <strong>
+                            {t("cookie-user-events-label") || "Eventi utente:"}
+                          </strong>{" "}
                           {t("cookie-user-events") ||
                             "Interazioni e azioni specifiche sul sito"}
                         </li>
@@ -215,17 +237,23 @@ export default function CookiePolicy() {
                       </p>
                       <ul className="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300 text-sm">
                         <li>
-                          <strong>Remarketing:</strong>{" "}
+                          <strong>
+                            {t("cookie-remarketing-label") || "Remarketing:"}
+                          </strong>{" "}
                           {t("cookie-remarketing") ||
                             "Mostrano annunci su altri siti basati sulla tua visita"}
                         </li>
                         <li>
-                          <strong>Social Media:</strong>{" "}
+                          <strong>
+                            {t("cookie-social-label") || "Social Media:"}
+                          </strong>{" "}
                           {t("cookie-social") ||
                             "Permettono la condivisione sui social network"}
                         </li>
                         <li>
-                          <strong>Conversioni:</strong>{" "}
+                          <strong>
+                            {t("cookie-conversions-label") || "Conversioni:"}
+                          </strong>{" "}
                           {t("cookie-conversions") ||
                             "Misurano l'efficacia delle campagne pubblicitarie"}
                         </li>
@@ -255,21 +283,37 @@ export default function CookiePolicy() {
                       </p>
                       <ul className="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300 text-sm">
                         <li>
-                          <strong>Google:</strong> Analytics, Maps, Fonts
+                          <strong>
+                            {t("cookie-google-label") || "Google:"}
+                          </strong>{" "}
+                          {t("cookie-google-services") ||
+                            "Analytics, Maps, Fonts"}
                         </li>
                         <li>
-                          <strong>PostHog:</strong> Analisi del comportamento
-                          utente e product analytics
+                          <strong>
+                            {t("cookie-posthog-service-label") || "PostHog:"}
+                          </strong>{" "}
+                          {t("cookie-posthog-service-desc") ||
+                            "Analisi del comportamento utente e product analytics"}
                         </li>
                         <li>
-                          <strong>Social Media:</strong> Widget di condivisione
+                          <strong>
+                            {t("cookie-social-service-label") ||
+                              "Social Media:"}
+                          </strong>{" "}
+                          {t("cookie-social-service-desc") ||
+                            "Widget di condivisione"}
                         </li>
                         <li>
-                          <strong>CDN:</strong> Consegna di contenuti
+                          <strong>{t("cookie-cdn-label") || "CDN:"}</strong>{" "}
+                          {t("cookie-cdn-desc") || "Consegna di contenuti"}
                         </li>
                         <li>
-                          <strong>Chat Support:</strong> Sistemi di supporto
-                          live
+                          <strong>
+                            {t("cookie-chat-support-label") || "Chat Support:"}
+                          </strong>{" "}
+                          {t("cookie-chat-support-desc") ||
+                            "Sistemi di supporto live"}
                         </li>
                       </ul>
                       <p className="text-sm text-gray-500 dark:text-gray-400 mt-2">
@@ -383,15 +427,25 @@ export default function CookiePolicy() {
                           "Cosa raccoglie PostHog:"}
                       </h3>
                       <ul className="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300 text-sm">
-                        <li>Pagine visitate e tempo di permanenza</li>
                         <li>
-                          Interazioni con elementi del sito (click, scroll,
-                          form)
+                          {t("cookie-posthog-pages-visited") ||
+                            "Pagine visitate e tempo di permanenza"}
                         </li>
-                        <li>Informazioni sul dispositivo e browser</li>
-                        <li>Dati di sessione anonimi</li>
                         <li>
-                          Eventi personalizzati per migliorare l'esperienza
+                          {t("cookie-posthog-interactions") ||
+                            "Interazioni con elementi del sito (click, scroll, form)"}
+                        </li>
+                        <li>
+                          {t("cookie-posthog-device-info") ||
+                            "Informazioni sul dispositivo e browser"}
+                        </li>
+                        <li>
+                          {t("cookie-posthog-session-data") ||
+                            "Dati di sessione anonimi"}
+                        </li>
+                        <li>
+                          {t("cookie-posthog-custom-events") ||
+                            "Eventi personalizzati per migliorare l'esperienza"}
                         </li>
                       </ul>
                     </div>
@@ -401,25 +455,34 @@ export default function CookiePolicy() {
                         {t("cookie-posthog-privacy") || "Privacy e Sicurezza:"}
                       </h3>
                       <ul className="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300 text-sm">
-                        <li>I dati sono raccolti in forma anonima</li>
                         <li>
-                          Non raccogliamo informazioni personali identificabili
+                          {t("cookie-posthog-anonymous-data") ||
+                            "I dati sono raccolti in forma anonima"}
                         </li>
                         <li>
-                          I dati sono crittografati durante la trasmissione
+                          {t("cookie-posthog-no-personal-info") ||
+                            "Non raccogliamo informazioni personali identificabili"}
                         </li>
                         <li>
-                          PostHog rispetta il GDPR e le normative sulla privacy
+                          {t("cookie-posthog-encrypted") ||
+                            "I dati sono crittografati durante la trasmissione"}
                         </li>
                         <li>
-                          Puoi disabilitare il tracking in qualsiasi momento
+                          {t("cookie-posthog-gdpr-compliant") ||
+                            "PostHog rispetta il GDPR e le normative sulla privacy"}
+                        </li>
+                        <li>
+                          {t("cookie-posthog-disable-tracking") ||
+                            "Puoi disabilitare il tracking in qualsiasi momento"}
                         </li>
                       </ul>
                     </div>
 
                     <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
                       <p className="text-sm text-blue-800 dark:text-blue-200">
-                        <strong>ℹ️ Informazione:</strong>{" "}
+                        <strong>
+                          {t("cookie-info-label") || "ℹ️ Informazione:"}
+                        </strong>{" "}
                         {t("cookie-posthog-consent") ||
                           "PostHog viene attivato solo dopo aver ottenuto il tuo consenso esplicito per i cookie analitici. Puoi modificare questa scelta in qualsiasi momento tramite il centro preferenze cookie."}
                       </p>
@@ -493,13 +556,14 @@ export default function CookiePolicy() {
                       Space Design Italia
                     </p>
                     <p className="text-gray-700 dark:text-gray-300">
-                      P.IVA: 07420400488
+                      {t("company-vat") || "P.IVA: 07420400488"}
                     </p>
                     <p className="text-gray-700 dark:text-gray-300">
-                      Email: privacy@spacedesignitalia.com
+                      Email: amministrazione@spacedesignitalia.com
                     </p>
                     <p className="text-gray-700 dark:text-gray-300">
-                      Sito web: www.spacedesignitalia.com
+                      {t("company-website") ||
+                        "Sito web: https://www.spacedesign-italia.it/"}
                     </p>
                   </div>
                 </div>

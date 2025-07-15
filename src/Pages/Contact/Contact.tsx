@@ -106,19 +106,33 @@ const Contact: React.FC = () => {
   const [isLoadingOptions, setIsLoadingOptions] = useState(true);
   const [isSelectOpen, setIsSelectOpen] = useState(false);
 
-  // Blocca/sblocca lo scroll quando si apre/chiude un select
+  // Gestione dello scroll quando si apre/chiude un select
   useEffect(() => {
     if (isSelectOpen) {
-      // Blocca lo scroll quando il select è aperto
-      document.body.style.overflow = "hidden";
-    } else {
-      // Ripristina lo scroll normale
-      document.body.style.overflow = "";
+      // Salva la posizione corrente dello scroll
+      const scrollY = window.scrollY;
+
+      // Previeni solo lo scroll automatico del browser, ma permetti lo scroll manuale
+      const preventAutoScroll = (e: Event) => {
+        // Permetti lo scroll manuale ma previeni quello automatico
+        if (e.type === "scroll" && !e.isTrusted) {
+          e.preventDefault();
+          e.stopPropagation();
+        }
+      };
+
+      // Aggiungi event listener per prevenire solo lo scroll automatico
+      document.addEventListener("scroll", preventAutoScroll, {
+        passive: false,
+      });
+
+      return () => {
+        document.removeEventListener("scroll", preventAutoScroll);
+      };
     }
 
     return () => {
       // Cleanup quando il componente si smonta
-      document.body.style.overflow = "";
     };
   }, [isSelectOpen]);
 
@@ -283,6 +297,21 @@ const Contact: React.FC = () => {
         ...prev,
         privacyAccepted: undefined,
       }));
+    }
+  };
+
+  // Handler per prevenire lo scroll automatico quando si apre un select
+  const handleSelectOpen = (isOpen: boolean) => {
+    setIsSelectOpen(isOpen);
+
+    if (isOpen) {
+      // Previeni lo scroll automatico del browser solo se necessario
+      const currentScrollY = window.scrollY;
+      setTimeout(() => {
+        if (Math.abs(window.scrollY - currentScrollY) > 10) {
+          window.scrollTo(0, currentScrollY);
+        }
+      }, 10);
     }
   };
 
@@ -479,7 +508,7 @@ const Contact: React.FC = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5 }}
-                  className="lg:sticky lg:top-24"
+                  className="lg:sticky lg:top-24 lg:self-start"
                 >
                   {/* Contact Info Card con badge sopra */}
                   <div className="relative">
@@ -679,7 +708,7 @@ const Contact: React.FC = () => {
                               const selectedKey = Array.from(keys)[0] as string;
                               handleSelectChange("subject", selectedKey || "");
                             }}
-                            onOpenChange={(isOpen) => setIsSelectOpen(isOpen)}
+                            onOpenChange={handleSelectOpen}
                             isInvalid={!!errors.subject}
                             errorMessage={errors.subject}
                             variant="bordered"
@@ -688,12 +717,16 @@ const Contact: React.FC = () => {
                             isLoading={isLoadingOptions}
                             label={t("contact-subject")}
                             isRequired
+                            disableAnimation={false}
+                            placement="bottom"
+                            shouldFlip={true}
+                            shouldCloseOnBlur={true}
                             classNames={{
                               trigger:
                                 "bg-white/10 border-gray-200 data-[hover=true]:border-gray-400",
                               value: "text-gray-900",
                               popoverContent:
-                                "bg-white dark:bg-gray-800 z-50 max-h-60 overflow-y-auto",
+                                "bg-white dark:bg-gray-800 z-[9999] max-h-60 overflow-y-auto",
                             }}
                           >
                             {subjectOptions.map((option) => {
@@ -716,7 +749,7 @@ const Contact: React.FC = () => {
                               const selectedKey = Array.from(keys)[0] as string;
                               handleSelectChange("budget", selectedKey || "");
                             }}
-                            onOpenChange={(isOpen) => setIsSelectOpen(isOpen)}
+                            onOpenChange={handleSelectOpen}
                             isInvalid={!!errors.budget}
                             errorMessage={errors.budget}
                             variant="bordered"
@@ -725,12 +758,13 @@ const Contact: React.FC = () => {
                             isLoading={isLoadingOptions}
                             label={t("contact-budget")}
                             isRequired
+                            disableAnimation={false}
                             classNames={{
                               trigger:
                                 "bg-white/10 border-gray-200 data-[hover=true]:border-gray-400",
                               value: "text-gray-900",
                               popoverContent:
-                                "bg-white dark:bg-gray-800 z-50 max-h-60 overflow-y-auto",
+                                "bg-white dark:bg-gray-800 z-[9999] max-h-60 overflow-y-auto",
                             }}
                           >
                             {budgetOptions.map((option) => {
