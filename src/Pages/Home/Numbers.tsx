@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Icon } from "@iconify/react";
 import { useLanguage } from "../../context/LanguageContext";
-import AnimatedNumber from "../About/AnimatedNumber";
+import AnimatedNumber from "./AnimatedNumber";
 import { useMemo } from "react";
 
 const fadeInUp = {
@@ -88,9 +88,7 @@ export default function Numbers() {
             {t("about-numbers-title")}
           </motion.h2>
           <motion.p variants={fadeInUp} className="mt-4 text-xl text-gray-400">
-            {language === "it"
-              ? "I numeri che raccontano la nostra storia"
-              : "The numbers that tell our story"}
+            {t("about-numbers-subtitle")}
           </motion.p>
         </motion.div>
 

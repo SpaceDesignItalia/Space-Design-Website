@@ -14,10 +14,6 @@ export const navigationTranslations: Translations = {
     en: "Case Studies",
     it: "Casi di studio",
   },
-  about: {
-    en: "About",
-    it: "Chi Siamo",
-  },
   contact: {
     en: "Contact Us",
     it: "Contattaci",

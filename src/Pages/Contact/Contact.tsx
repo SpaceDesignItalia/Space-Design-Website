@@ -718,9 +718,6 @@ const Contact: React.FC = () => {
                             label={t("contact-subject")}
                             isRequired
                             disableAnimation={false}
-                            placement="bottom"
-                            shouldFlip={true}
-                            shouldCloseOnBlur={true}
                             classNames={{
                               trigger:
                                 "bg-white/10 border-gray-200 data-[hover=true]:border-gray-400",

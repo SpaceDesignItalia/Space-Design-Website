@@ -11,15 +11,6 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- About Page -->
-  <url>
-    <loc>https://www.spacedesign-italia.it/about</loc>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.spacedesign-italia.it/it/about"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.spacedesign-italia.it/en/about"/>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
   <!-- Contact Page -->
   <url>
     <loc>https://www.spacedesign-italia.it/contact</loc>
