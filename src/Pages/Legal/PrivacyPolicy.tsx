@@ -237,7 +237,7 @@ export default function PrivacyPolicy() {
                   </h2>
                   <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                     {t("privacy-contact-content") ||
-                      "Per qualsiasi domanda riguardante questa Privacy Policy o per esercitare i tuoi diritti, puoi contattarci all'indirizzo email: privacy@spacedesignitalia.com o tramite il modulo di contatto sul nostro sito web."}
+                      "Per qualsiasi domanda riguardante questa Privacy Policy o per esercitare i tuoi diritti, puoi contattarci all'indirizzo email: amministrazione@spacedesign-italia.it o tramite il modulo di contatto sul nostro sito web."}
                   </p>
                   <div className="mt-4 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
                     <p className="font-semibold text-gray-900 dark:text-white">
@@ -248,7 +248,7 @@ export default function PrivacyPolicy() {
                     </p>
                     <p className="text-gray-700 dark:text-gray-300">
                       {t("privacy-company-email") ||
-                        "Email: amministrazione@spacedesignitalia.com"}
+                        "Email: amministrazione@spacedesign-italia.it"}
                     </p>
                     <p className="text-gray-700 dark:text-gray-300">
                       {t("company-website") ||

@@ -310,4 +310,64 @@ export const mobileDevelopmentTranslations: Translations = {
     en: "Support",
     it: "Supporto",
   },
+
+  // Mobile Types Section
+  "mobile-types-headline": {
+    en: "We create every type of mobile app",
+    it: "Realizziamo ogni tipo di app mobile",
+  },
+  "mobile-types-subtitle": {
+    en: "From e-commerce apps to enterprise solutions, we develop mobile applications for every sector and need with advanced features.",
+    it: "Dalle app e-commerce alle soluzioni aziendali, sviluppiamo applicazioni mobile per ogni settore e necessità con funzionalità avanzate.",
+  },
+  "mobile-type-ecommerce-desc": {
+    en: "Complete solutions for online sales with advanced catalogs, secure payments and integrated order management.",
+    it: "Soluzioni complete per vendite online con cataloghi avanzati, pagamenti sicuri e gestione ordini integrata.",
+  },
+  "mobile-type-business-desc": {
+    en: "Enterprise apps for team management, mobile CRM, custom dashboards and advanced analytics.",
+    it: "App aziendali per gestione team, CRM mobile, dashboard personalizzate e analytics avanzate.",
+  },
+  "mobile-type-social-desc": {
+    en: "Social platforms with dynamic feeds, messaging, user profiles and push notification systems.",
+    it: "Piattaforme social con feed dinamici, messaging, profili utente e sistemi di notifica push.",
+  },
+
+  // Mobile Development FAQ
+  "mobile-faq-question-1": {
+    en: "How much does it cost to develop a mobile app?",
+    it: "Quanto costa sviluppare un'app mobile?",
+  },
+  "mobile-faq-answer-1": {
+    en: "Costs vary from €15,000 for simple apps to €50,000+ for complex applications, depending on features, platforms and complexity.",
+    it: "I costi variano da €15.000 per app semplici a €50.000+ per applicazioni complesse, a seconda delle funzionalità, piattaforme e complessità.",
+  },
+  "mobile-faq-question-2": {
+    en: "How long does mobile app development take?",
+    it: "Quanto tempo richiede lo sviluppo di un'app mobile?",
+  },
+  "mobile-faq-answer-2": {
+    en: "From 6-8 weeks for simple apps up to 16-20 weeks for complex applications, with regular updates and testing phases.",
+    it: "Da 6-8 settimane per app semplici fino a 16-20 settimane per applicazioni complesse, con aggiornamenti regolari e fasi di testing.",
+  },
+  "mobile-faq-question-3": {
+    en: "Do you provide app maintenance and updates?",
+    it: "Fornite manutenzione e aggiornamenti dell'app?",
+  },
+  "mobile-faq-answer-3": {
+    en: "Yes, we offer ongoing maintenance, regular updates, bug fixes and new feature development to keep your app current and secure.",
+    it: "Sì, offriamo manutenzione continua, aggiornamenti regolari, correzioni bug e sviluppo di nuove funzionalità per mantenere la tua app aggiornata e sicura.",
+  },
+
+  // Mobile CTA Button
+  "mobile-cta-button": {
+    en: "Get Quote",
+    it: "Richiedi Preventivo",
+  },
+
+  // Mobile FAQ Subtitle
+  "faq-subtitle-mobile": {
+    en: "Answers to the most common questions about mobile development",
+    it: "Risposte alle domande più comuni sullo sviluppo mobile",
+  },
 };

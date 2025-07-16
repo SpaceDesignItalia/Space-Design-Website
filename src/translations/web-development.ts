@@ -164,4 +164,44 @@ export const webDevelopmentTranslations: Translations = {
     en: "React|Next.js|Vue.js|Angular|TypeScript|Node.js|Python|PHP|WordPress|Shopify|WooCommerce|Laravel|Django|Express.js|MongoDB|PostgreSQL|MySQL|Redis|AWS|Vercel|Netlify|Docker|Kubernetes|GraphQL|REST API|PWA|SPA|SSR|JAMstack|Headless CMS|Microservices",
     it: "React|Next.js|Vue.js|Angular|TypeScript|Node.js|Python|PHP|WordPress|Shopify|WooCommerce|Laravel|Django|Express.js|MongoDB|PostgreSQL|MySQL|Redis|AWS|Vercel|Netlify|Docker|Kubernetes|GraphQL|REST API|PWA|SPA|SSR|JAMstack|Headless CMS|Microservices",
   },
+
+  // Web Development FAQ
+  "web-faq-question-1": {
+    en: "How long does it take to develop a website?",
+    it: "Quanto tempo richiede sviluppare un sito web?",
+  },
+  "web-faq-answer-1": {
+    en: "From 2-4 weeks for simple websites up to 8-12 weeks for complex e-commerce platforms, depending on features and complexity.",
+    it: "Da 2-4 settimane per siti web semplici fino a 8-12 settimane per piattaforme e-commerce complesse, a seconda delle funzionalità e complessità.",
+  },
+  "web-faq-question-2": {
+    en: "Do you provide hosting and maintenance?",
+    it: "Fornite hosting e manutenzione?",
+  },
+  "web-faq-answer-2": {
+    en: "Yes, we offer complete hosting solutions with SSL certificates, regular backups, security updates and 24/7 monitoring.",
+    it: "Sì, offriamo soluzioni hosting complete con certificati SSL, backup regolari, aggiornamenti di sicurezza e monitoraggio 24/7.",
+  },
+  "web-faq-question-3": {
+    en: "Can you optimize for search engines?",
+    it: "Potete ottimizzare per i motori di ricerca?",
+  },
+  "web-faq-answer-3": {
+    en: "Absolutely! We implement comprehensive SEO strategies including technical optimization, content optimization and local SEO.",
+    it: "Assolutamente! Implementiamo strategie SEO complete inclusa ottimizzazione tecnica, ottimizzazione contenuti e SEO locale.",
+  },
+  "web-faq-question-4": {
+    en: "What about mobile responsiveness?",
+    it: "Che dire della responsività mobile?",
+  },
+  "web-faq-answer-4": {
+    en: "All our websites are fully responsive and optimized for all devices, ensuring perfect user experience on mobile, tablet and desktop.",
+    it: "Tutti i nostri siti web sono completamente responsive e ottimizzati per tutti i dispositivi, garantendo un'esperienza utente perfetta su mobile, tablet e desktop.",
+  },
+
+  // Web Development FAQ Subtitle
+  "faq-subtitle-web": {
+    en: "Answers to the most common questions about web development",
+    it: "Risposte alle domande più comuni sullo sviluppo web",
+  },
 };

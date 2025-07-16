@@ -590,7 +590,7 @@ export default function TermsOfService() {
                       {t("company-vat") || "P.IVA: 07420400488"}
                     </p>
                     <p className="text-gray-700 dark:text-gray-300">
-                      Email: amministrazione@spacedesignitalia.com
+                      Email: amministrazione@spacedesign-italia.it
                     </p>
                     <p className="text-gray-700 dark:text-gray-300">
                       {t("company-website") ||

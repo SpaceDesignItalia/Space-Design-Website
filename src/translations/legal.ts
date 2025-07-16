@@ -51,8 +51,8 @@ export const legalTranslations: Translations = {
     it: "Informazioni su come raccogliamo, utilizziamo e proteggiamo i tuoi dati personali",
   },
   "privacy-last-updated": {
-    en: "Last updated: January 2024",
-    it: "Ultimo aggiornamento: 17/06/2024",
+    en: "Last updated: 16/07/2025",
+    it: "Ultimo aggiornamento: 16/07/2025",
   },
   "privacy-introduction-title": {
     en: "1. Introduction",
@@ -183,8 +183,8 @@ export const legalTranslations: Translations = {
     it: "10. Contatti",
   },
   "privacy-contact-content": {
-    en: "For any questions regarding this Privacy Policy or to exercise your rights, you can contact us at: privacy@spacedesignitalia.com or through the contact form on our website.",
-    it: "Per qualsiasi domanda riguardante questa Privacy Policy o per esercitare i tuoi diritti, puoi contattarci all'indirizzo email: privacy@spacedesignitalia.com o tramite il modulo di contatto sul nostro sito web.",
+    en: "For any questions regarding this Privacy Policy or to exercise your rights, you can contact us at: amministrazione@spacedesign-italia.it or through the contact form on our website.",
+    it: "Per qualsiasi domanda riguardante questa Privacy Policy o per esercitare i tuoi diritti, puoi contattarci all'indirizzo email: amministrazione@spacedesign-italia.it o tramite il modulo di contatto sul nostro sito web.",
   },
   "privacy-company-info": {
     en: "Space Design Italia",
@@ -213,8 +213,8 @@ export const legalTranslations: Translations = {
     it: "Termini e condizioni per l'utilizzo dei nostri servizi di sviluppo software",
   },
   "terms-last-updated": {
-    en: "Last updated: January 2024",
-    it: "Ultimo aggiornamento: 17/06/2025",
+    en: "Last updated: 16/07/2025",
+    it: "Ultimo aggiornamento: 16/07/2025",
   },
   "terms-acceptance-title": {
     en: "1. Acceptance of Terms",
@@ -627,8 +627,8 @@ export const legalTranslations: Translations = {
     it: "Informazioni sui cookie utilizzati sul nostro sito web e come gestire le tue preferenze",
   },
   "cookie-last-updated": {
-    en: "Last updated: January 2024",
-    it: "Ultimo aggiornamento: 17/06/2024",
+    en: "Last updated: 16/07/2025",
+    it: "Ultimo aggiornamento: 16/07/2025",
   },
   "cookie-what-are-title": {
     en: "1. What Are Cookies",
@@ -1035,8 +1035,8 @@ export const legalTranslations: Translations = {
     it: "I tuoi diritti secondo il GDPR e come Space Design Italia protegge i tuoi dati personali",
   },
   "gdpr-last-updated": {
-    en: "Last updated: January 2024",
-    it: "Ultimo aggiornamento: 17/06/2025",
+    en: "Last updated: 16/07/2025",
+    it: "Ultimo aggiornamento: 16/07/2025",
   },
   "gdpr-introduction-title": {
     en: "1. GDPR Introduction",
@@ -1159,8 +1159,8 @@ export const legalTranslations: Translations = {
     it: "Per esercitare i tuoi diritti, puoi contattarci attraverso i seguenti canali:",
   },
   "gdpr-contact-email": {
-    en: "Email: privacy@spacedesignitalia.com",
-    it: "Email: privacy@spacedesignitalia.com",
+    en: "Email: amministrazione@spacedesign-italia.it",
+    it: "Email: amministrazione@spacedesign-italia.it",
   },
   "gdpr-contact-form": {
     en: "Contact form on our website",
@@ -1215,8 +1215,8 @@ export const legalTranslations: Translations = {
     it: "Per qualsiasi domanda sulla nostra conformità GDPR o per esercitare i tuoi diritti, puoi contattarci:",
   },
   "privacy-company-email": {
-    en: "Email: amministrazione@spacedesignitalia.com",
-    it: "Email: amministrazione@spacedesignitalia.com",
+    en: "Email: amministrazione@spacedesign-italia.it",
+    it: "Email: amministrazione@spacedesign-italia.it",
   },
   "privacy-company-website": {
     en: "Website: https://www.spacedesign-italia.it/",

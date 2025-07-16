@@ -217,7 +217,7 @@ export default function GDPR() {
                   <ul className="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300">
                     <li>
                       {t("gdpr-contact-email") ||
-                        "Email: privacy@spacedesignitalia.com"}
+                        "Email: amministrazione@spacedesign-italia.it"}
                     </li>
                     <li>
                       {t("gdpr-contact-form") ||
@@ -296,7 +296,7 @@ export default function GDPR() {
                       {t("company-vat") || "P.IVA: 07420400488"}
                     </p>
                     <p className="text-gray-700 dark:text-gray-300">
-                      Email: amministrazione@spacedesignitalia.com
+                      Email: amministrazione@spacedesign-italia.it
                     </p>
                     <p className="text-gray-700 dark:text-gray-300">
                       {t("company-website") ||
