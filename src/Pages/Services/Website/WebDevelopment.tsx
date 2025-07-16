@@ -31,30 +31,30 @@ export default function WebDevelopment() {
       <WebsiteTechnologies />
       <ServiceFAQ
         title={t("faq-title")}
-        subtitle={t("faq-subtitle-web")}
+        subtitle={t("faq-web-subtitle")}
         faqs={[
           {
-            question: t("web-faq-question-1"),
-            answer: t("web-faq-answer-1"),
+            question: t("web-faq-1-question"),
+            answer: t("web-faq-1-answer"),
             icon: "solar:server-2-linear",
             delay: 0.1,
           },
           {
-            question: t("web-faq-question-2"),
-            answer: t("web-faq-answer-2"),
+            question: t("web-faq-2-question"),
+            answer: t("web-faq-2-answer"),
             icon: "iconamoon:clock",
             delay: 0.2,
           },
           {
-            question: t("web-faq-question-3"),
-            answer: t("web-faq-answer-3"),
-            icon: "pajamas:work-item-maintenance",
+            question: t("web-faq-3-question"),
+            answer: t("web-faq-3-answer"),
+            icon: "la:mobile",
             delay: 0.3,
           },
           {
-            question: t("web-faq-question-4"),
-            answer: t("web-faq-answer-4"),
-            icon: "solar:wallet-money-line-duotone",
+            question: t("web-faq-4-question"),
+            answer: t("web-faq-4-answer"),
+            icon: "mdi:search",
             delay: 0.4,
           },
         ]}

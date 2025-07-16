@@ -4,12 +4,9 @@ export default function CustomSoftwareAdvantages() {
   return (
     <div className="bg-primary py-24 sm:py-32">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
-        <h2 className="text-center text-base/7 font-semibold text-blue-400">
-          Vantaggi esclusivi
-        </h2>
-        <p className="mx-auto mt-2 max-w-lg text-balance text-center text-4xl font-semibold tracking-tight text-white sm:text-5xl">
+        <h2 className="mx-auto mt-2 max-w-lg text-balance text-center text-4xl font-semibold tracking-tight text-white sm:text-5xl">
           Perché scegliere software personalizzato
-        </p>
+        </h2>
         <div className="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
           <div className="relative lg:row-span-2">
             <div className="absolute inset-px rounded-lg bg-gray-800 lg:rounded-l-[2rem]" />
@@ -99,7 +96,7 @@ export default function CustomSoftwareAdvantages() {
                 </p>
               </div>
               <div className="relative min-h-[30rem] w-full grow">
-                <ScrollingBanner>
+                <ScrollingBanner isVertical={true}>
                   <div className="flex items-center space-x-4">
                     <img
                       src="/images/logos/logo-1.png"
@@ -118,7 +115,7 @@ export default function CustomSoftwareAdvantages() {
                     />
                   </div>
                 </ScrollingBanner>
-                <ScrollingBanner isReverse>
+                <ScrollingBanner isVertical={true} isReverse>
                   <div className="flex items-center space-x-4">
                     <img
                       src="/images/logos/logo-1.png"
