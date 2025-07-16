@@ -92,12 +92,12 @@ export const customSoftwareTranslations: Translations = {
 
   // Custom Software Technologies
   "custom-software-technologies-title": {
-    en: "Technologies We Use",
-    it: "Tecnologie che Utilizziamo",
+    en: "Cutting-edge technologies for business growth",
+    it: "Tecnologie all'avanguardia per la crescita aziendale",
   },
   "custom-software-technologies-description": {
-    en: "We use cutting-edge technologies to build robust and scalable custom software solutions",
-    it: "Utilizziamo tecnologie all'avanguardia per costruire soluzioni software personalizzate robuste e scalabili",
+    en: "We leverage cutting-edge technologies and industry best practices to build robust, scalable custom software solutions. Our expertise spans modern frameworks, cloud platforms, and enterprise integrations, ensuring your solution not only meets current needs but evolves with your business growth and technological advancements.",
+    it: "Utilizziamo tecnologie all'avanguardia e le migliori pratiche del settore per costruire soluzioni software personalizzate robuste e scalabili. La nostra competenza spazia da framework moderni, piattaforme cloud e integrazioni enterprise, garantendo che la tua soluzione non solo soddisfi le esigenze attuali ma si evolva con la crescita della tua azienda e i progressi tecnologici.",
   },
 
   // Custom Software FAQ
@@ -198,8 +198,69 @@ export const customSoftwareTranslations: Translations = {
     en: "Perfect integration",
     it: "Integrazione perfetta",
   },
-  "custom-advantage-4-description": {
-    en: "Connect all your existing systems. Custom APIs, automatic synchronization and unified dashboards that give you a complete view of your business in real time.",
-    it: "Connette tutti i tuoi sistemi esistenti. API personalizzate, sincronizzazione automatica e dashboard unificate che ti danno una visione completa del tuo business in tempo reale.",
+
+  // AI-Powered Section - New translations
+  "custom-ai-powered-section-title": {
+    en: "Supercharge your business with AI",
+    it: "Potenzia la tua azienda con l'AI",
+  },
+  "custom-ai-powered-section-description": {
+    en: "Transform your business with AI that delivers real results. Automate, predict, and grow faster than ever before.",
+    it: "Trasforma la tua azienda con AI che produce risultati reali. Automatizza, prevedi e cresci più velocemente che mai.",
+  },
+
+  // AI Features
+  "custom-ai-feature-1-title": {
+    en: "Intelligent Automation",
+    it: "Automazione Intelligente",
+  },
+  "custom-ai-feature-1-description": {
+    en: "Reduce manual work by 70% with processes that automatically adapt to your needs.",
+    it: "Riduci del 70% il lavoro manuale con processi che si adattano automaticamente alle tue esigenze.",
+  },
+
+  "custom-ai-feature-2-title": {
+    en: "Predictive Analytics",
+    it: "Analisi Predittiva",
+  },
+  "custom-ai-feature-2-description": {
+    en: "Anticipate market trends and make better decisions based on your real-time data.",
+    it: "Anticipa le tendenze del mercato e prendi decisioni migliori basate sui tuoi dati in tempo reale.",
+  },
+
+  "custom-ai-feature-3-title": {
+    en: "Virtual Assistant",
+    it: "Assistente Virtuale",
+  },
+  "custom-ai-feature-3-description": {
+    en: "Automatically responds to customers 24/7, reducing wait times from hours to seconds.",
+    it: "Risponde automaticamente ai clienti 24/7, riducendo i tempi di attesa da ore a secondi.",
+  },
+
+  "custom-ai-feature-4-title": {
+    en: "Image Recognition",
+    it: "Riconoscimento Immagini",
+  },
+  "custom-ai-feature-4-description": {
+    en: "Automatically reads documents, photos and videos to extract the information you need.",
+    it: "Legge automaticamente documenti, foto e video per estrarre le informazioni che ti servono.",
+  },
+
+  "custom-ai-feature-5-title": {
+    en: "Machine Learning",
+    it: "Machine Learning",
+  },
+  "custom-ai-feature-5-description": {
+    en: "The system learns from your data and continuously improves its performance over time.",
+    it: "Il sistema impara dai tuoi dati e migliora continuamente le sue prestazioni nel tempo.",
+  },
+
+  "custom-ai-feature-6-title": {
+    en: "Easy Integration",
+    it: "Integrazione Facile",
+  },
+  "custom-ai-feature-6-description": {
+    en: "Connects to your existing systems seamlessly and without work interruptions.",
+    it: "Si collega ai tuoi sistemi esistenti senza problemi e senza interruzioni del lavoro.",
   },
 };

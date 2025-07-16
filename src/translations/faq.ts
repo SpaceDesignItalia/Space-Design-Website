@@ -28,7 +28,7 @@ export const faqTranslations: Translations = {
     en: "Common questions about mobile app development",
     it: "Domande comuni sullo sviluppo di app mobile",
   },
-  "custom-faq-subtitle": {
+  "custom-software-faq-subtitle": {
     en: "Frequently asked questions about custom software development",
     it: "Domande frequenti sullo sviluppo di software personalizzato",
   },
@@ -149,36 +149,36 @@ export const faqTranslations: Translations = {
 
   // Custom Software FAQ
   "custom-faq-1-question": {
-    en: "How do you ensure the software meets our business needs?",
-    it: "Come vi assicurate che il software soddisfi le nostre esigenze aziendali?",
+    en: "How much does custom software development cost?",
+    it: "Quanto costa sviluppare un software custom?",
   },
   "custom-faq-1-answer": {
-    en: "We start with a comprehensive discovery phase where we analyze your business processes, requirements, and goals. We create detailed specifications and involve you in every step of development to ensure the final product perfectly matches your needs.",
-    it: "Iniziamo con una fase di scoperta completa dove analizziamo i tuoi processi aziendali, requisiti e obiettivi. Creiamo specifiche dettagliate e ti coinvolgiamo in ogni fase dello sviluppo per assicurarci che il prodotto finale corrisponda perfettamente alle tue esigenze.",
+    en: "Custom software development costs vary significantly based on complexity, features, and scope. We provide personalized quotes tailored to your specific requirements after analyzing your project needs and business objectives.",
+    it: "I costi di sviluppo di un software personalizzato variano significativamente in base alla complessità, funzionalità e portata. Forniamo preventivi personalizzati su misura per le tue esigenze specifiche dopo aver analizzato i requisiti del progetto e gli obiettivi aziendali.",
   },
   "custom-faq-2-question": {
-    en: "What technologies do you use for custom software?",
-    it: "Che tecnologie utilizzate per il software personalizzato?",
+    en: "How does the development process work?",
+    it: "Come si sviluppa il processo di sviluppo?",
   },
   "custom-faq-2-answer": {
-    en: "We use modern, enterprise-grade technologies including .NET, Java, Python, Node.js, React, Angular, and various databases. The technology stack is chosen based on your specific requirements, scalability needs, and existing infrastructure.",
-    it: "Utilizziamo tecnologie moderne di livello enterprise inclusi .NET, Java, Python, Node.js, React, Angular e vari database. Lo stack tecnologico viene scelto in base ai tuoi requisiti specifici, esigenze di scalabilità e infrastruttura esistente.",
+    en: "Our development process follows an agile methodology that begins with discovery and planning where we analyze your needs and create detailed specifications. We then move into design and prototyping, creating wireframes and prototypes to visualize the solution. The development phase involves iterative coding with regular demos to keep you involved. We conduct comprehensive testing and quality assurance to ensure everything works perfectly. Finally, we handle deployment and launch with smooth go-live and ongoing support.",
+    it: "Il nostro processo di sviluppo segue una metodologia agile che inizia con scoperta e pianificazione dove analizziamo le tue esigenze e creiamo specifiche dettagliate. Passiamo poi al design e prototipazione, creando wireframe e prototipi per visualizzare la soluzione. La fase di sviluppo coinvolge codifica iterativa con demo regolari per tenerti coinvolto. Conduciamo test completi e quality assurance per assicurarci che tutto funzioni perfettamente. Infine, gestiamo deployment e lancio con go-live fluido e supporto continuo.",
   },
   "custom-faq-3-question": {
     en: "How long does custom software development take?",
     it: "Quanto tempo richiede lo sviluppo di software personalizzato?",
   },
   "custom-faq-3-answer": {
-    en: "Development time varies from 3-6 months for medium projects to 6-12 months for complex enterprise solutions. We use agile methodology with regular milestones and demos to keep you updated on progress.",
-    it: "Il tempo di sviluppo varia da 3-6 mesi per progetti medi a 6-12 mesi per soluzioni enterprise complesse. Utilizziamo metodologia agile con milestone e demo regolari per tenerti aggiornato sui progressi.",
+    en: "Development time varies from 2-6 months for medium projects to 6-12 months for complex enterprise solutions. We use agile methodology with regular milestones and demos to keep you updated on progress.",
+    it: "Il tempo di sviluppo varia da 2-6 mesi per progetti medi a 6-12 mesi per soluzioni enterprise complesse. Utilizziamo metodologia agile con milestone e demo regolari per tenerti aggiornato sui progressi.",
   },
   "custom-faq-4-question": {
-    en: "Do you provide training and support after deployment?",
-    it: "Fornite formazione e supporto dopo il deployment?",
+    en: "What technologies and platforms do you support?",
+    it: "Quali tecnologie e piattaforme supportate?",
   },
   "custom-faq-4-answer": {
-    en: "Yes, we provide comprehensive training for your team and ongoing support and maintenance. This includes user training, technical documentation, and 24/7 support for critical issues.",
-    it: "Sì, forniamo formazione completa per il tuo team e supporto e manutenzione continui. Questo include formazione utenti, documentazione tecnica e supporto 24/7 per problemi critici.",
+    en: "We work with all major technologies and platforms. We also support cloud solutions and can integrate with existing systems and APIs. We use the best technologies for your specific situation and requirements.",
+    it: "Lavoriamo con tutte le principali tecnologie e piattaforme. Supportiamo anche soluzioni cloud e possiamo integrare con sistemi e API esistenti. Utilizziamo le tecnologie migliori per la tua situazione specifica e requisiti.",
   },
 
   // Startup MVP FAQ
@@ -213,40 +213,6 @@ export const faqTranslations: Translations = {
   "mvp-faq-4-answer": {
     en: "After validation, we can help you scale the MVP into a full product, add advanced features, improve performance, and prepare for larger user bases. We provide ongoing development and support services.",
     it: "Dopo la validazione, possiamo aiutarti a scalare l'MVP in un prodotto completo, aggiungere funzionalità avanzate, migliorare le performance e preparare per basi utenti più grandi. Forniamo servizi di sviluppo e supporto continui.",
-  },
-
-  // AI Software FAQ
-  "ai-faq-1-question": {
-    en: "What types of AI can you implement?",
-    it: "Che tipi di AI potete implementare?",
-  },
-  "ai-faq-1-answer": {
-    en: "We implement various AI technologies including machine learning, natural language processing, computer vision, predictive analytics, and automation. We choose the right AI solution based on your specific business needs and data availability.",
-    it: "Implementiamo varie tecnologie AI inclusi machine learning, natural language processing, computer vision, analytics predittive e automazione. Scegliamo la giusta soluzione AI in base alle tue specifiche esigenze aziendali e disponibilità di dati.",
-  },
-  "ai-faq-2-question": {
-    en: "Do I need a lot of data to implement AI?",
-    it: "Ho bisogno di molti dati per implementare l'AI?",
-  },
-  "ai-faq-2-answer": {
-    en: "Not necessarily. We can work with existing data or help you collect and structure data for AI implementation. We also use pre-trained models and transfer learning to work with smaller datasets effectively.",
-    it: "Non necessariamente. Possiamo lavorare con dati esistenti o aiutarti a raccogliere e strutturare dati per l'implementazione AI. Utilizziamo anche modelli pre-addestrati e transfer learning per lavorare efficacemente con dataset più piccoli.",
-  },
-  "ai-faq-3-question": {
-    en: "How do you ensure AI accuracy and reliability?",
-    it: "Come garantite accuratezza e affidabilità dell'AI?",
-  },
-  "ai-faq-3-answer": {
-    en: "We implement rigorous testing, validation, and monitoring processes. We use high-quality training data, implement explainable AI techniques, and provide continuous monitoring to ensure accuracy and reliability.",
-    it: "Implementiamo processi rigorosi di testing, validazione e monitoraggio. Utilizziamo dati di training di alta qualità, implementiamo tecniche di AI spiegabile e forniamo monitoraggio continuo per garantire accuratezza e affidabilità.",
-  },
-  "ai-faq-4-question": {
-    en: "Can AI solutions be integrated with existing systems?",
-    it: "Le soluzioni AI possono essere integrate con sistemi esistenti?",
-  },
-  "ai-faq-4-answer": {
-    en: "Yes, we specialize in integrating AI solutions with existing business systems. We create APIs and interfaces that allow seamless communication between AI components and your current infrastructure.",
-    it: "Sì, ci specializziamo nell'integrazione di soluzioni AI con sistemi aziendali esistenti. Creiamo API e interfacce che permettono comunicazione perfetta tra componenti AI e la tua infrastruttura attuale.",
   },
 
   // Cloud Integration FAQ
@@ -372,23 +338,6 @@ export const faqTranslations: Translations = {
   },
 
   // --- API FAQ ---
-  "api-faq-title": {
-    en: "Frequently Asked Questions",
-    it: "Domande Frequenti",
-  },
-  "api-faq-subtitle": {
-    en: "Answers to the most common questions about API development",
-    it: "Risposte alle domande più comuni sullo sviluppo API",
-  },
-  "api-faq-cta-text": { en: "Still have questions?", it: "Hai altre domande?" },
-  "api-faq-cta-subtext": {
-    en: "Let's talk about your API project",
-    it: "Parliamo del tuo progetto API",
-  },
-  "api-faq-benefit-text": {
-    en: "Free consultation",
-    it: "Consulenza gratuita",
-  },
   "api-faq-question-1": {
     en: "Will our APIs be secure?",
     it: "Le nostre API saranno sicure?",
@@ -422,27 +371,6 @@ export const faqTranslations: Translations = {
     it: "Forniamo documentazione OpenAPI interattiva e guide per sviluppatori dettagliate per facilitare l'integrazione.",
   },
 
-  // --- CLOUD FAQ ---
-  "cloud-faq-title": {
-    en: "Frequently Asked Questions",
-    it: "Domande Frequenti",
-  },
-  "cloud-faq-subtitle": {
-    en: "Answers to the most common questions about cloud integration",
-    it: "Risposte alle domande più comuni sull'integrazione cloud",
-  },
-  "cloud-faq-cta-text": {
-    en: "Still have questions?",
-    it: "Hai altre domande?",
-  },
-  "cloud-faq-cta-subtext": {
-    en: "Let's talk about your cloud migration",
-    it: "Parliamo della tua migrazione cloud",
-  },
-  "cloud-faq-benefit-text": {
-    en: "Free consultation",
-    it: "Consulenza gratuita",
-  },
   "cloud-faq-question-1": {
     en: "How long does a cloud migration take?",
     it: "Quanto tempo richiede una migrazione cloud?",
