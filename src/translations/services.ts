@@ -717,4 +717,294 @@ export const servicesTranslations: Translations = {
     en: "Start Now",
     it: "Inizia Ora",
   },
+
+  // DevOps missing translations
+  "devops-features-title": {
+    en: "Transform your software development",
+    it: "Trasforma il tuo sviluppo software",
+  },
+  "devops-ci-cd-title": {
+    en: "CI/CD Pipeline",
+    it: "CI/CD Pipeline",
+  },
+  "devops-ci-cd-description": {
+    en: "Automate build, test and deployment with robust and scalable pipelines. Release software faster and with greater security.",
+    it: "Automatizza build, test e deployment con pipeline robuste e scalabili. Rilascia software più velocemente e con maggiore sicurezza.",
+  },
+  "devops-iac-title": {
+    en: "Infrastructure as Code",
+    it: "Infrastructure as Code",
+  },
+  "devops-iac-description": {
+    en: "Manage infrastructure as code with Terraform, Ansible and CloudFormation. Automated versioning, testing and deployment of infrastructure.",
+    it: "Gestisci l'infrastruttura come codice con Terraform, Ansible e CloudFormation. Versioning, testing e deployment automatizzati dell'infrastruttura.",
+  },
+  "devops-technologies-title": {
+    en: "Technologies and tools",
+    it: "Tecnologie e strumenti",
+  },
+  "devops-technologies-description": {
+    en: "We use the most modern and reliable tools to create robust and scalable DevOps pipelines.",
+    it: "Utilizziamo gli strumenti più moderni e affidabili per creare pipeline DevOps robuste e scalabili.",
+  },
+  "devops-seo-keywords": {
+    en: "DevOps, CI/CD, automation, deployment, infrastructure as code, monitoring, Terraform, Kubernetes, Docker",
+    it: "DevOps, CI/CD, automazione, deployment, infrastructure as code, monitoraggio, Terraform, Kubernetes, Docker",
+  },
+
+  // Cloud Integration missing translations
+  "cloud-integration-solutions-title": {
+    en: "Complete cloud solutions",
+    it: "Soluzioni cloud complete",
+  },
+  "cloud-integration-api-integration-title": {
+    en: "API Integration",
+    it: "API Integration",
+  },
+  "cloud-integration-api-integration-description": {
+    en: "Connect all your systems with robust and scalable APIs. Automatic synchronization, error management and real-time monitoring for perfect integration.",
+    it: "Connetti tutti i tuoi sistemi con API robuste e scalabili. Sincronizzazione automatica, gestione degli errori e monitoraggio in tempo reale per un'integrazione perfetta.",
+  },
+  "cloud-integration-microservices-title": {
+    en: "Microservices",
+    it: "Microservices",
+  },
+  "cloud-integration-microservices-description": {
+    en: "Modular and scalable architecture with independent services that communicate through APIs. Each service can be developed, deployed and scaled independently, ensuring better fault tolerance and easier maintenance.",
+    it: "Architettura modulare e scalabile con servizi indipendenti che comunicano attraverso API. Ogni servizio può essere sviluppato, deployato e scalato indipendentemente, garantendo migliore tolleranza ai guasti e manutenzione più semplice.",
+  },
+  "cloud-integration-data-sync-title": {
+    en: "Data Sync",
+    it: "Data Sync",
+  },
+  "cloud-integration-data-sync-description": {
+    en: "Automatic and real-time data synchronization between different systems and databases. Continuous monitoring, automatic backups, conflict resolution and disaster recovery ensure data integrity and business continuity.",
+    it: "Sincronizzazione automatica e real-time dei dati tra sistemi e database diversi. Monitoraggio continuo, backup automatici, risoluzione conflitti e disaster recovery garantiscono integrità dei dati e continuità aziendale.",
+  },
+  "cloud-integration-data-sync-real-time-description": {
+    en: "Real-time Data Sync",
+    it: "Real-time Data Sync",
+  },
+  "cloud-integration-multi-cloud-title": {
+    en: "Multi-Cloud",
+    it: "Multi-Cloud",
+  },
+  "cloud-integration-multi-cloud-description": {
+    en: "Support for AWS, Azure, Google Cloud and hybrid providers with intelligent workload distribution across multiple cloud environments.",
+    it: "Supporto per AWS, Azure, Google Cloud e provider ibridi con distribuzione intelligente dei carichi di lavoro su ambienti cloud multipli.",
+  },
+  "cloud-integration-multi-cloud-infrastructure-description": {
+    en: "Multi-Cloud Infrastructure",
+    it: "Multi-Cloud Infrastructure",
+  },
+  "cloud-integration-technologies-title": {
+    en: "Cloud technologies",
+    it: "Tecnologie cloud",
+  },
+  "cloud-integration-technologies-description": {
+    en: "We use the best cloud technologies to create robust and scalable integrations.",
+    it: "Utilizziamo le migliori tecnologie cloud per creare integrazioni robuste e scalabili.",
+  },
+  "cloud-integration-faq-title": {
+    en: "Frequently Asked Questions",
+    it: "Domande Frequenti",
+  },
+  "cloud-integration-faq-subtitle": {
+    en: "Everything you need to know about our cloud integrations",
+    it: "Tutto quello che devi sapere sulle nostre integrazioni cloud",
+  },
+  "cloud-integration-faq-cta-text": {
+    en: "Have other questions?",
+    it: "Hai altre domande?",
+  },
+  "cloud-integration-faq-cta-subtext": {
+    en: "Let's talk about your cloud integration",
+    it: "Parliamo della tua integrazione cloud",
+  },
+  "cloud-integration-faq-benefit-text": {
+    en: "Free consultation",
+    it: "Consulenza gratuita",
+  },
+  "cloud-integration-faq-question-1": {
+    en: "How long does it take to integrate cloud systems?",
+    it: "Quanto tempo ci vuole per integrare i sistemi cloud?",
+  },
+  "cloud-integration-faq-answer-1": {
+    en: "Time varies from 2-6 weeks depending on the complexity of the systems to integrate and available APIs.",
+    it: "Il tempo varia da 2-6 settimane a seconda della complessità dei sistemi da integrare e delle API disponibili.",
+  },
+  "cloud-integration-faq-question-2": {
+    en: "Do you support integration with legacy systems?",
+    it: "Supportate l'integrazione con sistemi legacy?",
+  },
+  "cloud-integration-faq-answer-2": {
+    en: "Yes, we have experience integrating legacy systems with modern cloud solutions through APIs and custom middleware.",
+    it: "Sì, abbiamo esperienza nell'integrazione di sistemi legacy con moderne soluzioni cloud attraverso API e middleware personalizzati.",
+  },
+  "cloud-integration-faq-question-3": {
+    en: "How do you manage integration security?",
+    it: "Come gestite la sicurezza delle integrazioni?",
+  },
+  "cloud-integration-faq-answer-3": {
+    en: "We implement OAuth authentication, end-to-end encryption, secure API keys and continuous monitoring to protect data.",
+    it: "Implementiamo autenticazione OAuth, crittografia end-to-end, API keys sicure e monitoraggio continuo per proteggere i dati.",
+  },
+  "cloud-integration-faq-question-4": {
+    en: "Do you offer multi-cloud support?",
+    it: "Offrite supporto per multi-cloud?",
+  },
+  "cloud-integration-faq-answer-4": {
+    en: "Yes, we design multi-cloud architectures that distribute workloads across different providers to optimize costs and performance.",
+    it: "Sì, progettiamo architetture multi-cloud che distribuiscono i carichi di lavoro tra diversi provider per ottimizzare costi e performance.",
+  },
+  "cloud-integration-seo-keywords": {
+    en: "Cloud integration, API integration, microservices, data sync, multi-cloud, AWS, Azure, Google Cloud",
+    it: "Integrazione cloud, integrazione API, microservizi, sincronizzazione dati, multi-cloud, AWS, Azure, Google Cloud",
+  },
+
+  // Multi-Cloud Benefits translations
+  "cloud-integration-multi-cloud-benefits-title": {
+    en: "Multi-Cloud Benefits",
+    it: "Benefici Multi-Cloud",
+  },
+  "cloud-integration-benefit-cost-optimization": {
+    en: "Cost Optimization",
+    it: "Ottimizzazione Costi",
+  },
+  "cloud-integration-benefit-high-availability": {
+    en: "High Availability",
+    it: "Alta Disponibilità",
+  },
+  "cloud-integration-benefit-vendor-lock-in-prevention": {
+    en: "Vendor Lock-in Prevention",
+    it: "Prevenzione Vendor Lock-in",
+  },
+  "cloud-integration-benefit-geographic-distribution": {
+    en: "Geographic Distribution",
+    it: "Distribuzione Geografica",
+  },
+
+  // API Development missing translations
+  "api-development-services-title": {
+    en: "Complete API services",
+    it: "Servizi API completi",
+  },
+  "api-development-services-description": {
+    en: "From design to documentation, we develop APIs that integrate perfectly with your digital ecosystem.",
+    it: "Dalla progettazione alla documentazione, sviluppiamo API che si integrano perfettamente con il tuo ecosistema digitale.",
+  },
+  "api-development-rest-api-title": {
+    en: "REST API",
+    it: "REST API",
+  },
+  "api-development-rest-api-description": {
+    en: "Standardized RESTful APIs with JWT authentication, rate limiting and complete documentation. Compatible with all modern frameworks and languages.",
+    it: "API RESTful standardizzate con autenticazione JWT, rate limiting e documentazione completa. Compatibili con tutti i framework e linguaggi moderni.",
+  },
+  "api-development-graphql-title": {
+    en: "GraphQL",
+    it: "GraphQL",
+  },
+  "api-development-graphql-description": {
+    en: "High-performance GraphQL APIs with type-safe schema, optimized resolvers and interactive playground. Flexible queries and over-fetching reduction.",
+    it: "API GraphQL performanti con schema type-safe, resolver ottimizzati e playground interattivo. Query flessibili e riduzione del over-fetching.",
+  },
+  "api-development-real-time-title": {
+    en: "Real-time",
+    it: "Real-time",
+  },
+  "api-development-real-time-description": {
+    en: "WebSocket and Server-Sent Events for real-time communication. Instant notifications, chat and live updates for modern applications.",
+    it: "WebSocket e Server-Sent Events per comunicazione real-time. Notifiche istantanee, chat e aggiornamenti live per applicazioni moderne.",
+  },
+  "api-development-technologies-title": {
+    en: "Technologies and frameworks",
+    it: "Tecnologie e framework",
+  },
+  "api-development-technologies-description": {
+    en: "We use the most modern and reliable frameworks to develop performant and scalable APIs.",
+    it: "Utilizziamo i framework più moderni e affidabili per sviluppare API performanti e scalabili.",
+  },
+  "api-development-auto-documentation-title": {
+    en: "Automatic documentation",
+    it: "Documentazione automatica",
+  },
+  "api-development-auto-documentation-description": {
+    en: "We generate automatic API documentation with Swagger/OpenAPI, code examples and integration guides for developers.",
+    it: "Generiamo documentazione API automatica con Swagger/OpenAPI, esempi di codice e guide di integrazione per sviluppatori.",
+  },
+  "api-development-full-testing-title": {
+    en: "Complete testing",
+    it: "Testing completo",
+  },
+  "api-development-full-testing-description": {
+    en: "Unit, integration and end-to-end tests to ensure reliability and performance of APIs in production.",
+    it: "Test unitari, di integrazione e end-to-end per garantire affidabilità e performance delle API in produzione.",
+  },
+  "api-development-faq-title": {
+    en: "Frequently Asked Questions",
+    it: "Domande Frequenti",
+  },
+  "api-development-faq-subtitle": {
+    en: "Everything you need to know about our API development services",
+    it: "Tutto quello che devi sapere sui nostri servizi di sviluppo API",
+  },
+  "api-development-faq-cta-text": {
+    en: "Have other questions?",
+    it: "Hai altre domande?",
+  },
+  "api-development-faq-cta-subtext": {
+    en: "Let's talk about your API project",
+    it: "Parliamo del tuo progetto API",
+  },
+  "api-development-faq-benefit-text": {
+    en: "Free consultation",
+    it: "Consulenza gratuita",
+  },
+  "api-development-faq-question-1": {
+    en: "How long does it take to develop an API?",
+    it: "Quanto tempo ci vuole per sviluppare un'API?",
+  },
+  "api-development-faq-answer-1": {
+    en: "Time varies from 1-4 weeks depending on complexity, number of endpoints and required integrations.",
+    it: "Il tempo varia da 1-4 settimane a seconda della complessità, numero di endpoint e integrazioni richieste.",
+  },
+  "api-development-faq-question-2": {
+    en: "What type of API do you recommend?",
+    it: "Quale tipo di API consigliate?",
+  },
+  "api-development-faq-answer-2": {
+    en: "It depends on the use case: REST for simplicity and compatibility, GraphQL for flexibility and performance, WebSocket for real-time.",
+    it: "Dipende dal caso d'uso: REST per semplicità e compatibilità, GraphQL per flessibilità e performance, WebSocket per real-time.",
+  },
+  "api-development-faq-question-3": {
+    en: "How do you guarantee API security?",
+    it: "Come garantite la sicurezza delle API?",
+  },
+  "api-development-faq-answer-3": {
+    en: "We implement JWT authentication, rate limiting, input validation, mandatory HTTPS and threat monitoring.",
+    it: "Implementiamo autenticazione JWT, rate limiting, validazione input, HTTPS obbligatorio e monitoraggio delle minacce.",
+  },
+  "api-development-faq-question-4": {
+    en: "Do you provide documentation and support?",
+    it: "Fornite documentazione e supporto?",
+  },
+  "api-development-faq-answer-4": {
+    en: "Yes, we provide complete documentation, code examples, SDKs and technical support for integration.",
+    it: "Sì, forniamo documentazione completa, esempi di codice, SDK e supporto tecnico per l'integrazione.",
+  },
+  "api-development-seo-keywords": {
+    en: "API development, REST API, GraphQL, WebSocket, microservices, API documentation, API testing",
+    it: "Sviluppo API, REST API, GraphQL, WebSocket, microservizi, documentazione API, testing API",
+  },
+
+  // Missing button translations
+  "cloud-integration-cta-button": {
+    en: "Start your cloud integration",
+    it: "Inizia la tua integrazione cloud",
+  },
+  "api-development-cta-button": {
+    en: "Start your API project",
+    it: "Inizia il tuo progetto API",
+  },
 };

@@ -1,89 +1,33 @@
 import SEO from "../../Components/SEO";
 import { useLanguage } from "../../context/LanguageContext";
-import { Icon } from "@iconify/react";
-import { motion } from "framer-motion";
-import ServiceHero from "../../Components/ServiceHero";
 import ServiceFAQ from "../../Components/FAQ/ServiceFAQ";
-import ServiceCTA from "../../Components/ServiceCTA";
+import CTA from "../../Components/Layout/CTA";
+import { Button } from "@heroui/react";
+import { Icon } from "@iconify/react/dist/iconify.js";
+import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
+import ScrollingBanner from "../../Components/Home/ScrollingBanner";
 
 export default function ApiDevelopment() {
   const { t, language } = useLanguage();
+  const navigate = useNavigate();
 
-  const apiFeatures = [
-    {
-      icon: "material-symbols:shield",
-      title: "Sicurezza Enterprise",
-      description:
-        "Autenticazione OAuth 2.0, rate limiting e crittografia end-to-end",
-    },
-    {
-      icon: "material-symbols:speed",
-      title: "Performance Ottimizzata",
-      description:
-        "Caching intelligente, compressione e load balancing automatico",
-    },
-    {
-      icon: "material-symbols:monitoring",
-      title: "Monitoraggio Real-time",
-      description: "Metriche dettagliate, alerting e analytics avanzati",
-    },
-    {
-      icon: "material-symbols:code",
-      title: "Documentazione Completa",
-      description: "OpenAPI specs, SDK e guide per sviluppatori",
-    },
-  ];
+  const handleContactClick = () => {
+    navigate(`/${language}/contact`);
+  };
 
-  const apiExamples = [
-    {
-      type: "REST API",
-      code: `GET /api/users/{id}
-POST /api/users
-PUT /api/users/{id}
-DELETE /api/users/{id}`,
-      description: "API RESTful standard con metodi HTTP convenzionali",
-    },
-    {
-      type: "GraphQL",
-      code: `query {
-  user(id: "123") {
-    name
-    email
-    posts {
-      title
-      content
-    }
-  }
-}`,
-      description: "Query flessibili con type safety e schema introspection",
-    },
-    {
-      type: "WebSocket",
-      code: `ws://api.example.com/events
-{
-  "type": "notification",
-  "data": {
-    "message": "Real-time update"
-  }
-}`,
-      description: "Comunicazione bidirezionale per applicazioni real-time",
-    },
-  ];
+  const fadeInUp = {
+    initial: { opacity: 0, y: 30 },
+    animate: { opacity: 1, y: 0 },
+    transition: { duration: 0.6, ease: "easeOut" },
+  };
 
   return (
     <>
       <SEO
-        title={
-          t("api-development-meta-title") ||
-          "Space Design Italia - Sviluppo API"
-        }
-        description={
-          t("api-development-meta-description") ||
-          "Servizi di sviluppo API professionali. REST, GraphQL, microservizi e integrazioni per applicazioni moderne e scalabili."
-        }
-        keywords={`sviluppo api, rest api, graphql, microservizi, integrazioni, ${t(
-          "seo-keywords"
-        )}`}
+        title={`Space Design Italia - ${t("api-development")}`}
+        description={t("api-development-meta-description")}
+        keywords={t("api-development-seo-keywords")}
         url={`/${language}/services/api-development`}
         alternateUrls={{
           it: "/it/services/api-development",
@@ -92,185 +36,299 @@ DELETE /api/users/{id}`,
         }}
       />
 
-      <div className="min-h-screen bg-white">
-        {/* Hero Section */}
-        <ServiceHero
-          title={
-            t("api-development-hero-title") ||
-            "Connetti il tuo ecosistema digitale"
-          }
-          description={
-            t("api-development-hero-description") ||
-            "Creiamo API robuste, sicure e ben documentate che collegano i tuoi sistemi e abilitano integrazioni perfette. Da REST a GraphQL, costruiamo la spina dorsale digitale delle tue applicazioni."
-          }
-          buttonText={
-            t("api-development-request-consultation") || "Richiedi Consulenza"
-          }
-        />
-
-        {/* Features Section */}
-        <section className="py-32 bg-gray-50">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-              className="text-center mb-20"
+      {/* Hero Section */}
+      <section className="relative h-dvh w-full overflow-hidden bg-background pt-[70px]">
+        <div className="relative flex h-full items-center justify-center px-6 z-10">
+          <motion.div
+            className="text-center max-w-4xl"
+            initial="initial"
+            animate="animate"
+          >
+            <motion.h1
+              variants={fadeInUp}
+              className="text-5xl sm:text-6xl md:text-7xl font-bold leading-[1.1] tracking-tight mb-8"
             >
-              <h2 className="text-5xl font-semibold tracking-tight text-black mb-6">
-                Caratteristiche delle Nostre API
-              </h2>
-              <p className="text-xl font-medium text-gray-600 max-w-3xl mx-auto">
-                Ogni API che sviluppiamo include funzionalità enterprise per
-                garantire affidabilità e scalabilità
-              </p>
+              <span className="bg-gradient-to-r from-black to-gray-800 bg-clip-text text-transparent dark:from-white dark:to-gray-300">
+                {t("api-development")}
+              </span>
+            </motion.h1>
+
+            <motion.p
+              variants={fadeInUp}
+              className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 mb-12 max-w-2xl mx-auto"
+            >
+              {t("api-development-hero-description")}
+            </motion.p>
+
+            <motion.div variants={fadeInUp} className="flex justify-center">
+              <Button
+                size="lg"
+                color="primary"
+                radius="full"
+                onPress={handleContactClick}
+                className="bg-black text-white hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200"
+                endContent={
+                  <Icon
+                    icon="material-symbols:arrow-forward"
+                    className="text-xl"
+                  />
+                }
+              >
+                {t("api-development-cta-button")}
+              </Button>
+            </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Main Features Section - Cards Layout */}
+      <section className="bg-black text-white py-24 sm:py-32">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl font-bold tracking-tight sm:text-5xl mb-6">
+              {t("api-development-services-title")}
+            </h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              {t("api-development-services-description")}
+            </p>
+          </motion.div>
+
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {/* REST API */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="group"
+            >
+              <div className="relative h-full bg-gray-900 rounded-2xl p-8 border border-gray-800 hover:border-gray-600 transition-all duration-300">
+                <div className="flex items-center mb-6">
+                  <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mr-4">
+                    <Icon icon="mdi:api" className="text-2xl text-black" />
+                  </div>
+                  <h3 className="text-2xl font-bold">
+                    {t("api-development-rest-api-title")}
+                  </h3>
+                </div>
+                <p className="text-gray-300 text-lg leading-relaxed mb-6">
+                  {t("api-development-rest-api-description")}
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {["JSON", "JWT", "OAuth2", "OpenAPI"].map((tech) => (
+                    <span
+                      key={tech}
+                      className="px-3 py-1 bg-gray-800 rounded-full text-sm"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
             </motion.div>
 
-            <div className="flex flex-wrap justify-center gap-12">
-              {apiFeatures.map((feature, index) => (
-                <motion.div
-                  key={feature.title}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="text-center group w-80"
-                >
-                  <div className="w-20 h-20 bg-black rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+            {/* GraphQL */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="group"
+            >
+              <div className="relative h-full bg-gray-900 rounded-2xl p-8 border border-gray-800 hover:border-gray-600 transition-all duration-300">
+                <div className="flex items-center mb-6">
+                  <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mr-4">
                     <Icon
-                      icon={feature.icon}
-                      className="w-10 h-10 text-white"
+                      icon="logos:graphql"
+                      className="text-2xl text-black"
                     />
                   </div>
-                  <h3 className="text-2xl font-semibold text-black mb-4">
-                    {feature.title}
+                  <h3 className="text-2xl font-bold">
+                    {t("api-development-graphql-title")}
                   </h3>
-                  <p className="text-gray-600 font-medium leading-relaxed">
-                    {feature.description}
-                  </p>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
+                </div>
+                <p className="text-gray-300 text-lg leading-relaxed mb-6">
+                  {t("api-development-graphql-description")}
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {["Schema", "Resolvers", "Subscriptions", "Playground"].map(
+                    (tech) => (
+                      <span
+                        key={tech}
+                        className="px-3 py-1 bg-gray-800 rounded-full text-sm"
+                      >
+                        {tech}
+                      </span>
+                    )
+                  )}
+                </div>
+              </div>
+            </motion.div>
 
-        {/* Examples Section */}
-        <section className="py-32 bg-white">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            {/* WebSocket */}
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-              className="text-center mb-20"
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="group"
             >
-              <h2 className="text-5xl font-semibold tracking-tight text-black mb-6">
-                Esempi di API
-              </h2>
-              <p className="text-xl font-medium text-gray-600 max-w-3xl mx-auto">
-                Diamo vita alle tue idee con implementazioni concrete e
-                funzionali
+              <div className="relative h-full bg-gray-900 rounded-2xl p-8 border border-gray-800 hover:border-gray-600 transition-all duration-300">
+                <div className="flex items-center mb-6">
+                  <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mr-4">
+                    <Icon icon="mdi:web-sync" className="text-2xl text-black" />
+                  </div>
+                  <h3 className="text-2xl font-bold">
+                    {t("api-development-real-time-title")}
+                  </h3>
+                </div>
+                <p className="text-gray-300 text-lg leading-relaxed mb-6">
+                  {t("api-development-real-time-description")}
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {["WebSocket", "SSE", "Socket.io", "Redis"].map((tech) => (
+                    <span
+                      key={tech}
+                      className="px-3 py-1 bg-gray-800 rounded-full text-sm"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Technologies & Frameworks */}
+      <section className="bg-white dark:bg-gray-900 py-24 sm:py-32">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-5xl mb-6">
+              {t("api-development-technologies-title")}
+            </h2>
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+              {t("api-development-technologies-description")}
+            </p>
+          </motion.div>
+
+          <div className="relative">
+            <ScrollingBanner>
+              <div className="flex items-center space-x-16">
+                {[
+                  { name: "Node.js", icon: "logos:nodejs-icon" },
+                  { name: "Express", icon: "logos:expressjs" },
+                  { name: "Python", icon: "logos:python" },
+                  { name: "Django", icon: "logos:django" },
+                  { name: "Java", icon: "logos:java" },
+                  { name: "Spring", icon: "logos:spring-icon" },
+                  { name: "PHP", icon: "logos:php" },
+                  { name: "Laravel", icon: "logos:laravel" },
+                  { name: "C#", icon: "logos:c-sharp" },
+                  { name: ".NET", icon: "logos:dotnet" },
+                  { name: "MySQL", icon: "logos:mysql" },
+                  { name: "PostgreSQL", icon: "logos:postgresql" },
+                  { name: "MongoDB", icon: "logos:mongodb" },
+                  { name: "Redis", icon: "logos:redis" },
+                  { name: "REST", icon: "mdi:api" },
+                ].map((tech, index) => (
+                  <div
+                    key={index}
+                    className="flex flex-col items-center space-y-2"
+                  >
+                    <div className="w-16 h-16 bg-black dark:bg-white rounded-xl flex items-center justify-center">
+                      <Icon
+                        icon={tech.icon}
+                        className="w-8 h-8 text-white dark:text-black"
+                      />
+                    </div>
+                    <span className="text-sm font-medium text-gray-600 dark:text-gray-300">
+                      {tech.name}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </ScrollingBanner>
+          </div>
+
+          {/* Additional Features */}
+          <div className="mt-20 grid gap-8 md:grid-cols-2">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-8"
+            >
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                {t("api-development-auto-documentation-title")}
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
+                {t("api-development-auto-documentation-description")}
               </p>
             </motion.div>
 
-            <div className="space-y-16">
-              {apiExamples.map((example, index) => (
-                <motion.div
-                  key={example.type}
-                  initial={{ opacity: 0, y: 50 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.8, delay: index * 0.2 }}
-                  className={`flex items-center ${
-                    index % 2 === 0 ? "flex-row" : "flex-row-reverse"
-                  } gap-16`}
-                >
-                  <div className="flex-1">
-                    <h3 className="text-3xl font-semibold text-black mb-6">
-                      {example.type}
-                    </h3>
-                    <p className="text-lg font-medium text-gray-600 leading-relaxed mb-8">
-                      {example.description}
-                    </p>
-                  </div>
-                  <div className="flex-1">
-                    <div className="bg-black rounded-3xl p-8 text-white">
-                      <pre className="text-sm text-gray-300 font-mono overflow-x-auto">
-                        <code>{example.code}</code>
-                      </pre>
-                    </div>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-8"
+            >
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                {t("api-development-full-testing-title")}
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
+                {t("api-development-full-testing-description")}
+              </p>
+            </motion.div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* FAQ Section */}
-        <ServiceFAQ
-          title={t("api-faq-title") || "Domande Frequenti"}
-          subtitle={
-            t("api-faq-subtitle") ||
-            "Risposte alle domande più comuni sullo sviluppo API"
-          }
-          ctaText={t("api-faq-cta-text") || "Hai altre domande?"}
-          ctaSubtext={
-            t("api-faq-cta-subtext") || "Parliamo del tuo progetto API"
-          }
-          benefitText={t("api-faq-benefit-text") || "Consulenza gratuita"}
-          faqs={[
-            {
-              question:
-                t("api-faq-question-1") || "Le nostre API saranno sicure?",
-              answer:
-                t("api-faq-answer-1") ||
-                "Implementiamo autenticazione OAuth 2.0, crittografia end-to-end e rate limiting avanzato per garantire massima sicurezza.",
-              icon: "material-symbols:security",
-              delay: 0.1,
-            },
-            {
-              question:
-                t("api-faq-question-2") ||
-                "Quanto tempo richiede l'integrazione?",
-              answer:
-                t("api-faq-answer-2") ||
-                "Dalle 2-4 settimane per API semplici fino a 8-12 settimane per sistemi complessi, con metodologia agile.",
-              icon: "material-symbols:schedule",
-              delay: 0.2,
-            },
-            {
-              question:
-                t("api-faq-question-3") ||
-                "Le API si adatteranno alla crescita?",
-              answer:
-                t("api-faq-answer-3") ||
-                "Progettiamo architetture scalabili che crescono automaticamente con il tuo business senza compromessi.",
-              icon: "material-symbols:trending-up",
-              delay: 0.3,
-            },
-            {
-              question:
-                t("api-faq-question-4") || "Fornite documentazione completa?",
-              answer:
-                t("api-faq-answer-4") ||
-                "Forniamo documentazione OpenAPI interattiva e guide per sviluppatori dettagliate per facilitare l'integrazione.",
-              icon: "material-symbols:description",
-              delay: 0.4,
-            },
-          ]}
-        />
+      {/* FAQ Section */}
+      <ServiceFAQ
+        title={t("api-development-faq-title")}
+        subtitle={t("api-development-faq-subtitle")}
+        ctaText={t("api-development-faq-cta-text")}
+        ctaSubtext={t("api-development-faq-cta-subtext")}
+        benefitText={t("api-development-faq-benefit-text")}
+        faqs={[
+          {
+            question: t("api-development-faq-question-1"),
+            answer: t("api-development-faq-answer-1"),
+            icon: "solar:clock-circle-line-duotone",
+            delay: 0.1,
+          },
+          {
+            question: t("api-development-faq-question-2"),
+            answer: t("api-development-faq-answer-2"),
+            icon: "solar:code-line-duotone",
+            delay: 0.2,
+          },
+          {
+            question: t("api-development-faq-question-3"),
+            answer: t("api-development-faq-answer-3"),
+            icon: "solar:shield-keyhole-line-duotone",
+            delay: 0.3,
+          },
+          {
+            question: t("api-development-faq-question-4"),
+            answer: t("api-development-faq-answer-4"),
+            icon: "solar:book-line-duotone",
+            delay: 0.4,
+          },
+        ]}
+      />
 
-        {/* CTA Section */}
-        <ServiceCTA
-          title={t("api-cta-title") || "Pronto a Costruire le Tue API?"}
-          subtitle={
-            t("api-cta-description") ||
-            "Trasforma le tue integrazioni con API professionali. Contattaci per una consulenza personalizzata e scopri come possiamo connettere il tuo ecosistema digitale."
-          }
-          buttonText={t("api-cta-button") || "Contattaci Ora"}
-        />
-      </div>
+      {/* CTA Section */}
+      <CTA />
     </>
   );
 }
