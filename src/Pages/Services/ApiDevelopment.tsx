@@ -204,7 +204,7 @@ export default function ApiDevelopment() {
       </section>
 
       {/* Technologies & Frameworks */}
-      <section className="bg-white dark:bg-gray-900 py-24 sm:py-32">
+      <section className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -222,10 +222,10 @@ export default function ApiDevelopment() {
 
           <div className="relative">
             <ScrollingBanner>
-              <div className="flex items-center space-x-16">
+              <div className="flex items-center">
                 {[
                   { name: "Node.js", icon: "logos:nodejs-icon" },
-                  { name: "Express", icon: "logos:expressjs" },
+                  { name: "Express", icon: "logos:express" },
                   { name: "Python", icon: "logos:python" },
                   { name: "Django", icon: "logos:django" },
                   { name: "Java", icon: "logos:java" },
@@ -240,14 +240,15 @@ export default function ApiDevelopment() {
                   { name: "Redis", icon: "logos:redis" },
                   { name: "REST", icon: "mdi:api" },
                 ].map((tech, index) => (
-                  <div
-                    key={index}
-                    className="flex flex-col items-center space-y-2"
-                  >
-                    <div className="w-16 h-16 bg-black dark:bg-white rounded-xl flex items-center justify-center">
+                  <div key={index} className="flex flex-col items-center mx-8">
+                    <div className="w-16 h-16 bg-gray-100 dark:bg-gray-200 rounded-xl flex items-center justify-center mb-2">
                       <Icon
                         icon={tech.icon}
-                        className="w-8 h-8 text-white dark:text-black"
+                        className={`w-8 h-8 ${
+                          tech.icon === "mdi:api"
+                            ? "text-black dark:text-black"
+                            : "text-gray-800 dark:text-gray-800"
+                        }`}
                       />
                     </div>
                     <span className="text-sm font-medium text-gray-600 dark:text-gray-300">

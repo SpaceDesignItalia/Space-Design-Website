@@ -49,7 +49,7 @@ export default function DevOps() {
               className="text-5xl sm:text-6xl md:text-7xl font-bold leading-[1.1] tracking-tight mb-8"
             >
               <span className="bg-gradient-to-r from-black to-gray-800 bg-clip-text text-transparent dark:from-white dark:to-gray-300">
-                {t("devops")}
+                DevOps
               </span>
             </motion.h1>
 
@@ -166,7 +166,7 @@ export default function DevOps() {
       </section>
 
       {/* Technologies & Tools */}
-      <section className="bg-white dark:bg-gray-900 py-24 sm:py-32">
+      <section className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -184,7 +184,7 @@ export default function DevOps() {
 
           <div className="relative">
             <ScrollingBanner>
-              <div className="flex items-center space-x-16">
+              <div className="flex items-center">
                 {[
                   { name: "Docker", icon: "logos:docker-icon" },
                   { name: "Kubernetes", icon: "logos:kubernetes" },
@@ -202,14 +202,11 @@ export default function DevOps() {
                   { name: "Apache", icon: "logos:apache" },
                   { name: "Linux", icon: "logos:linux-tux" },
                 ].map((tech, index) => (
-                  <div
-                    key={index}
-                    className="flex flex-col items-center space-y-2"
-                  >
-                    <div className="w-16 h-16 bg-black dark:bg-white rounded-xl flex items-center justify-center">
+                  <div key={index} className="flex flex-col items-center mx-8">
+                    <div className="w-16 h-16 bg-gray-100 dark:bg-gray-200 rounded-xl flex items-center justify-center mb-2">
                       <Icon
                         icon={tech.icon}
-                        className="w-8 h-8 text-white dark:text-black"
+                        className="w-8 h-8 text-gray-800 dark:text-gray-800"
                       />
                     </div>
                     <span className="text-sm font-medium text-gray-600 dark:text-gray-300">

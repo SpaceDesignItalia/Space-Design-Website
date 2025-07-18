@@ -247,10 +247,10 @@ export default function CloudIntegration() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="text-center group"
               >
-                <div className="w-20 h-20 bg-black dark:bg-white rounded-2xl flex items-center justify-center mb-4 mx-auto group-hover:scale-110 transition-transform duration-300">
+                <div className="w-20 h-20 bg-gray-100 dark:bg-gray-200 rounded-2xl flex items-center justify-center mb-4 mx-auto group-hover:scale-110 transition-transform duration-300">
                   <Icon
                     icon={tech.icon}
-                    className="w-10 h-10 text-white dark:text-black"
+                    className="w-10 h-10 text-gray-800 dark:text-gray-800"
                   />
                 </div>
                 <p className="text-sm font-bold text-gray-900 dark:text-white">
