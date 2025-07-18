@@ -16,48 +16,57 @@ export default function CloudIntegration() {
     navigate(`/${language}/contact`);
   };
 
-  const cloudServices = [
+  const benefits = [
     {
-      title: "Migrazione Cloud",
+      number: "01",
+      title: "Scalabilità Istantanea",
       description:
-        "Migrazione sicura e pianificata di applicazioni e dati verso piattaforme cloud moderne.",
-      icon: "material-symbols:cloud-upload",
+        "Adatta automaticamente le risorse alle tue esigenze, senza limiti di crescita.",
+    },
+    {
+      number: "02",
+      title: "Riduzione Costi",
+      description:
+        "Paga solo per quello che usi, con ottimizzazioni automatiche che riducono i costi del 40%.",
+    },
+    {
+      number: "03",
+      title: "Sicurezza Avanzata",
+      description:
+        "Protezione enterprise con crittografia end-to-end e compliance certificata.",
+    },
+    {
+      number: "04",
+      title: "Disponibilità Globale",
+      description:
+        "Distribuzione mondiale con uptime garantito del 99.9% e backup automatici.",
+    },
+  ];
+
+  const providers = [
+    {
+      name: "Amazon Web Services",
+      logo: "logos:aws",
+      features: ["EC2", "S3", "Lambda", "RDS"],
+    },
+    {
+      name: "Microsoft Azure",
+      logo: "logos:microsoft-azure",
       features: [
-        "Analisi Preliminare",
-        "Strategia di Migrazione",
-        "Testing Completo",
-        "Go-Live Supportato",
+        "Virtual Machines",
+        "Blob Storage",
+        "Functions",
+        "SQL Database",
       ],
     },
     {
-      title: "Multi-Cloud Strategy",
-      description:
-        "Gestione di infrastrutture distribuite su più provider cloud per massima flessibilità.",
-      icon: "material-symbols:account-tree",
-      features: ["AWS", "Azure", "Google Cloud", "Orchestrazione Unificata"],
-    },
-    {
-      title: "Cloud Security",
-      description:
-        "Implementazione di sicurezza avanzata per proteggere applicazioni e dati nel cloud.",
-      icon: "material-symbols:security",
+      name: "Google Cloud Platform",
+      logo: "logos:google-cloud",
       features: [
-        "Identity Management",
-        "Data Encryption",
-        "Compliance",
-        "Threat Detection",
-      ],
-    },
-    {
-      title: "Cloud Optimization",
-      description:
-        "Ottimizzazione costi e performance per massimizzare l'efficienza delle risorse cloud.",
-      icon: "material-symbols:trending-up",
-      features: [
-        "Cost Optimization",
-        "Performance Tuning",
-        "Auto-scaling",
-        "Monitoring",
+        "Compute Engine",
+        "Cloud Storage",
+        "Cloud Functions",
+        "Cloud SQL",
       ],
     },
   ];
@@ -84,7 +93,7 @@ export default function CloudIntegration() {
         }}
       />
 
-      <div className="min-h-screen bg-white dark:bg-gray-900">
+      <div className="min-h-screen bg-white">
         {/* Hero Section */}
         <ServiceHero
           title={
@@ -100,69 +109,107 @@ export default function CloudIntegration() {
           }
         />
 
-        {/* Cloud Services Section */}
-        <section className="py-24 bg-gray-50 dark:bg-gray-800">
+        {/* Benefits Section */}
+        <section className="py-32 bg-gray-50">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="text-center mb-16"
+              transition={{ duration: 0.8 }}
+              className="text-center mb-20"
             >
-              <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl mb-4">
-                {t("cloud-services-title") || "I Nostri Servizi Cloud"}
+              <h2 className="text-5xl font-semibold tracking-tight text-black mb-6">
+                Vantaggi del Cloud
               </h2>
-              <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-                {t("cloud-services-description") ||
-                  "Soluzioni cloud complete per modernizzare la tua infrastruttura e accelerare l'innovazione digitale."}
+              <p className="text-xl font-medium text-gray-600 max-w-3xl mx-auto">
+                Scopri come il cloud può trasformare la tua infrastruttura IT
               </p>
             </motion.div>
 
-            <div className="grid lg:grid-cols-2 gap-8">
-              {cloudServices.map((service, index) => (
+            <div className="relative">
+              {benefits.map((benefit, index) => (
                 <motion.div
-                  key={service.title}
-                  initial={{ opacity: 0, y: 20 }}
+                  key={benefit.number}
+                  initial={{ opacity: 0, y: 50 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300"
+                  transition={{ duration: 0.8, delay: index * 0.2 }}
+                  className="mb-20 last:mb-0"
                 >
-                  <div className="flex items-center mb-6">
+                  <div className="flex items-center space-x-12">
                     <div className="flex-shrink-0">
-                      <div className="w-12 h-12 bg-gradient-to-r from-gray-900 to-black rounded-lg flex items-center justify-center">
-                        <Icon
-                          icon={service.icon}
-                          className="w-6 h-6 text-white"
-                        />
+                      <div className="w-32 h-32 bg-black rounded-full flex items-center justify-center">
+                        <span className="text-4xl font-light text-white">
+                          {benefit.number}
+                        </span>
                       </div>
                     </div>
-                    <div className="ml-4">
-                      <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                        {service.title}
+                    <div className="flex-1">
+                      <h3 className="text-4xl font-semibold text-black mb-6">
+                        {benefit.title}
                       </h3>
+                      <p className="text-xl font-medium text-gray-600 leading-relaxed max-w-3xl">
+                        {benefit.description}
+                      </p>
                     </div>
                   </div>
+                  {index < benefits.length - 1 && (
+                    <div className="mt-12 ml-16 w-px h-20 bg-gray-300"></div>
+                  )}
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
 
-                  <p className="text-gray-600 dark:text-gray-300 mb-6">
-                    {service.description}
-                  </p>
+        {/* Providers Section */}
+        <section className="py-32 bg-white">
+          <div className="mx-auto max-w-6xl px-6 lg:px-8">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="text-center mb-20"
+            >
+              <h2 className="text-5xl font-semibold tracking-tight text-black mb-6">
+                Provider Cloud
+              </h2>
+              <p className="text-xl font-medium text-gray-600 max-w-2xl mx-auto">
+                Lavoriamo con i principali provider per offrirti la soluzione
+                migliore
+              </p>
+            </motion.div>
 
-                  <ul className="space-y-2">
-                    {service.features.map((feature, featureIndex) => (
-                      <li
-                        key={featureIndex}
-                        className="flex items-center text-sm text-gray-600 dark:text-gray-400"
-                      >
-                        <Icon
-                          icon="material-symbols:check-circle"
-                          className="w-4 h-4 text-green-500 mr-2 flex-shrink-0"
-                        />
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
+            <div className="space-y-12">
+              {providers.map((provider, index) => (
+                <motion.div
+                  key={provider.name}
+                  initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8, delay: index * 0.2 }}
+                  className="flex items-center space-x-12 p-8 border-2 border-gray-200 rounded-3xl hover:shadow-xl transition-all duration-300"
+                >
+                  <div className="flex-shrink-0">
+                    <Icon icon={provider.logo} className="w-20 h-20" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-semibold text-black mb-4">
+                      {provider.name}
+                    </h3>
+                    <div className="flex flex-wrap gap-4">
+                      {provider.features.map((feature, featureIndex) => (
+                        <span
+                          key={featureIndex}
+                          className="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium"
+                        >
+                          {feature}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
                 </motion.div>
               ))}
             </div>

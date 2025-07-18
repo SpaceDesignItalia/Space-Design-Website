@@ -16,55 +16,38 @@ export default function DevOps() {
     navigate(`/${language}/contact`);
   };
 
-  const devopsServices = [
+  const devopsPrinciples = [
     {
-      title: "Pipeline CI/CD",
+      title: "Automazione",
       description:
-        "Pipeline automatizzate per integrazione e deployment continui con testing, controlli di sicurezza e rollback automatici.",
-      icon: "material-symbols:account-tree",
-      features: [
-        "Testing Automatizzato",
-        "Scansione Sicurezza",
-        "Automazione Deployment",
-        "Meccanismi Rollback",
-      ],
+        "Eliminiamo i processi manuali ripetitivi per concentrarti su ciò che conta davvero.",
     },
     {
-      title: "Infrastructure as Code",
+      title: "Collaborazione",
       description:
-        "Gestione infrastrutture attraverso codice con Terraform, Ansible e CloudFormation per consistenza e scalabilità.",
-      icon: "material-symbols:code",
-      features: [
-        "Terraform",
-        "Ansible",
-        "CloudFormation",
-        "Controllo Versioni",
-      ],
+        "Unifichiamo sviluppo e operazioni per un flusso di lavoro senza interruzioni.",
     },
     {
-      title: "Orchestrazione Container",
+      title: "Monitoraggio",
       description:
-        "Containerizzazione Docker e orchestrazione Kubernetes per applicazioni scalabili e portabili.",
-      icon: "material-symbols:view-in-ar",
-      features: [
-        "Container Docker",
-        "Kubernetes",
-        "Service Mesh",
-        "Auto-scaling",
-      ],
+        "Visibilità completa su performance, errori e utilizzo delle risorse in tempo reale.",
     },
     {
-      title: "Monitoraggio & Osservabilità",
+      title: "Sicurezza",
       description:
-        "Monitoraggio completo con metriche, log, trace e alerting intelligente per risoluzione proattiva dei problemi.",
-      icon: "material-symbols:monitoring",
-      features: [
-        "Metriche & Log",
-        "Tracing Distribuito",
-        "Alerting Intelligente",
-        "Dashboard Personalizzate",
-      ],
+        "Integriamo la sicurezza in ogni fase del processo di sviluppo e deployment.",
     },
+  ];
+
+  const tools = [
+    { name: "Docker", icon: "logos:docker-icon" },
+    { name: "Kubernetes", icon: "logos:kubernetes" },
+    { name: "Jenkins", icon: "logos:jenkins" },
+    { name: "Terraform", icon: "logos:terraform-icon" },
+    { name: "Ansible", icon: "logos:ansible" },
+    { name: "Prometheus", icon: "logos:prometheus" },
+    { name: "Grafana", icon: "logos:grafana" },
+    { name: "AWS", icon: "logos:aws" },
   ];
 
   return (
@@ -86,7 +69,7 @@ export default function DevOps() {
         }}
       />
 
-      <div className="min-h-screen bg-white dark:bg-gray-900">
+      <div className="min-h-screen bg-white">
         {/* Hero Section */}
         <ServiceHero
           title={t("devops-hero-title") || "Accelera il tuo sviluppo"}
@@ -97,69 +80,79 @@ export default function DevOps() {
           buttonText={t("devops-request-consultation") || "Richiedi Consulenza"}
         />
 
-        {/* DevOps Services Section */}
-        <section className="py-24 bg-gray-50 dark:bg-gray-800">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        {/* Principles Section */}
+        <section className="py-32 bg-gray-50">
+          <div className="mx-auto max-w-4xl px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="text-center mb-16"
+              transition={{ duration: 0.8 }}
+              className="text-center mb-20"
             >
-              <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl mb-4">
-                {t("devops-services-title") || "I Nostri Servizi DevOps"}
+              <h2 className="text-5xl font-semibold tracking-tight text-black mb-6">
+                Principi DevOps
               </h2>
-              <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-                {t("devops-services-description") ||
-                  "Soluzioni DevOps complete per accelerare il tuo sviluppo e migliorare l'affidabilità delle tue applicazioni."}
+              <p className="text-xl font-medium text-gray-600">
+                I quattro pilastri che guidano ogni trasformazione DevOps
               </p>
             </motion.div>
 
-            <div className="grid lg:grid-cols-2 gap-8">
-              {devopsServices.map((service, index) => (
+            <div className="space-y-12">
+              {devopsPrinciples.map((principle, index) => (
                 <motion.div
-                  key={service.title}
-                  initial={{ opacity: 0, y: 20 }}
+                  key={principle.title}
+                  initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="text-center"
                 >
-                  <div className="flex items-center mb-6">
-                    <div className="flex-shrink-0">
-                      <div className="w-12 h-12 bg-gradient-to-r from-gray-900 to-black rounded-lg flex items-center justify-center">
-                        <Icon
-                          icon={service.icon}
-                          className="w-6 h-6 text-white"
-                        />
-                      </div>
-                    </div>
-                    <div className="ml-4">
-                      <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                        {service.title}
-                      </h3>
-                    </div>
-                  </div>
-
-                  <p className="text-gray-600 dark:text-gray-300 mb-6">
-                    {service.description}
+                  <h3 className="text-3xl font-semibold text-black mb-4">
+                    {principle.title}
+                  </h3>
+                  <p className="text-lg font-medium text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    {principle.description}
                   </p>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
 
-                  <ul className="space-y-2">
-                    {service.features.map((feature, featureIndex) => (
-                      <li
-                        key={featureIndex}
-                        className="flex items-center text-sm text-gray-600 dark:text-gray-400"
-                      >
-                        <Icon
-                          icon="material-symbols:check-circle"
-                          className="w-4 h-4 text-green-500 mr-2 flex-shrink-0"
-                        />
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
+        {/* Tools Section */}
+        <section className="py-32 bg-black">
+          <div className="mx-auto max-w-6xl px-6 lg:px-8">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="text-center mb-20"
+            >
+              <h2 className="text-5xl font-semibold tracking-tight text-white mb-6">
+                Strumenti & Tecnologie
+              </h2>
+              <p className="text-xl font-medium text-gray-300">
+                Utilizziamo le migliori tecnologie per garantire risultati
+                eccellenti
+              </p>
+            </motion.div>
+
+            <div className="flex flex-wrap justify-center gap-16">
+              {tools.map((tool, index) => (
+                <motion.div
+                  key={tool.name}
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  className="text-center"
+                >
+                  <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mb-4 mx-auto">
+                    <Icon icon={tool.icon} className="w-8 h-8 text-white" />
+                  </div>
+                  <p className="text-gray-300 font-semibold">{tool.name}</p>
                 </motion.div>
               ))}
             </div>

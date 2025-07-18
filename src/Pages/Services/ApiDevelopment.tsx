@@ -9,50 +9,64 @@ import ServiceCTA from "../../Components/ServiceCTA";
 export default function ApiDevelopment() {
   const { t, language } = useLanguage();
 
-  const apiServices = [
+  const apiFeatures = [
     {
-      title: "REST APIs",
-      description: "API RESTful seguendo le best practices del settore",
-      icon: "material-symbols:api",
-      features: [
-        "OpenAPI Spec",
-        "Authentication",
-        "Rate Limiting",
-        "Testing Completo",
-      ],
+      icon: "material-symbols:shield",
+      title: "Sicurezza Enterprise",
+      description:
+        "Autenticazione OAuth 2.0, rate limiting e crittografia end-to-end",
     },
     {
-      title: "GraphQL APIs",
-      description: "API moderne con query flessibili e type safety",
-      icon: "material-symbols:query-stats",
-      features: [
-        "Type Safety",
-        "Real-time Subscriptions",
-        "Schema Introspection",
-        "Developer Tools",
-      ],
+      icon: "material-symbols:speed",
+      title: "Performance Ottimizzata",
+      description:
+        "Caching intelligente, compressione e load balancing automatico",
     },
     {
-      title: "Microservizi",
-      description: "Architetture scalabili e indipendenti",
-      icon: "material-symbols:hub",
-      features: [
-        "Service Discovery",
-        "Load Balancing",
-        "Circuit Breaker",
-        "Distributed Tracing",
-      ],
+      icon: "material-symbols:monitoring",
+      title: "Monitoraggio Real-time",
+      description: "Metriche dettagliate, alerting e analytics avanzati",
     },
     {
-      title: "API Gateway",
-      description: "Gestione centralizzata del traffico API",
-      icon: "material-symbols:account-tree",
-      features: [
-        "Protocol Translation",
-        "Rate Limiting",
-        "Authentication",
-        "Monitoring",
-      ],
+      icon: "material-symbols:code",
+      title: "Documentazione Completa",
+      description: "OpenAPI specs, SDK e guide per sviluppatori",
+    },
+  ];
+
+  const apiExamples = [
+    {
+      type: "REST API",
+      code: `GET /api/users/{id}
+POST /api/users
+PUT /api/users/{id}
+DELETE /api/users/{id}`,
+      description: "API RESTful standard con metodi HTTP convenzionali",
+    },
+    {
+      type: "GraphQL",
+      code: `query {
+  user(id: "123") {
+    name
+    email
+    posts {
+      title
+      content
+    }
+  }
+}`,
+      description: "Query flessibili con type safety e schema introspection",
+    },
+    {
+      type: "WebSocket",
+      code: `ws://api.example.com/events
+{
+  "type": "notification",
+  "data": {
+    "message": "Real-time update"
+  }
+}`,
+      description: "Comunicazione bidirezionale per applicazioni real-time",
     },
   ];
 
@@ -78,7 +92,7 @@ export default function ApiDevelopment() {
         }}
       />
 
-      <div className="min-h-screen bg-white dark:bg-gray-900">
+      <div className="min-h-screen bg-white">
         {/* Hero Section */}
         <ServiceHero
           title={
@@ -94,69 +108,99 @@ export default function ApiDevelopment() {
           }
         />
 
-        {/* API Services Section */}
-        <section className="py-24 bg-gray-50 dark:bg-gray-800">
+        {/* Features Section */}
+        <section className="py-32 bg-gray-50">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="text-center mb-16"
+              transition={{ duration: 0.8 }}
+              className="text-center mb-20"
             >
-              <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl mb-4">
-                {t("api-services-title") || "I Nostri Servizi API"}
+              <h2 className="text-5xl font-semibold tracking-tight text-black mb-6">
+                Caratteristiche delle Nostre API
               </h2>
-              <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-                {t("api-services-description") ||
-                  "Soluzioni API complete per ogni esigenza di integrazione. Dal design al deployment, creiamo API che crescono con il tuo business."}
+              <p className="text-xl font-medium text-gray-600 max-w-3xl mx-auto">
+                Ogni API che sviluppiamo include funzionalità enterprise per
+                garantire affidabilità e scalabilità
               </p>
             </motion.div>
 
-            <div className="grid lg:grid-cols-2 gap-8">
-              {apiServices.map((service, index) => (
+            <div className="flex flex-wrap justify-center gap-12">
+              {apiFeatures.map((feature, index) => (
                 <motion.div
-                  key={service.title}
-                  initial={{ opacity: 0, y: 20 }}
+                  key={feature.title}
+                  initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="text-center group w-80"
                 >
-                  <div className="flex items-center mb-6">
-                    <div className="flex-shrink-0">
-                      <div className="w-12 h-12 bg-gradient-to-r from-gray-900 to-black rounded-lg flex items-center justify-center">
-                        <Icon
-                          icon={service.icon}
-                          className="w-6 h-6 text-white"
-                        />
-                      </div>
-                    </div>
-                    <div className="ml-4">
-                      <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                        {service.title}
-                      </h3>
+                  <div className="w-20 h-20 bg-black rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <Icon
+                      icon={feature.icon}
+                      className="w-10 h-10 text-white"
+                    />
+                  </div>
+                  <h3 className="text-2xl font-semibold text-black mb-4">
+                    {feature.title}
+                  </h3>
+                  <p className="text-gray-600 font-medium leading-relaxed">
+                    {feature.description}
+                  </p>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Examples Section */}
+        <section className="py-32 bg-white">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="text-center mb-20"
+            >
+              <h2 className="text-5xl font-semibold tracking-tight text-black mb-6">
+                Esempi di API
+              </h2>
+              <p className="text-xl font-medium text-gray-600 max-w-3xl mx-auto">
+                Diamo vita alle tue idee con implementazioni concrete e
+                funzionali
+              </p>
+            </motion.div>
+
+            <div className="space-y-16">
+              {apiExamples.map((example, index) => (
+                <motion.div
+                  key={example.type}
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8, delay: index * 0.2 }}
+                  className={`flex items-center ${
+                    index % 2 === 0 ? "flex-row" : "flex-row-reverse"
+                  } gap-16`}
+                >
+                  <div className="flex-1">
+                    <h3 className="text-3xl font-semibold text-black mb-6">
+                      {example.type}
+                    </h3>
+                    <p className="text-lg font-medium text-gray-600 leading-relaxed mb-8">
+                      {example.description}
+                    </p>
+                  </div>
+                  <div className="flex-1">
+                    <div className="bg-black rounded-3xl p-8 text-white">
+                      <pre className="text-sm text-gray-300 font-mono overflow-x-auto">
+                        <code>{example.code}</code>
+                      </pre>
                     </div>
                   </div>
-
-                  <p className="text-gray-600 dark:text-gray-300 mb-6">
-                    {service.description}
-                  </p>
-
-                  <ul className="space-y-2">
-                    {service.features.map((feature, featureIndex) => (
-                      <li
-                        key={featureIndex}
-                        className="flex items-center text-sm text-gray-600 dark:text-gray-400"
-                      >
-                        <Icon
-                          icon="material-symbols:check-circle"
-                          className="w-4 h-4 text-green-500 mr-2 flex-shrink-0"
-                        />
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
                 </motion.div>
               ))}
             </div>
