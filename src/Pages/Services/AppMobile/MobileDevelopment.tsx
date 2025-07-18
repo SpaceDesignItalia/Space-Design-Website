@@ -4,7 +4,13 @@ import CTA from "../../../Components/Layout/CTA";
 import ServiceHero from "../../../Components/ServiceHero";
 import ServiceFAQ from "../../../Components/FAQ/ServiceFAQ";
 import Benefits from "./Benefits";
-import ServiceStack from "./ServiceStack";
+import MobileWhy from "./MobileWhy";
+import MobileTechnologies from "./MobileTechnologies";
+import MobileAiPowered from "./MobileAiPowered";
+import MobileAiBenefits from "./MobileAiBenefits";
+import MobileAiUseCases from "./MobileAiUseCases";
+import MobileAiStats from "./MobileAiStats";
+import MobileAiCTA from "./MobileAiCTA";
 
 export default function MobileDevelopment() {
   const { t, language } = useLanguage();
@@ -45,9 +51,15 @@ export default function MobileDevelopment() {
           buttonText={t("get-quote") || "Richiedi Preventivo"}
         />
 
-        <ServiceStack />
+        <MobileWhy />
+        <MobileAiPowered />
+        <MobileAiBenefits />
+        <MobileAiStats />
+        <MobileAiUseCases />
+        <MobileAiCTA />
 
         <Benefits />
+        <MobileTechnologies />
 
         {/* FAQ Section */}
         <ServiceFAQ

@@ -3,108 +3,53 @@ import { useLanguage } from "../../../context/LanguageContext";
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
 
-export default function WebsiteTechnologies() {
+export default function MobileTechnologies() {
   const { t } = useLanguage();
   const technologies = [
     {
-      name: "Node.js",
-      icon: "logos:nodejs-icon",
-    },
-    {
-      name: "React",
+      name: "React Native",
       icon: "logos:react",
     },
     {
-      name: "Vue.js",
-      icon: "logos:vue",
+      name: "Flutter",
+      icon: "logos:flutter",
     },
     {
-      name: "Angular",
-      icon: "logos:angular-icon",
+      name: "Ionic",
+      icon: "logos:ionic-icon",
     },
     {
-      name: "TypeScript",
-      icon: "logos:typescript-icon",
+      name: "Xamarin",
+      icon: "logos:xamarin",
     },
     {
-      name: "Next.js",
-      icon: "logos:nextjs-icon",
+      name: "Swift",
+      icon: "logos:swift",
     },
     {
-      name: "Nuxt.js",
-      icon: "logos:nuxt-icon",
+      name: "Kotlin",
+      icon: "logos:kotlin-icon",
     },
     {
-      name: "Tailwind CSS",
-      icon: "logos:tailwindcss-icon",
+      name: "Java",
+      icon: "logos:java",
+    },
+
+    {
+      name: "Cordova",
+      icon: "logos:cordova",
     },
     {
-      name: "Sass",
-      icon: "logos:sass",
+      name: "Capacitor",
+      icon: "logos:capacitor",
     },
     {
-      name: "AWS",
-      icon: "logos:aws",
-    },
-    {
-      name: "Microsoft Azure",
-      icon: "logos:microsoft-azure",
-    },
-    {
-      name: "OpenAI",
-      icon: "logos:openai-icon",
+      name: "Expo",
+      icon: "logos:expo-icon",
     },
     {
       name: "Figma",
       icon: "logos:figma",
-    },
-    {
-      name: "MongoDB",
-      icon: "logos:mongodb-icon",
-    },
-    {
-      name: "PostgreSQL",
-      icon: "logos:postgresql",
-    },
-    {
-      name: "MySQL",
-      icon: "logos:mysql",
-    },
-    {
-      name: "Docker",
-      icon: "logos:docker-icon",
-    },
-    {
-      name: "Git",
-      icon: "logos:git-icon",
-    },
-    {
-      name: "GitHub",
-      icon: "logos:github-icon",
-    },
-    {
-      name: "Jest",
-      icon: "logos:jest",
-    },
-    {
-      name: "Cypress",
-      icon: "logos:cypress",
-    },
-    {
-      name: "Webpack",
-      icon: "logos:webpack",
-    },
-    {
-      name: "Vite",
-      icon: "logos:vitejs",
-    },
-    {
-      name: "GraphQL",
-      icon: "logos:graphql",
-    },
-    {
-      name: "REST API",
-      icon: "logos:rest",
     },
   ];
   return (

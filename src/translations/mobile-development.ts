@@ -370,4 +370,437 @@ export const mobileDevelopmentTranslations: Translations = {
     en: "Answers to the most common questions about mobile development",
     it: "Risposte alle domande più comuni sullo sviluppo mobile",
   },
+
+  // Mobile Why Section
+  "mobile-why-title": {
+    en: "Why Create a Custom Mobile App?",
+    it: "Perché Creare un'App Mobile Personalizzata?",
+  },
+  "mobile-why-subtitle": {
+    en: "In today's digital world, a custom mobile app is no longer a luxury, but a strategic necessity. Discover how it can completely transform the way you interact with your customers and manage your organization.",
+    it: "Nel mondo digitale di oggi, un'app mobile personalizzata non è più un lusso, ma una necessità strategica. Scopri come può trasformare completamente il modo in cui interagisci con i tuoi clienti e gestisci la tua organizzazione.",
+  },
+  "mobile-why-main-title": {
+    en: "Why choose a mobile app?",
+    it: "Perché scegliere un'app mobile?",
+  },
+  "mobile-why-main-subtitle": {
+    en: "In today's digital world, a mobile app is no longer an option but a necessity. Discover how an app can transform the way your customers interact with your business.",
+    it: "Nel mondo digitale di oggi, un'app mobile non è più un'opzione ma una necessità. Scopri come un'app può trasformare il modo in cui i tuoi clienti interagiscono con il tuo business.",
+  },
+  "mobile-why-enterprise-title": {
+    en: "Apps for the enterprise world",
+    it: "App per il mondo enterprise",
+  },
+  "mobile-why-enterprise-subtitle": {
+    en: "For companies that need advanced mobile solutions, we develop enterprise apps with specific features to optimize business processes and increase productivity.",
+    it: "Per le aziende che necessitano di soluzioni mobile avanzate, sviluppiamo app enterprise con funzionalità specifiche per ottimizzare i processi aziendali e aumentare la produttività.",
+  },
+
+  // Consumer Features
+  "mobile-why-feature-1-title": {
+    en: "24/7 Accessibility",
+    it: "Accessibilità 24/7",
+  },
+  "mobile-why-feature-1-desc": {
+    en: "Your app is always available on your customers' devices, allowing them to access your services at any time, even offline. This significantly increases engagement and customer satisfaction.",
+    it: "La tua app è sempre disponibile sui dispositivi dei clienti, permettendo loro di accedere ai tuoi servizi in qualsiasi momento, anche offline. Questo aumenta significativamente l'engagement e la soddisfazione del cliente.",
+  },
+  "mobile-why-feature-2-title": {
+    en: "Optimized User Experience",
+    it: "Esperienza Utente Ottimizzata",
+  },
+  "mobile-why-feature-2-desc": {
+    en: "A native app offers superior performance, intuitive interfaces and advanced features like push notifications, geolocation and camera access. The experience is customized for each mobile device.",
+    it: "Un'app nativa offre performance superiori, interfacce intuitive e funzionalità avanzate come notifiche push, geolocalizzazione e accesso alla fotocamera. L'esperienza è personalizzata per ogni dispositivo mobile.",
+  },
+  "mobile-why-feature-3-title": {
+    en: "Customer Loyalty",
+    it: "Fidelizzazione Clienti",
+  },
+  "mobile-why-feature-3-desc": {
+    en: "Mobile apps create a stronger bond with customers through personalized features, integrated loyalty programs and direct communications. This leads to higher conversion rates and greater retention.",
+    it: "Le app mobile creano un legame più forte con i clienti attraverso funzionalità personalizzate, programmi fedeltà integrati e comunicazioni dirette. Questo porta a tassi di conversione più alti e maggiore retention.",
+  },
+
+  // Enterprise Features
+  "mobile-why-enterprise-1-title": {
+    en: "Fleet and Logistics Management",
+    it: "Gestione Flotte e Logistica",
+  },
+  "mobile-why-enterprise-1-desc": {
+    en: "Enterprise apps for managing corporate fleets, real-time tracking, route optimization and performance monitoring. Integration with existing ERP and CRM systems.",
+    it: "App enterprise per la gestione di flotte aziendali, tracking in tempo reale, ottimizzazione dei percorsi e monitoraggio delle performance. Integrazione con sistemi ERP e CRM esistenti.",
+  },
+  "mobile-why-enterprise-2-title": {
+    en: "Team Productivity",
+    it: "Produttività Team",
+  },
+  "mobile-why-enterprise-2-desc": {
+    en: "Apps for work teams with collaboration features, project management, internal communication and secure access to company data. Support for remote and hybrid work.",
+    it: "App per team di lavoro con funzionalità di collaborazione, gestione progetti, comunicazione interna e accesso sicuro ai dati aziendali. Supporto per lavoro remoto e ibrido.",
+  },
+  "mobile-why-enterprise-3-title": {
+    en: "Analytics and Business Intelligence",
+    it: "Analytics e Business Intelligence",
+  },
+  "mobile-why-enterprise-3-desc": {
+    en: "Mobile dashboards to monitor business KPIs, sales analytics, employee performance and real-time insights. Data-driven decisions wherever you are.",
+    it: "Dashboard mobile per monitorare KPI aziendali, analisi delle vendite, performance dei dipendenti e insights in tempo reale. Decisioni data-driven ovunque tu sia.",
+  },
+  "mobile-why-clients-title": {
+    en: "For Your Customers: An Experience Without Boundaries",
+    it: "Per i Tuoi Clienti: Un'Esperienza Senza Confini",
+  },
+  "mobile-why-clients-subtitle": {
+    en: "Improve your customers' experience with a dedicated app",
+    it: "Migliora l'esperienza dei tuoi clienti con un'app dedicata",
+  },
+  "mobile-why-clients-narrative-1": {
+    en: "Imagine having your customers always at hand. With a custom mobile app, this becomes reality. Your customers literally carry you in their pocket, with immediate access to your services, products and exclusive content.",
+    it: "Immagina di avere sempre i tuoi clienti a portata di mano. Con un'app mobile personalizzata, questo diventa realtà. I tuoi clienti ti portano letteralmente in tasca, con accesso immediato ai tuoi servizi, prodotti e contenuti esclusivi.",
+  },
+  "mobile-why-clients-narrative-2": {
+    en: "Personalized push notifications create a direct and immediate communication channel. You can inform customers about new offers, important updates or simply keep their interest alive with relevant content. It's like having a continuous conversation with your audience.",
+    it: "Le notifiche push personalizzate creano un canale di comunicazione diretto e immediato. Puoi informare i clienti su nuove offerte, aggiornamenti importanti o semplicemente mantenere vivo il loro interesse con contenuti rilevanti. È come avere una conversazione continua con la tua audience.",
+  },
+  "mobile-why-clients-narrative-3": {
+    en: "But it's not just about communication. A dedicated app allows you to collect valuable data on your users' behavior. These insights help you optimize the experience, personalize offers and, consequently, significantly increase conversions and sales.",
+    it: "Ma non è solo questione di comunicazione. Un'app dedicata ti permette di raccogliere dati preziosi sul comportamento dei tuoi utenti. Questi insights ti aiutano a ottimizzare l'esperienza, personalizzare le offerte e, di conseguenza, aumentare significativamente le conversioni e le vendite.",
+  },
+  "mobile-why-client-1": {
+    en: "Direct Customer Access",
+    it: "Accesso Diretto ai Clienti",
+  },
+  "mobile-why-client-1-desc": {
+    en: "Your customers always have you in their pocket, with immediate access to your services and products.",
+    it: "I tuoi clienti ti hanno sempre in tasca, con accesso immediato ai tuoi servizi e prodotti.",
+  },
+  "mobile-why-client-2": {
+    en: "Direct Communication",
+    it: "Comunicazione Diretta",
+  },
+  "mobile-why-client-2-desc": {
+    en: "Personalized push notifications to keep customers always updated and engaged.",
+    it: "Notifiche push personalizzate per mantenere i clienti sempre aggiornati e coinvolti.",
+  },
+  "mobile-why-client-3": {
+    en: "Advanced Analytics",
+    it: "Analytics Avanzati",
+  },
+  "mobile-why-client-3-desc": {
+    en: "Detailed data on user behavior to optimize the experience.",
+    it: "Dati dettagliati sul comportamento degli utenti per ottimizzare l'esperienza.",
+  },
+  "mobile-why-client-4": {
+    en: "Increased Sales",
+    it: "Vendite Aumentate",
+  },
+  "mobile-why-client-4-desc": {
+    en: "Dedicated apps significantly increase conversions and sales.",
+    it: "App dedicate aumentano significativamente le conversioni e le vendite.",
+  },
+  "mobile-why-internal-title": {
+    en: "For Your Organization: Efficiency Without Limits",
+    it: "Per la Tua Organizzazione: Efficienza Senza Limiti",
+  },
+  "mobile-why-internal-subtitle": {
+    en: "Optimize internal processes with custom enterprise apps",
+    it: "Ottimizza i processi interni con app aziendali personalizzate",
+  },
+  "mobile-why-internal-narrative-1": {
+    en: "While customer apps improve the external experience, internal apps revolutionize business processes. Imagine being able to coordinate your team, manage projects and monitor performance from any device, wherever you are.",
+    it: "Mentre le app per i clienti migliorano l'esperienza esterna, le app interne rivoluzionano i processi aziendali. Immagina di poter coordinare il tuo team, gestire progetti e monitorare performance da qualsiasi dispositivo, ovunque tu sia.",
+  },
+  "mobile-why-internal-narrative-2": {
+    en: "Access to company data becomes secure and immediate. Your employees can consult crucial information, update reports and collaborate in real time, without being tied to a physical office. This not only increases productivity, but also work flexibility.",
+    it: "L'accesso ai dati aziendali diventa sicuro e immediato. I tuoi dipendenti possono consultare informazioni cruciali, aggiornare report e collaborare in tempo reale, senza essere legati a un ufficio fisico. Questo non solo aumenta la produttività, ma anche la flessibilità lavorativa.",
+  },
+  "mobile-why-internal-narrative-3": {
+    en: "Security is guaranteed by granular controls and advanced authentication. You have total control over sensitive data, with the ability to revoke access, monitor activities and maintain regulatory compliance. It's the perfect combination of accessibility and protection.",
+    it: "La sicurezza è garantita da controlli granulari e autenticazione avanzata. Hai il controllo totale sui dati sensibili, con la possibilità di revocare accessi, monitorare attività e mantenere la conformità normativa. È la combinazione perfetta tra accessibilità e protezione.",
+  },
+  "mobile-why-internal-1": {
+    en: "Team Management",
+    it: "Gestione Team",
+  },
+  "mobile-why-internal-1-desc": {
+    en: "Internal apps to coordinate teams, manage projects and improve productivity.",
+    it: "App interne per coordinare team, gestire progetti e migliorare la produttività.",
+  },
+  "mobile-why-internal-2": {
+    en: "Data Access",
+    it: "Accesso ai Dati",
+  },
+  "mobile-why-internal-2-desc": {
+    en: "Secure access to company data from any device, wherever you are.",
+    it: "Accesso sicuro ai dati aziendali da qualsiasi dispositivo, ovunque tu sia.",
+  },
+  "mobile-why-internal-3": {
+    en: "Enterprise Security",
+    it: "Sicurezza Aziendale",
+  },
+  "mobile-why-internal-3-desc": {
+    en: "Total control over sensitive data with dedicated and secure apps.",
+    it: "Controllo totale sui dati sensibili con app dedicate e sicure.",
+  },
+  "mobile-why-internal-4": {
+    en: "Operational Efficiency",
+    it: "Efficienza Operativa",
+  },
+  "mobile-why-internal-4-desc": {
+    en: "Automated and optimized processes to maximize efficiency.",
+    it: "Processi automatizzati e ottimizzati per massimizzare l'efficienza.",
+  },
+  "mobile-why-cta-title": {
+    en: "Ready to Transform Your Business?",
+    it: "Pronto a Trasformare il Tuo Business?",
+  },
+  "mobile-why-cta-description": {
+    en: "Contact us to discuss how a custom mobile app can revolutionize your digital presence and internal processes. Let's start this transformation journey together.",
+    it: "Contattaci per discutere come un'app mobile personalizzata può rivoluzionare la tua presenza digitale e i tuoi processi interni. Iniziamo insieme questo viaggio di trasformazione.",
+  },
+  "mobile-why-impact-title": {
+    en: "The Transformative Impact",
+    it: "L'Impatto Trasformativo",
+  },
+  "mobile-why-impact-narrative": {
+    en: "Custom mobile apps are not simply digital tools, but true business accelerators. They create deeper connections with customers, optimize internal processes and open new growth opportunities. It's an investment that pays off quickly, transforming your digital presence into a sustainable competitive advantage.",
+    it: "Le app mobile personalizzate non sono semplici strumenti digitali, ma veri e propri acceleratori di business. Creano connessioni più profonde con i clienti, ottimizzano i processi interni e aprono nuove opportunità di crescita. È un investimento che si ripaga rapidamente, trasformando la tua presenza digitale in un vantaggio competitivo sostenibile.",
+  },
+  "mobile-why-impact-1": {
+    en: "Sustainable Growth",
+    it: "Crescita Sostenibile",
+  },
+  "mobile-why-impact-1-desc": {
+    en: "Significant increase in sales and customer loyalty",
+    it: "Aumento significativo delle vendite e della fidelizzazione",
+  },
+  "mobile-why-impact-2": {
+    en: "Operational Efficiency",
+    it: "Efficienza Operativa",
+  },
+  "mobile-why-impact-2-desc": {
+    en: "Optimized processes and increased productivity",
+    it: "Processi ottimizzati e produttività aumentata",
+  },
+  "mobile-why-impact-3": {
+    en: "Competitive Advantage",
+    it: "Vantaggio Competitivo",
+  },
+  "mobile-why-impact-3-desc": {
+    en: "Differentiation in the digital market",
+    it: "Differenziazione nel mercato digitale",
+  },
+  "mobile-why-cta-button": {
+    en: "Get Started Now",
+    it: "Inizia Ora",
+  },
+
+  // Mobile AI-Powered Section
+  "mobile-ai-powered-section-title": {
+    en: "AI-Powered Mobile Apps",
+    it: "App Mobile con Intelligenza Artificiale",
+  },
+  "mobile-ai-powered-section-description": {
+    en: "Transform your mobile app with cutting-edge AI capabilities that deliver personalized experiences, intelligent automation, and predictive insights directly to your users' fingertips.",
+    it: "Trasforma la tua app mobile con capacità AI all'avanguardia che offrono esperienze personalizzate, automazione intelligente e insights predittivi direttamente a portata di mano dei tuoi utenti.",
+  },
+
+  // Mobile AI Features
+  "mobile-ai-feature-1-title": {
+    en: "Smart Personalization",
+    it: "Personalizzazione Intelligente",
+  },
+  "mobile-ai-feature-1-description": {
+    en: "AI analyzes user behavior to deliver personalized content, recommendations, and experiences that increase engagement and satisfaction by up to 300%.",
+    it: "L'AI analizza il comportamento degli utenti per offrire contenuti, raccomandazioni ed esperienze personalizzate che aumentano engagement e soddisfazione fino al 300%.",
+  },
+
+  "mobile-ai-feature-2-title": {
+    en: "Predictive Analytics",
+    it: "Analisi Predittiva",
+  },
+  "mobile-ai-feature-2-description": {
+    en: "Anticipate user needs and market trends with real-time data analysis, helping you make informed decisions and stay ahead of the competition.",
+    it: "Anticipa le esigenze degli utenti e le tendenze del mercato con analisi dei dati in tempo reale, aiutandoti a prendere decisioni informate e rimanere avanti alla concorrenza.",
+  },
+
+  "mobile-ai-feature-3-title": {
+    en: "Intelligent Chatbots",
+    it: "Chatbot Intelligenti",
+  },
+  "mobile-ai-feature-3-description": {
+    en: "24/7 customer support with AI chatbots that understand context, provide instant responses, and handle complex queries without human intervention.",
+    it: "Supporto clienti 24/7 con chatbot AI che comprendono il contesto, forniscono risposte istantanee e gestiscono query complesse senza intervento umano.",
+  },
+
+  "mobile-ai-feature-4-title": {
+    en: "Computer Vision",
+    it: "Computer Vision",
+  },
+  "mobile-ai-feature-4-description": {
+    en: "Enable users to scan documents, recognize objects, and process images directly in your app for instant information extraction and analysis.",
+    it: "Permetti agli utenti di scansionare documenti, riconoscere oggetti e processare immagini direttamente nella tua app per estrazione e analisi istantanea delle informazioni.",
+  },
+
+  "mobile-ai-feature-5-title": {
+    en: "Voice Recognition",
+    it: "Riconoscimento Vocale",
+  },
+  "mobile-ai-feature-5-description": {
+    en: "Natural language processing allows users to interact with your app through voice commands, making it more accessible and user-friendly.",
+    it: "Il processing del linguaggio naturale permette agli utenti di interagire con la tua app tramite comandi vocali, rendendola più accessibile e user-friendly.",
+  },
+
+  "mobile-ai-feature-6-title": {
+    en: "Smart Automation",
+    it: "Automazione Intelligente",
+  },
+  "mobile-ai-feature-6-description": {
+    en: "Automate repetitive tasks, optimize app performance, and provide intelligent suggestions that enhance user experience and productivity.",
+    it: "Automatizza compiti ripetitivi, ottimizza le performance dell'app e fornisci suggerimenti intelligenti che migliorano l'esperienza utente e la produttività.",
+  },
+
+  // Mobile AI Benefits
+  "mobile-ai-benefits-title": {
+    en: "Why AI-Powered Mobile Apps?",
+    it: "Perché App Mobile con AI?",
+  },
+  "mobile-ai-benefits-description": {
+    en: "AI integration in mobile apps provides unprecedented advantages that transform user experience and business outcomes",
+    it: "L'integrazione AI nelle app mobile fornisce vantaggi senza precedenti che trasformano l'esperienza utente e i risultati aziendali",
+  },
+
+  "mobile-ai-benefit-1-title": {
+    en: "Enhanced User Engagement",
+    it: "Engagement Utente Migliorato",
+  },
+  "mobile-ai-benefit-1-description": {
+    en: "AI-driven personalization increases user engagement by 200-300%, with features that adapt to individual preferences and behaviors.",
+    it: "La personalizzazione guidata dall'AI aumenta l'engagement degli utenti del 200-300%, con funzionalità che si adattano alle preferenze e comportamenti individuali.",
+  },
+
+  "mobile-ai-benefit-2-title": {
+    en: "Improved Customer Satisfaction",
+    it: "Soddisfazione Clienti Migliorata",
+  },
+  "mobile-ai-benefit-2-description": {
+    en: "Instant responses, personalized experiences, and intelligent assistance lead to higher customer satisfaction scores and loyalty.",
+    it: "Risposte istantanee, esperienze personalizzate e assistenza intelligente portano a punteggi di soddisfazione clienti più alti e maggiore fedeltà.",
+  },
+
+  "mobile-ai-benefit-3-title": {
+    en: "Increased Revenue",
+    it: "Ricavi Aumentati",
+  },
+  "mobile-ai-benefit-3-description": {
+    en: "AI-powered recommendations and predictive analytics can increase conversion rates by 25-35% and boost average order values.",
+    it: "Raccomandazioni guidate dall'AI e analisi predittive possono aumentare i tassi di conversione del 25-35% e incrementare i valori medi degli ordini.",
+  },
+
+  "mobile-ai-benefit-4-title": {
+    en: "Operational Efficiency",
+    it: "Efficienza Operativa",
+  },
+  "mobile-ai-benefit-4-description": {
+    en: "Automate customer support, reduce manual tasks, and optimize app performance, saving time and resources while improving service quality.",
+    it: "Automatizza il supporto clienti, riduci i compiti manuali e ottimizza le performance dell'app, risparmiando tempo e risorse migliorando la qualità del servizio.",
+  },
+
+  "mobile-ai-benefit-5-title": {
+    en: "Competitive Advantage",
+    it: "Vantaggio Competitivo",
+  },
+  "mobile-ai-benefit-5-description": {
+    en: "Stay ahead of competitors with cutting-edge AI features that differentiate your app and create unique value propositions for users.",
+    it: "Rimani avanti ai competitor con funzionalità AI all'avanguardia che differenziano la tua app e creano proposte di valore uniche per gli utenti.",
+  },
+
+  "mobile-ai-benefit-6-title": {
+    en: "Future-Proof Solution",
+    it: "Soluzione Future-Proof",
+  },
+  "mobile-ai-benefit-6-description": {
+    en: "AI capabilities evolve and improve over time, ensuring your app remains relevant and competitive as technology advances.",
+    it: "Le capacità AI si evolvono e migliorano nel tempo, garantendo che la tua app rimanga rilevante e competitiva con l'avanzare della tecnologia.",
+  },
+
+  // Mobile AI Use Cases
+  "mobile-ai-use-cases-title": {
+    en: "AI in Action: Real-World Applications",
+    it: "AI in Azione: Applicazioni nel Mondo Reale",
+  },
+  "mobile-ai-use-cases-description": {
+    en: "Discover how AI transforms mobile apps across different industries and use cases",
+    it: "Scopri come l'AI trasforma le app mobile in diversi settori e casi d'uso",
+  },
+
+  "mobile-ai-use-case-1-title": {
+    en: "E-commerce & Retail",
+    it: "E-commerce e Retail",
+  },
+  "mobile-ai-use-case-1-description": {
+    en: "Personalized product recommendations, visual search, smart inventory management, and predictive pricing strategies.",
+    it: "Raccomandazioni prodotti personalizzate, ricerca visiva, gestione intelligente dell'inventario e strategie di prezzo predittive.",
+  },
+
+  "mobile-ai-use-case-2-title": {
+    en: "Healthcare & Wellness",
+    it: "Salute e Benessere",
+  },
+  "mobile-ai-use-case-2-description": {
+    en: "Symptom analysis, medication reminders, health monitoring, and personalized wellness recommendations.",
+    it: "Analisi dei sintomi, promemoria per i farmaci, monitoraggio della salute e raccomandazioni di benessere personalizzate.",
+  },
+
+  "mobile-ai-use-case-3-title": {
+    en: "Finance & Banking",
+    it: "Finanza e Banking",
+  },
+  "mobile-ai-use-case-3-description": {
+    en: "Fraud detection, personalized financial advice, automated trading, and intelligent customer service.",
+    it: "Rilevamento frodi, consulenza finanziaria personalizzata, trading automatizzato e servizio clienti intelligente.",
+  },
+
+  "mobile-ai-use-case-4-title": {
+    en: "Education & Learning",
+    it: "Educazione e Apprendimento",
+  },
+  "mobile-ai-use-case-4-description": {
+    en: "Adaptive learning paths, intelligent tutoring, progress tracking, and personalized study recommendations.",
+    it: "Percorsi di apprendimento adattivi, tutoraggio intelligente, monitoraggio dei progressi e raccomandazioni di studio personalizzate.",
+  },
+
+  "mobile-ai-use-case-5-title": {
+    en: "Travel & Hospitality",
+    it: "Viaggi e Ospitalità",
+  },
+  "mobile-ai-use-case-5-description": {
+    en: "Smart travel planning, personalized recommendations, real-time translation, and intelligent booking assistance.",
+    it: "Pianificazione viaggi intelligente, raccomandazioni personalizzate, traduzione in tempo reale e assistenza prenotazioni intelligente.",
+  },
+
+  "mobile-ai-use-case-6-title": {
+    en: "Entertainment & Media",
+    it: "Intrattenimento e Media",
+  },
+  "mobile-ai-use-case-6-description": {
+    en: "Content personalization, recommendation engines, automated content creation, and intelligent content curation.",
+    it: "Personalizzazione dei contenuti, motori di raccomandazione, creazione contenuti automatizzata e curatela contenuti intelligente.",
+  },
+
+  // Mobile AI CTA
+  "mobile-ai-cta-title": {
+    en: "Ready to Build Your AI-Powered Mobile App?",
+    it: "Pronto a Costruire la Tua App Mobile con AI?",
+  },
+  "mobile-ai-cta-description": {
+    en: "Transform your mobile presence with cutting-edge AI capabilities. Contact us to discuss how we can integrate intelligent features into your app.",
+    it: "Trasforma la tua presenza mobile con capacità AI all'avanguardia. Contattaci per discutere come possiamo integrare funzionalità intelligenti nella tua app.",
+  },
+  "mobile-ai-cta-button": {
+    en: "Start Your AI Journey",
+    it: "Inizia il Tuo Viaggio AI",
+  },
 };

@@ -3,92 +3,9 @@ import { Icon } from "@iconify/react";
 import { useLanguage } from "../../../context/LanguageContext";
 import { Iphone15Pro } from "../../../Components/magicui/iphone-15-pro";
 import "keen-slider/keen-slider.min.css";
-import { useKeenSlider } from "keen-slider/react";
-import { useEffect } from "react";
-
-const fadeInUp = {
-  initial: { opacity: 0, y: 30 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.6, ease: "easeOut" },
-};
-
-const stagger = {
-  animate: {
-    transition: {
-      staggerChildren: 0.15,
-    },
-  },
-};
-
-const scaleIn = {
-  initial: { opacity: 0, scale: 0.95 },
-  animate: { opacity: 1, scale: 1 },
-  transition: { duration: 0.5, ease: "easeOut" },
-};
-
-const iconAnimation = {
-  initial: { scale: 0, rotate: -180 },
-  animate: { scale: 1, rotate: 0 },
-  transition: { duration: 0.5, ease: "backOut" },
-};
-
-const titleAnimation = {
-  initial: { opacity: 0, x: -20 },
-  animate: { opacity: 1, x: 0 },
-  transition: { duration: 0.5, ease: "easeOut" },
-};
-
-const descriptionAnimation = {
-  initial: { opacity: 0, y: 10 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.5, delay: 0.2, ease: "easeOut" },
-};
-
-const phoneAnimation = {
-  initial: { opacity: 0, y: 50 },
-  animate: { opacity: 1, y: 0 },
-  transition: {
-    duration: 0.8,
-    ease: [0.6, -0.05, 0.01, 0.99],
-    delay: 0.2,
-  },
-};
 
 export default function Benefits() {
   const { t } = useLanguage();
-
-  const benefits = [
-    {
-      icon: "material-symbols:rocket-launch",
-      title: t("mobile-benefit-1") || "App Professionale",
-      description:
-        t("mobile-benefit-1-desc") || "Un'app che fa crescere il tuo business",
-    },
-    {
-      icon: "material-symbols:group",
-      title: t("mobile-benefit-2") || "Clienti Sempre Connessi",
-      description:
-        t("mobile-benefit-2-desc") || "I tuoi clienti ti hanno sempre in tasca",
-    },
-    {
-      icon: "material-symbols:notifications-active",
-      title: t("mobile-benefit-3") || "Notifiche Immediate",
-      description:
-        t("mobile-benefit-3-desc") || "Comunica subito con i tuoi clienti",
-    },
-    {
-      icon: "material-symbols:offline-pin",
-      title: t("mobile-benefit-4") || "Funziona Offline",
-      description:
-        t("mobile-benefit-4-desc") || "Usa l'app anche senza internet",
-    },
-    {
-      icon: "material-symbols:integration-instructions",
-      title: t("mobile-benefit-5") || "Si Integra Facilmente",
-      description:
-        t("mobile-benefit-5-desc") || "Collega l'app ai tuoi sistemi esistenti",
-    },
-  ];
 
   const technologies = [
     { icon: "devicon:swift", label: "Swift", color: "text-orange-500" },
@@ -104,11 +21,10 @@ export default function Benefits() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-primary dark:text-primary mb-4">
-            {t("mobile-benefits-title") || "Tecnologie che utilizziamo"}
+            {t("mobile-benefits-title")}
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300">
-            {t("mobile-benefits-description") ||
-              "Le migliori tecnologie per sviluppare la tua app mobile"}
+            {t("mobile-benefits-description")}
           </p>
         </div>
 

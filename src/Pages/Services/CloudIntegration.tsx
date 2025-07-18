@@ -1,7 +1,5 @@
 import SEO from "../../Components/SEO";
 import { useLanguage } from "../../context/LanguageContext";
-import { useNavigate } from "react-router-dom";
-import { Button } from "@heroui/react";
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
 import ServiceHero from "../../Components/ServiceHero";
@@ -10,11 +8,6 @@ import ServiceCTA from "../../Components/ServiceCTA";
 
 export default function CloudIntegration() {
   const { t, language } = useLanguage();
-  const navigate = useNavigate();
-
-  const handleContactClick = () => {
-    navigate(`/${language}/contact`);
-  };
 
   const benefits = [
     {
