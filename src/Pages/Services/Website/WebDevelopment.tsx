@@ -31,7 +31,7 @@ export default function WebDevelopment() {
       <WebsiteTechnologies />
       <ServiceFAQ
         title={t("faq-title")}
-        subtitle={t("faq-web-subtitle")}
+        subtitle={t("web-faq-subtitle")}
         faqs={[
           {
             question: t("web-faq-1-question"),
