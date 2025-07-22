@@ -156,7 +156,7 @@ export default function WhyUs() {
                 src="/imgs/Home/why-1.webp"
                 className="h-80 object-cover object-left"
               />
-              <motion.div variants={contentVariants} className="p-10 pt-4">
+              <motion.div variants={contentVariants} className="p-10">
                 <h3 className="text-sm/4 font-semibold text-gray-300">
                   {t("performance-title")}
                 </h3>
@@ -218,7 +218,7 @@ export default function WhyUs() {
                   </div>
                 </div>
               </motion.div>
-              <motion.div variants={contentVariants} className="p-10 pt-4">
+              <motion.div variants={contentVariants} className="p-10">
                 <h3 className="text-sm/4 font-semibold text-gray-300">
                   {t("collaboration-title")}
                 </h3>
@@ -272,7 +272,7 @@ export default function WhyUs() {
                 </ScrollingBanner>
                 <div className="absolute inset-0 bg-primary/20" />
               </motion.div>
-              <motion.div variants={contentVariants} className="p-10 pt-4">
+              <motion.div variants={contentVariants} className="p-10">
                 <h3 className="text-sm/4 font-semibold text-gray-300">
                   {t("team-title")}
                 </h3>
@@ -433,7 +433,7 @@ export default function WhyUs() {
                   </div>
                 </div>
               </motion.div>
-              <motion.div variants={contentVariants} className="p-10 pt-4">
+              <motion.div variants={contentVariants} className="p-10">
                 <h3 className="text-sm/4 font-semibold text-gray-300">
                   {t("growth-title")}
                 </h3>
