@@ -220,6 +220,186 @@ export default function DevOps() {
         </div>
       </section>
 
+      {/* Comparison Section */}
+      <section className="bg-white py-20">
+        <div className="mx-auto max-w-5xl px-4">
+          <h2 className="text-4xl font-extrabold text-center mb-4 tracking-tight">
+            {t("devops-comparison-title")}
+          </h2>
+          <p className="text-center text-gray-600 mb-12 text-lg">
+            {t("devops-comparison-subtitle")}
+          </p>
+          <div className="flex flex-col md:flex-row gap-8 justify-center items-stretch">
+            {/* Nostro approccio */}
+            <div className="relative flex-1 bg-white border-2 border-black rounded-2xl shadow-xl p-8 flex flex-col items-center text-center transition hover:scale-105">
+              <span className="absolute top-4 right-4 bg-black text-white text-xs font-bold px-3 py-1 rounded-full">
+                Top
+              </span>
+              <div className="mb-4">
+                <span className="inline-block bg-black text-white rounded-full p-3">
+                  {/* Trofeo */}
+                  <svg width="28" height="28" fill="none" viewBox="0 0 24 24">
+                    <path
+                      d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"
+                      stroke="#fff"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"
+                      stroke="#fff"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M4 22h16"
+                      stroke="#fff"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M10 14.66V22h4v-7.34"
+                      stroke="#fff"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M18 2H6v5a6 6 0 0 0 12 0V2Z"
+                      stroke="#fff"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <h3 className="text-2xl font-bold mb-2">
+                {t("devops-comparison-our-approach")}
+              </h3>
+              <ul className="text-gray-800 text-base space-y-3 mt-4 text-left">
+                <li>
+                  <b>{t("devops-comparison-automation")}</b>:{" "}
+                  {t("devops-comparison-automation-our")}
+                </li>
+                <li>
+                  <b>{t("devops-comparison-deployment")}</b>:{" "}
+                  {t("devops-comparison-deployment-our")}
+                </li>
+                <li>
+                  <b>{t("devops-comparison-monitoring")}</b>:{" "}
+                  {t("devops-comparison-monitoring-our")}
+                </li>
+                <li>
+                  <b>{t("devops-comparison-recovery")}</b>:{" "}
+                  {t("devops-comparison-recovery-our")}
+                </li>
+              </ul>
+            </div>
+            {/* Tradizionale */}
+            <div className="flex-1 bg-gray-50 border border-gray-300 rounded-2xl shadow p-8 flex flex-col items-center text-center transition hover:scale-105">
+              <div className="mb-4">
+                <span className="inline-block bg-gray-300 text-gray-700 rounded-full p-3">
+                  {/* Lumaca - Lentezza */}
+                  <svg width="28" height="28" fill="none" viewBox="0 0 24 24">
+                    <path
+                      d="M12 2a10 10 0 0 1 10 10"
+                      stroke="#555"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeDasharray="2 2"
+                    />
+                    <path
+                      d="M12 2a10 10 0 0 0-10 10"
+                      stroke="#555"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="3"
+                      stroke="#555"
+                      strokeWidth="2"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <h3 className="text-xl font-bold mb-2">
+                {t("devops-comparison-traditional")}
+              </h3>
+              <ul className="text-gray-700 text-base space-y-3 mt-4 text-left">
+                <li>
+                  <b>{t("devops-comparison-automation")}</b>:{" "}
+                  {t("devops-comparison-automation-traditional")}
+                </li>
+                <li>
+                  <b>{t("devops-comparison-deployment")}</b>:{" "}
+                  {t("devops-comparison-deployment-traditional")}
+                </li>
+                <li>
+                  <b>{t("devops-comparison-monitoring")}</b>:{" "}
+                  {t("devops-comparison-monitoring-traditional")}
+                </li>
+                <li>
+                  <b>{t("devops-comparison-recovery")}</b>:{" "}
+                  {t("devops-comparison-recovery-traditional")}
+                </li>
+              </ul>
+            </div>
+            {/* Altri provider */}
+            <div className="flex-1 bg-gray-50 border border-gray-300 rounded-2xl shadow p-8 flex flex-col items-center text-center transition hover:scale-105">
+              <div className="mb-4">
+                <span className="inline-block bg-gray-200 text-gray-700 rounded-full p-3">
+                  {/* Orologio - Lentezza */}
+                  <svg width="28" height="28" fill="none" viewBox="0 0 24 24">
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="#888"
+                      strokeWidth="2"
+                    />
+                    <path
+                      d="M12 7v5l3 3"
+                      stroke="#888"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <h3 className="text-xl font-bold mb-2">
+                {t("devops-comparison-other-providers")}
+              </h3>
+              <ul className="text-gray-700 text-base space-y-3 mt-4 text-left">
+                <li>
+                  <b>{t("devops-comparison-automation")}</b>:{" "}
+                  {t("devops-comparison-automation-other")}
+                </li>
+                <li>
+                  <b>{t("devops-comparison-deployment")}</b>:{" "}
+                  {t("devops-comparison-deployment-other")}
+                </li>
+                <li>
+                  <b>{t("devops-comparison-monitoring")}</b>:{" "}
+                  {t("devops-comparison-monitoring-other")}
+                </li>
+                <li>
+                  <b>{t("devops-comparison-recovery")}</b>:{" "}
+                  {t("devops-comparison-recovery-other")}
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <ServiceFAQ
         title={t("devops-faq-title")}

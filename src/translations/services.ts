@@ -529,36 +529,6 @@ export const servicesTranslations: Translations = {
     it: "Sì, la migrazione cloud tipicamente riduce i costi infrastrutturali del 20-40% migliorando performance e scalabilità.",
   },
 
-  // --- DEVOPS ---
-  "devops-meta-title": {
-    en: "Space Design Italia - DevOps & CI/CD",
-    it: "Space Design Italia - DevOps & CI/CD",
-  },
-  "devops-meta-description": {
-    en: "Professional DevOps and CI/CD services. Automation, deployment pipelines, monitoring and infrastructure optimization.",
-    it: "Servizi DevOps e CI/CD professionali. Automazione, pipeline di deployment, monitoraggio e ottimizzazione infrastrutture.",
-  },
-  "devops-hero-title": {
-    en: "Accelerate your development",
-    it: "Accelera il tuo sviluppo",
-  },
-  "devops-hero-description": {
-    en: "Accelerate your development with modern DevOps practices. Automated pipelines, continuous integration, infrastructure as code and monitoring for faster and more reliable deployments.",
-    it: "Accelera il tuo sviluppo con pratiche DevOps moderne. Pipeline automatizzate, integrazione continua, infrastructure as code e monitoraggio per deployment più veloci e affidabili.",
-  },
-  "devops-request-consultation": {
-    en: "Request Consultation",
-    it: "Richiedi Consulenza",
-  },
-  "devops-services-title": {
-    en: "Our DevOps Services",
-    it: "I Nostri Servizi DevOps",
-  },
-  "devops-services-description": {
-    en: "Complete DevOps solutions to accelerate your development and improve the reliability of your applications.",
-    it: "Soluzioni DevOps complete per accelerare il tuo sviluppo e migliorare l'affidabilità delle tue applicazioni.",
-  },
-
   // DevOps Services Details
   "devops-cicd": {
     en: "CI/CD Pipeline",
@@ -713,12 +683,6 @@ export const servicesTranslations: Translations = {
     it: "Sì, forniamo formazione completa su strumenti DevOps, best practices e metodologie per assicurare che il vostro team possa mantenere e scalare l'infrastruttura.",
   },
 
-  "devops-cta-button": {
-    en: "Start Now",
-    it: "Inizia Ora",
-  },
-
-  // DevOps missing translations
   "devops-features-title": {
     en: "Transform your software development",
     it: "Trasforma il tuo sviluppo software",
@@ -734,10 +698,6 @@ export const servicesTranslations: Translations = {
   "devops-iac-title": {
     en: "Infrastructure as Code",
     it: "Infrastructure as Code",
-  },
-  "devops-iac-description": {
-    en: "Manage infrastructure as code with Terraform, Ansible and CloudFormation. Automated versioning, testing and deployment of infrastructure.",
-    it: "Gestisci l'infrastruttura come codice con Terraform, Ansible e CloudFormation. Versioning, testing e deployment automatizzati dell'infrastruttura.",
   },
   "devops-technologies-title": {
     en: "Technologies and tools",
@@ -1006,5 +966,263 @@ export const servicesTranslations: Translations = {
   "api-development-cta-button": {
     en: "Start your API project",
     it: "Inizia il tuo progetto API",
+  },
+
+  // Comparison Section - Cloud Integration
+  "cloud-integration-comparison-title": {
+    en: "Why choose our Cloud Integration over alternatives?",
+    it: "Perché scegliere la nostra Integrazione Cloud rispetto alle alternative?",
+  },
+  "cloud-integration-comparison-subtitle": {
+    en: "See how our approach compares to traditional solutions and other providers",
+    it: "Scopri come il nostro approccio si confronta con le soluzioni tradizionali e altri provider",
+  },
+  "cloud-integration-comparison-our-approach": {
+    en: "Our Approach",
+    it: "Il Nostro Approccio",
+  },
+  "cloud-integration-comparison-traditional": {
+    en: "Traditional Solutions",
+    it: "Soluzioni Tradizionali",
+  },
+  "cloud-integration-comparison-other-providers": {
+    en: "Other Providers",
+    it: "Altri Provider",
+  },
+  "cloud-integration-comparison-migration": {
+    en: "Migration Strategy",
+    it: "Strategia di Migrazione",
+  },
+  "cloud-integration-comparison-migration-our": {
+    en: "Phased migration with zero downtime and continuous monitoring",
+    it: "Migrazione graduale con zero downtime e monitoraggio continuo",
+  },
+  "cloud-integration-comparison-migration-traditional": {
+    en: "Big-bang migration with high risk and potential downtime",
+    it: "Migrazione big-bang con alto rischio e potenziale downtime",
+  },
+  "cloud-integration-comparison-migration-other": {
+    en: "Standard migration with limited customization",
+    it: "Migrazione standard con personalizzazione limitata",
+  },
+  "cloud-integration-comparison-cost": {
+    en: "Cost Optimization",
+    it: "Ottimizzazione dei Costi",
+  },
+  "cloud-integration-comparison-cost-our": {
+    en: "Pay-as-you-use with automatic scaling and cost monitoring",
+    it: "Pay-as-you-use con scaling automatico e monitoraggio costi",
+  },
+  "cloud-integration-comparison-cost-traditional": {
+    en: "Fixed infrastructure costs regardless of usage",
+    it: "Costi infrastruttura fissi indipendentemente dall'utilizzo",
+  },
+  "cloud-integration-comparison-cost-other": {
+    en: "Basic cost optimization without advanced monitoring",
+    it: "Ottimizzazione costi base senza monitoraggio avanzato",
+  },
+  "cloud-integration-comparison-security": {
+    en: "Security & Compliance",
+    it: "Sicurezza e Compliance",
+  },
+  "cloud-integration-comparison-security-our": {
+    en: "Enterprise-grade security with compliance automation",
+    it: "Sicurezza enterprise con automazione compliance",
+  },
+  "cloud-integration-comparison-security-traditional": {
+    en: "Manual security management with compliance gaps",
+    it: "Gestione sicurezza manuale con gap di compliance",
+  },
+  "cloud-integration-comparison-security-other": {
+    en: "Standard security without compliance automation",
+    it: "Sicurezza standard senza automazione compliance",
+  },
+  "cloud-integration-comparison-support": {
+    en: "Support & Maintenance",
+    it: "Supporto e Manutenzione",
+  },
+  "cloud-integration-comparison-support-our": {
+    en: "24/7 proactive support with SLA guarantees",
+    it: "Supporto proattivo 24/7 con garanzie SLA",
+  },
+  "cloud-integration-comparison-support-traditional": {
+    en: "Reactive support with long response times",
+    it: "Supporto reattivo con tempi di risposta lunghi",
+  },
+  "cloud-integration-comparison-support-other": {
+    en: "Business hours support with limited SLA",
+    it: "Supporto orari lavorativi con SLA limitato",
+  },
+
+  // Comparison Section - API Development
+  "api-development-comparison-title": {
+    en: "Why choose our API Development over alternatives?",
+    it: "Perché scegliere il nostro Sviluppo API rispetto alle alternative?",
+  },
+  "api-development-comparison-subtitle": {
+    en: "See how our approach compares to traditional development and other providers",
+    it: "Scopri come il nostro approccio si confronta con lo sviluppo tradizionale e altri provider",
+  },
+  "api-development-comparison-our-approach": {
+    en: "Our Approach",
+    it: "Il Nostro Approccio",
+  },
+  "api-development-comparison-traditional": {
+    en: "Traditional Development",
+    it: "Sviluppo Tradizionale",
+  },
+  "api-development-comparison-other-providers": {
+    en: "Other Providers",
+    it: "Altri Provider",
+  },
+  "api-development-comparison-development": {
+    en: "Development Speed",
+    it: "Velocità di Sviluppo",
+  },
+  "api-development-comparison-development-our": {
+    en: "Modern frameworks and tools for 3x faster development",
+    it: "Framework e strumenti moderni per sviluppo 3x più veloce",
+  },
+  "api-development-comparison-development-traditional": {
+    en: "Manual coding with longer development cycles",
+    it: "Coding manuale con cicli di sviluppo più lunghi",
+  },
+  "api-development-comparison-development-other": {
+    en: "Standard tools with moderate development speed",
+    it: "Strumenti standard con velocità di sviluppo moderata",
+  },
+  "api-development-comparison-documentation": {
+    en: "Documentation Quality",
+    it: "Qualità Documentazione",
+  },
+  "api-development-comparison-documentation-our": {
+    en: "Auto-generated docs with interactive testing",
+    it: "Documentazione auto-generata con testing interattivo",
+  },
+  "api-development-comparison-documentation-traditional": {
+    en: "Manual documentation often outdated",
+    it: "Documentazione manuale spesso obsoleta",
+  },
+  "api-development-comparison-documentation-other": {
+    en: "Basic documentation without interactive features",
+    it: "Documentazione base senza funzionalità interattive",
+  },
+  "api-development-comparison-testing": {
+    en: "Testing Coverage",
+    it: "Copertura Testing",
+  },
+  "api-development-comparison-testing-our": {
+    en: "95%+ test coverage with automated CI/CD",
+    it: "95%+ copertura test con CI/CD automatizzato",
+  },
+  "api-development-comparison-testing-traditional": {
+    en: "Limited testing with manual processes",
+    it: "Testing limitato con processi manuali",
+  },
+  "api-development-comparison-testing-other": {
+    en: "Standard testing without full automation",
+    it: "Testing standard senza automazione completa",
+  },
+  "api-development-comparison-maintenance": {
+    en: "Maintenance & Updates",
+    it: "Manutenzione e Aggiornamenti",
+  },
+  "api-development-comparison-maintenance-our": {
+    en: "Automated updates with backward compatibility",
+    it: "Aggiornamenti automatizzati con compatibilità retroattiva",
+  },
+  "api-development-comparison-maintenance-traditional": {
+    en: "Manual updates with potential breaking changes",
+    it: "Aggiornamenti manuali con potenziali breaking changes",
+  },
+  "api-development-comparison-maintenance-other": {
+    en: "Scheduled updates with limited automation",
+    it: "Aggiornamenti programmati con automazione limitata",
+  },
+
+  // Comparison Section - DevOps
+  "devops-comparison-title": {
+    en: "Why choose our DevOps over alternatives?",
+    it: "Perché scegliere il nostro DevOps rispetto alle alternative?",
+  },
+  "devops-comparison-subtitle": {
+    en: "See how our approach compares to traditional operations and other providers",
+    it: "Scopri come il nostro approccio si confronta con le operazioni tradizionali e altri provider",
+  },
+  "devops-comparison-our-approach": {
+    en: "Our Approach",
+    it: "Il Nostro Approccio",
+  },
+  "devops-comparison-traditional": {
+    en: "Traditional Operations",
+    it: "Operazioni Tradizionali",
+  },
+  "devops-comparison-other-providers": {
+    en: "Other Providers",
+    it: "Altri Provider",
+  },
+  "devops-comparison-automation": {
+    en: "Automation Level",
+    it: "Livello di Automazione",
+  },
+  "devops-comparison-automation-our": {
+    en: "95%+ automation with self-healing systems",
+    it: "95%+ automazione con sistemi self-healing",
+  },
+  "devops-comparison-automation-traditional": {
+    en: "Manual processes with limited automation",
+    it: "Processi manuali con automazione limitata",
+  },
+  "devops-comparison-automation-other": {
+    en: "Partial automation with manual oversight",
+    it: "Automazione parziale con supervisione manuale",
+  },
+  "devops-comparison-deployment": {
+    en: "Deployment Frequency",
+    it: "Frequenza di Deployment",
+  },
+  "devops-comparison-deployment-our": {
+    en: "Multiple deployments per day with zero downtime",
+    it: "Multipli deployment al giorno con zero downtime",
+  },
+  "devops-comparison-deployment-traditional": {
+    en: "Monthly deployments with scheduled downtime",
+    it: "Deployment mensili con downtime programmato",
+  },
+  "devops-comparison-deployment-other": {
+    en: "Weekly deployments with minimal downtime",
+    it: "Deployment settimanali con downtime minimo",
+  },
+  "devops-comparison-monitoring": {
+    en: "Monitoring & Alerting",
+    it: "Monitoraggio e Alerting",
+  },
+  "devops-comparison-monitoring-our": {
+    en: "Real-time monitoring with predictive alerts",
+    it: "Monitoraggio real-time con alert predittivi",
+  },
+  "devops-comparison-monitoring-traditional": {
+    en: "Basic monitoring with reactive alerts",
+    it: "Monitoraggio base con alert reattivi",
+  },
+  "devops-comparison-monitoring-other": {
+    en: "Standard monitoring with scheduled alerts",
+    it: "Monitoraggio standard con alert programmati",
+  },
+  "devops-comparison-recovery": {
+    en: "Recovery Time",
+    it: "Tempo di Recupero",
+  },
+  "devops-comparison-recovery-our": {
+    en: "Minutes with automated rollback and recovery",
+    it: "Minuti con rollback e recupero automatizzati",
+  },
+  "devops-comparison-recovery-traditional": {
+    en: "Hours to days with manual intervention",
+    it: "Ore o giorni con intervento manuale",
+  },
+  "devops-comparison-recovery-other": {
+    en: "Hours with semi-automated recovery",
+    it: "Ore con recupero semi-automatizzato",
   },
 };
