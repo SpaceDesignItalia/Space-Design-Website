@@ -46,10 +46,11 @@ export default function DevOps() {
           >
             <motion.h1
               variants={fadeInUp}
-              className="text-5xl sm:text-6xl md:text-7xl font-bold leading-[1.1] tracking-tight mb-8"
+              className="text-5xl sm:text-6xl md:text-7xl font-semibold leading-[1.1] tracking-tight mb-8"
             >
-              <span className="bg-gradient-to-r from-black to-gray-800 bg-clip-text text-transparent dark:from-white dark:to-gray-300">
-                DevOps
+              <span className="bg-gradient-to-r from-primary-600 to-primary-800 bg-clip-text text-transparent dark:from-primary-400 dark:to-primary-200">
+                DevOps & CI/CD: automazione e velocità per il tuo sviluppo
+                software
               </span>
             </motion.h1>
 
@@ -235,47 +236,17 @@ export default function DevOps() {
               <span className="absolute top-4 right-4 bg-black text-white text-xs font-bold px-3 py-1 rounded-full">
                 Top
               </span>
-              <div className="mb-4">
-                <span className="inline-block bg-black text-white rounded-full p-3">
-                  {/* Trofeo */}
-                  <svg width="28" height="28" fill="none" viewBox="0 0 24 24">
-                    <path
-                      d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"
-                      stroke="#fff"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"
-                      stroke="#fff"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M4 22h16"
-                      stroke="#fff"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M10 14.66V22h4v-7.34"
-                      stroke="#fff"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M18 2H6v5a6 6 0 0 0 12 0V2Z"
-                      stroke="#fff"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </span>
+              <div className="mb-4 flex justify-center">
+                {/* 5 stelle piene rounded */}
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <Icon
+                    key={i}
+                    icon="ic:round-star"
+                    width={28}
+                    height={28}
+                    className="text-black dark:text-white mx-0.5"
+                  />
+                ))}
               </div>
               <h3 className="text-2xl font-bold mb-2">
                 {t("devops-comparison-our-approach")}
@@ -299,80 +270,19 @@ export default function DevOps() {
                 </li>
               </ul>
             </div>
-            {/* Tradizionale */}
+            {/* Altri provider (ora al centro, 3 stelle) */}
             <div className="flex-1 bg-gray-50 border border-gray-300 rounded-2xl shadow p-8 flex flex-col items-center text-center transition hover:scale-105">
-              <div className="mb-4">
-                <span className="inline-block bg-gray-300 text-gray-700 rounded-full p-3">
-                  {/* Lumaca - Lentezza */}
-                  <svg width="28" height="28" fill="none" viewBox="0 0 24 24">
-                    <path
-                      d="M12 2a10 10 0 0 1 10 10"
-                      stroke="#555"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeDasharray="2 2"
-                    />
-                    <path
-                      d="M12 2a10 10 0 0 0-10 10"
-                      stroke="#555"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <circle
-                      cx="12"
-                      cy="12"
-                      r="3"
-                      stroke="#555"
-                      strokeWidth="2"
-                    />
-                  </svg>
-                </span>
-              </div>
-              <h3 className="text-xl font-bold mb-2">
-                {t("devops-comparison-traditional")}
-              </h3>
-              <ul className="text-gray-700 text-base space-y-3 mt-4 text-left">
-                <li>
-                  <b>{t("devops-comparison-automation")}</b>:{" "}
-                  {t("devops-comparison-automation-traditional")}
-                </li>
-                <li>
-                  <b>{t("devops-comparison-deployment")}</b>:{" "}
-                  {t("devops-comparison-deployment-traditional")}
-                </li>
-                <li>
-                  <b>{t("devops-comparison-monitoring")}</b>:{" "}
-                  {t("devops-comparison-monitoring-traditional")}
-                </li>
-                <li>
-                  <b>{t("devops-comparison-recovery")}</b>:{" "}
-                  {t("devops-comparison-recovery-traditional")}
-                </li>
-              </ul>
-            </div>
-            {/* Altri provider */}
-            <div className="flex-1 bg-gray-50 border border-gray-300 rounded-2xl shadow p-8 flex flex-col items-center text-center transition hover:scale-105">
-              <div className="mb-4">
-                <span className="inline-block bg-gray-200 text-gray-700 rounded-full p-3">
-                  {/* Orologio - Lentezza */}
-                  <svg width="28" height="28" fill="none" viewBox="0 0 24 24">
-                    <circle
-                      cx="12"
-                      cy="12"
-                      r="10"
-                      stroke="#888"
-                      strokeWidth="2"
-                    />
-                    <path
-                      d="M12 7v5l3 3"
-                      stroke="#888"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                    />
-                  </svg>
-                </span>
+              <div className="mb-4 flex justify-center">
+                {/* 3 stelle piene rounded */}
+                {Array.from({ length: 3 }).map((_, i) => (
+                  <Icon
+                    key={i}
+                    icon="ic:round-star"
+                    width={28}
+                    height={28}
+                    className="text-black dark:text-white mx-0.5"
+                  />
+                ))}
               </div>
               <h3 className="text-xl font-bold mb-2">
                 {t("devops-comparison-other-providers")}
@@ -393,6 +303,42 @@ export default function DevOps() {
                 <li>
                   <b>{t("devops-comparison-recovery")}</b>:{" "}
                   {t("devops-comparison-recovery-other")}
+                </li>
+              </ul>
+            </div>
+            {/* Operazioni Tradizionali (ora a destra, 2 stelle) */}
+            <div className="flex-1 bg-gray-50 border border-gray-300 rounded-2xl shadow p-8 flex flex-col items-center text-center transition hover:scale-105">
+              <div className="mb-4 flex justify-center">
+                {/* 2 stelle piene rounded */}
+                {Array.from({ length: 2 }).map((_, i) => (
+                  <Icon
+                    key={i}
+                    icon="ic:round-star"
+                    width={28}
+                    height={28}
+                    className="text-black dark:text-white mx-0.5"
+                  />
+                ))}
+              </div>
+              <h3 className="text-xl font-bold mb-2">
+                {t("devops-comparison-traditional")}
+              </h3>
+              <ul className="text-gray-700 text-base space-y-3 mt-4 text-left">
+                <li>
+                  <b>{t("devops-comparison-automation")}</b>:{" "}
+                  {t("devops-comparison-automation-traditional")}
+                </li>
+                <li>
+                  <b>{t("devops-comparison-deployment")}</b>:{" "}
+                  {t("devops-comparison-deployment-traditional")}
+                </li>
+                <li>
+                  <b>{t("devops-comparison-monitoring")}</b>:{" "}
+                  {t("devops-comparison-monitoring-traditional")}
+                </li>
+                <li>
+                  <b>{t("devops-comparison-recovery")}</b>:{" "}
+                  {t("devops-comparison-recovery-traditional")}
                 </li>
               </ul>
             </div>
