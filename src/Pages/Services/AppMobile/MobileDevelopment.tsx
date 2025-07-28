@@ -1,16 +1,11 @@
 import SEO from "../../../Components/SEO";
 import { useLanguage } from "../../../context/LanguageContext";
 import CTA from "../../../Components/Layout/CTA";
-import ServiceHero from "../../../Components/ServiceHero";
+import AppHero from "./AppHero";
 import ServiceFAQ from "../../../Components/FAQ/ServiceFAQ";
 import Benefits from "./Benefits";
-import MobileWhy from "./MobileWhy";
 import MobileTechnologies from "./MobileTechnologies";
 import MobileAiPowered from "./MobileAiPowered";
-import MobileAiBenefits from "./MobileAiBenefits";
-import MobileAiUseCases from "./MobileAiUseCases";
-import MobileAiStats from "./MobileAiStats";
-import MobileAiCTA from "./MobileAiCTA";
 
 export default function MobileDevelopment() {
   const { t, language } = useLanguage();
@@ -39,24 +34,8 @@ export default function MobileDevelopment() {
       <div className="min-h-screen bg-white dark:bg-gray-900 hero-section">
         {/* Hero Section */}
 
-        <ServiceHero
-          title={
-            t("mobile-hero-title") ||
-            "La tua app mobile rivoluzionaria inizia qui"
-          }
-          description={
-            t("mobile-hero-description") ||
-            "Domina gli app store con un'esperienza mobile all'avanguardia che gli utenti ameranno. Nativa o cross-platform, iOS o Android - consegniamo eccellenza che si distingue"
-          }
-          buttonText={t("get-quote") || "Richiedi Preventivo"}
-        />
-
-        <MobileWhy />
+        <AppHero />
         <MobileAiPowered />
-        <MobileAiBenefits />
-        <MobileAiStats />
-        <MobileAiUseCases />
-        <MobileAiCTA />
 
         <Benefits />
         <MobileTechnologies />
