@@ -63,60 +63,44 @@ export const mobileDevelopmentTranslations: Translations = {
     it: "Tecnologie che Utilizziamo",
   },
   "mobile-benefits-title": {
-    en: "Transform Your Business with Mobile Apps",
-    it: "Trasforma il Tuo Business con App Mobile",
+    en: "Benefits of a mobile app for Your Business",
+    it: "Benefici di un'app mobile per il tuo business",
   },
   "mobile-benefits-description": {
-    en: "Discover how our mobile solutions deliver measurable results and create lasting competitive advantages for your business",
-    it: "Scopri come le nostre soluzioni mobile offrono risultati misurabili e creano vantaggi competitivi duraturi per il tuo business",
+    en: "A mobile app provides concrete advantages that can transform your business and improve customer service. From enhanced user engagement to increased operational efficiency, mobile applications drive growth and strengthen customer relationships.",
+    it: "Un'app mobile fornisce vantaggi concreti che possono trasformare la tua attività e migliorare il servizio clienti. Dall'engagement utente migliorato all'efficienza operativa aumentata, le applicazioni mobile stimolano la crescita e rafforzano le relazioni con i clienti.",
   },
   "mobile-benefit-1": {
-    en: "Accelerate Business Growth",
-    it: "Accelera la Crescita del Business",
+    en: "Better customer experience",
+    it: "Migliore esperienza cliente",
   },
   "mobile-benefit-1-desc": {
-    en: "Increase revenue by up to 300% with mobile-first strategies that capture customer attention and drive conversions",
-    it: "Aumenta i ricavi fino al 300% con strategie mobile-first che catturano l'attenzione dei clienti e guidano le conversioni",
+    en: "Mobile apps load faster, work offline, and provide a smoother experience than mobile websites",
+    it: "Le app mobile si caricano più velocemente, funzionano offline e offrono un'esperienza più fluida rispetto ai siti web mobile",
   },
   "mobile-benefit-2": {
-    en: "24/7 Customer Engagement",
-    it: "Engagement Clienti 24/7",
+    en: "Direct customer connection",
+    it: "Connessione diretta con i clienti",
   },
   "mobile-benefit-2-desc": {
-    en: "Keep customers connected and engaged around the clock with instant access to your services, products, and exclusive content",
-    it: "Mantieni i clienti connessi e coinvolti 24 ore su 24 con accesso immediato ai tuoi servizi, prodotti e contenuti esclusivi",
+    en: "Keep customers informed with push notifications about updates, offers, and important information",
+    it: "Mantieni i clienti informati con notifiche push su aggiornamenti, offerte e informazioni importanti",
   },
   "mobile-benefit-3": {
-    en: "Smart Communication Channel",
-    it: "Canale di Comunicazione Intelligente",
+    en: "Increased customer loyalty",
+    it: "Maggiore fedeltà dei clienti",
   },
   "mobile-benefit-3-desc": {
-    en: "Boost engagement by 200% with personalized push notifications that deliver targeted messages, offers, and updates at the perfect moment",
-    it: "Aumenta l'engagement del 200% con notifiche push personalizzate che consegnano messaggi mirati, offerte e aggiornamenti nel momento perfetto",
-  },
-  "mobile-benefit-4": {
-    en: "Always Available Experience",
-    it: "Esperienza Sempre Disponibile",
-  },
-  "mobile-benefit-4-desc": {
-    en: "Never lose customers due to connectivity issues. Our apps work seamlessly offline, ensuring your business is always accessible",
-    it: "Non perdere mai clienti per problemi di connettività. Le nostre app funzionano perfettamente offline, garantendo che il tuo business sia sempre accessibile",
-  },
-  "mobile-benefit-5": {
-    en: "Seamless System Integration",
-    it: "Integrazione Sistemi Perfetta",
-  },
-  "mobile-benefit-5-desc": {
-    en: "Connect your mobile app with existing ERP, CRM, and business systems for real-time data synchronization and streamlined operations",
-    it: "Connetti la tua app mobile con sistemi ERP, CRM e aziendali esistenti per sincronizzazione dati in tempo reale e operazioni semplificate",
+    en: "Apps make it easier for customers to return to your business, increasing repeat purchases and engagement",
+    it: "Le app rendono più facile per i clienti tornare al tuo business, aumentando acquisti ripetuti e engagement",
   },
   "mobile-benefit-6": {
-    en: "Data-Driven Insights",
-    it: "Insights Basati sui Dati",
+    en: "Better business insights",
+    it: "Migliori insights aziendali",
   },
   "mobile-benefit-6-desc": {
-    en: "Make informed decisions with comprehensive analytics, user behavior tracking, and performance metrics that reveal opportunities for optimization and growth",
-    it: "Prendi decisioni informate con analytics completi, tracking del comportamento utente e metriche di performance che rivelano opportunità di ottimizzazione e crescita",
+    en: "Understand how customers use your app to make informed decisions about your business strategy",
+    it: "Comprendi come i clienti usano la tua app per prendere decisioni informate sulla strategia aziendale",
   },
   "mobile-cta-title": {
     en: "Ready to Launch Your Mobile App?",
