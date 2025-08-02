@@ -1,6 +1,33 @@
 import ScrollingBanner from "../../../Components/Home/ScrollingBanner";
+import { Icon } from "@iconify/react";
 
 export default function CustomSoftwareAdvantages() {
+  const firstRowIcons = [
+    { icon: "logos:salesforce" },
+    { icon: "logos:hubspot" },
+    { icon: "logos:mailchimp-freddie" },
+    { icon: "logos:google-analytics" },
+    { icon: "logos:google-ads" },
+    { icon: "logos:facebook" },
+    { icon: "logos:linkedin-icon" },
+    { icon: "logos:asana" },
+    { icon: "logos:trello" },
+    { icon: "logos:zapier-icon" },
+  ];
+
+  const secondRowIcons = [
+    { icon: "logos:google-maps" },
+    { icon: "logos:hubspot" },
+    { icon: "logos:google-drive" },
+    { icon: "logos:stripe" },
+    { icon: "logos:slack-icon" },
+    { icon: "logos:aws" },
+    { icon: "logos:azure" },
+    { icon: "logos:dropbox" },
+    { icon: "logos:notion" },
+    { icon: "logos:zoom" },
+  ];
+
   return (
     <div className="bg-primary py-24 sm:py-32">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
@@ -95,44 +122,24 @@ export default function CustomSoftwareAdvantages() {
                   una visione completa del tuo business in tempo reale.
                 </p>
               </div>
-              <div className="relative min-h-[30rem] w-full grow">
-                <ScrollingBanner isVertical={true}>
-                  <div className="flex items-center space-x-4">
-                    <img
-                      src="/images/logos/logo-1.png"
-                      alt="Logo 1"
+              <div className="relative min-h-[30rem] w-full grow flex flex-row justify-between items-center px-24">
+                <ScrollingBanner duration={10} isVertical>
+                  {firstRowIcons.map((iconData, index) => (
+                    <Icon
+                      key={index}
+                      icon={iconData.icon}
                       className="h-12 w-12"
                     />
-                    <img
-                      src="/images/logos/logo-2.png"
-                      alt="Logo 2"
-                      className="h-12 w-12"
-                    />
-                    <img
-                      src="/images/logos/logo-3.png"
-                      alt="Logo 3"
-                      className="h-12 w-12"
-                    />
-                  </div>
+                  ))}
                 </ScrollingBanner>
-                <ScrollingBanner isVertical={true} isReverse>
-                  <div className="flex items-center space-x-4">
-                    <img
-                      src="/images/logos/logo-1.png"
-                      alt="Logo 1"
+                <ScrollingBanner isReverse duration={10} isVertical>
+                  {secondRowIcons.map((iconData, index) => (
+                    <Icon
+                      key={index}
+                      icon={iconData.icon}
                       className="h-12 w-12"
                     />
-                    <img
-                      src="/images/logos/logo-2.png"
-                      alt="Logo 2"
-                      className="h-12 w-12"
-                    />
-                    <img
-                      src="/images/logos/logo-3.png"
-                      alt="Logo 3"
-                      className="h-12 w-12"
-                    />
-                  </div>
+                  ))}
                 </ScrollingBanner>
               </div>
             </div>

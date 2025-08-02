@@ -5,7 +5,6 @@ import AppHero from "./AppHero";
 import ServiceFAQ from "../../../Components/FAQ/ServiceFAQ";
 import Benefits from "./Benefits";
 import MobileTechnologies from "./MobileTechnologies";
-import MobileAiPowered from "./MobileAiPowered";
 
 export default function MobileDevelopment() {
   const { t, language } = useLanguage();
@@ -35,7 +34,6 @@ export default function MobileDevelopment() {
         {/* Hero Section */}
 
         <AppHero />
-        <MobileAiPowered />
 
         <Benefits />
         <MobileTechnologies />

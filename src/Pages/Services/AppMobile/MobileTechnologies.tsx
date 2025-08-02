@@ -40,10 +40,6 @@ export default function MobileTechnologies() {
       icon: "logos:cordova",
     },
     {
-      name: "Capacitor",
-      icon: "logos:capacitor",
-    },
-    {
       name: "Expo",
       icon: "logos:expo-icon",
     },
