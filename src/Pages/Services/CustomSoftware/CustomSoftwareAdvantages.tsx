@@ -53,7 +53,7 @@ export default function CustomSoftwareAdvantages() {
                 <div className="absolute inset-x-10 bottom-0 top-10 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-600 bg-gray-900 shadow-2xl">
                   <img
                     alt=""
-                    src="https://tailwindcss.com/plus-assets/img/component-images/bento-03-mobile-friendly.png"
+                    src="/imgs/app-mockup.png"
                     className="size-full object-cover object-top"
                   />
                 </div>
@@ -99,10 +99,10 @@ export default function CustomSoftwareAdvantages() {
                   informazioni sensibili.
                 </p>
               </div>
-              <div className="flex flex-1 items-center [container-type:inline-size] max-lg:py-6 lg:pb-2">
+              <div className="flex flex-1 items-center justify-center [container-type:inline-size] max-lg:py-6 lg:pb-2">
                 <img
                   alt=""
-                  src="https://tailwindcss.com/plus-assets/img/component-images/bento-03-security.png"
+                  src="/imgs/fingerprint-security.png"
                   className="h-[min(152px,40cqw)] object-cover"
                 />
               </div>
@@ -123,7 +123,7 @@ export default function CustomSoftwareAdvantages() {
                 </p>
               </div>
               <div className="relative min-h-[30rem] w-full grow flex flex-row justify-between items-center px-24">
-                <ScrollingBanner duration={10} isVertical>
+                <ScrollingBanner duration={15} isVertical>
                   {firstRowIcons.map((iconData, index) => (
                     <Icon
                       key={index}
@@ -132,7 +132,7 @@ export default function CustomSoftwareAdvantages() {
                     />
                   ))}
                 </ScrollingBanner>
-                <ScrollingBanner isReverse duration={10} isVertical>
+                <ScrollingBanner isReverse duration={15} isVertical>
                   {secondRowIcons.map((iconData, index) => (
                     <Icon
                       key={index}
