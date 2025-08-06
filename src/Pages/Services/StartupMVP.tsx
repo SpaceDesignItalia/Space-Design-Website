@@ -306,7 +306,7 @@ export default function StartupMVP() {
   return (
     <>
       <SEO
-        title={`Space Design Italia - ${t("startup-mvp") || "MVP per Startup"}`}
+        title={`Space Design Italia - ${t("startup") || "MVP per Startup"}`}
         description={
           t("mvp-meta-description") ||
           "Trasformiamo la tua idea in MVP funzionante in 4-8 settimane. Validazione mercato, tecnologie scalabili e metodologia Lean Startup."
@@ -314,11 +314,11 @@ export default function StartupMVP() {
         keywords={`mvp startup, prototipo rapido, validazione mercato, lean startup, ${t(
           "seo-keywords"
         )}`}
-        url={`/${language}/services/startup-mvp`}
+        url={`/${language}/services/startup`}
         alternateUrls={{
-          it: "/it/services/startup-mvp",
-          en: "/en/services/startup-mvp",
-          "x-default": "/services/startup-mvp",
+          it: "/it/services/startup",
+          en: "/en/services/startup",
+          "x-default": "/services/startup",
         }}
       />
 

@@ -5,7 +5,7 @@ import { servicesTranslations } from "./services";
 import { webDevelopmentTranslations } from "./web-development";
 import { mobileDevelopmentTranslations } from "./mobile-development";
 import { customSoftwareTranslations } from "./custom-software";
-import { startupMvpTranslations } from "./startup-mvp";
+import { startupMvpTranslations } from "./startup";
 import { faqTranslations } from "./faq";
 import { legalTranslations } from "./legal";
 import { contactTranslations } from "./contact";

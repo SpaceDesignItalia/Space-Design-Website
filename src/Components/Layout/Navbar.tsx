@@ -46,10 +46,10 @@ const services: Services = {
         descriptionKey: "websites-desc",
       },
       {
-        name: "startup-mvp",
-        href: "/services/startup-mvp",
+        name: "startup",
+        href: "/services/startup",
         icon: "pajamas:rocket-launch",
-        descriptionKey: "startup-mvp-desc",
+        descriptionKey: "startup-desc",
       },
     ],
   },

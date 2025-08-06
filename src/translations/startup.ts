@@ -2,29 +2,33 @@ import { Translations } from "./types";
 
 export const startupMvpTranslations: Translations = {
   // Startup MVP Page
-  "startup-mvp": {
+  startup: {
     en: "Startup MVP",
     it: "MVP per Startup",
   },
-  "startup-mvp-meta-title": {
+  "startup-meta-title": {
     en: "Space Design Italia - Startup MVP Development",
     it: "Space Design Italia - Sviluppo MVP per Startup",
   },
-  "startup-mvp-meta-description": {
+  "startup-meta-description": {
     en: "Professional MVP development for startups. Rapid prototyping, market validation and scalable solutions to accelerate your startup's success.",
     it: "Sviluppo MVP professionale per startup. Prototipazione rapida, validazione mercato e soluzioni scalabili per accelerare il successo della tua startup.",
   },
-  "startup-mvp-hero-title": {
-    en: "From idea to market in record time",
-    it: "Dall'idea al mercato in tempo record",
+  "startup-hero-title": {
+    en: "Transform your startup vision into a market-ready product",
+    it: "Trasforma la tua visione startup in un prodotto pronto per il mercato",
   },
-  "startup-mvp-hero-description": {
-    en: "Transform your startup idea into a market-ready MVP in just 4-8 weeks. We help you validate your concept, attract investors, and build a solid foundation for growth with our proven lean methodology.",
-    it: "Trasforma la tua idea di startup in un MVP pronto per il mercato in sole 4-8 settimane. Ti aiutiamo a validare il tuo concetto, attrarre investitori e costruire una solida base per la crescita con la nostra metodologia lean collaudata.",
+  "startup-hero-description": {
+    en: "Stop dreaming, start building. We transform your startup idea into a market-ready MVP in record time. Get real user feedback, attract investors, and scale your business with our proven rapid development process.",
+    it: "Smetti di sognare, inizia a costruire. Trasformiamo la tua idea di startup in un MVP pronto per il mercato in tempo record. Ottieni feedback reali dagli utenti, attira investitori e scala il tuo business con il nostro processo di sviluppo rapido collaudato.",
   },
-  "startup-mvp-request-consultation": {
+  "startup-request-consultation": {
     en: "Request Consultation",
     it: "Richiedi Consulenza",
+  },
+  "startup-hero-cta-button": {
+    en: "Book a free consultation",
+    it: "Prenota una consulenza gratuita",
   },
 
   // MVP Features

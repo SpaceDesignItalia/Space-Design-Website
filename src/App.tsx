@@ -30,6 +30,7 @@ import CaseStudyHome from "./Pages/CaseStudy/CaseStudyHome";
 import CaseStudySyllog from "./Pages/CaseStudy/Syllog/CaseStudySyllog";
 import CaseStudyClimawellWebsite from "./Pages/CaseStudy/ClimawellWebsite/CaseStudyClimawellWebsite";
 import CaseStudyClimawellMarketing from "./Pages/CaseStudy/ClimawellMarketing/CaseStudyClimawellMarketing";
+import Startup from "./Pages/Services/Startup/Startup";
 
 // Language redirect component
 function LanguageRedirect() {
@@ -113,7 +114,7 @@ function AppContent() {
             <Route path="websites" element={<WebDevelopment />} />
             <Route path="mobile-development" element={<MobileDevelopment />} />
             <Route path="custom-software" element={<CustomSoftware />} />
-            <Route path="startup-mvp" element={<StartupMVP />} />
+            <Route path="startup" element={<Startup />} />
 
             <Route path="cloud-integration" element={<CloudIntegration />} />
             <Route path="api-development" element={<ApiDevelopment />} />

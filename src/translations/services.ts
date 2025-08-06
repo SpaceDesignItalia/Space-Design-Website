@@ -34,11 +34,11 @@ export const servicesTranslations: Translations = {
     en: "Tailored software solutions engineered to optimize your operations, automate workflows, and accelerate business growth",
     it: "Soluzioni software personalizzate progettate per ottimizzare le tue operazioni, automatizzare i flussi di lavoro e accelerare la crescita aziendale",
   },
-  "startup-mvp": {
+  startup: {
     en: "Startup MVP",
     it: "MVP per Startup",
   },
-  "startup-mvp-desc": {
+  "startup-desc": {
     en: "Rapid development of market-ready MVPs to validate your startup idea and accelerate time-to-market",
     it: "Sviluppo rapido di MVP pronti per il mercato per validare la tua idea di startup e accelerare il time-to-market",
   },
