@@ -113,8 +113,8 @@ export const servicesTranslations: Translations = {
     it: "Servizi DevOps e CI/CD professionali. Automazione, pipeline di deployment, monitoraggio e ottimizzazione infrastrutture.",
   },
   "devops-hero-title": {
-    en: "Accelerate your development",
-    it: "Accelera il tuo sviluppo",
+    en: "DevOps & CI/CD: automation and speed for your software development",
+    it: "DevOps & CI/CD: automazione e velocità per il tuo sviluppo software",
   },
   "devops-hero-description": {
     en: "Accelerate your development with modern DevOps practices. Automated pipelines, continuous integration, infrastructure as code and monitoring for faster and more reliable deployments.",
@@ -155,8 +155,8 @@ export const servicesTranslations: Translations = {
     it: "Servizi di sviluppo API professionali. REST, GraphQL, microservizi e integrazioni per applicazioni moderne e scalabili.",
   },
   "api-development-hero-title": {
-    en: "Connect your digital ecosystem",
-    it: "Connetti il tuo ecosistema digitale",
+    en: "Modern, secure and custom API development to integrate your systems",
+    it: "Sviluppo API moderni, sicuri e su misura per integrare i tuoi sistemi",
   },
   "api-development-hero-description": {
     en: "We create robust, secure and well-documented APIs that connect your systems and enable seamless integrations. From REST to GraphQL, we build the digital backbone of your applications.",
@@ -343,8 +343,8 @@ export const servicesTranslations: Translations = {
     it: "Servizi di integrazione cloud professionali. Migrazione, multi-cloud, sicurezza e ottimizzazione per applicazioni moderne.",
   },
   "cloud-integration-hero-title": {
-    en: "Transform your business in the cloud",
-    it: "Trasforma il tuo business nel cloud",
+    en: "Strategic Cloud Integration for scalability, efficiency and innovation",
+    it: "Integrazione Cloud strategica per scalabilità, efficienza e innovazione",
   },
   "cloud-integration-hero-description": {
     en: "Accelerate your digital transformation with modern cloud solutions. Secure migration, multi-cloud strategies and optimization to maximize efficiency and scalability.",

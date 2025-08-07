@@ -49,8 +49,7 @@ export default function DevOps() {
               className="text-5xl sm:text-6xl md:text-7xl font-semibold leading-[1.1] tracking-tight mb-8"
             >
               <span className="bg-gradient-to-r from-primary-600 to-primary-800 bg-clip-text text-transparent dark:from-primary-400 dark:to-primary-200">
-                DevOps & CI/CD: automazione e velocità per il tuo sviluppo
-                software
+                {t("devops-hero-title")}
               </span>
             </motion.h1>
 
