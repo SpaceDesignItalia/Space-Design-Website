@@ -1,6 +1,8 @@
 import SEO from "../../../Components/SEO";
 import { useLanguage } from "../../../context/LanguageContext";
 import StartupHero from "./StartupHero";
+import StartupService from "./StartupService";
+import StartupStrategy from "./StartupStrategy";
 
 export default function Startup() {
   const { t, language } = useLanguage();
@@ -20,6 +22,8 @@ export default function Startup() {
       />
 
       <StartupHero />
+      <StartupService />
+      <StartupStrategy />
     </>
   );
 }

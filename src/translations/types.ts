@@ -1,6 +1,6 @@
 export type Translations = {
   [key: string]: {
-    en: string;
-    it: string;
+    en: string | string[];
+    it: string | string[];
   };
 };
