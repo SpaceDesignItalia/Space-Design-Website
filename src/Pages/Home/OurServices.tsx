@@ -46,7 +46,7 @@ export default function OurServices() {
                 </svg>
                 <img
                   alt="Syllog AI Logo"
-                  src="/Imgs/Home/Logo_Syllog_white.png"
+                  src="/imgs/Home/Logo_Syllog_white.webp"
                   className="h-12 w-auto"
                 />
                 <blockquote className="mt-6 text-xl/8 font-semibold text-white">
