@@ -1,0 +1,136 @@
+import { Route, Routes, Navigate } from "react-router-dom";
+import { useEffect, useRef } from "react";
+import { useLocation } from "react-router-dom";
+import Home from "./Pages/Home/Home";
+import Contact from "./Pages/Contact/Contact";
+import MobileDevelopment from "./Pages/Services/AppMobile/MobileDevelopment";
+import WebDevelopment from "./Pages/Services/Website/WebDevelopment";
+
+import {
+  PrivacyPolicy,
+  // TermsOfService,
+  CookiePolicy,
+  GDPR,
+} from "./Pages/Legal";
+import { LanguageProvider } from "./context/LanguageContext";
+import {
+  CookieConsentProvider,
+  useCookieConsent,
+} from "./context/CookieConsentContext";
+import LanguageLayout from "./Components/Layout/LanguageLayout";
+import Footer from "./Components/Layout/Footer";
+import CookieBanner from "./Components/Layout/CookieBanner";
+import * as analytics from "./utils/analytics";
+import CustomSoftware from "./Pages/Services/CustomSoftware/CustomSoftware";
+import CaseStudyHome from "./Pages/CaseStudy/CaseStudyHome";
+import CaseStudySyllog from "./Pages/CaseStudy/Syllog/CaseStudySyllog";
+import CaseStudyClimawellWebsite from "./Pages/CaseStudy/ClimawellWebsite/CaseStudyClimawellWebsite";
+import CaseStudyClimawellMarketing from "./Pages/CaseStudy/ClimawellMarketing/CaseStudyClimawellMarketing";
+import Startup from "./Pages/Services/Startup/Startup";
+
+// Language redirect component
+function LanguageRedirect() {
+  const userLanguage = navigator.language.split("-")[0];
+  const defaultLanguage = userLanguage === "it" ? "it" : "en";
+  return <Navigate to={`/${defaultLanguage}`} replace />;
+}
+
+function AppContent() {
+  const location = useLocation();
+  const { preferences, cookiesAccepted } = useCookieConsent();
+  const prevPathRef = useRef<string>("");
+
+  // Stabilizza la posizione orizzontale della pagina
+  useEffect(() => {
+    // Assicura che la pagina rimanga sempre nella stessa posizione orizzontale
+    document.documentElement.style.scrollbarGutter = "stable";
+    document.documentElement.style.overflowY = "scroll";
+    document.body.style.margin = "0";
+    document.body.style.padding = "0";
+
+    return () => {
+      // Cleanup non necessario perché vogliamo mantenere queste impostazioni
+    };
+  }, []);
+
+  useEffect(() => {
+    // Track pageview solo se i cookie analitici sono accettati
+    if (cookiesAccepted && preferences.analytics) {
+      analytics.pageview(location.pathname);
+      console.log("📊 Pageview tracked:", location.pathname);
+    }
+  }, [location, cookiesAccepted, preferences.analytics]);
+
+  // Effetto per far tornare la vista in cima solo se cambio pagina, non lingua
+  useEffect(() => {
+    // Estrai il percorso senza la lingua (es. "/it/about" -> "/about")
+    const pathWithoutLang = location.pathname.split("/").slice(2).join("/");
+    const currentPath = pathWithoutLang || "/";
+
+    // Se il percorso è cambiato (non la lingua), scrolla in cima
+    if (prevPathRef.current !== currentPath) {
+      window.scrollTo(0, 0);
+      prevPathRef.current = currentPath;
+    }
+  }, [location.pathname]);
+
+  return (
+    <>
+      <Routes>
+        {/* Redirect root to language-specific route */}
+        <Route path="/" element={<LanguageRedirect />} />
+
+        {/* Language-specific routes */}
+        <Route path="/:lang" element={<LanguageLayout />}>
+          <Route index element={<Home />} />
+          <Route path="contact" element={<Contact />} />
+
+          {/* Legal routes */}
+          <Route path="privacy-policy" element={<PrivacyPolicy />} />
+          {/* <Route path="terms-of-service" element={<TermsOfService />} /> */}
+          <Route path="cookie-policy" element={<CookiePolicy />} />
+          <Route path="gdpr" element={<GDPR />} />
+
+          {/* Case Studies routes */}
+          <Route path="case-studies" element={<CaseStudyHome />} />
+          <Route path="case-studies">
+            <Route path="syllog" element={<CaseStudySyllog />} />
+            <Route
+              path="climawell-website"
+              element={<CaseStudyClimawellWebsite />}
+            />
+            <Route
+              path="climawell-marketing"
+              element={<CaseStudyClimawellMarketing />}
+            />
+          </Route>
+
+          <Route path="services">
+            <Route path="web-development" element={<WebDevelopment />} />
+            <Route path="websites" element={<WebDevelopment />} />
+            <Route path="mobile-development" element={<MobileDevelopment />} />
+            <Route path="custom-software" element={<CustomSoftware />} />
+            <Route path="startup" element={<Startup />} />
+          </Route>
+        </Route>
+
+        {/* Fallback redirect for invalid routes */}
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
+      <Footer />
+      <CookieBanner />
+    </>
+  );
+}
+
+function App() {
+  return (
+    <LanguageProvider>
+      <CookieConsentProvider>
+        <AppContent />
+      </CookieConsentProvider>
+    </LanguageProvider>
+  );
+}
+
+export default App;
