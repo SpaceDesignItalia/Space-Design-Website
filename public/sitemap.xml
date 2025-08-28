@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
   <!-- Homepage -->
   <url>
     <loc>https://www.spacedesign-italia.it/</loc>
@@ -9,6 +10,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.spacedesign-italia.it/"/>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <lastmod>2024-12-19</lastmod>
   </url>
 
   <!-- Contact Page -->
@@ -18,6 +20,72 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.spacedesign-italia.it/en/contact"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <lastmod>2024-12-19</lastmod>
+  </url>
+
+  <!-- Legal Pages -->
+  <url>
+    <loc>https://www.spacedesign-italia.it/privacy-policy</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.spacedesign-italia.it/it/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.spacedesign-italia.it/en/privacy-policy"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <lastmod>2024-12-19</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.spacedesign-italia.it/cookie-policy</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.spacedesign-italia.it/it/cookie-policy"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.spacedesign-italia.it/en/cookie-policy"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <lastmod>2024-12-19</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.spacedesign-italia.it/gdpr</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.spacedesign-italia.it/it/gdpr"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.spacedesign-italia.it/en/gdpr"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <lastmod>2024-12-19</lastmod>
+  </url>
+
+  <!-- Case Studies -->
+  <url>
+    <loc>https://www.spacedesign-italia.it/case-studies</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.spacedesign-italia.it/it/case-studies"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.spacedesign-italia.it/en/case-studies"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2024-12-19</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.spacedesign-italia.it/case-studies/syllog</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.spacedesign-italia.it/it/case-studies/syllog"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.spacedesign-italia.it/en/case-studies/syllog"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <lastmod>2024-12-19</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.spacedesign-italia.it/case-studies/climawell-website</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.spacedesign-italia.it/it/case-studies/climawell-website"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.spacedesign-italia.it/en/case-studies/climawell-website"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <lastmod>2024-12-19</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.spacedesign-italia.it/case-studies/climawell-marketing</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.spacedesign-italia.it/it/case-studies/climawell-marketing"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.spacedesign-italia.it/en/case-studies/climawell-marketing"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <lastmod>2024-12-19</lastmod>
   </url>
 
   <!-- Services Pages -->
@@ -27,6 +95,16 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.spacedesign-italia.it/en/services/web-development"/>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <lastmod>2024-12-19</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.spacedesign-italia.it/services/websites</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.spacedesign-italia.it/it/services/websites"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.spacedesign-italia.it/en/services/websites"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2024-12-19</lastmod>
   </url>
 
   <url>
@@ -35,6 +113,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.spacedesign-italia.it/en/services/mobile-development"/>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <lastmod>2024-12-19</lastmod>
   </url>
 
   <url>
@@ -43,14 +122,16 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.spacedesign-italia.it/en/services/custom-software"/>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <lastmod>2024-12-19</lastmod>
   </url>
 
   <url>
-    <loc>https://www.spacedesign-italia.it/services/startup</loc>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.spacedesign-italia.it/it/services/startup"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.spacedesign-italia.it/en/services/startup"/>
+    <loc>https://www.spacedesign-italia.it/services/startup-mvp</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.spacedesign-italia.it/it/services/startup-mvp"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.spacedesign-italia.it/en/services/startup-mvp"/>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <lastmod>2024-12-19</lastmod>
   </url>
 
   <url>
@@ -59,5 +140,80 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.spacedesign-italia.it/en/services/ai-software"/>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <lastmod>2024-12-19</lastmod>
   </url>
+
+  <url>
+    <loc>https://www.spacedesign-italia.it/services/cloud-integration</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.spacedesign-italia.it/it/services/cloud-integration"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.spacedesign-italia.it/en/services/cloud-integration"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2024-12-19</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.spacedesign-italia.it/services/api-development</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.spacedesign-italia.it/it/services/api-development"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.spacedesign-italia.it/en/services/api-development"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2024-12-19</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.spacedesign-italia.it/services/devops</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.spacedesign-italia.it/it/services/devops"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.spacedesign-italia.it/en/services/devops"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2024-12-19</lastmod>
+  </url>
+
+  <!-- Additional Service Routes (if they exist) -->
+  <url>
+    <loc>https://www.spacedesign-italia.it/services/infrastructure</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.spacedesign-italia.it/it/services/infrastructure"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.spacedesign-italia.it/en/services/infrastructure"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2024-12-19</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.spacedesign-italia.it/services/legacy-integration</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.spacedesign-italia.it/it/services/legacy-integration"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.spacedesign-italia.it/en/services/legacy-integration"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2024-12-19</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.spacedesign-italia.it/services/digital-strategy</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.spacedesign-italia.it/it/services/digital-strategy"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.spacedesign-italia.it/en/services/digital-strategy"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2024-12-19</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.spacedesign-italia.it/services/tech-architecture</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.spacedesign-italia.it/it/services/tech-architecture"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.spacedesign-italia.it/en/services/tech-architecture"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2024-12-19</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.spacedesign-italia.it/services/security</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.spacedesign-italia.it/it/services/security"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.spacedesign-italia.it/en/services/security"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2024-12-19</lastmod>
+  </url>
+
 </urlset> 
