@@ -35,7 +35,7 @@ const ArchitectureBlock = ({
 );
 
 // Componente per il diagramma di architettura minimal
-const ArchitectureDiagram = () => {
+const ArchitectureDiagram = ({ t }: { t: (key: string) => string }) => {
   return (
     <div className="w-full max-w-5xl mx-auto">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
@@ -43,7 +43,7 @@ const ArchitectureDiagram = () => {
         <div className="space-y-6">
           <div className="text-center">
             <h3 className="font-medium text-lg leading-8 text-gray-200">
-              Traditional Web
+              {t("web-traditional-web")}
             </h3>
             <div className="w-16 h-0.5 bg-gray-600 mx-auto"></div>
           </div>
@@ -170,7 +170,7 @@ export default function WebsiteJamstack() {
             </div>
           </div>
           <div className="flex items-start justify-end lg:order-first">
-            <ArchitectureDiagram />
+            <ArchitectureDiagram t={t} />
           </div>
         </div>
       </div>

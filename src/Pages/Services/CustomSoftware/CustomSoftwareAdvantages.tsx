@@ -1,7 +1,10 @@
 import ScrollingBanner from "../../../Components/Home/ScrollingBanner";
 import { Icon } from "@iconify/react";
+import { useLanguage } from "../../../context/LanguageContext";
 
 export default function CustomSoftwareAdvantages() {
+  const { t } = useLanguage();
+
   const firstRowIcons = [
     { icon: "logos:salesforce" },
     { icon: "logos:hubspot" },
@@ -32,7 +35,7 @@ export default function CustomSoftwareAdvantages() {
     <div className="bg-primary py-24 sm:py-32">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
         <h2 className="mx-auto mt-2 max-w-lg text-balance text-center text-4xl font-semibold tracking-tight text-white sm:text-5xl">
-          Perché scegliere software personalizzato
+          {t("custom-advantages-title")}
         </h2>
         <div className="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
           <div className="relative lg:row-span-2">
@@ -40,13 +43,10 @@ export default function CustomSoftwareAdvantages() {
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-l-[calc(2rem+1px)]">
               <div className="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10">
                 <p className="mt-2 text-lg font-medium tracking-tight text-white max-lg:text-center">
-                  Ottimizzato per il tuo business
+                  {t("custom-advantage-1-title")}
                 </p>
                 <p className="mt-2 max-w-lg text-sm/6 text-gray-300 max-lg:text-center">
-                  Il software custom è progettato specificamente per i tuoi
-                  processi aziendali, eliminando funzionalità inutili e
-                  automatizzando i flussi di lavoro esistenti. Risultato?
-                  Maggiore efficienza e produttività dal primo giorno.
+                  {t("custom-advantage-1-description")}
                 </p>
               </div>
               <div className="relative min-h-[30rem] w-full grow [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
@@ -66,13 +66,10 @@ export default function CustomSoftwareAdvantages() {
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
               <div className="px-8 pt-8 sm:px-10 sm:pt-10">
                 <p className="mt-2 text-lg font-medium tracking-tight text-white max-lg:text-center">
-                  Scalabilità garantita
+                  {t("custom-advantage-2-title")}
                 </p>
                 <p className="mt-2 max-w-lg text-sm/6 text-gray-300 max-lg:text-center">
-                  Cresci senza limiti. Il software personalizzato si adatta alla
-                  tua crescita, gestendo più utenti, più dati e nuove
-                  funzionalità senza compromettere le prestazioni o richiedere
-                  sostituzioni costose.
+                  {t("custom-advantage-2-description")}
                 </p>
               </div>
               <div className="flex flex-1 items-center justify-center px-8 max-lg:pb-12 max-lg:pt-10 sm:px-10 lg:pb-2">
@@ -90,13 +87,10 @@ export default function CustomSoftwareAdvantages() {
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
               <div className="px-8 pt-8 sm:px-10 sm:pt-10">
                 <p className="mt-2 text-lg font-medium tracking-tight text-white max-lg:text-center">
-                  Sicurezza avanzata
+                  {t("custom-advantage-3-title")}
                 </p>
                 <p className="mt-2 max-w-lg text-sm/6 text-gray-300 max-lg:text-center">
-                  Protezione su misura per i tuoi dati. Implementiamo le
-                  migliori pratiche di sicurezza, crittografia e autenticazione,
-                  garantendo la conformità normativa e la protezione delle
-                  informazioni sensibili.
+                  {t("custom-advantage-3-description")}
                 </p>
               </div>
               <div className="flex flex-1 items-center justify-center [container-type:inline-size] max-lg:py-6 lg:pb-2">
@@ -114,12 +108,10 @@ export default function CustomSoftwareAdvantages() {
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
               <div className="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10">
                 <p className="mt-2 text-lg font-medium tracking-tight text-white max-lg:text-center">
-                  Integrazione perfetta
+                  {t("custom-advantage-4-title")}
                 </p>
                 <p className="mt-2 max-w-lg text-sm/6 text-gray-300 max-lg:text-center">
-                  Connette tutti i tuoi sistemi esistenti. API personalizzate,
-                  sincronizzazione automatica e dashboard unificate che ti danno
-                  una visione completa del tuo business in tempo reale.
+                  {t("custom-advantage-4-description")}
                 </p>
               </div>
               <div className="relative min-h-[30rem] w-full grow flex flex-row justify-between items-center px-24">
