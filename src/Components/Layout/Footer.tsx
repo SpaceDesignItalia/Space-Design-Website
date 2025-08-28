@@ -124,20 +124,20 @@ export default function Footer() {
             </div>
           </div>
           <div className="mt-16 grid grid-cols-1 gap-8 xl:col-span-2 xl:mt-0">
-            <div className="md:grid md:grid-cols-3 md:gap-8">
+            <div className="grid grid-cols-2 gap-8 md:grid-cols-3">
               <div>
                 {renderList({
                   title: t("services") || "Servizi",
                   items: footerNavigation.services,
                 })}
               </div>
-              <div className="mt-10 md:mt-0">
+              <div>
                 {renderList({
                   title: t("case-studies") || "Case Studies",
                   items: footerNavigation.caseStudies,
                 })}
               </div>
-              <div className="mt-10 md:mt-0">
+              <div className="col-span-2 md:col-span-1">
                 {renderList({
                   title: t("footer-legal-title") || "Legal",
                   items: footerNavigation.legal,
