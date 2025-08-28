@@ -45,8 +45,8 @@ export default function OurServices() {
                   <use x={86} href="#0ef284b8-28c2-426e-9442-8655d393522e" />
                 </svg>
                 <img
-                  alt=""
-                  src="https://tailwindcss.com/plus-assets/img/logos/workcation-logo-white.svg"
+                  alt="Syllog AI Logo"
+                  src="/Imgs/Home/Logo_Syllog_white.png"
                   className="h-12 w-auto"
                 />
                 <blockquote className="mt-6 text-xl/8 font-semibold text-white">

@@ -1,0 +1,40 @@
+{
+  "short_name": "Space Design Italia",
+  "name": "Space Design Italia - Digital Solutions",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "logo.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "description": {
+    "it": "Space Design Italia offre soluzioni digitali innovative per il tuo business. Sviluppo web, mobile e consulenza IT personalizzata.",
+    "en": "Space Design Italia offers innovative digital solutions for your business. Web development, mobile apps and customized IT consulting."
+  },
+  "lang": ["it", "en"],
+  "categories": ["business", "technology", "web development"],
+  "screenshots": [
+    {
+      "src": "screenshot1.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "platform": "wide",
+      "label": "Homepage Space Design Italia"
+    }
+  ]
+} 
