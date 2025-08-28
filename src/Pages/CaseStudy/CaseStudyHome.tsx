@@ -147,14 +147,14 @@ const caseStudies = [
   },
 ];
 
-// Animazioni semplificate
+// Animazioni migliorate
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.1,
-      delayChildren: 0.2,
+      staggerChildren: 0.15,
+      delayChildren: 0.3,
     },
   },
 };
@@ -162,31 +162,37 @@ const containerVariants = {
 const cardVariants = {
   hidden: {
     opacity: 0,
-    y: 30,
+    y: 40,
+    scale: 0.95,
   },
   visible: {
     opacity: 1,
     y: 0,
+    scale: 1,
     transition: {
-      duration: 0.5,
-      ease: "easeOut",
+      duration: 0.6,
+      ease: [0.25, 0.46, 0.45, 0.94],
     },
   },
   hover: {
-    y: -5,
+    y: -8,
+    scale: 1.02,
     transition: {
-      duration: 0.2,
+      duration: 0.3,
       ease: "easeOut",
     },
   },
 };
 
 const fadeInUp = {
-  hidden: { opacity: 0, y: 20 },
+  hidden: { opacity: 0, y: 30 },
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, ease: "easeOut" },
+    transition: {
+      duration: 0.8,
+      ease: [0.25, 0.46, 0.45, 0.94],
+    },
   },
 };
 
@@ -242,28 +248,28 @@ export default function CaseStudyHome() {
   return (
     <>
       <SEO
-        title={` Space Design Italia -${t("page-title")}`}
+        title={` Space Design Italia - ${t("page-title")}`}
         description={t("page-subtitle")}
         keywords="case studies, progetti, successi, clienti, Space Design"
       />
 
-      <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50">
-        {/* Header Section */}
+      <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50/30">
+        {/* Header Section migliorato */}
         <motion.div
-          className="pt-32 pb-16 px-4 sm:px-6 lg:px-8"
+          className="pt-36 pb-20 px-4 sm:px-6 lg:px-8"
           variants={fadeInUp}
           initial="hidden"
           animate="visible"
         >
-          <div className="max-w-7xl mx-auto text-center">
+          <div className="max-w-6xl mx-auto text-center">
             <motion.h1
-              className="text-4xl md:text-6xl font-bold mb-6 text-primary"
+              className="text-3xl md:text-5xl font-semibold mb-8 text-slate-900 leading-tight"
               variants={fadeInUp}
             >
               {t("page-title")}
             </motion.h1>
             <motion.p
-              className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed"
+              className="text-lg md:text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed font-light"
               variants={fadeInUp}
             >
               {t("page-subtitle")}
@@ -271,161 +277,169 @@ export default function CaseStudyHome() {
           </div>
         </motion.div>
 
-        {/* Bento Grid Case Studies */}
+        {/* Bento Grid Case Studies migliorato */}
         <motion.div
-          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20"
+          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
         >
-          <div className="grid grid-cols-1 md:grid-cols-3 md:auto-rows-[320px] gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 md:auto-rows-[360px] gap-10">
             {caseStudies.map((study) => (
               <motion.div
                 key={study.id}
-                className={`group relative bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-slate-100 hover:border-primary/20 ${getCardSize(
+                className={`group relative bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden border-0 cursor-pointer ${getCardSize(
                   study.size
                 )}`}
                 variants={cardVariants}
                 whileHover="hover"
                 onClick={() => handleCaseStudyClick(study.path)}
+                style={{
+                  boxShadow:
+                    "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+                }}
               >
-                {/* Image with overlay */}
-                <div className="relative h-48 md:h-56 overflow-hidden">
+                {/* Image con overlay migliorato */}
+                <div className="relative h-52 md:h-64 overflow-hidden">
                   <img
                     src={study.image}
                     alt={study.title[language]}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
-                  {/* Category Badge */}
-                  <div className="absolute top-4 left-4">
-                    <Chip
-                      color="primary"
-                      variant="flat"
-                      size="sm"
-                      className="bg-primary/95 backdrop-blur-sm text-white border-0 shadow-lg"
-                    >
+                  {/* Category Badge migliorato */}
+                  <div className="absolute top-5 left-5">
+                    <Chip color="primary" size="sm">
                       {study.category[language]}
                     </Chip>
                   </div>
 
-                  {/* Client Badge */}
-                  <div className="absolute top-4 right-4">
-                    <div className="bg-white/95 backdrop-blur-sm text-slate-700 px-3 py-1 rounded-full text-xs font-medium shadow-lg">
+                  {/* Client Badge migliorato */}
+                  <div className="absolute top-5 right-5">
+                    <div className="bg-white/95 backdrop-blur-md p-2 rounded-2xl text-xs font-semibold shadow-xl border">
                       {study.client[language]}
                     </div>
                   </div>
                 </div>
 
-                {/* Content */}
-                <div className="p-6 flex flex-col h-full">
-                  {/* Duration & Team */}
-                  <div className="flex items-center justify-between mb-4">
-                    <div className="flex items-center space-x-3">
-                      <div className="flex items-center space-x-1">
-                        <Icon
-                          icon="solar:clock-circle-linear"
-                          className="w-4 h-4 text-slate-400"
-                        />
-                        <span className="text-sm text-slate-600 font-medium">
+                {/* Content migliorato */}
+                <div className="p-8 flex flex-col h-full">
+                  {/* Duration & Team migliorato */}
+                  <div className="flex items-center justify-between mb-6">
+                    <div className="flex items-center space-x-4">
+                      <Chip
+                        color="primary"
+                        variant="faded"
+                        startContent={
+                          <Icon
+                            icon="solar:clock-circle-linear"
+                            className="w-4 h-4"
+                          />
+                        }
+                      >
+                        <p
+                          className={`text-slate-700 font-semibold ${
+                            study.size === "large" ? "text-sm" : "text-xs"
+                          }`}
+                        >
                           {study.duration[language]}
-                        </span>
-                      </div>
-                      <div className="w-1 h-1 bg-slate-300 rounded-full"></div>
-                      <div className="flex items-center space-x-1">
-                        <Icon
-                          icon="solar:users-group-rounded-linear"
-                          className="w-4 h-4 text-slate-400"
-                        />
-                        <span className="text-sm text-slate-600 font-medium">
+                        </p>
+                      </Chip>
+                      <Chip
+                        color="primary"
+                        variant="faded"
+                        startContent={
+                          <Icon
+                            icon="solar:users-group-rounded-linear"
+                            className="w-4 h-4"
+                          />
+                        }
+                      >
+                        <span
+                          className={`text-slate-700 font-semibold ${
+                            study.size === "large" ? "text-sm" : "text-xs"
+                          }`}
+                        >
                           {study.team[language]}
                         </span>
-                      </div>
+                      </Chip>
                     </div>
                   </div>
 
-                  {/* Title */}
+                  {/* Title migliorato */}
                   <h3
-                    className={`font-bold text-slate-900 mb-3 line-clamp-2 group-hover:text-primary transition-colors duration-300 ${
-                      study.size === "large" ? "text-xl" : "text-lg"
+                    className={`font-semibold text-slate-900 mb-4 line-clamp-2 group-hover:text-primary transition-colors duration-300 leading-tight ${
+                      study.size === "large" ? "text-2xl" : "text-lg"
                     }`}
                   >
                     {study.title[language]}
                   </h3>
 
-                  {/* Subtitle */}
+                  {/* Subtitle migliorato */}
                   <p
-                    className={`text-slate-600 leading-relaxed line-clamp-3 mb-5 ${
-                      study.size === "large" ? "text-sm" : "text-xs"
+                    className={`text-slate-600 leading-relaxed line-clamp-3 mb-6 font-light ${
+                      study.size === "large" ? "text-base" : "text-sm"
                     }`}
                   >
                     {study.subtitle[language]}
                   </p>
 
-                  {/* Technologies */}
-                  <div className="mb-5">
-                    <h4 className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-3">
+                  {/* Technologies migliorato */}
+                  <div className="mb-6">
+                    <h4
+                      className={`font-bold text-slate-500 uppercase tracking-wider mb-4 flex items-center ${
+                        study.size === "large" ? "text-xs" : "text-xs"
+                      }`}
+                    >
+                      <Icon
+                        icon="solar:code-square-linear"
+                        className="w-4 h-4 mr-2 text-primary"
+                      />
                       {t("technologies")}
                     </h4>
-                    <div className="flex flex-wrap gap-2">
+                    <div
+                      className="flex flex-row flex-wrap gap-2 items-center"
+                      style={{ flexDirection: "row" }}
+                    >
                       {study.technologies.map((tech) => (
-                        <Chip
-                          key={tech}
-                          size="sm"
-                          variant="flat"
-                          className="bg-slate-50 text-slate-700 text-xs border border-slate-200 hover:bg-primary/5 hover:border-primary/20 transition-colors duration-200"
-                        >
+                        <Chip key={tech} size="sm" variant="bordered">
                           {tech}
                         </Chip>
                       ))}
                     </div>
                   </div>
 
-                  {/* Results Preview - Solo per card grandi */}
-                  {study.size === "large" && (
-                    <div className="mb-5">
-                      <h4 className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-3">
-                        {t("results")}
-                      </h4>
-                      <div className="grid grid-cols-3 gap-3">
-                        {study.results.slice(0, 3).map((result, idx) => (
-                          <div
-                            key={idx}
-                            className="text-center bg-gradient-to-br from-slate-50 to-slate-100 rounded-xl p-3 border border-slate-200 hover:border-primary/30 transition-colors duration-200"
-                          >
-                            <div className="text-lg font-bold text-primary mb-1">
-                              {result.value}
-                            </div>
-                            <div className="text-xs text-slate-600 line-clamp-1 font-medium">
-                              {result.metric[language]}
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-
-                  {/* Spacer to push button to bottom */}
+                  {/* Spacer per spingere il bottone in fondo */}
                   <div className="flex-1" />
 
-                  {/* CTA Button */}
+                  {/* CTA Button migliorato */}
                   <button
-                    className="w-full bg-primary hover:bg-primary/90 text-white font-semibold py-3 px-4 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl group-hover:shadow-primary/25"
+                    className={`w-full bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-white font-semibold rounded-2xl transition-all duration-300 shadow-lg hover:shadow-xl group-hover:shadow-primary/30 transform group-hover:scale-[1.02] ${
+                      study.size === "large" ? "py-4 px-6" : "py-3 px-5"
+                    }`}
                     onClick={() => handleCaseStudyClick(study.path)}
                   >
-                    <div className="flex items-center justify-center space-x-2">
-                      <span>{t("view-case-study")}</span>
+                    <div className="flex items-center justify-center space-x-3">
+                      <span
+                        className={`${
+                          study.size === "large" ? "text-base" : "text-sm"
+                        }`}
+                      >
+                        {t("view-case-study")}
+                      </span>
                       <Icon
                         icon="solar:arrow-right-linear"
-                        className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200"
+                        className={`group-hover:translate-x-1 transition-transform duration-300 ${
+                          study.size === "large" ? "w-5 h-5" : "w-4 h-4"
+                        }`}
                       />
                     </div>
                   </button>
                 </div>
 
-                {/* Hover effect overlay */}
-                <div className="absolute inset-0 bg-gradient-to-r from-primary/0 to-primary/0 group-hover:from-primary/5 group-hover:to-primary/5 transition-all duration-300 pointer-events-none rounded-2xl" />
+                {/* Hover effect overlay migliorato */}
+                <div className="absolute inset-0 bg-gradient-to-r from-primary/0 via-primary/0 to-primary/0 group-hover:from-primary/5 group-hover:via-primary/3 group-hover:to-primary/5 transition-all duration-500 pointer-events-none rounded-3xl" />
               </motion.div>
             ))}
           </div>
