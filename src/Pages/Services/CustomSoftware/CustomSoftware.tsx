@@ -32,7 +32,7 @@ export default function CustomSoftware() {
       {/* FAQ Section */}
       <ServiceFAQ
         title={t("faq-title") || "Domande Frequenti"}
-        subtitle={t("custom-software-faq-subtitle")}
+        subtitle={t("faq-subtitle-custom")}
         ctaText={t("faq-cta-text") || "Hai altre domande?"}
         ctaSubtext={
           t("faq-cta-subtext-custom") || "Parliamo del tuo progetto software"
@@ -40,26 +40,26 @@ export default function CustomSoftware() {
         benefitText={t("faq-benefit-text") || "Consulenza gratuita"}
         faqs={[
           {
-            question: t("custom-faq-1-question"),
-            answer: t("custom-faq-1-answer"),
+            question: t("custom-faq-question-1"),
+            answer: t("custom-faq-answer-1"),
             icon: "solar:wallet-money-line-duotone",
             delay: 0.1,
           },
           {
-            question: t("custom-faq-2-question"),
-            answer: t("custom-faq-2-answer"),
+            question: t("custom-faq-question-2"),
+            answer: t("custom-faq-answer-2"),
             icon: "gis:map-poi",
             delay: 0.2,
           },
           {
-            question: t("custom-faq-3-question"),
-            answer: t("custom-faq-3-answer"),
+            question: t("custom-faq-question-3"),
+            answer: t("custom-faq-answer-3"),
             icon: "iconamoon:clock",
             delay: 0.3,
           },
           {
-            question: t("custom-faq-4-question"),
-            answer: t("custom-faq-4-answer"),
+            question: t("custom-faq-question-4"),
+            answer: t("custom-faq-answer-4"),
             icon: "jam:code",
             delay: 0.4,
           },

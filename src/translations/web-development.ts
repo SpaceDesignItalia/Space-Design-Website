@@ -96,6 +96,10 @@ export const webDevelopmentTranslations: Translations = {
     en: "We use Jamstack architecture to build websites that are lightning fast and highly secure. They automatically handle any amount of traffic with zero downtime. No more slow loading times or security worries - just pure performance that converts visitors into customers.",
     it: "Utilizziamo l'architettura JAMstack per costruire siti web estremamente veloci e sicuri. I nostri siti gestiscono facilmente qualsiasi quantità di traffico, senza rallentamenti o interruzioni. Così potrai dimenticare i lunghi tempi di caricamento e le preoccupazioni legate alla sicurezza. Il risultato? Una performance ottimale che cattura l'attenzione dei visitatori e li trasforma in clienti.",
   },
+  "web-traditional-web": {
+    en: "Traditional Web",
+    it: "Web Tradizionale",
+  },
 
   // Additional Web Development translations for unified page
   "web-subtitle": {

@@ -198,6 +198,10 @@ export const customSoftwareTranslations: Translations = {
     en: "Perfect integration",
     it: "Integrazione perfetta",
   },
+  "custom-advantage-4-description": {
+    en: "Connects all your existing systems. Custom APIs, automatic synchronization and unified dashboards that give you a complete view of your business in real time.",
+    it: "Connette tutti i tuoi sistemi esistenti. API personalizzate, sincronizzazione automatica e dashboard unificate che ti danno una visione completa del tuo business in tempo reale.",
+  },
 
   // AI-Powered Section - New translations
   "custom-ai-powered-section-title": {
