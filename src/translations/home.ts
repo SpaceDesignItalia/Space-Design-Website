@@ -68,16 +68,16 @@ export const homeTranslations: Translations = {
 
   // Testimonial
   "testimonial-text": {
-    en: "Space Design transformed our business with their innovative software solutions. The team's expertise and dedication exceeded our expectations.",
-    it: "Space Design ha trasformato la nostra azienda con le loro soluzioni software innovative. L'esperienza e la dedizione del team hanno superato le nostre aspettative.",
+    en: "We've been working with Space Design for a while now and we have great confidence in them. The team's experience and dedication exceeded our expectations.",
+    it: "Lavoriamo con Space Design da tempo e abbiamo grande confidenza con loro. L'esperienza e la dedizione del team hanno superato le nostre aspettative.",
   },
   "testimonial-author": {
-    en: "Marco Rossi",
-    it: "Marco Rossi",
+    en: "Edoardo Anselmi",
+    it: "Edoardo Anselmi",
   },
   "testimonial-role": {
-    en: "CEO, TechCorp",
-    it: "CEO, TechCorp",
+    en: "CEO, Syllog AI",
+    it: "CEO, Syllog AI",
   },
 
   // Stats
