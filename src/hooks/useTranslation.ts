@@ -1,5 +1,5 @@
-import { useCustomLanguage } from '../providers/LanguageProvider';
-import { translations } from '../translations';
+import { useCustomLanguage } from "../providers/LanguageProvider";
+import { translations } from "../translations";
 
 export function useTranslation() {
   const { language } = useCustomLanguage();
@@ -10,8 +10,9 @@ export function useTranslation() {
       console.warn(`Translation missing for key: ${key}`);
       return key;
     }
-    return translation[language];
+    const value = translation[language];
+    return Array.isArray(value) ? value.join(" ") : value;
   };
 
   return { t };
-} 
+}

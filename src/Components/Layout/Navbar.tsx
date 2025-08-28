@@ -301,7 +301,7 @@ export default function Navbar() {
                               to={item.href}
                               className="group flex h-full flex-col rounded-xl border border-gray-200 bg-white p-4 transition-all duration-200 hover:border-primary hover:shadow-lg dark:border-gray-800 dark:bg-gray-900 dark:hover:border-primary-400"
                               role="menuitem"
-                              onClick={(e) => {
+                              onClick={() => {
                                 // Permetti la navigazione ma chiudi il dropdown con un piccolo delay
                                 setTimeout(() => setIsServicesOpen(false), 100);
                               }}

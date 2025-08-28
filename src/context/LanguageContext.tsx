@@ -51,7 +51,9 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   }, [location.pathname]);
 
   const t = (key: string): string => {
-    return translations[key]?.[language] || key;
+    const value = translations[key]?.[language];
+    if (!value) return key;
+    return Array.isArray(value) ? value.join(" ") : value;
   };
 
   return (
