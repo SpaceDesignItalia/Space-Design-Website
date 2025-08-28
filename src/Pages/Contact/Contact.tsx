@@ -158,37 +158,31 @@ const Contact: React.FC = () => {
 
         // Gestione più robusta dei dati subjects
         let subjectsData = subjectsResponse.data || [];
+
         if (Array.isArray(subjectsData)) {
           // Mappa i dati per assicurarsi che abbiano la struttura corretta
           const mappedSubjects = subjectsData.map((item, index) => {
-            // Fallback names per subjects
-            const fallbackSubjects = [
-              "Consulenza",
-              "Sito Web",
-              "Software Personalizzato",
-              "App Mobile",
-              "Startup",
-              "Altro",
-            ];
+            // Priorità ai dati reali dell'API - usa il campo Name
+            const realName =
+              item.Name ||
+              item.name ||
+              item.NAME ||
+              item.object_name ||
+              item.label;
+            const realLabel =
+              item.Name ||
+              item.name ||
+              item.label ||
+              item.LABEL ||
+              item.description ||
+              realName;
 
-            return {
+            const mappedSubject = {
               id: item.id || item.ID || item.object_id || `subject-${index}`,
-              name:
-                item.name ||
-                item.NAME ||
-                item.object_name ||
-                item.label ||
-                fallbackSubjects[index] ||
-                `Servizio ${index + 1}`,
-              label:
-                item.label ||
-                item.LABEL ||
-                item.description ||
-                item.name ||
-                item.NAME ||
-                fallbackSubjects[index] ||
-                `Servizio ${index + 1}`,
+              name: realName || `Servizio ${index + 1}`,
+              label: realLabel || `Servizio ${index + 1}`,
             };
+            return mappedSubject;
           });
           setSubjectOptions(mappedSubjects);
         }
@@ -200,40 +194,35 @@ const Contact: React.FC = () => {
 
         // Gestione più robusta dei dati ranges
         let rangesData = budgetsResponse.data || [];
+
         if (Array.isArray(rangesData)) {
           // Mappa i dati per assicurarsi che abbiano la struttura corretta
           const mappedRanges = rangesData.map((item, index) => {
-            // Fallback names per ranges
-            const fallbackRanges = [
-              "€0 - €5.000",
-              "€5.000 - €10.000",
-              "€10.000 - €20.000",
-              "€20.000 - €30.000",
-              "€30.000 - €50.000",
-              "€50.000+",
-            ];
+            // Priorità ai dati reali dell'API - usa il campo Range
+            const realName =
+              item.Range ||
+              item.range ||
+              item.name ||
+              item.NAME ||
+              item.range_name ||
+              item.label;
+            const realLabel =
+              item.Range ||
+              item.range ||
+              item.label ||
+              item.LABEL ||
+              item.description ||
+              item.display_name ||
+              realName;
 
-            return {
+            const mappedRange = {
               id: item.id || item.ID || item.range_id || `range-${index}`,
-              name:
-                item.name ||
-                item.NAME ||
-                item.range_name ||
-                item.label ||
-                fallbackRanges[index] ||
-                `Budget ${index + 1}`,
-              label:
-                item.label ||
-                item.LABEL ||
-                item.description ||
-                item.display_name ||
-                item.name ||
-                item.NAME ||
-                fallbackRanges[index] ||
-                `Budget ${index + 1}`,
+              name: realName || `Budget ${index + 1}`,
+              label: realLabel || `Budget ${index + 1}`,
               min_value: item.min_value || item.MIN_VALUE || item.min,
               max_value: item.max_value || item.MAX_VALUE || item.max,
             };
+            return mappedRange;
           });
           setBudgetOptions(mappedRanges);
         }
