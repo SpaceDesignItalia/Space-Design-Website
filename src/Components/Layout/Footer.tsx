@@ -28,7 +28,7 @@ const footerNavigation = {
   aboutUs: [],
   legal: [
     { nameKey: "footer-privacy-policy", href: "/privacy-policy" },
-    { nameKey: "footer-terms-of-service", href: "/terms-of-service" },
+    // { nameKey: "footer-terms-of-service", href: "/terms-of-service" },
     { nameKey: "footer-cookie-policy", href: "/cookie-policy" },
     { nameKey: "footer-gdpr", href: "/gdpr" },
   ],

@@ -8,7 +8,7 @@ import WebDevelopment from "./Pages/Services/Website/WebDevelopment";
 
 import {
   PrivacyPolicy,
-  TermsOfService,
+  // TermsOfService,
   CookiePolicy,
   GDPR,
 } from "./Pages/Legal";
@@ -87,7 +87,7 @@ function AppContent() {
 
           {/* Legal routes */}
           <Route path="privacy-policy" element={<PrivacyPolicy />} />
-          <Route path="terms-of-service" element={<TermsOfService />} />
+          {/* <Route path="terms-of-service" element={<TermsOfService />} /> */}
           <Route path="cookie-policy" element={<CookiePolicy />} />
           <Route path="gdpr" element={<GDPR />} />
 
