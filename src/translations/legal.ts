@@ -397,8 +397,8 @@ export const legalTranslations: Translations = {
     it: "I termini di pagamento sono specificati nel contratto del progetto",
   },
   "terms-payment-advance": {
-    en: "We typically require a 50% advance to start work",
-    it: "Di norma richiediamo un anticipo del 50% per iniziare il lavoro",
+    en: "We typically require a 20% advance to start work",
+    it: "Di norma richiediamo un anticipo del 20% per iniziare il lavoro",
   },
   "terms-payment-schedule": {
     en: "Payments follow project milestones",
@@ -601,8 +601,8 @@ export const legalTranslations: Translations = {
     it: "20. Legge Applicabile e Foro Competente",
   },
   "terms-law-content": {
-    en: "These terms are governed by Italian law. For any dispute, the Court of Milan has exclusive jurisdiction. Before resorting to legal proceedings, the parties undertake to attempt an amicable resolution of the dispute.",
-    it: "Questi termini sono regolati dalla legge italiana. Per qualsiasi controversia è competente esclusivamente il Foro di Milano. Prima di ricorrere alle vie legali, le parti si impegnano a tentare una risoluzione amichevole della controversia.",
+    en: "These terms are governed by Italian law. For any dispute, the Court of Florence has exclusive jurisdiction. Before resorting to legal proceedings, the parties undertake to attempt an amicable resolution of the dispute.",
+    it: "Questi termini sono regolati dalla legge italiana. Per qualsiasi controversia è competente esclusivamente il Foro di Firenze. Prima di ricorrere alle vie legali, le parti si impegnano a tentare una risoluzione amichevole della controversia.",
   },
   "terms-contact-title": {
     en: "21. Contact",

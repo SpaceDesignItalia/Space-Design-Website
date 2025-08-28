@@ -33,10 +33,10 @@ export default function Benefits() {
     <section className="py-24 bg-white dark:bg-gray-900">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
+          <h2 className="text-4xl md:text-5xl font-semibold text-primary mb-6">
             {t("mobile-benefits-title")}
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             {t("mobile-benefits-description")}
           </p>
         </div>

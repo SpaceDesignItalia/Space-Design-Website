@@ -357,7 +357,7 @@ export const homeTranslations: Translations = {
   // CTA Section
   "cta-title": {
     en: "Ready to Start Your Project?",
-    it: "Pronto a Iniziare il Tuo Progetto?",
+    it: "Pronto a iniziare il tuo progetto?",
   },
   "cta-subtitle": {
     en: "Let's discuss how we can help you achieve your goals",

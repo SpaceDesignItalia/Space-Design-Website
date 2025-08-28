@@ -5,11 +5,7 @@ import Home from "./Pages/Home/Home";
 import Contact from "./Pages/Contact/Contact";
 import MobileDevelopment from "./Pages/Services/AppMobile/MobileDevelopment";
 import WebDevelopment from "./Pages/Services/Website/WebDevelopment";
-import StartupMVP from "./Pages/Services/StartupMVP";
 
-import CloudIntegration from "./Pages/Services/CloudIntegration";
-import ApiDevelopment from "./Pages/Services/ApiDevelopment";
-import DevOps from "./Pages/Services/DevOps";
 import {
   PrivacyPolicy,
   TermsOfService,

@@ -327,16 +327,16 @@ export const mobileDevelopmentTranslations: Translations = {
     it: "Quanto costa sviluppare un'app mobile?",
   },
   "mobile-faq-answer-1": {
-    en: "Costs vary from €15,000 for simple apps to €50,000+ for complex applications, depending on features, platforms and complexity.",
-    it: "I costi variano da €15.000 per app semplici a €50.000+ per applicazioni complesse, a seconda delle funzionalità, piattaforme e complessità.",
+    en: "The cost depends on project difficulty, features and complexity. We provide detailed quotes after understanding your specific needs and project scope.",
+    it: "Il costo dipende dalla difficoltà del progetto, funzionalità e complessità. Forniamo preventivi dettagliati dopo aver compreso le tue esigenze specifiche e la portata del progetto.",
   },
   "mobile-faq-question-2": {
     en: "How long does mobile app development take?",
     it: "Quanto tempo richiede lo sviluppo di un'app mobile?",
   },
   "mobile-faq-answer-2": {
-    en: "From 6-8 weeks for simple apps up to 16-20 weeks for complex applications, with regular updates and testing phases.",
-    it: "Da 6-8 settimane per app semplici fino a 16-20 settimane per applicazioni complesse, con aggiornamenti regolari e fasi di testing.",
+    en: "The development time depends on project difficulty, features and complexity. We provide detailed quotes after understanding your specific needs and project scope.",
+    it: "Il tempo necessario per sviluppare un'app mobile dipende dalla complessità e dalle funzionalità richieste: si può andare da poche settimane per progetti semplici fino a diversi mesi per soluzioni più articolate. Se sono previsti anche servizi di manutenzione e supporto, la tempistica complessiva può aumentare. Dopo aver analizzato le tue necessità, ti forniremo una tempistica precisa e personalizzata.",
   },
   "mobile-faq-question-3": {
     en: "Do you provide app maintenance and updates?",
