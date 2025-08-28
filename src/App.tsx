@@ -115,27 +115,6 @@ function AppContent() {
             <Route path="mobile-development" element={<MobileDevelopment />} />
             <Route path="custom-software" element={<CustomSoftware />} />
             <Route path="startup" element={<Startup />} />
-
-            <Route path="cloud-integration" element={<CloudIntegration />} />
-            <Route path="api-development" element={<ApiDevelopment />} />
-            <Route path="devops" element={<DevOps />} />
-            <Route
-              path="infrastructure"
-              element={<div>Infrastructure Management</div>}
-            />
-            <Route
-              path="legacy-integration"
-              element={<div>Legacy Integration</div>}
-            />
-            <Route
-              path="digital-strategy"
-              element={<div>Digital Strategy</div>}
-            />
-            <Route
-              path="tech-architecture"
-              element={<div>Technical Architecture</div>}
-            />
-            <Route path="security" element={<div>Security Consulting</div>} />
           </Route>
         </Route>
 

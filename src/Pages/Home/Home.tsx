@@ -5,7 +5,6 @@ import OurServices from "./OurServices";
 import CTA from "../../Components/Layout/CTA";
 import WhyUs from "./WhyUs";
 import ProjectTypes from "./ProjectTypes";
-import Numbers from "./Numbers";
 
 export default function Home() {
   const { t, language } = useLanguage();
@@ -23,14 +22,12 @@ export default function Home() {
           "x-default": "/",
         }}
       />
-      <main>
-        <Hero />
-        <OurServices />
-        <WhyUs />
-        <Numbers />
-        <ProjectTypes />
-        <CTA />
-      </main>
+
+      <Hero />
+      <OurServices />
+      <WhyUs />
+      <ProjectTypes />
+      <CTA />
     </>
   );
 }

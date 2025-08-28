@@ -21,12 +21,18 @@ export default function StartupStrategy() {
       title: t("startup-roadmap-step-3-title"),
       subtitle: t("startup-roadmap-step-3-description"),
       details: t("startup-roadmap-step-3-details"),
-      icon: "mdi:test-tube",
+      icon: "mdi:code-braces",
     },
     {
       title: t("startup-roadmap-step-4-title"),
       subtitle: t("startup-roadmap-step-4-description"),
       details: t("startup-roadmap-step-4-details"),
+      icon: "mdi:test-tube",
+    },
+    {
+      title: t("startup-roadmap-step-5-title"),
+      subtitle: t("startup-roadmap-step-5-description"),
+      details: t("startup-roadmap-step-5-details"),
       icon: "mdi:rocket-launch",
     },
   ];

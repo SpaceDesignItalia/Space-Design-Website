@@ -53,7 +53,7 @@ const services: Services = {
       },
     ],
   },
-  "System Integration": {
+  /* "System Integration": {
     icon: "carbon:cloud-service-management",
     descriptionKey: "system-integration-desc",
     items: [
@@ -76,7 +76,7 @@ const services: Services = {
         descriptionKey: "devops-ci-cd-desc",
       },
     ],
-  },
+  }, */
 };
 
 export default function Navbar() {

@@ -337,27 +337,66 @@ export const startupMvpTranslations: Translations = {
     it: "Creiamo una roadmap di sviluppo dettagliata con sprint, milestone e deliverable. Questo include allocazione delle risorse, valutazione dei rischi e protocolli di assicurazione qualità per garantire un'esecuzione fluida del progetto.",
   },
   "startup-roadmap-step-3-title": {
+    en: "Solution Development",
+    it: "Sviluppo della Soluzione",
+  },
+  "startup-roadmap-step-3-description": {
+    en: "Agile development and implementation",
+    it: "Sviluppo agile e implementazione",
+  },
+  "startup-roadmap-step-3-details": {
+    en: "We develop your solution using agile methodology with iterative sprints. Our development team implements the core functionalities, integrates third-party services, and ensures code quality through continuous integration and code reviews.",
+    it: "Sviluppiamo la tua soluzione utilizzando metodologia agile con sprint iterativi. Il nostro team di sviluppo implementa le funzionalità core, integra servizi di terze parti e garantisce la qualità del codice attraverso integrazione continua e code review.",
+  },
+  "startup-roadmap-step-4-title": {
     en: "Testing",
     it: "Testing",
   },
-  "startup-roadmap-step-3-description": {
+  "startup-roadmap-step-4-description": {
     en: "Comprehensive testing and quality assurance",
     it: "Testing completo e assicurazione qualità",
   },
-  "startup-roadmap-step-3-details": {
+  "startup-roadmap-step-4-details": {
     en: "We implement a comprehensive testing strategy including unit tests, integration tests, user acceptance testing, and performance testing. Our quality assurance process ensures your product meets the highest standards before launch.",
     it: "Implementiamo una strategia di testing completa inclusi test unitari, test di integrazione, test di accettazione utente e test di performance. Il nostro processo di assicurazione qualità garantisce che il tuo prodotto rispetti i più alti standard prima del lancio.",
   },
-  "startup-roadmap-step-4-title": {
+  "startup-roadmap-step-5-title": {
     en: "Production Release",
     it: "Rilascio in Produzione",
   },
-  "startup-roadmap-step-4-description": {
+  "startup-roadmap-step-5-description": {
     en: "Project release in production",
     it: "Rilascio del progetto in produzione",
   },
-  "startup-roadmap-step-4-details": {
+  "startup-roadmap-step-5-details": {
     en: "We handle the complete deployment process including server setup, database migration, SSL configuration, and monitoring setup. Post-launch, we provide ongoing support and optimization to ensure your startup scales successfully.",
     it: "Gestiamo il processo completo di deployment inclusi setup del server, migrazione del database, configurazione SSL e setup del monitoring. Post-lancio, forniamo supporto continuo e ottimizzazioni per garantire che la tua startup cresca con successo.",
+  },
+
+  // Startup MVP FAQ
+
+  "startup-mvp-faq-development-time-question": {
+    en: "How quickly can you develop an MVP?",
+    it: "Quanto velocemente potete sviluppare un MVP?",
+  },
+  "startup-mvp-faq-development-time-answer": {
+    en: "We can develop an MVP in 4-8 weeks depending on complexity. We focus on rapid development using modern frameworks and tools to get your product to market quickly for validation.",
+    it: "Possiamo sviluppare un MVP in 4-8 settimane a seconda della complessità. Ci concentriamo sullo sviluppo rapido utilizzando framework e strumenti moderni per portare il tuo prodotto sul mercato velocemente per la validazione.",
+  },
+  "startup-mvp-faq-cost-question": {
+    en: "How much does MVP development cost?",
+    it: "Quanto costa lo sviluppo di un MVP?",
+  },
+  "startup-mvp-faq-cost-answer": {
+    en: "MVP development costs typically range from €15,000 to €60,000 depending on complexity and features. This investment allows you to validate your idea with real users before committing to full product development.",
+    it: "I costi di sviluppo MVP tipicamente variano da €15.000 a €60.000 a seconda della complessità e funzionalità. Questo investimento ti permette di validare la tua idea con utenti reali prima di impegnarti nello sviluppo del prodotto completo.",
+  },
+  "startup-mvp-faq-scalability-question": {
+    en: "How do you ensure the MVP can scale as my startup grows?",
+    it: "Come garantite che l'MVP possa scalare con la crescita della mia startup?",
+  },
+  "startup-mvp-faq-scalability-answer": {
+    en: "We build MVPs with scalability in mind from the start. We use modern, cloud-native architectures and implement best practices that allow your product to grow seamlessly. Our infrastructure planning ensures you can handle increased user loads and add new features without major rewrites.",
+    it: "Costruiamo MVP pensando alla scalabilità fin dall'inizio. Utilizziamo architetture moderne cloud-native e implementiamo best practice che permettono al tuo prodotto di crescere senza problemi. La nostra pianificazione dell'infrastruttura garantisce che tu possa gestire carichi utente crescenti e aggiungere nuove funzionalità senza riscritture importanti.",
   },
 };
