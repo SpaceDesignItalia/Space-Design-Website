@@ -380,16 +380,16 @@ export const startupMvpTranslations: Translations = {
     it: "Quanto velocemente potete sviluppare un MVP?",
   },
   "startup-mvp-faq-development-time-answer": {
-    en: "We can develop an MVP in 4-8 weeks depending on complexity. We focus on rapid development using modern frameworks and tools to get your product to market quickly for validation.",
-    it: "Possiamo sviluppare un MVP in 4-8 settimane a seconda della complessità. Ci concentriamo sullo sviluppo rapido utilizzando framework e strumenti moderni per portare il tuo prodotto sul mercato velocemente per la validazione.",
+    en: "The development time for an MVP depends on the complexity of the project. After analyzing your requirements, we will provide a precise and realistic timeline tailored to your needs.",
+    it: "La durata di sviluppo dell'MVP dipende dalla complessità del progetto. Dopo aver analizzato le tue esigenze, ti forniremo una tempistica precisa e realistica su misura per te.",
   },
   "startup-mvp-faq-cost-question": {
     en: "How much does MVP development cost?",
     it: "Quanto costa lo sviluppo di un MVP?",
   },
   "startup-mvp-faq-cost-answer": {
-    en: "MVP development costs typically range from €15,000 to €60,000 depending on complexity and features. This investment allows you to validate your idea with real users before committing to full product development.",
-    it: "I costi di sviluppo MVP tipicamente variano da €15.000 a €60.000 a seconda della complessità e funzionalità. Questo investimento ti permette di validare la tua idea con utenti reali prima di impegnarti nello sviluppo del prodotto completo.",
+    en: "The cost of developing an MVP depends entirely on the complexity and features required for your project. After analyzing your needs, we will provide a detailed and transparent quote tailored to your objectives.",
+    it: "Il costo per lo sviluppo di un MVP dipende completamente dalla complessità e dalle funzionalità richieste dal progetto. Dopo aver analizzato le tue esigenze, ti forniremo un preventivo dettagliato e trasparente su misura per i tuoi obiettivi.",
   },
   "startup-mvp-faq-scalability-question": {
     en: "How do you ensure the MVP can scale as my startup grows?",

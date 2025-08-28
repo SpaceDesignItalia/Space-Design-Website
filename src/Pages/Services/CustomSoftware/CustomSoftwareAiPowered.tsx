@@ -42,7 +42,7 @@ export default function CustomSoftwareAiPowered() {
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
         {/* Simple Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl md:text-5xl font-semibold text-primary mb-6">
             {t("custom-ai-powered-section-title")}
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -58,7 +58,7 @@ export default function CustomSoftwareAiPowered() {
                 <div className="text-4xl mb-6 text-primary flex justify-center">
                   <Icon icon={feature.icon} width={30} height={30} />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">
                   {feature.title}
                 </h3>
                 <p className="text-gray-600 text-base leading-relaxed">
