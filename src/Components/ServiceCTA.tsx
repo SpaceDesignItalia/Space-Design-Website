@@ -15,17 +15,12 @@ export default function ServiceCTA({
   title,
   subtitle,
   buttonText,
-  secondaryButtonText,
 }: ServiceCTAProps) {
   const { t, language } = useLanguage();
   const navigate = useNavigate();
 
   const handleContactClick = () => {
     navigate(`/${language}/contact`);
-  };
-
-  const handleCaseStudyClick = () => {
-    navigate(`/${language}/case-studies`);
   };
 
   return (
